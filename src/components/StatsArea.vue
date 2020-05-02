@@ -10,13 +10,15 @@
         v-html="languages"
       />
       <div class="chart-wrapper">
-        <apexchart
-          v-if="hasData"
-          type="area"
-          :options="chartOptions"
-          :series="series"
-          height="150"
-        />
+        <ClientOnly>
+          <apexchart
+            v-if="hasData"
+            type="area"
+            :options="chartOptions"
+            :series="series"
+            height="150"
+          />
+        </ClientOnly>
       </div>
     </div>
   </div>
@@ -38,6 +40,9 @@
 
   export default {
     name: 'StatsArea',
+    components: {
+      'apexchart': () => import('vue-apexcharts')
+    },
     data() {
       return {
         hasData: false,
