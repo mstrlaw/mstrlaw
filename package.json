@@ -13,12 +13,12 @@
     "@gridsome/transformer-remark": "^0.5.0",
     "apexcharts": "^3.19.0",
     "axios": "^0.19.2",
-    "gridsome": "^0.7.13",
+    "gridsome": "^0.7.14",
     "moment": "^2.25.1",
     "vue-apexcharts": "^1.5.3"
   },
   "devDependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.0",
     "sass-loader": "^8.0.2"
   }
 }
