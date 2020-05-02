@@ -34,7 +34,7 @@
         <h1 class="container__title headline">FAQ</h1>
         <div class="container__faq">
           <h3 class="container__subtitle">What's your daily stack?</h3>
-          <p>VueJS, NuxtJS, Node, MongoDB</p>
+          <p>VueJS, NuxtJS, Node, MongoDB.</p>
         </div>
 
         <div class="container__faq">
@@ -43,7 +43,7 @@
         </div>
 
         <div class="container__faq">
-          <h3 class="container__subtitle">What are you doing currenty?</h3>
+          <h3 class="container__subtitle">What are you doing currently?</h3>
           <p>Senior Frontend Engineer at <a href="https://unbabel.com/" target="_blank">Unbabel</a></p>
         </div>
 
