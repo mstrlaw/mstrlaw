@@ -1,8 +1,11 @@
 # Hey there 👋 I'm Lawrence
 
-Currently Senior Frontend dev @ [Unbabel](https://unbabel.com/).
+Currently: Senior Frontend dev @ [Unbabel](https://unbabel.com/).
 
 ---
-Find more about me at https://mstrlaw.com
+Besides that I:
+- run a news 📰 aggregator portal [thoro.news](https://thoro.news)
+- provide COVID-19 🦠 centric news at [covidwatch.info](https://covidwatch.info)
+- document Big Tech 💻 related news and events on [bigtech.watch](http://bigtech.watch/) aka [r/BigTech](https://www.reddit.com/r/BigTech/)
 
-I also run my own news aggregator site https://thoro.news
+Check [mstrlaw.com](https://mstrlaw.com) for more.
