@@ -3,7 +3,7 @@
 
     <slot/>
 
-    <footer class="footer">
+    <footer class="footer white">
       <span class="footer__copyright">Copyright Lawrence B. Almeida © {{ new Date().getFullYear() }}. </span>
     </footer>
 

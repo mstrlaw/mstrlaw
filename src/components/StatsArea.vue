@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[ hasData ? 'visible' : 'invisible' ]"
-    class="container pt-0"
+    class="container"
   >
     <div class="container__content px-spaced pt-0">
       <p>I've spent {{ formatTime(totalTime) }} in front of the screen for the past 7 days</p>
@@ -27,9 +27,8 @@
 <script>
   import axios from 'axios'
   import moment from 'moment'
-
-  const languageEndpoint = 'https://cors-anywhere.herokuapp.com/https://wakatime.com/share/@mstrlaw/53b23607-58e6-43bd-827e-d76a6a0b4354.json'
-  const timeEndpoint = 'https://cors-anywhere.herokuapp.com/https://wakatime.com/share/@mstrlaw/4e394a3c-8d3f-449f-b686-1b0241124e2d.json'
+  const languageEndpoint = 'https://cors.bridged.cc/https://wakatime.com/share/@mstrlaw/53b23607-58e6-43bd-827e-d76a6a0b4354.json'
+  const timeEndpoint = 'https://cors.bridged.cc/https://wakatime.com/share/@mstrlaw/4e394a3c-8d3f-449f-b686-1b0241124e2d.json'
 
   const _tooltipFormatter = function({series, seriesIndex, dataPointIndex, w}) {
     let serie = w.config.series[seriesIndex]

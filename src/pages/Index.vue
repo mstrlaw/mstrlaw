@@ -1,22 +1,24 @@
 <template>
   <Layout>
 
-    <section class="container highlighted inverted invert-text">
-      <div class="container__content">
-        <h1 class="container__title headline">MSTRLAW</h1>
+    <section class="container highlighted inverted">
+      <div class="container__content pb-0">
+        <h1 class="container__title headline">Lawrence B. Almeida</h1>
         <div class="intro">
           <div class="intro__text">
-            <h2 class="container__subtitle">Hey there! I'm Lawrence</h2>
-            <p>I'm a Full-stack developer mostly developing web interfaces and providing tech consultancy.</p>
+            <h2 class="container__subtitle">Hey there,</h2>
+            <p>I'm a full-stack developer. I provide tech consultancy and specialize in developing web products.</p>
+            <p>I'm interested in how we interact with technology and how it impacts our lives.</p>
           </div>
-          <div class="intro__image">
+          <!-- <div class="intro__image">
             <img src="https://miro.medium.com/fit/c/256/256/1*cOCuZpj7YgGGF6DPTDhoJA.png" alt="">
-          </div>
+          </div> -->
         </div>
       </div>
+      <StatsArea />
     </section>
 
-    <section class="container">
+    <!-- <section class="container">
       <div class="container__content mb-0 pb-0">
         <h1 class="container__title headline">About</h1>
         <h2 class="container__subtitle">"The world is mine to shape in the image of my highest values and never to be given up to a lesser standard, no matter how long or hard the struggle."<br>- Dagny Taggart </h2>
@@ -26,32 +28,28 @@
         <p>When not working, I spend time with my significant other, read, play with my cats (3!) or catch some waves.</p>
       </div>
 
-      <StatsArea />
-    </section>
 
-    <section class="container highlighted black invert-text">
+    </section> -->
+
+    <section class="container highlighted inverted black">
       <div class="container__content">
         <h1 class="container__title headline">FAQ</h1>
         <div class="container__faq">
           <h3 class="container__subtitle">What's your daily stack?</h3>
-          <p>VueJS, NuxtJS, Node, MongoDB.</p>
-        </div>
-
-        <div class="container__faq">
-          <h3 class="container__subtitle">What else?</h3>
-          <p>Javascript, Webpack, SASS, TailwindCSS, Bootstrap, Bulma. Digital Ocean, Netlify, GitLab. Also Meteor.js &amp; ElectronJS, some rusty Python &amp; Django knowledge.</p>
+          <p>Mostly VueJS but my go-to stack is usually NuxtJS, Node and MongoDB. Other stuff in my toolbelt include vanila Javascript, Webpack, SASS, Netlify, Digital Ocean, GitLab.</p>
         </div>
 
         <div class="container__faq">
           <h3 class="container__subtitle">What are you doing currently?</h3>
-          <p>Senior Frontend Engineer at <a href="https://unbabel.com/" target="_blank">Unbabel</a></p>
+          <p>I work at <a href="https://unbabel.com/" target="_blank">Unbabel</a> as Senior Frontend Engineer.</p>
+          <p>Outside of work I maintain a news aggregator <a href="https://thoro.news" target="_blank">thoro.news</a> and publish a monthly newsletter called <a href="https://criticalfuture.tech">Critical Future Tech</a>.</p>
         </div>
 
         <div class="container__faq">
           <h3 class="container__subtitle">Where are you based?</h3>
           <p>
               <a
-                href="https://goo.gl/maps/YJoJtbXKZtP2"
+                href="https://goo.gl/maps/4hEc9Fcsb4YYZ8FJ6"
                 target="_blank"
               >Lisbon, Portugal
               </a>: Western European Time, UTC+0.<br>Compare the timezone difference to other countries <a
@@ -64,7 +62,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <!--section class="container">
       <div class="container__content">
         <h1 class="container__title headline">The Word</h1>
         <div>
@@ -91,18 +89,18 @@
           — <a href="https://www.linkedin.com/in/michaelleehodge/" target="_blank">Michael Hodge</a>,&nbsp;Director - Global Martial Arts University
         </div>
       </div>
-    </section>
+    </section-->
 
     <section class="container">
-      <div class="container__content">
-        <h1 class="container__title headline">Say Hello</h1>
+      <div class="container__content white">
+        <h1 class="container__title headline">Connect</h1>
         <p>
           <br>
-          Feel free to connect through <a href="https://www.linkedin.com/in/lawrencebraun/" target="_blank">LinkedIn</a>,
+          <a href="https://www.linkedin.com/in/lawrencebraun/" target="_blank">LinkedIn</a>,
           <a href="https://www.instagram.com/mstrlaw/" target="_blank">Instagram</a>,
           <a href="https://medium.com/@mstrlaw" target="_blank">Medium</a>,
           <a href="https://twitter.com/mstrlaw" target="_blank">Twitter</a>,
-          <a href="https://github.com/mstrlaw" target="_blank">GitHub</a>
+          <a href="https://github.com/mstrlaw" target="_blank">GitHub</a>,
           <a href="https://gitlab.com/mstrlaw" target="_blank">GitLab</a> or via email:
         </p>
         <h5 class="mb-0 mt-0 text-center"><a href="mailto:law@mstrlaw.com?subject=Hello!">law@mstrlaw.com</a></h5>
@@ -133,10 +131,10 @@ export default {
   margin-bottom: var(--space);
   min-height: 10vh;
   color: #000;
-  text-shadow: 1px 0px 0px rgba(255, 255, 255, 1),
-              -1px 0px 0px rgba(255, 255, 255, 1),
-              0px 1px 0px rgba(255, 255, 255, 1),
-              0px -1px 0px rgba(255, 255, 255, 1);
+  text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.8),
+              -1px 0px 0px rgba(255, 255, 255, 0.8),
+              0px 1px 0px rgba(255, 255, 255, 0.8),
+              0px -1px 0px rgba(255, 255, 255, 0.8);
 
   &.invisible {
     display: none;
@@ -157,7 +155,7 @@ export default {
       transform: skewY(-15deg);
       transition: transform .5s, background 1s;
 
-      background: linear-gradient(95deg, $black, rgba(136, 152, 170, 0.1));
+      background: linear-gradient(95deg, $white, rgba(203, 205, 207, 0.1));
       background-size: 800% 800%;
       z-index: -20;
     }
@@ -171,7 +169,7 @@ export default {
       transform: skewY(-15deg);
       transition: transform .5s, background 1s;
 
-      background: linear-gradient(95deg, $black, rgba(136, 152, 170, 0.1));
+      background: linear-gradient(95deg, $white, rgba(136, 152, 170, 0.1));
       background-size: 800% 800%;
       z-index: -20;
     }
@@ -235,7 +233,7 @@ export default {
 
   &__faq {
     a {
-      color: $white;
+      color: $black;
     }
   }
 }
@@ -243,14 +241,14 @@ export default {
 .intro {
   display: flex;
   align-items: flex-end;
-  margin-top: var(--space);
+  // margin-top: var(--space);
 
   &__text {
-    max-width: 70%;
-    margin-right: 15px;
+    // max-width: 70%;
+    // margin-right: 15px;
+    max-width: 100%;
+    margin-right: 0;
     @media #{$small} {
-      max-width: 100%;
-      margin-right: 0;
     }
   }
 
@@ -263,10 +261,10 @@ export default {
   }
 
   @media #{$small} {
-    margin-top: calc(var(--space) * 4);
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
+    // margin-top: calc(var(--space) * 4);
+    // flex-direction: column-reverse;
+    // align-items: center;
+    // text-align: center;
   }
 }
 

@@ -5,3 +5,12 @@
 .space-bottom {
 	margin-bottom: var(--space);
 }
+
+.white {
+	color: $white!important;
+	text-shadow: none;
+
+	a {
+		color: $white!important;
+	}
+}
