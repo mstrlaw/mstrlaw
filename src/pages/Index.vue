@@ -7,7 +7,6 @@
         <div class="intro">
           <div class="intro__text">
             <h2 class="container__subtitle">Hey there,</h2>
-            <p>I'm a full-stack developer. I provide tech consultancy and specialize in developing web products.</p>
             <p>I'm interested in how we interact with technology and how it impacts our lives.</p>
           </div>
           <!-- <div class="intro__image">
@@ -34,15 +33,16 @@
     <section class="container highlighted inverted black">
       <div class="container__content">
         <h1 class="container__title headline">FAQ</h1>
-        <div class="container__faq">
-          <h3 class="container__subtitle">What's your daily stack?</h3>
-          <p>Mostly VueJS but my go-to stack is usually NuxtJS, Node and MongoDB. Other stuff in my toolbelt include Javascript ES6, Webpack, SASS, Netlify, Digital Ocean, GitLab.</p>
-        </div>
 
         <div class="container__faq">
           <h3 class="container__subtitle">What are you doing currently?</h3>
-          <p>I work at <a href="https://unbabel.com/" target="_blank">Unbabel</a> as Senior Frontend Engineer.</p>
-          <p>Outside of work I maintain a news aggregator <a href="https://thoro.news" target="_blank">thoro.news</a> and publish a monthly newsletter called <a href="https://criticalfuture.tech">Critical Future Tech</a>.</p>
+          <p>I work at <a href="https://unbabel.com/" target="_blank">Unbabel</a> as Senior Engineering Manager.</p>
+          <p>Outside of work I publish a monthly newsletter called <a href="https://criticalfuture.tech">Critical Future Tech</a> and maintain <a href="https://thoro.news" target="_blank">thoro.news</a>, a news aggregator.</p>
+        </div>
+
+        <div class="container__faq">
+          <h3 class="container__subtitle">What's your daily stack?</h3>
+          <p>Mostly VueJS but my go-to stack is usually NuxtJS, Node and MongoDB. Other items in my toolbelt include plain Javascript, Webpack, SASS, Netlify, Digital Ocean, GitLab CI/CD, Datadog and more.</p>
         </div>
 
         <div class="container__faq">
