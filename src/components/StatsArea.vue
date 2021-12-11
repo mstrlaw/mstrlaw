@@ -107,7 +107,11 @@
     methods: {
       getActivity() {
         axios
-          .get(timeEndpoint)
+          .get(timeEndpoint, {
+            headers: {
+              'x-cors-grida-api-key': '2a757fab-77e2-447a-b55f-623e511e5241',
+            }
+          })
           .then( res => {
 
             if (res.data.data.length > 0) {
