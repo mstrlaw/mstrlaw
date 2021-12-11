@@ -53,14 +53,94 @@ p {
 }
 
 a {
+  display: inline-block;
+  position: relative;
   color: var(--textColor);
+  text-decoration: none;
 
-  &:hover {
-    color: var(--darkBlueAlt);
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    background-color: var(--textColor);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+}
+
+// Used to denote links opening in new
+sup.u-NewTab {
+  font-family: monospace;
+  font-size: 75%;
+}
+
+.u-Highlight {
+  $self: &;
+
+  --startColor: #fc5296 0%;
+  --endColor: #f67062 74%;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  background: linear-gradient(315deg, var(--startColor), var(--endColor));
+  background: -webkit-linear-gradient(315deg, var(--startColor), var(--endColor));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    background: linear-gradient(315deg, var(--startColor), var(--endColor));
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    opacity: 0.2;
   }
 
-  &:visited {
-    color: var(--lightBlue);
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    background: linear-gradient(315deg, var(--startColor), var(--endColor));
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:focus,
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+
+  &.purple {
+    --startColor: #4062bb 0%;
+    --endColor: #5200ae 74%;
+  }
+
+  &.red {
+
+    --startColor: #861657 0%;
+    --endColor: #aa4465 74%;
+  }
+
+  &.blue {
+    --startColor: #738bdc 0%;
+    --endColor: #48c3eb 74%;
   }
 }
 
