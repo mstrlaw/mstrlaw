@@ -133,9 +133,13 @@ sup.u-NewTab {
   }
 
   &.red {
-
     --startColor: #861657 0%;
     --endColor: #aa4465 74%;
+  }
+
+  &.black {
+    --startColor: #485461 0%;
+    --endColor: #28313b 74%;
   }
 
   &.blue {
