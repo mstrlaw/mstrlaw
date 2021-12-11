@@ -8,16 +8,20 @@ const sass        = require('metalsmith-sass');
 const discoverPartials = require('metalsmith-discover-partials');
 const msIf = require('metalsmith-if');
 
+const watch = process.env.NODE_ENV === 'development';
 
-let watch = process.env.NODE_ENV === 'development';
+const DATA = {
+  sitename: 'Lawrence B. Almeida',
+  description: 'Lawrence is a technologist that focuses on building digital products and exploring technology\'s impact on individuals and society.',
+  location: 'Lisbon, Portugal',
+}
 
 Metalsmith(__dirname)
   .metadata({
-    sitename: 'Lawrence B. Almeida',
-    description: 'It\'s about saying »Hello« to the World.',
-    location: 'Lisbon, Portugal',
+    // Meta
     generator: 'Metalsmith',
-    url: 'https://mstrlaw.com/'
+    // Homepage data
+    ...DATA,
   })
   .source('./src')
   .destination('./dist')

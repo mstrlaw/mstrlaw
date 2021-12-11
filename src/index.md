@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Home
 layout: home.hbs
 postlist: false
 ---
