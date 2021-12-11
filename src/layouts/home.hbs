@@ -11,16 +11,25 @@
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
   <meta name="generator" content="metalsmith">
+  <style>
+    /* Critical CSS */
+    .l-MainBlock{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em 0;
+      height: 100vh;
+    }
+  </style>
 </head>
 
+
 <body>
-  <div class="container">
+  <div class="l-Container">
 
     {{!-- {{> Header }} --}}
 
-    <main>
-      {{{ contents }}}
-    </main>
+    {{{ contents }}}
 
     {{!-- {{#if postlist}}
         <ul>

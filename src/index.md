@@ -1,10 +1,15 @@
 ---
 title: Hello World
-layout: layout.hbs
-postlist: true
+layout: home.hbs
+postlist: false
 ---
 
-This site is about saying »Hello« to the world.
-# Blog
+<main class="l-MainBlock">
+  <div>
+    <h1>Lawrence B. Almeida</h1>
+    <!-- <em>/loh-rins/</em> -->
+    <h3>
+      I'm an European technologist based in Lisbon, Portugal. I'm interested in how we relate and interact with technology, how it impacts our lives.</h3>
+  </div>
+</main>
 
-Read what else I have to say. Here are all my blog posts. Enjoy reading!
