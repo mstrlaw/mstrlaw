@@ -39,15 +39,15 @@ Metalsmith(__dirname)
       }
     }
   }))
-  .use(browserSync({
-    server: 'dist',
-    files: [
-      'src/*',
-      'src/layouts/*',
-      'src/partials/*',
-      'src/styles/*',
-    ]
-  }))
+  // .use(browserSync({
+  //   server: 'dist',
+  //   files: [
+  //     'src/*',
+  //     'src/layouts/*',
+  //     'src/partials/*',
+  //     'src/styles/*',
+  //   ]
+  // }))
   .build(function(err, files) {
     if (err) throw err;
   });
