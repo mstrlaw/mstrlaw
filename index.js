@@ -15,6 +15,7 @@ Metalsmith(__dirname)
   .metadata({
     sitename: 'Lawrence B. Almeida',
     description: 'It\'s about saying »Hello« to the World.',
+    location: 'Lisbon, Portugal',
     generator: 'Metalsmith',
     url: 'https://mstrlaw.com/'
   })
