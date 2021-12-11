@@ -1,6 +1,5 @@
 // Critical CSS only
 @import "./_root.scss";
-@import "./_typography.scss";
 
 $mobile:     "only screen and (min-width: 320px)";
 $tablet:     "only screen and (min-width: 641px)";
@@ -27,8 +26,45 @@ body {
   // }
 }
 
-/* Layout */
+/* Typography */
+h1,
+h2,
+p {
+  // Font minimum, preferred and maximum value
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
 
+// Font sizes
+h1 {
+  --min: 2em;
+  --val: 5vw;
+  --max: 3em;
+  margin-bottom: 1.1em;
+}
+h2 {
+  --min: 1.2em;
+  --val: 4vw;
+  --max: 2em;
+}
+p {
+  --min: 1em;
+  --val: 2.5vw;
+  --max: 1.2em;
+}
+
+a {
+  color: var(--textColor);
+
+  &:hover {
+    color: var(--darkBlueAlt);
+  }
+
+  &:visited {
+    color: var(--lightBlue);
+  }
+}
+
+/* Layout */
 .l-Container {
   max-width: var(--containerWidth);
   margin: 1em auto;
