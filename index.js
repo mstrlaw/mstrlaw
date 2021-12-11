@@ -5,9 +5,11 @@ const permalinks  = require('@metalsmith/permalinks');
 const collections = require('metalsmith-collections');
 const browserSync = require('metalsmith-browser-sync');
 const sass        = require('metalsmith-sass');
-var discoverPartials = require('metalsmith-discover-partials')
+const discoverPartials = require('metalsmith-discover-partials');
+const msIf = require('metalsmith-if');
 
 
+let watch = process.env.NODE_ENV === 'development';
 
 Metalsmith(__dirname)
   .metadata({
@@ -39,15 +41,18 @@ Metalsmith(__dirname)
       }
     }
   }))
-  // .use(browserSync({
-  //   server: 'dist',
-  //   files: [
-  //     'src/*',
-  //     'src/layouts/*',
-  //     'src/partials/*',
-  //     'src/styles/*',
-  //   ]
-  // }))
+  .use(msIf(
+    watch,
+    browserSync({
+      server: 'dist',
+      files: [
+        'src/*',
+        'src/layouts/*',
+        'src/partials/*',
+        'src/styles/*',
+      ]
+    })
+  ))
   .build(function(err, files) {
     if (err) throw err;
   });
