@@ -1,0 +1,182 @@
+// Critical CSS only
+@import "./_root.scss";
+
+$mobile:     "only screen and (min-width: 320px)";
+$tablet:     "only screen and (min-width: 641px)";
+$desktop:    "only screen and (min-width: 1025px)";
+$desktop-lg: "only screen and (min-width: 1281px)";
+
+body {
+  font-family: var(--fontFamily);
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  line-height: 1.2;
+
+  // @media #{$mobile} {
+  //   background: green;
+  // }
+  // @media #{$tablet} {
+  //   background: orange;
+  // }
+  // @media #{$desktop} {
+  //   background: red;
+  // }
+  // @media #{$desktop-lg} {
+  //   background: turquoise;
+  // }
+}
+
+/* Typography */
+h1,
+h2,
+p {
+  // Font minimum, preferred and maximum value
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+// Font sizes
+h1 {
+  --min: 2em;
+  --val: 5vw;
+  --max: 3em;
+  margin-bottom: 1.1em;
+}
+h2 {
+  --min: 1.2em;
+  --val: 4vw;
+  --max: 2em;
+}
+p {
+  --min: 1em;
+  --val: 2.5vw;
+  --max: 1.2em;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  color: var(--textColor);
+  text-decoration: none;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    background-color: var(--textColor);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+}
+
+// Used to denote links opening in new
+sup.u-NewTab {
+  font-family: monospace;
+  font-size: 75%;
+}
+
+.u-Highlight {
+  $self: &;
+
+  --startColor: #fc5296 0%;
+  --endColor: #f67062 74%;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  background: linear-gradient(315deg, var(--startColor), var(--endColor));
+  background: -webkit-linear-gradient(315deg, var(--startColor), var(--endColor));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    background: linear-gradient(315deg, var(--startColor), var(--endColor));
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    opacity: 0.2;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    background: linear-gradient(315deg, var(--startColor), var(--endColor));
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:focus,
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+
+  &.purple {
+    --startColor: #4062bb 0%;
+    --endColor: #5200ae 74%;
+  }
+
+  &.red {
+    --startColor: #861657 0%;
+    --endColor: #aa4465 74%;
+  }
+
+  &.black {
+    --startColor: #000000 0%;
+    --endColor: #5e5368 74%;
+  }
+
+  &.blue {
+    --startColor: #738bdc 0%;
+    --endColor: #48c3eb 74%;
+  }
+}
+
+/* Layout */
+.l-Container {
+  max-width: var(--containerWidth);
+  margin: 1em auto;
+
+  @media #{$desktop} {
+    --containerWidth: 60vw;
+  }
+}
+
+.c-Background {
+  position: fixed;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  bottom: 0;
+  z-index: -1;
+
+  &:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    bottom: -30vh;
+    -webkit-transform: skewY(-15deg);
+    transform: skewY(-15deg);
+    transition: transform .5s, background 1s;
+    background: linear-gradient(95deg, #FFF, rgba(136, 152, 170, 0.8));
+    background-size: 800% 800%;
+    z-index: -20;
+  }
+}

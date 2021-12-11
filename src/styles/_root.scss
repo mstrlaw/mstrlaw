@@ -1,0 +1,16 @@
+:root {
+  // LAYOUT
+  --containerWidth: 85vw;
+  // COLORS
+  --black: #17202A;
+  --white: #FDFEFE;
+  --darkBlue: #2874A6;
+  --darkBlueAlt: #2874A6;
+  --lightBlue: #3498DB;
+  // FONTS
+  --fontFamily: 'Helvetica', 'Arial', sans-serif;
+  // THEME
+  --backgroundColor: var(--white);
+  --textColor: var(--black);
+  --linkColor: var(--darkBlue);
+}
