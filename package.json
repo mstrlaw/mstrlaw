@@ -4,6 +4,7 @@
   "scripts": {
     "start": "nodemon --watch index.js --watch styles/app.scss",
     "build": "rm -rf build/ && node index.js",
+    "generate": "rm -rf build/ && node index.js",
     "serve": "serve build"
   },
   "devDependencies": {
