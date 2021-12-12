@@ -16,11 +16,9 @@
     "metalsmith-discover-partials": "^0.1.2",
     "metalsmith-if": "^0.1.1",
     "metalsmith-layouts": "^2.3.1",
+    "metalsmith-sass": "^1.7.0",
     "metalsmith-uglify": "^2.4.0",
-    "nodemon": "^2.0.15",
-    "serve": "^13.0.2"
+    "nodemon": "^2.0.15"
   },
-  "dependencies": {
-    "metalsmith-sass": "^1.7.0"
-  }
+  "dependencies": {}
 }

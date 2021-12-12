@@ -53,6 +53,10 @@ Metalsmith(__dirname)
     dest: 'static',
     replace: 'old'
   }))
+  .use(assets({
+    src: './src/admin',
+    replace: 'old'
+  }))
   .use(msIf(
     watch,
     browserSync({
