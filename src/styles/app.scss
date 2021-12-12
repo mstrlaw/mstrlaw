@@ -149,12 +149,25 @@ sup.u-NewTab {
 }
 
 .ct-series-a .ct-point {
-  /* Colour of your points */
-  stroke: blue;
-  /* Size of your points */
+  stroke: #BFC9CA!important;
   stroke-width: 4px;
-  /* Make your points appear as squares */
-  stroke-linecap: square;
+}
+
+.ct-series-a .ct-line {
+  /* Set the colour of this series line */
+  stroke: #BFC9CA!important;
+  stroke-width: 2px;
+}
+
+.ct-label {
+  fill: #BFC9CA!important;
+  transition: fill 0.25s;
+
+  &:hover {
+    fill: #717D7E!important;
+    cursor: default;
+    transition: fill 0.25s;
+  }
 }
 
 /* Layout */
