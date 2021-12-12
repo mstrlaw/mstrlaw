@@ -7,6 +7,7 @@ const browserSync = require('metalsmith-browser-sync');
 const sass        = require('metalsmith-sass');
 const discoverPartials = require('metalsmith-discover-partials');
 const msIf = require('metalsmith-if');
+const uglify = require('metalsmith-uglify');
 
 const watch = process.env.NODE_ENV === 'development';
 
@@ -59,6 +60,13 @@ Metalsmith(__dirname)
       ]
     })
   ))
+  .use(uglify({
+    concat: {
+        file: 'home.min.js',
+    },
+    removeOriginal: true
+  }))
+  // .use(uglify({ root: 'js' }))
   .build(function(err, files) {
     if (err) throw err;
   });
