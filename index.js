@@ -28,9 +28,9 @@ Metalsmith(__dirname)
   .source('./src')
   .destination('./dist')
   .clean(true)
-  // .use(collections({
-  //   posts: 'posts/*.md'
-  // }))
+  .use(collections({
+    posts: 'posts/*.md'
+  }))
   .use(sass())
   .use(markdown())
   .use(permalinks())

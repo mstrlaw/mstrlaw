@@ -54,6 +54,17 @@
       </div>
     </main>
 
+    {{#if postlist}}
+    {{posts}}
+      <ul>
+      {{#each posts}}
+        <li>
+          <a href="/{{ path }}">{{ title }}</a>
+        </li>
+      {{/each}}
+      </ul>
+    {{/if}}
+
     <section class="c-Contacts">
       <h2 id="cont" class="c-Contacts__email" title="Please wait 5 seconds..">Drop me a line at <a id="adr" href="mailto:bot-honeypot@gmail.com" target="_blank" rel="noopener noreferrer" class="u-Highlight black disabled">generating...</a></h2>
       <p class="c-Contacts__extra">
@@ -62,15 +73,6 @@
         <a href="https://www.instagram.com/mstrlaw/" target="_blank" rel="noopener noreferrer" class="u-Highlight black">Instagram<sup class="u-NewTab">&#8599;</sup></a> or <a href="https://github.com/mstrlaw" target="_blank" rel="noopener noreferrer" class="u-Highlight black">GitHub<sup class="u-NewTab">&#8599;</sup></a>.
       </p>
     </section>
-    {{!-- {{#if postlist}}
-        <ul>
-        {{#each posts}}
-          <li>
-            <a href="/{{ path }}">{{ title }}</a>
-          </li>
-        {{/each}}
-        </ul>
-      {{/if}} --}}
   </div>
   <div class="c-Chart ct-chart"></div>
   <div class="c-Background"></div>
