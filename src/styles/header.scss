@@ -1,0 +1,32 @@
+@import "./_breakpoints.scss";
+
+.l-Header {
+  max-width: var(--containerWidth);
+  margin: 1em auto;
+
+  &__title {
+    font-size: 1.5em;
+    a {
+      &:after {
+        display: none!important;
+      }
+    }
+  }
+
+  &__nav {
+    a {
+      display: inline-flex;
+      font-size: 1.1em;
+      line-height: 1.6em;
+
+      .u-NewTab {
+        font-family: monospace;
+        font-size: 100%;
+      }
+    }
+  }
+
+  @media #{$desktop} {
+    --containerWidth: var(--containerWidthDesktop);
+  }
+}

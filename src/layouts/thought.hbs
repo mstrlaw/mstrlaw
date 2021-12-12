@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
-  <link rel="stylesheet" href="/styles/post.css">
+  <link rel="stylesheet" href="/styles/thoughts.css">
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/footer.css" async>
   {{> HomeStyles }}
@@ -29,11 +29,6 @@
   {{> Header }}
   <div class="l-Container">
     <article class="c-Article">
-      <h1 class="c-Article__title">{{ title }}</h1>
-      <time>{{ formattedDate date }}</time>
-      <br>
-      <img src="{{ thumbnail }}" alt="Post main image">
-      <br>
       {{{ contents }}}
     </article>
   </div>
@@ -42,37 +37,3 @@
   {{> SimpleFooter }}
 </body>
 </html>
-
-{{!-- <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" >
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  <meta name="generator" content="metalsmith">
-</head>
-<body>
-  <div class="container">
-
-    <header>
-      <nav>
-        {{ sitename }} |
-        <a href="/">Home</a> |
-        <a href="/about">About</a>
-      </nav>
-      <h1>{{ title }}<time class="float-right">{{ formattedDate date }}</time></h1>
-      <img src="{{ thumbnail }}" alt="Post main image">
-    </header>
-
-    <main>
-      {{{ contents }}}
-    </main>
-
-    <footer>
-      <p>Generated with {{ generator }} &mdash; <a href="{{ url }}">{{ url }}</a></p>
-    </footer>
-
-  </div>
-
-</body>
-</html> --}}

@@ -7,19 +7,6 @@ body {
   color: var(--textColor);
   background-color: var(--backgroundColor);
   line-height: 1.2;
-
-  // @media #{$mobile} {
-  //   background: green;
-  // }
-  // @media #{$tablet} {
-  //   background: orange;
-  // }
-  // @media #{$desktop} {
-  //   background: red;
-  // }
-  // @media #{$desktop-lg} {
-  //   background: turquoise;
-  // }
 }
 
 /* Typography */
@@ -29,7 +16,11 @@ p {
   // Font minimum, preferred and maximum value
   font-size: clamp(var(--min), var(--val), var(--max));
 }
-
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
 // Font sizes
 h1 {
   --min: 2em;
@@ -69,7 +60,7 @@ a {
 }
 
 // Used to denote links opening in new tab
-sup.u-NewTab {
+.u-NewTab {
   font-family: monospace;
   font-size: 75%;
 }
