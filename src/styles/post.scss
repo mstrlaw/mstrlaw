@@ -1,8 +1,11 @@
 .c-Article {
+  margin: 2em 0;
+
   h1 {
     --min: 2.5em;
     --val: 5vw;
     --max: 3.5em;
+    font-weight: bold;
     margin-bottom: 0;
   }
 }
