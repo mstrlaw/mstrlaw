@@ -54,6 +54,7 @@ Metalsmith(__dirname)
         'src/*',
         'src/layouts/*',
         'src/partials/*',
+        'src/scripts/*',
         'src/styles/*',
       ]
     })

@@ -8,10 +8,16 @@
     content="{{ description }}"
   >
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="metalsmith">
 
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
-  <meta name="generator" content="metalsmith">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+
+  <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/chartist-plugin-pointlabels@0.0.6/dist/chartist-plugin-pointlabels.min.js" async></script>
+  <script src="//cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js" async></script>
+  <script src="/scripts/home.js" async></script>
 
   {{> HomeStyles }}
 </head>
@@ -23,7 +29,7 @@
     <main class="l-MainBlock">
       <div>
         <h1 class="l-MainBlock__title">Lawrence B. Almeida</h1>
-        <em>a.k.a. law, mstrlaw</em>
+        <em>a.k.a. @mstrlaw</em>
         <!-- <em>/loh-rins/</em> -->
         <h2 class="l-MainBlock__intro">
           European <span>technologist</span> based in {{ location }}. I focus on <span>building digital products</span> and <span>exploring technology's impact</span> on individuals and society.
@@ -47,6 +53,8 @@
 
     {{> Footer }}
   </div>
+
+  <div class="ct-chart"></div>
 
 
 

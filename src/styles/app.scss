@@ -148,6 +148,15 @@ sup.u-NewTab {
   }
 }
 
+.ct-series-a .ct-point {
+  /* Colour of your points */
+  stroke: blue;
+  /* Size of your points */
+  stroke-width: 4px;
+  /* Make your points appear as squares */
+  stroke-linecap: square;
+}
+
 /* Layout */
 .l-Container {
   max-width: var(--containerWidth);
