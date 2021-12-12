@@ -13,11 +13,13 @@
   <link rel="stylesheet" href="/styles/app.css">
   <link rel="stylesheet" href="/styles/footer.css" async>
   <link rel="stylesheet" href="/styles/chart.css" async>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" async>
+  <link rel="preload" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <script src="//cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js" async></script>
   <script src="/scripts/home.min.js" async></script>
   <script src="/scripts/footer.min.js" async></script>
-
+  <noscript>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  </noscript>
   {{> HomeStyles }}
 </head>
 
