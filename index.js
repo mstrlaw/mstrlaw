@@ -8,6 +8,7 @@ const sass        = require('metalsmith-sass');
 const discoverPartials = require('metalsmith-discover-partials');
 const msIf = require('metalsmith-if');
 const uglify = require('metalsmith-uglify');
+const assets = require( 'metalsmith-assets-copy' );
 
 const watch = process.env.NODE_ENV === 'development';
 
@@ -47,6 +48,11 @@ Metalsmith(__dirname)
       }
     }
   }))
+  .use(assets({
+    src: './src/static',
+    dest: 'static',
+    replace: 'old'
+  }))
   .use(msIf(
     watch,
     browserSync({
@@ -57,6 +63,7 @@ Metalsmith(__dirname)
         'src/partials/*',
         'src/scripts/*',
         'src/styles/*',
+        'src/static/*',
       ]
     })
   ))

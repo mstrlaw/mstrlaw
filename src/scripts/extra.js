@@ -15,6 +15,7 @@ const generateAdr = () => {
   const m = ['law','@m','s','t','r','law','.','co','m'].join('');
   setTimeout(() => {
     const el = document.getElementById('adr');
+    document.getElementById('cont').removeAttribute('title');
     el.innerText = m;
     el.setAttribute('href', `mailto:${m}?subject=Hello!`)
     el.classList.remove('black');
