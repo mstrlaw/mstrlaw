@@ -1,0 +1,14 @@
+@import "./_breakpoints.scss";
+
+.l-Footer {
+  max-width: var(--containerWidth);
+  margin: 1em auto;
+
+  p {
+    font-size: 90%;
+  }
+
+  @media #{$desktop} {
+    --containerWidth: 60vw;
+  }
+}

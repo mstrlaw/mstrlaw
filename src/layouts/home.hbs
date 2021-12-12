@@ -9,37 +9,25 @@
   >
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="metalsmith">
-
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
+  <link rel="stylesheet" href="/styles/footer.css" async>
   <link rel="stylesheet" href="/styles/chart.css" async>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" async>
-
-  {{!-- <script
-    id="chartistjs"
-    src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"
-    async
-  ></script> --}}
-  {{!-- <script
-    id="chartistPlugin"
-    src="//cdn.jsdelivr.net/npm/chartist-plugin-pointlabels@0.0.6/dist/chartist-plugin-pointlabels.min.js"
-    async
-  ></script> --}}
   <script src="//cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js" async></script>
   <script src="/scripts/home.min.js" async></script>
+  <script src="/scripts/footer.min.js" async></script>
 
   {{> HomeStyles }}
 </head>
 
 <body>
   {{!-- {{> Header }} --}}
-
   <div class="l-Container">
     <main class="l-MainBlock">
       <div>
         <h1 class="l-MainBlock__title">Lawrence B. Almeida</h1>
-        <em>a.k.a. @mstrlaw</em>
-        <!-- <em>/loh-rins/</em> -->
+        <em>mstrlaw</em>
         <h2 class="l-MainBlock__intro">
           European <span>technologist</span> based in {{ location }}. I focus on <span>building digital products</span> and <span>exploring technology's impact</span> on individuals and society.
           <br>
@@ -61,26 +49,9 @@
         {{/each}}
         </ul>
       {{/if}} --}}
-
-    {{!-- {{> Footer }} --}}
   </div>
-
   <div class="c-Chart ct-chart"></div>
-
-
-
   <div class="c-Background"></div>
-
-  {{!-- <section class="container highlighted">
-    <h3>Currently</h3>
-    <p>
-      Engineering Manager at <a href="https://unbabel.com" target="_blank">Unbabel</a>.
-      <br>
-      Editor of <a href="https://criticalfuture.tech/" target="_blank">Critical Future Tech</a>.
-      <br>
-      Developer of <a href="https://thoro.news/" target="_blank">Thoro News</a>.
-    </p>
-  </section> --}}
-
+  {{> Footer }}
 </body>
 </html>

@@ -1,6 +1,19 @@
 .c-Chart {
-  position: absolute;
+  position: relative;
   width: 100vw;
-  left: 0;
-  bottom: 0;
+}
+
+.ct-series-a .ct-point {
+  stroke: var(--chartStrokeColor)!important;
+  stroke-width: 4px;
+}
+.ct-series-a .ct-line {
+  stroke: var(--chartStrokeColor)!important;
+  stroke-width: 2px;
+}
+.ct-label {
+  fill: var(--chartLabelColor)!important;
+  &:hover {
+    cursor: default;
+  }
 }

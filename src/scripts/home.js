@@ -1,11 +1,15 @@
-const injectScript = (url) => new Promise((resolve, reject) => {
+let loadedChart = false;
+let loadTime = 0;
+let totalTime = 0;
+
+const injectScript = (url) => new Promise((resolve) => {
   const script = document.createElement('script');
   script.type = 'text/javascript';
   script.async = true;
   script.src = url;
   // Append the script to the DOM
-  const el = document.getElementsByTagName('script')[0]
-  el.parentNode.insertBefore(script, el)
+  const el = document.getElementsByTagName('script')[0];
+  el.parentNode.insertBefore(script, el);
   // Resolve the promise once the script is loaded
   script.addEventListener('load', () => resolve());
 });
@@ -18,19 +22,16 @@ const loadChartData = async () =>
       }
     });
 
-const getTimeLabel = (seconds) => {
-  const endDate = new Date();
+const getTimeLabel = (date, seconds) => {
+  const endDate = new Date(date);
   endDate.setSeconds(seconds);
   return `${endDate.getHours()}h ${endDate.getMinutes()}m`;
 };
 
-const drawChart = (series) => {
+const drawChart = (tmp, series) => {
   var data = {
-    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-    // Our series array that contains series objects or in this case series data arrays
-    series: [
-      series,
-    ]
+    labels: [],
+    series: [series]
   };
   const axisMod = {
     showGrid: false,
@@ -44,7 +45,7 @@ const drawChart = (series) => {
     axisY: {...axisMod},
     plugins: [
       Chartist.plugins.ctPointLabels({
-        labelInterpolationFnc: (value) => getTimeLabel(value)
+        labelInterpolationFnc: value => getTimeLabel(tmp[value], value)
       }),
     ],
   }
@@ -54,22 +55,23 @@ const drawChart = (series) => {
 window.onload = async () => {
   await injectScript('//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js');
   await injectScript('//cdn.jsdelivr.net/npm/chartist-plugin-pointlabels@0.0.6/dist/chartist-plugin-pointlabels.min.js');
-
   const dataRequest = loadChartData();
+  let tmp = {};
   let series = [];
-  let totalTime = 0;
-
   dataRequest
-    .then(res => {
-      if (res.data.data.length === 0) return;
-      res.data.data.forEach( d => {
+    .then(r => {
+      if (r.data.data.length === 0) return;
+      r.data.data.forEach(d => {
+        tmp[d.grand_total.total_seconds] = d.range.start;
         series.push(d.grand_total.total_seconds);
         totalTime += d.grand_total.total_seconds;
       });
-      drawChart(series);
+      drawChart(tmp, series);
+      generateFooter();
     })
     .catch(err => {
       console.log(err);
       console.log('error fetching chart data');
+      generateFooter();
     });
 };

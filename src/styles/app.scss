@@ -1,10 +1,6 @@
 // Critical CSS only
 @import "./_root.scss";
-
-$mobile:     "only screen and (min-width: 320px)";
-$tablet:     "only screen and (min-width: 641px)";
-$desktop:    "only screen and (min-width: 1025px)";
-$desktop-lg: "only screen and (min-width: 1281px)";
+@import "./_breakpoints.scss";
 
 body {
   font-family: var(--fontFamily);
@@ -72,15 +68,14 @@ a {
   }
 }
 
-// Used to denote links opening in new
+// Used to denote links opening in new tab
 sup.u-NewTab {
   font-family: monospace;
   font-size: 75%;
 }
-
+// Link highlight
 .u-Highlight {
   $self: &;
-
   --startColor: #fc5296 0%;
   --endColor: #f67062 74%;
   display: inline-block;
@@ -118,7 +113,6 @@ sup.u-NewTab {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-
   &:focus,
   &:hover {
     &:after {
@@ -126,47 +120,21 @@ sup.u-NewTab {
       transform-origin: bottom left;
     }
   }
-
   &.purple {
     --startColor: #4062bb 0%;
     --endColor: #5200ae 74%;
   }
-
   &.red {
     --startColor: #861657 0%;
     --endColor: #aa4465 74%;
   }
-
   &.black {
     --startColor: #000000 0%;
     --endColor: #5e5368 74%;
   }
-
   &.blue {
     --startColor: #738bdc 0%;
     --endColor: #48c3eb 74%;
-  }
-}
-
-.ct-series-a .ct-point {
-  stroke: #BFC9CA!important;
-  stroke-width: 4px;
-}
-
-.ct-series-a .ct-line {
-  /* Set the colour of this series line */
-  stroke: #BFC9CA!important;
-  stroke-width: 2px;
-}
-
-.ct-label {
-  fill: #BFC9CA!important;
-  transition: fill 0.25s;
-
-  &:hover {
-    fill: #717D7E!important;
-    cursor: default;
-    transition: fill 0.25s;
   }
 }
 
