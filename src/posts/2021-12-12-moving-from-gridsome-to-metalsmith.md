@@ -6,3 +6,7 @@ thumbnail: /static/images/metalsmith.jpg
 thumbnail_description: This is the description of the image.
 ---
 I've moved my website from **Gridsome** (Vue) to [Metalsmith](https://metalsmith.io).
+
+
+
+<a href="google.com">some link</a>
