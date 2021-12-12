@@ -60,13 +60,7 @@ Metalsmith(__dirname)
       ]
     })
   ))
-  .use(uglify({
-    concat: {
-        file: 'home.min.js',
-    },
-    removeOriginal: true
-  }))
-  // .use(uglify({ root: 'js' }))
+  .use(uglify())
   .build(function(err, files) {
     if (err) throw err;
   });
