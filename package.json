@@ -2,7 +2,7 @@
   "name": "mstrlaw",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development nodemon --watch index.js --watch styles/app.scss",
+    "dev": "rm -rf dist && NODE_ENV=development nodemon --watch index.js --watch styles/app.scss",
     "build": "node index.js"
   },
   "devDependencies": {
