@@ -87,6 +87,21 @@ sup.u-NewTab {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    font-style: italic;
+    &:before {
+      opacity: 0;
+    }
+    &:focus,
+    &:hover {
+      &:after {
+        transform: scaleX(0);
+      }
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -144,7 +159,7 @@ sup.u-NewTab {
   margin: 1em auto;
 
   @media #{$desktop} {
-    --containerWidth: 60vw;
+    --containerWidth: var(--containerWidthDesktop);
   }
 }
 

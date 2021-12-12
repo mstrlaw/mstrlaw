@@ -3,12 +3,21 @@
 .l-Footer {
   max-width: var(--containerWidth);
   margin: 1em auto;
+  color: var(--darkGray);
 
-  p {
+  &__info {
+    display: flex;
+    flex-direction: column;
     font-size: 90%;
+    @media #{$desktop} {
+      flex-direction: row;
+      span:last-child{
+        margin-left: auto;
+      }
+    }
   }
 
   @media #{$desktop} {
-    --containerWidth: 60vw;
+    --containerWidth: var(--containerWidthDesktop);
   }
 }

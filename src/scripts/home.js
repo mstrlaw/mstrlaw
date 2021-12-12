@@ -1,7 +1,6 @@
 let loadedChart = false;
 let loadTime = 0;
 let totalTime = 0;
-
 const injectScript = (url) => new Promise((resolve) => {
   const script = document.createElement('script');
   script.type = 'text/javascript';
@@ -67,11 +66,12 @@ window.onload = async () => {
         totalTime += d.grand_total.total_seconds;
       });
       drawChart(tmp, series);
-      generateFooter();
+      generateExtra();
     })
     .catch(err => {
       console.log(err);
       console.log('error fetching chart data');
-      generateFooter();
+      generateExtra();
     });
+  generateAdr();
 };

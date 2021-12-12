@@ -16,7 +16,7 @@
   <link rel="preload" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <script src="//cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js" async></script>
   <script src="/scripts/home.min.js" async></script>
-  <script src="/scripts/footer.min.js" async></script>
+  <script src="/scripts/extra.min.js" async></script>
   <noscript>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
   </noscript>
@@ -29,19 +29,30 @@
     <main class="l-MainBlock">
       <div>
         <h1 class="l-MainBlock__title">Lawrence B. Almeida</h1>
-        <em>mstrlaw</em>
+        <em>@mstrlaw</em>
         <h2 class="l-MainBlock__intro">
           European <span>technologist</span> based in {{ location }}. I focus on <span>building digital products</span> and <span>exploring technology's impact</span> on individuals and society.
           <br>
           <br>
           Currently <span>Engineering Manager</span> at <a href="https://unbabel.com" target="_blank" rel="noopener noreferrer" class="u-Highlight purple">Unbabel<sup class="u-NewTab">&#8599;</sup></a>.
           <br>
-          I publish regularly on <a href="https://criticalfuture.tech/" target="_blank" rel="noopener noreferrer" class="u-Highlight red">Critical Future Tech<sup class="u-NewTab">&#8599;</sup></a> and occasionally on <a href="https://medium.com/@mstrlaw" target="_blank" rel="noopener noreferrer" class="u-Highlight black">Medium<sup class="u-NewTab">&#8599;</sup></a>. I also maintain a news aggregator, <a href="https://thoro.news/" target="_blank" rel="noopener noreferrer" class="u-Highlight blue">Thoro News<sup class="u-NewTab">&#8599;</sup></a>.
+          I publish regularly on <a href="https://criticalfuture.tech/" target="_blank" rel="noopener noreferrer" class="u-Highlight red">Critical Future Tech<sup class="u-NewTab">&#8599;</sup></a> and occasionally on <a href="https://medium.com/@mstrlaw" target="_blank" rel="noopener noreferrer" class="u-Highlight black">Medium<sup class="u-NewTab">&#8599;</sup></a>.
+          <br>
+          I also maintain <a href="https://thoro.news/" target="_blank" rel="noopener noreferrer" class="u-Highlight blue">Thoro News<sup class="u-NewTab">&#8599;</sup></a>, a news aggregator.
           <br>
           <br>
         </h2>
       </div>
     </main>
+
+    <section class="c-Contacts">
+      <h2 class="c-Contacts__email" title="Please wait 5 seconds..">Drop me a line at <a id="adr" href="mailto:generating@email.com" target="_blank" rel="noopener noreferrer" class="u-Highlight black disabled">generating...</a></h2>
+      <p class="c-Contacts__extra">
+        Or find me on
+        <a href="https://www.linkedin.com/in/lawrencebraun/" target="_blank" rel="noopener noreferrer" class="u-Highlight black">LinkedIn<sup class="u-NewTab">&#8599;</sup></a>,
+        <a href="https://www.instagram.com/mstrlaw/" target="_blank" rel="noopener noreferrer" class="u-Highlight black">Instagram<sup class="u-NewTab">&#8599;</sup></a> or <a href="https://github.com/mstrlaw" target="_blank" rel="noopener noreferrer" class="u-Highlight black">GitHub<sup class="u-NewTab">&#8599;</sup></a>.
+      </p>
+    </section>
     {{!-- {{#if postlist}}
         <ul>
         {{#each posts}}
