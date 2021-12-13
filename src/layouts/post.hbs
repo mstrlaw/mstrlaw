@@ -30,12 +30,12 @@
   <div class="l-Container">
     <article class="c-Article">
       <time>{{ formattedDate date }}</time>
-      <h1 class="c-Article__title">{{ title }}</h1>
-      <br>
       {{#if thumbnail}}
+        <h1 class="c-Article__title">{{ title }}</h1>
         <img src="{{ thumbnail }}" alt="Post main image">
+      {{else}}
+        <h1 class="c-Article__title margin">{{ title }}</h1>
       {{/if}}
-      <br>
       {{{ contents }}}
     </article>
   </div>

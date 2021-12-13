@@ -1,11 +1,47 @@
 .c-Article {
   margin: 2em 0;
 
+  &__title {
+    --startColor: #726cf8 0%;
+    --endColor: #e975a8 74%;
+    background: linear-gradient(315deg, var(--startColor), var(--endColor));
+    background: -webkit-linear-gradient(315deg, var(--startColor), var(--endColor));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  time {
+    color: var(--darkGray);
+  }
+
   h1 {
     --min: 2.5em;
     --val: 5vw;
     --max: 3.5em;
     font-weight: bold;
     margin-bottom: 0;
+    &.margin {
+      margin-bottom: 1em;
+    }
+  }
+
+  h2 {
+    --min: 1.6em;
+    --val: 4vw;
+    --max: 2.6em;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    margin-bottom: 1em;
+    line-height: 1.4em;
+  }
+
+  img {
+    margin: 2em 0;
+    border-radius: 24px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
 }
