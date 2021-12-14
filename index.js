@@ -14,7 +14,7 @@ const watch = process.env.NODE_ENV === 'development';
 
 const DATA = {
   sitename: 'Lawrence B. Almeida',
-  description: 'Lawrence is a technologist that focuses on building digital products and exploring technology\'s impact on individuals and society.',
+  description: 'Lisbon based technologist focused on building digital products and exploring technology\'s impact on individuals and society.',
   location: 'Lisbon, Portugal',
 }
 

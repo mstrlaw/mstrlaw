@@ -39,7 +39,7 @@ const drawChart = (tmp, series) => {
   };
   const options = {
     fullWidth: true,
-    chartPadding: { top: 0, right: 25, left: 25, bottom: 0 },
+    chartPadding: { top: 15, right: 25, left: 25, bottom: 0 },
     axisX: {...axisMod},
     axisY: {...axisMod},
     plugins: [
