@@ -7,6 +7,14 @@
     name="description"
     content="{{ description }}"
   >
+
+  <meta property="og:title" content="{{ sitename }}">
+  <meta property="og:description" content="{{ post_description }}">
+  <meta property="og:site_name" content="{{ title }} - {{ sitename }}">
+  <meta property="og:image" content="{{ thumbnail }}">
+  <meta property="og:url" content="https://mstrlaw.com/{{ path }}">
+  <meta name="twitter:card" content="summary_large_image">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="metalsmith">
   <meta name="msapplication-TileColor" content="#ffffff">
