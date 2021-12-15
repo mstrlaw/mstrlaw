@@ -36,4 +36,10 @@ So what were the performance gains? Well, I was using <a href="https://gridsome.
 
 ![A screenshot of Chrome's Lighthouse performance tool for the Gridsome version.](/static/images/old_lighthouse-min.jpg "Lighthouse scores for the Gridsome version. Not too shabby.")
 
-<p class="u-ImageDescription"> Lighthouse scores for the Gridsome version. Not too shabby.</p>
+<p class="u-ImageDescription">Lighthouse scores for the Gridsome version. Not too shabby.</p>
+
+Yeah not bad. But the TTI was still high, floating around 2-4 seconds. Also, how much data are we downloading just for this simple website? <a href="https://tools.pingdom.com/" target="_blank">Pingdom Tools has the answer (with Tokyo as the test location):
+
+![A screenshot of Pingdom Tools website speed test tool for the Gridsome version.](/static/images/old_pingdom_tokyo-min.jpg "Pingdom Tools website speed test scores for the Gridsome version.")
+
+<p class="u-ImageDescription">Pingdom Tools website speed test scores for the Gridsome version.</p>
