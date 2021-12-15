@@ -2,7 +2,7 @@
 layout: post.hbs
 title: Time to refactor my website. Again.
 summary: >-
-  Lately I've been wanting to make my website more performant, closer to an old
+  I've had been wanting to make my website more performant, closer to an old
   school vanilla website, without any fancy frontend framework. Less is more,
   right?
 
@@ -24,8 +24,10 @@ I don't know how ofter others think about changing their websites. I wonder how 
 
 In the past, I've used my website as a business card (in a way I still do). But I've also used it as a place to test and learn new things.
 
+It's also a way of embodying minimalism, not only on a visual and design perspective, but as a whole. This means having a simpler stack too. Isn't it funny to think that a website should evolve as its owner does so too?
+
 ## The quest to zero
 
-It's also a way of embodying minimalism, not only on a look perspective but as a whole, meaning a simpler stack too. Isn't it funny to think that a website should evolve as its owner does so too?
+
 
 Anyways I've decided to moved my website from <a href="https://gridsome.org/" target="_blank">Gridsome</a> to an even more bare bones <a href="https://www.metalsmith.io/" target="_blank">Metalsmith</a>.
