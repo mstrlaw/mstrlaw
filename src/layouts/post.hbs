@@ -8,10 +8,10 @@
     content="{{ description }}"
   >
 
-  <meta property="og:title" content="{{ sitename }}">
+  <meta property="og:title" content="{{ title }} - {{ sitename }}">
   <meta property="og:description" content="{{ post_description }}">
   <meta property="og:site_name" content="{{ title }} - {{ sitename }}">
-  <meta property="og:image" content="{{ thumbnail }}">
+  <meta property="og:image" content="https://mstrlaw.com{{ thumbnail }}">
   <meta property="og:url" content="https://mstrlaw.com/{{ path }}">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -40,9 +40,11 @@
       <time>{{ formattedDate date }}</time>
       {{#if thumbnail}}
         <h1 class="c-Article__title">{{ title }}</h1>
+        <p class="c-Article__summary">{{{ summary }}}</p>
         <img src="{{ thumbnail }}" alt="Post main image">
       {{else}}
         <h1 class="c-Article__title margin">{{ title }}</h1>
+        <p class="c-Article__summary">{{{ summary }}}</p>
       {{/if}}
       {{{ contents }}}
     </article>
