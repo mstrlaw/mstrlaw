@@ -20,7 +20,7 @@ thumbnail: /static/images/metalsmith.jpg
 date: 2021-12-12T21:58:24.436Z
 description: How often should you refactor your personal website?
 ---
-I don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
+ssasI don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
 
 In the past, I've used my website as a business card (in a way I still do). But I also like to use it as a "safe space" to test and learn new things.
 
@@ -35,3 +35,5 @@ Anyways, after some research with <a href="https://github.com/myles/awesome-stat
 So what were the performance gains? Well, I was using <a href="https://gridsome.org/" target="_blank">Gridsome</a> previsouly — a very solid static generator if you want to keep it in the Vue universe — so it's not like I was in the red when it comes to web vitals, right?
 
 ![A screenshot of Chrome's Lighthouse performance tool for the Gridsome version.](/static/images/old_lighthouse-min.jpg "Lighthouse scores for the Gridsome version. Not too shabby.")
+
+<p class="u-ImageDescription"> Lighthouse scores for the Gridsome version. Not too shabby.</p>
