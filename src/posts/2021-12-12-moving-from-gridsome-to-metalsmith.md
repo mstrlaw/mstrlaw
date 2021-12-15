@@ -7,6 +7,8 @@ summary: >-
   Less is more, right?
 
 
+
+
   After all, what's a dev's website if not a reflection of what they value?
 feat_image: /static/images/metalsmith.jpg
 feat_image_alt: A person operating a wielding machine.
