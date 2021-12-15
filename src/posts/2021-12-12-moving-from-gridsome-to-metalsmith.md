@@ -3,8 +3,8 @@ layout: post.hbs
 title: Time to refactor my website. Again.
 summary: >-
   Lately I've been wanting to make my website more performant, closer to an old
-  school vanilla website, without any fancy frontend framework. Less tech bloat.
-  Less is more, right?
+  school vanilla website, without any fancy frontend framework. Less is more,
+  right?
 
 
   <br><br>
