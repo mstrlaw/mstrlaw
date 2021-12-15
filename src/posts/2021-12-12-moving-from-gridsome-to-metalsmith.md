@@ -7,7 +7,7 @@ summary: >-
   Less is more, right?
 
 
-  <br>
+  <br><br>
 
 
   After all, what's a dev's website if not a reflection of what they value?
