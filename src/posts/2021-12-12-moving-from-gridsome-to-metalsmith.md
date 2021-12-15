@@ -43,3 +43,11 @@ Yeah not bad. But the TTI was still high, floating around 2-4 seconds. Also, how
 ![A screenshot of Pingdom Tools website speed test tool for the Gridsome version.](/static/images/old_pingdom_tokyo-min.jpg "Pingdom Tools website speed test scores for the Gridsome version.")
 
 <p class="u-ImageDescription">Pingdom Tools website speed test scores for the Gridsome version.</p>
+
+An average Medium page will download some 3-4MB of data *initially.* So it's not that bad but it ain't worthy of the <a href="https://250kb.club/" target="_blank">250kb club</a>. We're also basically on a 3s load time, not ideal if you want to have that crisp instantaneous feel on your ordinary (depending on where you live) bandwidth speed.
+
+Let's look at how Metalsmith's version stacks against Gridsome's.
+
+![A screenshot of Chrome's Lighthouse performance tool metrics between the Gridsome and Metalsmith versions.](/static/images/web_vitals_diference.png "Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.")
+
+<p class="u-ImageDescription">Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.</p>
