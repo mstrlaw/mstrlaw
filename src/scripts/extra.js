@@ -11,6 +11,17 @@ const generateExtra =  () => {
   }
   document.getElementById('currentYear').innerText = new Date().getFullYear();
 }
+const setTimeAgo = () => {
+  new Promise((resolve, reject) => {
+    const dates = document.querySelectorAll('[data-timeago]')
+    dates.forEach(date => {
+      const attr = date.getAttribute('data-timeago');
+      if (!!!attr.length) return;
+      const read = date.getAttribute('data-readable');
+      date.innerHTML = `<span title="${read}">${dayjs(attr).from(dayjs())}</span>`;
+    });
+  });
+}
 const generateAdr = () => {
   const m = ['law','@m','s','t','r','law','.','co','m'].join('');
   setTimeout(() => {

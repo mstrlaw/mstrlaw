@@ -43,20 +43,6 @@ a {
   display: inline-block;
   position: relative;
   color: var(--textColor);
-  text-decoration: none;
-
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    transform: scaleX(1);
-    height: 2px;
-    background-color: var(--textColor);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
 }
 
 // Used to denote links opening in new tab

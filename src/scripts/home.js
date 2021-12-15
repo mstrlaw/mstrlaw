@@ -54,6 +54,12 @@ const drawChart = (tmp, series) => {
 window.onload = async () => {
   await injectScript('//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js');
   await injectScript('//cdn.jsdelivr.net/npm/chartist-plugin-pointlabels@0.0.6/dist/chartist-plugin-pointlabels.min.js');
+  await injectScript('//cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js');
+  await injectScript('//cdn.jsdelivr.net/npm/dayjs@1.10.4/plugin/relativeTime.min.js');
+  dayjs.extend(window.dayjs_plugin_relativeTime);
+
+  setTimeAgo();
+
   const dataRequest = loadChartData();
   let tmp = {};
   let series = [];

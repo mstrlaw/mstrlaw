@@ -9,6 +9,7 @@ const discoverPartials = require('metalsmith-discover-partials');
 const msIf = require('metalsmith-if');
 const uglify = require('metalsmith-uglify');
 const assets = require( 'metalsmith-assets-copy' );
+const xhandlebars = require('metalsmith-handlebars-x');
 
 const watch = process.env.NODE_ENV === 'development';
 
@@ -37,6 +38,14 @@ Metalsmith(__dirname)
   .use(discoverPartials({
     directory: './src/partials/',
     pattern: /\.hbs$/
+  }))
+  .use(xhandlebars({
+    helpers: {
+      formatDate: (date) => {
+        if (typeof date === 'undefined') return;
+        return `${date.getDate()} ${date.toLocaleString('en-us', { month: 'short' })} ${date.getFullYear()}`;
+      }
+    },
   }))
   .use(layouts({
     directory: './src/layouts',

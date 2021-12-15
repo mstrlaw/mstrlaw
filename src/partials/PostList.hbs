@@ -1,0 +1,21 @@
+{{#if postlist}}
+<section class="c-Timeline__wrapper">
+  <ul class="c-Timeline">
+    {{#each posts}}
+      <li class="c-Timeline__container">
+        <div class="c-Timeline__item">
+          <a href="/{{ path }}" class="c-Timeline__itemTitle">
+            {{ title }}
+          </a>
+          <time class="c-Timeline__itemDate" datetime="{{publishDate}}" data-readable="{{formatDate publish_date}}" data-timeago="{{update_date}}">
+            {{ formatDate publish_date }}
+          </time>
+          {{!-- <p class="c-Timeline__description">
+
+          </p> --}}
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}

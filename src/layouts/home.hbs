@@ -25,6 +25,7 @@
 
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
+  <link rel="stylesheet" href="/styles/timeline.css" async>
   <link rel="stylesheet" href="/styles/footer.css" async>
   <link rel="stylesheet" href="/styles/chart.css" async>
   <link rel="preload" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -60,15 +61,7 @@
       </div>
     </main>
 
-    {{#if postlist}}
-      <ul>
-      {{#each posts}}
-        <li>
-          <a href="/{{ path }}">{{ title }}</a>
-        </li>
-      {{/each}}
-      </ul>
-    {{/if}}
+    {{> PostList }}
 
     <section class="c-Contacts">
       <h2 id="cont" class="c-Contacts__email" title="Please wait 5 seconds..">Drop me a line at <a id="adr" href="mailto:bot-honeypot@gmail.com" target="_blank" rel="noopener noreferrer" class="u-Highlight black disabled">generating...</a></h2>

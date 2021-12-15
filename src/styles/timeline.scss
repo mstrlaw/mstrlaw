@@ -1,0 +1,71 @@
+.c-Timeline {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 0 3em 0;
+  --min: 1.2em;
+  --val: 2.5vw;
+  --max: 1.4em;
+
+  &__wrapper {
+    position: relative;
+    min-height: 40vh;
+  }
+
+  &__container {
+    position: relative;
+    display: block;
+    padding: 0;
+    // margin-left: 1rem;
+    // padding-bottom: 1rem;
+    min-height: 5em;
+
+    &:first-child {
+      padding-bottom: 0rem;
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: '';
+      display: block;
+      width: 2px;
+      height: 100%;
+      background: var(--darkGray);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 2px;
+      left: -6px;
+      width: 14px;
+      height: 14px;
+      background: var(--darkGray);
+      border: 2px solid var(--white);
+      border-radius: 50%;
+    }
+  }
+
+  &__item {
+    height: 100%;
+    padding: 0 1rem;
+  }
+
+  &__itemTitle {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    font-weight: 300;
+    text-decoration-color: var(--darkBlue);
+  }
+  &__itemDate {
+    font-size: .8rem;
+  }
+  &__description {
+    font-size: 1rem;
+    margin: .5rem 0 1rem;
+  }
+}
