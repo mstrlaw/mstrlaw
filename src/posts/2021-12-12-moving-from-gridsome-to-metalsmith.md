@@ -22,12 +22,16 @@ description: How often should you refactor your personal website?
 ---
 I don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
 
-In the past, I've used my website as a business card (in a way I still do). But I've also used it as a place to test and learn new things.
+In the past, I've used my website as a business card (in a way I still do). But I also like to use it as a "safe space" to test and learn new things.
 
-It's also a way of embodying minimalism, not only on a visual and design perspective, but as a whole. This means having a simpler stack too. Isn't it funny to think that a website should evolve as its owner does so too?
+I want it to embody minimalism, not only visually, but as a whole. This means having a simpler stack too. Isn't it funny to think that a web app could evolve as its owner does so too?
+
+## Choosing a stack
+
+Anyways, after some research with <a href="https://github.com/myles/awesome-static-generators" target="_blank">this list of static site generators</a> as my starting point, I decided to go with <a href="https://www.metalsmith.io/" target="_blank">Metalsmith</a>. It is quite bare bone but extensible enough so that you get layout, templates, and other plugins that turn it into a pretty decent developer experience. Check out <a href="https://github.com/mstrlaw/mstrlaw" target="_blank">the repo</a> if you wanna spin it and use as your own.
 
 ## The quest to zero
 
+So what were the performance gains? Well, I was using <a href="https://gridsome.org/" target="_blank">Gridsome</a> previsouly — a very solid static generator if you want to keep it in the Vue universe — so it's not like I was in the red when it comes to web vitals, right?
 
-
-Anyways I've decided to moved my website from <a href="https://gridsome.org/" target="_blank">Gridsome</a> to an even more bare bones <a href="https://www.metalsmith.io/" target="_blank">Metalsmith</a>.
+![A screenshot of Chrome's Lighthouse performance tool for the Gridsome version.](/static/images/old_lighthouse-min.jpg "Lighthouse scores for the Gridsome version. Not too shabby.")
