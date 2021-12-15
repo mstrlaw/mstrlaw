@@ -6,10 +6,9 @@
 
   &__nav {
     a {
-      display: inline-flex;
+      display: inline-block;
       font-size: 1.4em;
       line-height: 1.6em;
-      color: #000;
 
       .u-NewTab {
         font-family: monospace;
