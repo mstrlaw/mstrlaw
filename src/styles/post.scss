@@ -1,4 +1,4 @@
-.c-Article {
+.c-Post {
   margin: 2em 0;
 
   &__title {
@@ -42,10 +42,31 @@
   p {
     margin-bottom: 1em;
     line-height: 1.4em;
+
+    &.u-ImageDescription {
+      margin-top: -2.4em;
+      margin-bottom: 2.6em;
+      padding-left: .5em;
+      font-size: 100%;
+      color: var(--darkGray);
+      text-align: center;
+    }
+  }
+
+  hr {
+    --startColor: #726cf8 0%;
+    --endColor: #e975a8 74%;
+    height: 4px;
+    border-width: 0;
+    color: gray;
+    background: -webkit-linear-gradient(315deg, var(--startColor), var(--endColor));
+    margin: 2em auto;
+    width: 150px;
+    border-radius: 3px;
   }
 
   img {
-    margin: 2em 0;
+    margin: 2.6em 0;
     border-radius: 24px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }

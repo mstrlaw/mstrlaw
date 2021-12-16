@@ -36,15 +36,15 @@
 <body>
   {{> Header }}
   <div class="l-Container">
-    <article class="c-Article">
+    <article class="c-Post">
       <time>{{ formattedDate date }}</time>
       {{#if thumbnail}}
-        <h1 class="c-Article__title">{{ title }}</h1>
-        <p class="c-Article__summary">{{{ summary }}}</p>
+        <h1 class="c-Post__title">{{ title }}</h1>
+        <p class="c-Post__summary">{{{ summary }}}</p>
         <img src="{{ thumbnail }}" alt="Post main image">
       {{else}}
-        <h1 class="c-Article__title margin">{{ title }}</h1>
-        <p class="c-Article__summary">{{{ summary }}}</p>
+        <h1 class="c-Post__title margin">{{ title }}</h1>
+        <p class="c-Post__summary">{{{ summary }}}</p>
       {{/if}}
       {{{ contents }}}
     </article>
