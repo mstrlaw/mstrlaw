@@ -20,7 +20,7 @@ thumbnail: /static/images/metalsmith.jpg
 date: 2021-12-12T21:58:24.436Z
 description: How often should you refactor your personal website?
 ---
-ssasI don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
+I don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
 
 In the past, I've used my website as a business card (in a way I still do). But I also like to use it as a "safe space" to test and learn new things.
 
@@ -75,6 +75,8 @@ Granted, bits of text information from the previous version were removed from th
 <p class="u-ImageDescription">Lighthouse performance tool metrics between for this page.</p>
 
 Not that bad.
+
+<br>
 
 And the only reason we're not hitting 100% on Best Practices (93) is because we're only providing JPEG/PNG images and not WebP (even though assets were manually compressed). 
 
