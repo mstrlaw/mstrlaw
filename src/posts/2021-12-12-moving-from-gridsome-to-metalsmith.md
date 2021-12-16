@@ -1,16 +1,9 @@
 ---
 layout: post.hbs
 title: Time to refactor my website. Again.
-summary: >-
-  I've had been wanting to make my website more performant, closer to an old
-  school vanilla website, without any fancy frontend framework. Less is more,
-  right?
-
-
-  <br><br>
-
-
-  After all, what's a dev's website if not a reflection of what they value?
+summary: I've had been wanting to make my website more performant, closer to an
+  old school vanilla website, without any fancy frontend framework. Less is
+  more, right?
 feat_image: /static/images/metalsmith.jpg
 feat_image_alt: A person operating a wielding machine.
 publish_date: 2021-12-14T00:06:06.391Z
@@ -88,8 +81,12 @@ We're also not lazy loading assets or providing an opt-in asset download approac
 
 Load time is definitely not terrible.
 
-<hr>
-
 As for implementing lazy loading, this will likely require a custom NetlifyCSM widget, some code to tell Metalsmith how to compile the markdown to HTML and some custom JS to make use of the IntersectionObserver API to implement the lazy load mechanism itself.
 
 For now, that'll need to wait.
+
+<hr>
+
+So here's to a weekend hacking away the 3rd version of my website. Pretty happy with the improvements. It's not insane, but it's on the right track.
+
+After all, what's a dev's website if not a reflection of what they value?
