@@ -20,7 +20,7 @@ thumbnail: /static/images/metalsmith.jpg
 date: 2021-12-12T21:58:24.436Z
 description: How often should you refactor your personal website?
 ---
-I don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
+ssasI don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
 
 In the past, I've used my website as a business card (in a way I still do). But I also like to use it as a "safe space" to test and learn new things.
 
@@ -28,7 +28,7 @@ I want it to embody minimalism, not only visually, but as a whole. This means ha
 
 ## Choosing a stack
 
-Anyways, after some research with <a href="https://github.com/myles/awesome-static-generators" target="_blank">this list of static site generators</a> as my starting point, I decided to go with <a href="https://www.metalsmith.io/" target="_blank">Metalsmith</a>. It is quite bare bone but extensible enough so that you get layout, templates, and other plugins that turn it into a pretty decent developer experience. Check out <a href="https://github.com/mstrlaw/mstrlaw" target="_blank">the repo</a> if you wanna spin it and use as your own.
+Anyways, after some research with <a href="https://github.com/myles/awesome-static-generators" target="_blank">this list of static site generators</a> as my starting point, I decided to go with <a href="https://www.metalsmith.io/" target="_blank">Metalsmith</a>. It is quite bare bone but extensible enough so that you get layout, templates, and other plugins that turn it into a pretty decent developer experience. Check out <a href="https://github.com/mstrlaw/mstrlaw" target="_blank">the repo</a> if you wanna spin it and use for yourself.
 
 ## The quest to zero
 
@@ -54,10 +54,20 @@ Let's look at how Metalsmith's version stacks against Gridsome's.
 
 <p class="u-ImageDescription">Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.</p>
 
-TTI was reduced by ≈43% and Blocking Time to 0. The Speed Index (how quickly content is visually displayed during page load) has improved too by ≈58% — all of these imperative for the perceived (and real) speed.
+TTI was reduced by ≈43% and Blocking Time to 0. The <a href="https://web.dev/speed-index/" target="_blank">Speed Index</a> (speed at which the user can see something) has improved too by ≈58% — all of these imperative for the perceived (and real) speed.
 
 We've shaved milliseconds almost everywhere, understandable as we've reduced our total amount of JS, CSS and HTML in use. So how much are we downloading right now?
 
 ![A screenshot of Pingdom Tools website speed test tool for the Metalsmith version.](/static/images/new_pingdom_tokyp.jpg "Pingdom Tools website speed test scores for the Metalsmith version.")
 
 <p class="u-ImageDescription">Pingdom Tools website speed test scores for the Metalsmith version.</p>
+
+Well, we've managed to get a 6.5x reduction in the page size, from 360kb to 55kb. That's pretty cool! And expectedly, load time is now 1.82s, down 1 second from the initial 2.79s.
+
+Granted, bits of text information from the previous version were removed from the homepage that we're testing, but that doesn't explain the 305kb less. All right so what about this current page? What's its score?
+
+![A screenshot of Chrome's Lighthouse performance tool metrics between for this page.](/static/images/new_post_lighthouse.jpg "Lighthouse performance tool metrics between for this page.")
+
+Not that bad. And the only reason we're not hitting 100% on Best Practices (93) is because we're only providing JPEG/PNG images and not WebP. We're also not lazy loading assets, meaning that we're downloading all of those at once, hence having a download of 
+
+<hr>
