@@ -68,6 +68,22 @@ Granted, bits of text information from the previous version were removed from th
 
 ![A screenshot of Chrome's Lighthouse performance tool metrics between for this page.](/static/images/new_post_lighthouse.jpg "Lighthouse performance tool metrics between for this page.")
 
-Not that bad. And the only reason we're not hitting 100% on Best Practices (93) is because we're only providing JPEG/PNG images and not WebP. We're also not lazy loading assets, meaning that we're downloading all of those at once, hence having a download of 
+<p class="u-ImageDescription">Lighthouse performance tool metrics between for this page.</p>
+
+Not that bad.
+
+And the only reason we're not hitting 100% on Best Practices (93) is because we're only providing JPEG/PNG images and not WebP (even though assets were manually compressed). 
+
+We're also not lazy loading assets or providing an opt-in asset download approach, meaning we're downloading all of those at once, hence having a page download of about 600kb as soon as we land.
+
+![A screenshot of Pingdom Tools website speed test tool for this page version.](/static/images/new_post_pingdom.jpg "Pingdom Tools website speed test scores for this page.")
+
+<p class="u-ImageDescription">Pingdom Tools website speed test scores for this page.</p>
+
+Load time is definitely not terrible.
 
 <hr>
+
+As for implementing lazy loading, this will likely require a custom NetlifyCSM widget, some code to tell Metalsmith how to compile the markdown to HTML and some custom JS to make use of the IntersectionObserver API to implement the lazy load mechanism itself.
+
+For now, that'll need to wait.
