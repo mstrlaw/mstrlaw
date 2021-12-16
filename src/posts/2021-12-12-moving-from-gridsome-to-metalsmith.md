@@ -44,7 +44,11 @@ Yeah not bad. But the TTI was still high, floating around 2-4 seconds. Also, how
 
 <p class="u-ImageDescription">Pingdom Tools website speed test scores for the Gridsome version.</p>
 
-An average Medium page will download some 3-4MB of data *initially.* So it's not that bad but it ain't worthy of the <a href="https://250kb.club/" target="_blank">250kb club</a>. We're also basically hitting 3s load time, not ideal if you want to have that crisp instantaneous feel on your ordinary (depending on where you live) bandwidth speed.
+An average Medium page can download some 3-4MB of data *initially.*
+
+We're not there, but it's not worthy of the <a href="https://250kb.club/" target="_blank">250kb club</a> too.
+
+We're also basically hitting a 3s load time, not ideal if you want to have that crisp instantaneous feel on your ordinary (depending on where you live) bandwidth speed.
 
 <hr>
 
