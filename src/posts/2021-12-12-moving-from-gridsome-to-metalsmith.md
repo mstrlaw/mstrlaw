@@ -63,9 +63,9 @@ Well, we've managed to get a 6.5x reduction in the page size, from 360kb to 55kb
 
 Granted, bits of text information from the previous version were removed from the homepage that we're testing, but that doesn't explain the 305kb less. All right so what about this current page? What's its score?
 
-![A screenshot of Chrome's Lighthouse performance tool metrics between for this page.](/static/images/new_post_lighthouse.jpg "Lighthouse performance tool metrics between for this page.")
+![A screenshot of Chrome's Lighthouse performance tool metrics between for this page.](/static/images/new_post_lighthouse.jpg "Lighthouse performance tool metrics for this page.")
 
-<p class="u-ImageDescription">Lighthouse performance tool metrics between for this page.</p>
+<p class="u-ImageDescription">Lighthouse performance tool metrics for this page.</p>
 
 Not that bad.
 
@@ -81,12 +81,14 @@ We're also not lazy loading assets or providing an opt-in asset download approac
 
 Load time is definitely not terrible.
 
-As for implementing lazy loading, this will likely require a custom NetlifyCSM widget, some code to tell Metalsmith how to compile the markdown to HTML and some custom JS to make use of the IntersectionObserver API to implement the lazy load mechanism itself.
+As for implementing lazy loading, this will likely require a custom NetlifyCMS widget, some code to tell Metalsmith how to compile the markdown to HTML and some custom JS to make use of the IntersectionObserver API to implement the lazy load mechanism itself.
 
 For now, that'll need to wait.
 
 <hr>
 
 So here's to a weekend hacking away the 3rd version of my website. Pretty happy with the improvements. It's not insane, but it's on the right track.
+
+<br>
 
 After all, what's a dev's website if not a reflection of what they value?
