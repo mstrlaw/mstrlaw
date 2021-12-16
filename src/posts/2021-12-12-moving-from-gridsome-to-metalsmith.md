@@ -53,3 +53,11 @@ Let's look at how Metalsmith's version stacks against Gridsome's.
 ![A screenshot of Chrome's Lighthouse performance tool metrics between the Gridsome and Metalsmith versions.](/static/images/web_vitals_diference.png "Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.")
 
 <p class="u-ImageDescription">Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.</p>
+
+TTI was reduced by ≈43% and Blocking Time to 0. The Speed Index (speed at which the user can see something) has improved too by ≈58% — all of these imperative for the perceived (and real) speed.
+
+We've shaved milliseconds almost everywhere, understandable as we've reduced our total amount of JS, CSS and HTML in use. So how much are we downloading right now?
+
+![A screenshot of Pingdom Tools website speed test tool for the Metalsmith version.](/static/images/new_pingdom_tokyp.jpg "Pingdom Tools website speed test scores for the Metalsmith version.")
+
+<p class="u-ImageDescription">Pingdom Tools website speed test scores for the Metalsmith version.</p>
