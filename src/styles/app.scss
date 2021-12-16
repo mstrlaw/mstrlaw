@@ -34,9 +34,13 @@ h2 {
   --max: 2em;
 }
 p {
-  --min: 1em;
+  --min: 1.25em;
   --val: 2.5vw;
-  --max: 1.2em;
+  --max: 1.6em;
+  @media #{$desktop} {
+    --min: 1em;
+    --max: 1.2em;
+  }
 }
 
 a {
