@@ -20,7 +20,7 @@ thumbnail: /static/images/metalsmith.jpg
 date: 2021-12-12T21:58:24.436Z
 description: How often should you refactor your personal website?
 ---
-ssasI don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
+I don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
 
 In the past, I've used my website as a business card (in a way I still do). But I also like to use it as a "safe space" to test and learn new things.
 
@@ -54,12 +54,10 @@ Let's look at how Metalsmith's version stacks against Gridsome's.
 
 <p class="u-ImageDescription">Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.</p>
 
-TTI was reduced by ≈43% and Blocking Time to 0. The <a href="https://web.dev/speed-index/" target="_blank">Speed Index</a> (speed at which the user can see something) has improved too by ≈58% — all of these imperative for the perceived (and real) speed.
+TTI was reduced by ≈43% and Blocking Time to 0. The Speed Index (how quickly content is visually displayed during page load) has improved too by ≈58% — all of these imperative for the perceived (and real) speed.
 
 We've shaved milliseconds almost everywhere, understandable as we've reduced our total amount of JS, CSS and HTML in use. So how much are we downloading right now?
 
 ![A screenshot of Pingdom Tools website speed test tool for the Metalsmith version.](/static/images/new_pingdom_tokyp.jpg "Pingdom Tools website speed test scores for the Metalsmith version.")
 
 <p class="u-ImageDescription">Pingdom Tools website speed test scores for the Metalsmith version.</p>
-
-Well, we've managed to get a 6.5x reduction in the page size, from 360kb to 55kb. That's pretty cool! And expectedly, load time is now 1.82s, down 1 second from the initial 2.79s.
