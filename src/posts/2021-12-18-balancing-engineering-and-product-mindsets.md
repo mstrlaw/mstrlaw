@@ -67,6 +67,8 @@ But more concretely, when you’re being asked to participate in a discovery pha
 
 As the assessing engineer, you’ll be required to have some rationale to justify why one thing may or may not be doable. And for that, it’s best for you to have some ground to support your opinion.
 
+![A triangle with the words Scope, Time and Cost in each corner.](/static/images/constraints.png "Classic constraints model of project management.")
+
 <p class="u-ImageDescription">Classic constraints model of project management.</p>
 
 Thinking in terms of [](https://en.wikipedia.org/wiki/Project_management_triangle#Activity_resource_estimating)<a href="https://en.wikipedia.org/wiki/Project_management_triangle#Activity_resource_estimating" target="_blank">project management constraints</a> is a great starting point.
