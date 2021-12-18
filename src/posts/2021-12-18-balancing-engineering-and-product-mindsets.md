@@ -104,3 +104,22 @@ Developers with a high degree of creativity and autonomy are essential to a high
 Coming back to the knowledge quadrant, a tech lead (and team) that is knowledgeable about the business and shares a product mindset is better prepared to understand why a new feature may be more important than another.
 
 </section>
+
+### Time
+
+When it comes to time constraints, we can think in terms of accumulation — like the time required by someone or a team to deliver something — and in terms of a point in time — like an agreed date (deadline) to ship a feature to any particular stakeholder.
+
+Both are related and influence each other but one will usually determine the other. For instance, company yearly OKRs act as internal deadlines, where we’ll need to show deliverables that contribute to those. Compromises with important customers, partners or PR events also create deadlines. Finally, there can also be intra-team deadlines from when a team expects you to deliver something they depend on.
+
+On the other hand, some things simply need time to be done no matter when the company wishes to have it delivered. In that case, it’s the development time that drives the deadline and that’s why having an idea of how long your deliverables may take is important. It helps at setting deadlines on when certain results can be achieved and provides a way to manage expectations.\
+For instance the sales and marketing departments may need to know those in order to plan their communication and go-to-market strategies.
+
+Most of the time though we may have a hard deadline that can’t be missed, constraining the available time to deliver. In those cases we can “buy time” by tweaking the two other constraints. We can:
+
+1. **negotiate the scope** by re-prioritizing other requirements or shifting them to another release (change scope);
+2. **add resources** to the team by either hiring (change costs);
+3. **use available technology** that can speed up the delivery, such as open-source or by acquiring commercial licenses (change costs);
+
+Which one(s) to go for depend on multiple factors: can other teams lose a resource? Do we have the cash to hire people or buy the license for a specific piece of software? Negotiating these will involve the approval of internal stakeholders so the more you understand your product’s users and the business as a whole the better you can make a compelling case to negotiate those constraints.
+
+Finally, but not less important: when working with a team, don’t assume the time or effort to deliver something on their behalf. Involve them in the discovery phase to allow the team to better assimilate the requirements, assess the effort realistically and get skin in the game.
