@@ -140,3 +140,18 @@ For instance when determining the stack to use for a certain project or feature:
 * Are we able to use a stack that is challenging and enticing enough for top engineers to work on to keep them engaged and stimulated?
 
 These are some of the things to look at that can affect costs, usually by increasing the effort and time to deliver something which, ultimately, delays sales and hurts our revenue.
+
+<hr>
+
+While conceptualizing a data visualization UI for [](https://web.archive.org/web/20210522120228/https://unbabel.com/portal/)<a href="https://web.archive.org/web/20210522120228/https://unbabel.com/portal/" target="_blank">Unbabel's Portal</a>, all of the above constraints had to be equated.
+
+The challenge was to deliver an innovative and compelling experience that would allow customers to visualize and understand the whole translation layer provided by Unbabel. The product manager and designer worked closely, envisioning data flowing in real-time across information nodes with the ability to drill down on multiple areas of the interface. We also wanted it to have smooth transitions and delightful animations.
+
+It became clear that some serious custom development would be needed to deliver this vision and we were only talking about one of the many sections of the product needed to have (we had dozens more interfaces to work on).
+
+Something along the lines of <a href="https://d3js.org/" target="_blank">D3.js</a> would be the best choice in terms of versatility, customization and performance but unfortunately it has a steep learning curve. We didn’t have any frontend developer that could be fully dedicated at learning it with the required depth to achieve the desired experience.
+
+Was it worth hiring a new resource with knowledge in dataviz that could work on this? How about hiring a freelancer to focus on it? Truth be told, we weren’t certain on the value that this interface would bring to our users. It was meant to act both as a “wow-moment” and as a way to differentiate us from others, but how much were we willing to invest in order to assess the value of this interface?
+
+Alternatively, what chart libraries were out there that could be used to achieve the visualizations we had in mind? I researched open sourced ones but as expected they couldn’t be customized much. I ended up finding a paid solution that did provide many more charts than the classic ones and was fairly extendable. Unfortunately none could achieve precisely what we had in mind, but there were some interesting candidates.\
+I presented this to the product manager as a halfway compromise: we could do appealing visualizations with good performance and fairly quickly but we’d need to change the visual concepts we had in mind and we’d need to pay for a license in order to use it.
