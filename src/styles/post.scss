@@ -2,6 +2,7 @@
 
 .c-Post {
   margin: 2em 0;
+  padding-bottom: 4em;
 
   &__title {
     --startColor: #726cf8 0%;
@@ -42,6 +43,27 @@
     margin-bottom: 0.3em;
   }
 
+  h3 {
+    --min: 1.2em;
+    --val: 4vw;
+    --max: 2em;
+    font-weight: normal;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+  }
+
+  li {
+    line-height: 1.4em;
+    --min: 1.2em;
+    --val: 2.5vw;
+    --max: 1.4em;
+
+    @media #{$tablet} {
+      --min: 1em;
+      --max: 1.2em;
+    }
+  }
+
   p {
     margin-bottom: 1em;
     line-height: 1.4em;
@@ -54,8 +76,8 @@
       --max: 1.2em;
     }
 
-    &.u-ImageDescription {
-      margin-top: -2.4em;
+    &.u-ImageDescription, .description {
+      margin-top: -3.2em;
       margin-bottom: 2.6em;
       padding-left: .5em;
       font-size: 100%;
@@ -69,15 +91,42 @@
     --endColor: #e975a8 74%;
     height: 4px;
     border-width: 0;
+    border-radius: 3px;
+    margin: 4em auto;
     color: gray;
     background: -webkit-linear-gradient(315deg, var(--startColor), var(--endColor));
-    margin: 2em auto;
     width: 150px;
-    border-radius: 3px;
+  }
+
+  section {
+    position: relative;
+    margin: 4em auto;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    &:before {
+      --startColor: #726cf8 0%;
+      --endColor: #e975a8 74%;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 4px;
+      border-width: 0;
+      border-radius: 3px;
+      color: gray;
+      background: -webkit-linear-gradient(315deg, var(--startColor), var(--endColor));
+      height: 100%;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   img {
-    margin: 2.6em 0;
+    margin: 4em auto;
     border-radius: 24px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }

@@ -37,11 +37,11 @@
   {{> Header }}
   <div class="l-Container">
     <article class="c-Post">
-      <time>{{ formattedDate date }}</time>
-      {{#if thumbnail}}
+      <time>{{ formattedDate publish_date }}</time>
+      {{#if feat_image}}
         <h1 class="c-Post__title">{{ title }}</h1>
         <p class="c-Post__summary">{{{ summary }}}</p>
-        <img src="{{ thumbnail }}" alt="Post main image">
+        <img src="{{ feat_image }}" alt="Post main image">
       {{else}}
         <h1 class="c-Post__title margin">{{ title }}</h1>
         <p class="c-Post__summary">{{{ summary }}}</p>
