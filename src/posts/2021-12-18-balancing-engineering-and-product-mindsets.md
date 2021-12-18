@@ -79,3 +79,9 @@ Again, tradeoffs. Your goal as the tech lead is to assess the problem and provid
 <br>
 
 Now, the interpretation of what each constraint holds and their relative importance will differ depending on the client, company, market and experience of the people you’re working with as well as your own experience and knowledge of the business.
+
+**Scope**
+The scope of work to be done can change depending on who you’re talking to, but as the person leading the technical implementation, you’ll need to agree on concrete things that you and your team will work on.
+
+
+That can be derived from <a href="https://en.wikipedia.org/wiki/User_story" target="_blank">user stories</a>. More specifically, the set of features and requirements that need to be built and delivered. From there, some may be imperative to be done while others can be secondary or pushed to another release. It really depends on the context so it’s important to agree on which ones are critical and which ones aren’t so that you know what can be shuffled around or prioritized according to the other two constraints.
