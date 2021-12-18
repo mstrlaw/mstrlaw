@@ -66,3 +66,5 @@ As mentioned above, tech leads need to have a good knowledge of their technical 
 But more concretely, when you’re being asked to participate in a discovery phase, what is being sough from you is an assessment on the feasibility of the ideas that are being tossed around: can you and/or the team build it? How long will it take? Are there internal or external dependencies? What are the easy and hard parts of it? What is it that we don’t know we don’t know?
 
 As the assessing engineer, you’ll be required to have some rationale to justify why one thing may or may not be doable. And for that, it’s best for you to have some ground to support your opinion.
+
+<p class="u-ImageDescription">Classic constraints model of project management.</p>
