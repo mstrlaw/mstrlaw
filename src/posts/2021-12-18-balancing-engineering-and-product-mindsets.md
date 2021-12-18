@@ -82,9 +82,9 @@ Again, tradeoffs. Your goal as the tech lead is to assess the problem and provid
 
 Now, the interpretation of what each constraint holds and their relative importance will differ depending on the client, company, market and experience of the people you’re working with as well as your own experience and knowledge of the business.
 
-**Scope**
-The scope of work to be done can change depending on who you’re talking to, but as the person leading the technical implementation, you’ll need to agree on concrete things that you and your team will work on.
+### Scope
 
+The scope of work to be done can change depending on who you’re talking to, but as the person leading the technical implementation, you’ll need to agree on concrete things that you and your team will work on.
 
 That can be derived from <a href="https://en.wikipedia.org/wiki/User_story" target="_blank">user stories</a>. More specifically, the set of features and requirements that need to be built and delivered. From there, some may be imperative to be done while others can be secondary or pushed to another release. It really depends on the context so it’s important to agree on which ones are critical and which ones aren’t so that you know what can be shuffled around or prioritized according to the other two constraints.
 
@@ -94,16 +94,12 @@ That can be derived from <a href="https://en.wikipedia.org/wiki/User_story" targ
 
 Usually a combination of vague requirements description and weak change control.
 
-
 The former is avoided by ensuring there’s a strong exploratory phase involving key people from product, design and engineering in order to generate good enough written requirements (user stories, documentation, architecture diagrams, etc).
-
 
 Change control is, in my opinion, the hardest to tackle. A lot of <a href="https://en.wikipedia.org/wiki/Scope_creep" target="_blank">scope creep</a> originates from product demos with clients and stakeholders. Requests for new features must be handled tactfully. Stakeholders are not all equal and there are times where a sales team will agree on delivering something in order to close an important deal with a strategic client. Every case is different.
 
-
 Note that it’s not only clients or sales that can change the scope.
 Developers with a high degree of creativity and autonomy are essential to a high-performing team but they can introduce features that add to a solution’s complexity and therefore maintainability (in this case it’s the scope’s maintainability that changes). A healthy code review culture can help mitigate these.
-
 
 Coming back to the knowledge quadrant, a tech lead (and team) that is knowledgeable about the business and shares a product mindset is better prepared to understand why a new feature may be more important than another.
 
