@@ -161,3 +161,12 @@ I presented this to the product manager as a halfway compromise: we could do app
 After experimenting and tweaking the design concepts with what the library allowed for, it was deemed that this would be the best way forward, for now. We got approval to acquire a license for it and got to work. It allowed us to deliver the interface on time while not incurring costs of hiring or shifting resources from another team. We did have to compromise on the initial experience we had in mind, but that’s how tradeoffs work.
 
 <hr>
+
+## Final Thoughts
+
+Even though this piece is more geared towards tech people, the same roughly applies to the other mentioned roles. The idea here is that product managers, designers and tech leads must be willing to dip their toes into each other’s areas in order to be more complete professionals.\
+It’s easier to convey your side of the story if you know how to frame it in a way that the other party can understand.
+
+Communicate continuously with the product manager, designer and the team as a whole. So many misunderstandings arise from assuming what was meant. Be skeptical of your interpretations. Ask questions and communicate back what you understood through hypothetical scenarios and user stories. Don’t be afraid to look foolish by asking for clarification
+
+Finally, respectfully point out when processes or hierarchies are hindering your ability to deliver but always make sure to bring suggestions on how to improve those — people will be more receptive of your critique if you also have solutions thought out.
