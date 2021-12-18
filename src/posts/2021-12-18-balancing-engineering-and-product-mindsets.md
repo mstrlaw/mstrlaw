@@ -155,3 +155,9 @@ Was it worth hiring a new resource with knowledge in dataviz that could work on 
 
 Alternatively, what chart libraries were out there that could be used to achieve the visualizations we had in mind? I researched open sourced ones but as expected they couldn’t be customized much. I ended up finding a paid solution that did provide many more charts than the classic ones and was fairly extendable. Unfortunately none could achieve precisely what we had in mind, but there were some interesting candidates.\
 I presented this to the product manager as a halfway compromise: we could do appealing visualizations with good performance and fairly quickly but we’d need to change the visual concepts we had in mind and we’d need to pay for a license in order to use it.
+
+![An animated gif representing the language brain charts ](/static/images/language_brain.gif "The Language Brain page showing the distribution of translations.")
+
+After experimenting and tweaking the design concepts with what the library allowed for, it was deemed that this would be the best way forward, for now. We got approval to acquire a license for it and got to work. It allowed us to deliver the interface on time while not incurring costs of hiring or shifting resources from another team. We did have to compromise on the initial experience we had in mind, but that’s how tradeoffs work.
+
+<hr>
