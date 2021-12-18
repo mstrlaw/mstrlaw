@@ -54,3 +54,15 @@ After validating these, I sat down with the designer to think on how we’d chan
 ![A line chart displaying the evolution of the automatic language detection versus mouse clicks versus keyboard shortcut.](/static/images/mixpanel_feature_tracking.png "Usage of the automatic language detection Vs. mouse clicks Vs. keyboard shortcut.")
 
 <p class="u-ImageDescription">Usage of the automatic language detection Vs. mouse clicks Vs. keyboard shortcut.</p>
+
+After this joint effort, we incrementally released the feature to our users and observed its adoption. It wasn’t a flop but it also wasn’t the success we had hoped for. Turns out many users had perfected their workflow over time and were simply faster at completing their work that way than changing it to use the new feature (there were also other factors, such as detection latency from network roundtrips).
+
+Nonetheless, I think it is a great example of the dynamics that can arise when engineers understand their products’ users and leverage on available systems from within their organization.
+
+## Delivery is About Managing Tradeoffs
+
+As mentioned above, tech leads need to have a good knowledge of their technical stack but also know enough about the business, use case and customer persona in order to better emphasize with the problem. Combined, these enhance the likelihood of coming up with good solutions and anticipate issues better than non-technical people.
+
+But more concretely, when you’re being asked to participate in a discovery phase, what is being sough from you is an assessment on the feasibility of the ideas that are being tossed around: can you and/or the team build it? How long will it take? Are there internal or external dependencies? What are the easy and hard parts of it? What is it that we don’t know we don’t know?
+
+As the assessing engineer, you’ll be required to have some rationale to justify why one thing may or may not be doable. And for that, it’s best for you to have some ground to support your opinion.
