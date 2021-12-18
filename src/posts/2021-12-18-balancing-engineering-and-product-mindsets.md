@@ -68,3 +68,14 @@ But more concretely, when you’re being asked to participate in a discovery pha
 As the assessing engineer, you’ll be required to have some rationale to justify why one thing may or may not be doable. And for that, it’s best for you to have some ground to support your opinion.
 
 <p class="u-ImageDescription">Classic constraints model of project management.</p>
+
+Thinking in terms of [](https://en.wikipedia.org/wiki/Project_management_triangle#Activity_resource_estimating)<a href="https://en.wikipedia.org/wiki/Project_management_triangle#Activity_resource_estimating" target="_blank">project management constraints</a> is a great starting point.
+
+Some people don’t like the term “project management” because of the usual process overhead that it can bring (and the word *management*). Rest assured, in this case we’re only interested in a framework to guide our thoughts to assess deliverability, not on which delivery methodology to use.
+
+The constraints are *scope*, *time* and *cost,* with the idea being that each is interconnected and changes to one will require changes to another.\
+Again, tradeoffs. Your goal as the tech lead is to assess the problem and provide the best possible solution under these constraints.
+
+<br>
+
+Now, the interpretation of what each constraint holds and their relative importance will differ depending on the client, company, market and experience of the people you’re working with as well as your own experience and knowledge of the business.
