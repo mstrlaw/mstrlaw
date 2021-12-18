@@ -123,3 +123,20 @@ Most of the time though we may have a hard deadline that can’t be missed, cons
 Which one(s) to go for depend on multiple factors: can other teams lose a resource? Do we have the cash to hire people or buy the license for a specific piece of software? Negotiating these will involve the approval of internal stakeholders so the more you understand your product’s users and the business as a whole the better you can make a compelling case to negotiate those constraints.
 
 Finally, but not less important: when working with a team, don’t assume the time or effort to deliver something on their behalf. Involve them in the discovery phase to allow the team to better assimilate the requirements, assess the effort realistically and get skin in the game.
+
+### Cost
+
+I like to think of direct and indirect costs.
+
+Direct costs — those you can easily measure financially like salaries, tools or infrastructure and indirect costs — are harder to correlate with money but that can, well, cost you some way or another, like not solving the pain that customers have been complaining about for ages and instead deliver something else.
+
+Let’s not spend much time on direct costs as they are pretty much straightforward and, as a tech lead, the decision power may not rely with you. Instead, let’s look at how technical and implementation choices can incur some form of cost to your team or organization.
+
+For instance when determining the stack to use for a certain project or feature:
+
+* Is my team knowledgeable enough in this stack to strike a good speed/quality balance?
+* Should the need to increase the team or replace someone come, what’s the average salary for an engineer with knowledge in this stack and how readily available are these skills in the jobs marketplace?
+* If the stack doesn’t scale well, will we need to spend time in changing or refactoring part of it later on? Will there be time to do so?
+* Are we able to use a stack that is challenging and enticing enough for top engineers to work on to keep them engaged and stimulated?
+
+These are some of the things to look at that can affect costs, usually by increasing the effort and time to deliver something which, ultimately, delays sales and hurts our revenue.
