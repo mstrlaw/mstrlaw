@@ -24,3 +24,5 @@ If you’re any sort of product owner — founder, CEO, product manager — you�
 Of course the quality of the feedback you get will depend on the seniority and specialization of the engineers you talk to but it also depends on their overall business savviness. In essence, you want someone that can do a balanced, comprehensive analysis of the problem to be solved.
 
 To simplify we can look at two axises: technical knowledge and business knowledge.
+
+![A chart representing Technical Knowledge in the Y axis and Business Knowledge in the X axis.](/static/images/balance.png "The sweet spot for a balanced tech lead.")
