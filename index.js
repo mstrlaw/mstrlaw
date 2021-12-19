@@ -9,7 +9,6 @@ const discoverPartials = require('metalsmith-discover-partials');
 const msIf = require('metalsmith-if');
 const uglify = require('metalsmith-uglify');
 const assets = require( 'metalsmith-assets-copy' );
-const xhandlebars = require('metalsmith-handlebars-x');
 
 const watch = process.env.NODE_ENV === 'development';
 
@@ -17,7 +16,7 @@ const DATA = {
   sitename: 'Lawrence B. Almeida',
   description: 'Lisbon based technologist focused on building digital products and exploring technology\'s impact on individuals and society.',
   location: 'Lisbon, Portugal',
-}
+};
 
 Metalsmith(__dirname)
   .metadata({
@@ -29,9 +28,18 @@ Metalsmith(__dirname)
   .source('./src')
   .destination('./dist')
   .clean(true)
-  .use(collections({
-    posts: 'posts/*.md'
-  }))
+  .use(collections(
+    {
+      lastPosts: {
+        pattern: 'posts/*.md',
+        sortBy: 'update_date',
+        limit: 3
+      },
+      allPosts: {
+        pattern: 'posts/*.md',
+        sortBy: 'update_date',
+      }
+    }))
   .use(sass())
   .use(markdown())
   .use(permalinks())
@@ -39,21 +47,17 @@ Metalsmith(__dirname)
     directory: './src/partials/',
     pattern: /\.hbs$/
   }))
-  .use(xhandlebars({
-    helpers: {
-      formatDate: (date) => {
-        if (typeof date === 'undefined') return;
-        return `${date.getDate()} ${date.toLocaleString('en-us', { month: 'short' })} ${date.getFullYear()}`;
-      }
-    },
-  }))
   .use(layouts({
     directory: './src/layouts',
     engineOptions: {
       helpers: {
         formattedDate: function(date) {
           return new Date(date).toLocaleDateString();
-        }
+        },
+        formatDate: (date) => {
+          if (typeof date === 'undefined') return;
+          return `${date.getDate()} ${date.toLocaleString('en-us', { month: 'short' })} ${date.getFullYear()}`;
+        },
       }
     }
   }))

@@ -14,7 +14,6 @@
     "metalsmith-browser-sync": "^1.1.1",
     "metalsmith-collections": "^0.9.0",
     "metalsmith-discover-partials": "^0.1.2",
-    "metalsmith-handlebars-x": "^0.2.3",
     "metalsmith-if": "^0.1.1",
     "metalsmith-layouts": "^2.3.1",
     "metalsmith-sass": "^1.7.0",
