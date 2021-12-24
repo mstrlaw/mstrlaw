@@ -32,3 +32,7 @@ Facebook understands that maintaining its dominant position on the long term goe
 The best strategy lays in aligning and playing along with current political powers.
 
 While Twitter finally stepped up and started fact-checking and labeling Donald Trump’s tweets, Facebook allowed for his inflammatory rhetoric to remain available and distributable on the platform.
+
+![A Tweet by Jason Stirman, product R&D at Facebook stating "I'm a Facebook employee that completely disagrees with Mark's decision to do nothing about Trump's recent posts, which clearly incite violence".](/static/images/stirman_tweet.jpeg "A Tweet by Jason Stirman, product R&D at Facebook")
+
+<p class="u-ImageDescription"><a href="https://twitter.com/stirman" target="_blank">Jason Stirman</a>, product R&D at Facebook.</p>
