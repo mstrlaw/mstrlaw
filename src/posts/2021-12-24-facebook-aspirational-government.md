@@ -74,3 +74,7 @@ But I’m less worried about incompetent behavior resulting in negative social c
 
 
 Even though a market boycott is deemed a plausible threat, as we’ve seen so far it has posed no issue to the company’s revenue as advertisers will inevitably want to tap into Facebook’s billions of eyeballs.
+
+![A tweet by Chris Masterson, ex Product Designer at Facebook/Instagram, stating "Honestly embarrassed to so say I ever worked at Facebook".](/static/images/masterson_tweet.jpeg "A tweet by Chris Masterson, ex Product Designer at Facebook/Instagram.")
+
+<p class="u-ImageDescription"><a href="https://twitter.com/chrismasterson" target="_blank">Chris Masterson</a>, ex Product Designer at Facebook/Instagram.</p>
