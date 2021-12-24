@@ -86,3 +86,11 @@ I still believe tech workers are the best bet for bringing change to a company b
 Ultimately, governments seem to be the only entities powerful enough to be capable of intervening and, through regulation, threats of fines or dismantling, force a behavior change. But what chances do we have of seeing that happen when there are year-long efforts of influencing state prosecutors²⁰? Or with Facebook’s attempt at shaping privacy laws by trying suggesting that regulators work side-by-side with the industry to be “helped” at defining these laws²¹.
 
 <hr>
+
+Lobbying governments has always been part of the game but Facebook seems to be more keen than others in cultivating a closer relationship with those in power, specially the current administration²².
+
+Is it far-fetched to imagine a possible wish for power consolidation between corporations and the state and wonder what that could mean? After all, there are enough examples of companies that benefited from collaborating with governments and vice-versa²³.
+
+Could it simply be a move to cater to the platforms’ increasing right-leaning user-base? Or is it precisely because of that specific demographic that Facebook is changing its approach to the American right and eventually embracing it? Corporations can already seem nation-like, with Facebook boasting on a third of the planet’s population. What if it decided to act as a rogue nation?
+
+Could Facebook want more than simply connecting the world? What would be the result of evolving from an entity that facilitates discourse, to one that steers political discourse until eventually becoming itself part of politics?
