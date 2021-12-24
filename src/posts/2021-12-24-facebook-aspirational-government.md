@@ -4,8 +4,8 @@ title: "Facebook: Aspirational Government?"
 summary: Plowing through one PR crisis after another, could its long term goals
   not be purely financial gain?
 feat_image: /static/images/facebook_gif.gif
-publish_date: 2021-12-24T17:00:19.176Z
-update_date: 2021-12-24T17:00:19.191Z
+publish_date: 2020-07-25T16:00:19.176Z
+update_date: 2020-07-25T16:00:00.000Z
 ---
 Isit far-fetched to speculate that Facebook’s long term goal may entail becoming more than a mere place to sell ads to people, but actually a global powerhouse for mass manipulation of ideologies, perceptions and beliefs? Some might argue that it is already the case, but I want to further explore this thought.
 
