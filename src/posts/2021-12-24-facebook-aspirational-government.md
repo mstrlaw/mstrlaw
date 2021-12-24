@@ -78,3 +78,11 @@ Even though a market boycott is deemed a plausible threat, as we’ve seen so fa
 ![A tweet by Chris Masterson, ex Product Designer at Facebook/Instagram, stating "Honestly embarrassed to so say I ever worked at Facebook".](/static/images/masterson_tweet.jpeg "A tweet by Chris Masterson, ex Product Designer at Facebook/Instagram.")
 
 <p class="u-ImageDescription"><a href="https://twitter.com/chrismasterson" target="_blank">Chris Masterson</a>, ex Product Designer at Facebook/Instagram.</p>
+
+Tech workers concerned with the course of the company have a crucial role at leaking how the ever increasing secretive company handles things internally, though companies are increasingly cracking down on dissent. Facebook fired an employee¹⁹ who protested the company’s inaction towards Trump’s inflammatory comments in reference to demonstrations against the killing of George Floyd.
+
+I still believe tech workers are the best bet for bringing change to a company but, so far, it hasn’t been the case for Facebook.
+
+Ultimately, governments seem to be the only entities powerful enough to be capable of intervening and, through regulation, threats of fines or dismantling, force a behavior change. But what chances do we have of seeing that happen when there are year-long efforts of influencing state prosecutors²⁰? Or with Facebook’s attempt at shaping privacy laws by trying suggesting that regulators work side-by-side with the industry to be “helped” at defining these laws²¹.
+
+<hr>
