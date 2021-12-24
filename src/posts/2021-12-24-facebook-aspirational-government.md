@@ -64,3 +64,13 @@ In 2010, the company’s scientists claim to have boosted voter turnout in midte
 In 2012, Facebook modified the newsfeed of 700k users to display more positive or negative content, demonstrably modifying their mood by observing a change in their comment patterns which became more positive or negative during the experiment¹⁶.
 
 Now in 2020, the company plans on increasing voter turnout for the U.S. election through a “Voting Information Center” that will “reduce the effectiveness of malicious networks that might try to take advantage of uncertainty and interfere with the election by getting clear, accurate and authoritative information to people”¹⁷. In a historically opaque company that excuses itself with platitudes, what guarantees do we have that this voter turnout is fair? How will we ever know that the algorithms employed to boost turnouts won’t be geared at benefitting one party over another? And how would we know the actual reason behind an eventual manipulation? Could it be done as a favor for a government in return for less scrutiny from regulators? Who would know?
+
+## Governing: The Ideal Segue?
+
+Facebook certainly has an ambivalent stance when it comes to helping its users, considering the rampant misinformation it allows to circulate. It knowingly exacerbates the polarization of its user base¹⁸, leading to an overall lower quality of life for those subject to these attacks on the mind.
+
+
+But I’m less worried about incompetent behavior resulting in negative social consequences than I am about the potential marriage of technocrats with governmental power: so far tech companies have mainly encountered push back and been held accountable by either the market, organized workers or governments.
+
+
+Even though a market boycott is deemed a plausible threat, as we’ve seen so far it has posed no issue to the company’s revenue as advertisers will inevitably want to tap into Facebook’s billions of eyeballs.
