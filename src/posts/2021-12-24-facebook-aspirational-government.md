@@ -22,3 +22,13 @@ And to me, that’s why it seems Facebook is able to take such a different stanc
 ## Catering to Power
 
 Facing continuous pressure from governments and institutions, Twitter was the first of the Big Tech companies that decided to ban political ads² altogether from its platform. Google followed suit³ with a similar approach and restricted targeted ads at people based on their political leanings.
+
+Facebook went ahead and did nothing of the sort.
+
+Not only did the company said no restrictions would apply to political targeting, the company doubled down saying it wouldn’t do any sort of fact checking whatsoever⁴. In a speech at Georgetown University, Mark Zuckerberg said “People having the power to express themselves at scale is a new kind of force in the world\[…]”, conveniently not highlighting that some have a greater opportunity to propagate their message, provided they pay for that privilege.
+
+Facebook understands that maintaining its dominant position on the long term goes beyond maintaining its current revenue flow. Its aim is to avoid being subject to government scrutiny, potential fines but most importantly real regulation.
+
+The best strategy lays in aligning and playing along with current political powers.
+
+While Twitter finally stepped up and started fact-checking and labeling Donald Trump’s tweets, Facebook allowed for his inflammatory rhetoric to remain available and distributable on the platform.
