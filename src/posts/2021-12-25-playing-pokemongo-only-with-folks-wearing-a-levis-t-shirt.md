@@ -72,3 +72,68 @@ The Shutter component simply passes the whole event on input change. App.vue h
 </template>
 
 </code>
+
+Then, to read the content of the image we employ the FileReader API and use the *onload* callback to then feed the data back to Clarifai, such as:
+
+<code>
+
+<script>
+const Clarifai = require('clarifai')
+// Initialize Clarifai instance using your API key
+const clarifai = new Clarifai.App({ apiKey: process.env.VUE_APP_CLARIFAI_KEY })
+// Initialize our file reader
+let reader = new FileReader()
+...
+methods:{
+  identifyBrand(imageData){
+    this.hasMatch = null
+    let foundBrand = false
+    reader.onload = (e) => {
+      //  We only want to pass the Base64 encoded string to Clatifai
+      let img = e.target.result.replace(/^data:image\/[a-z]+;base64,/, '')
+      clarifai.models
+      //  Use the right model to identify brands and pass the image as base64
+      .predict(process.env.VUE_APP_PREDICT_MODEL, { base64: img })
+      .then((r) => {
+        if (r.status.code === 10000) {
+          if (r.outputs.length > 0) {
+            //  Check if Clarifai has returned any matches
+            if (Object.keys(r.outputs[0].data).length > 0) {
+              //  Clarifai returns the multiple places with matches in the image
+              r.outputs[0].data.regions.map( el => {
+                  
+                //  Bulletproof. Just looking for 'levi' match in the name value
+                if (el.data.concepts[0].name.toLowerCase().match('levi') !== null) {
+                  //  Only count the match if the confidence score is above .9
+                  if (el.data.concepts[0].value >= 0.9) {
+                    foundBrand = true
+                  }
+                }
+              })
+              //  If there's a match, change this value to then display a success/error dialog
+              if (foundBrand) {
+                this.hasMatch = true
+              } else {
+                this.hasMatch = false
+              }
+            } else {
+              this.hasMatch = false
+            }
+          }
+        }
+      },
+      (err) => {
+        alert(err)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    }
+    // Load imageData  
+    reader.readAsDataURL(imageData)
+  },
+  
+  ...
+</script>
+
+</code>
