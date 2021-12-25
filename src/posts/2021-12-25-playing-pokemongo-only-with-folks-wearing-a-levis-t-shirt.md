@@ -50,6 +50,10 @@ The app itself is a standard VueJS app created using *vue-cli.* The whole code
 
 We do that by using the *accept* and *capture* parameters on a regular input element, such as:
 
-<code>// Within Shutter.vue component
+<code>
 
-<input id="cameraInput" type="file" name="camera" accept="image/*" class="image-input" capture @change="processImage($event)"></code>
+// Within Shutter.vue component
+
+<input id="cameraInput" type="file" name="camera" accept="image/*" class="image-input" capture @change="processImage($event)">
+
+</code>
