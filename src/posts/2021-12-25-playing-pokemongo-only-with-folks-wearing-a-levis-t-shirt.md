@@ -127,8 +127,6 @@ methods:{
 
 <p class="u-ImageDescription">Testing the app.</p>
 
-And there you go! A very rudimentary way of having some fun-with-friends: "*Hey, who can spot the most Levimons out there? — Ah there’s a ton of ’em here!*"
-
 ## In The Wild
 
 After walking for 1h, I spotted *at least* 20 people wearing it! 🙈
@@ -144,3 +142,9 @@ Besides storing to a DB, some other nice-to-haves would be:
 * Streaming the camera image/video directly to Clarifai and have it more real-time;
 * Blur people’s faces automatically using tracking.js;
 * Adding some geolocation data to it?;
+
+<hr>
+
+And there you go! A very rudimentary way of having some fun-with-friends: "*Hey, who can spot the most Levimons out there? — Ah there’s a ton of ’em here!*"
+
+Try it out <a href="https://suspicious-hawking-79fe18.netlify.app/" target="_blank">here</a>
