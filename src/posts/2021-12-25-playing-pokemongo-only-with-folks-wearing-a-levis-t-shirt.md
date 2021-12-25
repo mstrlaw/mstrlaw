@@ -5,8 +5,9 @@ summary: If you happen to stroll around Lisbon, Porto or Algarve around some
   crowded areas like shopping malls, there are moments where, at any given
   moment, you’ll literally have a Levis shirt in any of your eyesight's angle.
   There’s no escaping it!
-feat_image: /static/images/levis_shirt.png
-feat_image_alt: A couple posing for a picture, wearing a Levis shirt.
+feat_image: /static/images/desktop_test.gif
+feat_image_alt: A gif showing the app tacking a picture of a shirt with the
+  Levis logo and identifying it correctly.
 publish_date: 2018-08-12T14:13:06.029Z
 update_date: 2018-08-12T14:13:00.000Z
 ---
@@ -123,9 +124,9 @@ methods:{
 
 ## Testing it
 
-![A gif showing the app tacking a picture of a shirt with the Levis logo and identifying it correctly.](/static/images/desktop_test.gif "Testing the app.")
+![A couple posing for a picture, wearing a Levis shirt.](/static/images/levis_shirt.png "Photo by Bruno Vaz for the amusing NIT article on people wearing Levis t-shirts.")
 
-<p class="u-ImageDescription">Testing the app.</p>
+<p class="u-ImageDescription">Photo by <a href="https://www.instagram.com/godinhovaz/" target="_blank">Bruno Vaz</a> for the amusing <a href="https://www.nit.pt/compras/lojas-e-marcas/porque-e-que-toda-a-gente-no-rock-in-rio-usa-as-mesmas-t-shirts-da-levis" target="_blank">NIT article</a> on people wearing Levis t-shirts.</p>
 
 ## In The Wild
 
