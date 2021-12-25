@@ -43,11 +43,11 @@ The same way the 2017 boycott against YouTube had no financial impact for the co
 
 Tangent aside, it appears that Facebook seems to care at least for one specific individual. Following the internal outburst against Mark Zuckerberg’s decision to keep the post up, the CEO had a “productive” phone call with the U.S. president<sup>7</sup>. This political proximity is nothing new. In September 2019, Mark Zuckerberg met Donald Trump in the White House<sup>8</sup> soon followed by a dinner in October<sup>9</sup>. The content of those meetings and calls? Undisclosed.
 
-Facebook’s VP Andrew Bosworth said Donald Trump got elected in 2016 because “he ran the single best digital ad campaign I’ve ever seen from any advertiser”.<sup>10</sup> That is if you put aside internal employee communications revealing that the company knew of Cambridge Analytica extracting and misusing their user data almost a year before the 2016 U.S. elections¹¹; or ignore the fact that Facebook and Cambridge Analytica worked side-by-side for the 2016 Donald Trump campaign¹².
+Facebook’s VP Andrew Bosworth said Donald Trump got elected in 2016 because “he ran the single best digital ad campaign I’ve ever seen from any advertiser”.<sup>10</sup> That is if you put aside internal employee communications revealing that the company knew of Cambridge Analytica extracting and misusing their user data almost a year before the 2016 U.S. elections<sup>11</sup>; or ignore the fact that Facebook and Cambridge Analytica worked side-by-side for the 2016 Donald Trump campaign<sup>12</sup>.
 
-Nonetheless, advertisers purchased more than $887m worth of political ads on Facebook since May 2018. Of that total, at least $21m were spent by Facebook’s №1 customer for political ads: the campaign to reelect President Donald Trump in 2020¹³.
+Nonetheless, advertisers purchased more than $887m worth of political ads on Facebook since May 2018. Of that total, at least $21m were spent by Facebook’s №1 customer for political ads: the campaign to reelect President Donald Trump in 2020<sup>13</sup>.
 
-So is the motive for having such proximity to ensure future revenue from political ads don’t dry up? $1b revenue from political ads seems quite irrelevant to Facebook’s $69.5b global revenue in 2019¹⁴. So maybe, the motive goes beyond money.
+So is the motive for having such proximity to ensure future revenue from political ads don’t dry up? $1b revenue from political ads seems quite irrelevant to Facebook’s $69.5b global revenue in 2019<sup>14</sup>. So maybe, the motive goes beyond money.
 
 ## Blurring The Lines
 
@@ -59,15 +59,15 @@ I’m not saying Facebook doesn’t already influence many aspects of our societ
 
 In fact, Facebook has never made a point in hiding their ambition of manipulating its users for its own goals.
 
-In 2010, the company’s scientists claim to have boosted voter turnout in midterm elections by 340k through experimentation with a peer-pressure methods by displaying a “I Voted” sticker¹⁵.
+In 2010, the company’s scientists claim to have boosted voter turnout in midterm elections by 340k through experimentation with a peer-pressure methods by displaying a “I Voted” sticker<sup>15</sup>.
 
-In 2012, Facebook modified the newsfeed of 700k users to display more positive or negative content, demonstrably modifying their mood by observing a change in their comment patterns which became more positive or negative during the experiment¹⁶.
+In 2012, Facebook modified the newsfeed of 700k users to display more positive or negative content, demonstrably modifying their mood by observing a change in their comment patterns which became more positive or negative during the experiment<sup>16</sup>.
 
-Now in 2020, the company plans on increasing voter turnout for the U.S. election through a “Voting Information Center” that will “reduce the effectiveness of malicious networks that might try to take advantage of uncertainty and interfere with the election by getting clear, accurate and authoritative information to people”¹⁷. In a historically opaque company that excuses itself with platitudes, what guarantees do we have that this voter turnout is fair? How will we ever know that the algorithms employed to boost turnouts won’t be geared at benefitting one party over another? And how would we know the actual reason behind an eventual manipulation? Could it be done as a favor for a government in return for less scrutiny from regulators? Who would know?
+Now in 2020, the company plans on increasing voter turnout for the U.S. election through a “Voting Information Center” that will “reduce the effectiveness of malicious networks that might try to take advantage of uncertainty and interfere with the election by getting clear, accurate and authoritative information to people”<sup>17</sup>. In a historically opaque company that excuses itself with platitudes, what guarantees do we have that this voter turnout is fair? How will we ever know that the algorithms employed to boost turnouts won’t be geared at benefitting one party over another? And how would we know the actual reason behind an eventual manipulation? Could it be done as a favor for a government in return for less scrutiny from regulators? Who would know?
 
 ## Governing: The Ideal Segue?
 
-Facebook certainly has an ambivalent stance when it comes to helping its users, considering the rampant misinformation it allows to circulate. It knowingly exacerbates the polarization of its user base¹⁸, leading to an overall lower quality of life for those subject to these attacks on the mind.
+Facebook certainly has an ambivalent stance when it comes to helping its users, considering the rampant misinformation it allows to circulate. It knowingly exacerbates the polarization of its user base<sup>18</sup>, leading to an overall lower quality of life for those subject to these attacks on the mind.
 
 But I’m less worried about incompetent behavior resulting in negative social consequences than I am about the potential marriage of technocrats with governmental power: so far tech companies have mainly encountered push back and been held accountable by either the market, organized workers or governments.
 
@@ -77,17 +77,17 @@ Even though a market boycott is deemed a plausible threat, as we’ve seen so fa
 
 <p class="u-ImageDescription"><a href="https://twitter.com/chrismasterson" target="_blank">Chris Masterson</a>, ex Product Designer at Facebook/Instagram.</p>
 
-Tech workers concerned with the course of the company have a crucial role at leaking how the ever increasing secretive company handles things internally, though companies are increasingly cracking down on dissent. Facebook fired an employee¹⁹ who protested the company’s inaction towards Trump’s inflammatory comments in reference to demonstrations against the killing of George Floyd.
+Tech workers concerned with the course of the company have a crucial role at leaking how the ever increasing secretive company handles things internally, though companies are increasingly cracking down on dissent. Facebook fired an employee<sup>19</sup> who protested the company’s inaction towards Trump’s inflammatory comments in reference to demonstrations against the killing of George Floyd.
 
 I still believe tech workers are the best bet for bringing change to a company but, so far, it hasn’t been the case for Facebook.
 
-Ultimately, governments seem to be the only entities powerful enough to be capable of intervening and, through regulation, threats of fines or dismantling, force a behavior change. But what chances do we have of seeing that happen when there are year-long efforts of influencing state prosecutors²⁰? Or with Facebook’s attempt at shaping privacy laws by trying suggesting that regulators work side-by-side with the industry to be “helped” at defining these laws²¹.
+Ultimately, governments seem to be the only entities powerful enough to be capable of intervening and, through regulation, threats of fines or dismantling, force a behavior change. But what chances do we have of seeing that happen when there are year-long efforts of influencing state prosecutors<sup>20</sup>? Or with Facebook’s attempt at shaping privacy laws by trying suggesting that regulators work side-by-side with the industry to be “helped” at defining these laws<sup>21</sup>.
 
 <hr>
 
-Lobbying governments has always been part of the game but Facebook seems to be more keen than others in cultivating a closer relationship with those in power, specially the current administration²².
+Lobbying governments has always been part of the game but Facebook seems to be more keen than others in cultivating a closer relationship with those in power, specially the current administration<sup>22</sup>.
 
-Is it far-fetched to imagine a possible wish for power consolidation between corporations and the state and wonder what that could mean? After all, there are enough examples of companies that benefited from collaborating with governments and vice-versa²³.
+Is it far-fetched to imagine a possible wish for power consolidation between corporations and the state and wonder what that could mean? After all, there are enough examples of companies that benefited from collaborating with governments and vice-versa<sup>23</sup>.
 
 Could it simply be a move to cater to the platforms’ increasing right-leaning user-base? Or is it precisely because of that specific demographic that Facebook is changing its approach to the American right and eventually embracing it? Corporations can already seem nation-like, with Facebook boasting on a third of the planet’s population. What if it decided to act as a rogue nation?
 
