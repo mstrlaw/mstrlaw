@@ -64,6 +64,8 @@ The Shutter component simply passes the whole event on input change. App.vue h
 
 Then, to read the content of the image we employ the FileReader API and use the *onload* callback to then feed the data back to Clarifai, such as:
 
+<code>
+
 <pre>
 ...
 methods:{
@@ -116,3 +118,9 @@ methods:{
   ...
 
 </pre>
+
+</code>
+
+<hr>
+
+## Testing it 🍄
