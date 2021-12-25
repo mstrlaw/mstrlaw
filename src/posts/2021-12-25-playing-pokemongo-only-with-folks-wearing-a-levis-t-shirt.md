@@ -64,8 +64,6 @@ The Shutter component simply passes the whole event on input change. App.vue h
 
 Then, to read the content of the image we employ the FileReader API and use the *onload* callback to then feed the data back to Clarifai, such as:
 
-<code>
-
 <pre>
 ...
 methods:{
@@ -73,27 +71,39 @@ methods:{
     this.hasMatch = null
     let foundBrand = false
     reader.onload = (e) => {
-      //  We only want to pass the Base64 encoded string to Clatifai
-      let img = e.target.result.replace(/^data:image\/\[a-z]+;base64,/, '')
+      /*
+        *We only want to pass the Base64 encoded string to Clatifai*
+       /
+      let img = e.target.result.replace(/^data:image/\[a-z]+;base64,/, '')
       clarifai.models
       //  Use the right model to identify brands and pass the image as base64
       .predict(process.env.VUE_APP_PREDICT_MODEL, { base64: img })
       .then((r) => {
         if (r.status.code === 10000) {
           if (r.outputs.length > 0) {
-            //  Check if Clarifai has returned any matches
+            /*
+              *Check if Clarifai has returned any matches*
+             /
             if (Object.keys(r.outputs\[0].data).length > 0) {
-              //  Clarifai returns the multiple places with matches in the image
+              /*
+                *Clarifai returns the multiple places with matches in the image*
+               /
               r.outputs\[0].data.regions.map( el => {
-                //  Bulletproof. Just looking for 'levi' match in the name value
+                /*
+                  *Just looking for 'levi' match in the name value. Bulletproof.*
+                 /
                 if (el.data.concepts\[0].name.toLowerCase().match('levi') !== null) {
-                  //  Only count the match if the confidence score is above .9
+                  /*
+                    *Only count the match if the confidence score is above .9*
+                   /
                   if (el.data.concepts\[0].value >= 0.9) {
                     foundBrand = true
                   }
                 }
               })
-              //  If there's a match, change this value to then display a success/error dialog
+              /*
+                *If there's a match, change this value to then display a success/error dialog*
+               /
               if (foundBrand) {
                 this.hasMatch = true
               } else {
@@ -112,10 +122,9 @@ methods:{
         console.log(err)
       })
     }
-    // Load imageData  
+    // Load imageData\
     reader.readAsDataURL(imageData)
   },
   ...
 
 </pre>
-</code>
