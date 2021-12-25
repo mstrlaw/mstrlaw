@@ -30,3 +30,10 @@ No more forgetting to buy that toilet paper! Jarbas is here for you.
 * Previously bought products can be found on the user's main page, including some stats like the most bought product and purchase mean cost;
 * Products were provided by [](http://continente.pt/)<a href="https://www.continente.pt/" target="_blank">Continente</a> through their API. To speed up matching, products were stored on a Mongo database so the bot wouldn't constantly request the API to find/retrieve products;
 * An Android app was built by <a href="https://www.linkedin.com/in/miguelpescadinha/" target="_blank">Miguel Pescadinha</a> that loads the webapp into a webframe in order to use Android's native Speech to Text API; The native app and webapp talked to each other using Android Javascript Interface;
+
+## Stack
+
+* [](https://www.meteor.com/)<a href="https://www.meteor.com/" target="_blank">Meteor</a> framework;
+* <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html" target="_blank">[](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html)Google WebSpeech API</a> (Chrome Only);
+* <a href="http://getbootstrap.com/" target="_blank">[](http://getbootstrap.com/)Bootstrap</a>;
+* <a href="https://www.continente.pt/" target="_blank">Continente</a>'s products API (made specifically for the contest);
