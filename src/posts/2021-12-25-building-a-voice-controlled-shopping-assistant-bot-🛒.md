@@ -43,8 +43,10 @@ No more forgetting to buy that toilet paper! Jarbas is here for you.
 
 After 2 days of hacking away and testing, Jarbas was live. The project landed 3rd place ,amongst over 60 participating teams. Not bad! 🏆
 
-You can check the presentation to the audience below.
+You can check the code [](https://github.com/mstrlaw/jarbas)<a href="https://github.com/mstrlaw/jarbas" target="_blank">here</a>.You can check the presentation to the audience below.
 
 <video src="/static/images/jarbas_pixels_camp_2016.mp4" controls></video>
 
 ![Picture of the ceremony, receiving the trophy for 3rd place.](/static/images/16649123_930313473771378_8878488857555919772_n.jpg "Awards ceremony.")
+
+<p class="u-ImageDescription">Receiving the trophy (and an Apple TV 4K)</p>
