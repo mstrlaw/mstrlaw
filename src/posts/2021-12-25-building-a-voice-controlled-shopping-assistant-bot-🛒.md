@@ -34,6 +34,11 @@ No more forgetting to buy that toilet paper! Jarbas is here for you.
 ## Stack
 
 * [](https://www.meteor.com/)<a href="https://www.meteor.com/" target="_blank">Meteor</a> framework;
-* <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html" target="_blank">[](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html)Google WebSpeech API</a> (Chrome Only);
-* <a href="http://getbootstrap.com/" target="_blank">[](http://getbootstrap.com/)Bootstrap</a>;
+* <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html" target="_blank">\[](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html)Google WebSpeech API</a> (Chrome Only);
+* <a href="http://getbootstrap.com/" target="_blank">\[](http://getbootstrap.com/)Bootstrap</a>;
 * <a href="https://www.continente.pt/" target="_blank">Continente</a>'s products API (made specifically for the contest);
+* Hosted on <a href="https://blog.meteor.com/modulus-xervo-io-shutdown-dc968bfb725b" target="_blank">Modulus.io</a>
+
+## Results
+
+<video src="src/static/images/jarbas_pixels_camp_2016.mp4" controls></video>
