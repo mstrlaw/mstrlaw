@@ -7,6 +7,8 @@ summary: Extreme societal events are always an opportunity to bring people and
 publish_date: 2020-03-19T13:53:33.554Z
 update_date: 2020-03-19T13:53:00.000Z
 ---
+<hr>
+
 The sentence “desperate times call for desperate measures” can entail both relief and fear depending on who says it and the involved measures. We may not be desperate yet but for many of us this is a wildly abnormal situation whose ending is still very much unknown.
 
 The global COVID-19 pandemic has world governments racing to contain its spread, trying to keep their economies from tanking and appeasing people’s anxieties to the best of their ability. It’s during extraordinary moments like these that attacks to our rights to privacy and individual autonomy are attempted and, sometimes, achieved.
@@ -21,4 +23,4 @@ In the U.S., the <a href="https://www.washingtonpost.com/technology/2020/03/17/w
 
 <hr>
 
-asdasd
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Statement from Verily: &quot;We are developing a tool to help triage individuals for Covid-19 testing. Verily is in the early stages of development, and planning to roll testing out in the Bay Area, with the hope of expanding more broadly over time.</p>&mdash; Google Communications (@Google_Comms) <a href="https://twitter.com/Google_Comms/status/1238574670686928906?ref_src=twsrc%5Etfw">March 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
