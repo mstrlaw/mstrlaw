@@ -69,9 +69,7 @@ Now in 2020, the company plans on increasing voter turnout for the U.S. election
 
 Facebook certainly has an ambivalent stance when it comes to helping its users, considering the rampant misinformation it allows to circulate. It knowingly exacerbates the polarization of its user base¹⁸, leading to an overall lower quality of life for those subject to these attacks on the mind.
 
-
 But I’m less worried about incompetent behavior resulting in negative social consequences than I am about the potential marriage of technocrats with governmental power: so far tech companies have mainly encountered push back and been held accountable by either the market, organized workers or governments.
-
 
 Even though a market boycott is deemed a plausible threat, as we’ve seen so far it has posed no issue to the company’s revenue as advertisers will inevitably want to tap into Facebook’s billions of eyeballs.
 
@@ -94,3 +92,9 @@ Is it far-fetched to imagine a possible wish for power consolidation between cor
 Could it simply be a move to cater to the platforms’ increasing right-leaning user-base? Or is it precisely because of that specific demographic that Facebook is changing its approach to the American right and eventually embracing it? Corporations can already seem nation-like, with Facebook boasting on a third of the planet’s population. What if it decided to act as a rogue nation?
 
 Could Facebook want more than simply connecting the world? What would be the result of evolving from an entity that facilitates discourse, to one that steers political discourse until eventually becoming itself part of politics?
+
+<hr>
+
+### Sources
+
+¹<a class="dy qg" href="https://www.theguardian.com/technology/2018/nov/21/zuckerbergs-control-of-facebook-is-near-absolute-who-will-hold-him-accountable" rel="noopener ugc nofollow" target="_blank">Zuckerberg’s control of Facebook is near absolute — who will hold him accountable?</a>, The Guardian, 2018
