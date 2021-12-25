@@ -115,7 +115,7 @@ Could Facebook want more than simply connecting the world? What would be the res
 
 ⁹<a href="https://www.nbcnews.com/tech/tech-news/trump-hosted-zuckerberg-undisclosed-dinner-white-house-october-n1087986" rel="noopener ugc nofollow" target="_blank">Trump hosted Zuckerberg for undisclosed dinner at the White House in October</a>, NBC, 2019
 
-¹⁰<a href="https://www.cnbc.com/2020/01/07/top-facebook-exec-says-trump-ran-best-digital-ad-campaign-ever-in-2016.html" rel="noopener ugc nofollow" target="_blank">Top Facebook exec says Trump ran the best digital ad campaign ever in 2016</a>, CNBC, 2020
+<sup>10</sup><a href="https://www.cnbc.com/2020/01/07/top-facebook-exec-says-trump-ran-best-digital-ad-campaign-ever-in-2016.html" rel="noopener ugc nofollow" target="_blank">Top Facebook exec says Trump ran the best digital ad campaign ever in 2016</a>, CNBC, 2020
 
 ¹¹<a href="https://www.cnbc.com/2019/08/23/facebook-releases-new-cambridge-analytica-documents.html" rel="noopener ugc nofollow" target="_blank">Facebook learned about Cambridge Analytica as early as September 2015, new documents show</a>, CNBC 2019
 
