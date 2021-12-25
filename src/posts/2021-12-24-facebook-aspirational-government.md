@@ -13,7 +13,7 @@ First, the response Facebook has regarding the perceived negative impact of its
 
 Secondly, the company knows it has the world’s most sought after digital advertising channel, where small/medium are unable to avoid it to reach their audiences. This gives the company a phenomenally powerful dominant position.
 
-Lastly, it’s worth mentioning that the level of control the CEO has, coupled with the lack of actual oversight over a company with such a global impact on our lives is astonishing. Mark Zuckerberg is the chairman of the board of directors and controls 60% of the voting shares¹, giving him full control over the company’s future. His word is law. For most companies, a board of directors has actual voting power. If that was the case for Facebook, it could have produced quite different outcomes in the company’s past couple of years’ mishaps. But under a single ruler’s will, things are different.
+Lastly, it’s worth mentioning that the level of control the CEO has, coupled with the lack of actual oversight over a company with such a global impact on our lives is astonishing. Mark Zuckerberg is the chairman of the board of directors and controls 60% of the voting shares<sup>1</sup>, giving him full control over the company’s future. His word is law. For most companies, a board of directors has actual voting power. If that was the case for Facebook, it could have produced quite different outcomes in the company’s past couple of years’ mishaps. But under a single ruler’s will, things are different.
 
 And to me, that’s why it seems Facebook is able to take such a different stance when compared to other big tech companies.
 
@@ -21,11 +21,11 @@ And to me, that’s why it seems Facebook is able to take such a different stanc
 
 ## Catering to Power
 
-Facing continuous pressure from governments and institutions, Twitter was the first of the Big Tech companies that decided to ban political ads² altogether from its platform. Google followed suit³ with a similar approach and restricted targeted ads at people based on their political leanings.
+Facing continuous pressure from governments and institutions, Twitter was the first of the Big Tech companies that decided to ban political ads<sup>2</sup> altogether from its platform. Google followed suit<sup>3</sup> with a similar approach and restricted targeted ads at people based on their political leanings.
 
 Facebook went ahead and did nothing of the sort.
 
-Not only did the company said no restrictions would apply to political targeting, the company doubled down saying it wouldn’t do any sort of fact checking whatsoever⁴. In a speech at Georgetown University, Mark Zuckerberg said “People having the power to express themselves at scale is a new kind of force in the world\[…]”, conveniently not highlighting that some have a greater opportunity to propagate their message, provided they pay for that privilege.
+Not only did the company said no restrictions would apply to political targeting, the company doubled down saying it wouldn’t do any sort of fact checking whatsoever<sup>4</sup>. In a speech at Georgetown University, Mark Zuckerberg said “People having the power to express themselves at scale is a new kind of force in the world\[…]”, conveniently not highlighting that some have a greater opportunity to propagate their message, provided they pay for that privilege.
 
 Facebook understands that maintaining its dominant position on the long term goes beyond maintaining its current revenue flow. Its aim is to avoid being subject to government scrutiny, potential fines but most importantly real regulation.
 
@@ -37,13 +37,13 @@ While Twitter finally stepped up and started fact-checking and labeling Donald T
 
 <p class="u-ImageDescription"><a href="https://twitter.com/stirman" target="_blank">Jason Stirman</a>, product R&D at Facebook.</p>
 
-So does Facebook doesn’t care at all about what employees, users and clients think of its actions? After all, Mark Zuckerberg did say privately that “\[…]all these advertisers will be back on the platform soon enough.”⁵ To some degree he isn’t wrong: first, most companies participating in the boycott are doing it for only one-month; secondly, the highest-spending 100 brands only account for 6% of the company’s ad revenue⁶, meaning most mid and small sized companies who can’t afford to not spend in advertising will keep on doing so.
+So does Facebook doesn’t care at all about what employees, users and clients think of its actions? After all, Mark Zuckerberg did say privately that “\[…]all these advertisers will be back on the platform soon enough.”<sup>5</sup> To some degree he isn’t wrong: first, most companies participating in the boycott are doing it for only one-month; secondly, the highest-spending 100 brands only account for 6% of the company’s ad revenue<sup>6</sup>, meaning most mid and small sized companies who can’t afford to not spend in advertising will keep on doing so.
 
 The same way the 2017 boycott against YouTube had no financial impact for the company on the long term, the same will be true for Facebook.
 
-Tangent aside, it appears that Facebook seems to care at least for one specific individual. Following the internal outburst against Mark Zuckerberg’s decision to keep the post up, the CEO had a “productive” phone call with the U.S. president⁷. This political proximity is nothing new. In September 2019, Mark Zuckerberg met Donald Trump in the White House⁸ soon followed by a dinner in October⁹. The content of those meetings and calls? Undisclosed.
+Tangent aside, it appears that Facebook seems to care at least for one specific individual. Following the internal outburst against Mark Zuckerberg’s decision to keep the post up, the CEO had a “productive” phone call with the U.S. president<sup>7</sup>. This political proximity is nothing new. In September 2019, Mark Zuckerberg met Donald Trump in the White House<sup>8</sup> soon followed by a dinner in October<sup>9</sup>. The content of those meetings and calls? Undisclosed.
 
-Facebook’s VP Andrew Bosworth said Donald Trump got elected in 2016 because “he ran the single best digital ad campaign I’ve ever seen from any advertiser”.¹⁰ That is if you put aside internal employee communications revealing that the company knew of Cambridge Analytica extracting and misusing their user data almost a year before the 2016 U.S. elections¹¹; or ignore the fact that Facebook and Cambridge Analytica worked side-by-side for the 2016 Donald Trump campaign¹².
+Facebook’s VP Andrew Bosworth said Donald Trump got elected in 2016 because “he ran the single best digital ad campaign I’ve ever seen from any advertiser”.<sup>10</sup> That is if you put aside internal employee communications revealing that the company knew of Cambridge Analytica extracting and misusing their user data almost a year before the 2016 U.S. elections¹¹; or ignore the fact that Facebook and Cambridge Analytica worked side-by-side for the 2016 Donald Trump campaign¹².
 
 Nonetheless, advertisers purchased more than $887m worth of political ads on Facebook since May 2018. Of that total, at least $21m were spent by Facebook’s №1 customer for political ads: the campaign to reelect President Donald Trump in 2020¹³.
 
