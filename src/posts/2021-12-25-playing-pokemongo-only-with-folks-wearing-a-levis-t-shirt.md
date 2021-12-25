@@ -126,3 +126,5 @@ methods:{
 ![A gif showing the app tacking a picture of a shirt with the Levis logo and identifying it correctly.](/static/images/desktop_test.gif "Testing the app.")
 
 <p class="u-ImageDescription">Testing the app.</p>
+
+And there you go! A very rudimentary way of having some fun-with-friends: "*Hey, who can spot the most Levimons out there? — Ah there’s a ton of ’em here!*"
