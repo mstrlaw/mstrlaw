@@ -31,3 +31,5 @@ We’d then use [](http://caza.la/synaptic/#/)<a href="http://caza.la/synaptic/
 In other words, **a ton of work!** 
 
 First, you’d need to handle standardizing the photo to extract the brand area. Moreover and as importantly, you’d need to create a good training data set for the NN to identify the t-shirt.
+
+![](/static/images/app_simulation.gif)
