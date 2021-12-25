@@ -122,3 +122,7 @@ methods:{
 <hr>
 
 ## Testing it 🍄
+
+![A gif showing the app tacking a picture of a shirt with the Levis logo and identifying it correctly.](/static/images/desktop_test.gif "Testing the app.")
+
+<p class="u-ImageDescription">Testing the app.</p>
