@@ -43,6 +43,4 @@ No more forgetting to buy that toilet paper! Jarbas is here for you.
 
 After 2 days of hacking away and testing, Jarbas was live. You can check the presentation to the audience below.
 
-<video src="/static/images/jarbas_pixels_camp_2016.mp4" controls></video>
-
-<p class="u-ImageDescription">Pitch moment of the hackathon.</p>
+<span><video src="/static/images/jarbas_pixels_camp_2016.mp4" controls></video><p class="u-ImageDescription">Pitch moment of the hackathon.</p></span>
