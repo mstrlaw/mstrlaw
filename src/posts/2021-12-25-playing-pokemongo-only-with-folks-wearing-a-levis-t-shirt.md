@@ -121,10 +121,26 @@ methods:{
 
 <hr>
 
-## Testing it 🍄
+## Testing it
 
 ![A gif showing the app tacking a picture of a shirt with the Levis logo and identifying it correctly.](/static/images/desktop_test.gif "Testing the app.")
 
 <p class="u-ImageDescription">Testing the app.</p>
 
 And there you go! A very rudimentary way of having some fun-with-friends: "*Hey, who can spot the most Levimons out there? — Ah there’s a ton of ’em here!*"
+
+## In The Wild
+
+After walking for 1h, I spotted *at least* 20 people wearing it! 🙈
+
+Most of them were too far or it was just to awkward to snap a picture hence a lot of missed opportunities.
+
+Regarding the accuracy of Clarifai, unfortunately most of the times it wouldn’t get a match, even on very up-front & close pictures (Lightning conditions? Angle? Ripples in the shirt’s fabric?) so never mind my score..
+
+Keep in mind though that this demo only keeps track of the score using Vuex, so no persistent storage. If time permits, I may have some fun in the future plugin in Firebase, just for the kicks of it.
+
+Besides storing to a DB, some other nice-to-haves would be:
+
+* Streaming the camera image/video directly to Clarifai and have it more real-time;
+* Blur people’s faces automatically using tracking.js;
+* Adding some geolocation data to it?;
