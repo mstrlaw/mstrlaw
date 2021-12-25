@@ -1,3 +1,5 @@
+@import "./_breakpoints.scss";
+
 .c-Timeline {
   display: flex;
   flex-direction: column-reverse;
@@ -15,8 +17,12 @@
     position: relative;
     display: block;
     padding: 0;
-    min-height: 5em;
+    min-height: 8em;
     margin: 0;
+
+    @media #{$tablet} {
+      min-height: 5em;
+    }
 
     &:first-child {
       padding-bottom: 0rem;
@@ -59,9 +65,12 @@
   }
 
   &__itemTitle {
+    --min: 1.4em;
+    --val: 2.5vw;
+    --max: 1.6em;
     font-size: clamp(var(--min), var(--val), var(--max));
-    font-weight: 300;
     text-decoration-color: var(--darkBlue);
+    font-weight: 300;
   }
   &__itemDate {
     font-size: .8rem;

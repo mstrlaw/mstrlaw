@@ -32,8 +32,9 @@ Metalsmith(__dirname)
     {
       lastPosts: {
         pattern: 'posts/*.md',
+        reverse: true,
         sortBy: 'update_date',
-        limit: 5
+        limit: 6
       },
       allPosts: {
         pattern: 'posts/*.md',
@@ -58,6 +59,7 @@ Metalsmith(__dirname)
           if (typeof date === 'undefined') return;
           return `${date.getDate()} ${date.toLocaleString('en-us', { month: 'short' })} ${date.getFullYear()}`;
         },
+        reverse: (array) => array.reverse(),
       }
     }
   }))

@@ -14,6 +14,8 @@ h1,
 h2,
 h3,
 p,
+pre,
+code,
 li {
   // Font minimum, preferred and maximum value
   font-size: clamp(var(--min), var(--val), var(--max));
@@ -64,6 +66,12 @@ a {
 sup {
   padding: 0 2px;
   font-size: 50%;
+}
+
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
 }
 
 // Used to denote links opening in new tab
