@@ -1,6 +1,8 @@
 ---
 layout: post.hbs
 title: Building a Voice Controlled shopping assistant bot 🛒
+feat_image: /static/images/jarbas_gif.gif
+feat_image_alt: A render of Jarbas displaying a list of products.
 publish_date: 2016-10-22T16:09:00.000Z
 update_date: 2016-10-22T16:09:00.000Z
 ---
