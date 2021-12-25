@@ -97,11 +97,15 @@ Could Facebook want more than simply connecting the world? What would be the res
 
 **Sources**
 
-<sup>1</sup><a href="https://www.theguardian.com/technology/2018/nov/21/zuckerbergs-control-of-facebook-is-near-absolute-who-will-hold-him-accountable" rel="noopener ugc nofollow" target="_blank">Zuckerberg’s control of Facebook is near absolute — who will hold him accountable?</a>, The Guardian, 2018
+<sup>1</sup><a href="https://www.theguardian.com/technology/2018/nov/21/zuckerbergs-control-of-facebook-is-near-absolute-who-will-hold-him-accountable" rel="noopener ugc nofollow" target="_blank">Zuckerberg’s control of Facebook is near absolute — who will hold him accountable?</a>
 
-<sup>2</sup><a href="https://www.cnbc.com/2019/10/30/twitter-bans-political-ads-after-facebook-refused-to-do-so.html" rel="noopener ugc nofollow" target="_blank">Twitter bans political ads after Facebook refused to do so</a>, CNBC, 2019
+The Guardian, 2018
 
-<sup>3</sup><a href="https://www.bbc.com/news/technology-50498166" rel="noopener ugc nofollow" target="_blank">Google to restrict political adverts worldwide</a>, BBC, 2019
+<sup>2</sup><a href="https://www.cnbc.com/2019/10/30/twitter-bans-political-ads-after-facebook-refused-to-do-so.html" rel="noopener ugc nofollow" target="_blank">Twitter bans political ads after Facebook refused to do so</a>
+
+CNBC, 2019
+
+<sup>3</sup><a href="https://www.bbc.com/news/technology-50498166" rel="noopener ugc nofollow" target="_blank">Google to restrict political adverts worldwide</a><br>BBC, 2019
 
 <sup>4</sup><a href="https://www.nytimes.com/2020/01/09/technology/facebook-political-ads-lies.html" rel="noopener ugc nofollow" target="_blank">Facebook Says It Won’t Back Down From Allowing Lies in Political Ads,</a> NYT, 2020
 
