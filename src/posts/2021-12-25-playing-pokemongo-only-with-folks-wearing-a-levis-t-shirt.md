@@ -146,4 +146,4 @@ Besides storing to a DB, some other nice-to-haves would be:
 
 And there you go! A very rudimentary way of having some fun-with-friends: "*Hey, who can spot the most Levimons out there? — Ah there’s a ton of ’em here!*"
 
-Try it out <a href="https://suspicious-hawking-79fe18.netlify.app/" target="_blank">here</a>
+Try it out <a href="https://suspicious-hawking-79fe18.netlify.app/" target="_blank">here</a>. Get the code [](https://github.com/mstrlaw/levimon)<a href="https://github.com/mstrlaw/levimon" target="_blank">here</a>.
