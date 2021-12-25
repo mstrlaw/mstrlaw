@@ -114,8 +114,5 @@ methods:{
     // Load imageData  
     reader.readAsDataURL(imageData)
   },
- 
   ...
-</script>
-
 </code>
