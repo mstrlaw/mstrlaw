@@ -20,15 +20,13 @@ No more forgetting to buy that toilet paper! Jarbas is here for you.
 
 ## How it Works
 
-
-
 * The bot runs on Chrome only (because of Googles Speech to Text API);
 * Constantly listens to the user's voice with microphone;
-* After the final transcript is returned from Google's API, it attempts to match commands using a [bag of words](https://en.wikipedia.org/wiki/Bag-of-words_model) approach;
+* After the final transcript is returned from Google's API, it attempts to match commands using a [](https://en.wikipedia.org/wiki/Bag-of-words_model)<a href="https://en.wikipedia.org/wiki/Bag-of-words_model" target="_blank">bag of words</a>approach;
 * Product matching is done using simple regex;
 * If products are found and returned, the bot waits for the user to state which product they wish to add to the shopping list.
-* Product string similarity score is calculated using [Sørensen–Dice's Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient);
+* Product string similarity score is calculated using <a href="https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient" target="_blank">Sørensen–Dice's Coefficient</a>;
 * Once users are done with their purchase, they can ask for the list to be finalized;
 * Previously bought products can be found on the user's main page, including some stats like the most bought product and purchase mean cost;
-* Products were provided by [Continente](http://continente.pt/) through their API. To speed up matching, products were stored on a Mongo database so the bot wouldn't constantly request the API to find/retrieve products;
-* An Android app was built by [Miguel Pescadinha](https://www.linkedin.com/in/miguelpescadinha/) that loads the webapp into a webframe in order to use Android's native Speech to Text API; The native app and webapp talked to each other using Android [Javascript Interface](https://developer.android.com/guide/webapps/webview.html#BindingJavaScript);
+* Products were provided by [](http://continente.pt/)<a href="https://www.continente.pt/" target="_blank">Continente</a> through their API. To speed up matching, products were stored on a Mongo database so the bot wouldn't constantly request the API to find/retrieve products;
+* An Android app was built by <a href="https://www.linkedin.com/in/miguelpescadinha/" target="_blank">Miguel Pescadinha</a> that loads the webapp into a webframe in order to use Android's native Speech to Text API; The native app and webapp talked to each other using Android Javascript Interface;
