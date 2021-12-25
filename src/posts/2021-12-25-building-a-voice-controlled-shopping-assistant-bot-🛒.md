@@ -41,6 +41,10 @@ No more forgetting to buy that toilet paper! Jarbas is here for you.
 
 ## Results
 
-After 2 days of hacking away and testing, Jarbas was live. You can check the presentation to the audience below.
+After 2 days of hacking away and testing, Jarbas was live. The project landed 3rd place ,amongst over 60 participating teams. Not bad! 🏆
 
-<span><video src="/static/images/jarbas_pixels_camp_2016.mp4" controls></video><p class="u-ImageDescription">Pitch moment of the hackathon.</p></span>
+You can check the presentation to the audience below.
+
+<video src="/static/images/jarbas_pixels_camp_2016.mp4" controls></video>
+
+![Picture of the ceremony, receiving the trophy for 3rd place.](/static/images/16649123_930313473771378_8878488857555919772_n.jpg "Awards ceremony.")
