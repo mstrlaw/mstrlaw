@@ -59,6 +59,11 @@ a {
   display: inline-block;
   position: relative;
   color: var(--textColor);
+
+}
+sup {
+  padding: 0 2px;
+  font-size: 50%;
 }
 
 // Used to denote links opening in new tab

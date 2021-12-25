@@ -33,7 +33,7 @@ Metalsmith(__dirname)
       lastPosts: {
         pattern: 'posts/*.md',
         sortBy: 'update_date',
-        limit: 3
+        limit: 5
       },
       allPosts: {
         pattern: 'posts/*.md',
