@@ -57,3 +57,18 @@ We do that by using the *accept* and *capture* parameters on a regular input
 <input id="cameraInput" type="file" name="camera" accept="image/*" class="image-input" capture @change="processImage($event)">
 
 </code>
+
+**Reading the image & passing it to Clarifai**
+
+The Shutter component simply passes the whole event on input change. App.vue handles the rest. We call the identifyBrand method when imageData event is triggered.
+
+<code>
+
+//App.vue
+<template>
+<Shutter
+  @imageData="identifyBrand"
+/>
+</template>
+
+</code>
