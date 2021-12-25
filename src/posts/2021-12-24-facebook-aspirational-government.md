@@ -95,6 +95,8 @@ Could Facebook want more than simply connecting the world? What would be the res
 
 <hr>
 
-### Sources
+**Sources**
 
-¹<a class="dy qg" href="https://www.theguardian.com/technology/2018/nov/21/zuckerbergs-control-of-facebook-is-near-absolute-who-will-hold-him-accountable" rel="noopener ugc nofollow" target="_blank">Zuckerberg’s control of Facebook is near absolute — who will hold him accountable?</a>, The Guardian, 2018
+¹<a href="https://www.theguardian.com/technology/2018/nov/21/zuckerbergs-control-of-facebook-is-near-absolute-who-will-hold-him-accountable" rel="noopener ugc nofollow" target="_blank">Zuckerberg’s control of Facebook is near absolute — who will hold him accountable?</a>, The Guardian, 2018
+
+²<a href="https://www.cnbc.com/2019/10/30/twitter-bans-political-ads-after-facebook-refused-to-do-so.html" rel="noopener ugc nofollow" target="_blank">“Twitter bans political ads after Facebook refused to do so”</a>, CNBC, 2019
