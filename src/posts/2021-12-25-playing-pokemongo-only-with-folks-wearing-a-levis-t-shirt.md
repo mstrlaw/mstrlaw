@@ -65,8 +65,8 @@ The Shutter component simply passes the whole event on input change. App.vue h
 Then, to read the content of the image we employ the FileReader API and use the *onload* callback to then feed the data back to Clarifai, such as:
 
 <code>
-<p>
 
+<pre>
 ...
 methods:{
   identifyBrand(imageData){
@@ -85,7 +85,6 @@ methods:{
             if (Object.keys(r.outputs\[0].data).length > 0) {
               //  Clarifai returns the multiple places with matches in the image
               r.outputs\[0].data.regions.map( el => {
-                  
                 //  Bulletproof. Just looking for 'levi' match in the name value
                 if (el.data.concepts\[0].name.toLowerCase().match('levi') !== null) {
                   //  Only count the match if the confidence score is above .9
@@ -118,5 +117,5 @@ methods:{
   },
   ...
 
-</p>
+</pre>
 </code>
