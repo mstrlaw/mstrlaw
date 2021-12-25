@@ -41,4 +41,6 @@ No more forgetting to buy that toilet paper! Jarbas is here for you.
 
 ## Results
 
+After 2 days of hacking away and testing, Jarbas was live (on now defunct Xervo (formerly known as Modulus).  You can check the presentation below.
+
 <video src="/static/images/jarbas_pixels_camp_2016.mp4" controls></video>
