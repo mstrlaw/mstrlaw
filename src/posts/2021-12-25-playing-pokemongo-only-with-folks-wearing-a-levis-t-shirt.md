@@ -32,4 +32,6 @@ In other words, **a ton of work!**
 
 First, you’d need to handle standardizing the photo to extract the brand area. Moreover and as importantly, you’d need to create a good training data set for the NN to identify the t-shirt.
 
-![](/static/images/app_simulation.gif)
+![An image depicting the app prototype.](/static/images/app_simulation.gif "App prototype")
+
+<p class="u-ImageDescription">App prototype.</p>
