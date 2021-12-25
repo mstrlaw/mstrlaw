@@ -99,4 +99,48 @@ Could Facebook want more than simply connecting the world? What would be the res
 
 ¹<a href="https://www.theguardian.com/technology/2018/nov/21/zuckerbergs-control-of-facebook-is-near-absolute-who-will-hold-him-accountable" rel="noopener ugc nofollow" target="_blank">Zuckerberg’s control of Facebook is near absolute — who will hold him accountable?</a>, The Guardian, 2018
 
-²<a href="https://www.cnbc.com/2019/10/30/twitter-bans-political-ads-after-facebook-refused-to-do-so.html" rel="noopener ugc nofollow" target="_blank">“Twitter bans political ads after Facebook refused to do so”</a>, CNBC, 2019
+²<a href="https://www.cnbc.com/2019/10/30/twitter-bans-political-ads-after-facebook-refused-to-do-so.html" rel="noopener ugc nofollow" target="_blank">Twitter bans political ads after Facebook refused to do so</a>, CNBC, 2019
+
+³<a href="https://www.bbc.com/news/technology-50498166" rel="noopener ugc nofollow" target="_blank">Google to restrict political adverts worldwide</a>, BBC, 2019
+
+⁴<a href="https://www.nytimes.com/2020/01/09/technology/facebook-political-ads-lies.html" rel="noopener ugc nofollow" target="_blank">Facebook Says It Won’t Back Down From Allowing Lies in Political Ads,</a> NYT, 2020
+
+⁵<a href="https://www.theinformation.com/articles/zuckerberg-tells-facebook-staff-he-expects-advertisers-to-return-soon-enough?shared=55fd71efc87f385e" rel="noopener ugc nofollow" target="_blank">Zuckerberg Tells Facebook Staff He Expects Advertisers to Return ‘Soon Enough’ </a>, The Information, 2020
+
+⁶<a href="https://edition.cnn.com/2020/06/26/tech/facebook-boycott/index.html" rel="noopener ugc nofollow" target="_blank">The hard truth about the Facebook ad boycott: Nothing matters but Zuckerberg</a>, CNN, 2020
+
+⁷<a href="https://www.axios.com/trump-facebook-zuckerberg-phone-call-d8d1016e-4e17-4906-b4f4-dc3e5c00bca7.html?utm_source=morning_brew" rel="noopener ugc nofollow" target="_blank">Trump and Zuckerberg share phone call amid social media furor</a>, Axios, 2020
+
+⁸<a href="https://www.cnbc.com/2019/09/19/facebook-ceo-mark-zuckerberg-met-president-trump-at-the-white-house.html" rel="noopener ugc nofollow" target="_blank">Facebook’s Zuckerberg met with President Trump at the White House</a>, CNBC, 2019
+
+⁹<a href="https://www.nbcnews.com/tech/tech-news/trump-hosted-zuckerberg-undisclosed-dinner-white-house-october-n1087986" rel="noopener ugc nofollow" target="_blank">Trump hosted Zuckerberg for undisclosed dinner at the White House in October</a>, NBC, 2019
+
+¹⁰<a href="https://www.cnbc.com/2020/01/07/top-facebook-exec-says-trump-ran-best-digital-ad-campaign-ever-in-2016.html" rel="noopener ugc nofollow" target="_blank">Top Facebook exec says Trump ran the best digital ad campaign ever in 2016</a>, CNBC, 2020
+
+¹¹<a href="https://www.cnbc.com/2019/08/23/facebook-releases-new-cambridge-analytica-documents.html" rel="noopener ugc nofollow" target="_blank">Facebook learned about Cambridge Analytica as early as September 2015, new documents show</a>, CNBC 2019
+
+¹²<a href="https://qz.com/1233579/facebook-and-cambridge-analytica-worked-side-by-side-at-a-trump-campaign-office-in-san-antonio/" rel="noopener ugc nofollow" target="_blank">Facebook and Cambridge Analytica worked side by side at a Trump campaign office in San Antonio</a>, Quartz 2018
+
+¹³<a href="https://www.businessinsider.com/trump-other-advertisers-spending-most-on-facebook-political-ads-2019-11" rel="noopener ugc nofollow" target="_blank">From Trump to Planned Parenthood, these are the Facebook pages spending the most money on political ads</a>, Business Insider, 2019
+
+¹⁴<a href="https://www.statista.com/statistics/271258/facebooks-advertising-revenue-worldwide/#:~:text=In%202019%2C%20about%2098.5%20percent,increase%20in%20comparison%20to%20the" rel="noopener ugc nofollow" target="_blank">Facebook’s advertising revenue worldwide from 2009 to 2019</a>, Statista, 2020
+
+¹⁵<a href="https://www.vox.com/2014/11/4/7154641/midterm-elections-2014-voted-facebook-friends-vote-polls" rel="noopener ugc nofollow" target="_blank">Facebook’s I Voted sticker was a secret experiment on its users</a>, Vox, 2014
+
+¹⁶<a href="https://www.independent.co.uk/life-style/gadgets-and-tech/facebook-manipulated-users-moods-in-secret-experiment-9571004.html" rel="noopener ugc nofollow" target="_blank">Facebook manipulated users’ moods in secret experiment</a>, Independent, 2014
+
+¹⁷<a href="https://www.theguardian.com/technology/2020/jun/17/facebook-plans-to-boost-voter-turnout-and-transparency-in-us-elections" rel="noopener ugc nofollow" target="_blank">Facebook plans voter turnout push — but will not bar false claims from Trump</a>, The Guardian, 2020
+
+¹⁸<a href="https://www.mediamatters.org/facebook/bombshell-report-facebook-has-known-it-fomenting-extremism-years-and-refuses-stop" rel="noopener ugc nofollow" target="_blank">Bombshell report: Facebook has known that it is fomenting extremism for years — and refuses to stop</a>, Media Matters for America 2020
+
+¹⁹<a href="https://www.reuters.com/article/us-facebook-protests-firing/facebook-fires-employee-who-protested-inaction-on-trump-posts-idUSKBN23J35Y" rel="noopener ugc nofollow" target="_blank">Facebook fires employee who protested inaction on Trump posts</a>, Reuters, 2020
+
+²⁰<a href="https://www.techtransparencyproject.org/facebook-attorneys-general" rel="noopener ugc nofollow" target="_blank">Inside Facebook’s Years-Long Effort to Influence State Prosecutors</a>, Tech Transparency Project, 2020
+
+²¹<a href="https://www.protocol.com/facebook-privacy-laws-white-paper" rel="noopener ugc nofollow" target="_blank">Facebook’s plan for privacy laws? ‘Co-creating’ them with Congress</a>, Protocol, 2020
+
+²²<a href="https://www.washingtonpost.com/technology/2020/06/28/facebook-zuckerberg-trump-hate/" rel="noopener ugc nofollow" target="_blank">Zuckerberg once wanted to sanction Trump. Then Facebook wrote rules that accommodated him</a>., Washington Post, 2020
+
+²³<a href="https://en.wikipedia.org/wiki/IBM_and_the_Holocaust" rel="noopener ugc nofollow" target="_blank">IBM and the Holocaust: The Strategic Alliance between Nazi Germany and America’s Most Powerful Corporation</a>, Edwin Black, 2001
+
+²⁴<a href="https://www.theguardian.com/technology/2020/jul/05/facebook-is-out-of-control-if-it-were-a-country-it-would-be-north-korea" rel="noopener ugc nofollow" target="_blank">Facebook is out of control. If it were a country it would be North Korea</a>, The Guardian, 2020
