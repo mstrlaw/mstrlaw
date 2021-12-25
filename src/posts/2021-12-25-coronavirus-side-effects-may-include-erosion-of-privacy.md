@@ -1,6 +1,6 @@
 ---
 layout: post.hbs
-title: "Coronavirus: Side Effects May Include Erosion of Privacy"
+title: Coronavirus' Side Effects Include Erosion of Privacy?
 summary: Extreme societal events are always an opportunity to bring people and
   nations together<sup>1</sup>. But they can also put at risk our individual
   freedoms.
