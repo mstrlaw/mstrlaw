@@ -1,6 +1,6 @@
 ---
 layout: post.hbs
-title: "Facebook: Aspirational Government?"
+title: "Facebook: The Aspirational Government"
 summary: Plowing through one PR crisis after another, could its long term goals
   not be purely financial gain?
 feat_image: /static/images/facebook_gif.gif
