@@ -18,3 +18,5 @@ In Israel, the government just <a href="https://www.haaretz.com/israel-news/.pre
 In the U.S., the <a href="https://www.washingtonpost.com/technology/2020/03/17/white-house-location-data-coronavirus/" target="_blank">Washington Post reported</a> that the government has held conversations with Facebook and Google executives in order to explore ways to track and analyze people’s movements to monitor the spread of the infection and understand the effectiveness of social distancing measures. <a href="https://www.cnet.com/health/zuckerberg-says-facebook-is-not-giving-governments-data-to-track-coronavirus-spread/#ftag=cad590a51e" target="_blank">Facebook stated reports were overstated</a>, but we’ve seen that collaborating with the government has proven many times to be <a href="https://medium.com/swlh/thoughts-on-how-technology-is-turning-against-us-4bd00f4887ad" target="_blank">beneficial for Big Tech</a>.
 
 <hr>
+
+asdasd
