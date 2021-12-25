@@ -41,4 +41,4 @@ No more forgetting to buy that toilet paper! Jarbas is here for you.
 
 ## Results
 
-<video src="/src/static/images/jarbas_pixels_camp_2016.mp4" controls></video>
+<video src="/static/images/jarbas_pixels_camp_2016.mp4" controls></video>
