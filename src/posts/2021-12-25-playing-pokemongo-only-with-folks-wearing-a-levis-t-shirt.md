@@ -53,6 +53,8 @@ We do that by using the *accept* and *capture* parameters on a regular input
 <code>
 
 // Within Shutter.vue component
+
+
 <input id="cameraInput" type="file" name="camera" accept="image/*" class="image-input" capture @change="processImage($event)">
 
 </code>
