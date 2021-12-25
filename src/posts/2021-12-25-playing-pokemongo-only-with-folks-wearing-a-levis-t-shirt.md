@@ -35,3 +35,7 @@ First, you’d need to handle standardizing the photo to extract the brand area.
 ![An image depicting the app prototype.](/static/images/app_simulation.gif "App prototype")
 
 <p class="u-ImageDescription">App prototype.</p>
+
+That’s too much for an afternoon project! Plus, there are some variations of it with blue shirts instead of white; some others look like a Pepsi logo. So, interesting challenge, but probably crappy solution.
+
+Hold on, how ‘bout using [](https://clarifai.com/)<a href="https://clarifai.com/" target="_blank">Clarifai</a>? Those guys have some solid computer vision solutions, including [](https://clarifai.com/models/logo-image-recognition-model-c443119bf2ed4da98487520d01a0b1e3)<a href="https://clarifai.com/models/logo-image-recognition-model-c443119bf2ed4da98487520d01a0b1e3" target="_blank">identifying brands</a>. On top of that, they have a free tier providing 5k transactions/month, ideal for our test case. Bingo!
