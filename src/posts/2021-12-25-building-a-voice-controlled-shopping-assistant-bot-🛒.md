@@ -1,6 +1,6 @@
 ---
 layout: post.hbs
-title: Building a Voice Controlled shopping assistant bot
+title: Voice Controlled Shopping List
 summary: A voice powered groceries shopping assistant built for the <a
   href="https://pixels.camp/" target="_blank">Pixels Camp</a>'s 2016 Hackathon.
 feat_image: /static/images/jarbas_gif.gif
