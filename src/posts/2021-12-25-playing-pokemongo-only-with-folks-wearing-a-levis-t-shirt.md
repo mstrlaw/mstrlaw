@@ -122,13 +122,11 @@ methods:{
 
 <hr>
 
-## Testing it
+## Testing In The Wild
 
 ![A couple posing for a picture, wearing a Levis shirt.](/static/images/levis_shirt.png "Photo by Bruno Vaz for the amusing NIT article on people wearing Levis t-shirts.")
 
 <p class="u-ImageDescription">Photo by <a href="https://www.instagram.com/godinhovaz/" target="_blank">Bruno Vaz</a> for the amusing <a href="https://www.nit.pt/compras/lojas-e-marcas/porque-e-que-toda-a-gente-no-rock-in-rio-usa-as-mesmas-t-shirts-da-levis" target="_blank">NIT article</a> on people wearing Levis t-shirts.</p>
-
-## In The Wild
 
 After walking for 1h, I spotted *at least* 20 people wearing it! 🙈
 
