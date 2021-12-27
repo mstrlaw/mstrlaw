@@ -1,7 +1,9 @@
 ---
 layout: post.hbs
 title: Views on Vue Podcast — Building Micro Frontends with Lawrence Almeida
-summary: Was invited to talk on the *Views on Vue* podcast.
+summary: Was invited to talk on the <a
+  href="https://viewsonvue.com/building-micro-frontends-with-lawrence-almeida-vue-160"
+  target="_blank">*Views on Vue</a>* podcast.
 publish_date: 2021-08-17T11:49:09.845Z
 update_date: 2021-08-17T11:49:09.859Z
 ---
