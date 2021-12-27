@@ -38,6 +38,7 @@ Metalsmith(__dirname)
       },
       allPosts: {
         pattern: 'posts/*.md',
+        reverse: true,
         sortBy: 'update_date',
       }
     }))

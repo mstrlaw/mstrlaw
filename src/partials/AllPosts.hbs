@@ -1,9 +1,7 @@
-{{#if (reverse lastPosts) }}
+{{#if (reverse allPosts) }}
 <section class="c-Timeline__wrapper">
-  <h2 class="l-MainBlock__intro">Posts, projects, thoughts</h2>
-  <a href="/posts" class="u-Highlight">View all</a>
   <ul class="c-Timeline">
-    {{#each lastPosts}}
+    {{#each allPosts}}
       <li class="c-Timeline__container">
         <div class="c-Timeline__item">
           <a href="/{{ path }}" class="c-Timeline__itemTitle">

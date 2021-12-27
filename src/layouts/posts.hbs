@@ -27,28 +27,17 @@
 
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
-  <link rel="stylesheet" href="/styles/post.css">
+  <link rel="stylesheet" href="/styles/timeline.css" async>
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/footer.css" async>
   <script src="/scripts/extra.min.js"></script>
-  {{> HomeStyles }}
 </head>
 
 <body>
   {{> Header }}
   <div class="l-Container">
-    <article class="c-Post">
-      <time>{{ formattedDate publish_date }}</time>
-      {{#if feat_image}}
-        <h1 class="c-Post__title">{{ title }}</h1>
-        <p class="c-Post__summary">{{{ summary }}}</p>
-        <img src="{{ feat_image }}" alt="Post main image">
-      {{else}}
-        <h1 class="c-Post__title margin">{{ title }}</h1>
-        <p class="c-Post__summary">{{{ summary }}}</p>
-      {{/if}}
-      {{{ contents }}}
-    </article>
+    <br>
+    {{> AllPosts }}
   </div>
 
   <div class="c-Background"></div>
@@ -56,6 +45,10 @@
 </body>
 <script>
   window.onload = async () => {
+    await injectScript('//cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js');
+    await injectScript('//cdn.jsdelivr.net/npm/dayjs@1.10.4/plugin/relativeTime.min.js');
+    dayjs.extend(window.dayjs_plugin_relativeTime);
+    setTimeAgo();
     initHeader();
   }
 </script>

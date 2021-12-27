@@ -1,3 +1,14 @@
+const injectScript = (url) => new Promise((resolve) => {
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.async = true;
+  script.src = url;
+  // Append the script to the DOM
+  const el = document.getElementsByTagName('script')[0];
+  el.parentNode.insertBefore(script, el);
+  // Resolve the promise once the script is loaded
+  script.addEventListener('load', () => resolve());
+});
 const generateExtra =  () => {
   try {
     const perf = window.performance.getEntriesByType("navigation")[0];
@@ -20,7 +31,11 @@ const setTimeAgo = () => {
       const read = date.getAttribute('data-readable');
       date.innerHTML = `<span title="${read}">${dayjs(attr).from(dayjs())}</span>`;
     });
+    resolve();
   });
+}
+const initHeader = () => {
+  document.getElementById('navigateBack').addEventListener('click', () => window.history.back());
 }
 const generateAdr = () => {
   const m = ['law','@m','s','t','r','law','.','co','m'].join('');

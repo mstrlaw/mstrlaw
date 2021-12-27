@@ -65,9 +65,9 @@
   }
 
   &__itemTitle {
-    --min: 1.4em;
+    --min: 1.2em;
     --val: 2.5vw;
-    --max: 1.6em;
+    --max: 1.4em;
     font-size: clamp(var(--min), var(--val), var(--max));
     text-decoration-color: var(--darkBlue);
     font-weight: 300;

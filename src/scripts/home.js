@@ -1,17 +1,6 @@
 let loadedChart = false;
 let loadTime = 0;
 let totalTime = 0;
-const injectScript = (url) => new Promise((resolve) => {
-  const script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.async = true;
-  script.src = url;
-  // Append the script to the DOM
-  const el = document.getElementsByTagName('script')[0];
-  el.parentNode.insertBefore(script, el);
-  // Resolve the promise once the script is loaded
-  script.addEventListener('load', () => resolve());
-});
 
 const loadChartData = async () =>
   await axios
