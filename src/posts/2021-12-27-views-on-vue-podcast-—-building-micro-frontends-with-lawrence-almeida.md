@@ -2,6 +2,8 @@
 layout: post.hbs
 title: Views on Vue Podcast on Building Micro Frontends
 summary: ""
+feat_image: /static/images/microfrontend_diagram.png
+feat_image_alt: A diagram representing the architecture of a micro-frontend
 publish_date: 2021-08-17T11:49:09.845Z
 update_date: 2021-08-17T11:49:09.859Z
 ---
