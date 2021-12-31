@@ -1,7 +1,8 @@
 ---
 layout: post.hbs
 title: What Does It Means To Be An Adult?
-summary: Incomplete thoughts on the meaning of being adult.
+summary: Incomplete collection of thoughts on exploring the meanings of being
+  adult under different angles.
 publish_date: 2021-12-31T15:11:14.982Z
 update_date: 2021-12-31T15:13:03.837Z
 ---
@@ -23,10 +24,22 @@ No wait. It's not responsible. It's actually being held accountable. At some poi
 
 Young children taking their parent's gun and killing their siblings aren't treated as *adults* that would do the same. Children and teens are not considered to be fully conscious of the consequences of their actions and therefore be held accountable to the same extent as an adult. *It is assumed you know of the consequences of X and still, you did it*.
 
-It seems useful err on the side of legal interpretations for this exercise as it's where the distinction between accountable and non-accountable people can imply very a different treatment.
+An autistic 38 years old person killing someone wouldn't be charged the same way as a "fully conscious" adult, whatever that means. Same thing for a small child. If you sort of know that saying, doing or behaving in some specific way can cause harm in any form, you're held accountable more strongly than if you didn't know. The difference between murder and manslaughter.
 
-An autistic 38 years old person killing someone wouldn't be charged the same way as a "fully conscious" adult, whatever that means. Same thing for a small child. 
-
-So in a way, if you sort of know that saying, doing or behaving in some specific way can cause harm in any form, you're held accountable more strongly than if you didn't know. The difference between murder and manslaughter.
+It seems useful err on the side of legal interpretations for this exercise as it's where the distinction between accountable and non-accountable people has the strongest implications.
 
 <hr>
+
+**So in a way, if you're an adult, you have some sort of consciousness of yourself and your actions repercussions towards the physical world and others.** And others hold you accountable for your bad actions..
+
+Yet leaders of totalitarian regimes are seldom held accountable, no matter how horrible their actions may be. And even when they are and are punished, does it means that they weren't adults before and now are? Does the collective notion of accountability then determines the perception of adulthood? Also, isn't it funny to believe punishment is reserved for children when in fact it exists throughout our lives under many forms?
+
+So having others hold you accountable can't be used reliably as an indicator of adulthood. But maybe holding yourself accountable?
+
+## On Discipline
+
+Controlling emotions. Physical and mental habits.
+
+## On Morality
+
+Distinguishing good and evil. Choosing good over evil.
