@@ -22,7 +22,7 @@ I've read that adults are responsible for their actions. But aren't children in 
 
 No wait. It's not responsible. It's actually being held accountable. At some point, you are considered accountable for what you do. Your actions and choices have consequences. 
 
-Young children taking their parent's gun and killing their siblings aren't treated as *adults* that would do the same. Children and teens are not considered to be fully conscious of the consequences of their actions and therefore be held accountable to the same extent as an adult. *It is assumed you know of the consequences of X and still, you did it*.
+Young children taking their parent's gun and killing their siblings aren't treated as *adults* that would do the same. Children and teens are not considered to be fully conscious of the consequences of their actions and therefore be held accountable to the same extent as an adult. *It is assumed you knew of the consequences of X and still, you chose to do it*.
 
 An autistic 38 years old person killing someone wouldn't be charged the same way as a "fully conscious" adult, whatever that means. Same thing for a small child. If you sort of know that saying, doing or behaving in some specific way can cause harm in any form, you're held accountable more strongly than if you didn't know. The difference between murder and manslaughter.
 
