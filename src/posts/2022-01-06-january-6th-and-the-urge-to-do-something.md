@@ -54,7 +54,9 @@ Then, we moved onto positioning the videos on Google Maps. The Parler videos wer
 
 Unfortunately those videos didn't have any geolocation, so we went ahead and added their location manually through a combination of visual cues from other videos, Google Street view for external landmarks and research for landmarks that could indicate the location of the internal videos.
 
+![A set of google maps screenshots with landmark references and a map of the U.S. Capitol](/static/images/references.png "Set of reference images used to pinpoint location of videos that didn't have associated geodata")
 
+<p class="u-ImageDescription">Set of reference images used to pinpoint location of videos that didn't have associated geodata</p>
 
 <h2>Technologists Must Improve What They Can</h2>
 
