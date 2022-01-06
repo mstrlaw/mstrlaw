@@ -24,8 +24,10 @@ But in a very concrete way, it attacked something that we share with Americans: 
 
 <hr>
 
-Days later, as footage surfaced of people denigrating an established democratic process: rioting, breaking an entry, joking around and just having a ball shitting on a concept that literally gave them the life that precisely allowed them to march down and protest, something interesting happened.
+Days later — as footage surfaced of people denigrating an established democratic process: rioting, breaking an entry, joking around and just having a ball shitting on a concept that literally gave them the life that precisely allowed them to march down and protest — something interesting happened.
 
-The internet got annoyed and Parler got hacked, leaked a trove of user videos to the web, georeferenced and all.
+The internet got annoyed and Parler got hacked (it also wasn't hard apparently), leaking a trove of user videos to the web, georeferenced and all.
 
-Parler is just one of the many sad examples of attempts to create alternative social networks and parallel narratives in order to avoid facing the reality we live in. It's where
+Parler is just one of the many sad examples of the attempts there have been to create alternative virtual communities where the shared reality gets distorted and parallel narratives get to be built in order to avoid facing the actual reality we live in. People looking for safe space that protect their belief only turn them intellectually weaker and ironically even less able to face the inconveniences of an imperfect world. 
+
+Anyways, at some point, leaked videos were accessible. Mathieu and I found them <a href="https://jan6attack.com/" target="_blank">hosted</a> by <a href="https://twitter.com/carstensenpol/" target="_blank">Tommy Carstensen</a>
