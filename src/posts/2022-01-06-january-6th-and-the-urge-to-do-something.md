@@ -36,9 +36,7 @@ I'll never understand people actively looking for a space that tells them what t
 
 At some point, leaked videos were accessible. Mathieu and I found them <a href="https://jan6attack.com/" target="_blank">hosted</a> by <a href="https://twitter.com/carstensenpol/" target="_blank">Tommy Carstensen</a>. We looked at them, looked at each other and knew we could do something with this and knew we had to do something, anything.
 
-The idea was pretty straightforward: let's do a visual map where people can see where the videos were taken, zoom in on them and look at what happened "as if you were there". We just felt this needed to be seen by as many people possible, without any strong rational backing except the belief that this attack on the democratic ideology couldn't be shrugged off as just another day in the U.S.A.
-
-What happens in the U.S.A. has consequences for the rest of the world whether we acknowledge it or not. A strong man gets elected in the most influential nation in the world, others are going to start popping out, as it has been the case. An idiot is in charge, other idiots are going to feel legitimized. A mob attacks the ideal of democracy, other fools are going to do the same.
+The idea was pretty straightforward: let's do a visual map where people can see where the videos were taken, zoom in on them and look at what happened "as if you were there". This needed to be seen by as many people possible, without any strong rational backing except the belief that this attack on the democratic ideology couldn't be shrugged off as just another day in the U.S.A.
 
 <hr>
 
@@ -50,16 +48,36 @@ The original hosting wasn't meant for streaming videos. Files were raw, too big 
 
 We downloaded all the available Parler videos hosted by Tommy, converted them into mp4, compressed them and hosted them on a Digital Ocean Spaces to serve them through their CDN. We also extracted the first frame of each video to create a preview thumbnail.
 
-Then, we moved onto positioning the videos on Google Maps. The Parler videos were referenced so it was relatively ok. Along the way we learned there were videos being compiled by people around the web form other platforms. When we found <a href="https://mega.nz/folder/30MlkQib#RDOaGzmtFEHkxSYBaJSzVA" target="_blank">this Megaupload folder</a>, we decided to add the Twitter videos too.
+Then, we moved onto positioning the videos on Google Maps. The Parler videos were referenced so it was easy. Along the way we learned there were videos being compiled by people around the web form other platforms. When we found <a href="https://mega.nz/folder/30MlkQib#RDOaGzmtFEHkxSYBaJSzVA" target="_blank">this Megaupload folder</a>, we decided to add the Twitter videos too.
 
-Unfortunately those videos didn't have any geolocation, so we went ahead and added their location manually through a combination of visual cues from other videos, Google Street view for external landmarks and research for landmarks that could indicate the location of the internal videos.
+Unfortunately those videos didn't have any geolocation, so we went ahead and pinpointed their location manually through a combination of visual cues from other videos, Google Street view for outside videos and researched for the Capitol building interior landmark and cues that could indicate the location of the internal videos.
 
 ![A set of google maps screenshots with landmark references and a map of the U.S. Capitol](/static/images/references.png "Set of reference images used to pinpoint location of videos that didn't have associated geodata")
 
 <p class="u-ImageDescription">Set of reference images used to pinpoint location of videos that didn't have associated geodata</p>
 
+We even went ahead and put up a how-to description for possible contributors that wished to help identifying the location of videos. 
+
+<hr>
+
+At that moment, even though possibly idiotic, I felt at least I was using technology for something "worthy", whatever that means.
+
 <h2>Technologists Must Improve What They Can</h2>
 
-Even though there's no way of measuring if any of this had any impact, we felt that adding another voice to the chorus of people manifesting against this event means something more than just shaking our heads. 
+Why even do this? There's no way of measuring if any of this had any impact, but I felt that adding another voice to the chorus of people manifesting against this event was better than simply shaking our heads.
 
-Many other technologists tried in their own ways to do what they could to disseminate this event, fearful that it could be scrubbed from the mainstream web or spun into something else by propagandists and sycophants.
+What happens in the U.S.A. has consequences for the rest of the world whether or no we acknowledge this fact. A strong man gets elected in the most influential nation in the world, others are going to start popping out, as it has been the case. An idiot is in charge, other idiots are going to feel legitimized. A mob attacks the ideal of democracy, other fools are going to do the same.
+
+We must, with the tools at hand, do our part to protect the system that allows for democracy. Many other technologists around the world did what they could, fearful that this day could be scrubbed from the mainstream web or spun into something else by propagandist TV networks, sycophants and useful idiots. Along the way I discovered <a href="https://facesoftheriot.com/" target="_blank">Faces of the Riot</a>, a website built by someone that had used readily available facial detection tech and applied it to the Parler videos, then listing all of those faces in the hopes of helping people and authorities identifying the perpetrators of the riot.
+
+I ended up interviewing him for <a href="https://criticalfuture.tech/issue-5-march-2021-faces-of-the-riot-2ED4B1DFE5EA" target="_blank">Critical Future Tech</a> and if you read the interview, you'll see that him too, like so many, felt the urge to do something, anything. 
+
+I admire any technologist that realizes his ability to do positive change through their knowledge and expertise and acts on it. We must do our part to prevent the erosion of democracy. Although imperfect, it's the best we've got so far that allows for an inclusive human experience.
+
+> The world will not be destroyed by those who do evil, but by those who watch them without doing anything.
+>
+> \- Albert Einstein
+
+<hr>
+
+For the curious, the app is hosted on <a href="https://capitol.netlify.app/" target="_blank">https://capitol.netlify.app</a> but you no longer can see any media as we took down the Digital Ocean Spaces. We feel that it had served its purpose and the volume of visits doesn't justify its cost. You can see a bit more on the <a href="https://github.com/mstrlaw/capitol" target="_blank">GitHub repo</a>.
