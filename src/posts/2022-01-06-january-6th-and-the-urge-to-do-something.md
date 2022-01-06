@@ -23,3 +23,9 @@ Now, Lisbon is far away from Washington D.C. which means that it isn't our Capit
 But in a very concrete way, it attacked something that we share with Americans: the ideal of Democracy. And that was, indeed, something dystopian to watch live.
 
 <hr>
+
+Days later, as footage surfaced of people denigrating an established democratic process: rioting, breaking an entry, joking around and just having a ball shitting on a concept that literally gave them the life that precisely allowed them to march down and protest, something interesting happened.
+
+The internet got annoyed and Parler got hacked, leaked a trove of user videos to the web, georeferenced and all.
+
+Parler is just one of the many sad examples of attempts to create alternative social networks and parallel narratives in order to avoid facing the reality we live in. It's where
