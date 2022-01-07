@@ -5,7 +5,7 @@ summary: Today marks the one year anniversary of the storming of the U.S.
   Capitol. I'm not American but I believe in the democratic system and, at that
   moment, I felt the urge to do something.
 feat_image: /static/images/capitol_preview.gif
-feat_image_alt: The city of Washington D.C. seen on Google Maps with circles
+feat_image_alt: The city of Washington D.C. seen on Mapbox with circles
   indicating the location of videos from the Parler hack.
 publish_date: 2022-01-06T21:13:36.422Z
 update_date: 2022-01-06T21:13:36.435Z
@@ -28,7 +28,7 @@ Days later — as footage surfaced of people denigrating an established democrat
 
 The internet got annoyed and thousands of <a href="https://en.wikipedia.org/wiki/Parler#Content_scraping" target="_blank">Parler videos were scraped</a> and released to the web, georeferenced and all.
 
-Parler is just one of the many sad examples of the attempts there have been to create alternative virtual communities where the shared reality gets distorted and parallel narratives get to be built in order to avoid facing the actual reality we live in.
+Parler is just one of the many sad attempts there have been to create alternative virtual communities where the shared reality gets distorted and parallel narratives get to be built in order to avoid facing the actual reality we live in. The latest flavor being Gettr.
 
 I'll never understand people actively looking for a space that tells them what they want to hear. Hearing what we don't want to hear is what strengthens our mental. The oposite ironically makes us even less able to face the inconveniences of an imperfect world.
 
@@ -48,7 +48,7 @@ The original hosting wasn't meant for streaming videos. Files were raw, too big 
 
 We downloaded all the available Parler videos hosted by Tommy, converted them into mp4, compressed them and hosted them on a Digital Ocean Spaces to serve them through their CDN. We also extracted the first frame of each video to create a preview thumbnail.
 
-Then, we moved onto positioning the videos on Google Maps. The Parler videos were referenced so it was easy. Along the way we learned there were videos being compiled by people around the web form other platforms. When we found <a href="https://mega.nz/folder/30MlkQib#RDOaGzmtFEHkxSYBaJSzVA" target="_blank">this Megaupload folder</a>, we decided to add the Twitter videos too.
+Then, we moved onto positioning the videos on Mapbox. The Parler videos were referenced so it was easy. Along the way we learned there were videos being compiled by people around the web form other platforms. When we found <a href="https://mega.nz/folder/30MlkQib#RDOaGzmtFEHkxSYBaJSzVA" target="_blank">this Megaupload folder</a>, we decided to add the Twitter videos too.
 
 Unfortunately those videos didn't have any geolocation, so we went ahead and pinpointed their location manually through a combination of visual cues from other videos, Google Street view for outside videos and researched for the Capitol building interior landmark and cues that could indicate the location of the internal videos.
 
@@ -56,11 +56,23 @@ Unfortunately those videos didn't have any geolocation, so we went ahead and pin
 
 <p class="u-ImageDescription">Set of reference images used to pinpoint location of videos that didn't have associated geodata</p>
 
-We even went ahead and put up a how-to description for possible contributors that wished to help identifying the location of videos. 
+We even went ahead and put up a how-to description for possible contributors that wished to help identifying the location of videos. The site was live in a couple of nights, but georeferencing the remaining videos took manny more hours.
+
+Hours spent watching a couple of hundreds of videos of people cheering and having a tribal time around this decaying exhibition of disrespect and idiocy, the herd mentality displayed at its best (funny enough from the same group that gleefully threw around the NPC memes).
+
+While having to watch the videos, I ended up tagging videos to allow for some filtering on the app. You can filter the 873 videos for chants, vlogs, police, violence, (discernible) conversations, and even the ones where Trump, Alex Jones and Roger Stone are seen. Fun.
+
+At that moment, for a brief moment, I felt at least I was using technology for something "worthy", whatever that word means. We also took the opportunity to learn a bit here and there.
 
 <hr>
 
-At that moment, even though possibly idiotic, I felt at least I was using technology for something "worthy", whatever that means.
+We shared the link on the *washingtondc* subreddit in the hopes it would be useful to Washingtonians (I had traveled to the city months ago, visiting the Capitol too and admittedly felt some connection to the event). We were happy if only even one person got value out of this project to grasp the sheer extreme that his represented to all those that cherish our way of life.
+
+
+
+![A screenshot of the visitor analytics data for January 2021, showing a total of 1,761 sessions.](/static/images/capitol_visits.jpg "Analytics data for visits to the web app.")
+
+<p class="u-ImageDescription">Analytics data for visits to the web app</p>
 
 <h2>Technologists Must Improve What They Can</h2>
 
