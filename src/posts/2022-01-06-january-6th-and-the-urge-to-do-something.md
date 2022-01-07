@@ -7,6 +7,7 @@ summary: Today marks the one year anniversary of the storming of the U.S.
 feat_image: /static/images/capitol_preview.gif
 feat_image_alt: The city of Washington D.C. seen on Mapbox with circles
   indicating the location of videos from the Parler hack.
+description: Reflecting on January 6th and the urge to do something about it
 publish_date: 2022-01-06T21:13:36.422Z
 update_date: 2022-01-06T21:13:36.435Z
 ---
