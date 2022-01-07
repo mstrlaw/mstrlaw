@@ -74,6 +74,40 @@ video {
   height: auto   !important;
 }
 
+blockquote {
+  border-left-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #4062bb, #E975A8 ) 10 0 10 100%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: #EFF1F1;
+  margin-left: 0.5em;
+  padding: 1em;
+
+  p:first-of-type{
+    // display: inline;
+    font-style: italic;
+
+    &:before {
+      content: open-quote;
+      font-size: 2em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    &:after {
+      content: close-quote;
+      font-size: 2em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+  }
+  p:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
 // Used to denote links opening in new tab
 .u-NewTab {
   font-family: monospace;
