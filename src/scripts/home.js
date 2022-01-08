@@ -49,8 +49,6 @@ window.onload = async () => {
 
   setTimeAgo();
 
-  lazyLoadImages();
-
   const dataRequest = loadChartData();
   let tmp = {};
   let series = [];

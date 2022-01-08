@@ -9,7 +9,7 @@ feat_image: /static/images/desktop_test.gif
 feat_image_alt: A gif showing the app tacking a picture of a shirt with the
   Levis logo and identifying it correctly.
 publish_date: 2018-08-12T14:13:06.029Z
-update_date: 2018-08-12T14:13:00.000Z
+update_date: 2018-08-12T14:13:06.029Z
 ---
 All aboard the Levis shirt train!
 
@@ -29,7 +29,7 @@ Initially, my idea was to use the [](https://trackingjs.com/)<a href="https://t
 
 We’d then use [](http://caza.la/synaptic/#/)<a href="http://caza.la/synaptic/#/" target="_blank">synaptic.js</a> to build a Neural Network that could identify the brand.
 
-In other words, **a ton of work!** 
+In other words, **a ton of work!**
 
 First, you’d need to handle standardizing the photo to extract the brand area. Moreover and as importantly, you’d need to create a good training data set for the NN to identify the t-shirt.
 
@@ -59,7 +59,7 @@ We do that by using the *accept* and *capture* parameters on a regular input
 
 **Reading the image & passing it to Clarifai**
 
-The Shutter component simply passes the whole event on input change. App.vue handles the rest. We call the identifyBrand method when imageData event is triggered. 
+The Shutter component simply passes the whole event on input change. App.vue handles the rest. We call the identifyBrand method when imageData event is triggered.
 
 Then, to read the content of the image we employ the FileReader API and use the *onload* callback to then feed the data back to Clarifai, such as:
 
@@ -111,7 +111,7 @@ methods:{
         console.log(err)
       })
     }
-    // Load imageData  
+    // Load imageData
     reader.readAsDataURL(imageData)
   },
   ...

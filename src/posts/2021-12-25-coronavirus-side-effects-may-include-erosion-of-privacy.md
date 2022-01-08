@@ -5,7 +5,7 @@ summary: Extreme societal events are always an opportunity to bring people and
   nations together<sup>1</sup>. But they can also put at risk our individual
   freedoms.
 publish_date: 2020-03-19T13:53:33.554Z
-update_date: 2020-03-19T13:53:00.000Z
+update_date: 2020-03-19T13:53:33.554Z
 ---
 <hr>
 

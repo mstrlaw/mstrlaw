@@ -24,12 +24,20 @@ const generateExtra =  () => {
 }
 const setTimeAgo = () => {
   new Promise((resolve, reject) => {
-    const dates = document.querySelectorAll('[data-timeago]')
+    console.log('setTimeAgo');
+    const dates = document.querySelectorAll('.c-Timeline__itemDate')
     dates.forEach(date => {
-      const attr = date.getAttribute('data-timeago');
+      const attr = date.getAttribute('data-pubtimeago');
       if (!!!attr.length) return;
-      const read = date.getAttribute('data-readable');
-      date.innerHTML = `<span title="${read}">${dayjs(attr).from(dayjs())}</span>`;
+      const equalDate = date.getAttribute('data-equaldate') === 'true';
+      let read = `${dayjs(date.getAttribute('data-updtimeago')).from(dayjs())}`
+      let stamp = `${date.getAttribute('data-updreadable')}`
+
+      if (!equalDate) {
+        read = `${dayjs(date.getAttribute('data-pubtimeago')).from(dayjs())} <small><b>(updated ${dayjs(date.getAttribute('data-updtimeago')).from(dayjs())})</b></small>`;
+        stamp = `${date.getAttribute('data-pubreadable')}, ${date.getAttribute('data-updreadable')}`;
+      }
+      date.innerHTML = `<span title="${stamp}">${read}</span>`;
     });
     resolve();
   });
@@ -44,19 +52,4 @@ const generateAdr = () => {
     el.classList.remove('black');
     el.classList.remove('disabled');
   }, 5000);
-}
-
-const lazyLoadImages = () => {
-  let observer;
-  handleIntersection= function(entries) {
-    entries.map(entry => {
-      if (entry.isIntersecting) {
-        entry.target.onload = () => entry.target.parentNode.classList.remove('is-loading');
-        entry.target.src = entry.target.dataset.src;
-        observer.unobserve(entry.target);
-      }
-    });
-  }
-  observer = new IntersectionObserver(handleIntersection);
-  document.querySelectorAll('.c-Timeline__image').forEach(image => observer.observe(image));
 }

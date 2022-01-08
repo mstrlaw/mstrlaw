@@ -12,14 +12,17 @@
           <a href="/{{ path }}" class="c-Timeline__itemTitle">
             {{ title }}
           </a>
-          <time class="c-Timeline__itemDate" datetime="{{publishDate}}" data-readable="{{formatDate publish_date}}" data-timeago="{{update_date}}">
-            {{ formatDate publish_date }}
+          <time
+            class="c-Timeline__itemDate"
+            data-equaldate="{{ sameDate publish_date update_date}}"
+            datetime="{{publish_date}}"
+            data-pubreadable="{{formatDate publish_date}}"
+            data-pubtimeago="{{publish_date}}"
+            data-updreadable="{{formatDate update_date}}"
+            data-updtimeago="{{update_date}}"
+          >
+            {{ formatDate update_date }}
           </time>
-          {{#if feat_image}}
-          <div class="c-Timeline__imageWrapper is-loading">
-            <img class="c-Timeline__image" data-src="{{ feat_image }}" alt="Post main image">
-          </div>
-          {{/if}}
         </div>
       </li>
     {{/each}}
