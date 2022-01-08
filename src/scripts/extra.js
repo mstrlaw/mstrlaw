@@ -51,8 +51,8 @@ const lazyLoadImages = () => {
   handleIntersection= function(entries) {
     entries.map(entry => {
       if (entry.isIntersecting) {
+        entry.target.onload = () => entry.target.parentNode.classList.remove('is-loading');
         entry.target.src = entry.target.dataset.src;
-        entry.target.parentNode.classList.remove('is-loading');
         observer.unobserve(entry.target);
       }
     });
