@@ -1,16 +1,24 @@
 @import "./_breakpoints.scss";
 
 .c-Timeline {
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 0 0 3em 0;
   --min: 1.4em;
   --val: 2.5vw;
   --max: 1.6em;
+  $parent: &;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0;
+  margin-bottom: 0;
 
   &__wrapper {
     position: relative;
     min-height: 40vh;
+    padding: 0 0 3em 0;
+
+    .u-Highlight {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
   }
 
   &__container {
@@ -30,6 +38,11 @@
         display: none;
       }
     }
+    &:first-of-type {
+      #{$parent}__item {
+        display: inline-block;
+      }
+    }
 
     &:before {
       position: absolute;
@@ -39,7 +52,7 @@
       display: block;
       width: 2px;
       height: 100%;
-      background: var(--darkGray);
+      background: var(--gray);
     }
 
     &:after {
@@ -50,7 +63,7 @@
       left: -6px;
       width: 14px;
       height: 14px;
-      background: var(--darkGray);
+      background: var(--gray);
       border: 2px solid var(--white);
       border-radius: 50%;
     }
@@ -69,14 +82,45 @@
     --val: 2.5vw;
     --max: 1.4em;
     font-size: clamp(var(--min), var(--val), var(--max));
-    text-decoration-color: var(--darkBlue);
-    font-weight: 300;
+    text-decoration-color: var(--darkGray);
   }
   &__itemDate {
     font-size: .8rem;
+    color: var(--darkGray);
   }
   &__description {
     font-size: 1rem;
     margin: .5rem 0 1rem;
   }
+  &__imageWrapper {
+    margin: 1em 0 2em 0;
+
+    &.is-loading {
+      position: relative;
+      width: 100%;
+      height: 200px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        background: #EEE;
+        border-radius: 2px;
+        height: 200px;
+        width: 100%;
+        animation: loading 1.5s infinite;
+      }
+    }
+  }
+  &__image {
+    border: 2px solid var(--gray);
+    border-radius: 2px;
+    width: 100%;
+    height: auto;
+  }
+}
+@keyframes loading {
+  0% { background: #DDD; }
+  50% { background: #FAFAFA; }
+  100% { background: #DDD; }
 }

@@ -53,13 +53,11 @@ Metalsmith(__dirname)
     directory: './src/layouts',
     engineOptions: {
       helpers: {
-        formattedDate: function(date) {
-          return new Date(date).toLocaleDateString();
-        },
         formatDate: (date) => {
           if (typeof date === 'undefined') return;
-          return `${date.getDate()} ${date.toLocaleString('en-us', { month: 'short' })} ${date.getFullYear()}`;
+          return `${date.getDate()} ${date.toLocaleString('pt-PT', { month: 'short' })} ${date.getFullYear()}`;
         },
+        sameDate: (start, end) => start.toLocaleString() === end.toLocaleString(),
         reverse: (array) => array.reverse(),
       }
     }

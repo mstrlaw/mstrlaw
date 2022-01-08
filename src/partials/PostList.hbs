@@ -1,8 +1,11 @@
 {{#if (reverse lastPosts) }}
 <section class="c-Timeline__wrapper">
-  <h2 class="l-MainBlock__intro">Posts, projects, thoughts</h2>
-  <a href="/posts" class="u-Highlight">View all</a>
   <ul class="c-Timeline">
+    <li class="c-Timeline__container">
+        <div class="c-Timeline__item">
+          <a href="/posts" class="u-Highlight blue">More</a>
+        </div>
+    </li>
     {{#each lastPosts}}
       <li class="c-Timeline__container">
         <div class="c-Timeline__item">
@@ -12,9 +15,11 @@
           <time class="c-Timeline__itemDate" datetime="{{publishDate}}" data-readable="{{formatDate publish_date}}" data-timeago="{{update_date}}">
             {{ formatDate publish_date }}
           </time>
-          {{!-- <p class="c-Timeline__description">
-
-          </p> --}}
+          {{#if feat_image}}
+          <div class="c-Timeline__imageWrapper is-loading">
+            <img class="c-Timeline__image" data-src="{{ feat_image }}" alt="Post main image">
+          </div>
+          {{/if}}
         </div>
       </li>
     {{/each}}

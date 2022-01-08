@@ -8,20 +8,8 @@
   <meta property="og:title" content="{{ sitename }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:site_name" content="{{ sitename }}">
-  <meta name="twitter:image:alt" content="The author's face as an Apple Memoji">
-  <meta property="og:image" content="https://mstrlaw.com/static/social_banner.png">
-  <meta property="og:url" content="https://mstrlaw.com/">
-  <meta name="twitter:card" content="summary_large_image">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="metalsmith">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/static/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  {{> Meta}}
 
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
@@ -67,7 +55,7 @@
     <section class="c-Contacts">
       <h2 id="cont" class="c-Contacts__email" title="Please wait 5 seconds..">Drop me a line at <a id="adr" href="mailto:bot-honeypot@gmail.com" target="_blank" rel="noopener noreferrer" class="u-Highlight black disabled">generating...</a></h2>
       <p class="c-Contacts__extra">
-        Or find me on
+        Find me on
         <a href="https://www.linkedin.com/in/lawrencebraun/" target="_blank" rel="noopener noreferrer" class="u-Highlight black">LinkedIn<sup class="u-NewTab">&#8599;</sup></a>,
         <a href="https://www.instagram.com/mstrlaw/" target="_blank" rel="noopener noreferrer" class="u-Highlight black">Instagram<sup class="u-NewTab">&#8599;</sup></a> or <a href="https://github.com/mstrlaw" target="_blank" rel="noopener noreferrer" class="u-Highlight black">GitHub<sup class="u-NewTab">&#8599;</sup></a>.
       </p>
@@ -77,15 +65,17 @@
   <div class="c-Background"></div>
   {{> Footer }}
   <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', user => {
-        if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/';
-          });
-        }
-      });
-    }
+    try {
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', user => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    } catch(err) {console.log(err)}
   </script>
 </body>
 </html>

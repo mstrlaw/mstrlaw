@@ -1,6 +1,11 @@
 {{#if (reverse allPosts) }}
 <section class="c-Timeline__wrapper">
   <ul class="c-Timeline">
+    <li class="c-Timeline__container">
+        <div class="c-Timeline__item">
+          <a href="#" class="u-Highlight blue">Back up</a>
+        </div>
+    </li>
     {{#each allPosts}}
       <li class="c-Timeline__container">
         <div class="c-Timeline__item">
@@ -10,9 +15,11 @@
           <time class="c-Timeline__itemDate" datetime="{{publishDate}}" data-readable="{{formatDate publish_date}}" data-timeago="{{update_date}}">
             {{ formatDate publish_date }}
           </time>
-          {{!-- <p class="c-Timeline__description">
-
-          </p> --}}
+          {{#if feat_image}}
+          <div class="c-Timeline__imageWrapper is-loading">
+            <img class="c-Timeline__image" data-src="{{ feat_image }}" alt="Post main image">
+          </div>
+          {{/if}}
         </div>
       </li>
     {{/each}}

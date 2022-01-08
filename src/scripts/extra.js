@@ -34,9 +34,6 @@ const setTimeAgo = () => {
     resolve();
   });
 }
-const initHeader = () => {
-  document.getElementById('navigateBack').addEventListener('click', () => window.history.back());
-}
 const generateAdr = () => {
   const m = ['law','@m','s','t','r','law','.','co','m'].join('');
   setTimeout(() => {
@@ -47,4 +44,19 @@ const generateAdr = () => {
     el.classList.remove('black');
     el.classList.remove('disabled');
   }, 5000);
+}
+
+const lazyLoadImages = () => {
+  let observer;
+  handleIntersection= function(entries) {
+    entries.map(entry => {
+      if (entry.isIntersecting) {
+        entry.target.src = entry.target.dataset.src;
+        entry.target.parentNode.classList.remove('is-loading');
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+  observer = new IntersectionObserver(handleIntersection);
+  document.querySelectorAll('.c-Timeline__image').forEach(image => observer.observe(image));
 }

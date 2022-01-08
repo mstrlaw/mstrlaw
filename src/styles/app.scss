@@ -74,6 +74,10 @@ video {
   height: auto   !important;
 }
 
+time {
+text-transform: capitalize;
+}
+
 blockquote {
   border-left-width: 3px;
   border-style: solid;
@@ -200,6 +204,9 @@ blockquote {
 
   @media #{$desktop} {
     --containerWidth: var(--containerWidthDesktop);
+  }
+  @media #{$desktop-lg} {
+    --containerWidth: var(--containerWidthDesktopXL);
   }
 }
 

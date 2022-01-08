@@ -3,7 +3,6 @@
 .l-Header {
   max-width: var(--containerWidth);
   margin: 1em auto;
-
   &__nav {
     a {
       display: inline-block;
@@ -16,8 +15,10 @@
       }
     }
   }
-
   @media #{$desktop} {
     --containerWidth: var(--containerWidthDesktop);
+  }
+  @media #{$desktop-lg} {
+    --containerWidth: var(--containerWidthDesktopXL);
   }
 }

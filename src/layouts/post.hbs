@@ -12,27 +12,14 @@
   <meta property="og:description" content="{{ description }}">
   <meta property="og:site_name" content="{{ title }} - {{ sitename }}">
 
-  <meta name="twitter:image:alt" content="The author's face as an Apple Memoji">
-  <meta property="og:image" content="https://mstrlaw.com/static/social_banner.png">
-  <meta property="og:url" content="https://mstrlaw.com/">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="metalsmith">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/static/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  {{> Meta }}
 
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
   <link rel="stylesheet" href="/styles/post.css">
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/footer.css" async>
-  <script src="/scripts/extra.min.js"></script>
+
   {{> HomeStyles }}
 </head>
 
@@ -40,7 +27,12 @@
   {{> Header }}
   <div class="l-Container">
     <article class="c-Post">
-      <time>{{ formattedDate publish_date }}</time>
+      {{#if (sameDate publish_date update_date) }}
+      <time datetime="{{ publish_date }}">Published {{ formatDate publish_date }}</time><br>
+      {{else}}
+      <time datetime="{{ update_date }}">Updated {{ formatDate update_date }}</time>
+      <small><time datetime="{{ publish_date }}">(Published {{ formatDate publish_date }})</time></small>
+      {{/if}}
       {{#if feat_image}}
         <h1 class="c-Post__title">{{ title }}</h1>
         <p class="c-Post__summary">{{{ summary }}}</p>
@@ -56,9 +48,4 @@
   <div class="c-Background"></div>
   {{> SimpleFooter }}
 </body>
-<script>
-  window.onload = async () => {
-    initHeader();
-  }
-</script>
 </html>
