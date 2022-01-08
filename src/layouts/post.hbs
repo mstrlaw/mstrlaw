@@ -30,8 +30,8 @@
       {{#if (sameDate publish_date update_date) }}
       <time datetime="{{ publish_date }}">Published {{ formatDate publish_date }}</time><br>
       {{else}}
-      <time datetime="{{ update_date }}">Updated {{ formatDate update_date }}</time>
-      <small><time datetime="{{ publish_date }}">(Published {{ formatDate publish_date }})</time></small>
+      <time datetime="{{ publish_date }}">Published {{ formatDate publish_date }}</time>
+      <small><time datetime="{{ update_date }}">(Updated {{ formatDate update_date }})</time></small>
       {{/if}}
       {{#if feat_image}}
         <h1 class="c-Post__title">{{ title }}</h1>
