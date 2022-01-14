@@ -27,3 +27,5 @@ update_date: 2022-01-14T19:08:19.715Z
 ![Someone grilling sausages in the top part of what looks like a Boston Dynamics Spot robot.](/static/images/img_7778.jpg "Someone grilling sausages in the top part of what looks like a Boston Dynamics Spot robot.")
 
 ![Someone complaining that their smart oven is updating during Thanksgiving.](/static/images/img_7725.jpg "Someone complaining that their smart oven is updating during Thanksgiving.")
+
+![A photo of a cow wearing virtual goggles, displaying green pastures while it's stuck indoor during winter.](/static/images/img_7944.jpeg "A photo of a cow wearing virtual goggles, displaying green pastures while it's stuck indoor during winter.")
