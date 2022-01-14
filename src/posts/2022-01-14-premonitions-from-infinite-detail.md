@@ -23,3 +23,7 @@ update_date: 2022-01-14T19:08:19.715Z
 ![An add for augmented reality swimming googles.](/static/images/img_7271.jpg "An add for augmented reality swimming googles.")
 
 ![A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.](/static/images/img_7459.jpg "A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.")
+
+![Someone grilling sausages in the top part of what looks like a Boston Dynamics Spot robot.](/static/images/img_7778.jpg "Someone grilling sausages in the top part of what looks like a Boston Dynamics Spot robot.")
+
+![Someone complaining that their smart oven is updating during Thanksgiving.](/static/images/img_7725.jpg "Someone complaining that their smart oven is updating during Thanksgiving.")
