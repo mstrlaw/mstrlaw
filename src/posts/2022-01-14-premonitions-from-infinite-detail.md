@@ -21,3 +21,5 @@ update_date: 2022-01-14T19:08:19.715Z
 ![A news headline stating robots are picking up unwanted jobs in a Texas restaurant.](/static/images/img_6822.jpg "A news headline stating robots are picking up unwanted jobs in a Texas restaurant.")
 
 ![An add for augmented reality swimming googles.](/static/images/img_7271.jpg "An add for augmented reality swimming googles.")
+
+![A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.](/static/images/img_7459.jpg "A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.")
