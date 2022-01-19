@@ -17,4 +17,10 @@ Maybe just a little bit.
 
 Another possibility is that too much of what one reads in terms of amazing engineering, best practices and cutting edge techniques — which they are — are written by engineering teams of huge companies. They are well staffed and filled with brilliant people but, more importantly, these work on consumer products and I wonder if these practices make sense for any type of product, especially in B2B.
 
-And we fall into this fallacy of running before walking. If Google and Uber and all of those guys do it, why not us?
+And we fall into this fallacy of "if Google and Uber and all of those guys do it, why not us?"
+
+Does your user care? Does the paying customer care? If not, why do it? Why not have mid sprint releases? Or monthly? Or quarterly?
+
+<hr>
+
+Ultimately, teams must ship at the speed they're comfortable with, without compromising the quality of their product. Yet it seems too many engineers aim at this goal of shipping daily without having worked on the fundamentals that allow for such cadence to be held safely.
