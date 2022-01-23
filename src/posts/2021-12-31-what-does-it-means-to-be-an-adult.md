@@ -1,6 +1,6 @@
 ---
 layout: post.hbs
-title: What Does It Means To Be An Adult?
+title: What Does It Means To Be An Adult? [WIP]
 summary: Incomplete collection of thoughts on exploring the meanings of being
   adult under different angles.
 publish_date: 2021-12-31T15:11:14.982Z
