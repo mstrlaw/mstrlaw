@@ -21,7 +21,7 @@ We don't control the mental mechanism that shapes our opinions, thoughts and bel
 
 <hr>
 
-<h2>Dealing With Other's News Feeds</h2>
+<h2>Algorithmic Feeds Hinder Our Perception Of The World</h2>
 
 It all started around 2017 when I optimized my Facebook news feed to only display posts from news pages. I was following perhaps less than 50 news sources and, for a while, it was ok.
 
@@ -34,8 +34,6 @@ In terms of "tech product years" this was *light-years* ago. Facebook's feed has
 But even if that's true, Facebook and other social algorithmic feeds operate under the ultimate directive: keep your attention and maximize time spent on the platform. 
 
 <b>Any one algorithm that is optimized for the purpose of attention retention inevitably forces its subjects into informational biases.</b>
-
-<h2>Algorithmic Feeds Hinder Our Perception Of The World</h2>
 
 Mainstream algorithmic feeds are inappropriate when it comes to building a more comprehensive – balanced – view of the world. 
 
