@@ -68,13 +68,19 @@ Finally, algorithms can also reflect the platforms' own ideologies and stances a
 
 <h2>Building Another Type of News Aggregator</h2>
 
-I wasn't happy with what I had at hand. Platforms like Reddit are clearly leaning towards one spectrum of the political scale. Specific outlets usually tend towards specific narratives. I like the New York Times, The Guardian or Euronews but I recognize that these too have agendas that end up biasing the views of the world.
+I wasn't happy with existing options.
 
+Platforms like Reddit or Twitter clearly lean towards one spectrum of the political scale. News outlets usually tend towards specific narratives. I like the New York Times, The Guardian or Euronews but I recognize that these too have agendas that end up biasing the views of the world.
 
+Common news "aggregators" aggregate in the sense of grouping news in a feed. For instance <a href="https://feedly.com/" target="_blank">Feedly</a>, a very much known news aggregator, simply groups headlines from designated sources into a common feed. But once you get to a large enough amount of sources, headlines start to repeat a lot.
 
+Thoro organically generates clusters according to the similarity of text in news articles, for instance the image below.
 
+![](/static/images/headline_similarity.jpg)
 
-<h2>On Building a Non Biased News Feed</h2>
+<p class="u-ImageDescription">Multiple news sources reporting on the same story.</p>
+
+<h2>Thoro News</h2>
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
