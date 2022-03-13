@@ -13,7 +13,9 @@ update_date: 2022-03-13T17:05:15.802Z
 
 <br>
 
-I'm a strong believer that the best way to generate a more accurate view of the world is by feeding our minds with a broad and diverse set of information. Truth will lie somewhere in the middle.
+I'm a strong believer that the best way to generate a more accurate view of the world is by feeding our minds with a broad and diverse set of information.
+
+<b>Truth lies somewhere in the middle.</b>
 
 We don't control the mental mechanism that shapes our opinions, thoughts and beliefs but we can determine which information we feed our minds.
 
@@ -31,11 +33,31 @@ In terms of "tech product years" this was *light-years* ago. Facebook's feed has
 
 But even if that's true, Facebook and other social algorithmic feeds operate under the ultimate directive: keep your attention and maximize time spent on the platform. 
 
-Over the years I've come to believe that <b>any one algorithm that is optimized for the purpose of attention retention inevitably forces its subjects into informational biases.</b>
+<b>Any one algorithm that is optimized for the purpose of attention retention inevitably forces its subjects into informational biases.</b>
+
+
 
 <h2>Algorithmic Feeds Hinder Our Perception Of The World</h2>
 
+Mainstream algorithmic feeds are inappropriate when it comes to building a more comprehensive – balanced – view of the world. 
 
+They are not build with that purpose in mind. The most common purpose of these feed algorithm is retention, engagement or both. The Facebook and Twitter like feeds will operate as follows:
+
+1. *"show more of the stuff you interacted with" –* the logic of "if you liked X then take more X to stay with us", in the hopes of keeping you on the platform for longer times;
+2. *"show the top voted/discussed (controversial) thing"* – the logic of "a lot of people like this so maybe so will you", in the hopes of getting your attention, engage and retain you on the platform;
+
+Either one of those forces a conditioned view of the world.
+
+1. Pretty straightforward: you see more of the same, so your views get reinforced and there's very few dissent from whichever is your dominating view. The classic filter bubble.
+2. You see what's "trending" according to the platform's notion of trending. It may or not be in line with your current view of the world (depending on the platform's ideology/stance). It is a "mob mentality" approach that can be weaponized. For instance Twitter bots artificially amplifying narratives.
+
+![](/static/images/google_news_notification.jpg)
+
+<p class="u-ImageDescription">Google News really wanted me to know about this for some reason.</p>
+
+<br>
+
+<h2>Non Biased News Feed?</h2>
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
