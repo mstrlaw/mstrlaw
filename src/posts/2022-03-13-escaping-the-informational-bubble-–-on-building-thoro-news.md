@@ -9,13 +9,17 @@ feat_image: /static/images/thoro_old.gif
 publish_date: 2022-03-13T17:05:15.788Z
 update_date: 2022-03-13T17:05:15.802Z
 ---
+<p class="u-ImageDescription">Thoro News in 2019.</p>
+
+<br>
+
 I'm a strong believer that the best way to generate a more accurate view of the world is by feeding our minds with a broad and diverse set of information. Truth will lie somewhere in the middle.
 
 We don't control the mental mechanism that shapes our opinions, thoughts and beliefs but we can determine which information we feed our minds.
 
 <hr>
 
-<h2>News feeds from others</h2>
+<h2>Other's News Feeds</h2>
 
 It all started around 2017 when I optimized my Facebook news feed to only display posts from news pages. I was following perhaps less than 50 news sources and, for a while, it was ok.
 
