@@ -164,6 +164,12 @@ Another advantage of clustering is seeing the way in which the same story can be
 
 <p class="u-ImageDescription">Boos? Cheers? Both? Depends of which sources you follow.</p>
 
+Finally, the idea is to allow for diving into the clusters and making up your own mind with what you see. For that I've built a way to check where articles were shared on Reddit and explore the conversation, as well as looking into all articles of the given sources for the cluster.
+
+![](/static/images/cluster_exploration.gif)
+
+<p class="u-ImageDescription">Exploring the contents of a cluster.</p>
+
 
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
