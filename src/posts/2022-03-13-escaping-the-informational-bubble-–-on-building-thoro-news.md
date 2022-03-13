@@ -160,9 +160,11 @@ It is easy to check which sources are publishing on a story. It is easy to see w
 
 Another advantage of clustering is seeing the way in which the same story can be talked about differently.
 
-![]()
+![](/static/images/screen-shot-2021-07-11-at-15.59.55.jpg)
 
-![]()
+<p class="u-ImageDescription">Boos? Cheers? Both? Depends of which sources you follow.</p>
+
+
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
