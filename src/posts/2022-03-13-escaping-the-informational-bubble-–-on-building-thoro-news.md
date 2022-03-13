@@ -80,9 +80,19 @@ The premise of Thoro's algorithm is pretty basic: <b>organically generate cluste
 
 The result of this approach is a news feed that attempts to answer: "What's the most common topic being discussed in the media?"
 
+The way that his is done is by retrieving thousands of articles per day from over 120 sources and clustering them.
 
+Without getting much into the details, the clustering algorithm works as follows:
+
+* pick the latest 5000 articles of the current day
+* extract bigrams from the title and body of each individual article
+* compare the similitude of the bigrams; cluster articles accordingly
+
+Then, when visiting Thoro, list the clusters by descending order of volume of articles.
 
 <h2>Thoro News</h2>
+
+
 
 
 
