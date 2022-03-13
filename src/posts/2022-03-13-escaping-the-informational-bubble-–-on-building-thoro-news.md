@@ -20,7 +20,7 @@ We don't control the mental mechanism that shapes our opinions, thoughts and bel
 
 <hr>
 
-<h2>Algorithmic Feeds Hinder Our Perception Of The World</h2>
+<h2 id="algorithmic-feeds">Algorithmic Feeds Hinder Our Perception Of The World</h2>
 
 It all started around 2017 when I optimized my Facebook news feed to only display posts from news pages. I was following perhaps less than 50 news sources and, for a while, it was ok.
 
@@ -66,7 +66,7 @@ Finally, algorithms can also reflect the platforms' own ideologies and stances a
 
 <br>
 
-<h2>Building Another Type of News Aggregator</h2>
+<h2 id="building-news-aggregator">Building Another Type of News Aggregator</h2>
 
 I wasn't happy with existing options.
 
@@ -129,24 +129,6 @@ A cluster looks something like this:
     "systemUpdateDate" : ISODate("2022-01-01T23:40:59.162Z"),
     "lastArticleDate" : ISODate("2022-01-01T13:40:16.000Z"),
     "firstArticleDate" : ISODate("2022-01-01T01:28:42.000Z"),
-    "featuredImages" : [ 
-        {
-            "url" : "https://cdn-images-1.medium.com/max/2600/0*DjsxdVxwIcUMcapK",
-            "width" : 2600
-        }, 
-        {
-            "url" : "https://www.eff.org/files/banner_library/predictive_policing_animation3x.gif",
-            "width" : 1200
-        }, 
-        {
-            "url" : "https://cdn-images-1.medium.com/max/640/0*CQ3DgKqwT07TJEIl",
-            "width" : 640
-        }, 
-        {
-            "url" : "https://cdn-images-1.medium.com/max/620/1*afKZ2wQssT1sMldUR1gSiw.jpeg",
-            "width" : 620
-        }
-    ]
 }
 ```
 
@@ -154,9 +136,13 @@ A cluster looks something like this:
 
 Then, when visiting Thoro, list the clusters by descending order of volume of articles.
 
-<h2>Thoro News</h2>
+<h2 id="thoro-news">Thoro News</h2>
 
+So what do I get from Thoro?
 
+![](/static/images/clusters.jpg)
+
+<p class="u-ImageDescription">Top clusters for the current day.</p>
 
 
 
