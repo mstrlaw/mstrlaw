@@ -72,15 +72,25 @@ I wasn't happy with existing options.
 
 Platforms like Reddit or Twitter clearly lean towards one spectrum of the political scale. News outlets usually tend towards specific narratives. I like the New York Times, The Guardian or Euronews but I recognize that these too have agendas that end up biasing the views of the world.
 
-Common news "aggregators" aggregate in the sense of grouping news in a feed. For instance <a href="https://feedly.com/" target="_blank">Feedly</a>, a very much known news aggregator, simply groups headlines from designated sources into a common feed. But once you get to a large enough amount of sources, headlines start to repeat a lot.
+Common news "aggregators" aggregate in the sense of grouping headlines. For instance <a href="https://feedly.com/" target="_blank">Feedly</a>, a very much known news aggregator, simply groups headlines from designated sources into a common feed. But once you get to a large enough amount of sources, headlines start to repeat a lot which can force the user to pick specific sources, hence falling into the possibility of remaining under specific outlet's views of the world.
 
-Thoro organically generates clusters according to the similarity of text in news articles, for instance the image below.
+<hr>
+
+The premise of Thoro's algorithm is pretty basic: <b>organically generate clusters according to the similarity of text in news articles then sort said clusters by volume of articles.</b>
+
+The result of this approach is a news feed that attempts to answer: "What's the most common topic being discussed in the media?"
+
+
+
+<h2>Thoro News</h2>
+
+
 
 ![](/static/images/headline_similarity.jpg)
 
 <p class="u-ImageDescription">Multiple news sources reporting on the same story.</p>
 
-<h2>Thoro News</h2>
+
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
