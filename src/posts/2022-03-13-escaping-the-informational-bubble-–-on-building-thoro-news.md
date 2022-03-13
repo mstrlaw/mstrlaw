@@ -27,13 +27,13 @@ The first problem I noticed was that I was only seeing a subset of news publishe
 
 The second problem was that, at any point, Facebook could and would change the way its algorithmic feed operated. In 2018, Facebook <a href="https://www.forbes.com/sites/kathleenchaykowski/2018/01/11/facebook-focuses-news-feed-on-friends-and-family-curbing-the-reach-of-brands-and-media/" target="_blank">decided it would prioritize posts mad by friends and family and curbs news posts</a>.
 
-Note that in terms of "tech product years" this was *light-years* ago. Facebook's feed has evolved over the past 5 years and I'm sure it's much more parametrizable. I haven't used it since about 2018.
+In terms of "tech product years" this was *light-years* ago. Facebook's feed has evolved over the past 5 years and I'm sure it's much more parametrizable. I haven't used it since about 2018.
 
-But even if it is more customizable, Facebook and other algorithmic feeds suffer from the ultimate 
+But even if that's true, Facebook and other algorithmic feeds operate under the ultimate directive: keep your attention and maximize time spent on the platform. 
 
+Over the years I've come to believe that <b>any one algorithm that is optimized for the purpose of attention retention inevitably forces its subjects into informational biases.</b>
 
-
-My greatest cognitive fear is to not know about the things I do not know.
+<h2>Algorithmic feeds</h2>
 
 
 
