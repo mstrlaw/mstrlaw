@@ -3,8 +3,8 @@ layout: post.hbs
 title: Escaping the Informational Bubble – on Building Thoro News
 summary: As <a href="https://thoro.news" target="_blank">Thoro News</a> reaches
   almost 10MM articles in its database and 2MM clustered topics, I take the time
-  to reflect on the *raison d'être* of this personal project that started in
-  2019.
+  to reflect on the <em>raison d'être</em> of this personal project that started
+  in 2019.
 feat_image: /static/images/thoro_old.gif
 publish_date: 2022-03-13T17:05:15.788Z
 update_date: 2022-03-13T17:05:15.802Z
@@ -35,8 +35,6 @@ But even if that's true, Facebook and other social algorithmic feeds operate und
 
 <b>Any one algorithm that is optimized for the purpose of attention retention inevitably forces its subjects into informational biases.</b>
 
-
-
 <h2>Algorithmic Feeds Hinder Our Perception Of The World</h2>
 
 Mainstream algorithmic feeds are inappropriate when it comes to building a more comprehensive – balanced – view of the world. 
@@ -49,15 +47,25 @@ They are not build with that purpose in mind. The most common purpose of these f
 Either one of those forces a conditioned view of the world.
 
 1. Pretty straightforward: you see more of the same, so your views get reinforced and there's very few dissent from whichever is your dominating view. The classic filter bubble.
-2. You see what's "trending" according to the platform's notion of trending. It may or not be in line with your current view of the world (depending on the platform's ideology/stance). It is a "mob mentality" approach that can be weaponized. For instance Twitter bots artificially amplifying narratives.
+2. You see what's "trending" according to the platform's notion of trending. It may or not be in line with your current view of the world and depends on the platform's ideology/stance. It can be a sort of "mob mentality" approach. It can also be weaponized. For instance, Twitter bots artificially amplifying narratives.
 
 ![](/static/images/google_news_notification.jpg)
 
 <p class="u-ImageDescription">Google News really wanted me to know about this for some reason.</p>
 
+![](/static/images/yahoo_suggestions_edit.png)
+
+<p class="u-ImageDescription">Yahoo News users have some feedback..</p>
+
 <br>
 
 <h2>Non Biased News Feed?</h2>
+
+
+
+
+
+
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
@@ -66,8 +74,6 @@ Either one of those forces a conditioned view of the world.
 <br>
 
 <p class="u-ImageDescription">Visualization of the evolution of news clusters per number of articles.</p>
-
-
 
 <hr>
 
