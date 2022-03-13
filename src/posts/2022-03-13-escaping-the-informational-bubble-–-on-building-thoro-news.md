@@ -162,4 +162,8 @@ So what do I get from Thoro?
 
 <hr>
 
-Marcus Aurelius said "The things you think about determine the quality of your mind. Your soul takes on the color of your thoughts." I'd extend this thought and say "what you feed your mind shapes your interpretation of reality."
+Marcus Aurelius said "The things you think about determine the quality of your mind. Your soul takes on the color of your thoughts."
+
+<br>
+
+I'd extend this thought and say "what you feed your mind shapes your interpretation of reality."
