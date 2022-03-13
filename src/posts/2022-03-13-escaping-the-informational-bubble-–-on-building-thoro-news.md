@@ -19,7 +19,7 @@ We don't control the mental mechanism that shapes our opinions, thoughts and bel
 
 <hr>
 
-<h2>Other's News Feeds</h2>
+<h2>Dealing With Other's News Feeds</h2>
 
 It all started around 2017 when I optimized my Facebook news feed to only display posts from news pages. I was following perhaps less than 50 news sources and, for a while, it was ok.
 
@@ -29,11 +29,11 @@ The second problem was that, at any point, Facebook could and would change the w
 
 In terms of "tech product years" this was *light-years* ago. Facebook's feed has evolved over the past 5 years and I'm sure it's much more parametrizable. I haven't used it since about 2018.
 
-But even if that's true, Facebook and other algorithmic feeds operate under the ultimate directive: keep your attention and maximize time spent on the platform. 
+But even if that's true, Facebook and other social algorithmic feeds operate under the ultimate directive: keep your attention and maximize time spent on the platform. 
 
 Over the years I've come to believe that <b>any one algorithm that is optimized for the purpose of attention retention inevitably forces its subjects into informational biases.</b>
 
-<h2>Algorithmic feeds</h2>
+<h2>Algorithmic Feeds Hinder Our Perception Of The World</h2>
 
 
 
