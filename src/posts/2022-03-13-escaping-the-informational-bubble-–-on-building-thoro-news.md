@@ -150,13 +150,19 @@ What I like about this method is that clusters aren't picked by a team of human 
 
 <p class="u-ImageDescription">Top clusters for the current day.</p>
 
+<h3>Grouping of multiple sources for the same story</h3>
 
+It is easy to check which sources are publishing on a story. It is easy to see which outlets use the same source or have the same stance regarding a story.
 
 ![](/static/images/headline_similarity.jpg)
 
 <p class="u-ImageDescription">Multiple news sources reporting on the same story.</p>
 
+Another advantage of clustering is seeing the way in which the same story can be talked about differently.
 
+![]()
+
+![]()
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
