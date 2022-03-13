@@ -35,6 +35,8 @@ But even if that's true, Facebook and other social algorithmic feeds operate und
 
 <b>Any one algorithm that is optimized for the purpose of attention retention inevitably forces its subjects into informational biases.</b>
 
+<hr>
+
 Mainstream algorithmic feeds are inappropriate when it comes to building a more comprehensive – balanced – view of the world. 
 
 They are not build with that purpose in mind. The most common purpose of these feed algorithm is retention, engagement or both. The Facebook and Twitter like feeds will operate as follows:
@@ -45,7 +47,11 @@ They are not build with that purpose in mind. The most common purpose of these f
 Either one of those forces a conditioned view of the world.
 
 1. Pretty straightforward: you see more of the same, so your views get reinforced and there's very few dissent from whichever is your dominating view. The classic filter bubble.
-2. You see what's "trending" according to the platform's notion of trending. It may or not be in line with your current view of the world and depends on the platform's ideology/stance. It can be a sort of "mob mentality" approach. It can also be weaponized. For instance, Twitter bots artificially amplifying narratives.
+2. You see what's "trending" according to the platform's notion of trending. It may or not be in line with your current view of the world. It can be a sort of "mob mentality" approach. It can also be weaponized. For instance, Twitter bots artificially amplifying narratives.
+
+<h2>Platforms Are Also Ideological</h2>
+
+Finally, algorithms can also reflect the platforms' own ideologies and stances and/or exacerbate/favor existing biases. Again the result is a narrower view of the world.
 
 ![](/static/images/google_news_notification.jpg)
 
@@ -54,6 +60,10 @@ Either one of those forces a conditioned view of the world.
 ![](/static/images/yahoo_suggestions_edit.png)
 
 <p class="u-ImageDescription">Yahoo News users have some feedback..</p>
+
+![](/static/images/reddit_leftwing_google_results.png)
+
+<p class="u-ImageDescription">Reddit is notoriously left leaning and has become more homogeneous over the years.</p>
 
 <br>
 
