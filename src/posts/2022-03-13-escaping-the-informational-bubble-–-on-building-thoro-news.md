@@ -88,6 +88,70 @@ Without getting much into the details, the clustering algorithm works as follows
 * extract bigrams from the title and body of each individual article
 * compare the similitude of the bigrams; cluster articles accordingly
 
+
+
+A cluster looks something like this:
+
+```
+{
+    "_id" : ObjectId("61d01f79ad5e67690ccd089a"),
+    "day" : "01-01-2022",
+    "mainTheme" : [ 
+        "artificial intelligence"
+    ],
+    "scores" : {
+        "technology" : 3.49997019337227,
+        "all" : 2.33330334267646
+    },
+    "sourcesCount" : 2,
+    "themes" : [ 
+        {
+            "label" : "artificial intelligence",
+            "score" : 3
+        }, 
+        {
+            "label" : "impact artificial",
+            "score" : 2
+        }
+    ],
+    "hasExternalReferences" : true,
+    "articles" : [ 
+      ObjectId("61d00ec41514fd76b3a45a74"), 
+      ObjectId("61cfba551514fd76b3a4536f"), 
+      ObjectId("61d071311514fd76b3a46353"), 
+      ObjectId("61d0a9681514fd76b3a46b81")
+    ],
+    "sources" : [ 
+      "medium.com", 
+      "eff.org"
+    ],
+    "systemCreateDate" : ISODate("2022-01-01T09:31:37.472Z"),
+    "systemUpdateDate" : ISODate("2022-01-01T23:40:59.162Z"),
+    "lastArticleDate" : ISODate("2022-01-01T13:40:16.000Z"),
+    "firstArticleDate" : ISODate("2022-01-01T01:28:42.000Z"),
+    "featuredImages" : [ 
+        {
+            "url" : "https://cdn-images-1.medium.com/max/2600/0*DjsxdVxwIcUMcapK",
+            "width" : 2600
+        }, 
+        {
+            "url" : "https://www.eff.org/files/banner_library/predictive_policing_animation3x.gif",
+            "width" : 1200
+        }, 
+        {
+            "url" : "https://cdn-images-1.medium.com/max/640/0*CQ3DgKqwT07TJEIl",
+            "width" : 640
+        }, 
+        {
+            "url" : "https://cdn-images-1.medium.com/max/620/1*afKZ2wQssT1sMldUR1gSiw.jpeg",
+            "width" : 620
+        }
+    ]
+}
+```
+
+
+
 Then, when visiting Thoro, list the clusters by descending order of volume of articles.
 
 <h2>Thoro News</h2>
