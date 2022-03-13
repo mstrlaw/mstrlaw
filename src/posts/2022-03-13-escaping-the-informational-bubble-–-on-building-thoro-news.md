@@ -132,13 +132,19 @@ A cluster looks something like this:
 }
 ```
 
-
+<br>
 
 Then, when visiting Thoro, list the clusters by descending order of volume of articles.
 
 <h2 id="thoro-news">Thoro News</h2>
 
-So what do I get from Thoro?
+So what are the advantages of this approach?
+
+<h3>Quick understanding of the discussion</h3>
+
+First, one is capable of surfacing at a glance the main "topics" in the media. You can have a quick idea of what is being discussed just by looking at the topics. 
+
+What I like about this method is that clusters aren't picked by a team of human curators. They are simply the most common pair of words found in the last 5000 articles. What you see is what is out there.
 
 ![](/static/images/clusters.jpg)
 
