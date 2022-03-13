@@ -2,9 +2,8 @@
 layout: post.hbs
 title: Escaping the Informational Bubble – on Building Thoro News
 summary: As <a href="https://thoro.news" target="_blank">Thoro News</a> reaches
-  almost 10MM articles in its database and 2MM clustered topics, I take the time
-  to reflect on the <em>raison d'être</em> of this personal project that started
-  in 2019.
+  almost 10MM articles in its database and 2MM clustered topics, I reflect on
+  the <em>raison d'être</em> of this personal project that started in 2019.
 feat_image: /static/images/thoro_old.gif
 publish_date: 2022-03-13T17:05:15.788Z
 update_date: 2022-03-13T17:05:15.802Z
@@ -67,13 +66,15 @@ Finally, algorithms can also reflect the platforms' own ideologies and stances a
 
 <br>
 
-<h2>Non Biased News Feed?</h2>
+<h2>Building Another Type of News Aggregator</h2>
+
+I wasn't happy with what I had at hand. Platforms like Reddit are clearly leaning towards one spectrum of the political scale. Specific outlets usually tend towards specific narratives. I like the New York Times, The Guardian or Euronews but I recognize that these too have agendas that end up biasing the views of the world.
 
 
 
 
 
-
+<h2>On Building a Non Biased News Feed</h2>
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
