@@ -170,7 +170,15 @@ Finally, the idea is to allow for diving into the clusters and making up your ow
 
 <p class="u-ImageDescription">Exploring the contents of a cluster.</p>
 
+<br>
 
+<hr>
+
+Finally, here's a look at what 9.7MM articles and almost 2MM clusters look like, with a visualization of the top clusters between September 2019 and 13th March 2022.
+
+Clearly Covid overtook the whole news panorama. It can be unselected by clicking on the category. Enjoy!
+
+<br>
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8965711"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
