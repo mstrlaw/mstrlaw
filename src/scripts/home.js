@@ -56,9 +56,13 @@ window.onload = async () => {
     .then(r => {
       if (r.data.data.length === 0) return;
       r.data.data.forEach(d => {
-        tmp[d.grand_total.total_seconds] = d.range.start;
-        series.push(d.grand_total.total_seconds);
-        totalTime += d.grand_total.total_seconds;
+        if (d.grand_total.total_seconds !== 0) {
+          tmp[d.grand_total.total_seconds] = d.range.start;
+          series.push(d.grand_total.total_seconds);
+        } else {
+          tmp[0.1] = d.range.start;
+          series.push(0.1);
+        }
       });
       drawChart(tmp, series);
       generateExtra();

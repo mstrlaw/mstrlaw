@@ -24,7 +24,6 @@ const generateExtra =  () => {
 }
 const setTimeAgo = () => {
   new Promise((resolve, reject) => {
-    console.log('setTimeAgo');
     const dates = document.querySelectorAll('.c-Timeline__itemDate')
     dates.forEach(date => {
       const attr = date.getAttribute('data-pubtimeago');
