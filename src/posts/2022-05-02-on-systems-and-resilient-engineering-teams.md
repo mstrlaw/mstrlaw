@@ -83,7 +83,7 @@ So what’s the problem? Many developers have these notions such as: not only mu
 
 This is a sort of inflexible mindset that hurts rapid iteration and sometimes leads to mental blockades. Leads must be aware that 100% test coverage on something that no one wants is wasted time for the whole team. I've been able to ease frustrations by saying "Well, we run all functional end-to-end tests on each commit right? — Right. Meaning that even if piece of your code isn't fully unit tested, breaking changes are still caught in staging right? — Right. And even if some changes do break production for customers, we monitor everything and alarms get triggered, and rolling back is as easy as pushing a button right? — Right. So maybe don't obsess on coverage. And if some of it gets shipped at this discovery stage, that's all right."
 
-<br>
+<hr>
 
 This is me picking on testing strategies. There are other practices that increase teams resiliency for change like rollout strategies, feature flagging, improving ease of rolling back to stability, depth of system monitoring, escalation processes and team reactivity, etc. 
 
