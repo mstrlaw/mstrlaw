@@ -59,11 +59,11 @@ You get developers averse to changing requirements because it's not just that th
 
 <br>
 
-This approach implies longer cycle times which means more time to validate that a feature is valuable to the business. The sooner we understand whether or not some feature is worth pursuing the sooner we can invest more time on it or drop it. 
+This approach implies longer cycle times which means more time to validate whether or not a feature is worth pursuing. The sooner that's known the sooner a decision can be made. 
 
 <br>
 
-If the team understands what are the moving parts of a product or feature, they can prioritize unit test for critical parts of the code or parts that are likely not subject to fundamental change even if a feature’s behavior changes.
+If the developers understand what are the parts of a product or feature more likely to require changes, they can plan the implementation of their architecture and define unit testing for critical pieces of the architecture that are likely not subject to fundamental alterations, even if some behaviors may changes.
 
 <br>
 
