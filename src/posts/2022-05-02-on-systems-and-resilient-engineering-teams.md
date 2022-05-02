@@ -59,7 +59,7 @@ You get developers averse to changing requirements because it's not just that th
 
 <br>
 
-The sooner we understand whether or not some feature is worth pursuing the sooner we can invest more time on it or drop it. Unfortunately the above example implies longer iteration times to get to that validation because of code refactoring and adapting tests.
+This pattern implies longer cycle times which means more time to validate that a feature is valuable to the business. The sooner we understand whether or not some feature is worth pursuing the sooner we can invest more time on it or drop it. 
 
 <br>
 
