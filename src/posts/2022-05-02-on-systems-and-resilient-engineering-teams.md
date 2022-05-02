@@ -27,4 +27,58 @@ So what about resiliency? Given this context, resiliency is the ability to cope 
 
 A fair amount of people don’t like change. In my experience, Developers and designers don’t enjoy hopping rapidly between missions. But for when that happens, team leaders must help teams become resilient. And to build a resilient team requires acting and caring on an individual level.
 
-<h2 id="system-adaptability-and-inverted-conway-law">System Adaptability and Inverted Conway's Law</h2>
+<h2 id="practices-to-foster-adaptability">Practices To Foster Adaptability</h2>
+
+Changing requirements are inevitable, for one reason or another. Therefore, when defining a database's structure or defining the architecture of a system, it’s important to ponder which parts may be more or less prone to change. 
+
+<br>
+
+In the past, when helping on some feature’s implementation or reviewing code, I focused much more on standards/patterns and suggesting refactoring pieces of code, optimizations and such.
+
+<br>
+
+Nowadays I still care for the importance of the above, of course, but I find myself more interested in seeing that the chosen approach reflects an understanding of what’s known and what is still unknown: what should be further improved now and what will likely change – and how to account for that change in a harmonious way for the codebase, team and product’s stability, whether that's introducing a new feature from scratch or proposing some form of refactoring.
+
+<br>
+
+There are practices that can help or hinder a team’s adaptability (and by that I mean increasing or reducing the speed of changing something and shipping it to production). 
+
+<br>
+
+Picking on just one example: unit testing. 
+
+<br>
+
+Too many times I’ve seen this pattern: developer wants to go for maximum code coverage for a new feature (which delays the initial release to start with), feature gets shipped, PO/PM realizes feature adoption is weak, introduces changes, developer rewrites the code and tests, PO/PM wonders why it takes so long to put changes in production. Repeat the cycle until business value is achieved from said feature or it is dumped. 
+
+<br>
+
+The sooner we understand whether or not some feature is worth pursuing the sooner we can invest more time on it or drop it. Unfortunately the above example implies longer iteration times to get to that validation because of code refactoring and adapting tests.
+
+<br>
+
+If the team understands what are the moving parts of a product or feature, they can prioritize unit test for critical parts of the code or parts that are likely not subject to fundamental change even if a feature’s behavior changes.
+
+<br>
+
+It’s totally doable to confidently ship software with an initial minimum of unit testing, provided you have automated end-to-end tests in some pre-prod environment. 
+
+<br>
+
+This is especially true for web applications’ frontend where there’s no longer the need to script E2E tests with tools like Cypress. We can instead use point-and-click interfaces to build the scripts with tools like TestProject or Datadog. The time required to build or change the flows is considerably less. Running these every time code is integrated ensures changes don’t break the product and unit test can be gradually implemented during code refractors, as the nature of the feature stabilizes.
+
+<br>
+
+Unit tests require certainty as to what needs to be built. When doing rapid experimentation, this certainty doesn’t necessarily exist. The only certainty is that parts of the code will likely change in the next couple of sprints. Some of it will be scrapped depending on the findings. 
+
+<br>
+
+So what’s the problem? The problem is that many developers have this idea that: not only must TDD be the one and only approach to software development (otherwise they are not “real” devs), production readiness means the highest possible code coverage, no matter what. 
+
+<br>
+
+This sort of inflexible mindset hurts rapid experimentation and iteration. Leads must be aware that 100% test coverage on something that no one wants is wasted time for the whole team. 
+
+<br>
+
+This is me picking on testing strategies. There are other practices that increase systems’ resiliency for change like employing rollout strategies through feature toggling.
