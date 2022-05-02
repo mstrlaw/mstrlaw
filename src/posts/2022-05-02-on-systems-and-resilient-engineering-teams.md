@@ -43,7 +43,7 @@ What should be further improved now and what is likely to change – and how to 
 
 <br>
 
-There are practices that can help or hinder a team’s adaptability (and by that I mean increasing or reducing the speed of changing something and shipping it to production). 
+There are practices that can help or hinder a team’s adaptability (increasing or reducing the speed of changing something and shipping it to production). Some times, this capability - or its limitation - is due to the perception of how crucial (read *sacrosanct*) some practice is to the whole.
 
 <br>
 
@@ -51,7 +51,11 @@ Picking on just one example: unit testing. 
 
 <br>
 
-Too many times I’ve seen this pattern: developer wants to go for maximum code coverage for a new feature (which delays the initial release to start with), feature gets shipped, PO/PM realizes feature adoption is weak, introduces changes, developer rewrites the code and tests, PO/PM wonders why it takes so long to put changes in production. Repeat the cycle until business value is achieved from said feature or it is dumped. 
+Too many times I’ve seen this happen: new feature is delineated and ready to be worked on, developer wants to go for maximum code coverage, TDD for-the-win, sure.
+
+Feature gets shipped, PO/PM realizes feature adoption is weak. Product iterates and introduces changes. Developers rewrite features and associated tests. Repeat the cycle until business value is achieved from said feature or it is discarded.
+
+You get developers averse to changing requirements because it's not just that they have to change features but also rethink and reimplement tests — and that for 2, 3 or more iterations. And on the other hand PO/PM wonder why it takes so long to get changes into production..
 
 <br>
 
@@ -63,11 +67,11 @@ If the team understands what are the moving parts of a product or feature, they 
 
 <br>
 
-It’s totally doable to confidently ship software with an initial minimum of unit testing, provided you have automated end-to-end tests in some pre-prod environment. 
+It’s totally doable to confidently ship software with an initial minimum of unit testing, provided you have automated end-to-end tests in some pre-prod environment. Understandably, your mileage may vary depending on team seniority, skillset and other constraints.
 
 <br>
 
-This is especially true for web applications’ frontend where there’s no longer the need to script E2E tests with tools like Cypress. We can instead use point-and-click interfaces to build the scripts with tools like TestProject or Datadog. The time required to build or change the flows is considerably less. Running these every time code is integrated ensures changes don’t break the product and unit test can be gradually implemented during code refractors, as the nature of the feature stabilizes.
+Though this is especially true for web applications’ frontend where there’s no longer the need to script E2E tests with tools like Cypress. We can instead use point-and-click interfaces to build the scripts with tools like TestProject or Datadog. The time required to build or change the flows is considerably less. Running these every time code is integrated ensures changes don’t break the product and unit test can be gradually implemented during code refractors, as the nature of the feature stabilizes.
 
 <br>
 
