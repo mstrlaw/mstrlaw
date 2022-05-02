@@ -33,11 +33,13 @@ Changing requirements are inevitable, for one reason or another. Therefore, when
 
 <br>
 
-In the past, when helping on some feature’s implementation or reviewing code, I focused much more on standards/patterns and suggesting refactoring pieces of code, optimizations and such.
+In the past, when advising on implementation of solutions or reviewing code, I focused much more on standards and avoiding anti-patterns. I'd often go into performance or security related tangents.
 
 <br>
 
-Nowadays I still care for the importance of the above, of course, but I find myself more interested in seeing that the chosen approach reflects an understanding of what’s known and what is still unknown: what should be further improved now and what will likely change – and how to account for that change in a harmonious way for the codebase, team and product’s stability, whether that's introducing a new feature from scratch or proposing some form of refactoring.
+Nowadays, not that I stoped caring for the above, but I find myself more interested in seeing that developers choose an approach that reflects an understanding of what’s known and what's still unknown, to them and to the team.
+
+What should be further improved now and what is likely to change – and how to account for that change in a harmonious way for the codebase, team and product’s stability, whether that's introducing a new feature from scratch or proposing some form of refactoring.
 
 <br>
 
