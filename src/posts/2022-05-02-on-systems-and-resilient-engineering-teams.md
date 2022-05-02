@@ -8,7 +8,13 @@ summary: >-
   — strategizing and defining the product high-level direction.
 
 
+  <br>
+
+
   Individuals operate on a spectrum of assumptions, known unknowns and unknown unknowns.
+
+
+  <br>
 
 
   And that’s fine. That’s the reality when building novel products and services : you’re making bets on educated guesses and you’re betting time and money on those guesses.
