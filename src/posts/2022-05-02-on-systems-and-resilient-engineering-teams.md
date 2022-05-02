@@ -18,3 +18,5 @@ update_date: 2022-05-02T21:46:50.072Z
 So what about resiliency? Given this context, resiliency is the ability to cope with constant change and navigate it effectively. From Merriam-Webster: “ability to recover from or adjust easily to adversity or change”. Adjusting and recovering.
 
 A fair amount of people don’t like change. In my experience, Developers and designers don’t enjoy hopping rapidly between missions. But for when that happens, team leaders must help teams become resilient. And to build a resilient team requires acting and caring on an individual level.
+
+<h2 id="system-adaptability-and-inverted-conway-law">System Adaptability and Inverted Conway's Law</h2>
