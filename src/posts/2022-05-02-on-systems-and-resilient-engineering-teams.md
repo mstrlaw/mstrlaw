@@ -45,7 +45,7 @@ What should be further improved now and what is likely to change – and how to 
 
 There are practices that can help or hinder a team’s adaptability (increasing or reducing the speed of changing something and shipping it to production). Some times, this capability - or its limitation - is due to the perception of how crucial (read *sacrosanct*) some practice is to the whole.
 
-<br>
+<hr>
 
 Picking on just one example: unit testing. 
 
@@ -59,7 +59,7 @@ You get developers averse to changing requirements because it's not just that th
 
 <br>
 
-This pattern implies longer cycle times which means more time to validate that a feature is valuable to the business. The sooner we understand whether or not some feature is worth pursuing the sooner we can invest more time on it or drop it. 
+This approach implies longer cycle times which means more time to validate that a feature is valuable to the business. The sooner we understand whether or not some feature is worth pursuing the sooner we can invest more time on it or drop it. 
 
 <br>
 
@@ -67,11 +67,9 @@ If the team understands what are the moving parts of a product or feature, they 
 
 <br>
 
-It’s totally doable to confidently ship software with an initial minimum of unit testing, provided you have automated end-to-end tests in some pre-prod environment. Understandably, your mileage may vary depending on team seniority, skillset and other constraints.
+It’s totally doable to confidently ship software with an initial minimum of unit testing, provided you have sufficient automated end-to-end tests in some pre-prod environment.
 
-<br>
-
-Though this is especially true for web applications’ frontend where there’s no longer the need to script E2E tests with tools like Cypress. We can instead use point-and-click interfaces to build the scripts with tools like TestProject or Datadog. The time required to build or change the flows is considerably less. Running these every time code is integrated ensures changes don’t break the product and unit test can be gradually implemented during code refractors, as the nature of the feature stabilizes.
+This is especially true for web applications’ frontend where there’s no longer the need to script E2E tests with tools like Cypress. We can instead use point-and-click interfaces to build the scripts with tools like TestProject or Datadog. The time required to build or change the flows is considerably less. Running these every time code is integrated ensures changes don’t break the product and unit test can be gradually implemented during code refractors, as the nature of the feature stabilizes.
 
 <br>
 
