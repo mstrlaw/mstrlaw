@@ -29,3 +29,5 @@ update_date: 2022-01-14T19:08:19.715Z
 ![Someone complaining that their smart oven is updating during Thanksgiving.](/static/images/img_7725.jpg "Someone complaining that their smart oven is updating during Thanksgiving.")
 
 ![A photo of a cow wearing virtual goggles, displaying green pastures while it's stuck indoor during winter.](/static/images/img_7944.jpeg "A photo of a cow wearing virtual goggles, displaying green pastures while it's stuck indoor during winter.")
+
+![Someone complaining about a 35k pillar looking robot with googly eyes that detects trash on the floor of supermarkets and alerts a worker to pick it up.](/static/images/shopkeeping_robot.jpeg "An expensive robot whose purpose is to alert a human that there is trash on the floor.")
