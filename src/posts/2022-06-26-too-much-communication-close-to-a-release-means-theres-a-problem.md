@@ -68,12 +68,24 @@ The reality is that a wide variety of things can impact this metric. It's up to 
 
 One element can be the main factor resulting in mounting volumes of communication. Simultaneously, an ever growing volume of communication (or at least high and not diminishing volume) doesn't mean that any individual or combination of factors exists.
 
+A higher volume isn't necessarily bad – again, it depends on context. How are teams organized? What does the spectrum of discovery-delivery looks like?
+
 ![](/static/images/communication_along_time_ideal.jpg "Communication pattern for a \"golden path\" of discovery-delivery?")
 
+<p class="u-ImageDescription">Communication pattern for a "golden path" of discovery-delivery?</p>
 
+The lifecycle may imply a larger upfront discovery phase, followed by a "quieter" stage of execution, followed by an uptick due to release coordination and finally a post release stage with hot fixes and improvements.
 
 ![](/static/images/communication_along_time_ideal2.jpg "Communication should oscillate if you do continuous delivery.")
 
+<p class="u-ImageDescription">Communication should oscillate if you do continuous delivery.</p>
 
+A higher release frequency likely results in a more constant (yet relatively low) volume of communication as unforeseen or unplanned work is detected earlier than at the last minute.
 
-Also, a higher volume isn't necessarily bad. Again, it depends on context. But ultimately I believe that any lead must be attentive to this metric to gauge team and delivery health. Look at the communication volume and patterns to understand whether or not something needs your attention.
+<hr>
+
+Ultimately, the leads (and everyone) must be attentive to this as a signal that can be used to proxy team and delivery health. This plus a good understanding of your team's overall characteristics can help you identify whether or not something needs your attention.
+
+<br>
+
+But like any effort, the more time spent on discovery and planning, the better.
