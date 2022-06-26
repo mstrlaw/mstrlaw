@@ -16,15 +16,17 @@ update_date: 2022-06-26T15:18:02.104Z
 ---
 For this massive release, the teams had been working intensely for consecutive sprints to meet an important milestone for the business. There was no way around this date but we had managed to negotiate the details of what was to be delivered. Regardless, it was a lot.
 
-Things didn't run smoothly nor equally for many of the team members. Delivery hadn't been thoroughly planned nor accompanied, cross-team dependencies hadn't been mapped or coordinated in detail. Much planning detail was left out as people were subject to a lot of context switch from different cognitive domains.
+Things didn't run smoothly nor equally for the teams. Delivery hadn't been thoroughly planned nor accompanied, cross-team dependencies hadn't been mapped or coordinated. Much planning detail was left out as people were subject to a lot of context switch from different cognitive domains and the deadline was tight for the amount of required work.
 
 More reasons were identified during our delivery retrospective. To me, it was a good example of the <a href="https://en.wikipedia.org/wiki/Swiss_cheese_model" target="_blank">Swiss Cheese Model</a> in action in terms of software delivery.
 
 <hr>
 
-As we moved closer to the release date, I noticed that communication was picking up in various Slack channels between team members within and out of their respective teams. Some of it was on aligning expectation to get some dependencies delivered yet much of it was clarification on specificities of what they were delivering.
+As we moved closer to the release date, I noticed that communication was picking up in various Slack channels between team members – within and with adjacent teams.
 
-It was kind of wild seeing the (sometimes recurring) questions, doubts and confusion picking up pace as teams were merging their work together or getting feedback from various stakeholders as they deployed their work.
+Some of it was about aligning expectations to get some dependencies delivered, yet much of it was requesting clarification on specificities that were being implemented.
+
+It was kind of a wild thing to see the stream of (sometimes recurring) questions, doubts and confusion picking up pace as teams were merging their work together or getting feedback from various stakeholders as they deployed their work.
 
 <hr>
 
