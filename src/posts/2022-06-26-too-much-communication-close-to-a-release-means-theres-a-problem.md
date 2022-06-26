@@ -18,7 +18,7 @@ For this massive release, the teams had been working intensely for consecutive s
 
 Things didn't run smoothly nor equally for many of the team members. Delivery hadn't been thoroughly planned nor accompanied, cross-team dependencies hadn't been mapped or coordinated in detail. Much planning detail was left out as people were subject to a lot of context switch from different cognitive domains.
 
-There's more to this. To me it's a good example of the <a href="https://en.wikipedia.org/wiki/Swiss_cheese_model" target="_blank">Swiss Cheese Model</a> in action.
+More reasons were identified during. To me it's a good example of the <a href="https://en.wikipedia.org/wiki/Swiss_cheese_model" target="_blank">Swiss Cheese Model</a> in action.
 
 <hr>
 
@@ -28,6 +28,8 @@ It was kind of wild seeing the (sometimes recurring) questions, doubts and confu
 
 <hr>
 
-Reading the below line from the book's 2nd chapter made me wonder: can communication frequency and volume be a health proxy when it comes to delivery success?
+## To what extent can communication frequency and volume be a health proxy when it comes to delivery success?
+
+This thought came from reading the following line from the book's 2nd:
 
 > Fast flow requires restricting communication between teams. Team collaboration is important for gray areas of development, where discovery and expertise is needed to make progress. But in areas where execution prevails – not discovery – communication becomes an unnecessary overhead.
