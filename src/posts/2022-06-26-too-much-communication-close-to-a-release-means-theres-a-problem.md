@@ -18,7 +18,7 @@ For this massive release, the teams had been working intensely for consecutive s
 
 Things didn't run smoothly nor equally for many of the team members. Delivery hadn't been thoroughly planned nor accompanied, cross-team dependencies hadn't been mapped or coordinated in detail. Much planning detail was left out as people were subject to a lot of context switch from different cognitive domains.
 
-More reasons were identified during. To me it's a good example of the <a href="https://en.wikipedia.org/wiki/Swiss_cheese_model" target="_blank">Swiss Cheese Model</a> in action.
+More reasons were identified during our delivery retrospective. To me it was a good example of the <a href="https://en.wikipedia.org/wiki/Swiss_cheese_model" target="_blank">Swiss Cheese Model</a> in action in terms of software delivery.
 
 <hr>
 
