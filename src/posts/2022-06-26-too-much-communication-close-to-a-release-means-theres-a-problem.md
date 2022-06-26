@@ -38,9 +38,9 @@ This thought came from reading the following line from the book's 2nd:
 
 <br>
 
-This observation requires to acknowledge that there is not one-size-fits-all scenario or metric.
+Restricting team communication? Surely that's bad.. But giving it a second thought, teams should indeed be communicating less when they have a good understanding of what needs to be delivered, right? It's not that we're suppressing their communication. It's that a healthy delivery should imply less communication at some point of the SDLC, if done correctly.
 
-Considering this quote, I visualized a couple of lines presented in the post's header image.
+Considering this, I drew the post's header image with three hypothetical scenarios. These thoughts acknowledge that there is not one-size-fits-all scenario or metric.
 
 ### The green line
 
