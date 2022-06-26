@@ -1,6 +1,6 @@
 ---
 layout: post.hbs
-title: Too much communication close to a release means there's a problem?
+title: Team communication frequency as a proxy to discovery/delivery health
 summary: While reading the book <a href="https://teamtopologies.com/"
   target=blank>Team Topologies</a> – specifically on the communication dynamics
   between teams – I ponder on a recent release at <a href="https://unbabel.com"
