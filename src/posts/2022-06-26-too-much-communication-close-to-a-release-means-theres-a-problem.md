@@ -84,9 +84,9 @@ A higher volume isn't necessarily bad – again, it depends on context. How are 
 
 A specific SDLC may imply in a patter with larger upfront communication frequency during the discovery phase, followed by a "quieter" stage of execution, followed by an uptick due to release coordination and finally a post release stage, with hot fixes and coordinated improvements resulting from production monitoring.
 
-![](/static/images/communication_along_time_ideal2.jpg "Communication should oscillate if you do continuous delivery.")
+![](/static/images/communication_along_time_ideal2.jpg "Communication is more constant when doing continuous delivery.")
 
-<p class="u-ImageDescription">Communication should oscillate if you do continuous delivery.</p>
+<p class="u-ImageDescription"Communication is more constant when doing continuous delivery.</p>
 
 Another pattern with higher release frequencies may likely results in a more constant/stable/manageable (yet relatively low) volume of communication, as unforeseen or unplanned work is detected and acted upon earlier.
 
