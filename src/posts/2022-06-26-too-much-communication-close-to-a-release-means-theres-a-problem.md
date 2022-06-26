@@ -44,9 +44,11 @@ Considering this, I drew the post's header image with three hypothetical scenari
 
 ### The green line
 
-Teams start off in uncertainty and are in a mostly discovery stage with high communication volume and frequency to reduce uncertainty as to what to deliver. They focus mainly on discovery and planning delivery.
+Teams start off in uncertainty and are in a mostly discovery stage with high communication volume and frequency to reduce future uncertainty as to what to deliver. They focus mainly on discovery, writing specs and planning delivery.
 
-As things progress forward, teams *should* require less frequent communication as dependencies, deliveries and estimated date have been defined and planned. Communication levels won't ever reach zero as the delivery date arrives, teams might coordinate more, resolve last minute issues and such. It might not plateau and even pick up, but not be central.
+As things progress, the expectation is that teams *should* require less frequent communication as dependencies, deliveries and estimated date have been defined and planned.
+
+Communication levels won't ever reach zero though. As the delivery date arrives, teams might need to coordinate more, resolve last minute issues and such. It might not plateau and even pick up, but it won't be an unmanageable stream of communication.
 
 ### The yellow line
 
