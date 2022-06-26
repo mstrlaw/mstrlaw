@@ -86,7 +86,7 @@ A specific SDLC may imply in a patter with larger upfront communication frequenc
 
 ![](/static/images/communication_along_time_ideal2.jpg "Communication is more constant when doing continuous delivery.")
 
-<p class="u-ImageDescription"Communication is more constant when doing continuous delivery.</p>
+<p class="u-ImageDescription">Communication is more constant when doing continuous delivery.</p>
 
 Another pattern with higher release frequencies may likely results in a more constant/stable/manageable (yet relatively low) volume of communication, as unforeseen or unplanned work is detected and acted upon earlier.
 
