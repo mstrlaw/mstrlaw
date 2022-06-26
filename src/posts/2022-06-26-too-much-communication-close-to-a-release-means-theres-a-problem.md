@@ -52,43 +52,47 @@ Communication levels won't ever reach zero though. As the delivery date arrives,
 
 ### The yellow line
 
-This scenario implies some late start to the discovery process – for whatever reasons. As a result teams likely won't spend as much time planning as they should. There can be less communication happening as the depth and breadth of discovery is smaller due to less available time to juggle discovery and delivery. 
+This scenario implies some late start to the discovery process – for whatever reasons. As a result teams likely won't spend as much time planning as they should. There can be less communication happening as the depth and breadth of discovery is smaller due to less available time to juggle discovery and delivery. The may not have enough business support to do discovery so must juggle ongoing work with it.
 
-As teams arrive closer to the release, the volume of communication might not go down much as they'll be making up for lost ground for less discovery and delivery planning.
+As teams arrive closer to the release, the volume of communication might not go down much as they'll be making up for lost ground for less discovery and delivery planning, dealing with unforeseen work and the unavoidable release hiccups.
 
 ### The red line
 
-This is where what could go wrong did go wrong: shallow discovery, poor planning, poor understanding of cross-team dependencies, lack of clarity to desired product outcomes, etc.
+This is where what can go wrong does go wrong: shallow discovery, poor planning, poor understanding of cross-team dependencies, lack of clarity to desired product outcomes, understaffed teams, context switch, overlapping expertise domains – pick your poison.
 
-As we move closer to the release date, teams start reintegrating their work. As it happens, it gets reviewed, tested and so on, and things start to come up: unforeseen issues, product/design consistency issues, unaccounted scenarios, deploy hurdles, etc. As teams continue moving forward, they require to communicate more and more to resolve all "normal" issues but also all those that could have been anticipated/prevented. 
+As teams move closer to the release date and start reintegrating their work to get it reviewed, tested and so on, things start to come up: unforeseen issues, product/design consistency issues, unaccounted scenarios, deploy hurdles, etc.
+
+As teams continue moving forward, they require to communicate more and more to resolve all "normal" issues but also a higher than average number of issues that could have been anticipated/prevented. That, plus any other issues that may come up from other systems they maintain, customer complaints or business requests that may be urgent for whatever reason.
 
 <hr>
 
 ## There's not one single path
 
-Are these lines representing communication volume/frequency real or even useful?
+Are these lines representing communication volume/frequency real or even useful? Are these the only patterns? Surely no. This us just a thought exercise.
 
-The reality is that a wide variety of things can impact this metric. It's up to us to know how to interpret it in light of the characteristics of the product being built, the team and many other details.
+<br>
 
-One element can be the main factor resulting in mounting volumes of communication. Simultaneously, an ever growing volume of communication (or at least high and not diminishing volume) doesn't mean that any individual or combination of factors exists.
+The reality is that a wide variety of things can impact this signal. It's up to the leads to know how to interpret it in light of the characteristics of the product being built, the team and many other details.
 
-A higher volume isn't necessarily bad – again, it depends on context. How are teams organized? What does the spectrum of discovery-delivery looks like?
+One factor can be the main element that results in unmanageable volumes of communication. Simultaneously, an ever growing volume of communication (or at least high and not diminishing volume) doesn't mean that any individual or combination of factors exists.
+
+A higher volume isn't necessarily bad – again, it depends on context. How are the teams organized? How do they communicate regularly? What does the planning and delivery phases look like?
 
 ![](/static/images/communication_along_time_ideal.jpg "Communication pattern for a \"golden path\" of discovery-delivery?")
 
 <p class="u-ImageDescription">Communication pattern for a "golden path" of discovery-delivery?</p>
 
-The lifecycle may imply a larger upfront discovery phase, followed by a "quieter" stage of execution, followed by an uptick due to release coordination and finally a post release stage with hot fixes and improvements.
+A specific SDLC may imply in a patter with larger upfront communication frequency during the discovery phase, followed by a "quieter" stage of execution, followed by an uptick due to release coordination and finally a post release stage, with hot fixes and coordinated improvements resulting from production monitoring.
 
 ![](/static/images/communication_along_time_ideal2.jpg "Communication should oscillate if you do continuous delivery.")
 
 <p class="u-ImageDescription">Communication should oscillate if you do continuous delivery.</p>
 
-A higher release frequency likely results in a more constant (yet relatively low) volume of communication as unforeseen or unplanned work is detected earlier than at the last minute.
+Another pattern with higher release frequencies may likely results in a more constant/stable/manageable (yet relatively low) volume of communication, as unforeseen or unplanned work is detected and acted upon earlier.
 
 <hr>
 
-Ultimately, the leads (and everyone) must be attentive to this as a signal that can be used to proxy team and delivery health. This plus a good understanding of your team's overall characteristics can help you identify whether or not something needs your attention.
+Ultimately, the leads (and everyone) should use team communication volume and frequency as a signal that can be used to proxy team and delivery health. That and a good understanding of the team's overall characteristics can help identify whether or not something needs closer attention.
 
 <br>
 
