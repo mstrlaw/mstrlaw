@@ -30,24 +30,28 @@ It was kind of wild seeing the (sometimes recurring) questions, doubts and confu
 
 ## To what extent can communication frequency and volume be a health proxy when it comes to delivery success?
 
+
+
 This thought came from reading the following line from the book's 2nd:
 
 > Fast flow requires restricting communication between teams. Team collaboration is important for gray areas of development, where discovery and expertise is needed to make progress. But in areas where execution prevails – not discovery – communication becomes an unnecessary overhead.
+
+
 
 This observation requires to acknowledge that there is not one-size-fits-all scenario or metric.
 
 Considering the above quote, I visualized a couple of lines presented in the above image.
 
-**The green line**
+#### The green line
 
 Teams start off in uncertainty and are in a mostly discovery stage with high communication volume and frequency to reduce uncertainty as to what to deliver. They focus mainly on discovery and planning delivery.
 
 As things progress forward, teams *should* require less frequent communication as dependencies, deliveries and estimated date have been defined and planned. Communication levels won't ever reach zero as the delivery date arrives, teams might coordinate more, resolve last minute issues and such. It might not plateau and even pick up, but not be central.
 
-**The yellow line**
+#### The yellow line
 
 This scenario implies some late start to the discovery process – for whatever reasons. As a result teams likely won't spend as much time planning as they should. There can be less communication happening as the depth and breadth of discovery is smaller due to less available time to juggle discovery and delivery. 
 
 As teams arrive closer to the release, the volume of communication might not go down much as they'll be making up for lost ground for less discovery and delivery planning.
 
-**The red line**
+#### The red line
