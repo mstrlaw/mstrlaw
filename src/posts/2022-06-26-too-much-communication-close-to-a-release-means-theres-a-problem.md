@@ -30,17 +30,15 @@ It was kind of wild seeing the (sometimes recurring) questions, doubts and confu
 
 ## To what extent can communication frequency and volume be a health proxy when it comes to delivery success?
 
-
-
 This thought came from reading the following line from the book's 2nd:
 
 > Fast flow requires restricting communication between teams. Team collaboration is important for gray areas of development, where discovery and expertise is needed to make progress. But in areas where execution prevails – not discovery – communication becomes an unnecessary overhead.
 
-
+<br>
 
 This observation requires to acknowledge that there is not one-size-fits-all scenario or metric.
 
-Considering the above quote, I visualized a couple of lines presented in the above image.
+Considering this quote, I visualized a couple of lines presented in the post's header image.
 
 ### The green line
 
@@ -64,8 +62,18 @@ As we move closer to the release date, teams start reintegrating their work. As 
 
 ## There's not one single path
 
- (that you know or don't know about).
+Are these lines representing communication volume/frequency real or even useful?
+
+The reality is that a wide variety of things can impact this metric. It's up to us to know how to interpret it in light of the characteristics of the product being built, the team and many other details.
+
+One element can be the main factor resulting in mounting volumes of communication. Simultaneously, an ever growing volume of communication (or at least high and not diminishing volume) doesn't mean that any individual or combination of factors exists.
+
+![](/static/images/communication_along_time_ideal.jpg "Communication pattern for a \"golden path\" of discovery-delivery?")
 
 
 
-Of course, one of those elements could be the main factor resulting in mounting volumes of communication. Simultaneously, an ever growing volume of communication (or at least high and not diminishing volume) doesn't mean that any individual or combination of factors exists.
+![](/static/images/communication_along_time_ideal2.jpg "Communication should oscillate if you do continuous delivery.")
+
+
+
+Also, a higher volume isn't necessarily bad. Again, it depends on context. But ultimately I believe that any lead must be attentive to this metric to gauge team and delivery health. Look at the communication volume and patterns to understand whether or not something needs your attention.
