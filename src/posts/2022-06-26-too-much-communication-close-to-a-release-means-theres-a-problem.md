@@ -42,16 +42,30 @@ This observation requires to acknowledge that there is not one-size-fits-all sce
 
 Considering the above quote, I visualized a couple of lines presented in the above image.
 
-#### The green line
+### The green line
 
 Teams start off in uncertainty and are in a mostly discovery stage with high communication volume and frequency to reduce uncertainty as to what to deliver. They focus mainly on discovery and planning delivery.
 
 As things progress forward, teams *should* require less frequent communication as dependencies, deliveries and estimated date have been defined and planned. Communication levels won't ever reach zero as the delivery date arrives, teams might coordinate more, resolve last minute issues and such. It might not plateau and even pick up, but not be central.
 
-#### The yellow line
+### The yellow line
 
 This scenario implies some late start to the discovery process – for whatever reasons. As a result teams likely won't spend as much time planning as they should. There can be less communication happening as the depth and breadth of discovery is smaller due to less available time to juggle discovery and delivery. 
 
 As teams arrive closer to the release, the volume of communication might not go down much as they'll be making up for lost ground for less discovery and delivery planning.
 
-#### The red line
+### The red line
+
+This is where what could go wrong did go wrong: shallow discovery, poor planning, poor understanding of cross-team dependencies, lack of clarity to desired product outcomes, etc.
+
+As we move closer to the release date, teams start reintegrating their work. As it happens, it gets reviewed, tested and so on, and things start to come up: unforeseen issues, product/design consistency issues, unaccounted scenarios, deploy hurdles, etc. As teams continue moving forward, they require to communicate more and more to resolve all "normal" issues but also all those that could have been anticipated/prevented. 
+
+<hr>
+
+## There's not one single path
+
+ (that you know or don't know about).
+
+
+
+Of course, one of those elements could be the main factor resulting in mounting volumes of communication. Simultaneously, an ever growing volume of communication (or at least high and not diminishing volume) doesn't mean that any individual or combination of factors exists.
