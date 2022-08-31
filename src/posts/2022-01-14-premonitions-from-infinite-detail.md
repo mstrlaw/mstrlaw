@@ -31,3 +31,9 @@ update_date: 2022-06-18T10:23:54.132Z
 ![A photo of a cow wearing virtual goggles, displaying green pastures while it's stuck indoor during winter.](/static/images/img_7944.jpeg "A photo of a cow wearing virtual goggles, displaying green pastures while it's stuck indoor during winter.")
 
 ![Someone complaining about a 35k pillar looking robot with googly eyes that detects trash on the floor of supermarkets and alerts a worker to pick it up.](/static/images/shopkeeping_robot.jpeg "An expensive robot whose purpose is to alert a human that there is trash on the floor.")
+
+![A fleet of 6 or 7 Starship delivery drones forming a line on a university campus.](/static/images/starship_fleet.png "A fleet of 6 or 7 Starship delivery drones forming a line on a university campus.")
+
+![Someone pushing a security robot that is stuck on the sidewalk.](/static/images/security_robot.jpg "Someone pushing a security robot that is stuck on the sidewalk.")
+
+![A notice on a Starbucks warning customers that from October onwards, cash will no longer be accepted as a form of payment.](/static/images/chashless_store.webp "A notice on a Starbucks warning customers that from October onwards, cash will no longer be accepted as a form of payment.")
