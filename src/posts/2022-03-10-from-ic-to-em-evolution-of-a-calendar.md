@@ -24,8 +24,6 @@ update_date: 2023-01-28T12:39:00.000Z
 
 <p class="u-ImageDescription">October 2020</p>
 
-<﻿hr>
-
 **As a Senior Frontend Engineering Lead**
 
 ![A screenshot of a calendar in April 2021.](/static/images/april_2021.png "April 2021")
@@ -36,15 +34,11 @@ update_date: 2023-01-28T12:39:00.000Z
 
 <p class="u-ImageDescription">July 2021</p>
 
-<﻿hr>
-
 **As a Senior Engineering Manager**
 
 ![A screenshot of a calendar in March 2022.](/static/images/march_2022.png "March 2022")
 
 <p class="u-ImageDescription">March 2022</p>
-
-<﻿hr>
 
 **As a Director of Engineering**
 
