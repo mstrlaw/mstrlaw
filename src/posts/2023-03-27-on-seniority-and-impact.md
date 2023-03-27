@@ -22,7 +22,4 @@ This "objective" definition, many Times, is reflected as some arbitrary period o
 
 Years of experience-or other of such metrics- are used as a proxy, with the expectation that one has gone through enough practical experience, has failed enough and learned from ones mistakes. More importantly, that one is able to recognize patterns and act upon those, faster and smarter than someone that hasn't build that capacity.
 
-<﻿hr>
-
-In reality, I've seen many engineers with several years of practical experience yet don't seem to have amassed\
-the skills-one hopes to see from a senior.
+In reality, I've seen many engineers with several years of practical experience yet don't seem to have amassed the skills-one hopes to see from a senior.
