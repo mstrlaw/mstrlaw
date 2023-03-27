@@ -1,10 +1,10 @@
 ---
 layout: post.hbs
 title: "From IC to EM: Evolution of a Calendar "
-summary: A look at how my weeks changed over the years from moving from an
-  Individual Contributor (IC) to an Engineering Manager (EM).
+summary: A look at how my weeks changed over the years, moving from an
+  Individual Contributor (IC) path to a Manager(M) path.
 publish_date: 2022-03-10T12:39:55.319Z
-update_date: 2022-03-10T12:39:55.331Z
+update_date: 2022-01-28T12:39:55.331Z
 ---
 ![A screenshot of a mostly empty calendar, in 2019.](/static/images/august_2019.png "Calendar in August 2019")
 
@@ -33,3 +33,7 @@ update_date: 2022-03-10T12:39:55.331Z
 ![A screenshot of a calendar in March 2022.](/static/images/march_2022.png "March 2022")
 
 <p class="u-ImageDescription">March 2022</p>
+
+![A screenshot of a calendar in January 2023](/static/images/calendar.png "January 2023")
+
+<p class="u-ImageDescription">January 2022</p>
