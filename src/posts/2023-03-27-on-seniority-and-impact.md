@@ -1,6 +1,12 @@
 ---
 layout: post.hbs
 title: On Seniority and Impact
+summary: >+
+  Thoughts on the challenge of defining seniority in engineering, t﻿he
+  incompleteness of p﻿roxies like years of experience a﻿nd similar to gauge
+  seniority. Seniority is ultimately about impact t﻿hrough technical knowledge,
+  decision-making skills, and the ability to multiply impact.
+
 feat_image: /static/images/corner.png
 feat_image_alt: An abstract drawing of two cornerstones.
 publish_date: 2023-03-27T12:18:33.006Z
