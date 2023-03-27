@@ -1,6 +1,6 @@
 ---
 layout: post.hbs
-title: Evolution of a Calendar from Individual Contributor to Manager
+title: Evolution of a Calendar from IC to M track
 summary: A look at how my weeks changed over the years, moving from an
   Individual Contributor to a Manager track.
 publish_date: 2022-03-10T12:39:55.319Z
