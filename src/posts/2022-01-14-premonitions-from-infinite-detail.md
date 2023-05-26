@@ -37,3 +37,5 @@ update_date: 2022-09-01T13:49:33.633Z
 ![Someone pushing a security robot that is stuck on the sidewalk.](/static/images/security_robot.jpg "Someone pushing a security robot that is stuck on the sidewalk.")
 
 ![A notice on a Starbucks warning customers that from October onwards, cash will no longer be accepted as a form of payment.](/static/images/chashless_store.webp "A notice on a Starbucks warning customers that from October onwards, cash will no longer be accepted as a form of payment.")
+
+![A Vice article stating that an eating disorder helpline is firing their staff after unionizing and replacing them with a chatbot.](/static/images/chatbots.jpeg "A Vice article stating that an eating disorder helpline is firing their staff after unionizing and replacing them with a chatbot.")
