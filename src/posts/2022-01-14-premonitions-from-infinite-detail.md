@@ -6,7 +6,7 @@ summary: A collection of images that remind me of Tim Maughan's <a
   target="_blank">Infinite Detail</a> story, depicting the techno-culture and
   dystopian life before the "great event".
 publish_date: 2022-01-14T19:08:19.701Z
-update_date: 2023-05-26T13:33:45.908Z
+update_date: 2023-06-09T09:05:18.908Z
 ---
 ![A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.](/static/images/oculus.jpeg "A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.")
 
