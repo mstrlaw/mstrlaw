@@ -39,3 +39,5 @@ update_date: 2023-05-26T13:33:45.908Z
 ![A notice on a Starbucks warning customers that from October onwards, cash will no longer be accepted as a form of payment.](/static/images/chashless_store.webp "A notice on a Starbucks warning customers that from October onwards, cash will no longer be accepted as a form of payment.")
 
 ![A Vice article stating that an eating disorder helpline is firing their staff after unionizing and replacing them with a chatbot.](/static/images/chatbots.jpeg "A Vice article stating that an eating disorder helpline is firing their staff after unionizing and replacing them with a chatbot.")
+
+![An slum in Tijuana, Mexico, superimposed on a massive Amazon warehouse.](/static/images/amazon_warehouse.jpeg "An slum in Tijuana, Mexico, superimposed on a massive Amazon warehouse.")
