@@ -59,6 +59,7 @@ window.onload = async () => {
         if (d.grand_total.total_seconds !== 0) {
           tmp[d.grand_total.total_seconds] = d.range.start;
           series.push(d.grand_total.total_seconds);
+          totalTime += d.grand_total.total_seconds;
         } else {
           tmp[0.1] = d.range.start;
           series.push(0.1);

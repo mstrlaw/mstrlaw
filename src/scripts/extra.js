@@ -15,7 +15,6 @@ const generateExtra =  () => {
     let loadTime = Math.round((perf.loadEventEnd - perf.requestStart) * 100) / 100;
     loadTime = loadTime > 1000 ? `≈${Math.round(loadTime / 1000 * 100) / 100}s` : `≈${loadTime}ms`;
     document.getElementById('loadTime').innerText = loadTime;
-
     document.getElementById('screenTime').innerText = `≈${~~(totalTime / 3600)}h${~~((totalTime % 3600) / 60)}m`;
   } catch (err) {
     console.log(err);
@@ -28,13 +27,18 @@ const setTimeAgo = () => {
     dates.forEach(date => {
       const attr = date.getAttribute('data-pubtimeago');
       if (!!!attr.length) return;
+      
       const equalDate = date.getAttribute('data-equaldate') === 'true';
       let read = `${dayjs(date.getAttribute('data-updtimeago')).from(dayjs())}`
       let stamp = `${date.getAttribute('data-updreadable')}`
 
       if (!equalDate) {
-        read = `${dayjs(date.getAttribute('data-pubtimeago')).from(dayjs())} <small><b>(updated ${dayjs(date.getAttribute('data-updtimeago')).from(dayjs())})</b></small>`;
+        read = `${dayjs(date.getAttribute('data-pubtimeago')).from(dayjs())}`;
+        if (date.getAttribute('data-equaldate') !== null) {
+          read += ` (updated ${dayjs(date.getAttribute('data-pubtimeago')).from(dayjs())})`;
+        }
         stamp = `${date.getAttribute('data-pubreadable')}, ${date.getAttribute('data-updreadable')}`;
+        console.log(read);
       }
       date.innerHTML = `<span title="${stamp}">${read}</span>`;
     });

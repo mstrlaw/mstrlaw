@@ -40,6 +40,10 @@ Metalsmith(__dirname)
         pattern: 'posts/*.md',
         reverse: true,
         sortBy: 'update_date',
+      },
+      timelineItems: {
+        pattern: 'timeline/*.md',
+        sortBy: 'update_date',
       }
     }))
   .use(sass())

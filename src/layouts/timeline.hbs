@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title>{{ title }} - {{ sitename}}</title>
+  <meta
+    name="description"
+    content="{{ post_description }}"
+  >
+
+  <meta property="og:title" content="{{ title }} - {{ sitename }}">
+  <meta property="og:description" content="{{ post_description }}">
+  <meta property="og:site_name" content="{{ title }} - {{ sitename }}">
+  <meta property="og:image" content="https://mstrlaw.com{{ thumbnail }}">
+  <meta property="og:url" content="https://mstrlaw.com/{{ path }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="metalsmith">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/app.css">
+  <link rel="stylesheet" href="/styles/timeline.css" async>
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/footer.css" async>
+  <script src="/scripts/extra.min.js"></script>
+</head>
+
+<body>
+  {{> Header }}
+  <div class="l-Container">
+    <br>
+    {{> TimelineItems }}
+  </div>
+
+  <div class="c-Background"></div>
+  {{> SimpleFooter }}
+</body>
+<script>
+  window.onload = async () => {
+    await injectScript('//cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js');
+    await injectScript('//cdn.jsdelivr.net/npm/dayjs@1.10.4/plugin/relativeTime.min.js');
+    dayjs.extend(window.dayjs_plugin_relativeTime);
+    setTimeAgo();
+  }
+</script>
+</html>

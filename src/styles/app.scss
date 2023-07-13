@@ -232,3 +232,34 @@ blockquote {
     z-index: -20;
   }
 }
+
+.c-Tooltip {
+  position: relative;
+  display: inline-block;
+  $self: &;
+
+  &__text {
+    visibility: hidden;
+    width: 220px;
+    background-color: var(--darkGray);
+    color: var(--white);
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -110px;
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    cursor: help;
+    #{$self}__text {
+      visibility: visible;
+    }
+  }
+}
