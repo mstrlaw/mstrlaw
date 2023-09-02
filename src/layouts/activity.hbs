@@ -5,80 +5,40 @@
   <title>{{ title }} - {{ sitename}}</title>
   <meta
     name="description"
-    content="{{ description }}"
+    content="{{ post_description }}"
   >
 
   <meta property="og:title" content="{{ title }} - {{ sitename }}">
-  <meta property="og:description" content="{{ description }}">
+  <meta property="og:description" content="{{ post_description }}">
   <meta property="og:site_name" content="{{ title }} - {{ sitename }}">
+  <meta property="og:image" content="https://mstrlaw.com{{ thumbnail }}">
+  <meta property="og:url" content="https://mstrlaw.com/{{ path }}">
+  <meta name="twitter:card" content="summary_large_image">
 
-  {{> Meta }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="metalsmith">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
 
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/app.css">
-  <link rel="stylesheet" href="/styles/post.css">
+  <link rel="stylesheet" href="/styles/timeline.css" async>
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/footer.css" async>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
-
-  {{> HomeStyles }}
+  <script src="/scripts/extra.min.js"></script>
 </head>
 
 <body>
   {{> Header }}
   <div class="l-Container">
-    <article class="c-Post">
-      {{#if (sameDate publish_date update_date) }}
-      <time datetime="{{ publish_date }}">Published {{ formatDate publish_date }}</time><br>
-      {{else}}
-      <time datetime="{{ publish_date }}">Published {{ formatDate publish_date }}</time>
-      <small><time datetime="{{ update_date }}">(Updated {{ formatDate update_date }})</time></small>
-      {{/if}}
-      {{#if feat_image}}
-        <h1 class="c-Post__title">{{ title }}</h1>
-        <p class="c-Post__summary">{{{ summary }}}</p>
-        <img src="{{ feat_image }}" alt="Post main image">
-      {{else}}
-        <h1 class="c-Post__title margin">{{ title }}</h1>
-        <p class="c-Post__summary">{{{ summary }}}</p>
-      {{/if}}
-      {{{ contents }}}
-      
-      <p>
-        Zermatt is a Swiss town located in the German Canton. Near it is the Matterhorn, a 4,478m tall pyramid shaped mountain separating Switzerland and Italy. You might recognize its shape from the Toblerone chocolates one sees in airports, but also many other Swiss products.
-      </p>
-        
-      <p>
-        It is considered one of the great Alpine peaks due to its aesthetic shape, technical climb and history. On average, around 3000 people climb it each year.
-      </p>
-      
-      <p>
-        These are some facts that I didn't know about in 2022 when I stayed in Zermatt while meeting my parents there on a well-deserved summer break. 
-      </p>
-      
-      <p>
-        The reason I now know these facts is because after returning from hiking in and around the area and gazing at the Matterhorn for what might be considered too long, a question slowly creeped in my mind during the rest of that year: could I climb it?
-      </p>
-
-      <p>
-        This wasn't a hypothetical question and it didn't form out of thin air. I knew that, due to his work, it wasn't unlikely that my father would go back to Zermatt next summer.
-      </p>
-
-      <p>
-        Knowing that, the question shaped and split itself: "Do you want to attempt climbing the Matterhorn? Do you think you have what it takes?" And, more importantly: "Do you want to find out the answer to those questions?"
-      </p>
-      
-      <p>
-        The Matterhorn isn't the hardest mountain to climb. It's not the deadliest in the world (although people perish on it every year). It is, nonetheless, a challenge worthy of respect. 
-      </p>
-      
-      <p>
-        It consists of a non-stop, 9 to 12 hours technical climb reaching above 4,000 meters, requiring a high-level at the fitness, technical ability and being at ease at high altitudes with exposed terrain. It's not a hike.
-      </p>
-
-      <h2>Activities and Workouts</h2>
-      <a href="https://mstrlaw.com/activity/" target="_blank">Full page chart</a>
+    <h2>Activities and Workouts</h2>
       <div class="chartjs-size-monitor">
 			<div class="chartjs-size-monitor-expand">
 				<div class=""></div>
@@ -94,14 +54,16 @@
       height="689"
       class="chartjs-render-monitor"
     ></canvas>
-
-    </article>
   </div>
 
   <div class="c-Background"></div>
   {{> SimpleFooter }}
-
   <style>
+    .l-Header,
+    .l-Container
+    {
+      --containerWidth: 90vw;
+    }
     @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}
     .chartjs-render-monitor{animation:chartjs-render-animation 1ms}
     .chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}
