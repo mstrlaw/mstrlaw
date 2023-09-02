@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title>{{ title }} - {{ sitename}}</title>
+  <meta
+    name="description"
+    content="{{ description }}"
+  >
+
+  <meta property="og:title" content="{{ title }} - {{ sitename }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:site_name" content="{{ title }} - {{ sitename }}">
+
+  {{> Meta }}
+
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/app.css">
+  <link rel="stylesheet" href="/styles/post.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/footer.css" async>
+
+  {{> HomeStyles }}
+</head>
+
+<body>
+  {{> Header }}
+  <div class="l-Container">
+    <article class="c-Post">
+      {{#if (sameDate publish_date update_date) }}
+      <time datetime="{{ publish_date }}">Published {{ formatDate publish_date }}</time><br>
+      {{else}}
+      <time datetime="{{ publish_date }}">Published {{ formatDate publish_date }}</time>
+      <small><time datetime="{{ update_date }}">(Updated {{ formatDate update_date }})</time></small>
+      {{/if}}
+      {{#if feat_image}}
+        <h1 class="c-Post__title">{{ title }}</h1>
+        <p class="c-Post__summary">{{{ summary }}}</p>
+        <img src="{{ feat_image }}" alt="Post main image">
+      {{else}}
+        <h1 class="c-Post__title margin">{{ title }}</h1>
+        <p class="c-Post__summary">{{{ summary }}}</p>
+      {{/if}}
+      {{{ contents }}}
+      poop dude!
+    </article>
+  </div>
+
+  <div class="c-Background"></div>
+  {{> SimpleFooter }}
+</body>
+</html>
