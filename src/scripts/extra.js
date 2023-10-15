@@ -38,7 +38,7 @@ const setTimeAgo = () => {
           read += ` (updated ${dayjs(date.getAttribute('data-pubtimeago')).from(dayjs())})`;
         }
         stamp = `${date.getAttribute('data-pubreadable')}, ${date.getAttribute('data-updreadable')}`;
-        console.log(read);
+        // console.log(read);
       }
       date.innerHTML = `<span title="${stamp}">${read}</span>`;
     });
