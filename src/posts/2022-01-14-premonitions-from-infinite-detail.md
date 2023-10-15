@@ -6,7 +6,7 @@ summary: A collection of images that remind me of Tim Maughan's <a
   target="_blank">Infinite Detail</a> story, depicting the techno-culture and
   dystopian life before the "great event".
 publish_date: 2022-01-14T19:08:19.701Z
-update_date: 2023-10-15T13:10:47.044Z
+update_date: 2023-10-15T13:17:46.829Z
 ---
 ![A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.](/static/images/oculus.jpeg "A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.")
 
@@ -43,3 +43,5 @@ update_date: 2023-10-15T13:10:47.044Z
 ![An slum in Tijuana, Mexico, superimposed on a massive Amazon warehouse.](/static/images/amazon_warehouse.jpeg "An slum in Tijuana, Mexico, superimposed on a massive Amazon warehouse.")
 
 ![Someone showing an image of an individual hitting a RoboTaxi with a hammer.](/static/images/autonomous_car.png "Someone showing an image of an individual hitting a RoboTaxi with a hammer.")
+
+![An egg shaped wheeled robot that will act as New York's NYC subway police officer.](/static/images/nypd_robocop.jpeg "An egg shaped wheeled robot that will act as New York's NYC subway police officer.")
