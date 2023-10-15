@@ -41,3 +41,5 @@ update_date: 2023-06-09T09:05:18.908Z
 ![A Vice article stating that an eating disorder helpline is firing their staff after unionizing and replacing them with a chatbot.](/static/images/chatbots.jpeg "A Vice article stating that an eating disorder helpline is firing their staff after unionizing and replacing them with a chatbot.")
 
 ![An slum in Tijuana, Mexico, superimposed on a massive Amazon warehouse.](/static/images/amazon_warehouse.jpeg "An slum in Tijuana, Mexico, superimposed on a massive Amazon warehouse.")
+
+![Someone showing an image of an individual hitting a RoboTaxi with a hammer.](/static/images/autonomous_car.png "Someone showing an image of an individual hitting a RoboTaxi with a hammer.")
