@@ -26,7 +26,13 @@ collections:
       - { label: "Publish Date", name: "publish_date", widget: "datetime" }
       - { label: "Update Date", name: "update_date", widget: "datetime" }
       # Type
-      - { label: "Type", name: "type", widget: "list", default: "post", fields: ["post", "project", "essay", "personal"] }
+      - {
+          label: "Type",
+          name: "type",
+          widget: "list",
+          default: "post",
+          field: { label: "Name", name: "name", widget: "string" }
+        }
 
   - name: "thoughts"
     label: "Thoughts"
