@@ -45,3 +45,5 @@ update_date: 2023-10-15T13:17:46.829Z
 ![Someone showing an image of an individual hitting a RoboTaxi with a hammer.](/static/images/autonomous_car.png "Someone showing an image of an individual hitting a RoboTaxi with a hammer.")
 
 ![An egg shaped wheeled robot that will act as New York's NYC subway police officer.](/static/images/nypd_robocop.jpeg "An egg shaped wheeled robot that will act as New York's NYC subway police officer.")
+
+![A Ford car dashboard screen showing the message "Update Not Successful. Unfortunately, a recent software update was not successful. Your vehicle cannot be driven."](/static/images/car_bricked.jpeg "A Ford car dashboard screen showing the message \"Update Not Successful. Unfortunately, a recent software update was not successful. Your vehicle cannot be driven.\"")
