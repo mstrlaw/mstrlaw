@@ -21,7 +21,9 @@ A﻿s we spend the early evening, him and I spoke while warming ourselves by dri
 
 <﻿hr>
 
-A﻿t some point he asked "*So what is that you do in this new job of yours? What is that an Engineering Manager does? What is that you manage? Why is it needed?*"
+A﻿t some point he asked
+
+### "*So what is that you do in this new job of yours? What is that an Engineering Manager does? What is that you manage? Why is it needed?*"
 
 I﻿ told him what an Engineering Manager generally does, in the realm of career orientation, performance review and that sort of managerial tasks part of the typical manager work.
 
