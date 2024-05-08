@@ -28,3 +28,19 @@ I﻿ told him what an Engineering Manager generally does, in the realm of career
 B﻿ut that's not what the real value of a technical lead, which is what I embody.
 
 S﻿o I thought about the lake we were looking at and gave this analogy that I find sort of fitting.
+
+> Companies like mine, they build digital products. We're build something the market might be willing to pay for. And in that quest, stakeholders in the company will have insights and ideas as to what that is and say what they want the engineers to build and so on.
+>
+> F﻿or example, imagine they might come up and say to an engineer "See this lake? We need to have you cross on the other side". Consider this the analogy of "we need to build this, whatever this means". So this is the problem given to an engineer, or a team of engineers.
+>
+> N﻿ow, how do you get to the other side? Well you can swim, or you can walk to it clockwise, or counter clockwise. Swimming might get you there quicker than walking, if you are fit enough, but also you might get hypothermia from the freezing temperature. What if you had a wetsuit to keep you warm?
+>
+> The combination between how clear the ask is - "get to that side of the lake" - and the knowledge, seniority and ingenuity of the engineering team, the results you get might differ by a lot.
+>
+> I﻿ am in at this intersection where the ask is doable, realistic and formulated well enough so that my team is able to come up with a solution that is sound in terms of time, quality and cost. Furthermore, some engineers are less experienced, or might miss some information to generate a good solution. I also come in to coach them at reasoning about tradeoffs. 
+>
+> A﻿ young engineer might swim to the other side because it's "quicker". A more experienced engineer might walk even though it's longer because they know they might die of hypothermia once they get out, their clothes soaked. So it's a matter of tradeoffs depending on what is desired and under which circumstances.
+
+<﻿hr>
+
+S﻿ince then I've used this analogy one or two times with other non-tech, non-startup folks and they mostly seem to get it. Although they always look confused as to why anyone would ask an engineer to get to the other side of a frozen lake.
