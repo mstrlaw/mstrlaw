@@ -19,11 +19,12 @@ The local hut was closed but lucky for us, they had a section accessibly for mou
 
 A﻿s we spend the early evening, him and I spoke while warming ourselves by drinking tea and looking out through a little window at the hail falling down on the frozen, with the mountains as the backdrop.
 
-<﻿hr>
-
 A﻿t some point he asked
 
+
 ### "*So what is that you do in this new job of yours? What is that an Engineering Manager does? What is that you manage? Why is it needed?*"
+
+
 
 I﻿ told him what an Engineering Manager generally does, in the realm of career orientation, performance review and that sort of managerial tasks part of the typical manager work.
 
@@ -43,6 +44,8 @@ S﻿o I thought about the lake we were looking at and gave this analogy that I f
 >
 > A﻿ young engineer might swim to the other side because it's "quicker". A more experienced engineer might walk even though it's longer because they know they might die of hypothermia once they get out, their clothes soaked. So it's a matter of tradeoffs depending on what is desired and under which circumstances.
 
-<﻿hr>
+
+
+
 
 S﻿ince then I've used this analogy one or two times with other non-tech, non-startup folks and they mostly seem to get it. Although they always look confused as to why anyone would ask an engineer to get to the other side of a frozen lake.
