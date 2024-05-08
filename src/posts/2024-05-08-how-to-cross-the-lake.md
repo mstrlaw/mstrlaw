@@ -11,7 +11,7 @@ description: Explaining part of the day-to-day job and responsibility of a techn
 publish_date: 2024-05-08T15:40:27.868Z
 update_date: 2024-05-08T15:40:27.872Z
 ---
-S﻿ome time ago I went for some climbing with a friend. We camped, climbed some peaks and overall had a blast.
+A while back I went for some climbing with a friend. We camped, climbed some peaks and overall had a blast.
 
 O﻿n the last day, we made sure to return to base camp early enough as we knew there was some risk of hail for the end of the day.
 
@@ -19,4 +19,6 @@ The local hut was closed but lucky for us, they had a section accessibly for mou
 
 A﻿s we spend the early evening, him and I spoke while warming ourselves by drinking tea and looking out through a little window at the hail falling down on the frozen, with the mountains as the backdrop.
 
-A﻿t some point he asked "So what is that you do in this new job of yours? What is that an Engineering Manager does?"
+<﻿hr>
+
+A﻿t some point he asked "So what is that you do in this new job of yours? What is that an Engineering Manager does? What is that you manage?"
