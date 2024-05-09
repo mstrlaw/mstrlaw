@@ -17,7 +17,7 @@ O﻿n the last day, we made sure to return to base camp early enough as we knew 
 
 The local hut was closed but lucky for us, they had a section accessibly for mountaineers to use in case of need (mountain huts usually have one of these: a place people can get shelter and even spend the night should they need to).
 
-A﻿s we spend the early evening, him and I spoke while warming ourselves by drinking tea and looking out through a little window at the hail falling down on the frozen, with the mountains as the backdrop.
+A﻿s we spent the early evening in the hut, him and I spoke while warming ourselves by drinking tea and looking out through a little window at the hail falling down on the frozen lake, with the mountains as the backdrop.
 
 A﻿t some point he asked
 
