@@ -40,9 +40,9 @@ S﻿o I thought about the lake we were looking at and gave this analogy that I f
 >
 > The combination between how clear the ask is - "get to that side of the lake" - and the knowledge, seniority and ingenuity of the engineering team, gets you very differing results. 
 >
-> I﻿ am in at this intersection where the ask is doable, realistic and formulated well enough so that my team is able to come up with a solution that is sound in terms of time, quality and cost. Furthermore, some engineers are less experienced, or might miss some information to generate a good solution. I also come in to coach them at reasoning about tradeoffs. 
+> I﻿ operate in this intersection where the ask is made and I help on ensuring it's doable, realistic and formulated well enough so that my team is able to come up with a solution that is sound in terms of time, quality and cost. Furthermore, some engineers are less experienced, or might miss some information to generate a good solution. I also come in to coach them at reasoning about tradeoffs, decision making, risks, technical choices, and so on.
 >
-> A﻿ younger engineer might swim to the other side because it's "quicker". A more experienced engineer might walk even though it's longer because they know they might die of hypothermia once they get out of the water, their clothes soaked. So it's a matter of tradeoffs depending on what is desired and under which circumstances and I help the team reason, clarify and navigate those nuances.
+> A﻿ younger engineer might swim to the other side because it's "quicker". A more experienced engineer might propose walking even though it's longer because they know they might die of hypothermia once they get out of the water, their clothes soaked. So it's a matter of tradeoffs depending on what is desired and under which circumstances and I help the team reason, clarify and navigate those nuances.
 
 
 
