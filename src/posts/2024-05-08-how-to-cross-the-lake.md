@@ -38,7 +38,7 @@ S﻿o I thought about the lake we were looking at and gave this analogy that I f
 >
 > N﻿ow, how do you get to the other side? Well you can swim, or you can walk to it clockwise, or counter clockwise. Swimming might get you there quicker than walking, if you are fit enough, but also you might get hypothermia from the freezing temperature. What if you had a wetsuit to keep you warm?
 >
-> The combination between how clear the ask is - "get to that side of the lake" - and the knowledge, seniority and ingenuity of the engineering team, the results you get might differ by a lot.
+> The combination between how clear the ask is - "get to that side of the lake" - and the knowledge, seniority and ingenuity of the engineering team, gets you very differing results. 
 >
 > I﻿ am in at this intersection where the ask is doable, realistic and formulated well enough so that my team is able to come up with a solution that is sound in terms of time, quality and cost. Furthermore, some engineers are less experienced, or might miss some information to generate a good solution. I also come in to coach them at reasoning about tradeoffs. 
 >
