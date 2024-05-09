@@ -11,7 +11,7 @@ description: Explaining part of the day-to-day job and responsibility of a techn
 publish_date: 2024-05-08T15:40:27.868Z
 update_date: 2024-05-08T15:40:27.872Z
 ---
-A while back I went for some climbing with a friend. We camped, climbed some peaks and overall had a blast.
+A while back, I went for some climbing with a friend. We camped, climbed some peaks, and overall had a blast.
 
 O﻿n the last day, we made sure to return to base camp early enough as we knew there was some risk of hail for the end of the day.
 
@@ -28,11 +28,11 @@ A﻿t some point he asked
 
 I﻿ told him what an Engineering Manager generally does, in the realm of career orientation, performance review and that sort of managerial tasks part of the typical manager work.
 
-B﻿ut that's not what the real value of a technical lead, which is what I embody.
+B﻿ut that's not the real value of a technical lead, which is what I embody.
 
-S﻿o I thought about the lake we were looking at and gave this analogy that I find sort of fitting.
+S﻿o I thought about the lake we were looking at and gave this analogy that I find fitting.
 
-> Companies like mine, they build digital products. We're build something the market might be willing to pay for. And in that quest, stakeholders in the company will have insights and ideas as to what that is and say what they want the engineers to build and so on.
+> Companies like mine build digital products. We're build something the market might be willing to pay for. And in that quest, stakeholders in the company will have insights and ideas as to what that is and say what they want the engineers to build and so on.
 >
 > F﻿or example, imagine they might come up and say to an engineer "See this lake? We need to have you cross on the other side". Consider this the analogy of "we need to build this, whatever this means". So this is the problem given to an engineer, or a team of engineers.
 >
@@ -42,10 +42,9 @@ S﻿o I thought about the lake we were looking at and gave this analogy that I f
 >
 > I﻿ am in at this intersection where the ask is doable, realistic and formulated well enough so that my team is able to come up with a solution that is sound in terms of time, quality and cost. Furthermore, some engineers are less experienced, or might miss some information to generate a good solution. I also come in to coach them at reasoning about tradeoffs. 
 >
-> A﻿ young engineer might swim to the other side because it's "quicker". A more experienced engineer might walk even though it's longer because they know they might die of hypothermia once they get out, their clothes soaked. So it's a matter of tradeoffs depending on what is desired and under which circumstances.
+> A﻿ younger engineer might swim to the other side because it's "quicker". A more experienced engineer might walk even though it's longer because they know they might die of hypothermia once they get out of the water, their clothes soaked. So it's a matter of tradeoffs depending on what is desired and under which circumstances and I help the team reason, clarify and navigate those nuances.
 
 
 
 
-
-S﻿ince then I've used this analogy one or two times with other non-tech, non-startup folks and they mostly seem to get it. Although they always look confused as to why anyone would ask an engineer to get to the other side of a frozen lake.
+Since then, I've used this analogy one or two times with other non-tech, non-startup folks and they mostly seem to get it. Although they always look confused as to why anyone would ask an engineer to get to the other side of a frozen lake.
