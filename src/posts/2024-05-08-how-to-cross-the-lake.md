@@ -32,7 +32,7 @@ B﻿ut that's not the real value of a technical lead, which is what I embody.
 
 S﻿o I thought about the lake we were looking at and gave this analogy that I find fitting.
 
-> Companies like mine build digital products. We're build something the market might be willing to pay for. And in that quest, stakeholders in the company will have insights and ideas as to what that is and say what they want the engineers to build and so on.
+> Companies like mine build digital products. We're building something the market might be willing to pay for. And in that quest, stakeholders in the company will have insights and ideas as to what that is and say what they want the engineers to build and so on.
 >
 > F﻿or example, imagine they might come up and say to an engineer "See this lake? We need to have you cross on the other side". Consider this the analogy of "we need to build this, whatever this means". So this is the problem given to an engineer, or a team of engineers.
 >
