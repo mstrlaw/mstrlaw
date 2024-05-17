@@ -15,14 +15,14 @@ A while back, I went for some climbing with a friend. We camped, climbed some pe
 
 O﻿n the last day, we made sure to return to base camp early enough as we knew there was some risk of hail for the end of the day.
 
-The local hut was closed but lucky for us, they had a section accessibly for mountaineers to use in case of need (mountain huts usually have one of these: a place people can get shelter and even spend the night should they need to).
+The local hut was closed but lucky for us, they had a section accessible for mountaineers to use in case of need (mountain huts usually have one of these: a place people can get shelter and even spend the night should they need to).
 
 A﻿s we spent the early evening in the hut, him and I spoke while warming ourselves by drinking tea and looking out through a little window at the hail falling down on the frozen lake, with the mountains as the backdrop.
 
 A﻿t some point he asked
 
 
-### "*So what is that you do in this new job of yours? What is that an Engineering Manager does? What is that you manage? Why is it needed?*"
+### "*So, what is it that you do in this new job of yours? What does an Engineering Manager do? What do you manage? Why is it needed?*"
 
 
 
@@ -30,7 +30,7 @@ I﻿ told him what an Engineering Manager generally does, in the realm of career
 
 B﻿ut that's not the real value of a technical lead, which is what I embody.
 
-S﻿o I thought about the lake we were looking at and gave this analogy that I find fitting.
+S﻿o I thought about the lake we were looking at and gave this analogy, which I find fitting.
 
 > Companies like mine build digital products. We're building something the market might be willing to pay for. And in that quest, stakeholders in the company will have insights and ideas as to what that is and say what they want the engineers to build and so on.
 >
