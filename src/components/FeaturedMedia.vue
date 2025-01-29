@@ -53,6 +53,7 @@ const carouselConfig = {
               alt="A lovely bath"
               decoding="async"
               class="absolute inset-0 h-full w-full object-cover"
+              fallback="netlify"
             />
             <!-- <img
               alt=""
