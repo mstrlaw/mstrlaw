@@ -1,0 +1,88 @@
+---
+import Navigation from '../components/Navigation.vue';
+---
+
+<!doctype html>
+<html class="h-full antialiased" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="twitter:image:alt"
+      content="The author's face as an Apple Memoji"
+    />
+    <meta property="og:image" content="https://mstrlaw.com/social_banner.png" />
+    <meta property="og:url" content="https://mstrlaw.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="metalsmith" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content="{{ sitename }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:site_name" content="{{ sitename }}" />
+    <meta
+      name="description"
+      content="Lisbon based technologist. Building digital products and exploring technology\'s impact on individuals and society."
+    />
+    <title>Lawrence B. Almeida</title>
+  </head>
+  <body class="flex h-full bg-zinc-50 dark:bg-black">
+    <div class="fixed inset-0 flex justify-center px-4 lg:px-8">
+      <div class="flex w-full md:max-w-5xl">
+        <div
+          class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"
+        >
+        </div>
+      </div>
+    </div>
+    <div class="relative flex justify-center w-full">
+      <div class="w-full md:max-w-5xl">
+        <Navigation client:idle />
+        <main class="mt-12 px-8 md:px-12">
+          <slot />
+        </main>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue-horizontal@next"></script>
+  <script
+    data-goatcounter="https://mstrlaw.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"></script>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>

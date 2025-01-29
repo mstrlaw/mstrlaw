@@ -1,0 +1,21 @@
+@import url('https://rsms.me/inter/inter.css');
+@import "tailwindcss";
+
+:root { font-family: 'Inter', sans-serif; }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter var', sans-serif; 
+  --header-position: sticky;
+  --content-offset: 116px;
+  --header-height: 180px;
+  --header-mb: -116px;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}

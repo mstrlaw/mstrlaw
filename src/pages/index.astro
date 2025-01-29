@@ -1,0 +1,15 @@
+---
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import Intro from '../components/Intro.astro';
+import FeaturedMedia from '../components/FeaturedMedia.vue';
+---
+
+<Layout>
+  <Intro />
+  <div class="contents relative">
+    <div class="absolute w-full left-0">
+      <FeaturedMedia client:idle />
+    </div>
+  </div>
+</Layout>
