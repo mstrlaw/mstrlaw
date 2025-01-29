@@ -1,7 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import profilePic from '../assets/law_square.png';
+---
+
 <div>
   <div class="md:flex flex-1 items-center space-between mt-8 lg:mt-16">
     <div class="contents">
-      <img
+      <Image
+        src={profilePic}
+        alt="Lawrence Profile Pic"
+        fetchpriority="high"
+        width="512"
+        height="512"
+        decoding="async"
+        class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-28 w-28"
+      />
+      <!-- <img
         alt=""
         fetchpriority="high"
         width="512"
@@ -12,7 +26,7 @@
         style="color:transparent"
         sizes="4rem"
         src="/law_square.png"
-      />
+      /> -->
     </div>
     <div class="mt-4 md:ml-6 md:mt-0">
       <h1
