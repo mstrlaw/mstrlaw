@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/netlify": "^6.1.0",
     "@astrojs/vue": "^5.0.6",
     "@tailwindcss/vite": "^4.0.0",
     "@unpic/vue": "^1.0.0",
