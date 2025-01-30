@@ -92,49 +92,60 @@ const goToSlide = (index) => {
 </script>
 
 <template>
-  <div class="my-16 w-full md:max-w-7xl mx-auto">
-    <div class="overflow-hidden py-4 sm:gap-8">
-      <!-- <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8"> -->
-      <Carousel v-model="activeSlide" v-bind="carouselConfig">
-        <Slide
-          v-for="(image, index) in images"
-          :key="index"
-          @click="goToSlide(index)"
+  <div class="w-full md:max-w-7xl mx-auto my-16">
+    <Carousel v-model="activeSlide" v-bind="carouselConfig">
+      <Slide
+        v-for="(image, index) in images"
+        :key="index"
+        @click="goToSlide(index)"
+      >
+        <div
+          class="relative aspect-9/10 w-64 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 my-4 hover:cursor-grab active:cursor-grabbing rotate-2"
         >
-          <!-- <div class="carousel__item">{{ slide }}</div> -->
-          <div
-            class="relative aspect-9/10 w-64 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 rotate-2 my-4 hover:cursor-grab active:cursor-grabbing"
-          >
-            <Image
-              :src="`/photos/${image.name}.jpeg`"
-              layout="constrained"
-              loading="lazy"
-              background="auto"
-              width="800"
-              height="1066"
-              :alt="image.alt"
-              decoding="async"
-              class="absolute inset-0 h-full w-full object-cover"
-              fallback="netlify"
-            />
-            <!-- <img
-              alt=""
-              loading="lazy"
-              width="3744"
-              height="5616"
-              decoding="async"
-              data-nimg="1"
-              class="absolute inset-0 h-full w-full object-cover"
-              src="/assets/photos/1.jpeg"
-              style="color: transparent"
-            /> -->
-          </div>
-        </Slide>
-        <!-- <template #addons>
-          <Navigation />
-          <Pagination />
-        </template> -->
-      </Carousel>
-    </div>
+          <Image
+            :src="`/photos/${image.name}.jpeg`"
+            layout="constrained"
+            loading="lazy"
+            background="auto"
+            width="800"
+            height="1066"
+            :alt="image.alt"
+            decoding="async"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+      </Slide>
+    </Carousel>
   </div>
 </template>
+
+<style>
+.carousel__viewport {
+  --gradient-color: var(--color-zinc-50);
+}
+.carousel__viewport:before,
+.carousel__viewport:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  z-index: 1;
+}
+.carousel__viewport:before {
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    var(--gradient-color) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.carousel__viewport:after {
+  right: 0;
+  background: linear-gradient(
+    -90deg,
+    var(--gradient-color) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+</style>
