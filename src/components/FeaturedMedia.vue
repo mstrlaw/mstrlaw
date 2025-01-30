@@ -5,28 +5,36 @@ import { Image } from '@unpic/vue';
 
 const images = [
   {
-    name: 'a',
-    alt: 'Two roped men climbing up a steeped bank of snow.',
-  },
-  {
-    name: 'b',
-    alt: 'A group of people marching on snow with tall white mountains in the background.',
+    name: 'j',
+    alt: 'A man standing on top of a snowy mountain peak holding an ice axe.',
   },
   {
     name: 'c',
     alt: 'A white truck in an orange tinted desert.',
   },
   {
+    name: 'l',
+    alt: 'A man in a wetsuit holding a surfboard and laughing at the beach.',
+  },
+  {
+    name: 'b',
+    alt: 'A group of people marching on snow with tall white mountains in the background.',
+  },
+  {
     name: 'd',
     alt: 'A palm tree and an egyptian obelisc in front of a blue and pink sky.',
+  },
+  {
+    name: 'f',
+    alt: 'A girl looking back while skating on a longboard surrounded by palm trees.',
   },
   {
     name: 'e',
     alt: 'Walking down a wooden pathway with a surfboard towards the ocean.',
   },
   {
-    name: 'f',
-    alt: 'A girl looking back while skating on a longboard surrounded by palm trees.',
+    name: 'a',
+    alt: 'Two roped men climbing up a steeped bank of snow.',
   },
   {
     name: 'g',
@@ -37,20 +45,12 @@ const images = [
     alt: 'The Atkas statue in Rockefeller Center in New York.',
   },
   {
-    name: 'i',
-    alt: 'A woman flying a Cesna plane with a man as the passenger looking out the window.',
-  },
-  {
-    name: 'j',
-    alt: 'A man standing on top of a snowy mountain peak holding an ice axe.',
-  },
-  {
     name: 'k',
     alt: 'A man looking facing the sun set horizon with a dark orange rock wall behind him.',
   },
   {
-    name: 'l',
-    alt: 'A man in a wetsuit holding a surfboard and laughing at the beach.',
+    name: 'i',
+    alt: 'A woman flying a Cesna plane with a man as the passenger looking out the window.',
   },
 ];
 
@@ -104,7 +104,6 @@ const carouselConfig = {
               :alt="image.alt"
               decoding="async"
               class="absolute inset-0 h-full w-full object-cover"
-              fallback="netlify"
             />
             <!-- <img
               alt=""
