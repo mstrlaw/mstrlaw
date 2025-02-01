@@ -12,7 +12,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "$/layouts/Layouts.astro" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "src/layouts/Layouts.astro" }
       # Content
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "markdown", required: false}
