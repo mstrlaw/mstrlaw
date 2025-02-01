@@ -120,9 +120,6 @@ const goToSlide = (index) => {
 </template>
 
 <style>
-.carousel__viewport {
-  --gradient-color: var(--color-zinc-50);
-}
 .carousel__viewport:before,
 .carousel__viewport:after {
   content: '';
@@ -131,6 +128,9 @@ const goToSlide = (index) => {
   height: 100%;
   width: 50px;
   z-index: 1;
+  @media screen and (max-width: 1150px) {
+    display: none;
+  }
 }
 .carousel__viewport:before {
   left: 0;

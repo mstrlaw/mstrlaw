@@ -1,9 +1,19 @@
 @import url('https://rsms.me/inter/inter.css');
 @import "tailwindcss";
 
-:root { font-family: 'Inter', sans-serif; }
+:root {
+  font-family: 'Inter', sans-serif;
+  /* For carousel gradient masking */
+  --gradient-color: var(--color-zinc-50);
+}
 
-@custom-variant dark (&:where(.dark, .dark *));
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gradient-color: var(--color-black);
+  }
+}
+
+/* @custom-variant dark (&:where(.dark, .dark *)); */
 
 @theme {
   --font-sans: 'Inter var', sans-serif; 
