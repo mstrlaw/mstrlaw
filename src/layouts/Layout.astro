@@ -72,9 +72,7 @@ import Footer from '../components/Footer.astro';
     </div>
     <div class="relative flex justify-center w-full h-full">
       <div class="flex flex-col w-full md:max-w-5xl">
-        <div class="hidden">
-          <Navigation client:idle />
-        </div>
+        <Navigation client:idle />
         <main class="mt-12 px-8 md:px-12">
           <slot />
         </main>

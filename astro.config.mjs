@@ -1,5 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { imageService } from "@unpic/astro/service";
+
 
 
 import tailwindcss from '@tailwindcss/vite';
@@ -9,14 +11,11 @@ import netlify from '@astrojs/netlify';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
-    resolve: {
-      /* Vite aliases */
-      alias: {
-        '@': '/src',
-      },
-  },
   },
   output: 'static',
   integrations: [vue()],
   adapter: netlify(),
+  image: {
+    service: imageService(),
+  },
 });
