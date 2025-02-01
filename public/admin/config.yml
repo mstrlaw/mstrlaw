@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "src/pages/posts/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.hbs" }
+      # Content
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "markdown", required: false}
+      - { label: "Body", name: "body", widget: "markdown" }
+      # Feat Image
+      - { label: "Featured Image", name: "feat_image", widget: "image", required: false }
+      - { label: "Featured Image Alt", name: "feat_image_alt", widget: "string", required: false }
+      # SEO related
+      - { label: "Description (SEO)", name: "description", widget: "string", required: false}
+      # Date
+      - { label: "Publish Date", name: "publish_date", widget: "datetime" }
+      - { label: "Update Date", name: "update_date", widget: "datetime" }
+      # Type
+      - {
+          label: "Type",
+          name: "type",
+          widget: "list",
+          default: "post",
+          field: { label: "Name", name: "name", widget: "string" }
+        }
+
+  - name: "thoughts"
+    label: "Thoughts"
+    folder: "src/posts/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "thought.hbs" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+

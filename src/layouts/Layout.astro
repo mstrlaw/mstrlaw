@@ -1,4 +1,5 @@
 ---
+import Scripts from '../components/Scripts.astro';
 import Navigation from '../components/Navigation.vue';
 import Footer from '../components/Footer.astro';
 ---
@@ -56,6 +57,10 @@ import Footer from '../components/Footer.astro';
       content="Technologist building digital products and exploring technology\'s impact on individuals and society."
     />
     <title>Lawrence B. Almeida</title>
+    <script
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+      is:inline></script>
+    <Scripts />
   </head>
 
   <body class="flex flex-col h-full bg-zinc-50 dark:bg-black">
@@ -69,7 +74,9 @@ import Footer from '../components/Footer.astro';
     </div>
     <div class="relative flex justify-center w-full h-full">
       <div class="flex flex-col w-full md:max-w-5xl">
-        <Navigation client:idle />
+        <div class="hidden">
+          <Navigation client:idle />
+        </div>
         <main class="mt-12 px-8 md:px-12">
           <slot />
         </main>
@@ -78,11 +85,13 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
     </div>
-  </body>
-  <script
+  </body><script
     data-goatcounter="https://mstrlaw.goatcounter.com/count"
     async
     src="//gc.zgo.at/count.js"></script>
+  <script
+    src="https://unpkg.com/netlify-cms@^2.10.192/dist/netlify-cms.js"
+    is:inline></script>
 </html>
 
 <style>
