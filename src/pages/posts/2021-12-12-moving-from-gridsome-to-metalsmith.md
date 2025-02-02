@@ -6,12 +6,14 @@ summary: I've had been wanting to make my website more performant, closer to an
   more, right?
 feat_image: /images/uploads/metalsmith.jpg
 feat_image_alt: A person operating a wielding machine.
-publish_date: 2021-12-14T00:06:06.391Z
+description: How often should you refactor your personal website?
 update_date: 2021-12-15T00:09:42.353Z
 thumbnail_description: This is the description of the image.
 thumbnail: /images/uploads/metalsmith.jpg
 date: 2021-12-12T21:58:24.436Z
-description: How often should you refactor your personal website?
+publish_date: 2021-12-14T00:06:06.391Z
+type:
+  - project
 ---
 
 I don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..
