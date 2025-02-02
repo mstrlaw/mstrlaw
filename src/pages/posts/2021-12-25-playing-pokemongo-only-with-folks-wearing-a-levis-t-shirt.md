@@ -12,6 +12,7 @@ publish_date: 2018-08-12T14:13:06.029Z
 update_date: 2018-08-12T14:13:06.029Z
 type:
   - project
+  - inactive
 ---
 
 All aboard the Levis shirt train!

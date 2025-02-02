@@ -13,6 +13,9 @@ description: Teams communication frequency and volume as a signal to
   discovery-delivery health.
 publish_date: 2022-06-26T15:18:02.094Z
 update_date: 2022-06-26T15:18:02.104Z
+type:
+  - essay
+  - management
 ---
 
 For this massive release, the teams had been working intensely for consecutive sprints to meet an important milestone for the business. There was no way around this date but we had managed to negotiate the details of what was to be delivered. Regardless, it was a lot.

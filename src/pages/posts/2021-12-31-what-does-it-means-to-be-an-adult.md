@@ -5,6 +5,9 @@ summary: Incomplete collection of thoughts on exploring the meanings of being
   adult under different angles.
 publish_date: 2021-12-31T15:11:14.982Z
 update_date: 2022-01-08T13:44:25.894Z
+type:
+  - essay
+  - unfinished
 ---
 
 2021 brought up a myriad of reactions in society in regards to the governments' containment measures due to COVID-19 and it got me thinking more than ever: what is an adult? You look at your parents: they are adults. Look at a person holding their child's hand: an adult, right? The rulers of nations. All adults, correct?

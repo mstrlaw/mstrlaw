@@ -14,6 +14,7 @@ date: 2021-12-12T21:58:24.436Z
 publish_date: 2021-12-14T00:06:06.391Z
 type:
   - project
+  - complete
 ---
 
 I don't know how ofter others think about changing their websites. I wonder how often they actually end up doing so. I guess it depends on the sort of developer we're talking about..

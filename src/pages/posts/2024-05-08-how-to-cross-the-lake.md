@@ -10,6 +10,9 @@ feat_image_alt: A photo depicting a sunny day, blue sky. At the center there is
 description: Explaining part of the day-to-day job and responsibility of a technical leader.
 publish_date: 2024-05-08T15:40:27.868Z
 update_date: 2024-05-08T15:40:27.872Z
+type:
+  - essay
+  - management
 ---
 
 A while back, I went for some climbing with a friend. We camped, climbed some peaks, and overall had a blast.

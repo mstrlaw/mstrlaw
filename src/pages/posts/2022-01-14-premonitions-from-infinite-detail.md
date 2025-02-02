@@ -7,6 +7,8 @@ summary: A collection of images that remind me of Tim Maughan's <a
   dystopian life before the "great event".
 publish_date: 2022-01-14T19:08:19.701Z
 update_date: 2024-01-01T17:13:33.962Z
+type:
+  - random
 ---
 
 ![A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.](/images/uploads/oculus.jpeg 'A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.')

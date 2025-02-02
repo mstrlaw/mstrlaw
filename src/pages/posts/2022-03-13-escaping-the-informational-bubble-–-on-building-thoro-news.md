@@ -7,6 +7,10 @@ summary: As <a href="https://thoro.news" target="_blank">Thoro News</a> reaches
 feat_image: /images/uploads/thoro_old.gif
 publish_date: 2022-03-13T17:05:15.788Z
 update_date: 2022-03-13T17:05:15.802Z
+type:
+  - project
+  - active
+  - essay
 ---
 
 <p class="u-ImageDescription">Thoro News in 2019.</p>

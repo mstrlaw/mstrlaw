@@ -6,17 +6,33 @@ const allPosts = Object.values(import.meta.glob('./*.md', { eager: true }));
 ---
 
 <Layout>
+  <div class="mt-8 mb-16">
+    <h1 class="text-3xl font-bold text-zinc-900 dark:text-zinc-100">Garden</h1>
+    <p class="text-base text-zinc-900 dark:text-zinc-100">
+      I publish following <a
+        href="https://maggieappleton.com/garden-history"
+        target="_blank"
+        class="underline">Digital Gardening</a
+      > concept. Some things are WIP, others were dropped.
+    </p>
+  </div>
   <div class="flex flex-col gap-16">
     {
-      allPosts.map((post: any) => (
-        <Article
-          title={post.frontmatter.title}
-          summary={post.frontmatter.summary}
-          url={post.url}
-          publish_date={post.frontmatter.publish_date}
-          feat_image={post.frontmatter.feat_image}
-        />
-      ))
+      allPosts
+        .sort(
+          (a: any, b: any) =>
+            Date.parse(b.frontmatter.publish_date) -
+            Date.parse(a.frontmatter.publish_date)
+        )
+        .map((post: any) => (
+          <Article
+            title={post.frontmatter.title}
+            summary={post.frontmatter.summary}
+            url={post.url}
+            publish_date={post.frontmatter.publish_date}
+            feat_image={post.frontmatter.feat_image}
+          />
+        ))
     }
   </div>
 </Layout>

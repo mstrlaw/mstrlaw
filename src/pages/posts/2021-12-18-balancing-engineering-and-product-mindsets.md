@@ -8,6 +8,9 @@ feat_image_alt: Hand drawn blue and green circles with the words Engineering
   Mindset and Product Mindset pointing to each other.
 publish_date: 2021-07-08T23:00:27.886Z
 update_date: 2021-07-08T23:00:27.886Z
+type:
+  - essay
+  - management
 ---
 
 I’m lucky to have both a background in engineering but also in marketing & management. These areas complement each other wonderfully, although sometimes it can be tough to strike the right balance between both when building products.

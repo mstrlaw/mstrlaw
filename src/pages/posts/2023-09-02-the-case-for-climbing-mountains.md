@@ -7,4 +7,6 @@ feat_image_alt: The Matterhorn mountain, seen from the Gornergrat train.
 description: Some SEO description
 publish_date: 2023-09-02T11:57:14.251Z
 update_date: 2023-09-02T11:57:14.251Z
+type:
+  - essay
 ---

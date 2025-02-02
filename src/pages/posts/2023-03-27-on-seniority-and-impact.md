@@ -13,6 +13,10 @@ feat_image: /images/uploads/corner.png
 feat_image_alt: An abstract drawing of two cornerstones.
 publish_date: 2023-03-27T12:18:33.006Z
 update_date: 2023-03-27T13:18:33.012Z
+type:
+  - essay
+  - management
+  - unfinished
 ---
 
 I've been confronted with having to come up with criteria as to what makes an engineer senior.

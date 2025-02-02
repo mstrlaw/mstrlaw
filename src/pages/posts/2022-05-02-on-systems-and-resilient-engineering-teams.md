@@ -20,6 +20,9 @@ summary: >-
   And that’s fine. That’s the reality when building novel products and services : you’re making bets on educated guesses and you’re betting time and money on those guesses.
 publish_date: 2022-05-02T21:46:50.060Z
 update_date: 2022-05-02T21:46:50.072Z
+type:
+  - essay
+  - management
 ---
 
 <hr>

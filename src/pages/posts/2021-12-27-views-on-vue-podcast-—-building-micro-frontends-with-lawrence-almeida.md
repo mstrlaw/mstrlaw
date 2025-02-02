@@ -15,6 +15,8 @@ feat_image: /images/uploads/microfrontend_diagram.png
 feat_image_alt: A diagram representing the architecture of a micro-frontend
 publish_date: 2021-08-17T11:49:09.845Z
 update_date: 2021-08-17T11:49:09.859Z
+type:
+  - thoughts
 ---
 
 Listen to it here or the <a href="https://viewsonvue.com/building-micro-frontends-with-lawrence-almeida-vue-160" target="_blank">Views on Vue website</a>.

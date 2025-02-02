@@ -4,6 +4,8 @@ title: Shipping mindsets between B2C and B2B products
 description: Thoughts on the difference between shipping B2C and B2B products
 publish_date: 2022-01-19T23:07:23.544Z
 update_date: 2022-01-19T23:07:23.564Z
+type:
+  - essay
 ---
 
 Sometimes, when talking with engineers, it seems that the speed at which one is able to ship is a sort of vanity metric that supersedes other metrics.

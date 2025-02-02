@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: January 6th And The Urge To Do Something Against It
+title: January 6th and the urge to do something about it
 summary: Today marks the one year anniversary of the storming of the U.S.
   Capitol. I'm not American but I believe in the democratic system and, at that
   moment, I felt the urge to do something.
@@ -10,6 +10,9 @@ feat_image_alt: The city of Washington D.C. seen on Mapbox with circles
 description: Reflecting on January 6th and the urge to do something about it
 publish_date: 2022-01-06T21:13:36.422Z
 update_date: 2022-01-06T21:13:36.435Z
+type:
+  - project
+  - inactive
 ---
 
 In the dullness of the end of a regular day at the office, my colleague Mathieu turns and casually announces "Looks like people are <a href="https://en.wikipedia.org/wiki/2021_United_States_Capitol_attack" target="_blank">attacking the U.S. Capitol building</a>".

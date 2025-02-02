@@ -5,6 +5,8 @@ summary: A look at how my weeks changed over the years, moving from an
   Individual Contributor to a Manager track.
 publish_date: 2022-03-10T12:39:55.319Z
 update_date: 2023-01-28T12:39:00.000Z
+type:
+  - management
 ---
 
 **As a Senior Frontend Software Developer**

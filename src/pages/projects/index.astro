@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Project from '../../components/Project.astro';
+
+const projectPosts = Object.values(
+  import.meta.glob('../posts/*.md', { eager: true })
+);
+---
+
+<Layout>
+  <div class="grid md:grid-cols-2 gap-16">
+    {
+      projectPosts
+        .filter((post: any) => post.frontmatter.type?.includes('project'))
+        .sort(
+          (a: any, b: any) =>
+            Date.parse(b.frontmatter.update_date) -
+            Date.parse(a.frontmatter.update_date)
+        )
+        .map((post: any) => (
+          <Project
+            title={post.frontmatter.title}
+            summary={post.frontmatter.summary}
+            url={post.url}
+            publish_date={post.frontmatter.publish_date}
+            feat_image={post.frontmatter.feat_image}
+            type={post.frontmatter.type}
+          />
+        ))
+    }
+  </div>
+</Layout>
