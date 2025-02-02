@@ -1,0 +1,84 @@
+---
+import { Image } from '@unpic/astro';
+import { formatDistance } from 'date-fns';
+const { title, url, summary, publish_date, feat_image } = Astro.props;
+
+const getMediaFormat = (feat_image) => {
+  return feat_image.split('.')[1];
+};
+---
+
+<article
+  class="flex flex-col items-center sm:flex-row sm:rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 dark:hover:text-blue-400"
+>
+  {
+    feat_image &&
+      (getMediaFormat(feat_image) === 'gif' ? (
+        <div class="w-full sm:w-40 h-40 object-cover rounded-lg z-20">
+          <img
+            src={feat_image}
+            class="w-full sm:w-40 h-40 object-cover rounded-lg z-20"
+          />
+        </div>
+      ) : (
+        <div class="w-full sm:w-40 h-40 object-cover rounded-lg z-20">
+          <Image
+            src={feat_image}
+            alt="A description of my image."
+            class="w-full sm:w-40 h-40 object-cover rounded-lg z-20"
+          />
+        </div>
+      ))
+  }
+  <div class="flex-1 m-6">
+    <time
+      class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
+      datetime="2022-09-05"
+    >
+      <span
+        class="absolute inset-y-0 left-0 flex items-center"
+        aria-hidden="true"
+      >
+        <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"
+        ></span>
+      </span>
+      {
+        formatDistance(new Date(publish_date), new Date(), {
+          addSuffix: true,
+        })
+      }
+    </time>
+    <h2
+      class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100"
+    >
+      <a href={url} class="text-indigo-300">
+        <span class="relative z-10">
+          {title}
+        </span>
+      </a>
+    </h2>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+      {summary}
+    </p>
+    <!-- <div
+      aria-hidden="true"
+      class="relative z-10 mt-4 flex items-center text-sm font-medium text-indigo-300"
+    >
+      Read
+      <svg
+        viewBox="0 0 16 16"
+        fill="none"
+        aria-hidden="true"
+        class="ml-1 h-4 w-4 stroke-current"
+      >
+        <path
+          d="M6.75 5.75 9.25 8l-2.5 2.25"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+        </path>
+      </svg>
+    </div> -->
+  </div>
+</article>

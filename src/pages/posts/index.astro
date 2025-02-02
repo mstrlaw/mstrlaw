@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Article from '../../components/Article.astro';
+
+const allPosts = Object.values(import.meta.glob('./*.md', { eager: true }));
+---
+
+<Layout>
+  <div class="flex flex-col gap-16">
+    {
+      allPosts.map((post: any) => (
+        <Article
+          title={post.frontmatter.title}
+          summary={post.frontmatter.summary}
+          url={post.url}
+          publish_date={post.frontmatter.publish_date}
+          feat_image={post.frontmatter.feat_image}
+        />
+      ))
+    }
+  </div>
+</Layout>

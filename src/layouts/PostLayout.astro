@@ -2,17 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import { formatDistance } from 'date-fns';
 import { Image } from '@unpic/astro';
-const images = import.meta.glob('../assets/*');
 
 const { content } = Astro.props;
-const { title, description, publish_date, feat_image } = content;
+const { title, summary, publish_date, feat_image } = content;
+
+const getMediaFormat = (feat_image) => {
+  return feat_image.split('.')[1];
+};
 ---
 
 <Layout>
   <article class="dark:text-zinc-300">
     <header class="flex flex-col">
       <h1
-        class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100"
+        class="mt-2 text-3xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100"
       >
         {title}
       </h1>
@@ -31,7 +34,25 @@ const { title, description, publish_date, feat_image } = content;
         >
       </time>
     </header>
-    <Image src={feat_image} alt="A description of my image." />
-    <slot />
+    <div class="mt-8 prose dark:prose-invert">
+      {
+        feat_image &&
+          (getMediaFormat(feat_image) === 'gif' ? (
+            <img
+              src={feat_image}
+              class="flex rounded-xl overflow-hidden w-full"
+            />
+          ) : (
+            <Image
+              src={feat_image}
+              alt="A description of my image."
+              class="flex rounded-xl overflow-hidden w-full"
+            />
+          ))
+      }
+      <div class="my-8">
+        <slot />
+      </div>
+    </div>
   </article>
 </Layout>
