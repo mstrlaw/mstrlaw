@@ -10,6 +10,8 @@ feat_image_alt: A gif showing the app tacking a picture of a shirt with the
   Levis logo and identifying it correctly.
 publish_date: 2018-08-12T14:13:06.029Z
 update_date: 2018-08-12T14:13:06.029Z
+type:
+  - project
 ---
 
 All aboard the Levis shirt train!
