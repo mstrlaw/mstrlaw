@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Image } from '@unpic/astro';
+import Books from './books.js';
+
+const sortedBooks = () => {
+  // Group books by yearRead
+  const groupedByYear = Books.reduce((acc, book) => {
+    // If the year is not already a key, initialize it
+    if (!acc[book.yearRead]) {
+      acc[book.yearRead] = [];
+    }
+    // Push the current book into the correct year group
+    acc[book.yearRead].push(book);
+    return acc;
+  }, {});
+
+  // Sort the keys (years) in descending order
+  const sortedYears = Object.keys(groupedByYear).sort((a, b) => b - a);
+
+  // Create a sorted array based on the years
+  return sortedYears.map((year) => ({
+    year: year,
+    books: groupedByYear[year],
+  }));
+};
+
+// const allPosts = Object.values(import.meta.glob('./*.md', { eager: true }));
+---
+
+<Layout>
+  <div>
+    {
+      (
+        <div class="text-white">
+          {sortedBooks().map((item) => (
+            <div class="mt-8 mb-4 font-bold">
+              <h3 class="text-white">{item.year}</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-16">
+              {item.books.map((book: any) => (
+                  <div>
+                    <Image
+                      src={book.cover}
+                      alt={book.alt}
+                      class="w-full object-cover rounded-lg z-20 mb-2"
+                    />
+                    <h2 class="text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      <a href={book.url} target="_blank" class="underline">
+                        {book.title}
+                      </a>
+                    </h2>
+                    <p class="text-base tracking-tight text-zinc-800 dark:text-zinc-100 mt-1">
+                      by {book.author}
+                    </p>
+                  </div>
+              ))}
+            </div>
+            <hr>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</Layout>

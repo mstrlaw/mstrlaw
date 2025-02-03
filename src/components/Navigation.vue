@@ -117,6 +117,16 @@ const toggleVisibility = () => {
                               >Projects</a
                             >
                           </li>
+                          <li>
+                            <a
+                              class="block py-2"
+                              data-headlessui-state="open active"
+                              data-open=""
+                              data-active=""
+                              href="/library"
+                              >Library</a
+                            >
+                          </li>
                           <!-- <li>
                             <a
                               class="block py-2"
@@ -147,6 +157,13 @@ const toggleVisibility = () => {
                           class="relative block px-3 py-2 transition hover:text-indigo-800 dark:hover:text-indigo-300"
                           href="/projects"
                           >Projects</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="relative block px-3 py-2 transition hover:text-indigo-800 dark:hover:text-indigo-300"
+                          href="/library"
+                          >Library</a
                         >
                       </li>
                       <!-- <li>

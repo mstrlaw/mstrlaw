@@ -3,7 +3,7 @@ import { Image } from '@unpic/astro';
 import { formatDistance } from 'date-fns';
 const { title, url, publish_date, feat_image, type } = Astro.props;
 
-const getMediaFormat = (feat_image) => {
+const getMediaFormat = (feat_image: String) => {
   return feat_image.split('.')[1];
 };
 ---
