@@ -19,6 +19,7 @@ const allPosts = Object.values(import.meta.glob('./*.md', { eager: true }));
   <div class="flex flex-col gap-16">
     {
       allPosts
+        .filter((post: any) => !post.frontmatter.type.includes('wip'))
         .sort(
           (a: any, b: any) =>
             Date.parse(b.frontmatter.publish_date) -
@@ -31,6 +32,7 @@ const allPosts = Object.values(import.meta.glob('./*.md', { eager: true }));
             url={post.url}
             publish_date={post.frontmatter.publish_date}
             feat_image={post.frontmatter.feat_image}
+            hide_feat_image={post.frontmatter.hide_feat_image}
           />
         ))
     }

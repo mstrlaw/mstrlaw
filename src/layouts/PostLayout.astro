@@ -4,7 +4,13 @@ import { formatDistance } from 'date-fns';
 import { Image } from '@unpic/astro';
 
 const { content } = Astro.props;
-const { title, summary, publish_date, feat_image } = content;
+const {
+  title,
+  summary,
+  publish_date,
+  hide_feat_image = false,
+  feat_image,
+} = content;
 
 const getMediaFormat = (feat_image) => {
   return feat_image.split('.')[1];
@@ -37,6 +43,7 @@ const getMediaFormat = (feat_image) => {
     <div class="mt-8 prose dark:prose-invert">
       {
         feat_image &&
+          !hide_feat_image &&
           (getMediaFormat(feat_image) === 'gif' ? (
             <img
               src={feat_image}

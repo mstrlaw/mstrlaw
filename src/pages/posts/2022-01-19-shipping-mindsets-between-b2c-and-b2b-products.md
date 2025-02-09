@@ -1,6 +1,7 @@
 ---
 layout: /src/layouts/PostLayout.astro
 title: Shipping mindsets between B2C and B2B products
+summary: To ship means different things depending on waht you're building and who you're talking to.
 description: Thoughts on the difference between shipping B2C and B2B products
 publish_date: 2022-01-19T23:07:23.544Z
 update_date: 2022-01-19T23:07:23.564Z

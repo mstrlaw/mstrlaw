@@ -1,7 +1,7 @@
 ---
 layout: /src/layouts/PostLayout.astro
 title: Views on Vue Podcast Episode 160
-summary: Conversation on the Views on Vue Podcast where I discuss using a micro-frontend architecture.
+summary: Conversation on the Views on Vue Podcast where I discuss designing and using a micro-frontend architecture.
 feat_image: /images/uploads/microfrontend_diagram.png
 feat_image_alt: A diagram representing the architecture of a micro-frontend
 publish_date: 2021-08-17T11:49:09.845Z

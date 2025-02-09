@@ -9,4 +9,5 @@ publish_date: 2023-09-02T11:57:14.251Z
 update_date: 2023-09-02T11:57:14.251Z
 type:
   - essay
+  - wip
 ---

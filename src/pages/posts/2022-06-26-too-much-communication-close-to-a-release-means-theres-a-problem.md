@@ -1,10 +1,7 @@
 ---
 layout: /src/layouts/PostLayout.astro
 title: Team communication frequency as a proxy to discovery/delivery health
-summary: While reading the book <a href="https://teamtopologies.com/"
-  target=blank>Team Topologies</a> – specifically on the communication dynamics
-  between teams – I thought of a recent release at <a href="https://unbabel.com"
-  target="_blank">Unbabel</a> and how teams communicated.
+summary: Thoughts on a recent release and teams' communication patterns.
 feat_image: /images/uploads/communication_along_time.jpg
 feat_image_alt: A depiction of a chart with three different colored inverted
   parabola graphs. The Y axis represents communication volume and frequency. The

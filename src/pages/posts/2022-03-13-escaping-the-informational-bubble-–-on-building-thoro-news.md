@@ -1,9 +1,9 @@
 ---
 layout: /src/layouts/PostLayout.astro
 title: Escaping the Informational Bubble – on Building Thoro News
-summary: As <a href="https://thoro.news" target="_blank">Thoro News</a> reaches
-  almost 10MM articles in its database and 2MM clustered topics, I reflect on
-  the <em>raison d'être</em> of this personal project that started in 2019.
+summary: As Thoro News (now Frontcover) reaches
+  almost 10MM articles and 2MM clustered topics, I reflect on
+  why I keep working on this project.
 feat_image: /images/uploads/thoro_old.gif
 publish_date: 2022-03-13T17:05:15.788Z
 update_date: 2022-03-13T17:05:15.802Z

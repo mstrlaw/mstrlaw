@@ -2,10 +2,11 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer>
-  <div
-    class="my-16 border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40"
-  >
+<footer class="my-16">
+  <div class="c-Chart ct-chart"></div>
+  <!-- <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40"> -->
+  <hr class="small" />
+  <div class="pt-10 pb-16">
     <div class="px-8 md:px-12">
       <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
         <div
@@ -34,7 +35,109 @@ const currentYear = new Date().getFullYear();
         </div><p class="text-sm text-zinc-400 dark:text-zinc-500">
           <span>{currentYear}</span>&nbsp;© Lawrence B. Almeida
         </p>
+        <div class="text-white" id="loadTime"></div>
+        <div class="text-white" id="screenTime"></div>
       </div>
     </div>
   </div>
 </footer>
+
+<script>
+  let loadedChart = false;
+  let loadTime: string | number = 0;
+  let totalTime = 0;
+
+  const displayLoadTime = () => {
+    try {
+      const perf = window.performance.getEntriesByType('navigation')[0];
+      let loadTime =
+        Math.round((perf.loadEventEnd - perf.requestStart) * 100) / 100;
+      loadTime =
+        loadTime > 1000
+          ? `≈${Math.round((loadTime / 1000) * 100) / 100}s`
+          : `≈${loadTime}ms`;
+
+      document.getElementById('loadTime').innerText = loadTime;
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  /**
+   * document.getElementById('screenTime').innerText =
+        `≈${~~(totalTime / 3600)}h${~~((totalTime % 3600) / 60)}m`;
+   */
+
+  const loadChartData = async () =>
+    await fetch(
+      'https://cors.bridged.cc/https://wakatime.com/share/@mstrlaw/4e394a3c-8d3f-449f-b686-1b0241124e2d.json',
+      {
+        headers: {
+          'x-cors-grida-api-key': '2a757fab-77e2-447a-b55f-623e511e5241', // I dont care
+        },
+      }
+    );
+
+  const getTimeLabel = (date: string, seconds: number) => {
+    const endDate = new Date(date);
+    endDate.setSeconds(seconds);
+    const mins =
+      endDate.getMinutes().toString().length === 2
+        ? endDate.getMinutes()
+        : `0${endDate.getMinutes()}`;
+
+    return `${endDate.getHours()}h${mins}`;
+  };
+
+  const drawChart = (tmp, series) => {
+    var data = {
+      labels: [],
+      series: [series],
+    };
+    const axisMod = {
+      showGrid: false,
+      showLabel: false,
+      offset: 0,
+    };
+    const options = {
+      fullWidth: true,
+      chartPadding: { top: 45, right: 25, left: 25, bottom: 0 },
+      axisX: { ...axisMod },
+      axisY: { ...axisMod },
+      plugins: [
+        Chartist.plugins.ctPointLabels({
+          labelInterpolationFnc: (value) => getTimeLabel(tmp[value], value),
+        }),
+      ],
+    };
+    new Chartist.Line('.ct-chart', data, options);
+  };
+
+  window.onload = async () => {
+    dayjs.extend(window.dayjs_plugin_relativeTime);
+
+    // setTimeAgo();
+
+    const dataRequest = await loadChartData();
+    const data = await dataRequest.json();
+
+    if (data.data.length === 0) return;
+    let tmp = {};
+    const series = [];
+    data.data.forEach((d) => {
+      if (d.grand_total.total_seconds !== 0) {
+        tmp[d.grand_total.total_seconds] = d.range.start;
+        series.push(d.grand_total.total_seconds);
+        totalTime += d.grand_total.total_seconds;
+      } else {
+        tmp[0.1] = d.range.start;
+        series.push(0.1);
+      }
+    });
+
+    drawChart(tmp, series);
+    displayLoadTime();
+
+    // generateAdr();
+  };
+</script>

@@ -10,6 +10,7 @@ update_date: 2022-01-23T20:54:08.831Z
 type:
   - essay
   - unfinished
+  - wip
 ---
 
 The "dangers of A.I" aren't killer robots or sentient agents (yet), but the forced reduction of human complexity for the sakes of predictability.

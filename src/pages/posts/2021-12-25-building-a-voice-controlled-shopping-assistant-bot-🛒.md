@@ -1,8 +1,7 @@
 ---
 layout: /src/layouts/PostLayout.astro
 title: Voice Controlled Shopping List
-summary: A voice powered groceries shopping assistant built for the <a
-  href="https://pixels.camp/" target="_blank">Pixels Camp</a>'s 2016 Hackathon.
+summary: Building a voice powered groceries shopping assistant for the (defunct) Pixel Camp's 2016 Hackathon.
 feat_image: /images/uploads/jarbas_gif.gif
 feat_image_alt: A render of Jarbas displaying a list of products.
 publish_date: 2016-10-22T16:09:00.000Z

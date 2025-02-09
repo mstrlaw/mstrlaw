@@ -1,15 +1,21 @@
 ---
 layout: /src/layouts/PostLayout.astro
 title: 'Premonitions from Infinite Detail '
-summary: A collection of images that remind me of Tim Maughan's <a
-  href="https://www.goodreads.com/en/book/show/40121978-infinite-detail"
-  target="_blank">Infinite Detail</a> story, depicting the techno-culture and
-  dystopian life before the "great event".
+summary: Images I collect around the web that remind me of the book Infinite Detail.
+feat_image: /images/books/infinite_detail.png
+feat_image_alt: A render of Jarbas displaying a list of products.
 publish_date: 2022-01-14T19:08:19.701Z
 update_date: 2024-01-01T17:13:33.962Z
 type:
   - random
+hide_feat_image: true
 ---
+
+Depictions of our techno-culture and dystopian lives before the "great event", inspired by Tim Maughan's book <a
+  href="https://www.goodreads.com/en/book/show/40121978-infinite-detail"
+  target="_blank">Infinite Detail</a>.
+
+<hr>
 
 ![A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.](/images/uploads/oculus.jpeg 'A homeless person sitting near their tent in the street with a pair of Oculus Quest 2 on their face.')
 
