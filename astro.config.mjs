@@ -4,7 +4,6 @@ import { imageService } from '@unpic/astro/service';
 import tailwindcss from '@tailwindcss/vite';
 import vue from '@astrojs/vue';
 import netlify from '@astrojs/netlify';
-import purgecss from 'astro-purgecss';
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,19 +11,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: 'static',
-  integrations: [
-    vue(),
-    purgecss({
-      extractors: [
-        {
-          // Example using a tailwindcss compatible class extractor
-          extractor: (content) =>
-            content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
-          extensions: ['astro', 'html'],
-        },
-      ],
-    }),
-  ],
+  integrations: [vue()],
   adapter: netlify(),
   image: {
     service: imageService(),
