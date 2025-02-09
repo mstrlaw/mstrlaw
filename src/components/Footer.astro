@@ -34,7 +34,7 @@ const currentYear = new Date().getFullYear();
             class="transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/uses">Uses</a
           > -->
-        </div><p class="text-sm text-zinc-400 dark:text-zinc-500">
+        </div><p class="text-sm text-zinc-400 dark:text-zinc-700">
           <span>{currentYear}</span>&nbsp;© Lawrence B. Almeida
         </p>
         <!-- <div class="text-white" id="loadTime"></div>
@@ -45,8 +45,6 @@ const currentYear = new Date().getFullYear();
 </footer>
 
 <script>
-  let loadedChart = false;
-  let loadTime: string | number = 0;
   let totalTime = 0;
 
   const displayLoadTime = () => {
@@ -91,7 +89,7 @@ const currentYear = new Date().getFullYear();
     return `${endDate.getHours()}h${mins}`;
   };
 
-  const drawChart = (tmp, series) => {
+  const drawChart = (tmp: object, series: Object) => {
     var data = {
       labels: [],
       series: [series],
@@ -124,9 +122,9 @@ const currentYear = new Date().getFullYear();
     const data = await dataRequest.json();
 
     if (data.data.length === 0) return;
-    let tmp = {};
-    const series = [];
-    data.data.forEach((d) => {
+    let tmp: any = {};
+    const series: Array<Number> = [];
+    data.data.forEach((d: any) => {
       if (d.grand_total.total_seconds !== 0) {
         tmp[d.grand_total.total_seconds] = d.range.start;
         series.push(d.grand_total.total_seconds);
