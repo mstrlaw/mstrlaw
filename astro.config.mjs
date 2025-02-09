@@ -12,7 +12,19 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: 'static',
-  integrations: [vue(), purgecss()],
+  integrations: [
+    vue(),
+    purgecss({
+      extractors: [
+        {
+          // Example using a tailwindcss compatible class extractor
+          extractor: (content) =>
+            content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
+          extensions: ['astro', 'html'],
+        },
+      ],
+    }),
+  ],
   adapter: netlify(),
   image: {
     service: imageService(),
