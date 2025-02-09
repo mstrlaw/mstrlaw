@@ -2,7 +2,7 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="my-16">
+<footer class="mt-16">
   <div class="c-Chart ct-chart"></div>
   <!-- <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40"> -->
   <hr class="small" />
@@ -35,8 +35,8 @@ const currentYear = new Date().getFullYear();
         </div><p class="text-sm text-zinc-400 dark:text-zinc-500">
           <span>{currentYear}</span>&nbsp;© Lawrence B. Almeida
         </p>
-        <div class="text-white" id="loadTime"></div>
-        <div class="text-white" id="screenTime"></div>
+        <!-- <div class="text-white" id="loadTime"></div>
+        <div class="text-white" id="screenTime"></div> -->
       </div>
     </div>
   </div>
@@ -136,7 +136,7 @@ const currentYear = new Date().getFullYear();
     });
 
     drawChart(tmp, series);
-    displayLoadTime();
+    // displayLoadTime();
 
     // generateAdr();
   };

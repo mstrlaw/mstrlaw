@@ -155,12 +155,12 @@ blockquote p:after {
 }
 .ct-series-a .ct-line {
   stroke: var(--chartStrokeColor) !important;
-  stroke-width: 4px;
+  stroke-width: 3px;
   fill: transparent;
 }
 .ct-label {
   fill: var(--chartLabelColor) !important;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .ct-label:hover {
