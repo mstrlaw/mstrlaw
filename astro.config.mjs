@@ -5,13 +5,15 @@ import tailwindcss from '@tailwindcss/vite';
 import vue from '@astrojs/vue';
 import netlify from '@astrojs/netlify';
 
+import compressor from 'astro-compressor';
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
   output: 'static',
-  integrations: [vue()],
+  integrations: [vue(), compressor()],
   adapter: netlify(),
   image: {
     service: imageService(),
