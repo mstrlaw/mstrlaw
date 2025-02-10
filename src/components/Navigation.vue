@@ -17,8 +17,10 @@ const toggleVisibility = () => {
             <div class="mx-auto max-w-5xl">
               <div class="relative flex items-center gap-4">
                 <!-- <div class="flex flex-1"></div> -->
-                <div class="pointer-events-auto">
-                  <a href="/" class="dark:text-zinc-200 font-semibold"
+                <div class="pointer-events-auto h-card">
+                  <a
+                    href="/"
+                    class="dark:text-zinc-200 font-semibold p-nickname"
                     >mstrlaw
                   </a>
                 </div>

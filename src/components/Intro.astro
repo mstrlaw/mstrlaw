@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import profilePic from '../assets/law_square.png';
 ---
 
-<div>
+<div class="h-card">
   <div class="md:flex flex-1 items-center space-between mt-8 lg:mt-16">
     <div class="w-28">
       <Image
@@ -13,12 +13,12 @@ import profilePic from '../assets/law_square.png';
         width="512"
         height="512"
         decoding="async"
-        class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-28 w-28"
+        class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-28 w-28 u-photo"
       />
     </div>
     <div class="mt-4 md:ml-6 md:mt-0">
       <h1
-        class="text-4xl font-semibold text-zinc-900 dark:text-white mb-2 md:mb-2"
+        class="text-4xl font-semibold text-zinc-900 dark:text-white mb-2 md:mb-2 p-name"
       >
         Lawrence B. Almeida
       </h1>
@@ -33,10 +33,12 @@ import profilePic from '../assets/law_square.png';
   <div class="mx-auto max-w-2xl lg:max-w-5xl">
     <div class="max-w-2xl">
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        I'm Lawrence, a <span class="font-semibold dark:text-zinc-300"
-          >technologist</span
+        I'm <span class="p-given-name">Lawrence</span>, a <span
+          class="font-semibold dark:text-zinc-300">technologist</span
         >
-        based in Lisbon, Portugal.
+        based in <span class="p-locality">Lisbon</span>, <span
+          class="p-country-name">Portugal</span
+        >.
         <!-- <br />
         <br />
         I'm passionate about the intersection of <span
@@ -49,7 +51,8 @@ import profilePic from '../assets/law_square.png';
         >. -->
         <br />
         <br />
-        Professionally, I'm a <span class="font-semibold dark:text-zinc-300"
+        Professionally, I'm a <span
+          class="font-semibold dark:text-zinc-300 p-job-title"
           >engineering manager</span
         > and <span class="font-semibold dark:text-zinc-300"
           >product engineer</span
