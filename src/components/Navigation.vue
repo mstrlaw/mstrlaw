@@ -102,7 +102,6 @@ const toggleVisibility = () => {
                           <li>
                             <a
                               class="block py-2"
-                              data-headlessui-state="open active"
                               data-open=""
                               data-active=""
                               href="/posts"
@@ -112,7 +111,6 @@ const toggleVisibility = () => {
                           <li>
                             <a
                               class="block py-2"
-                              data-headlessui-state="open active"
                               data-open=""
                               data-active=""
                               href="/projects"
@@ -122,7 +120,6 @@ const toggleVisibility = () => {
                           <li>
                             <a
                               class="block py-2"
-                              data-headlessui-state="open active"
                               data-open=""
                               data-active=""
                               href="/library"
@@ -132,7 +129,6 @@ const toggleVisibility = () => {
                           <!-- <li>
                             <a
                               class="block py-2"
-                              data-headlessui-state="open active"
                               data-open=""
                               data-active=""
                               href="/uses"

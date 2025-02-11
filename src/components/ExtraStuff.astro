@@ -1,0 +1,62 @@
+---
+const projects = [
+  {
+    name: 'Frontcover',
+    description: `Link aggregator for keeping up with hundreds of news sources and limit the risk of falling pray to algorithmic capture, ideological silos and other biases.`,
+    dates: '2018 - ongoing',
+    url: 'https://frontcover.net',
+    urlLabel: 'frontcover.net',
+  },
+  {
+    name: 'Critical Future Tech',
+    description: `A newsletter where I invite technologists, designers and other tech adjacent professionals to discuss the role and impact of technology in society.`,
+    dates: '2020 - ongoing',
+    url: 'https://criticalfuture.tech',
+    urlLabel: 'criticalfuture.tech',
+  },
+];
+---
+
+<div class="mx-auto max-w-2xl lg:max-w-5xl my-12">
+  <h2
+    id="sideProjects"
+    class="mt-6 text-base font-semibold text-zinc-600 dark:text-zinc-100"
+  >
+    Main Side Projects
+  </h2>
+  <p class="text-sm text-zinc-600 dark:text-zinc-400">
+    Things I work on when time permits.
+  </p>
+  <div class="grid md:grid-cols-2 gap-16 mt-8">
+    {
+      projects.map((project) => (
+        <div class="w-full p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50">
+          <a
+            href="https://frontcover.net"
+            target="_blank"
+            class="text-lg font-semibold text-zinc-600 dark:text-white"
+          >
+            {project.name}
+          </a>
+          <small class="my-1 text-zinc-600 dark:text-zinc-300">
+            {project.dates}
+          </small>
+          <p class="text-sm mt-1 text-zinc-600 dark:text-zinc-300">
+            {project.description}
+          </p>
+          <a
+            href={project.url}
+            target="_blank"
+            class="text-sm underline text-zinc-600 dark:text-white block mt-2"
+          >
+            {project.urlLabel}
+          </a>
+        </div>
+      ))
+    }
+    <!-- {
+    projects().map((project) => (
+    
+    )} -->
+  </div>
+</div>
