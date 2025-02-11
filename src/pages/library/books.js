@@ -7,7 +7,7 @@ export default [
     url: 'https://bookshop.org/p/books/invisible-rulers-the-people-who-turn-lies-into-reality-renee-diresta/20664632?ean=9781541703377',
     cover: '/images/books/invisible_rulers.jpg',
     alt: 'Invisible Rulers by Renee DiResta',
-    tags: ['management'],
+    tags: ['non-fiction', 'technology', 'politics'],
   },
   // 2024
   {
@@ -18,6 +18,15 @@ export default [
     cover: '/images/books/scaling_people.jpg',
     alt: 'Scaling People by Claire Hughes Johnson',
     tags: ['management'],
+  },
+  {
+    title: 'Technofeudalism: What Killed Capitalism',
+    author: 'Yanis Varoufakis',
+    yearRead: 2024,
+    url: 'https://mitpress.mit.edu/9780262545068/the-truth-and-other-stories/',
+    cover: '/images/books/technofeudalism.jpg',
+    alt: 'Technofeudalism: What Killed Capitalism by Yanis Varoufakis',
+    tags: ['non-fiction', 'economics', 'technology'],
   },
   {
     title: 'The Truth and Other Stories',

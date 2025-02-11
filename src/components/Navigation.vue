@@ -126,15 +126,15 @@ const toggleVisibility = () => {
                               >Library</a
                             >
                           </li>
-                          <!-- <li>
+                          <li>
                             <a
                               class="block py-2"
                               data-open=""
                               data-active=""
-                              href="/uses"
-                              >Uses</a
+                              href="/values"
+                              >Values</a
                             >
-                          </li> -->
+                          </li>
                         </ul>
                       </nav>
                     </div>
@@ -164,13 +164,14 @@ const toggleVisibility = () => {
                           >Library</a
                         >
                       </li>
-                      <!-- <li>
+                      <li>
                         <a
                           class="relative block px-3 py-2 transition hover:text-indigo-800 dark:hover:text-indigo-300"
                           href="/values"
                           >Values</a
                         >
                       </li>
+                      <!-- 
                       <li>
                         <a
                           class="relative block px-3 py-2 transition hover:text-indigo-800 dark:hover:text-indigo-300"
