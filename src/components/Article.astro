@@ -9,7 +9,7 @@ const getMediaFormat = (feat_image: String) => {
 ---
 
 <article
-  class="flex flex-col items-center sm:flex-row sm:rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 dark:hover:text-blue-400"
+  class="flex flex-col items-center sm:flex-row sm:rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 dark:hover:text-blue-400 h-entry"
 >
   {
     feat_image &&
@@ -32,7 +32,7 @@ const getMediaFormat = (feat_image: String) => {
   }
   <div class="flex-1 m-6">
     <time
-      class="relative z-10 order-first mb-1 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
+      class="relative z-10 order-first mb-1 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5 dt-published"
       title={publish_date}
       datetime={publish_date}
     >
@@ -49,14 +49,16 @@ const getMediaFormat = (feat_image: String) => {
         })
       }
     </time>
-    <h2 class="text-xl font-semibold tracking-tight">
+    <h1 class="text-xl font-semibold tracking-tight p-name entry-title">
       <a href={url} class="text-zinc-900 dark:text-zinc-100 underline">
         <span class="relative z-10">
           {title}
         </span>
       </a>
-    </h2>
-    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+    </h1>
+    <p
+      class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 p-summary"
+    >
       {summary}
     </p>
     <!-- <div

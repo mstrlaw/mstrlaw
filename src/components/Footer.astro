@@ -2,10 +2,22 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="mt-16">
-  <div class="c-Chart ct-chart"></div>
+<footer class="relative mt-16">
+  <div id="aboutTimeSpent" class="absolute left-0 ml-8 md:ml-4 z-10 opacity-0">
+    <div
+      class="u-Tooltip text-zinc-500 dark:text-zinc-400 text-sm underline decoration-dotted cursor-help"
+    >
+      What's this?
+      <div
+        class="u-Tooltip__content rounded-md bg-zinc-800 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-800 p-2"
+      >
+        Time spent in front of computer.<br />Data from Wakatime.
+      </div>
+    </div>
+  </div>
+  <!-- <hr class="small" /> -->
+  <div class="c-Chart ct-chart mb-4"></div>
   <!-- <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40"> -->
-  <hr class="small" />
   <div class="py-4 sm:py-8">
     <div class="px-8 md:px-12">
       <div
@@ -45,11 +57,16 @@ const currentYear = new Date().getFullYear();
 </footer>
 
 <script>
-  let totalTime = 0;
+  declare const Chartist: any;
+  declare const dayjs: any;
+
+  let totalTime: number | string = 0;
 
   const displayLoadTime = () => {
     try {
-      const perf = window.performance.getEntriesByType('navigation')[0];
+      const perf = window.performance.getEntriesByType(
+        'navigation'
+      )[0] as PerformanceNavigationTiming;
       let loadTime =
         Math.round((perf.loadEventEnd - perf.requestStart) * 100) / 100;
       loadTime =
@@ -89,7 +106,7 @@ const currentYear = new Date().getFullYear();
     return `${endDate.getHours()}h${mins}`;
   };
 
-  const drawChart = (tmp: object, series: Object) => {
+  const drawChart = (tmp: Record<number, string>, series: number[]) => {
     var data = {
       labels: [],
       series: [series],
@@ -106,11 +123,13 @@ const currentYear = new Date().getFullYear();
       axisY: { ...axisMod },
       plugins: [
         Chartist.plugins.ctPointLabels({
-          labelInterpolationFnc: (value) => getTimeLabel(tmp[value], value),
+          labelInterpolationFnc: (value: number) =>
+            getTimeLabel(tmp[value], value),
         }),
       ],
     };
     new Chartist.Line('.ct-chart', data, options);
+    document.getElementById('aboutTimeSpent')?.classList.remove('opacity-0');
   };
 
   window.onload = async () => {
@@ -123,7 +142,7 @@ const currentYear = new Date().getFullYear();
 
     if (data.data.length === 0) return;
     let tmp: any = {};
-    const series: Array<Number> = [];
+    const series: Array<number> = [];
     data.data.forEach((d: any) => {
       if (d.grand_total.total_seconds !== 0) {
         tmp[d.grand_total.total_seconds] = d.range.start;
@@ -137,7 +156,5 @@ const currentYear = new Date().getFullYear();
 
     drawChart(tmp, series);
     // displayLoadTime();
-
-    // generateAdr();
   };
 </script>
