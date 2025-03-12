@@ -10,7 +10,8 @@ import {
   Box,
   Edges,
   ScrollControls,
-  Text3D,
+  Plane,
+  useVideoTexture,
   Grid,
   OrbitControls,
 } from '@tresjs/cientos';
@@ -22,6 +23,7 @@ const startSection = {
   minPos: 0,
   maxPos: 9.9999,
   hasAnimated: false,
+  coordinates: [0, 1, -10],
   controls: {
     x: 0,
     y: 1,
@@ -30,7 +32,7 @@ const startSection = {
   camera: {
     x: 0,
     y: 1.5,
-    z: 10,
+    z: 0,
   },
 };
 const activeSection = shallowRef({ ...startSection });
@@ -44,6 +46,7 @@ const sections = [
     minPos: 10,
     maxPos: 19.9999,
     hasAnimated: false,
+    coordinates: [0, 1, 0],
     controls: {
       x: 0,
       y: 3,
@@ -61,6 +64,7 @@ const sections = [
     minPos: 20,
     maxPos: 29.9999,
     hasAnimated: false,
+    coordinates: [0, 1, 10],
     controls: {
       x: 0,
       y: 5,
@@ -69,7 +73,7 @@ const sections = [
     camera: {
       x: 0,
       y: 1.5,
-      z: 10,
+      z: 20,
     },
   },
   {
@@ -78,6 +82,7 @@ const sections = [
     minPos: 30,
     maxPos: 39.9999,
     hasAnimated: false,
+    coordinates: [0, 1, 20],
     controls: {
       x: 0,
       y: 7,
@@ -86,7 +91,7 @@ const sections = [
     camera: {
       x: 0,
       y: 1.5,
-      z: 10,
+      z: 30,
     },
   },
   {
@@ -103,7 +108,7 @@ const sections = [
     camera: {
       x: 0,
       y: 1.5,
-      z: 10,
+      z: -10,
     },
   },
   {
@@ -120,7 +125,7 @@ const sections = [
     camera: {
       x: 0,
       y: 1.5,
-      z: 10,
+      z: -20,
     },
   },
   {
@@ -193,12 +198,13 @@ const sections = [
   },
 ];
 
-const animating = ref(false);
+const canNavigate = ref(false);
 const progress = shallowRef(0);
 
 // Shapes
 const cameraRef = shallowRef();
 const groupRef = shallowRef();
+const platformRef = shallowRef();
 const algoRef = shallowRef();
 
 // Algo Boxes
@@ -279,7 +285,7 @@ const algos = [
 ];
 
 // Colors
-const algoColor = '#90a1b9';
+const grayColor = '#99a1af';
 
 // const controlsState = reactive({
 //   minDistance: 0,
@@ -294,6 +300,21 @@ const animProperties = {
     repeat: 0,
     // yoyo: true,
   },
+};
+
+const positionCamera = ({ x = 0, y = 0, z = 0 }) => {
+  gsap.to(cameraRef.value.position, {
+    x,
+    y,
+    z,
+    ...animProperties,
+  });
+  gsap.to(cameraRef.value.rotation, {
+    x: 0,
+    y: 0,
+    z: 0,
+    ...animProperties,
+  });
 };
 
 watch(progress, () => {
@@ -315,85 +336,90 @@ watch(progress, () => {
   /**
    * Move camera
    */
-  gsap.to(cameraRef.value.position, {
+  positionCamera({
+    x: activeSection.value.camera.x,
     y: activeSection.value.camera.y,
-    ...animProperties,
+    z: activeSection.value.camera.z,
   });
-
   switch (section.id) {
     case 2:
       if (section.hasAnimated) {
         break;
       }
-      // console.log(algoRef.value.position);
-
-      const scales = Array.from(algoRef.value.children).map(
-        (child) => child.scale
-      );
-
-      gsap.to(scales, {
-        x: 1,
-        y: 1,
-        z: 1,
-        ease: 'power1.inOut',
-        duration: 1,
-        stagger: {
-          each: 0.05,
-          repeat: 0,
-          yoyo: false,
-        },
-      });
-
-      // Start scale animation
-      setTimeout(() => {
-        gsap.to(scales, {
-          x: 1.05,
-          y: 1.05,
-          z: 1.05,
-          ease: 'power1.inOut',
-          duration: 3,
-          stagger: {
-            each: 0.25,
-            repeat: -1,
-            yoyo: true,
-          },
-        });
-      }, 1000);
-
       sections[sectionIndex].hasAnimated = true;
 
       // -- Rotate group --
-      gsap.to(groupRef.value.rotation, {
-        y: 180,
-        ease: 'none',
-        duration: 900,
-        stagger: {
-          each: 0.25,
-          repeat: -1,
-          yoyo: false,
-        },
-      });
+      // gsap.to(platformRef.value.rotation, {
+      //   y: 180,
+      //   ease: 'none',
+      //   duration: 900,
+      //   stagger: {
+      //     each: 0.25,
+      //     repeat: -1,
+      //     yoyo: false,
+      //   },
+      // });
+      break;
+    case 3:
+      if (section.hasAnimated) {
+        break;
+      }
+      sections[sectionIndex].hasAnimated = true;
+      // console.log(algoRef.value.position);
+
+      // const scales = Array.from(algoRef.value.children).map(
+      //   (child) => child.scale
+      // );
+
+      // gsap.to(scales, {
+      //   x: 1,
+      //   y: 1,
+      //   z: 1,
+      //   ease: 'power1.inOut',
+      //   duration: 1,
+      //   stagger: {
+      //     each: 0.05,
+      //     repeat: 0,
+      //     yoyo: false,
+      //   },
+      // });
+
+      // // Start scale animation
+      // setTimeout(() => {
+      //   gsap.to(scales, {
+      //     x: 1.05,
+      //     y: 1.05,
+      //     z: 1.05,
+      //     ease: 'power1.inOut',
+      //     duration: 3,
+      //     stagger: {
+      //       each: 0.25,
+      //       repeat: -1,
+      //       yoyo: true,
+      //     },
+      //   });
+      // }, 1000);
 
       break;
   }
-
-  if (progress.value > 2) {
-    if (!animating.value) {
-      animating.value = true;
-
-      // gsap.to(groupRef.value.position, {
-      //   z: 2.5,
-      //   ...animProperties,
-      // });
-      // gsap.to(groupRef.value.rotation, {
-      //   y: 0.5,
-      //   ...animProperties,
-      // });
-    }
-  } else {
-    animating.value = false;
-  }
 });
+
+function toggleCamera() {
+  canNavigate.value = !canNavigate.value;
+
+  if (canNavigate.value === false) {
+    positionCamera({
+      x: activeSection.value.camera.x,
+      y: activeSection.value.camera.y,
+      z: activeSection.value.camera.z,
+    });
+    positionCamera({
+      x: activeSection.value.camera.x,
+      y: activeSection.value.camera.y,
+      z: activeSection.value.camera.z,
+    });
+  }
+}
 
 // boxRef.value.instance.rotation.x = progress.value * 10;
 // boxRef.value.instance.rotation.y = progress.value * 2;
@@ -409,122 +435,196 @@ onMounted(() => {
     progress.value = scrollValue;
   });
 });
+
+const videoPath =
+  'https://videos.pexels.com/video-files/5201209/5201209-hd_1920_1080_30fps.mp4';
+const texture = ref();
+texture.value = await useVideoTexture(videoPath, { loop: true });
 </script>
 
 <template>
   <div class="text">
-    {{ animating }} {{ activeSection.text }} {{ progress }}
+    Section: {{ activeSection.id }}
+    <button @click="toggleCamera">Toggle cam</button> Free nav:
+    {{ canNavigate }}
+    <small>({{ Math.round(progress) }})</small>
   </div>
   <section v-for="section in sections" :key="section.id">
     <div class="section-content">
       {{ section.text }}
     </div>
-    <div class="section-content" />
   </section>
   <div class="content">stuff</div>
   <TresCanvas window-size clear-color="#FFF" class="important-absolute">
-    <TresPerspectiveCamera ref="cameraRef" :position="[0, 1.5, 10]" />
+    <TresPerspectiveCamera
+      ref="cameraRef"
+      :position="[
+        startSection.camera.x,
+        startSection.camera.y,
+        startSection.camera.z,
+      ]"
+    />
+    <OrbitControls v-if="canNavigate" />
 
     <TresGroup ref="groupRef" :position="[0, 1, 0]">
-      <Box ref="platform" :args="[4, 4, 4]" :position="[0, 0, 0]">
-        <TresMeshBasicMaterial color="#FFF" />
-        <Edges color="#FFF" />
-        <Edges>
-          <TresMeshBasicMaterial color="#000" />
-        </Edges>
-      </Box>
+      <Box :args="[4, 4, 4]" :position="sections[0].coordinates"> </Box>
+      <Box :args="[4, 4, 4]" :position="sections[1].coordinates"> </Box>
+      <Box :args="[4, 4, 4]" :position="sections[2].coordinates"> </Box>
+      <Box :args="[4, 4, 4]" :position="sections[3].coordinates"> </Box>
 
-      <TresGroup ref="algoRef">
-        <Box
-          v-for="(algo, i) in algos"
-          :key="i"
-          :args="algo.args"
-          :position="algo.position"
-          :scale="algo.startScale"
-        >
-          <TresMeshBasicMaterial :color="algoColor" />
+      <!-- <Plane :args="[16, 9]" :position="[0, 2, -15]" :rotation="[0, 0, 0]">
+        <TresMeshBasicMaterial :map="texture" />
+      </Plane> -->
+      <!-- <TresGroup ref="newspaperRef" :position="[0, 0, -10]">
+        <Box ref="newsBg" :args="[4, 4, 0.5]" :position="[0, 1, 0]">
+          <TresMeshBasicMaterial color="#FFF" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box ref="newsImg" :args="[2, 1.5, 0.5]" :position="[-0.7, 1.9, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1.3, 0.2, 0.5]" :position="[1.1, 2.5, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1.2, 0.2, 0.5]" :position="[1.05, 2.2, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1.3, 0.2, 0.5]" :position="[1.1, 1.9, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+
+        <Box :args="[1.3, 0.1, 0.5]" :position="[1.1, 1.6, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1.3, 0.1, 0.5]" :position="[1.1, 1.4, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1, 0.1, 0.5]" :position="[0.95, 1.2, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+
+        <Box :args="[1.5, 0.2, 0.5]" :position="[-0.95, 0.85, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1.7, 0.2, 0.5]" :position="[-0.85, 0.55, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+
+        <Box :args="[1.3, 0.6, 0.5]" :position="[1.1, 0.65, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+
+        <Box :args="[1, 0.1, 0.5]" :position="[0.95, 0, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1.3, 0.1, 0.5]" :position="[1.1, 0.2, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1.3, 0.1, 0.5]" :position="[1.1, -0.2, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+        <Box :args="[1, 0.1, 0.5]" :position="[0.95, -0.4, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+
+        <Box ref="newsImg" :args="[2, 1, 0.5]" :position="[-0.7, -0.2, 0.1]">
+          <TresMeshBasicMaterial :color="grayColor" />
+          <Edges color="#000" />
+          <Edges>
+            <TresMeshBasicMaterial color="#000" />
+          </Edges>
+        </Box>
+      </TresGroup> -->
+
+      <!-- <TresGroup ref="platformRef">
+        <Box :args="[4, 4, 4]" :position="[0, 1, 0]">
+          <TresMeshBasicMaterial color="#FFF" />
           <Edges color="#FFF" />
           <Edges>
             <TresMeshBasicMaterial color="#000" />
           </Edges>
         </Box>
-      </TresGroup>
+
+        <TresGroup ref="algoRef" :position="[0, 1, 0]">
+          <Box
+            v-for="(algo, i) in algos"
+            :key="i"
+            :args="algo.args"
+            :position="algo.position"
+            :scale="algo.startScale"
+          >
+            <TresMeshBasicMaterial :color="grayColor" />
+            <Edges color="#000" />
+            <Edges>
+              <TresMeshBasicMaterial color="#000" />
+            </Edges>
+          </Box>
+        </TresGroup>
+      </TresGroup> -->
     </TresGroup>
-    <!-- <TresGroup ref="groupRef" :position="[0, 0, 0]">
-      <Line2
-        :points="[
-          [4, -1, 0],
-          [-4, -1, 0],
-          [-4, -10, 0],
-          [-2, -10, 0],
-          [-2, -6, 0],
-          [0, -6, 0],
-          [0, -4, 0],
-
-          [4, -4, 0],
-
-          [4, -1, 0],
-        ]"
-        :position="[-2, 4, 0]"
-        :line-width="5"
-        :scale="0.5"
-        color="#FEFEFE"
-      />
-
-      <Line2
-        :points="[
-          [4, 0, 0],
-          [-4, 0, 0],
-          [-4, -5, 0],
-
-          [1, -5, 0],
-          [1, -7, 0],
-          [4, -7, 0],
-          [4, 0, 0],
-        ]"
-        :position="[2.75, 3.5, 0]"
-        :line-width="5"
-        :scale="0.5"
-        color="#FEFEFE"
-      />
-
-      <Line2
-        :points="[
-          [3, 0, 0],
-          [3, -4, 0],
-          [8, -4, 0],
-          [8, -2, 0],
-          [6, -2, 0],
-          [6, 0, 0],
-          [3, 0, 0],
-        ]"
-        :position="[-4, 0, 0]"
-        :line-width="5"
-        :scale="0.5"
-        color="#FEFEFE"
-      />
-
-      <Line2
-        :points="[
-          [4, 0.5, 0],
-          [1.5, 0.5, 0],
-          [1.5, -5.5, 0],
-          [-1, -5.5, 0],
-          [-1, -8, 0],
-          [4, -8, 0],
-          [4, 0.5, 0],
-        ]"
-        :position="[0, 0, 0]"
-        :line-width="5"
-        :scale="0.5"
-        color="#FEFEFE"
-      />
-    </TresGroup> -->
 
     <!-- <Sphere :scale="0.5" :position="[1, 1, 0]" />
     <Sphere :scale="0.5" :position="[1, 1, 0]" /> -->
 
-    <!-- <OrbitControls /> -->
     <!-- <Stars :radius="120" /> -->
     <Grid
       :position="[0, -1, 0]"
@@ -552,8 +652,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background: #fff;
+  background: #b6b6b6b6;
   color: #000;
+  padding: 10px;
   z-index: 10;
 }
 
