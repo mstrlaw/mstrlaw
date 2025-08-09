@@ -1,6 +1,24 @@
 export default [
   // 2025
   {
+    title: 'Democracy’s Discontent',
+    author: 'Michael J. Sandel',
+    yearRead: 2025,
+    url: 'https://www.hup.harvard.edu/books/9780674270718',
+    cover: '/images/books/democracy_discontent.jpg',
+    alt: 'Democracy’s Discontent by Michael J. Sandel',
+    tags: ['non-fiction', 'politics', 'philosophy'],
+  },
+  {
+    title: 'Tech Agnostic',
+    author: 'Greg Epstein',
+    yearRead: 2025,
+    url: 'https://mitpress.mit.edu/9780262049207/tech-agnostic/',
+    cover: '/images/books/tech_agnostic.jpg',
+    alt: 'Tech Agnostic by Greg Epstein',
+    tags: ['non-fiction', 'technology', 'philosophy'],
+  },
+  {
     title: 'Invisible Rulers: The People Who Turn Lies into Reality',
     author: 'Renee DiResta',
     yearRead: 2025,
@@ -353,4 +371,4 @@ export default [
     alt: 'Why Should Anyone Be Led by You book by Robert Goffee and Gareth Jones',
     tags: ['non-fiction', 'leadership'],
   },
-];
+]
