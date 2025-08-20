@@ -16,7 +16,7 @@
     "@tresjs/core": "^4.3.6",
     "@unpic/astro": "^1.0.1",
     "@unpic/vue": "^1.0.0",
-    "astro": "^5.12.9",
+    "astro": "^5.13.2",
     "astro-compressor": "^1.1.2",
     "date-fns": "^4.1.0",
     "gsap": "^3.13.0",
