@@ -1,6 +1,15 @@
 export default [
   // 2025
   {
+    title: 'Amusing Ourselves to Death',
+    author: 'Neil Postman',
+    yearRead: 2025,
+    url: 'https://ia600101.us.archive.org/27/items/Various_PDFs/NeilPostman-AmusingOurselvesToDeath.pdf',
+    cover: '/images/books/amusing.jpg',
+    alt: 'Amusing Ourselves to Death by Neil Postman',
+    tags: ['non-fiction', 'media', 'philosophy'],
+  },
+  {
     title: 'Democracy’s Discontent',
     author: 'Michael J. Sandel',
     yearRead: 2025,
