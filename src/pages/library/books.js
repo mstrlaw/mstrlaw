@@ -1,6 +1,25 @@
 export default [
   // 2025
   {
+    title:
+      'Technology of the Oppressed: Inequity and the Digital Mundane in Favelas of Brazil',
+    author: 'David Nemer',
+    yearRead: 2025,
+    url: 'https://direct.mit.edu/books/oa-monograph/5266/Technolo',
+    cover: '/images/books/oppressed.jpg',
+    alt: 'Technology of the Oppressed: Inequity and the Digital Mundane in Favelas of Brazil by David Nemer',
+    tags: ['non-fiction', 'technology', 'politics'],
+  },
+  {
+    title: 'The Good Robot: Why Technology Needs Feminism',
+    author: 'Eleanor Drage & Kerry McInerney',
+    yearRead: 2025,
+    url: 'https://www.bloomsbury.com/us/good-robot-9781350399952/',
+    cover: '/images/books/goodrobot.jpg',
+    alt: 'The Good Robot: Why Technology Needs Feminism by Eleanor Drage & Kerry McInerney',
+    tags: ['non-fiction', 'technology', 'philosophy'],
+  },
+  {
     title: 'Amusing Ourselves to Death',
     author: 'Neil Postman',
     yearRead: 2025,
