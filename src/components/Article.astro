@@ -1,11 +1,11 @@
 ---
-import { Image } from '@unpic/astro';
-import { formatDistance } from 'date-fns';
-const { title, url, summary, publish_date, feat_image } = Astro.props;
+import { Image } from 'astro:assets'
+import { formatDistance } from 'date-fns'
+const { title, url, summary, publish_date, feat_image } = Astro.props
 
 const getMediaFormat = (feat_image: String) => {
-  return feat_image.split('.')[1];
-};
+  return feat_image.split('.')[1]
+}
 ---
 
 <article
@@ -25,7 +25,7 @@ const getMediaFormat = (feat_image: String) => {
           <Image
             src={feat_image}
             alt="A description of my image."
-            class="w-full sm:w-40 h-40 object-cover rounded-lg z-20"
+            class="w-full h-40 object-cover rounded-lg z-20"
           />
         </div>
       ))
