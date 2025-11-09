@@ -1,5 +1,5 @@
 export default [
-  // 2025
+  // 2025 books
   {
     title:
       'Technology of the Oppressed: Inequity and the Digital Mundane in Favelas of Brazil',
