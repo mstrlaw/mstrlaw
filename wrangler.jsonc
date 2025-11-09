@@ -2,7 +2,6 @@
     "name": "mstrlaw",
     "compatibility_date": "2025-11-09", // Update to the day you deploy
     "assets": {
-      "binding": "ASSETS",
       "directory": "./dist"
     }
   }
