@@ -1,20 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { formatDistance } from 'date-fns';
-import { Image } from '@unpic/astro';
+import Layout from '../layouts/Layout.astro'
+import { formatDistance } from 'date-fns'
+import { Image } from 'astro:assets'
 
-const { content } = Astro.props;
+const { content } = Astro.props
 const {
   title,
   summary,
   publish_date,
   hide_feat_image = false,
   feat_image,
-} = content;
+} = content
 
 const getMediaFormat = (feat_image) => {
-  return feat_image.split('.')[1];
-};
+  return feat_image.split('.')[1]
+}
 ---
 
 <Layout>
