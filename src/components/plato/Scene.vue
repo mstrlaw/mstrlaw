@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { onMounted, ref, shallowRef, watch } from 'vue';
-import { TresCanvas, useRenderLoop } from '@tresjs/core';
-import gsap from 'gsap';
+import { onMounted, ref, shallowRef, watch } from 'vue'
+import { TresCanvas, useRenderLoop } from '@tresjs/core'
+import gsap from 'gsap'
 
 import {
   Stars,
@@ -14,7 +14,7 @@ import {
   useVideoTexture,
   Grid,
   OrbitControls,
-} from '@tresjs/cientos';
+} from '@tresjs/cientos'
 
 // Section setup
 const startSection = {
@@ -34,8 +34,8 @@ const startSection = {
     y: 1.5,
     z: 0,
   },
-};
-const activeSection = shallowRef({ ...startSection });
+}
+const activeSection = shallowRef({ ...startSection })
 const sections = [
   {
     ...startSection,
@@ -196,16 +196,16 @@ const sections = [
       z: 10,
     },
   },
-];
+]
 
-const canNavigate = ref(false);
-const progress = shallowRef(0);
+const canNavigate = ref(false)
+const progress = shallowRef(0)
 
 // Shapes
-const cameraRef = shallowRef();
-const groupRef = shallowRef();
-const platformRef = shallowRef();
-const algoRef = shallowRef();
+const cameraRef = shallowRef()
+const groupRef = shallowRef()
+const platformRef = shallowRef()
+const algoRef = shallowRef()
 
 // Algo Boxes
 
@@ -282,10 +282,10 @@ const algos = [
   { args: [2, 1, 3], position: [-2, -1.2, 0], startScale: 0, endScale: 1 },
   { args: [2, 2, 1], position: [-1.2, 1.2, -1.8], startScale: 0, endScale: 1 },
   { args: [2, 2, 1], position: [-1.2, 1.2, -1.8], startScale: 0, endScale: 1 },
-];
+]
 
 // Colors
-const grayColor = '#99a1af';
+const grayColor = '#99a1af'
 
 // const controlsState = reactive({
 //   minDistance: 0,
@@ -300,7 +300,7 @@ const animProperties = {
     repeat: 0,
     // yoyo: true,
   },
-};
+}
 
 const positionCamera = ({ x = 0, y = 0, z = 0 }) => {
   gsap.to(cameraRef.value.position, {
@@ -308,22 +308,22 @@ const positionCamera = ({ x = 0, y = 0, z = 0 }) => {
     y,
     z,
     ...animProperties,
-  });
+  })
   gsap.to(cameraRef.value.rotation, {
     x: 0,
     y: 0,
     z: 0,
     ...animProperties,
-  });
-};
+  })
+}
 
 watch(progress, () => {
-  const scrollPos = progress.value;
+  const scrollPos = progress.value
   const sectionIndex = sections.findIndex(
     (a) => scrollPos >= a.minPos && scrollPos <= a.maxPos
-  );
-  const section = sections[sectionIndex];
-  activeSection.value = section;
+  )
+  const section = sections[sectionIndex]
+  activeSection.value = section
 
   /**
    * Move scene
@@ -340,13 +340,13 @@ watch(progress, () => {
     x: activeSection.value.camera.x,
     y: activeSection.value.camera.y,
     z: activeSection.value.camera.z,
-  });
+  })
   switch (section.id) {
     case 2:
       if (section.hasAnimated) {
-        break;
+        break
       }
-      sections[sectionIndex].hasAnimated = true;
+      sections[sectionIndex].hasAnimated = true
 
       // -- Rotate group --
       // gsap.to(platformRef.value.rotation, {
@@ -359,65 +359,65 @@ watch(progress, () => {
       //     yoyo: false,
       //   },
       // });
-      break;
+      break
     case 3:
       if (section.hasAnimated) {
-        break;
+        break
       }
-      sections[sectionIndex].hasAnimated = true;
+      sections[sectionIndex].hasAnimated = true
       // console.log(algoRef.value.position);
 
-      // const scales = Array.from(algoRef.value.children).map(
-      //   (child) => child.scale
-      // );
+      const scales = Array.from(algoRef.value.children).map(
+        (child) => child.scale
+      )
 
-      // gsap.to(scales, {
-      //   x: 1,
-      //   y: 1,
-      //   z: 1,
-      //   ease: 'power1.inOut',
-      //   duration: 1,
-      //   stagger: {
-      //     each: 0.05,
-      //     repeat: 0,
-      //     yoyo: false,
-      //   },
-      // });
+      gsap.to(scales, {
+        x: 1,
+        y: 1,
+        z: 1,
+        ease: 'power1.inOut',
+        duration: 1,
+        stagger: {
+          each: 0.05,
+          repeat: 0,
+          yoyo: false,
+        },
+      })
 
       // // Start scale animation
-      // setTimeout(() => {
-      //   gsap.to(scales, {
-      //     x: 1.05,
-      //     y: 1.05,
-      //     z: 1.05,
-      //     ease: 'power1.inOut',
-      //     duration: 3,
-      //     stagger: {
-      //       each: 0.25,
-      //       repeat: -1,
-      //       yoyo: true,
-      //     },
-      //   });
-      // }, 1000);
+      setTimeout(() => {
+        gsap.to(scales, {
+          x: 1.05,
+          y: 1.05,
+          z: 1.05,
+          ease: 'power1.inOut',
+          duration: 3,
+          stagger: {
+            each: 0.25,
+            repeat: -1,
+            yoyo: true,
+          },
+        })
+      }, 1000)
 
-      break;
+      break
   }
-});
+})
 
 function toggleCamera() {
-  canNavigate.value = !canNavigate.value;
+  canNavigate.value = !canNavigate.value
 
   if (canNavigate.value === false) {
     positionCamera({
       x: activeSection.value.camera.x,
       y: activeSection.value.camera.y,
       z: activeSection.value.camera.z,
-    });
+    })
     positionCamera({
       x: activeSection.value.camera.x,
       y: activeSection.value.camera.y,
       z: activeSection.value.camera.z,
-    });
+    })
   }
 }
 
@@ -425,21 +425,21 @@ function toggleCamera() {
 // boxRef.value.instance.rotation.y = progress.value * 2;
 
 onMounted(() => {
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 0)
   window.addEventListener('scroll', () => {
-    const position = document.documentElement.scrollTop;
+    const position = document.documentElement.scrollTop
     const calcHeight =
       document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    const scrollValue = (position * 100) / calcHeight;
-    progress.value = scrollValue;
-  });
-});
+      document.documentElement.clientHeight
+    const scrollValue = (position * 100) / calcHeight
+    progress.value = scrollValue
+  })
+})
 
 const videoPath =
-  'https://videos.pexels.com/video-files/5201209/5201209-hd_1920_1080_30fps.mp4';
-const texture = ref();
-texture.value = await useVideoTexture(videoPath, { loop: true });
+  'https://videos.pexels.com/video-files/5201209/5201209-hd_1920_1080_30fps.mp4'
+const texture = ref()
+texture.value = await useVideoTexture(videoPath, { loop: true })
 </script>
 
 <template>
@@ -595,7 +595,7 @@ texture.value = await useVideoTexture(videoPath, { loop: true });
         </Box>
       </TresGroup> -->
 
-      <!-- <TresGroup ref="platformRef">
+      <TresGroup ref="platformRef">
         <Box :args="[4, 4, 4]" :position="[0, 1, 0]">
           <TresMeshBasicMaterial color="#FFF" />
           <Edges color="#FFF" />
@@ -619,7 +619,7 @@ texture.value = await useVideoTexture(videoPath, { loop: true });
             </Edges>
           </Box>
         </TresGroup>
-      </TresGroup> -->
+      </TresGroup>
     </TresGroup>
 
     <!-- <Sphere :scale="0.5" :position="[1, 1, 0]" />
