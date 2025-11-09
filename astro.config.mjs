@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
-// import { imageService } from '@unpic/astro/service'
+import { imageService } from '@unpic/astro/service'
 import tailwindcss from '@tailwindcss/vite'
 import vue from '@astrojs/vue'
 import { templateCompilerOptions } from '@tresjs/core'
@@ -19,7 +19,7 @@ export default defineConfig({
   },
   output: 'static',
   integrations: [vue(), compressor()],
-  // image: {
-  //   service: imageService(),
-  // },
+  image: {
+    service: imageService(),
+  },
 })
