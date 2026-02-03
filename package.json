@@ -26,6 +26,7 @@
     "vue3-carousel": "^0.16.0"
   },
   "devDependencies": {
-    "@types/three": "^0.179.0"
+    "@types/three": "^0.179.0",
+    "oauth-1.0a": "^2.2.6"
   }
 }
