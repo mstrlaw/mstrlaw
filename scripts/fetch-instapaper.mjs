@@ -8,22 +8,22 @@
  *   INSTAPAPER_ACCESS_TOKEN_SECRET
  */
 
-import OAuth from 'oauth-1.0a';
-import crypto from 'crypto';
-import { writeFileSync, existsSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import OAuth from 'oauth-1.0a'
+import crypto from 'crypto'
+import { writeFileSync, existsSync } from 'fs'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = join(__dirname, '..', 'public', 'instapaper.json');
-const BOOKMARKS_ENDPOINT = 'https://www.instapaper.com/api/1.1/bookmarks/list';
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const OUTPUT_PATH = join(__dirname, '..', 'public', 'instapaper', 'data.json')
+const BOOKMARKS_ENDPOINT = 'https://www.instapaper.com/api/1.1/bookmarks/list'
 
 const {
   INSTAPAPER_CONSUMER_KEY,
   INSTAPAPER_CONSUMER_SECRET,
   INSTAPAPER_ACCESS_TOKEN,
   INSTAPAPER_ACCESS_TOKEN_SECRET,
-} = process.env;
+} = process.env
 
 function validateEnv() {
   const required = [
@@ -31,11 +31,13 @@ function validateEnv() {
     'INSTAPAPER_CONSUMER_SECRET',
     'INSTAPAPER_ACCESS_TOKEN',
     'INSTAPAPER_ACCESS_TOKEN_SECRET',
-  ];
+  ]
 
-  const missing = required.filter((key) => !process.env[key]);
+  const missing = required.filter((key) => !process.env[key])
   if (missing.length > 0) {
-    throw new Error(`Missing required environment variables: ${missing.join(', ')}`);
+    throw new Error(
+      `Missing required environment variables: ${missing.join(', ')}`,
+    )
   }
 }
 
@@ -47,27 +49,28 @@ function createOAuthClient() {
     },
     signature_method: 'HMAC-SHA1',
     hash_function(baseString, key) {
-      return crypto.createHmac('sha1', key).update(baseString).digest('base64');
+      return crypto.createHmac('sha1', key).update(baseString).digest('base64')
     },
-  });
+  })
 }
 
 async function fetchAllBookmarks(oauth, token) {
-  const allBookmarks = [];
-  let hasMore = true;
-  let have = '';
+  const allBookmarks = []
+  let hasMore = true
+  let have = ''
 
   while (hasMore) {
     const requestData = {
       url: BOOKMARKS_ENDPOINT,
       method: 'POST',
       data: {
+        folder_id: 'archive',
         limit: '500',
         ...(have && { have }),
       },
-    };
+    }
 
-    const headers = oauth.toHeader(oauth.authorize(requestData, token));
+    const headers = oauth.toHeader(oauth.authorize(requestData, token))
 
     const response = await fetch(BOOKMARKS_ENDPOINT, {
       method: 'POST',
@@ -76,33 +79,33 @@ async function fetchAllBookmarks(oauth, token) {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: new URLSearchParams(requestData.data),
-    });
+    })
 
     if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(`API error ${response.status}: ${errorText}`);
+      const errorText = await response.text()
+      throw new Error(`API error ${response.status}: ${errorText}`)
     }
 
-    const data = await response.json();
+    const data = await response.json()
 
-    // Filter to only bookmark items (API also returns user and meta objects)
-    const bookmarks = data.filter((item) => item.type === 'bookmark');
+    // API returns { user: {...}, bookmarks: [...] }
+    const bookmarks = data.bookmarks || []
 
     if (bookmarks.length === 0) {
-      hasMore = false;
+      hasMore = false
     } else {
-      allBookmarks.push(...bookmarks);
+      allBookmarks.push(...bookmarks)
       // Build "have" parameter for pagination (comma-separated bookmark IDs)
-      have = allBookmarks.map((b) => b.bookmark_id).join(',');
+      have = allBookmarks.map((b) => b.bookmark_id).join(',')
 
       // If we got less than the limit, we've reached the end
       if (bookmarks.length < 500) {
-        hasMore = false;
+        hasMore = false
       }
     }
   }
 
-  return allBookmarks;
+  return allBookmarks
 }
 
 function transformBookmark(bookmark) {
@@ -116,42 +119,42 @@ function transformBookmark(bookmark) {
     progress_timestamp: bookmark.progress_timestamp,
     starred: bookmark.starred === '1',
     hash: bookmark.hash,
-  };
+  }
 }
 
 async function main() {
-  console.log('Starting Instapaper bookmark fetch...');
+  console.log('Starting Instapaper bookmark fetch...')
 
-  validateEnv();
+  validateEnv()
 
-  const oauth = createOAuthClient();
+  const oauth = createOAuthClient()
   const token = {
     key: INSTAPAPER_ACCESS_TOKEN,
     secret: INSTAPAPER_ACCESS_TOKEN_SECRET,
-  };
+  }
 
   try {
-    const bookmarks = await fetchAllBookmarks(oauth, token);
-    console.log(`Fetched ${bookmarks.length} bookmarks`);
+    const bookmarks = await fetchAllBookmarks(oauth, token)
+    console.log(`Fetched ${bookmarks.length} bookmarks`)
 
     const output = {
       lastUpdated: new Date().toISOString(),
       count: bookmarks.length,
       bookmarks: bookmarks.map(transformBookmark),
-    };
-
-    // Ensure public directory exists
-    const publicDir = join(__dirname, '..', 'public');
-    if (!existsSync(publicDir)) {
-      throw new Error('public/ directory does not exist');
     }
 
-    writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2));
-    console.log(`Written to ${OUTPUT_PATH}`);
+    // Ensure public/instapaper directory exists
+    const instapaperDir = join(__dirname, '..', 'public', 'instapaper')
+    if (!existsSync(instapaperDir)) {
+      throw new Error('public/instapaper/ directory does not exist')
+    }
+
+    writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2))
+    console.log(`Written to ${OUTPUT_PATH}`)
   } catch (error) {
-    console.error('Error fetching bookmarks:', error.message);
-    process.exit(1);
+    console.error('Error fetching bookmarks:', error.message)
+    process.exit(1)
   }
 }
 
-main();
+main()
