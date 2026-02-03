@@ -10,7 +10,7 @@
 
 import OAuth from 'oauth-1.0a'
 import crypto from 'crypto'
-import { writeFileSync, existsSync } from 'fs'
+import { writeFileSync, existsSync, mkdirSync } from 'fs'
 import { fileURLToPath } from 'url'
 import { dirname, join } from 'path'
 
@@ -146,7 +146,7 @@ async function main() {
     // Ensure public/instapaper directory exists
     const instapaperDir = join(__dirname, '..', 'public', 'instapaper')
     if (!existsSync(instapaperDir)) {
-      throw new Error('public/instapaper/ directory does not exist')
+      mkdirSync(instapaperDir, { recursive: true })
     }
 
     writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2))
