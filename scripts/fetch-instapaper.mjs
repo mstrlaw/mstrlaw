@@ -15,7 +15,7 @@ import { fileURLToPath } from 'url'
 import { dirname, join } from 'path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const OUTPUT_PATH = join(__dirname, '..', 'public', 'instapaper', 'data.json')
+const OUTPUT_PATH = join(__dirname, '..', 'public', 'data', 'instapaper', 'data.json')
 const BOOKMARKS_ENDPOINT = 'https://www.instapaper.com/api/1.1/bookmarks/list'
 
 const {
@@ -143,10 +143,10 @@ async function main() {
       bookmarks: bookmarks.map(transformBookmark),
     }
 
-    // Ensure public/instapaper directory exists
-    const instapaperDir = join(__dirname, '..', 'public', 'instapaper')
-    if (!existsSync(instapaperDir)) {
-      mkdirSync(instapaperDir, { recursive: true })
+    // Ensure public/data/instapaper directory exists
+    const dataDir = join(__dirname, '..', 'public', 'data', 'instapaper')
+    if (!existsSync(dataDir)) {
+      mkdirSync(dataDir, { recursive: true })
     }
 
     writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2))
