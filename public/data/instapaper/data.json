@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-02-14T06:41:02.797Z",
-  "count": 41,
+  "lastUpdated": "2026-02-15T06:48:27.054Z",
+  "count": 48,
   "bookmarks": [
+    {
+      "id": 1974828626,
+      "url": "https://dev.to/polliog/kubernetes-is-overkill-for-99-of-apps-we-run-500k-logsday-on-docker-compose-2ode",
+      "title": "Kubernetes Is Overkill for 99% of Apps (We Run 500k Logs/Day on Docker Compose)",
+      "description": "",
+      "time_added": 1770458865,
+      "progress": 0,
+      "progress_timestamp": 1771018790,
+      "starred": false,
+      "hash": "YT9zKRVB"
+    },
+    {
+      "id": 1977609317,
+      "url": "https://techcrunch.com/2026/02/11/upscrolleds-social-network-is-struggling-to-moderate-hate-speech-after-fast-growth/",
+      "title": "UpScrolled's social network is struggling to moderate hate speech after fast growth | TechCrunch",
+      "description": "",
+      "time_added": 1770848903,
+      "progress": 0,
+      "progress_timestamp": 1771020274,
+      "starred": false,
+      "hash": "ewyTCIqe"
+    },
+    {
+      "id": 1978895254,
+      "url": "https://tante.cc/2026/02/14/diffusion-of-responsibility/",
+      "title": "Diffusion of Responsibility",
+      "description": "",
+      "time_added": 1771068223,
+      "progress": 0,
+      "progress_timestamp": 1771080545,
+      "starred": false,
+      "hash": "Zp9C6qoF"
+    },
+    {
+      "id": 1975234379,
+      "url": "https://www.nytimes.com/2026/02/07/magazine/michael-pollan-interview.html?smid=tw-share",
+      "title": "Michael Pollan Says Humanity Is About to Undergo a Revolutionary Change",
+      "description": "",
+      "time_added": 1770511712,
+      "progress": 0,
+      "progress_timestamp": 1771020283,
+      "starred": false,
+      "hash": "38LQnAUK"
+    },
+    {
+      "id": 1977672433,
+      "url": "https://www.rathbiotaclan.com/scientists-warn-heavy-ai-use-could-erode-human-thinking-skills/",
+      "title": "Scientists Warn: Heavy AI Use Could Erode Human Thinking Skills | RathBiotaClan",
+      "description": "",
+      "time_added": 1770859941,
+      "progress": 0,
+      "progress_timestamp": 1771018795,
+      "starred": false,
+      "hash": "0RRcmp4N"
+    },
+    {
+      "id": 1978548400,
+      "url": "https://blog.dougbelshaw.com/techfreedom/",
+      "title": "Your data might be in Europe but your risks are not",
+      "description": "",
+      "time_added": 1770994648,
+      "progress": 0,
+      "progress_timestamp": 1771018794,
+      "starred": false,
+      "hash": "aBC68P9s"
+    },
+    {
+      "id": 1978941293,
+      "url": "https://www.politico.eu/article/eu-bid-for-tech-autonomy-washington-us-pushes-back/",
+      "title": "Washington pushes back against EU’s bid for tech autonomy",
+      "description": "",
+      "time_added": 1771077262,
+      "progress": 0,
+      "progress_timestamp": 1771080544,
+      "starred": false,
+      "hash": "JRPJJMm8"
+    },
     {
       "id": 1972680660,
       "url": "https://www.theatlantic.com/health/archive/2024/07/millennials-cancer-death/678896/",
