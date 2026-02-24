@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-02-23T07:01:09.799Z",
-  "count": 48,
+  "lastUpdated": "2026-02-24T06:57:21.603Z",
+  "count": 54,
   "bookmarks": [
+    {
+      "id": 1954008529,
+      "url": "https://livewire.io/podcast-cdns-by-episode-share/",
+      "title": "Top Podcast CDNs by Episode Share (December 2025)",
+      "description": "",
+      "time_added": 1767366049,
+      "progress": 0,
+      "progress_timestamp": 1767434704,
+      "starred": false,
+      "hash": "3Dxd0a7j"
+    },
+    {
+      "id": 1950373353,
+      "url": "https://en.panoptykon.org/scroll-more-sleep-less-black-mirror-inspired-truck-warsaw-advertises-disturbing-social-network",
+      "title": "Scroll more, sleep less. A Black Mirror-inspired truck in Warsaw advertises a disturbing social network... that doesn’t exist | Panoptykon Foundation",
+      "description": "",
+      "time_added": 1766685253,
+      "progress": 0,
+      "progress_timestamp": 1766685348,
+      "starred": false,
+      "hash": "p7WW9fm3"
+    },
+    {
+      "id": 1950369762,
+      "url": "https://www.eff.org/deeplinks/2023/04/platforms-decay-lets-put-users-first",
+      "title": "As Platforms Decay, Let’s Put Users First",
+      "description": "",
+      "time_added": 1766684456,
+      "progress": 0,
+      "progress_timestamp": 1766685160,
+      "starred": false,
+      "hash": "bV8F48wo"
+    },
+    {
+      "id": 1979082592,
+      "url": "https://www.theguardian.com/artanddesign/2026/feb/14/tracey-emin-interview-tate-modern-regrets-smoking",
+      "title": "‘Regrets? Number one: smoking. Number two: taking it up the wrong hole’: Tracey Emin on reputation, radical honesty – and Reform",
+      "description": "",
+      "time_added": 1771104576,
+      "progress": 0,
+      "progress_timestamp": 1771167452,
+      "starred": false,
+      "hash": "rhL2Gm6x"
+    },
+    {
+      "id": 1979085818,
+      "url": "https://www.theguardian.com/technology/2026/feb/11/big-ai-job-swap-white-collar-workers-ditching-their-careers",
+      "title": "The big AI job swap: why white-collar workers are ditching their careers",
+      "description": "",
+      "time_added": 1771105330,
+      "progress": 0,
+      "progress_timestamp": 1771167450,
+      "starred": false,
+      "hash": "SZEBsZkF"
+    },
+    {
+      "id": 1979890781,
+      "url": "https://drscottwmills.substack.com/p/the-silence-inside-the-chopra-epstein",
+      "title": "The Silence: Inside the Chopra-Epstein Files",
+      "description": "",
+      "time_added": 1771264255,
+      "progress": 0,
+      "progress_timestamp": 1771517355,
+      "starred": false,
+      "hash": "zjRa0O8p"
+    },
     {
       "id": 1974828626,
       "url": "https://dev.to/polliog/kubernetes-is-overkill-for-99-of-apps-we-run-500k-logsday-on-docker-compose-2ode",
