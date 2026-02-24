@@ -1,0 +1,442 @@
+{
+  "02": {
+    "13": [
+      {
+        "id": 1974828626,
+        "url": "https://dev.to/polliog/kubernetes-is-overkill-for-99-of-apps-we-run-500k-logsday-on-docker-compose-2ode",
+        "title": "Kubernetes Is Overkill for 99% of Apps (We Run 500k Logs/Day on Docker Compose)",
+        "description": "",
+        "time_added": 1770458865,
+        "progress": 0,
+        "progress_timestamp": 1771018790
+      },
+      {
+        "id": 1977609317,
+        "url": "https://techcrunch.com/2026/02/11/upscrolleds-social-network-is-struggling-to-moderate-hate-speech-after-fast-growth/",
+        "title": "UpScrolled's social network is struggling to moderate hate speech after fast growth | TechCrunch",
+        "description": "",
+        "time_added": 1770848903,
+        "progress": 0,
+        "progress_timestamp": 1771020274
+      },
+      {
+        "id": 1975234379,
+        "url": "https://www.nytimes.com/2026/02/07/magazine/michael-pollan-interview.html?smid=tw-share",
+        "title": "Michael Pollan Says Humanity Is About to Undergo a Revolutionary Change",
+        "description": "",
+        "time_added": 1770511712,
+        "progress": 0,
+        "progress_timestamp": 1771020283
+      },
+      {
+        "id": 1977672433,
+        "url": "https://www.rathbiotaclan.com/scientists-warn-heavy-ai-use-could-erode-human-thinking-skills/",
+        "title": "Scientists Warn: Heavy AI Use Could Erode Human Thinking Skills | RathBiotaClan",
+        "description": "",
+        "time_added": 1770859941,
+        "progress": 0,
+        "progress_timestamp": 1771018795
+      },
+      {
+        "id": 1978548400,
+        "url": "https://blog.dougbelshaw.com/techfreedom/",
+        "title": "Your data might be in Europe but your risks are not",
+        "description": "",
+        "time_added": 1770994648,
+        "progress": 0,
+        "progress_timestamp": 1771018794
+      },
+      {
+        "id": 1972680660,
+        "url": "https://www.theatlantic.com/health/archive/2024/07/millennials-cancer-death/678896/",
+        "title": "The Silence Doctors Are Keeping About Millennial Deaths",
+        "description": "",
+        "time_added": 1770157665,
+        "progress": 0,
+        "progress_timestamp": 1771018705
+      }
+    ],
+    "14": [
+      {
+        "id": 1978895254,
+        "url": "https://tante.cc/2026/02/14/diffusion-of-responsibility/",
+        "title": "Diffusion of Responsibility",
+        "description": "",
+        "time_added": 1771068223,
+        "progress": 0,
+        "progress_timestamp": 1771080545
+      },
+      {
+        "id": 1978941293,
+        "url": "https://www.politico.eu/article/eu-bid-for-tech-autonomy-washington-us-pushes-back/",
+        "title": "Washington pushes back against EU’s bid for tech autonomy",
+        "description": "",
+        "time_added": 1771077262,
+        "progress": 0,
+        "progress_timestamp": 1771080544
+      }
+    ],
+    "15": [
+      {
+        "id": 1979082592,
+        "url": "https://www.theguardian.com/artanddesign/2026/feb/14/tracey-emin-interview-tate-modern-regrets-smoking",
+        "title": "‘Regrets? Number one: smoking. Number two: taking it up the wrong hole’: Tracey Emin on reputation, radical honesty – and Reform",
+        "description": "",
+        "time_added": 1771104576,
+        "progress": 0,
+        "progress_timestamp": 1771167452
+      },
+      {
+        "id": 1979085818,
+        "url": "https://www.theguardian.com/technology/2026/feb/11/big-ai-job-swap-white-collar-workers-ditching-their-careers",
+        "title": "The big AI job swap: why white-collar workers are ditching their careers",
+        "description": "",
+        "time_added": 1771105330,
+        "progress": 0,
+        "progress_timestamp": 1771167450
+      }
+    ],
+    "19": [
+      {
+        "id": 1979890781,
+        "url": "https://drscottwmills.substack.com/p/the-silence-inside-the-chopra-epstein",
+        "title": "The Silence: Inside the Chopra-Epstein Files",
+        "description": "",
+        "time_added": 1771264255,
+        "progress": 0,
+        "progress_timestamp": 1771517355
+      }
+    ],
+    "24": [
+      {
+        "id": 1983421434,
+        "url": "https://newsletter.pragmaticengineer.com/p/steve-yegge-on-ai-agents-and-the?r=1l5cw5&utm_medium=email",
+        "title": "Steve Yegge on AI Agents and the Future of Software Engineering",
+        "description": "",
+        "time_added": 1771957338,
+        "progress": 0,
+        "progress_timestamp": 1771975976
+      }
+    ]
+  },
+  "01": {
+    "10": [
+      {
+        "id": 1957945590,
+        "url": "https://addyosmani.com/blog/next-two-years/",
+        "title": "The Next Two Years of Software Engineering",
+        "description": "",
+        "time_added": 1767988864,
+        "progress": 0,
+        "progress_timestamp": 1768036104
+      },
+      {
+        "id": 1958385378,
+        "url": "https://kityates.substack.com/p/why-im-resigning-my-editorship-at",
+        "title": "Why I’m resigning my editorship at a Royal Society journal",
+        "description": "",
+        "time_added": 1768060666,
+        "progress": 0,
+        "progress_timestamp": 1768067661
+      },
+      {
+        "id": 1958379021,
+        "url": "https://www.nytimes.com/2026/01/10/opinion/attention-world-war-2-technology-nazis.html",
+        "title": "The Multi-Trillion-Dollar Battle for Your Attention Is Built on a Lie",
+        "description": "",
+        "time_added": 1768059740,
+        "progress": 0,
+        "progress_timestamp": 1768067662
+      },
+      {
+        "id": 1957934600,
+        "url": "https://zigguratmag.substack.com/p/my-final-message-before-im-on-an",
+        "title": "My final message before I'm on an FBI watchlist: Palantir, Epstein, & The New York Times",
+        "description": "",
+        "time_added": 1767987232,
+        "progress": 0,
+        "progress_timestamp": 1768036105
+      }
+    ],
+    "11": [
+      {
+        "id": 1958519576,
+        "url": "https://www.businessinsider.com/ai-human-intelligence-impact-at-work-2026-1",
+        "title": "AI isn't making us smarter — it's training us to think backward, an innovation theorist says",
+        "description": "",
+        "time_added": 1768081847,
+        "progress": 0.751081,
+        "progress_timestamp": 1768130752
+      },
+      {
+        "id": 1958713876,
+        "url": "https://defector.com/toward-a-theory-of-kevin-roose",
+        "title": "Toward A Theory Of Kevin Roose | Defector",
+        "description": "",
+        "time_added": 1768124709,
+        "progress": 0,
+        "progress_timestamp": 1768125402
+      },
+      {
+        "id": 1958510671,
+        "url": "https://www.thepavement.xyz/p/abolish-linkedin",
+        "title": "Abolish LinkedIn",
+        "description": "",
+        "time_added": 1768080145,
+        "progress": 0,
+        "progress_timestamp": 1768121901
+      }
+    ],
+    "12": [
+      {
+        "id": 1959402739,
+        "url": "https://www.uniladtech.com/news/tech-news/greenland-freedom-city-bill-gates-jeff-bezos-sam-altman-invest-380053-20260112",
+        "title": "Bill Gates, Jeff Bezos and Sam Altman among billionaires investing in 'Freedom City' to be built on Greenland",
+        "description": "",
+        "time_added": 1768235973,
+        "progress": 0,
+        "progress_timestamp": 1768241337
+      }
+    ],
+    "13": [
+      {
+        "id": 1960037835,
+        "url": "https://www.pbs.org/newshour/economy/former-trump-adviser-dina-powell-mccormick-named-meta-president-and-vice-chairman",
+        "title": "Former Trump adviser Dina Powell McCormick named Meta president and vice chairman",
+        "description": "",
+        "time_added": 1768323881,
+        "progress": 0,
+        "progress_timestamp": 1768327257
+      },
+      {
+        "id": 1960064535,
+        "url": "https://hartmannreport.com/p/could-this-be-what-the-end-of-a-would-37f",
+        "title": "Could This Be What the End of a Would-Be Dictatorship Looks Like?",
+        "description": "",
+        "time_added": 1768327316,
+        "progress": 0,
+        "progress_timestamp": 1768327724
+      },
+      {
+        "id": 1960035916,
+        "url": "https://reflectingwide.blogspot.com/2026/01/the-ai-paradox-why-future-of-ai-is-ours.html",
+        "title": "The AI Paradox: Why the future of AI is ours to choose",
+        "description": "",
+        "time_added": 1768323651,
+        "progress": 0,
+        "progress_timestamp": 1768327259
+      }
+    ],
+    "15": [
+      {
+        "id": 1960976868,
+        "url": "https://www.afar.com/magazine/the-pros-and-cons-of-using-translation-apps-during-travel",
+        "title": "Why We Shouldn't Always Use Translation Apps When We Travel",
+        "description": "",
+        "time_added": 1768465196,
+        "progress": 0,
+        "progress_timestamp": 1768497115
+      },
+      {
+        "id": 1960712873,
+        "url": "https://www.brusselstimes.com/1916422/us-tech-giants-allying-with-european-far-right-to-strip-back-eu-rules",
+        "title": "US tech giants allying with European far-right to strip back EU rules",
+        "description": "",
+        "time_added": 1768422401,
+        "progress": 0,
+        "progress_timestamp": 1768497118
+      }
+    ],
+    "17": [
+      {
+        "id": 1961209841,
+        "url": "https://socialwebfoundation.org/2026/01/15/new-social-web-working-group-at-w3c/",
+        "title": "New Social Web Working Group at W3C",
+        "description": "",
+        "time_added": 1768497615,
+        "progress": 0,
+        "progress_timestamp": 1768618814
+      },
+      {
+        "id": 1961629138,
+        "url": "https://techpolicy.press/the-trump-lie-about-europe-and-why-it-matters",
+        "title": "The Trump Lie About Europe and Why it Matters",
+        "description": "",
+        "time_added": 1768565361,
+        "progress": 0,
+        "progress_timestamp": 1768618813
+      }
+    ],
+    "19": [
+      {
+        "id": 1963107779,
+        "url": "https://apnews.com/article/trump-davos-wef-economy-wealth-housing-affordability-1b6ef1ad007d795d29bef5681fa97280",
+        "title": "Inequality and unease are rising as elite Davos event opens with pro-business Trump set to attend",
+        "description": "",
+        "time_added": 1768812538,
+        "progress": 0,
+        "progress_timestamp": 1768812551
+      },
+      {
+        "id": 1963111000,
+        "url": "https://shifter.pt/2026/01/o-macho-impenetravel-giga-chad-como-armadura-digital/",
+        "title": "O macho impenetrável: Giga Chad como armadura digital",
+        "description": "",
+        "time_added": 1768813038,
+        "progress": 0,
+        "progress_timestamp": 1768819918
+      },
+      {
+        "id": 1962895975,
+        "url": "https://allr.cat/a-strange-stain-in-the-sky/",
+        "title": "A Strange Stain in the Sky: How Silicon Valley Is Preparing A Coup Against Democracy",
+        "description": "",
+        "time_added": 1768811442,
+        "progress": 0,
+        "progress_timestamp": 1768811444
+      }
+    ],
+    "20": [
+      {
+        "id": 1963825725,
+        "url": "https://www.theguardian.com/business/2026/jan/15/the-crisis-whisperer-how-adam-tooze-makes-sense-of-our-bewildering-age",
+        "title": "The crisis whisperer: how Adam Tooze makes sense of our bewildering age",
+        "description": "",
+        "time_added": 1768911743,
+        "progress": 0,
+        "progress_timestamp": 1768932217
+      },
+      {
+        "id": 1963982849,
+        "url": "https://lucumr.pocoo.org/2026/1/18/agent-psychosis/",
+        "title": "Agent Psychosis: Are We Going Insane?",
+        "description": "",
+        "time_added": 1768929600,
+        "progress": 0,
+        "progress_timestamp": 1768932213
+      },
+      {
+        "id": 1963746871,
+        "url": "https://www.joanwestenberg.com/claude-code-wont-fix-your-life/",
+        "title": "Claude Code Won't Fix Your Life",
+        "description": "",
+        "time_added": 1768900931,
+        "progress": 0,
+        "progress_timestamp": 1768906737
+      },
+      {
+        "id": 1963814998,
+        "url": "https://alaniswright.com/blog/metrics-i-use-to-help-teams-improve-the-timing-of-meetings-to-increase-team-health-and-productivity-makers-time-and-collaboration-time/",
+        "title": "Makers time and collaboration time: two metrics that help teams improve the timing of meetings to increase team health and productivity",
+        "description": "",
+        "time_added": 1768910571,
+        "progress": 0,
+        "progress_timestamp": 1768932222
+      }
+    ],
+    "21": [
+      {
+        "id": 1964387611,
+        "url": "https://www.theregister.com/2026/01/20/pwc_ai_ceo_survey/",
+        "title": "Majority of CEOs report zero payoff from AI splurge",
+        "description": "",
+        "time_added": 1768984291,
+        "progress": 0,
+        "progress_timestamp": 1768993744
+      },
+      {
+        "id": 1964387613,
+        "url": "https://euobserver.com/digital/ar031e7986",
+        "title": "EU should set up alternative social media platform to rival X, say MEPs",
+        "description": "",
+        "time_added": 1768984291,
+        "progress": 0,
+        "progress_timestamp": 1768993745
+      }
+    ],
+    "03": [
+      {
+        "id": 1954008529,
+        "url": "https://livewire.io/podcast-cdns-by-episode-share/",
+        "title": "Top Podcast CDNs by Episode Share (December 2025)",
+        "description": "",
+        "time_added": 1767366049,
+        "progress": 0,
+        "progress_timestamp": 1767434704
+      }
+    ],
+    "06": [
+      {
+        "id": 1955762193,
+        "url": "https://anildash.com/2026/01/05/a-tech-career-in-2026/",
+        "title": "How the hell are you supposed to have a career in tech in 2026? - Anil Dash",
+        "description": "",
+        "time_added": 1767653397,
+        "progress": 0,
+        "progress_timestamp": 1767693539
+      }
+    ],
+    "02": [
+      {
+        "id": 1953905277,
+        "url": "https://visao.pt/opiniao/ponto-de-vista/2025-12-27-sera-2026-finalmente-o-ano-da-ciberseguranca/",
+        "title": "Visão | Será 2026, finalmente, o ano da cibersegurança?",
+        "description": "",
+        "time_added": 1767352930,
+        "progress": 0,
+        "progress_timestamp": 1767357498
+      }
+    ],
+    "08": [
+      {
+        "id": 1957346528,
+        "url": "https://dorseteye.com/there-is-a-spectre-haunting-the-planet-and-that-spectre-is-called-fascism/",
+        "title": "There Is A Spectre Haunting The Planet And That Spectre Is Called Fascism - Dorset Eye",
+        "description": "",
+        "time_added": 1767896087,
+        "progress": 0,
+        "progress_timestamp": 1767896452
+      }
+    ],
+    "07": [
+      {
+        "id": 1956308319,
+        "url": "https://werd.io/what-is-instagrams-adam-mosseri-really-saying-in-his-year-end-memo/",
+        "title": "What is Instagram’s Adam Mosseri really saying in his year-end memo?",
+        "description": "",
+        "time_added": 1767737316,
+        "progress": 0,
+        "progress_timestamp": 1767779794
+      },
+      {
+        "id": 1956318131,
+        "url": "https://www.theguardian.com/commentisfree/2026/jan/06/europe-venezuela-donald-trump-vladimir-putin",
+        "title": "Europe’s failure to condemn Trump’s illegal aggression in Venezuela isn’t just wrong – it’s stupid | Nathalie Tocci",
+        "description": "",
+        "time_added": 1767738821,
+        "progress": 0,
+        "progress_timestamp": 1767779791
+      },
+      {
+        "id": 1956308539,
+        "url": "https://pluralistic.net/2026/01/06/1000x-liability/",
+        "title": "Pluralistic: Code is a liability (not an asset) (06 Jan 2026) – Pluralistic: Daily links from Cory Doctorow",
+        "description": "",
+        "time_added": 1767737345,
+        "progress": 0,
+        "progress_timestamp": 1767779792
+      }
+    ],
+    "01": [
+      {
+        "id": 1953452179,
+        "url": "https://takes.jamesomalley.co.uk/p/this-might-be-oversharing",
+        "title": "How I rebooted my social life",
+        "description": "",
+        "time_added": 1767267163,
+        "progress": 0,
+        "progress_timestamp": 1767268609
+      }
+    ]
+  }
+}
