@@ -1,11 +1,11 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-let visibility = ref(false);
+let visibility = ref(false)
 
 const toggleVisibility = () => {
-  visibility.value = !visibility.value;
-};
+  visibility.value = !visibility.value
+}
 </script>
 
 <template>

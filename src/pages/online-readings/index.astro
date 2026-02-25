@@ -5,10 +5,10 @@ import Layout from '../../layouts/Layout.astro'
 <Layout>
   <div class="mt-8 mb-16">
     <h1 class="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-      Online Reading
+      Online Readings
     </h1>
     <p class="text-base text-zinc-900 dark:text-zinc-100">
-      Repository and stats of things read online.
+      Things from around the web I put on Kobo to read (or <em>skim</em>).
     </p>
   </div>
   <div id="charts-container">
@@ -51,24 +51,34 @@ import Layout from '../../layouts/Layout.astro'
       const totalDays = daysInMonth(year, monthNum)
       const counts = new Array(totalDays).fill(0)
       const tooltips: string[][] = Array.from({ length: totalDays }, () => [])
+      const articlesByDay: {
+        day: number
+        articles: { title: string; url: string; domain: string }[]
+      }[] = []
       const monthData = data[monthKey]
 
       for (const [day, articles] of Object.entries(monthData)) {
         const dayIndex = parseInt(day, 10) - 1
         if (dayIndex >= 0 && dayIndex < totalDays) {
           counts[dayIndex] = articles.length
-          tooltips[dayIndex] = articles.map((a: any) => {
-            const title =
-              (a.title || 'Untitled').slice(0, 75) +
-              ((a.title || '').length > 30 ? '…' : '')
+          const parsed = articles.map((a: any) => {
+            const title = a.title || 'Untitled'
             let domain = ''
             try {
               domain = new URL(a.url).hostname.replace(/^www\./, '')
             } catch {}
-            return `${title} (${domain})`
+            return { title, url: a.url, domain }
           })
+          tooltips[dayIndex] = parsed.map((p) => {
+            const truncated =
+              p.title.slice(0, 75) + (p.title.length > 30 ? '…' : '')
+            return `${truncated} (${p.domain})`
+          })
+          articlesByDay.push({ day: parseInt(day, 10), articles: parsed })
         }
       }
+
+      articlesByDay.sort((a, b) => a.day - b.day)
 
       months.push({
         monthNum,
@@ -76,6 +86,7 @@ import Layout from '../../layouts/Layout.astro'
         labels: Array.from({ length: totalDays }, (_, i) => i + 1),
         counts,
         tooltips,
+        articlesByDay,
       })
     }
 
@@ -216,6 +227,61 @@ import Layout from '../../layouts/Layout.astro'
         const canvas = document.createElement('canvas')
         chartWrapper.appendChild(canvas)
         monthBlock.appendChild(chartWrapper)
+
+        // Expandable article list
+        if (month.articlesByDay.length > 0) {
+          const details = document.createElement('details')
+          details.className = 'mt-3'
+
+          const summary = document.createElement('summary')
+          const totalArticles = month.counts.reduce(
+            (s: number, c: number) => s + c,
+            0,
+          )
+          summary.className =
+            'cursor-pointer text-sm text-zinc-500 dark:text-zinc-400 hover:text-teal-500 dark:hover:text-teal-400'
+          summary.textContent = `${totalArticles} article${totalArticles !== 1 ? 's' : ''}`
+          details.appendChild(summary)
+
+          const listWrapper = document.createElement('div')
+          listWrapper.className = 'mt-2 space-y-3'
+
+          for (const { day, articles } of month.articlesByDay) {
+            const dayGroup = document.createElement('div')
+            dayGroup.className = 'ml-4'
+
+            const dayLabel = document.createElement('p')
+            dayLabel.className =
+              'text-sm font-medium text-zinc-500 dark:text-zinc-400'
+            dayLabel.textContent = String(day).padStart(2, '0')
+            dayGroup.appendChild(dayLabel)
+
+            const ul = document.createElement('ul')
+            ul.className = 'mt-1 space-y-1 ml-4'
+
+            for (const article of articles) {
+              const li = document.createElement('li')
+              li.className = 'text-sm'
+
+              const link = document.createElement('a')
+              link.href = article.url
+              link.target = '_blank'
+              link.rel = 'noopener noreferrer'
+              link.className =
+                'text-zinc-700 dark:text-zinc-300 hover:text-teal-500 dark:hover:text-teal-400'
+              link.textContent = `${article.title} (${article.domain})`
+              li.appendChild(link)
+
+              ul.appendChild(li)
+            }
+
+            dayGroup.appendChild(ul)
+            listWrapper.appendChild(dayGroup)
+          }
+
+          details.appendChild(listWrapper)
+          monthBlock.appendChild(details)
+        }
 
         yearSection.appendChild(monthBlock)
         createChart(canvas, month.labels, month.counts, month.tooltips)
