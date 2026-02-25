@@ -105,6 +105,15 @@
         "time_added": 1771264255,
         "progress": 0,
         "progress_timestamp": 1771517355
+      },
+      {
+        "id": 1980958173,
+        "url": "https://arstechnica.com/security/2026/02/password-managers-promise-that-they-cant-see-your-vaults-isnt-always-true/",
+        "title": "Password managers' promise that they can't see your vaults isn't always true",
+        "description": "",
+        "time_added": 1772022662,
+        "progress": 0,
+        "progress_timestamp": 1771517361
       }
     ],
     "25": [
@@ -116,6 +125,24 @@
         "time_added": 1771957338,
         "progress": 0,
         "progress_timestamp": 1771978593
+      },
+      {
+        "id": 1980181565,
+        "url": "https://www.rawstory.com/trump-economy-2675272521/",
+        "title": "International rebellion as Canada's PM leads 40 nations in plan to buck Trump: insider",
+        "description": "",
+        "time_added": 1772022827,
+        "progress": 0.668353,
+        "progress_timestamp": 1772022825
+      },
+      {
+        "id": 1980775313,
+        "url": "https://www.nytimes.com/2026/02/18/opinion/ai-software.html",
+        "title": "The A.I. Disruption We’ve Been Waiting for Has Arrived",
+        "description": "",
+        "time_added": 1772022805,
+        "progress": 0.546535,
+        "progress_timestamp": 1772022804
       }
     ]
   },
