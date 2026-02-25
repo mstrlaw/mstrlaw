@@ -35,15 +35,21 @@ import Layout from '../../layouts/Layout.astro'
     'December',
   ]
 
-  function daysInMonth(year: number, month: number) {
-    return new Date(year, month, 0).getDate()
-  }
+  const daysInMonth = (year: number, month: number) =>
+    new Date(year, month, 0).getDate()
 
-  function processYearData(
+  const processYearData = (
     year: number,
     data: Record<string, Record<string, any[]>>,
-  ) {
-    const months = []
+  ) => {
+    const months: {
+      monthNum: number
+      name: string
+      labels: number[]
+      counts: number[]
+      tooltips: string[][]
+      articlesByDay: { day: number; articles: { title: string; url: string; domain: string }[] }[]
+    }[] = []
     const monthKeys = Object.keys(data).sort()
 
     for (const monthKey of monthKeys) {
@@ -93,12 +99,12 @@ import Layout from '../../layouts/Layout.astro'
     return months
   }
 
-  function createChart(
+  const createChart = (
     canvas: HTMLCanvasElement,
     labels: number[],
     counts: number[],
     tooltips: string[][],
-  ) {
+  ) => {
     const isDark = document.documentElement.classList.contains('dark')
     const textColor = isDark ? '#a1a1aa' : '#71717a'
 
@@ -149,7 +155,7 @@ import Layout from '../../layouts/Layout.astro'
     })
   }
 
-  async function fetchYearData(year: number) {
+  const fetchYearData = async (year: number) => {
     try {
       const res = await fetch(`/data/instapaper/${year}/data.json`)
       if (!res.ok) return null
@@ -159,7 +165,7 @@ import Layout from '../../layouts/Layout.astro'
     }
   }
 
-  function waitForChartJs() {
+  const waitForChartJs = () => {
     return new Promise<void>((resolve) => {
       if ((window as any).Chart) {
         resolve()
@@ -174,11 +180,70 @@ import Layout from '../../layouts/Layout.astro'
     })
   }
 
-  async function init() {
+  const escapeHtml = (str: string) =>
+    str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+
+  const renderArticleList = (month: ReturnType<typeof processYearData>[number]) => {
+    const totalArticles = month.counts.reduce((s: number, c: number) => s + c, 0)
+    if (month.articlesByDay.length === 0) return ''
+
+    return `
+      <details class="mt-3">
+        <summary class="cursor-pointer text-sm text-zinc-500 dark:text-zinc-400 hover:text-teal-500 dark:hover:text-teal-400">
+          ${totalArticles} article${totalArticles !== 1 ? 's' : ''}
+        </summary>
+        <div class="mt-2 space-y-3">
+          ${month.articlesByDay.map(({ day, articles }) => `
+            <div class="ml-4">
+              <p class="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                ${String(day).padStart(2, '0')}
+              </p>
+              <ul class="mt-1 space-y-1 ml-4">
+                ${articles.map((article) => `
+                  <li class="text-sm">
+                    <a href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer"
+                       class="text-zinc-700 dark:text-zinc-300 hover:text-teal-500 dark:hover:text-teal-400">
+                      ${escapeHtml(article.title)} (${escapeHtml(article.domain)})
+                    </a>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+          `).join('')}
+        </div>
+      </details>
+    `
+  }
+
+  const renderMonth = (month: ReturnType<typeof processYearData>[number]) => {
+    return `
+      <div class="mb-8">
+        <h3 class="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">
+          ${month.name}
+        </h3>
+        <div class="relative" style="height:200px">
+          <canvas data-chart-id="${month.name}"></canvas>
+        </div>
+        ${renderArticleList(month)}
+      </div>
+    `
+  }
+
+  const renderYear = (year: number, months: ReturnType<typeof processYearData>) => {
+    return `
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-6">
+          ${year}
+        </h2>
+        ${months.map((month) => renderMonth(month)).join('')}
+      </section>
+    `
+  }
+
+  const init = async () => {
     await waitForChartJs()
 
-    const container = document.getElementById('charts-container')
-    const loading = document.getElementById('charts-loading')
+    const container = document.getElementById('charts-container')!
     const currentYear = new Date().getFullYear()
 
     const yearEntries: { year: number; data: any }[] = []
@@ -187,107 +252,35 @@ import Layout from '../../layouts/Layout.astro'
       if (data) yearEntries.push({ year: y, data })
     }
 
-    if (loading) loading.remove()
-
     if (yearEntries.length === 0) {
-      const msg = document.createElement('p')
-      msg.className = 'text-zinc-500 dark:text-zinc-400'
-      msg.textContent = 'No reading data available.'
-      container?.appendChild(msg)
+      container.innerHTML = '<p class="text-zinc-500 dark:text-zinc-400">No reading data available.</p>'
       return
     }
 
-    // Render years descending
-    for (const { year, data } of yearEntries.reverse()) {
-      const yearSection = document.createElement('section')
-      yearSection.className = 'mb-12'
+    // Process all year data
+    const yearData = yearEntries.reverse().map(({ year, data }) => ({
+      year,
+      months: processYearData(year, data),
+    }))
 
-      const yearHeading = document.createElement('h2')
-      yearHeading.className =
-        'text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-6'
-      yearHeading.textContent = String(year)
-      yearSection.appendChild(yearHeading)
+    // Render HTML
+    container.innerHTML = yearData
+      .map(({ year, months }) => renderYear(year, months))
+      .join('')
 
-      const months = processYearData(year, data)
-
-      for (const month of months) {
-        const monthBlock = document.createElement('div')
-        monthBlock.className = 'mb-8'
-
-        const monthLabel = document.createElement('h3')
-        monthLabel.className =
-          'text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2'
-        monthLabel.textContent = month.name
-        monthBlock.appendChild(monthLabel)
-
-        const chartWrapper = document.createElement('div')
-        chartWrapper.style.height = '200px'
-        chartWrapper.className = 'relative'
-
-        const canvas = document.createElement('canvas')
-        chartWrapper.appendChild(canvas)
-        monthBlock.appendChild(chartWrapper)
-
-        // Expandable article list
-        if (month.articlesByDay.length > 0) {
-          const details = document.createElement('details')
-          details.className = 'mt-3'
-
-          const summary = document.createElement('summary')
-          const totalArticles = month.counts.reduce(
-            (s: number, c: number) => s + c,
-            0,
-          )
-          summary.className =
-            'cursor-pointer text-sm text-zinc-500 dark:text-zinc-400 hover:text-teal-500 dark:hover:text-teal-400'
-          summary.textContent = `${totalArticles} article${totalArticles !== 1 ? 's' : ''}`
-          details.appendChild(summary)
-
-          const listWrapper = document.createElement('div')
-          listWrapper.className = 'mt-2 space-y-3'
-
-          for (const { day, articles } of month.articlesByDay) {
-            const dayGroup = document.createElement('div')
-            dayGroup.className = 'ml-4'
-
-            const dayLabel = document.createElement('p')
-            dayLabel.className =
-              'text-sm font-medium text-zinc-500 dark:text-zinc-400'
-            dayLabel.textContent = String(day).padStart(2, '0')
-            dayGroup.appendChild(dayLabel)
-
-            const ul = document.createElement('ul')
-            ul.className = 'mt-1 space-y-1 ml-4'
-
-            for (const article of articles) {
-              const li = document.createElement('li')
-              li.className = 'text-sm'
-
-              const link = document.createElement('a')
-              link.href = article.url
-              link.target = '_blank'
-              link.rel = 'noopener noreferrer'
-              link.className =
-                'text-zinc-700 dark:text-zinc-300 hover:text-teal-500 dark:hover:text-teal-400'
-              link.textContent = `${article.title} (${article.domain})`
-              li.appendChild(link)
-
-              ul.appendChild(li)
-            }
-
-            dayGroup.appendChild(ul)
-            listWrapper.appendChild(dayGroup)
+    // Initialize charts on rendered canvases
+    const yearSections = container.querySelectorAll('section')
+    for (const { year, months } of yearData) {
+      for (const sec of yearSections) {
+        if (sec.querySelector('h2')?.textContent?.trim() === String(year)) {
+          for (const month of months) {
+            const canvas = sec.querySelector<HTMLCanvasElement>(
+              `canvas[data-chart-id="${month.name}"]`,
+            )
+            if (canvas) createChart(canvas, month.labels, month.counts, month.tooltips)
           }
-
-          details.appendChild(listWrapper)
-          monthBlock.appendChild(details)
         }
-
-        yearSection.appendChild(monthBlock)
-        createChart(canvas, month.labels, month.counts, month.tooltips)
       }
-
-      container?.appendChild(yearSection)
     }
   }
 
