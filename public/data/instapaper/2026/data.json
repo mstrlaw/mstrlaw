@@ -143,6 +143,46 @@
         "time_added": 1772022805,
         "progress": 0.546535,
         "progress_timestamp": 1772022804
+      },
+      {
+        "id": 1983523229,
+        "url": "https://kottke.org/21/04/ted-chiang-fears-of-technology-are-fears-of-capitalism",
+        "title": "Ted Chiang: Fears of Technology Are Fears of Capitalism",
+        "description": "",
+        "time_added": 1772566388,
+        "progress": 0,
+        "progress_timestamp": 1772022655
+      }
+    ],
+    "26": [
+      {
+        "id": 1983850019,
+        "url": "https://www.todayintabs.com/p/a-i-isn-t-people",
+        "title": "A.I. Isn't People",
+        "description": "",
+        "time_added": 1772030342,
+        "progress": 0,
+        "progress_timestamp": 1772108214
+      },
+      {
+        "id": 1984430243,
+        "url": "https://www.theatlantic.com/technology/2026/02/ai-math-terrance-tao/686107/",
+        "title": "The Edge of Mathematics",
+        "description": "",
+        "time_added": 1772122602,
+        "progress": 0,
+        "progress_timestamp": 1772124962
+      }
+    ],
+    "28": [
+      {
+        "id": 1985003124,
+        "url": "https://medium.com/easy-flutter/who-believes-in-vibe-coding-1796fdd27b43",
+        "title": "Who believes in vibe-coding?",
+        "description": "",
+        "time_added": 1772214842,
+        "progress": 0,
+        "progress_timestamp": 1772281184
       }
     ]
   },
@@ -485,6 +525,44 @@
         "time_added": 1772444828,
         "progress": 0,
         "progress_timestamp": 1772444823
+      },
+      {
+        "id": 1986364476,
+        "url": "https://shifter.pt/2026/02/a-cultura-dos-side-jobs/",
+        "title": "A cultura dos side jobs: o cansaço como normalidade laboral",
+        "description": "",
+        "time_added": 1772526754,
+        "progress": 0,
+        "progress_timestamp": 1772494880
+      },
+      {
+        "id": 1985899753,
+        "url": "https://www.theguardian.com/science/2026/mar/01/incel-slang-mainstream-government-media",
+        "title": "The Pentagon says it’s ‘lethalitymaxxing’. Why has ‘incel’ slang crossed into the mainstream?",
+        "description": "",
+        "time_added": 1772394507,
+        "progress": 0,
+        "progress_timestamp": 1772444824
+      },
+      {
+        "id": 1986166371,
+        "url": "https://natematias.medium.com/the-manacle-the-network-and-the-tree-61a537ee8e06",
+        "title": "The Manacle, the Network, and the Tree",
+        "description": "",
+        "time_added": 1772456378,
+        "progress": 0,
+        "progress_timestamp": 1772458846
+      }
+    ],
+    "03": [
+      {
+        "id": 1986517876,
+        "url": "https://jackcamerano.com/blog/a-message-to-devs-at-the-frontier/",
+        "title": "A Message To Devs At The Frontier | JackCamerano.com",
+        "description": "",
+        "time_added": 1772526739,
+        "progress": 0,
+        "progress_timestamp": 1772529255
       }
     ]
   }
