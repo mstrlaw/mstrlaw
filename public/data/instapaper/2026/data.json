@@ -152,6 +152,15 @@
         "time_added": 1772566388,
         "progress": 0,
         "progress_timestamp": 1772022655
+      },
+      {
+        "id": 1983016073,
+        "url": "https://www.playboy.com/read/entertainment-culture/clavicular-the-radical-submissive",
+        "title": "Clavicular, the Radical Submissive",
+        "description": "",
+        "time_added": 1771884987,
+        "progress": 0,
+        "progress_timestamp": 1772022657
       }
     ],
     "26": [
@@ -421,6 +430,17 @@
         "progress_timestamp": 1768993745
       }
     ],
+    "25": [
+      {
+        "id": 1966099342,
+        "url": "https://theengineeringmanager.substack.com/p/when-the-ladder-disappears",
+        "title": "When the ladder disappears",
+        "description": "",
+        "time_added": 1772622693,
+        "progress": 0,
+        "progress_timestamp": 1769313406
+      }
+    ],
     "03": [
       {
         "id": 1954008529,
@@ -563,6 +583,143 @@
         "time_added": 1772526739,
         "progress": 0,
         "progress_timestamp": 1772529255
+      },
+      {
+        "id": 1986530403,
+        "url": "https://www.euronews.com/my-europe/2026/03/03/how-close-is-the-eu-to-break-free-from-visa-and-mastercards-grip",
+        "title": "How close is the EU to break free from Visa and Mastercard's grip?",
+        "description": "",
+        "time_added": 1772529577,
+        "progress": 0,
+        "progress_timestamp": 1772529710
+      },
+      {
+        "id": 1986539169,
+        "url": "https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should",
+        "title": "The stranger secret: how to talk to anyone – and why you should",
+        "description": "",
+        "time_added": 1772531428,
+        "progress": 0,
+        "progress_timestamp": 1772539409
+      },
+      {
+        "id": 1986591225,
+        "url": "https://jessicatalisman.substack.com/p/where-provenance-ends-knowledge-decays",
+        "title": "Where Provenance Ends, Knowledge Decays",
+        "description": "",
+        "time_added": 1772540267,
+        "progress": 0,
+        "progress_timestamp": 1772566363
+      }
+    ],
+    "04": [
+      {
+        "id": 1987036853,
+        "url": "https://newsletter.weskao.com/p/be-an-empathetic-manager-without-becoming-a-therapist",
+        "title": "How to be an empathetic manager (without becoming a therapist)",
+        "description": "",
+        "time_added": 1772623007,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987031690,
+        "url": "https://newsletter.manager.dev/p/dont-become-an-engineering-manager",
+        "title": "Don't become an Engineering Manager",
+        "description": "",
+        "time_added": 1772622072,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987031747,
+        "url": "https://newsletter.manager.dev/p/the-best-time-to-be-an-engineering",
+        "title": "Engineering Management in the Age of Agents",
+        "description": "",
+        "time_added": 1772622080,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987029865,
+        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/prompts/",
+        "title": "Prompts I use - Agentic Engineering Patterns",
+        "description": "",
+        "time_added": 1772621723,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987028719,
+        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/",
+        "title": "Interactive explanations - Agentic Engineering Patterns",
+        "description": "",
+        "time_added": 1772621496,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987028215,
+        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/",
+        "title": "Linear walkthroughs - Agentic Engineering Patterns",
+        "description": "",
+        "time_added": 1772621389,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987027491,
+        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/",
+        "title": "First run the tests - Agentic Engineering Patterns",
+        "description": "",
+        "time_added": 1772621243,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987026488,
+        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/",
+        "title": "Red/green TDD - Agentic Engineering Patterns",
+        "description": "",
+        "time_added": 1772621045,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987024497,
+        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/",
+        "title": "Writing code is cheap now - Agentic Engineering Patterns",
+        "description": "",
+        "time_added": 1772620688,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987026460,
+        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/",
+        "title": "Hoard things you know how to do - Agentic Engineering Patterns",
+        "description": "https://tools.simonwillison.net/ocr",
+        "time_added": 1772621040,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987020635,
+        "url": "https://www.democracydocket.com/news-alerts/texas-democratic-voters-scramble-to-find-polling-place-amid-precinct-voting-switch/",
+        "title": "Democratic voters in Texas scramble to find polling place amid GOP-driven switch",
+        "description": "",
+        "time_added": 1772620016,
+        "progress": 0,
+        "progress_timestamp": 1772633806
+      },
+      {
+        "id": 1987015285,
+        "url": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/",
+        "title": "Writing about Agentic Engineering Patterns",
+        "description": "",
+        "time_added": 1772619181,
+        "progress": 0,
+        "progress_timestamp": 1772619833
       }
     ]
   }
