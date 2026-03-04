@@ -1,5 +1,52 @@
 export default [
+  // 2026 books
+  {
+    title: 'The AI Paradox: How to Make Sense of a Complex Future',
+    author: 'Virginia Dignum',
+    yearRead: 2026,
+    url: 'https://press.princeton.edu/books/hardcover/9780691269085/the-ai-paradox?srsltid=AfmBOooc8kPGHBCBjDmRDmKWaAC75FXCshO7vUY-LO4wLSxXcnIMX6PE',
+    cover: '/images/books/paradox_of_ai.jpg',
+    alt: 'The AI Paradox: How to Make Sense of a Complex Future by Virginia Dignum',
+    tags: ['non-fiction', 'technology', 'ethics'],
+  },
+  {
+    title: 'Neuromancer',
+    author: 'William Gibson',
+    yearRead: 2026,
+    url: 'https://www.penguinrandomhouse.com/books/538861/neuromancer-by-william-gibson/',
+    cover: '/images/books/neuromancer.jpg',
+    alt: 'Neuromancer by William Gibson',
+    tags: ['fiction', 'sci-fi'],
+  },
+  {
+    title: 'Capitalism - A Global History',
+    author: 'Sven Beckert',
+    yearRead: 2026,
+    url: 'https://www.penguinrandomhouse.com/books/541160/capitalism-by-sven-beckert/',
+    cover: '/images/books/capitalism_global_history.jpg',
+    alt: 'Capitalism - A Global History by Sven Beckert',
+    tags: ['non-fiction', 'history', 'economics'],
+  },
+  {
+    title:
+      'Blood in the Machine - The Origins of the Rebellion Against Big Tech',
+    author: 'Brian Merchant',
+    yearRead: 2026,
+    url: 'https://www.hachettebookgroup.com/titles/brian-merchant/blood-in-the-machine/9780316487740/',
+    cover: '/images/books/blood_in_machine.jpg',
+    alt: 'Blood in the Machine - The Origins of the Rebellion Against Big Tech by Brian Merchant',
+    tags: ['non-fiction', 'history', 'technology'],
+  },
   // 2025 books
+  {
+    title: 'Philosophy for Polar Explorers',
+    author: 'Erling Kagge',
+    yearRead: 2025,
+    url: 'https://www.penguinrandomhouse.com/books/243287/philosophy-for-polar-explorers-by-erling-kagge/',
+    cover: '/images/books/philosophy_polar_explorers.jpg',
+    alt: 'Philosophy for Polar Explorers by Erling Kagge',
+    tags: ['non-fiction', 'philosophy'],
+  },
   {
     title:
       'Technology of the Oppressed: Inequity and the Digital Mundane in Favelas of Brazil',
