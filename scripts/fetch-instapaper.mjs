@@ -169,7 +169,16 @@ function loadExistingYearData(year) {
 
 function mergeYearData(existingData, newData) {
   const merged = JSON.parse(JSON.stringify(existingData)) // Deep clone
-  const newBookmarks = [] // Track newly added bookmarks with their location
+
+  // Collect ALL existing bookmark IDs across all days to prevent cross-day duplicates
+  const allExistingIds = new Set()
+  for (const month of Object.values(merged)) {
+    for (const day of Object.values(month)) {
+      for (const b of day) {
+        allExistingIds.add(b.id)
+      }
+    }
+  }
 
   for (const month of Object.keys(newData)) {
     if (!merged[month]) {
@@ -180,14 +189,10 @@ function mergeYearData(existingData, newData) {
         merged[month][day] = []
       }
 
-      // Get existing bookmark IDs for this day
-      const existingIds = new Set(merged[month][day].map((b) => b.id))
-
-      // Only add new bookmarks that don't already exist
       for (const bookmark of newData[month][day]) {
-        if (!existingIds.has(bookmark.id)) {
+        if (!allExistingIds.has(bookmark.id)) {
           merged[month][day].push(bookmark)
-          newBookmarks.push({ month, day, bookmark })
+          allExistingIds.add(bookmark.id)
         }
       }
     }

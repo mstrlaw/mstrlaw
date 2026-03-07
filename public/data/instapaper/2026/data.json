@@ -740,45 +740,7 @@
         "progress_timestamp": 1772652020
       }
     ],
-    "05": [
-      {
-        "id": 1987026460,
-        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/",
-        "title": "Hoard things you know how to do - Agentic Engineering Patterns",
-        "description": "https://tools.simonwillison.net/ocr",
-        "time_added": 1772621040,
-        "progress": 0,
-        "progress_timestamp": 1772693249
-      },
-      {
-        "id": 1987020635,
-        "url": "https://www.democracydocket.com/news-alerts/texas-democratic-voters-scramble-to-find-polling-place-amid-precinct-voting-switch/",
-        "title": "Democratic voters in Texas scramble to find polling place amid GOP-driven switch",
-        "description": "",
-        "time_added": 1772620016,
-        "progress": 0,
-        "progress_timestamp": 1772693249
-      }
-    ],
     "06": [
-      {
-        "id": 1987026460,
-        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/",
-        "title": "Hoard things you know how to do - Agentic Engineering Patterns",
-        "description": "https://tools.simonwillison.net/ocr",
-        "time_added": 1772621040,
-        "progress": 0,
-        "progress_timestamp": 1772779409
-      },
-      {
-        "id": 1987020635,
-        "url": "https://www.democracydocket.com/news-alerts/texas-democratic-voters-scramble-to-find-polling-place-amid-precinct-voting-switch/",
-        "title": "Democratic voters in Texas scramble to find polling place amid GOP-driven switch",
-        "description": "",
-        "time_added": 1772620016,
-        "progress": 0,
-        "progress_timestamp": 1772779409
-      },
       {
         "id": 1987741060,
         "url": "https://www.citriniresearch.com/p/2028gic",
@@ -796,26 +758,6 @@
         "time_added": 1772746742,
         "progress": 0,
         "progress_timestamp": 1772755769
-      }
-    ],
-    "07": [
-      {
-        "id": 1987026460,
-        "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/",
-        "title": "Hoard things you know how to do - Agentic Engineering Patterns",
-        "description": "https://tools.simonwillison.net/ocr",
-        "time_added": 1772621040,
-        "progress": 0,
-        "progress_timestamp": 1772865401
-      },
-      {
-        "id": 1987020635,
-        "url": "https://www.democracydocket.com/news-alerts/texas-democratic-voters-scramble-to-find-polling-place-amid-precinct-voting-switch/",
-        "title": "Democratic voters in Texas scramble to find polling place amid GOP-driven switch",
-        "description": "",
-        "time_added": 1772620016,
-        "progress": 0,
-        "progress_timestamp": 1772865401
       }
     ]
   }
