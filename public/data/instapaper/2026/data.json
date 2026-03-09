@@ -761,6 +761,53 @@
       }
     ],
     "07": [],
-    "08": []
+    "08": [
+      {
+        "id": 1988598879,
+        "url": "https://steve-yegge.medium.com/welcome-to-the-wasteland-a-thousand-gas-towns-a5eb9bc8dc1f",
+        "title": "Welcome to the Wasteland: A Thousand Gas Towns",
+        "description": "",
+        "time_added": 1772959871,
+        "progress": 0,
+        "progress_timestamp": 1772961961
+      },
+      {
+        "id": 1988677828,
+        "url": "https://www.euronews.com/next/2026/03/08/why-women-are-disappearing-from-europes-tech-workforce",
+        "title": "Why women are disappearing from Europe’s tech workforce",
+        "description": "",
+        "time_added": 1772982089,
+        "progress": 0,
+        "progress_timestamp": 1772982358
+      },
+      {
+        "id": 1988477126,
+        "url": "https://matduggan.com/boy-i-was-wrong-about-the-fediverse/",
+        "title": "matduggan.com",
+        "description": "",
+        "time_added": 1772914494,
+        "progress": 0,
+        "progress_timestamp": 1772928687
+      },
+      {
+        "id": 1988479327,
+        "url": "https://www.theatlantic.com/technology/2026/03/central-lie-prediction-markets/686250/",
+        "title": "A Technology for a Low-Trust Society",
+        "description": "",
+        "time_added": 1772915120,
+        "progress": 0,
+        "progress_timestamp": 1772928685
+      },
+      {
+        "id": 1988479837,
+        "url": "https://www.scientificamerican.com/article/why-developers-using-ai-are-working-longer-hours/",
+        "title": "Why developers using AI are working longer hours",
+        "description": "",
+        "time_added": 1772915279,
+        "progress": 0,
+        "progress_timestamp": 1772928685
+      }
+    ],
+    "09": []
   }
 }
