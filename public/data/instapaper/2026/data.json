@@ -527,6 +527,44 @@
     ]
   },
   "03": {
+    "10": [
+      {
+        "id": 1989482183,
+        "url": "https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/",
+        "title": "Meta acquired Moltbook, the AI agent social network that went viral because of fake posts | TechCrunch",
+        "description": "",
+        "time_added": 1773167750,
+        "progress": 0,
+        "progress_timestamp": 1773169041
+      },
+      {
+        "id": 1989378079,
+        "url": "https://www.theverge.com/cs/features/877388/white-collar-workers-training-ai-mercor",
+        "title": "The laid-off lawyers and PhDs training AI to steal their careers",
+        "description": "",
+        "time_added": 1773147788,
+        "progress": 0,
+        "progress_timestamp": 1773147789
+      },
+      {
+        "id": 1989294781,
+        "url": "https://www.theregister.com/2026/03/09/anthropic_debuts_code_review/",
+        "title": "Anthropic debuts Code Review for teams, enterprises",
+        "description": "",
+        "time_added": 1773131197,
+        "progress": 0,
+        "progress_timestamp": 1773131578
+      },
+      {
+        "id": 1989295521,
+        "url": "https://wedistribute.org/2026/03/jay-graber-steps-down-as-bluesky-ceo/",
+        "title": "Jay Graber Steps Down as Bluesky CEO",
+        "description": "",
+        "time_added": 1773131374,
+        "progress": 0,
+        "progress_timestamp": 1773131576
+      }
+    ],
     "02": [
       {
         "id": 1986096271,
@@ -832,6 +870,17 @@
         "time_added": 1772982044,
         "progress": 0,
         "progress_timestamp": 1772982361
+      }
+    ],
+    "09": [
+      {
+        "id": 1988910653,
+        "url": "https://2ndbreakfast.audreywatters.com/there-is-no-human-centered-ai/",
+        "title": "There is No \"Human-Centered 'AI'\"",
+        "description": "",
+        "time_added": 1773044864,
+        "progress": 0,
+        "progress_timestamp": 1773048154
       }
     ]
   }
