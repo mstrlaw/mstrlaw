@@ -527,6 +527,7 @@
     ]
   },
   "03": {
+    "10": [],
     "02": [
       {
         "id": 1986096271,
@@ -758,6 +759,15 @@
         "time_added": 1772746742,
         "progress": 0,
         "progress_timestamp": 1772755769
+      },
+      {
+        "id": 1987733804,
+        "url": "https://www.ft.com/content/987bb3a4-76b2-41f0-9a9a-6c13159b4ba9",
+        "title": "How Pedro Sánchez became Donald Trump’s nemesis in Europe",
+        "description": "",
+        "time_added": 1772747055,
+        "progress": 0,
+        "progress_timestamp": 1772755768
       }
     ],
     "07": [],
@@ -806,6 +816,24 @@
         "time_added": 1772915279,
         "progress": 0,
         "progress_timestamp": 1772928685
+      },
+      {
+        "id": 1988676982,
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/",
+        "title": "AI as tradecraft: How threat actors operationalize AI | Microsoft Security Blog",
+        "description": "",
+        "time_added": 1772981839,
+        "progress": 0,
+        "progress_timestamp": 1772982369
+      },
+      {
+        "id": 1988677651,
+        "url": "https://www.theverge.com/podcast/891124/the-cute-and-cursed-story-of-furby",
+        "title": "The cute and cursed story of Furby",
+        "description": "",
+        "time_added": 1772982044,
+        "progress": 0,
+        "progress_timestamp": 1772982361
       }
     ],
     "09": []
