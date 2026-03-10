@@ -198,6 +198,18 @@ function mergeYearData(existingData, newData) {
     }
   }
 
+  // Clean up empty days and months left by deduplication
+  for (const month of Object.keys(merged)) {
+    for (const day of Object.keys(merged[month])) {
+      if (merged[month][day].length === 0) {
+        delete merged[month][day]
+      }
+    }
+    if (Object.keys(merged[month]).length === 0) {
+      delete merged[month]
+    }
+  }
+
   return merged
 }
 
