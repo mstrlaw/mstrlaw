@@ -594,6 +594,17 @@
         "progress_timestamp": 1773384603
       }
     ],
+    "14": [
+      {
+        "id": 1990903646,
+        "url": "https://open.substack.com/pub/theengineeringmanager/p/slow-down-to-speed-up?utm_campaign=post&utm_medium=web",
+        "title": "Slow down to speed up",
+        "description": "",
+        "time_added": 1773516227,
+        "progress": 0,
+        "progress_timestamp": 1773516599
+      }
+    ],
     "16": [
       {
         "id": 1991330748,
@@ -641,6 +652,62 @@
         "time_added": 1773687135,
         "progress": 0,
         "progress_timestamp": 1773733246
+      },
+      {
+        "id": 1991894296,
+        "url": "https://newsletter.manager.dev/p/the-unwritten-laws-of-software-engineering",
+        "title": "The unwritten laws of software engineering",
+        "description": "",
+        "time_added": 1773772499,
+        "progress": 0,
+        "progress_timestamp": 1773772512
+      },
+      {
+        "id": 1991894342,
+        "url": "https://www.davesnider.com/posts/claude-3d",
+        "title": "Claude tips for 3D work",
+        "description": "",
+        "time_added": 1773772508,
+        "progress": 0,
+        "progress_timestamp": 1773772512
+      },
+      {
+        "id": 1991894727,
+        "url": "https://kevinboone.me/small_web_is_big.html",
+        "title": "Kevin Boone: The “small web” is bigger than you might think",
+        "description": "",
+        "time_added": 1773772580,
+        "progress": 0,
+        "progress_timestamp": 1773772602
+      },
+      {
+        "id": 1991894930,
+        "url": "https://www.science.org/content/article/why-i-may-hire-ai-instead-graduate-student",
+        "title": "Why I may ‘hire’ AI instead of a graduate student",
+        "description": "",
+        "time_added": 1773772624,
+        "progress": 0,
+        "progress_timestamp": 1773773108
+      }
+    ],
+    "19": [
+      {
+        "id": 1992644500,
+        "url": "https://www.ms.now/ali-velshi/project-2025-heritage-foundation-plan-american-women-abortion-education-family",
+        "title": "The group behind Project 2025 has a chilling new plan for America’s women",
+        "description": "",
+        "time_added": 1773944212,
+        "progress": 0,
+        "progress_timestamp": 1773945295
+      },
+      {
+        "id": 1992323559,
+        "url": "https://addyosmani.com/blog/comprehension-debt/",
+        "title": "Comprehension Debt - the hidden cost of AI generated code.",
+        "description": "",
+        "time_added": 1773863115,
+        "progress": 0,
+        "progress_timestamp": 1773906828
       }
     ],
     "02": [
@@ -854,6 +921,15 @@
         "time_added": 1772626251,
         "progress": 0,
         "progress_timestamp": 1772652020
+      },
+      {
+        "id": 1987039875,
+        "url": "https://schipper.ai/posts/parallel-coding-agents/",
+        "title": "How I run 4–8 parallel coding agents with tmux and Markdown specs — Manuel Schipper",
+        "description": "",
+        "time_added": 1772623558,
+        "progress": 0,
+        "progress_timestamp": 1772626111
       }
     ],
     "06": [
