@@ -786,6 +786,15 @@
         "time_added": 1774376876,
         "progress": 0,
         "progress_timestamp": 1774384239
+      },
+      {
+        "id": 1994493283,
+        "url": "https://crimereads.com/how-to-spot-a-liar-kate-white-on-the-techniques-of-deception-in-mysteries/",
+        "title": "How to Spot a Liar: Kate White on the Techniques of Deception in Mysteries",
+        "description": "",
+        "time_added": 1774376796,
+        "progress": 0,
+        "progress_timestamp": 1774384240
       }
     ],
     "29": [
@@ -797,6 +806,26 @@
         "time_added": 1774533937,
         "progress": 0,
         "progress_timestamp": 1774767591
+      }
+    ],
+    "30": [
+      {
+        "id": 1995252722,
+        "url": "https://theconversation.com/your-next-puffer-jacket-could-be-made-from-bulrushes-as-carbon-storing-peat-farming-takes-off-269958",
+        "title": "Your next puffer jacket could be made from bulrushes, as carbon-storing peat farming takes off",
+        "description": "",
+        "time_added": 1774533968,
+        "progress": 0,
+        "progress_timestamp": 1774884594
+      },
+      {
+        "id": 1996414988,
+        "url": "https://thoughtshrapnel.com/2026/03/28/is-all-about-aspirational-humanity.html",
+        "title": "2026 is about 'Aspirational Humanity' – amongst other things",
+        "description": "",
+        "time_added": 1774777438,
+        "progress": 0,
+        "progress_timestamp": 1774884592
       }
     ],
     "31": [
@@ -1135,6 +1164,19 @@
         "time_added": 1773044864,
         "progress": 0,
         "progress_timestamp": 1773048154
+      }
+    ]
+  },
+  "04": {
+    "01": [
+      {
+        "id": 1996415898,
+        "url": "https://www.theatlantic.com/technology/2026/03/ai-boom-polycrisis/686559/",
+        "title": "Welcome to a Multidimensional Economic Disaster",
+        "description": "",
+        "time_added": 1775077934,
+        "progress": 0.242674,
+        "progress_timestamp": 1775077932
       }
     ]
   }
