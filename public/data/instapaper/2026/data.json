@@ -837,6 +837,15 @@
         "time_added": 1774856440,
         "progress": 0,
         "progress_timestamp": 1774940958
+      },
+      {
+        "id": 1996856010,
+        "url": "https://investorplace.com/hypergrowthinvesting/2026/02/the-great-decoupling-how-ai-is-rewriting-the-labor-market/",
+        "title": "The Great Decoupling: How AI Is Rewriting the Labor Market",
+        "description": "",
+        "time_added": 1774884609,
+        "progress": 0,
+        "progress_timestamp": 1774945725
       }
     ],
     "02": [
@@ -1177,6 +1186,15 @@
         "time_added": 1775077934,
         "progress": 0.242674,
         "progress_timestamp": 1775077932
+      },
+      {
+        "id": 1997820657,
+        "url": "https://techfixated.com/stop-trying-to-educate-people-into-changing-science-proves-it-doesnt-work/",
+        "title": "Stop trying to ‘educate’ people into changing. Science proves it doesn’t work",
+        "description": "",
+        "time_added": 1775076390,
+        "progress": 0,
+        "progress_timestamp": 1775077888
       }
     ],
     "04": [
@@ -1188,6 +1206,26 @@
         "time_added": 1775296469,
         "progress": 0,
         "progress_timestamp": 1775315824
+      }
+    ],
+    "06": [
+      {
+        "id": 1999749478,
+        "url": "https://newrepublic.com/article/208633/trump-presidency-collapse-truth-social-iran",
+        "title": "You Can Smell It Now: The Trump Presidency Is in Total Free-Fall",
+        "description": "",
+        "time_added": 1775495096,
+        "progress": 0,
+        "progress_timestamp": 1775505535
+      },
+      {
+        "id": 1999563703,
+        "url": "https://tedcurran.net/2014/12/posse-blog-center-digital-life/",
+        "title": "POSSE: Why Your Blog Should Be the Center of Your Digital Life",
+        "description": "",
+        "time_added": 1775459725,
+        "progress": 0,
+        "progress_timestamp": 1775461416
       }
     ]
   }
