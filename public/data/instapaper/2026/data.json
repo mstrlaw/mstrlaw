@@ -1227,6 +1227,17 @@
         "progress": 0,
         "progress_timestamp": 1775461416
       }
+    ],
+    "09": [
+      {
+        "id": 2000793233,
+        "url": "https://www.newyorker.com/culture/infinite-scroll/the-age-old-urge-to-destroy-technology",
+        "title": "The Age-Old Urge to Destroy Technology",
+        "description": "",
+        "time_added": 1775723921,
+        "progress": 0,
+        "progress_timestamp": 1775746564
+      }
     ]
   }
 }
