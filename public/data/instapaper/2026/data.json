@@ -826,6 +826,15 @@
         "time_added": 1774777438,
         "progress": 0,
         "progress_timestamp": 1774884592
+      },
+      {
+        "id": 1995384896,
+        "url": "https://www.theguardian.com/lifeandstyle/2026/mar/26/ai-chatbot-users-lives-wrecked-by-delusion",
+        "title": "Marriage over, €100,000 down the drain: the AI users whose lives were wrecked by delusion",
+        "description": "",
+        "time_added": 1774554983,
+        "progress": 0,
+        "progress_timestamp": 1774884594
       }
     ],
     "31": [
@@ -1177,6 +1186,26 @@
     ]
   },
   "04": {
+    "10": [
+      {
+        "id": 2001237830,
+        "url": "https://www.theatlantic.com/technology/2026/04/claude-mythos-hacking/686746/",
+        "title": "Claude Mythos Is Everyone’s Problem",
+        "description": "",
+        "time_added": 1775839044,
+        "progress": 0,
+        "progress_timestamp": 1775839429
+      },
+      {
+        "id": 2001081065,
+        "url": "https://leehanchung.github.io/blogs/2026/04/05/the-ai-great-leap-forward/",
+        "title": "The AI Great Leap Forward",
+        "description": "",
+        "time_added": 1775839439,
+        "progress": 0.807106,
+        "progress_timestamp": 1775839437
+      }
+    ],
     "01": [
       {
         "id": 1996415898,
@@ -1237,6 +1266,35 @@
         "time_added": 1775723921,
         "progress": 0,
         "progress_timestamp": 1775746564
+      }
+    ],
+    "07": [
+      {
+        "id": 2000090194,
+        "url": "https://mindfooled.substack.com/p/savoir-utiliser-la-machine-a-penser",
+        "title": "Savoir utiliser la machine à penser",
+        "description": "",
+        "time_added": 1775839443,
+        "progress": 0,
+        "progress_timestamp": 1775561778
+      },
+      {
+        "id": 2000087703,
+        "url": "https://reclaimedsystems.substack.com/p/ai-is-degenerating-human-ecologies",
+        "title": "AI is degenerating human ecologies of knowledge",
+        "description": "",
+        "time_added": 1775561088,
+        "progress": 0,
+        "progress_timestamp": 1775561786
+      },
+      {
+        "id": 2000033678,
+        "url": "https://newsletter.weskao.com/p/your-manager-is-already-investing",
+        "title": "Your manager is already investing in you",
+        "description": "",
+        "time_added": 1775550295,
+        "progress": 0,
+        "progress_timestamp": 1775550795
       }
     ]
   }
