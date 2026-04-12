@@ -1206,6 +1206,71 @@
         "progress_timestamp": 1775839437
       }
     ],
+    "11": [
+      {
+        "id": 2001465781,
+        "url": "https://www.jwz.org/blog/2026/04/popup-video-2/",
+        "title": "jwz: Popup video",
+        "description": "",
+        "time_added": 1775905512,
+        "progress": 0,
+        "progress_timestamp": 1775906419
+      },
+      {
+        "id": 2001453871,
+        "url": "https://lizplank.substack.com/p/artemis-ii-is-competency-porn-and",
+        "title": "Artemis II Is Competency Porn and We Are Starving For It",
+        "description": "",
+        "time_added": 1775902081,
+        "progress": 0,
+        "progress_timestamp": 1775906422
+      },
+      {
+        "id": 2001453280,
+        "url": "https://www.lemonde.fr/en/opinion/article/2026/04/11/thomas-piketty-1789-1945-2026-three-french-debt-crises_6752307_23.html",
+        "title": "Client Challenge",
+        "description": "",
+        "time_added": 1775901899,
+        "progress": 0,
+        "progress_timestamp": 1775906423
+      },
+      {
+        "id": 2001449135,
+        "url": "https://steveblank.com/2026/04/09/nowhere-is-safe/",
+        "title": "Steve Blank Nowhere Is Safe",
+        "description": "",
+        "time_added": 1775900519,
+        "progress": 0,
+        "progress_timestamp": 1775906424
+      },
+      {
+        "id": 2001450414,
+        "url": "https://www.natesilver.net/p/social-media-has-become-a-freak-show",
+        "title": "Social media is turning into a freak show",
+        "description": "",
+        "time_added": 1775900957,
+        "progress": 0,
+        "progress_timestamp": 1775906423
+      },
+      {
+        "id": 2001449410,
+        "url": "https://www.nytimes.com/2026/04/10/us/open-ai-sam-altman-molotov-cocktail.html",
+        "title": "Molotov Cocktail Is Hurled at Home of OpenAI C.E.O. Sam Altman",
+        "description": "",
+        "time_added": 1775900616,
+        "progress": 0,
+        "progress_timestamp": 1775906423
+      },
+      {
+        "id": 2001453952,
+        "url": "https://www.issuewire.com/technofascism-survival-guides-successful-kickstarter-indicates-growing-public-concern-about-gen-ai-mass-surveillance-1859856371446643",
+        "title": "Technofascism Survival Guide’s successful Kickstarter indicates growing public concern about Gen AI, mass surveillance - IssueWire",
+        "description": "",
+        "time_added": 1775902105,
+        "progress": 0,
+        "progress_timestamp": 1775906419
+      }
+    ],
     "01": [
       {
         "id": 1996415898,
