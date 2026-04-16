@@ -1345,6 +1345,46 @@
         "time_added": 1776151749,
         "progress": 0,
         "progress_timestamp": 1776152020
+      },
+      {
+        "id": 2002317440,
+        "url": "https://terrygodier.com/the-last-quiet-thing",
+        "title": "The Last Quiet Thing",
+        "description": "",
+        "time_added": 1776155409,
+        "progress": 0,
+        "progress_timestamp": 1776164737
+      },
+      {
+        "id": 2002464458,
+        "url": "https://aphyr.com/posts/418-the-future-of-everything-is-lies-i-guess-work",
+        "title": "The Future of Everything is Lies, I Guess: Work",
+        "description": "",
+        "time_added": 1776188327,
+        "progress": 0,
+        "progress_timestamp": 1776195765
+      }
+    ],
+    "15": [
+      {
+        "id": 2002687108,
+        "url": "https://news.ycombinator.com/item?id=47722081",
+        "title": "Ask HN: Hiring in the age of AI-assisted coding: what works? | Hacker News",
+        "description": "",
+        "time_added": 1776244720,
+        "progress": 0,
+        "progress_timestamp": 1776250655
+      }
+    ],
+    "16": [
+      {
+        "id": 2003011743,
+        "url": "https://www.securityweek.com/by-design-flaw-in-mcp-could-enable-widespread-ai-supply-chain-attacks/",
+        "title": "‘By Design’ Flaw in MCP Could Enable Widespread AI Supply Chain Attacks",
+        "description": "",
+        "time_added": 1776324372,
+        "progress": 0,
+        "progress_timestamp": 1776324468
       }
     ],
     "01": [
