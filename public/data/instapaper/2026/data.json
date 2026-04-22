@@ -1394,6 +1394,64 @@
         "time_added": 1776324372,
         "progress": 0,
         "progress_timestamp": 1776324468
+      },
+      {
+        "id": 2003166901,
+        "url": "https://www.cnn.com/interactive/2026/03/world/expose-rape-assault-online-vis-intl/index.html",
+        "title": "Exposing a global ‘online rape academy’ that is teaching men how to abuse women and evade detection",
+        "description": "",
+        "time_added": 1776359893,
+        "progress": 0,
+        "progress_timestamp": 1776359896
+      }
+    ],
+    "20": [
+      {
+        "id": 2004335838,
+        "url": "https://jan.wildeboer.net/2026/04/DigitalAutonomy/",
+        "title": "Hello Digital Autonomy",
+        "description": "",
+        "time_added": 1776698842,
+        "progress": 0,
+        "progress_timestamp": 1776702221
+      }
+    ],
+    "21": [
+      {
+        "id": 2004656470,
+        "url": "https://devops-daily.com/posts/vercel-april-2026-security-incident",
+        "title": "The Vercel April 2026 Security Incident: What Happened and What to Do About It",
+        "description": "",
+        "time_added": 1776779261,
+        "progress": 0,
+        "progress_timestamp": 1776788533
+      },
+      {
+        "id": 2004576856,
+        "url": "https://eco.sapo.pt/2026/04/20/americana-aws-vende-soberania-a-ue-com-nova-cloud-em-portugal/",
+        "title": "Americana AWS vende “soberania” à UE com nova ‘cloud’ em Portugal",
+        "description": "",
+        "time_added": 1776761420,
+        "progress": 0,
+        "progress_timestamp": 1776768622
+      },
+      {
+        "id": 2004572022,
+        "url": "https://your-undivided-attention.simplecast.com/episodes/have-we-trained-ai-to-lie-to-itself-and-to-us-rn4pQ6p6",
+        "title": "Have We Trained AI to Lie to Itself — And to Us? | Your Undivided Attention",
+        "description": "",
+        "time_added": 1776759794,
+        "progress": 0,
+        "progress_timestamp": 1776759800
+      },
+      {
+        "id": 2004360881,
+        "url": "https://leaddev.com/career-development/the-end-of-the-non-technical-engineering-manager",
+        "title": "The end of the non-technical engineering manager",
+        "description": "",
+        "time_added": 1776703963,
+        "progress": 0,
+        "progress_timestamp": 1776757325
       }
     ],
     "01": [
