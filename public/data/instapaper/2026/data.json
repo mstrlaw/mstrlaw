@@ -1519,6 +1519,53 @@
         "progress_timestamp": 1776850675
       }
     ],
+    "27": [
+      {
+        "id": 2006540350,
+        "url": "https://www.theguardian.com/environment/2026/apr/24/global-oil-crisis-changed-fossil-fuel-industry-for-ever-iea-chief-fatih-birol",
+        "title": "‘The damage is done’: global oil crisis has changed fossil fuel industry for ever, IEA chief says",
+        "description": "",
+        "time_added": 1777312481,
+        "progress": 0,
+        "progress_timestamp": 1777314188
+      },
+      {
+        "id": 2006539010,
+        "url": "https://www.nytimes.com/2026/04/27/opinion/the-prepper-delusion.html?unlocked_article_code=1.eFA.fO7E.nBmsHcYtOF_l&smid=url-share",
+        "title": "The Prepper Delusion",
+        "description": "",
+        "time_added": 1777312198,
+        "progress": 0,
+        "progress_timestamp": 1777314189
+      },
+      {
+        "id": 2006529577,
+        "url": "https://www.thestar.com/news/gta/the-underground-farm-hiding-in-this-toronto-parking-garage/article_1a53e5a6-a69b-4db7-ba07-ba19bb7fdc8e.html",
+        "title": "The underground farm hiding in this Toronto parking garage",
+        "description": "",
+        "time_added": 1777309979,
+        "progress": 0,
+        "progress_timestamp": 1777314190
+      },
+      {
+        "id": 2006522540,
+        "url": "https://www.techzine.eu/news/infrastructure/140634/dutch-central-bank-chooses-lidl-for-european-cloud/",
+        "title": "Dutch central bank chooses Lidl for European Cloud",
+        "description": "",
+        "time_added": 1777308655,
+        "progress": 0,
+        "progress_timestamp": 1777314195
+      },
+      {
+        "id": 2006490331,
+        "url": "https://theconversation.com/as-the-world-faces-yet-another-crisis-why-are-leaders-still-resisting-remote-work-280870",
+        "title": "As the world faces yet another crisis, why are leaders still resisting remote work?",
+        "description": "",
+        "time_added": 1777301378,
+        "progress": 0,
+        "progress_timestamp": 1777307015
+      }
+    ],
     "01": [
       {
         "id": 1996415898,
