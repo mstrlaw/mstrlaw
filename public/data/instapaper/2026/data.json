@@ -1307,6 +1307,15 @@
         "time_added": 1776098976,
         "progress": 0,
         "progress_timestamp": 1776109419
+      },
+      {
+        "id": 2002132364,
+        "url": "https://www.thealgorithmicbridge.com/p/ai-will-be-met-with-violence-and",
+        "title": "AI Will Be Met With Violence, and Nothing Good Will Come of It",
+        "description": "",
+        "time_added": 1776101205,
+        "progress": 0,
+        "progress_timestamp": 1776109416
       }
     ],
     "14": [
@@ -1372,6 +1381,15 @@
         "time_added": 1776329080,
         "progress": 0,
         "progress_timestamp": 1776164740
+      },
+      {
+        "id": 2002457852,
+        "url": "https://martinfowler.com/articles/ship-show-ask.html",
+        "title": "Ship / Show / Ask",
+        "description": "",
+        "time_added": 1776186961,
+        "progress": 0,
+        "progress_timestamp": 1776195766
       }
     ],
     "15": [
@@ -1519,6 +1537,37 @@
         "progress_timestamp": 1776850675
       }
     ],
+    "23": [
+      {
+        "id": 2005259929,
+        "url": "https://www.joanwestenberg.com/why-prediction-markets-are-a-sure-sign-that-our-civilisation-is-in-decay/",
+        "title": "Why prediction markets are a sure sign that our civilisation is in decay",
+        "description": "",
+        "time_added": 1776928478,
+        "progress": 0,
+        "progress_timestamp": 1776930628
+      },
+      {
+        "id": 2005276304,
+        "url": "https://fortune.com/2026/04/15/pause-ai-and-stop-ai-meet-the-anti-ai-groups-facing-questions-after-the-attack-on-sam-altman/",
+        "title": "The Sam Altman attack is putting two anti-AI groups under scrutiny—but the story is more complicated | Fortune",
+        "description": "",
+        "time_added": 1776934193,
+        "progress": 0,
+        "progress_timestamp": 1776934581
+      }
+    ],
+    "24": [
+      {
+        "id": 2005781223,
+        "url": "https://collapse2050.substack.com/p/the-planet-is-dying-but-youve-got",
+        "title": "The Planet is Dying but You've Got Work on Monday",
+        "description": "",
+        "time_added": 1777060489,
+        "progress": 0,
+        "progress_timestamp": 1777069493
+      }
+    ],
     "27": [
       {
         "id": 2006540350,
@@ -1575,6 +1624,17 @@
         "time_added": 1777384016,
         "progress": 0,
         "progress_timestamp": 1777401603
+      }
+    ],
+    "30": [
+      {
+        "id": 2007249332,
+        "url": "https://www.theatlantic.com/technology/2026/04/trump-assassination-staged-conspiracy/686980/",
+        "title": "The Ballroom Truthers Have a Theory",
+        "description": "",
+        "time_added": 1777499060,
+        "progress": 0,
+        "progress_timestamp": 1777534424
       }
     ],
     "01": [
@@ -1666,6 +1726,46 @@
         "time_added": 1775550295,
         "progress": 0,
         "progress_timestamp": 1775550795
+      }
+    ]
+  },
+  "05": {
+    "04": [
+      {
+        "id": 2008561596,
+        "url": "https://craphound.com/news/2026/05/03/comrade-trump/",
+        "title": "Comrade Trump | Cory Doctorow's craphound.com",
+        "description": "",
+        "time_added": 1777918414,
+        "progress": 0,
+        "progress_timestamp": 1777918429
+      },
+      {
+        "id": 2008572109,
+        "url": "https://mobeigi.com/blog/security/security-through-obscurity-is-not-bad/",
+        "title": "Security Through Obscurity Is NOT Bad - Mo Beigi",
+        "description": "",
+        "time_added": 1777915764,
+        "progress": 0,
+        "progress_timestamp": 1777918418
+      },
+      {
+        "id": 2008565260,
+        "url": "https://theconversation.com/how-does-the-uk-press-report-net-zero-we-studied-500-articles-to-find-out-280701",
+        "title": "How does the UK press report net zero? We studied 500 articles to find out",
+        "description": "",
+        "time_added": 1777914091,
+        "progress": 0,
+        "progress_timestamp": 1777918421
+      },
+      {
+        "id": 2008564262,
+        "url": "https://fortune.com/2026/05/04/godfather-of-ai-geoffrey-hinton-radiologists-future-of-work-tech-ai-job-anxiety/",
+        "title": "A decade after the ‘Godfather of AI’ said radiologists were obsolete, their salaries are up to $571K and demand is growing fast | Fortune",
+        "description": "",
+        "time_added": 1777913856,
+        "progress": 0,
+        "progress_timestamp": 1777918428
       }
     ]
   }
