@@ -1787,6 +1787,17 @@
         "progress": 0,
         "progress_timestamp": 1777972351
       }
+    ],
+    "06": [
+      {
+        "id": 2009064500,
+        "url": "https://leaddev.com/reporting/dora-metrics-are-lying-to-you-and-ai-is-making-it-worse",
+        "title": "DORA metrics are lying to you and AI is making it worse",
+        "description": "",
+        "time_added": 1778054712,
+        "progress": 0,
+        "progress_timestamp": 1778058894
+      }
     ]
   }
 }
