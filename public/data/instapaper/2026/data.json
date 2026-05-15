@@ -1730,6 +1730,17 @@
     ]
   },
   "05": {
+    "10": [
+      {
+        "id": 2010337378,
+        "url": "https://www.theverge.com/tech/927294/substack-tax-ghost-beehiiv",
+        "title": "Writers are fleeing the Substack Tax",
+        "description": "",
+        "time_added": 1778423072,
+        "progress": 0,
+        "progress_timestamp": 1778436223
+      }
+    ],
     "12": [
       {
         "id": 2010862430,
@@ -1739,6 +1750,35 @@
         "time_added": 1778589065,
         "progress": 0,
         "progress_timestamp": 1778592606
+      },
+      {
+        "id": 2010831323,
+        "url": "https://www.rug.nl/library/open-access/blog/a-university-library-on-instagram-we-want-to-leave-but-then-what",
+        "title": "Als universiteitsbibliotheek op Instagram: we willen stoppen, maar wat dan?",
+        "description": "",
+        "time_added": 1778581193,
+        "progress": 0,
+        "progress_timestamp": 1778592569
+      }
+    ],
+    "14": [
+      {
+        "id": 2011310604,
+        "url": "https://shifter.pt/2026/05/bem-vindos-a-era-dos-eletroestados/",
+        "title": "Bem-Vindos à Era dos Eletroestados",
+        "description": "",
+        "time_added": 1778703877,
+        "progress": 0,
+        "progress_timestamp": 1778765005
+      },
+      {
+        "id": 2011427215,
+        "url": "https://www.nytimes.com/2026/05/13/us/politics/nyu-graduation-speaker-free-speech-jonathan-haidt.html?smid=tw-share",
+        "title": "N.Y.U. Students Object to Speaker Who Calls Their Generation Coddled",
+        "description": "",
+        "time_added": 1778742860,
+        "progress": 0,
+        "progress_timestamp": 1778765004
       }
     ],
     "04": [
@@ -1777,6 +1817,15 @@
         "time_added": 1777913856,
         "progress": 0,
         "progress_timestamp": 1777918428
+      },
+      {
+        "id": 2008574156,
+        "url": "https://ambrook.com/offrange/environment/a-forest-in-your-pocket",
+        "title": "Make Your Own Micro Forest",
+        "description": "",
+        "time_added": 1777966669,
+        "progress": 0,
+        "progress_timestamp": 1777918415
       }
     ],
     "05": [
@@ -1797,6 +1846,15 @@
         "time_added": 1777969042,
         "progress": 0,
         "progress_timestamp": 1777972351
+      },
+      {
+        "id": 2008744318,
+        "url": "https://www.mcsweeneys.net/articles/mommy-are-the-inspirational-stories-on-linkedin-real",
+        "title": "Mommy, Are the Inspirational Stories on LinkedIn Real?",
+        "description": "",
+        "time_added": 1777966710,
+        "progress": 0,
+        "progress_timestamp": 1777966730
       }
     ],
     "06": [
@@ -1808,6 +1866,24 @@
         "time_added": 1778054712,
         "progress": 0,
         "progress_timestamp": 1778058894
+      },
+      {
+        "id": 2009158868,
+        "url": "https://www.joanwestenberg.com/emotional-regulation-is-a-dying-art/",
+        "title": "Emotional regulation is a dying art.",
+        "description": "",
+        "time_added": 1778076054,
+        "progress": 0,
+        "progress_timestamp": 1778076586
+      },
+      {
+        "id": 2009054840,
+        "url": "https://www.theguardian.com/commentisfree/2026/apr/25/phones-social-media-damaging-mental-health",
+        "title": "Even without social media, phones have a subtle, damaging effect on our mental health | Devi Sridhar",
+        "description": "",
+        "time_added": 1778051847,
+        "progress": 0,
+        "progress_timestamp": 1778052653
       }
     ],
     "07": [
@@ -1817,6 +1893,15 @@
         "title": "Cruise ship hantavirus outbreak worries experts, though they discount pandemic fears",
         "description": "",
         "time_added": 1778160374,
+        "progress": 0,
+        "progress_timestamp": 1778161152
+      },
+      {
+        "id": 2009475039,
+        "url": "https://www.dashlane.com/blog/how-we-governed-ai-coding",
+        "title": "Beyond the Engineering Team: How We Governed AI Coding for Everyone | Dashlane",
+        "description": "",
+        "time_added": 1778160552,
         "progress": 0,
         "progress_timestamp": 1778161152
       }
