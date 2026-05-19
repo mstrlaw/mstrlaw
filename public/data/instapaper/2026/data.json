@@ -1781,6 +1781,35 @@
         "progress_timestamp": 1778765004
       }
     ],
+    "18": [
+      {
+        "id": 2012668529,
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/linkedin-recruitment-spam-becomes-olde-english-prose-after-user-hides-ai-prompt-injection-in-bio-bots-also-also-manipulated-to-address-user-as-my-lord",
+        "title": "LinkedIn user hides AI prompt injection in bio to force recruitment spam to be sent in Olde English prose — bots also manipulated to address user as ‘My Lord’",
+        "description": "",
+        "time_added": 1779125467,
+        "progress": 0,
+        "progress_timestamp": 1779135989
+      },
+      {
+        "id": 2012549490,
+        "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai/",
+        "title": "Meet the Sad Wives of AI",
+        "description": "",
+        "time_added": 1779097822,
+        "progress": 0,
+        "progress_timestamp": 1779111148
+      },
+      {
+        "id": 2012537861,
+        "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+        "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+        "description": "",
+        "time_added": 1779093777,
+        "progress": 0,
+        "progress_timestamp": 1779111165
+      }
+    ],
     "04": [
       {
         "id": 2008561596,
