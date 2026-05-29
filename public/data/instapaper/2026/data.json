@@ -1899,6 +1899,26 @@
         "progress_timestamp": 1779846669
       }
     ],
+    "28": [
+      {
+        "id": 2015235385,
+        "url": "https://www.blog4ems.com/p/stop-interviewing-engineers-like-its-2022",
+        "title": "Stop interviewing engineers like it's 2022",
+        "description": "",
+        "time_added": 1779873756,
+        "progress": 0,
+        "progress_timestamp": 1779991217
+      },
+      {
+        "id": 2015614863,
+        "url": "https://arps18.github.io/posts/claude-code-mastery/",
+        "title": "Beyond the Prompt: Claude Code",
+        "description": "",
+        "time_added": 1779989697,
+        "progress": 0,
+        "progress_timestamp": 1779991239
+      }
+    ],
     "04": [
       {
         "id": 2008561596,
