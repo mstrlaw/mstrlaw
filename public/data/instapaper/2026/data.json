@@ -2044,5 +2044,27 @@
         "progress_timestamp": 1778161152
       }
     ]
+  },
+  "06": {
+    "02": [
+      {
+        "id": 2016607237,
+        "url": "https://www.euronews.com/2026/06/01/germany-is-a-leader-in-renewables-so-why-does-it-have-one-of-the-highest-eu-electricity-pr",
+        "title": "EU electricity prices ranked – and it’s bad news for Germany",
+        "description": "",
+        "time_added": 1780314979,
+        "progress": 0,
+        "progress_timestamp": 1780365731
+      },
+      {
+        "id": 2016563593,
+        "url": "https://www.theguardian.com/commentisfree/2026/jun/01/ai-meaning-humanity-political-moment-trust-humans-over-machines",
+        "title": "AI is devoid of meaning and humanity. That’s why its vapid voice suits this political moment | Nesrine Malik",
+        "description": "",
+        "time_added": 1780300653,
+        "progress": 0,
+        "progress_timestamp": 1780365731
+      }
+    ]
   }
 }
