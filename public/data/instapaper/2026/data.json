@@ -2065,6 +2065,26 @@
         "progress": 0,
         "progress_timestamp": 1780365731
       }
+    ],
+    "03": [
+      {
+        "id": 2016972371,
+        "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+        "title": "AI Doesn't Have ROI",
+        "description": "",
+        "time_added": 1780420137,
+        "progress": 0,
+        "progress_timestamp": 1780452768
+      },
+      {
+        "id": 2016972276,
+        "url": "https://techcrunch.com/2026/06/02/password-manager-dashlane-says-hackers-stole-some-customers-password-vaults/",
+        "title": "Password manager Dashlane says hackers stole some customers' password vaults | TechCrunch",
+        "description": "",
+        "time_added": 1780420120,
+        "progress": 0,
+        "progress_timestamp": 1780452768
+      }
     ]
   }
 }
