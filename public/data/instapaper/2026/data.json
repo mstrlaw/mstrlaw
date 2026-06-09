@@ -2085,6 +2085,62 @@
         "progress": 0,
         "progress_timestamp": 1780452768
       }
+    ],
+    "08": [
+      {
+        "id": 2018557149,
+        "url": "https://www.ft.com/content/ca0f5f5e-fb9a-41a0-a2a9-0127e15b7db9",
+        "title": "\"Chat is dead\": OpenAI preps overhaul of ChatGPT",
+        "description": "",
+        "time_added": 1780937494,
+        "progress": 0,
+        "progress_timestamp": 1780937496
+      },
+      {
+        "id": 2018480952,
+        "url": "https://performance.dev/how-is-linear-so-fast-a-technical-breakdown",
+        "title": "How's Linear so fast? A technical breakdown",
+        "description": "",
+        "time_added": 1780918779,
+        "progress": 0,
+        "progress_timestamp": 1780937499
+      },
+      {
+        "id": 2018475012,
+        "url": "https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/",
+        "title": "LLMs are eroding my software engineering career and I don't know what to do",
+        "description": "",
+        "time_added": 1780917046,
+        "progress": 0,
+        "progress_timestamp": 1780937503
+      },
+      {
+        "id": 2018469549,
+        "url": "https://algorithmichiring.github.io/",
+        "title": "Algorithmic Monocultures in Hiring",
+        "description": "",
+        "time_added": 1780915427,
+        "progress": 0,
+        "progress_timestamp": 1780937505
+      },
+      {
+        "id": 2018445272,
+        "url": "https://spacetimetech.wordpress.com/2026/06/02/the-gemini-protocol/",
+        "title": "The Gemini protocol",
+        "description": "",
+        "time_added": 1780907340,
+        "progress": 0,
+        "progress_timestamp": 1780937508
+      },
+      {
+        "id": 2018438743,
+        "url": "https://thenewstack.io/netlify-agent-experience-engineers/",
+        "title": "Netlify CTO Dana Lawson: Writing code is no longer the job",
+        "description": "",
+        "time_added": 1780904310,
+        "progress": 0,
+        "progress_timestamp": 1780913002
+      }
     ]
   }
 }
