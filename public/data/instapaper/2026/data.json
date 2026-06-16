@@ -2066,6 +2066,26 @@
         "progress_timestamp": 1781402381
       }
     ],
+    "16": [
+      {
+        "id": 2020127562,
+        "url": "https://craphound.com/news/2026/06/14/the-world-has-moved-on/",
+        "title": "The world has moved on | Cory Doctorow's craphound.com",
+        "description": "",
+        "time_added": 1781543005,
+        "progress": 0,
+        "progress_timestamp": 1781575946
+      },
+      {
+        "id": 2020058843,
+        "url": "https://www.theguardian.com/environment/2026/jun/15/weather-tracker-sahara-heatwave-temperatures-europe-australia",
+        "title": "Weather tracker: Saharan heat to send temperatures soaring across Europe",
+        "description": "",
+        "time_added": 1781524711,
+        "progress": 0,
+        "progress_timestamp": 1781575946
+      }
+    ],
     "02": [
       {
         "id": 2016607237,
