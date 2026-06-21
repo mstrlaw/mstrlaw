@@ -1289,6 +1289,17 @@
         "progress_timestamp": 1775941338
       }
     ],
+    "12": [
+      {
+        "id": 2001802789,
+        "url": "https://www.theguardian.com/us-news/ng-interactive/2025/apr/13/end-times-fascism-far-right-trump-musk",
+        "title": "The rise of end times fascism | Naomi Klein and Astra Taylor",
+        "description": "",
+        "time_added": 1776019155,
+        "progress": 0,
+        "progress_timestamp": 1776022789
+      }
+    ],
     "13": [
       {
         "id": 2002124813,
@@ -1781,6 +1792,17 @@
         "progress_timestamp": 1778765004
       }
     ],
+    "17": [
+      {
+        "id": 2012313504,
+        "url": "https://alexdimango.com/blog/software-engineering-reset/",
+        "title": "Software engineering reset. Most engineering leaders are still managing the old version. | Alex Di Mango",
+        "description": "",
+        "time_added": 1779012890,
+        "progress": 0,
+        "progress_timestamp": 1779025155
+      }
+    ],
     "18": [
       {
         "id": 2012668529,
@@ -1808,6 +1830,15 @@
         "time_added": 1779093777,
         "progress": 0,
         "progress_timestamp": 1779111165
+      },
+      {
+        "id": 2012663682,
+        "url": "https://web.archive.org/web/20260515113210/https://www.vulture.com/article/social-media-feeds-chaotic-good-projects-clipping.html",
+        "title": "The Feed Is Fake",
+        "description": "",
+        "time_added": 1779124490,
+        "progress": 0,
+        "progress_timestamp": 1779135976
       }
     ],
     "24": [
@@ -1917,6 +1948,42 @@
         "time_added": 1779989697,
         "progress": 0,
         "progress_timestamp": 1779991239
+      },
+      {
+        "id": 2015082769,
+        "url": "https://futurism.com/artificial-intelligence/economics-ai-tokens-crashing-down",
+        "title": "The Horrible Economics of AI Are Starting to Come Crashing Down",
+        "description": "",
+        "time_added": 1779824767,
+        "progress": 0,
+        "progress_timestamp": 1779991219
+      },
+      {
+        "id": 2015301544,
+        "url": "https://www.wheresyoured.at/the-revenge-of-the-business-idiot/",
+        "title": "Revenge of The Business Idiot",
+        "description": "",
+        "time_added": 1779889946,
+        "progress": 0,
+        "progress_timestamp": 1779991216
+      },
+      {
+        "id": 2015592603,
+        "url": "https://meiert.com/blog/websites-are-not-going-to-die/",
+        "title": "Websites Are Not Going to Die · Jens Oliver Meiert",
+        "description": "",
+        "time_added": 1779985062,
+        "progress": 0,
+        "progress_timestamp": 1779991215
+      },
+      {
+        "id": 2015598748,
+        "url": "https://futuresearch.ai/blog/agi-timeline-tracker/",
+        "title": "How long until AI automates all cognitive labor?",
+        "description": "",
+        "time_added": 1779986535,
+        "progress": 0,
+        "progress_timestamp": 1779991209
       }
     ],
     "04": [
@@ -2142,6 +2209,53 @@
         "time_added": 1781767881,
         "progress": 0,
         "progress_timestamp": 1781835690
+      }
+    ],
+    "21": [
+      {
+        "id": 2021349800,
+        "url": "https://www.theescapenewsletter.com/p/the-airpods-effect",
+        "title": "The AirPods Effect",
+        "description": "",
+        "time_added": 1781941283,
+        "progress": 0,
+        "progress_timestamp": 1782007466
+      },
+      {
+        "id": 2021350115,
+        "url": "https://rbelmont.mameworld.info/?p=1725",
+        "title": "Arbee's WIP Emporium » I need your clothes, your boots, and your motorcycle",
+        "description": "",
+        "time_added": 1781941401,
+        "progress": 0,
+        "progress_timestamp": 1782007466
+      },
+      {
+        "id": 2021348618,
+        "url": "https://shiftmag.dev/ctos-agree-cognitive-debt-is-the-new-technical-debt-10229/",
+        "title": "AI in Engineering Teams: ROI, Code Review, and Hiring",
+        "description": "",
+        "time_added": 1781940765,
+        "progress": 0,
+        "progress_timestamp": 1782007466
+      },
+      {
+        "id": 2021349280,
+        "url": "https://techcrunch.com/2026/06/19/he-made-your-free-video-player-run-smoothly-now-hes-doing-that-for-robots/",
+        "title": "He made your free video player run smoothly. Now he's doing that for robots. | TechCrunch",
+        "description": "",
+        "time_added": 1781941070,
+        "progress": 0,
+        "progress_timestamp": 1782007466
+      },
+      {
+        "id": 2021349760,
+        "url": "https://newsletter.kentbeck.com/p/hey-n00b-we-didnt-hire-you-to-complete",
+        "title": "Hey, N00b, We Didn't Hire You to Complete Tasks",
+        "description": "",
+        "time_added": 1781941271,
+        "progress": 0,
+        "progress_timestamp": 1782007466
       }
     ],
     "02": [
