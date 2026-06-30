@@ -2280,6 +2280,35 @@
         "progress_timestamp": 1782524005
       }
     ],
+    "30": [
+      {
+        "id": 2023324444,
+        "url": "https://apnews.com/article/kara-swisher-pivot-podcast-politics-election-2028-3bf10c88fdaef1142ad2d8e6e9faf648",
+        "title": "Kara Swisher took Silicon Valley by force. Now she's eyeing influence in the 2028 campaign",
+        "description": "",
+        "time_added": 1782736112,
+        "progress": 0,
+        "progress_timestamp": 1782783384
+      },
+      {
+        "id": 2023275830,
+        "url": "https://snarfed.org/2025-07-29_bridging-vs-cross-posting",
+        "title": "Bridging vs cross-posting",
+        "description": "",
+        "time_added": 1782720276,
+        "progress": 0,
+        "progress_timestamp": 1782783384
+      },
+      {
+        "id": 2023270553,
+        "url": "https://www.nytimes.com/2026/06/29/opinion/ai-economy-affordability.html",
+        "title": "The Generational Force Hollowing Out the Economy",
+        "description": "",
+        "time_added": 1782717951,
+        "progress": 0,
+        "progress_timestamp": 1782783384
+      }
+    ],
     "02": [
       {
         "id": 2016607237,
