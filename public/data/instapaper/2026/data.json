@@ -2426,6 +2426,26 @@
         "progress": 0,
         "progress_timestamp": 1782870938
       }
+    ],
+    "06": [
+      {
+        "id": 2024736795,
+        "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
+        "title": "Pluralistic: Zuckerberg’s increasingly bizarre war on whistleblowers (27 Jun 2026) – Pluralistic: Daily links from Cory Doctorow",
+        "description": "",
+        "time_added": 1783273910,
+        "progress": 0,
+        "progress_timestamp": 1783300951
+      },
+      {
+        "id": 2024655675,
+        "url": "https://sicnoticias.pt/meteorologia/2026-07-03-el-nino-sera-forte-e-vai-evoluir-rapidamente-nos-proximos-meses-2cc808e9",
+        "title": "El Niño será \"forte\" e vai evoluir rapidamente nos próximos meses",
+        "description": "",
+        "time_added": 1783242723,
+        "progress": 0,
+        "progress_timestamp": 1783300951
+      }
     ]
   }
 }
