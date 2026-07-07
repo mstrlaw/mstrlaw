@@ -2446,6 +2446,62 @@
         "progress": 0,
         "progress_timestamp": 1783300951
       }
+    ],
+    "07": [
+      {
+        "id": 2024998174,
+        "url": "https://futurism.com/artificial-intelligence/meta-contractors-competitor-ai-with-disturbing-content",
+        "title": "Meta Paid Hundreds of Contractors to Pretend to Be Teenagers While Barraging Its Competitors’ AI With Disturbing Content",
+        "description": "",
+        "time_added": 1783372993,
+        "progress": 0,
+        "progress_timestamp": 1783387347
+      },
+      {
+        "id": 2024956958,
+        "url": "https://www.scientificamerican.com/article/chaotic-pigeons-are-helping-redefine-what-we-know-about-learning/",
+        "title": "Pigeons live ‘at the edge of chaos,’ researchers confirm",
+        "description": "",
+        "time_added": 1783359063,
+        "progress": 0,
+        "progress_timestamp": 1783387347
+      },
+      {
+        "id": 2024956342,
+        "url": "https://theconversation.com/heatwaves-expert-tips-on-redesigning-uk-homes-to-cope-with-hotter-temperatures-286103",
+        "title": "Heatwaves: expert tips on redesigning UK homes to cope with hotter temperatures",
+        "description": "",
+        "time_added": 1783358873,
+        "progress": 0,
+        "progress_timestamp": 1783387347
+      },
+      {
+        "id": 2024954616,
+        "url": "https://www.theguardian.com/commentisfree/2026/jul/06/trump-administration-democracy-resistance",
+        "title": "Trump is a danger to US democracy. But the resistance is working | Kenneth Roth",
+        "description": "",
+        "time_added": 1783358246,
+        "progress": 0,
+        "progress_timestamp": 1783387347
+      },
+      {
+        "id": 2024949121,
+        "url": "https://www.theregister.com/security/2026/07/01/red-teamers-turned-claude-desktop-into-a-double-agent-to-do-their-evil-bidding/5264692",
+        "title": "Red teamers turned Claude Desktop into a double agent to do their evil bidding",
+        "description": "",
+        "time_added": 1783356597,
+        "progress": 0,
+        "progress_timestamp": 1783387347
+      },
+      {
+        "id": 2024845503,
+        "url": "https://www.theatlantic.com/ideas/2026/06/ai-open-ai-anthropic/687689/",
+        "title": "The People Who Will Thrive in the AI Age",
+        "description": "",
+        "time_added": 1783328036,
+        "progress": 0,
+        "progress_timestamp": 1783387347
+      }
     ]
   }
 }
