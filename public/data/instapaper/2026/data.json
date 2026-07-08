@@ -2502,6 +2502,26 @@
         "progress": 0,
         "progress_timestamp": 1783387347
       }
+    ],
+    "08": [
+      {
+        "id": 2025301840,
+        "url": "https://nymag.com/intelligencer/article/doublespeed-tech-founder-creating-an-army-of-ai-influencers.html",
+        "title": "‘Let’s Go Kill the Internet’",
+        "description": "",
+        "time_added": 1783468026,
+        "progress": 0,
+        "progress_timestamp": 1783473008
+      },
+      {
+        "id": 2025212939,
+        "url": "https://buttondown.com/maiht3k/archive/how-to-talk-about-ai-without-adding-to-the/",
+        "title": "How to talk about",
+        "description": "",
+        "time_added": 1783437599,
+        "progress": 0,
+        "progress_timestamp": 1783473008
+      }
     ]
   }
 }
