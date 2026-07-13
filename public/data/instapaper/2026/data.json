@@ -949,6 +949,15 @@
         "time_added": 1772566369,
         "progress": 0.309785,
         "progress_timestamp": 1772566365
+      },
+      {
+        "id": 1986569049,
+        "url": "https://www.scottsmitelli.com/articles/you-dont-have-to/",
+        "title": "You don't have to if you don't want to.",
+        "description": "",
+        "time_added": 1772536963,
+        "progress": 0,
+        "progress_timestamp": 1772539406
       }
     ],
     "04": [
@@ -2434,6 +2443,44 @@
         "time_added": 1783586904,
         "progress": 0,
         "progress_timestamp": 1783646090
+      }
+    ],
+    "13": [
+      {
+        "id": 2022976204,
+        "url": "https://kindofvoiceless.substack.com/p/there-will-be-nowhere-to-go",
+        "title": "There Will Be Nowhere to Go",
+        "description": "",
+        "time_added": 1782572891,
+        "progress": 0,
+        "progress_timestamp": 1783905169
+      },
+      {
+        "id": 2023388351,
+        "url": "https://www.counterfire.org/article/climate-change-too-hot-for-our-rulers-to-handle-weekly-briefing/",
+        "title": "Climate change: too hot for our rulers to handle – weekly briefing",
+        "description": "",
+        "time_added": 1782752932,
+        "progress": 0,
+        "progress_timestamp": 1783905169
+      },
+      {
+        "id": 2023939422,
+        "url": "https://www.openculture.com/2026/07/isaac-asimov-laments-the-cult-of-ignorance.html",
+        "title": "Isaac Asimov Laments the “Cult of Ignorance” in the United States (1980)",
+        "description": "",
+        "time_added": 1782944652,
+        "progress": 0,
+        "progress_timestamp": 1783905169
+      },
+      {
+        "id": 2026126357,
+        "url": "https://nypost.com/2026/07/07/lifestyle/ex-tradwives-over-35-deatil-dark-side-of-the-viral-lifestyle/",
+        "title": "Exclusive | Divorced, destitute and left for dead — the dark side of tradwife life after 35",
+        "description": "",
+        "time_added": 1783773633,
+        "progress": 0,
+        "progress_timestamp": 1783905169
       }
     ],
     "01": [
