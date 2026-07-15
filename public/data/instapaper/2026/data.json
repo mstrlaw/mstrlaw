@@ -2503,6 +2503,35 @@
         "progress_timestamp": 1783991005
       }
     ],
+    "15": [
+      {
+        "id": 2026767076,
+        "url": "https://www.sabado.pt/opiniao/convidados/alvaro-rocha/detalhe/amalia-5-5-milhoes-de-euros-deitados-ao-lixo",
+        "title": "AMALIA: 5,5 milhões de euros deitados ao lixo?",
+        "description": "",
+        "time_added": 1784045242,
+        "progress": 0,
+        "progress_timestamp": 1784077190
+      },
+      {
+        "id": 2026681066,
+        "url": "https://www.theguardian.com/commentisfree/2026/jul/07/indecent-proposal-why-social-medias-rebrand-of-surveillance-tech-normalises-harassment-and-non-consensual-filming",
+        "title": "Indecent proposal: why social media’s rebrand of surveillance tech normalises harassment and non-consensual filming | Maggie Zhou",
+        "description": "",
+        "time_added": 1784023300,
+        "progress": 0,
+        "progress_timestamp": 1784077190
+      },
+      {
+        "id": 2026667523,
+        "url": "https://tldraw.dev/blog/is-record-sorry",
+        "title": "I'm pretty sure isRecord is our fault",
+        "description": "",
+        "time_added": 1784018489,
+        "progress": 0,
+        "progress_timestamp": 1784077190
+      }
+    ],
     "01": [
       {
         "id": 2023649381,
