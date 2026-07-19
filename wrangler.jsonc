@@ -1,7 +1,9 @@
 {
     "name": "mstrlaw",
     "compatibility_date": "2025-11-09", // Update to the day you deploy
+    "main": "./worker/index.js",
     "assets": {
-      "directory": "./dist"
+      "directory": "./dist",
+      "binding": "ASSETS"
     }
   }
