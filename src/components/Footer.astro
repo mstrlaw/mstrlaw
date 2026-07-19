@@ -88,14 +88,7 @@ const currentYear = new Date().getFullYear();
    */
 
   const loadChartData = async () =>
-    await fetch(
-      'https://cors.bridged.cc/https://wakatime.com/share/@mstrlaw/4e394a3c-8d3f-449f-b686-1b0241124e2d.json',
-      {
-        headers: {
-          'x-cors-grida-api-key': '2a757fab-77e2-447a-b55f-623e511e5241', // I dont care
-        },
-      }
-    );
+    await fetch('/api/wakatime');
 
   const getTimeLabel = (date: string, seconds: number) => {
     const endDate = new Date(date);
