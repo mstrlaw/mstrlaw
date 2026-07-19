@@ -1,6 +1,15 @@
 export default [
   // 2026 books
   {
+    title: 'Artificial Religion: On AI, Myth, and Power',
+    author: 'Mark Coeckelbergh',
+    yearRead: 2026,
+    url: 'https://coeckelbergh.net/artificial-religion/',
+    cover: '/images/books/artificial_religion.jpg',
+    alt: 'Artificial Religion: On AI, Myth, and Power by Mark Coeckelbergh',
+    tags: ['non-fiction', 'technology', 'philosophy'],
+  },
+  {
     title: 'The AI Paradox: How to Make Sense of a Complex Future',
     author: 'Virginia Dignum',
     yearRead: 2026,
