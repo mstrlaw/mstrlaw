@@ -2554,6 +2554,46 @@
         "progress_timestamp": 1784250650
       }
     ],
+    "18": [
+      {
+        "id": 2027100291,
+        "url": "https://www.thenerdreich.com/she-warned-about-silicon-valley-25-years-ago-we-ignored-her/",
+        "title": "She Warned About Silicon Valley 25 Years Ago. We Ignored Her.",
+        "description": "",
+        "time_added": 1784156325,
+        "progress": 0,
+        "progress_timestamp": 1784383389
+      },
+      {
+        "id": 2027253099,
+        "url": "https://www.joanwestenberg.com/p/the-bread-paradox-why-convenience",
+        "title": "The bread paradox: why convenience always wins, and why SaaS isn’t doomed",
+        "description": "",
+        "time_added": 1784214324,
+        "progress": 0.81474,
+        "progress_timestamp": 1784383623
+      }
+    ],
+    "20": [
+      {
+        "id": 2028049160,
+        "url": "https://www.independent.co.uk/news/uk/home-news/arthurs-seat-fire-blaze-edinburgh-john-henderson-b3018045.html",
+        "title": "Arthur’s Seat fire: Crews expect to tackle blaze in Edinburgh ‘for a couple of days’",
+        "description": "",
+        "time_added": 1784549390,
+        "progress": 0,
+        "progress_timestamp": 1784564233
+      },
+      {
+        "id": 2028015515,
+        "url": "https://www.inc.com/soren-kaplan/half-of-ai-job-cuts-will-be-reversed-by-2027-gartner-says-heres-the-real-lesson/91361788",
+        "title": "Half of AI Job Cuts Will Be Reversed by 2027, Gartner Says. Here’s the Real Lesson",
+        "description": "",
+        "time_added": 1784539398,
+        "progress": 0,
+        "progress_timestamp": 1784564237
+      }
+    ],
     "01": [
       {
         "id": 2023649381,
@@ -2648,6 +2688,33 @@
         "time_added": 1783328036,
         "progress": 0,
         "progress_timestamp": 1783387347
+      },
+      {
+        "id": 2021350214,
+        "url": "https://www.independent.co.uk/us/money/craigslist-multimillionaire-craig-newmark-b2980681.html",
+        "title": "Craigslist’s founder has given away $500M. Some billionaires hate that",
+        "description": "",
+        "time_added": 1781941431,
+        "progress": 0,
+        "progress_timestamp": 1783468055
+      },
+      {
+        "id": 2022256786,
+        "url": "https://www.lemonde.fr/en/opinion/article/2026/06/22/branko-milanovic-economist-there-will-be-no-return-to-neoliberal-ideology_6754731_23.html",
+        "title": "Branko Milanovic, economist: 'There will be no return to neoliberal ideology'",
+        "description": "",
+        "time_added": 1782307728,
+        "progress": 0,
+        "progress_timestamp": 1783468043
+      },
+      {
+        "id": 2024265706,
+        "url": "https://www.outsideonline.com/outdoor-adventure/climbing/why-its-time-rethink-climbing-ban-devils-tower/",
+        "title": "It’s Time to Rethink Climbing on Devils Tower",
+        "description": "",
+        "time_added": 1783069716,
+        "progress": 0,
+        "progress_timestamp": 1783468028
       }
     ],
     "08": [
