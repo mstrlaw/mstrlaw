@@ -2501,6 +2501,15 @@
         "time_added": 1783967393,
         "progress": 0,
         "progress_timestamp": 1783991005
+      },
+      {
+        "id": 2021349183,
+        "url": "https://www.france24.com/en/live-news/20260618-india-learns-to-live-with-hotter-summers",
+        "title": "India learns to live with hotter summers",
+        "description": "",
+        "time_added": 1781941012,
+        "progress": 0,
+        "progress_timestamp": 1784016040
       }
     ],
     "15": [
@@ -2572,6 +2581,15 @@
         "time_added": 1784214324,
         "progress": 0.81474,
         "progress_timestamp": 1784383623
+      },
+      {
+        "id": 2026766097,
+        "url": "https://the.ink/p/never-eat-with-women",
+        "title": "2. Never eat with women",
+        "description": "",
+        "time_added": 1784044968,
+        "progress": 0,
+        "progress_timestamp": 1784383391
       }
     ],
     "20": [
@@ -2592,6 +2610,26 @@
         "time_added": 1784539398,
         "progress": 0,
         "progress_timestamp": 1784564237
+      },
+      {
+        "id": 2027999752,
+        "url": "https://www.oreilly.com/radar/the-new-software-lifecycle/",
+        "title": "The New Software Lifecycle",
+        "description": "",
+        "time_added": 1784531744,
+        "progress": 0,
+        "progress_timestamp": 1784550119
+      }
+    ],
+    "21": [
+      {
+        "id": 2028154253,
+        "url": "https://www.hardresetmedia.com/p/the-ai-productivity-illusion",
+        "title": "The AI Productivity Illusion",
+        "description": "",
+        "time_added": 1784580841,
+        "progress": 0,
+        "progress_timestamp": 1784649303
       }
     ],
     "01": [
