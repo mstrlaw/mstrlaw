@@ -2632,6 +2632,17 @@
         "progress_timestamp": 1784649303
       }
     ],
+    "23": [
+      {
+        "id": 2028870049,
+        "url": "https://www.worseonpurpose.com/p/on-quality",
+        "title": "On Quality: What It Is and Why Products Get Worse",
+        "description": "",
+        "time_added": 1784824552,
+        "progress": 0,
+        "progress_timestamp": 1784824952
+      }
+    ],
     "01": [
       {
         "id": 2023649381,
@@ -2786,6 +2797,26 @@
         "time_added": 1785769385,
         "progress": 0,
         "progress_timestamp": 1785805511
+      }
+    ],
+    "05": [
+      {
+        "id": 2031707648,
+        "url": "https://finance.yahoo.com/markets/stocks/articles/ray-dalio-ai-bubble-nearing-070000246.html",
+        "title": "Ray Dalio on the AI bubble nearing 1929, 2000 levels and the lesson people always forget: ‘Wealth is not the same as money’",
+        "description": "",
+        "time_added": 1785862490,
+        "progress": 0,
+        "progress_timestamp": 1785891801
+      },
+      {
+        "id": 2031578937,
+        "url": "https://www.euronews.com/my-europe/2026/08/04/extreme-heat-grips-southern-europe-as-spain-sends-toxic-alerts-and-france-shuts-reactors",
+        "title": "Extreme heat continues to grip Southern Europe",
+        "description": "",
+        "time_added": 1785826131,
+        "progress": 0,
+        "progress_timestamp": 1785891801
       }
     ]
   }
