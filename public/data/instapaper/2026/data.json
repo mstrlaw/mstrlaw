@@ -2818,6 +2818,26 @@
         "progress": 0,
         "progress_timestamp": 1785891801
       }
+    ],
+    "06": [
+      {
+        "id": 2030362795,
+        "url": "https://open.substack.com/pub/cutlefish/p/tbm-433-the-border-collie-faustian?utm_campaign=post&utm_medium=web",
+        "title": "TBM 433: The Border Collie Faustian Bargain",
+        "description": "",
+        "time_added": 1785394020,
+        "progress": 0,
+        "progress_timestamp": 1785978197
+      },
+      {
+        "id": 2030362990,
+        "url": "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/",
+        "title": "Librarians are hosting viral 'Avoiding AI' workshops for people who are fed up with Big Tech | TechCrunch",
+        "description": "",
+        "time_added": 1785394100,
+        "progress": 0,
+        "progress_timestamp": 1785978197
+      }
     ]
   }
 }
