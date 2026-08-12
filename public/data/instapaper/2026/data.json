@@ -2788,6 +2788,55 @@
     ]
   },
   "08": {
+    "11": [
+      {
+        "id": 2031710497,
+        "url": "https://medium.com/@monalazzar/age-of-stupid-why-modern-society-hates-intelligence-34c7e36382a4",
+        "title": "Age of Stupid: Why Modern Society Hates Intelligence",
+        "description": "",
+        "time_added": 1785863296,
+        "progress": 0,
+        "progress_timestamp": 1786463233
+      },
+      {
+        "id": 2033187210,
+        "url": "https://calnewport.com/on-ai-coding-and-its-discontents/",
+        "title": "On AI Coding and Its Discontents - Cal Newport",
+        "description": "",
+        "time_added": 1786435499,
+        "progress": 0,
+        "progress_timestamp": 1786463233
+      }
+    ],
+    "12": [
+      {
+        "id": 2033348889,
+        "url": "https://pluralistic.net/2026/08/11/tragedy-of-the-commoners/",
+        "title": "Pluralistic: Surveillance vs guillotines (11 Aug 2026) – Pluralistic: Daily links from Cory Doctorow",
+        "description": "",
+        "time_added": 1786482287,
+        "progress": 0,
+        "progress_timestamp": 1786495314
+      },
+      {
+        "id": 2033294448,
+        "url": "https://thewalrus.ca/google-search-is-dying/",
+        "title": "Google Search Is Dying. What Comes Next Is Worse",
+        "description": "",
+        "time_added": 1786465324,
+        "progress": 0,
+        "progress_timestamp": 1786495314
+      },
+      {
+        "id": 2033284906,
+        "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+        "title": "How Claude marks AI-generated content | Claude Help Center",
+        "description": "When a supported Claude model generates text, it weaves an imperceptible watermark directly into the text itself. You won’t see it, and it doesn’t change the meaning, quality, or readability of Claude’s response.",
+        "time_added": 1786462414,
+        "progress": 0,
+        "progress_timestamp": 1786495314
+      }
+    ],
     "04": [
       {
         "id": 2031441509,
