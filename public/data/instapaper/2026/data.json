@@ -2837,6 +2837,26 @@
         "progress_timestamp": 1786495314
       }
     ],
+    "13": [
+      {
+        "id": 2033481835,
+        "url": "https://arstechnica.com/science/2026/08/tracking-extreme-heat-by-the-hour-makes-climate-change-seem-even-worse/",
+        "title": "Tracking extreme heat by the hour makes climate change seem even worse",
+        "description": "",
+        "time_added": 1786537140,
+        "progress": 0,
+        "progress_timestamp": 1786581798
+      },
+      {
+        "id": 2033481036,
+        "url": "https://www.theguardian.com/commentisfree/2026/aug/12/openai-anthropic-ai-models",
+        "title": "If the markets reject OpenAI and Anthropic, the US should nationalize them | Bruce Schneier and Nathan E Sanders",
+        "description": "",
+        "time_added": 1786536932,
+        "progress": 0,
+        "progress_timestamp": 1786581798
+      }
+    ],
     "04": [
       {
         "id": 2031441509,
