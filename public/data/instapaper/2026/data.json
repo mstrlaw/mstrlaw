@@ -2643,6 +2643,17 @@
         "progress_timestamp": 1784824952
       }
     ],
+    "28": [
+      {
+        "id": 2029682252,
+        "url": "https://thebaffler.com/latest/blindsighted-kim",
+        "title": "Blindsighted | Leo Kim",
+        "description": "",
+        "time_added": 1785159950,
+        "progress": 0,
+        "progress_timestamp": 1785255971
+      }
+    ],
     "01": [
       {
         "id": 2023649381,
@@ -2855,6 +2866,17 @@
         "time_added": 1786536932,
         "progress": 0,
         "progress_timestamp": 1786581798
+      }
+    ],
+    "14": [
+      {
+        "id": 2033300427,
+        "url": "https://www.motherjones.com/politics/2026/08/cyberselfish-paulina-borsook/",
+        "title": "A Tech Prophet Finally Gets Her Second Coming",
+        "description": "",
+        "time_added": 1786466792,
+        "progress": 0,
+        "progress_timestamp": 1786668158
       }
     ],
     "04": [
