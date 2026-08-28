@@ -2817,6 +2817,15 @@
         "time_added": 1786435499,
         "progress": 0,
         "progress_timestamp": 1786463233
+      },
+      {
+        "id": 2031848968,
+        "url": "https://jacobin.com/2026/07/ai-tech-criticism-resistance-democracy",
+        "title": "Critics of AI Aren’t Anti-Tech Extremists",
+        "description": "",
+        "time_added": 1785920598,
+        "progress": 0,
+        "progress_timestamp": 1786463233
       }
     ],
     "12": [
@@ -2977,6 +2986,62 @@
         "time_added": 1787747080,
         "progress": 0,
         "progress_timestamp": 1787806918
+      }
+    ],
+    "28": [
+      {
+        "id": 2037139337,
+        "url": "https://www.fastcompany.com/91584377/women-are-sounding-the-alarm-on-ai-leaders-should-listen-ai-dangers-women-technology",
+        "title": "Women are sounding the alarm on AI. Leaders should listen",
+        "description": "",
+        "time_added": 1787841129,
+        "progress": 0,
+        "progress_timestamp": 1787900671
+      },
+      {
+        "id": 2037138638,
+        "url": "https://www.bbc.co.uk/news/articles/ckgw9gw34yqo",
+        "title": "Thieves steal Bronze Age artifacts from Spanish museum in four-minute heist",
+        "description": "",
+        "time_added": 1787840961,
+        "progress": 0,
+        "progress_timestamp": 1787900671
+      },
+      {
+        "id": 2037060838,
+        "url": "https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/?utm_source=reddit.com",
+        "title": "Mark Zuckerberg had a bold plan to replace Meta staff with AI. Here’s how it imploded.",
+        "description": "",
+        "time_added": 1787820124,
+        "progress": 0,
+        "progress_timestamp": 1787900671
+      },
+      {
+        "id": 2037059982,
+        "url": "https://www.joanwestenberg.com/p/the-art-of-agency-laundering",
+        "title": "The Art of Agency Laundering",
+        "description": "",
+        "time_added": 1787819770,
+        "progress": 0,
+        "progress_timestamp": 1787900671
+      },
+      {
+        "id": 2034957841,
+        "url": "https://www.cnbc.com/2026/08/18/ai-tech-rally-correction-economists.html",
+        "title": "'Worrisome': AI is driving a looming market correction, central bank economists warn",
+        "description": "",
+        "time_added": 1787071253,
+        "progress": 0,
+        "progress_timestamp": 1787900671
+      },
+      {
+        "id": 2033689861,
+        "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+        "title": "AI is removing the middle class of software engineering",
+        "description": "",
+        "time_added": 1786605195,
+        "progress": 0,
+        "progress_timestamp": 1787900671
       }
     ],
     "04": [
