@@ -1,5 +1,5 @@
 ---
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 ---
 
 <footer class="relative mt-16">
@@ -19,7 +19,7 @@ const currentYear = new Date().getFullYear();
   <!-- <hr class="small" /> -->
   <div class="c-Chart ct-chart mb-4"></div>
   <!-- <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40"> -->
-  <div class="py-4 sm:py-8">
+  <div class="py-2 sm:py-4">
     <div class="px-8 md:px-12">
       <div
         class="flex flex-col items-center justify-between gap-3 sm:gap-5 sm:flex-row"
@@ -56,61 +56,70 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
   </div>
+  <div
+    class="py-2 flex flex-wrap justify-center text-sm font-medium text-zinc-800 dark:text-zinc-600"
+  >
+    <a
+      class="transition hover:text-teal-500 dark:hover:text-teal-400"
+      href="https://mstrlaw.goatcounter.com"
+      target="_blank"
+      rel="noopener noreferrer">View website stats</a
+    >
+  </div>
 </footer>
 
 <script>
-  declare const Chartist: any;
-  declare const dayjs: any;
+  declare const Chartist: any
+  declare const dayjs: any
 
-  let totalTime: number | string = 0;
+  let totalTime: number | string = 0
 
   const displayLoadTime = () => {
     try {
       const perf = window.performance.getEntriesByType(
-        'navigation'
-      )[0] as PerformanceNavigationTiming;
+        'navigation',
+      )[0] as PerformanceNavigationTiming
       let loadTime =
-        Math.round((perf.loadEventEnd - perf.requestStart) * 100) / 100;
+        Math.round((perf.loadEventEnd - perf.requestStart) * 100) / 100
       loadTime =
         loadTime > 1000
           ? `≈${Math.round((loadTime / 1000) * 100) / 100}s`
-          : `≈${loadTime}ms`;
+          : `≈${loadTime}ms`
 
-      document.getElementById('loadTime').innerText = loadTime;
+      document.getElementById('loadTime').innerText = loadTime
     } catch (err) {
-      console.log(err);
+      console.log(err)
     }
-  };
+  }
 
   /**
    * document.getElementById('screenTime').innerText =
         `≈${~~(totalTime / 3600)}h${~~((totalTime % 3600) / 60)}m`;
    */
 
-  const loadChartData = async () =>
-    await fetch('/api/wakatime');
+  const loadChartData = async () => await fetch('/api/wakatime')
 
   const getTimeLabel = (date: string, seconds: number) => {
-    const endDate = new Date(date);
-    endDate.setSeconds(seconds);
+    const endDate = new Date(date)
+    endDate.setSeconds(seconds)
     const mins =
       endDate.getMinutes().toString().length === 2
         ? endDate.getMinutes()
-        : `0${endDate.getMinutes()}`;
+        : `0${endDate.getMinutes()}`
 
-    return `${endDate.getHours()}h${mins}`;
-  };
+    return `${endDate.getHours()}h${mins}`
+  }
 
   const drawChart = (tmp: Record<number, string>, series: number[]) => {
     var data = {
       labels: [],
       series: [series],
-    };
+    }
     const axisMod = {
       showGrid: false,
       showLabel: false,
       offset: 0,
-    };
+    }
     const options = {
       fullWidth: true,
       chartPadding: { top: 45, right: 25, left: 25, bottom: 0 },
@@ -122,34 +131,34 @@ const currentYear = new Date().getFullYear();
             getTimeLabel(tmp[value], value),
         }),
       ],
-    };
-    new Chartist.Line('.ct-chart', data, options);
-    document.getElementById('aboutTimeSpent')?.classList.remove('opacity-0');
-  };
+    }
+    new Chartist.Line('.ct-chart', data, options)
+    document.getElementById('aboutTimeSpent')?.classList.remove('opacity-0')
+  }
 
   window.onload = async () => {
-    dayjs.extend(window.dayjs_plugin_relativeTime);
+    dayjs.extend(window.dayjs_plugin_relativeTime)
 
     // setTimeAgo();
 
-    const dataRequest = await loadChartData();
-    const data = await dataRequest.json();
+    const dataRequest = await loadChartData()
+    const data = await dataRequest.json()
 
-    if (data.data.length === 0) return;
-    let tmp: any = {};
-    const series: Array<number> = [];
+    if (data.data.length === 0) return
+    let tmp: any = {}
+    const series: Array<number> = []
     data.data.forEach((d: any) => {
       if (d.grand_total.total_seconds !== 0) {
-        tmp[d.grand_total.total_seconds] = d.range.start;
-        series.push(d.grand_total.total_seconds);
-        totalTime += d.grand_total.total_seconds;
+        tmp[d.grand_total.total_seconds] = d.range.start
+        series.push(d.grand_total.total_seconds)
+        totalTime += d.grand_total.total_seconds
       } else {
-        tmp[0.1] = d.range.start;
-        series.push(0.1);
+        tmp[0.1] = d.range.start
+        series.push(0.1)
       }
-    });
+    })
 
-    drawChart(tmp, series);
+    drawChart(tmp, series)
     // displayLoadTime();
-  };
+  }
 </script>
