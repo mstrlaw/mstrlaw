@@ -121,6 +121,7 @@ const goToSlide = (index) => {
       >
         <div
           class="relative aspect-9/10 w-64 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 my-4 hover:cursor-grab active:cursor-grabbing rotate-2"
+          @contextmenu.prevent
         >
           <Image
             :src="`/photos/${image.name}.jpeg`"
@@ -131,6 +132,7 @@ const goToSlide = (index) => {
             height="1066"
             :alt="image.alt"
             decoding="async"
+            draggable="false"
             class="absolute inset-0 h-full w-full object-cover"
           />
         </div>
@@ -140,6 +142,19 @@ const goToSlide = (index) => {
 </template>
 
 <style>
+.carousel__viewport img {
+  /* Blocks the iOS long-press "Save Image" callout */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  /* Blocks the WebKit/Blink native image drag-out */
+  -webkit-user-drag: none;
+  /* Retargets clicks and right-clicks to the wrapper, so the browser never
+     sees an <img> as the event target. Slide clicks still bubble up. */
+  pointer-events: none;
+}
+
 .carousel__viewport:before,
 .carousel__viewport:after {
   content: '';
