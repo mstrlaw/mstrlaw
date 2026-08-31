@@ -3044,6 +3044,28 @@
         "progress_timestamp": 1787900671
       }
     ],
+    "29": [
+      {
+        "id": 2036610820,
+        "url": "https://prod.d13rzhkk8cj2z0.amplifyapp.com/",
+        "title": "AI-Driven Development Lifecycle",
+        "description": "",
+        "time_added": 1787663793,
+        "progress": 0,
+        "progress_timestamp": 1788028324
+      }
+    ],
+    "31": [
+      {
+        "id": 2036302800,
+        "url": "https://newsletter.pragmaticengineer.com/p/from-chrome-devtools-to-ai-engineering",
+        "title": "From Chrome DevTools to AI Engineering, with Addy Osmani",
+        "description": "",
+        "time_added": 1787563795,
+        "progress": 0,
+        "progress_timestamp": 1788140180
+      }
+    ],
     "04": [
       {
         "id": 2031441509,
