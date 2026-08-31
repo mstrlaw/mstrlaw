@@ -4,7 +4,7 @@ import 'vue3-carousel/carousel.css';
 import { Carousel, Slide } from 'vue3-carousel';
 import { Image } from '@unpic/vue';
 
-const activeSlide = ref(0);
+const carousel = ref(null);
 
 const images = [
   {
@@ -86,14 +86,34 @@ const carouselConfig = {
   },
 };
 
+/**
+ * Slides to `index` taking the shortest way around the loop.
+ *
+ * The carousel's `slideTo` accepts out-of-range indexes and normalizes them
+ * once the transition ends, so passing `current - 1` from the first slide
+ * wraps to the last one seamlessly, instead of scrolling all the way back.
+ */
 const goToSlide = (index) => {
-  activeSlide.value = index;
+  if (!carousel.value) return;
+
+  const count = images.length;
+  const current = carousel.value.currentSlide;
+  const normalized = ((current % count) + count) % count;
+
+  let offset = index - normalized;
+  if (offset > count / 2) {
+    offset -= count;
+  } else if (offset < -count / 2) {
+    offset += count;
+  }
+
+  carousel.value.slideTo(current + offset);
 };
 </script>
 
 <template>
   <div class="w-full md:max-w-7xl mx-auto my-16">
-    <Carousel v-model="activeSlide" v-bind="carouselConfig">
+    <Carousel ref="carousel" v-bind="carouselConfig">
       <Slide
         v-for="(image, index) in images"
         :key="index"
