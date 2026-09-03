@@ -3126,5 +3126,36 @@
         "progress_timestamp": 1785978197
       }
     ]
+  },
+  "09": {
+    "03": [
+      {
+        "id": 2038438633,
+        "url": "https://www.nytimes.com/2026/09/01/opinion/world-order-international-relations.html?unlocked_article_code=1.91A.g7vT._xewNCiv7FXy&smid=re-nytopinion",
+        "title": "A New World Order Is Coming. We Aren’t Ready.",
+        "description": "",
+        "time_added": 1788338348,
+        "progress": 0,
+        "progress_timestamp": 1788398799
+      },
+      {
+        "id": 2038438608,
+        "url": "https://www.theatlantic.com/books/2026/08/silicon-valley-science-fiction-jill-lepore-book-review/688467/",
+        "title": "We Are Living in the Fantasy World of 13-Year-Old Boys",
+        "description": "",
+        "time_added": 1788338337,
+        "progress": 0,
+        "progress_timestamp": 1788398799
+      },
+      {
+        "id": 2038438590,
+        "url": "https://www.vanityfair.com/story/ed-zitron-ai-skeptic-openai",
+        "title": "He Did Tech PR. Now He Rails Against AI for a Living.",
+        "description": "",
+        "time_added": 1788338329,
+        "progress": 0,
+        "progress_timestamp": 1788398799
+      }
+    ]
   }
 }
