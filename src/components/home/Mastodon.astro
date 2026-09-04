@@ -1,0 +1,100 @@
+---
+import { format } from 'date-fns'
+
+// Globbed rather than imported so the build still succeeds on a fresh clone,
+// before the scheduled fetch has ever written the file.
+const data = import.meta.glob('../../../public/data/mastodon/latest.json', {
+  eager: true,
+})
+
+const statuses = Object.values(data)[0]?.statuses ?? []
+
+const PROFILE_URL = 'https://mastodon.social/@mstrlaw'
+
+// Material Symbols paths, the same shapes Mastodon uses for these actions.
+const icons = {
+  replies: 'M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z',
+  reblogs: 'M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z',
+  favourites:
+    'M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z',
+}
+
+const metrics = [
+  { key: 'replies', label: 'replies' },
+  { key: 'reblogs', label: 'boosts' },
+  { key: 'favourites', label: 'favourites' },
+]
+---
+
+{
+  statuses.length > 0 && (
+    <div class="mx-auto max-w-2xl lg:max-w-5xl my-12">
+      <h2
+        id="mastodon"
+        class="mt-6 text-base font-semibold text-zinc-600 dark:text-zinc-100"
+      >
+        On Mastodon
+      </h2>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400">
+        Recent posts and boosts.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mt-8">
+        {statuses.map((status) => (
+          <a
+            href={status.url}
+            target="_blank"
+            rel="noopener"
+            class="block w-full p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50"
+          >
+            <small class="block text-zinc-500 dark:text-zinc-400">
+              {status.type === 'boost'
+                ? `Boosted @${status.author.acct}`
+                : 'Posted'}
+            </small>
+            {status.media && (
+              <img
+                src={status.media.url}
+                alt={status.media.alt}
+                width={status.media.width}
+                height={status.media.height}
+                loading="lazy"
+                decoding="async"
+                class="rounded-lg mt-2 w-full h-40 object-cover"
+              />
+            )}
+            <p class="text-sm mt-2 text-zinc-600 dark:text-zinc-300">
+              {status.excerpt}
+            </p>
+            <div class="flex items-center gap-4 mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+              <time datetime={status.createdAt}>
+                {format(new Date(status.createdAt), 'd MMM yyyy')}
+              </time>
+              {metrics.map((metric) => (
+                <span class="flex items-center gap-1">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    class="h-4 w-4"
+                  >
+                    <path d={icons[metric.key]} />
+                  </svg>
+                  <span>{status.counts[metric.key]}</span>
+                  <span class="sr-only">{metric.label}</span>
+                </span>
+              ))}
+            </div>
+          </a>
+        ))}
+      </div>
+      <a
+        href={PROFILE_URL}
+        rel="me"
+        target="_blank"
+        class="text-sm underline text-zinc-600 dark:text-white inline-block mt-8"
+      >
+        See more on Mastodon
+      </a>
+    </div>
+  )
+}

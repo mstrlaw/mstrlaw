@@ -1,4 +1,4 @@
-name: Fetch Instapaper Bookmarks
+name: Fetch external data
 
 on:
   schedule:
@@ -10,12 +10,13 @@ on:
       - main
     paths-ignore:
       - 'public/data/instapaper/**'
+      - 'public/data/mastodon/**'
 
 permissions:
   contents: write
 
 jobs:
-  fetch-bookmarks:
+  fetch-data:
     runs-on: ubuntu-latest
     environment: prod
 
@@ -42,9 +43,14 @@ jobs:
           INSTAPAPER_ACCESS_TOKEN_SECRET: ${{ secrets.INSTAPAPER_ACCESS_TOKEN_SECRET }}
         run: node scripts/fetch-instapaper.mjs
 
+      # Don't let a flaky Mastodon instance block the bookmark commit below
+      - name: Fetch Mastodon statuses
+        continue-on-error: true
+        run: node scripts/fetch-mastodon.mjs
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/instapaper/
-          git diff --staged --quiet || (git commit -m "Update Instapaper bookmarks" && git push)
+          git add public/data/
+          git diff --staged --quiet || (git commit -m "Update external data" && git push)

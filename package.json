@@ -7,7 +7,8 @@
     "build": "rm -rf _astro && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fetch-articles": "node --env-file=.env scripts/fetch-instapaper.mjs"
+    "fetch-articles": "node --env-file=.env scripts/fetch-instapaper.mjs",
+    "fetch-mastodon": "node scripts/fetch-mastodon.mjs"
   },
   "dependencies": {
     "@astrojs/vue": "^5.1.0",

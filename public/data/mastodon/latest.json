@@ -1,0 +1,65 @@
+{
+  "lastUpdated": "2026-09-04T16:01:05.126Z",
+  "statuses": [
+    {
+      "id": "117191350422634961",
+      "type": "boost",
+      "url": "https://dair-community.social/@timnitGebru/117087966871760448",
+      "createdAt": "2026-08-31T17:41:36.100Z",
+      "excerpt": "🔇 🔇 🔇 My book, Deep Unlearning, is now available for preorders! I don't know how people write so many books because this one took a lot out of me. It turns out, I had a lot to…",
+      "author": {
+        "acct": "timnitGebru@dair-community.social",
+        "displayName": "Timnit Gebru (she/her).",
+        "url": "https://dair-community.social/@timnitGebru"
+      },
+      "media": {
+        "url": "https://files.mastodon.social/cache/media_attachments/files/117/087/967/477/040/260/small/1be582cd3a214569.jpg",
+        "alt": "Cover of my new book, Deep Unlearning: The Rise of AI and The Radicalization of a Tech Idealist. \n\nThere are two concentric circles in the book, the left being circuits in black an white, and the right being a bunch of dots with orange accents. The cover background is cream. And the words are written in black except for \"Un\" which is in orange.",
+        "width": 393,
+        "height": 586
+      },
+      "counts": {
+        "replies": 54,
+        "reblogs": 692,
+        "favourites": 642
+      }
+    },
+    {
+      "id": "117099875841274266",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117099875841274266",
+      "createdAt": "2026-08-15T13:58:24.751Z",
+      "excerpt": "Today we climb in the cloud. #climbing #portugal #rockclimbing #outdoors #cliff #nature #cloudy #fog",
+      "author": null,
+      "media": {
+        "url": "https://files.mastodon.social/media_attachments/files/117/099/875/552/780/413/small/6cf6f72f4a8c14ff.jpeg",
+        "alt": "Two people wearing helmets and climbing gear stand at the base of a rocky, foggy cliff, preparing to climb. One person is handling a rope while the other stands nearby.",
+        "width": 416,
+        "height": 554
+      },
+      "counts": {
+        "replies": 0,
+        "reblogs": 3,
+        "favourites": 16
+      }
+    },
+    {
+      "id": "117082739648206847",
+      "type": "boost",
+      "url": "https://mastodon.social/@grheavyroller/117079463552366864",
+      "createdAt": "2026-08-12T13:20:27.187Z",
+      "excerpt": "Two thoughts coming to similar conclusions. @pluralistic : \"The problem is that for every plute who realizes that the cheapest way to keep the guillotines off his lawn is to play…",
+      "author": {
+        "acct": "grheavyroller",
+        "displayName": "gregg r",
+        "url": "https://mastodon.social/@grheavyroller"
+      },
+      "media": null,
+      "counts": {
+        "replies": 0,
+        "reblogs": 21,
+        "favourites": 45
+      }
+    }
+  ]
+}
