@@ -10,15 +10,17 @@ import compressor from 'astro-compressor'
 // https://astro.build/config
 export default defineConfig({
   vite: {
-    plugins: [
-      tailwindcss(),
-      vue({
-        ...templateCompilerOptions,
-      }),
-    ],
+    plugins: [tailwindcss()],
   },
   output: 'static',
-  integrations: [vue(), compressor()],
+  integrations: [
+    // TresJS needs its isCustomElement compiler option passed to the Vue
+    // integration so <Tres*> tags aren't resolved as Vue components.
+    vue({
+      ...templateCompilerOptions,
+    }),
+    compressor(),
+  ],
   image: {
     service: imageService(),
   },

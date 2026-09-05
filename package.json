@@ -11,24 +11,29 @@
     "fetch-mastodon": "node scripts/fetch-mastodon.mjs"
   },
   "dependencies": {
-    "@astrojs/vue": "^5.1.0",
-    "@tailwindcss/vite": "^4.1.11",
+    "@astrojs/vue": "^7.0.2",
+    "@tailwindcss/vite": "^4.3.3",
     "@tresjs/cientos": "^4.3.1",
     "@tresjs/core": "^4.3.6",
-    "@unpic/astro": "^1.0.1",
+    "@unpic/astro": "^1.0.2",
     "@unpic/vue": "^1.0.0",
-    "astro": "^5.12.9",
+    "astro": "^7.3.1",
     "astro-compressor": "^1.1.2",
     "date-fns": "^4.1.0",
     "gsap": "^3.13.0",
     "reveal.js": "^5.2.1",
     "tailwindcss": "^4.1.11",
     "three": "^0.179.1",
-    "vue": "^3.5.18",
+    "vue": "^3.5.42",
     "vue3-carousel": "^0.16.0"
   },
   "devDependencies": {
     "@types/three": "^0.179.0",
     "oauth-1.0a": "^2.2.6"
+  },
+  "overrides": {
+    "@unpic/astro": {
+      "astro": "$astro"
+    }
   }
 }
