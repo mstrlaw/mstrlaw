@@ -29,7 +29,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          # Must satisfy astro@7's engines (>=22.12.0); npm ci installs the
+          # full dependency tree even though this job only runs the fetch scripts.
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
