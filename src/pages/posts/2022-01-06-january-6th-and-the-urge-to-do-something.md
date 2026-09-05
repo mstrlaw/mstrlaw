@@ -45,7 +45,7 @@ The idea was pretty straightforward: let's do a visual map where people can see 
 
 <hr>
 
-<h2>Purposeful Hackathon</h2>
+## Purposeful Hackathon
 
 We put our heads down and plowed through what were basically 2 nights in a row until dawn to pull it off as fast as possible and make it available.
 
@@ -81,7 +81,7 @@ We shared the link on the _r/washingtondc_ subreddit in the hopes it would be us
 
 <p class="u-ImageDescription">Analytics data for visits to the web app</p>
 
-<h2>Technologists Must Improve What They Can</h2>
+## Technologists Must Improve What They Can
 
 Why even do this? There's no way of measuring if any of this had any impact, but I felt that adding another voice to the chorus of people manifesting against this event was better than simply shaking our heads.
 

@@ -21,7 +21,7 @@ So what about resiliency? Given this context, resiliency is the ability to cope 
 
 A fair amount of people don’t like change. In my experience, Developers and designers don’t enjoy hopping rapidly between missions. But for when that happens, team leaders must help teams become resilient. And to build a resilient team requires acting and caring on an individual level.
 
-<h2 id="practices-to-foster-adaptability">Practices Foster or Hurt Adaptability</h2>
+## Practices Foster or Hurt Adaptability
 
 Changing requirements are inevitable, for one reason or another. Therefore, when defining a database's structure or defining the architecture of a system, it’s important to ponder which parts may be more or less prone to change.
 

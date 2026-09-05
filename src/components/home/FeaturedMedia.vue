@@ -1,10 +1,10 @@
 <script setup>
-import { ref } from 'vue';
-import 'vue3-carousel/carousel.css';
-import { Carousel, Slide } from 'vue3-carousel';
-import { Image } from '@unpic/vue';
+import { ref } from 'vue'
+import 'vue3-carousel/carousel.css'
+import { Carousel, Slide } from 'vue3-carousel'
+import { Image } from '@unpic/vue'
 
-const carousel = ref(null);
+const carousel = ref(null)
 
 const images = [
   {
@@ -40,10 +40,6 @@ const images = [
     alt: 'Two roped men climbing up a steeped bank of snow.',
   },
   {
-    name: 'g',
-    alt: 'A girl riding a colorful Google bike while laughing at the camera.',
-  },
-  {
     name: 'h',
     alt: 'The Atkas statue in Rockefeller Center in New York.',
   },
@@ -55,7 +51,7 @@ const images = [
     name: 'i',
     alt: 'A woman flying a Cesna plane with a man as the passenger looking out the window.',
   },
-];
+]
 
 const carouselConfig = {
   itemsToShow: 2,
@@ -84,7 +80,7 @@ const carouselConfig = {
       gap: 300,
     },
   },
-};
+}
 
 /**
  * Slides to `index` taking the shortest way around the loop.
@@ -94,21 +90,21 @@ const carouselConfig = {
  * wraps to the last one seamlessly, instead of scrolling all the way back.
  */
 const goToSlide = (index) => {
-  if (!carousel.value) return;
+  if (!carousel.value) return
 
-  const count = images.length;
-  const current = carousel.value.currentSlide;
-  const normalized = ((current % count) + count) % count;
+  const count = images.length
+  const current = carousel.value.currentSlide
+  const normalized = ((current % count) + count) % count
 
-  let offset = index - normalized;
+  let offset = index - normalized
   if (offset > count / 2) {
-    offset -= count;
+    offset -= count
   } else if (offset < -count / 2) {
-    offset += count;
+    offset += count
   }
 
-  carousel.value.slideTo(current + offset);
-};
+  carousel.value.slideTo(current + offset)
+}
 </script>
 
 <template>
@@ -124,7 +120,7 @@ const goToSlide = (index) => {
           @contextmenu.prevent
         >
           <Image
-            :src="`/photos/${image.name}.jpeg`"
+            :src="`/photos/${image.name}.jpg`"
             layout="constrained"
             loading="lazy"
             background="auto"

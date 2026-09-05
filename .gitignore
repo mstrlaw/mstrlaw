@@ -25,3 +25,5 @@ pnpm-debug.log*
 .idea/
 
 get-instapaper-tokens.mjs
+# Claude Code local config & skills
+.claude/

@@ -25,7 +25,7 @@ We don't control the mental mechanism that shapes our opinions, thoughts and bel
 
 <hr>
 
-<h2 id="algorithmic-feeds">Algorithmic Feeds Hinder Our Perception Of The World</h2>
+## Algorithmic Feeds Hinder Our Perception Of The World
 
 It all started around 2017 when I optimized my Facebook news feed to only display posts from news pages. I was following perhaps less than 50 news sources and, for a while, it was ok.
 
@@ -53,7 +53,7 @@ Either one of those forces a conditioned view of the world.
 1. Pretty straightforward: you see more of the same, so your views get reinforced and there's very few dissent from whichever is your dominating view. The classic filter bubble.
 2. You see what's "trending" according to the platform's notion of trending. It may or not be in line with your current view of the world. It can be a sort of "mob mentality" approach. It can also be weaponized. For instance, Twitter bots artificially amplifying narratives.
 
-<h2>Platforms Are Also Ideological</h2>
+## Platforms Are Also Ideological
 
 Finally, algorithms can also reflect the platforms' own ideologies and stances and/or exacerbate/favor existing biases. Again the result is a narrower view of the world.
 
@@ -71,7 +71,7 @@ Finally, algorithms can also reflect the platforms' own ideologies and stances a
 
 <br>
 
-<h2 id="building-news-aggregator">Building Another Type of News Aggregator</h2>
+## Building Another Type of News Aggregator
 
 I wasn't happy with existing options.
 
@@ -139,7 +139,7 @@ A cluster looks something like this:
 
 Then, when visiting Thoro, list the clusters by descending order of volume of articles.
 
-<h2 id="thoro-news">Thoro News</h2>
+## Thoro News
 
 So what are the advantages of this approach?
 
