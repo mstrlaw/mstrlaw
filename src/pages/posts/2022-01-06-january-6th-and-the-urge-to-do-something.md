@@ -45,7 +45,7 @@ The idea was pretty straightforward: let's do a visual map where people can see 
 
 <hr>
 
-<h2>Purposeful Hackathon</h2>
+## Purposeful Hackathon
 
 We put our heads down and plowed through what were basically 2 nights in a row until dawn to pull it off as fast as possible and make it available.
 
@@ -73,15 +73,15 @@ At that moment, for a brief moment, I felt at least I was using technology for s
 
 We shared the link on the _r/washingtondc_ subreddit in the hopes it would be useful to Washingtonians (I had traveled to the city months ago, visiting the Capitol too and admittedly felt some connection to the event). We were happy if only even one person got value out of this project to grasp the sheer extreme that his represented to all those that cherish our way of life.
 
-![Screenshots from user feedback from the Reddit post.](/images/uploads/reddit_capitol.png 'Some of the feedback from the post in *r/washingtondc*')
+![Screenshots from user feedback from the Reddit post.](/images/uploads/reddit_capitol.png "Some of the feedback from the post in *r/washingtondc*")
 
 <p class="u-ImageDescription">Some of the feedback from the post in *r/washingtondc*</p>
 
-![A screenshot of the visitor analytics data for January 2021, showing a total of 1,761 sessions.](/images/uploads/capitol_visits.jpg 'Analytics data for visits to the web app.')
+![A screenshot of the visitor analytics data for January 2021, showing a total of 1,761 sessions.](/images/uploads/capitol_visits.jpg "Analytics data for visits to the web app.")
 
 <p class="u-ImageDescription">Analytics data for visits to the web app</p>
 
-<h2>Technologists Must Improve What They Can</h2>
+## Technologists Must Improve What They Can
 
 Why even do this? There's no way of measuring if any of this had any impact, but I felt that adding another voice to the chorus of people manifesting against this event was better than simply shaking our heads.
 

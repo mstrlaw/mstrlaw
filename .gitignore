@@ -24,9 +24,7 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# Local Netlify folder
-.netlify
-
 get-instapaper-tokens.mjs
 
-.claude
+# Claude Code local config & skills
+.claude/
