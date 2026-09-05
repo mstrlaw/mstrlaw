@@ -5,8 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 import vue from '@astrojs/vue'
 import { templateCompilerOptions } from '@tresjs/core'
 
-import compressor from 'astro-compressor'
-
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -24,7 +22,6 @@ export default defineConfig({
     vue({
       ...templateCompilerOptions,
     }),
-    compressor(),
   ],
   image: {
     service: imageService(),

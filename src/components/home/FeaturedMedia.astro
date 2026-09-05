@@ -1,0 +1,57 @@
+---
+// Build-time image prep for the carousel island.
+//
+// The carousel itself has to stay a Vue component (vue3-carousel needs real
+// <Slide> children), but Vue islands are rendered on the client, where Astro's
+// image pipeline can't reach. So the AVIF/WebP/JPEG variants are generated
+// here at build time and handed to the island as plain URLs.
+import { getImage } from 'astro:assets'
+import Carousel from './FeaturedMediaCarousel.vue'
+
+// Eagerly globbed so every photo is a real ImageMetadata at build time.
+const files = import.meta.glob<{ default: ImageMetadata }>(
+  '../../assets/photos/*.jpg',
+  { eager: true },
+)
+
+// Order is deliberate — it's the sequence the carousel scrolls through.
+const photos = [
+  { name: 'j', alt: 'A man standing on top of a snowy mountain peak holding an ice axe.' },
+  { name: 'c', alt: 'A white truck in an orange tinted desert.' },
+  { name: 'l', alt: 'A man in a wetsuit holding a surfboard and laughing at the beach.' },
+  { name: 'b', alt: 'A group of people marching on snow with tall white mountains in the background.' },
+  { name: 'd', alt: 'A palm tree and an egyptian obelisc in front of a blue and pink sky.' },
+  { name: 'f', alt: 'A girl looking back while skating on a longboard surrounded by palm trees.' },
+  { name: 'e', alt: 'Walking down a wooden pathway with a surfboard towards the ocean.' },
+  { name: 'a', alt: 'Two roped men climbing up a steeped bank of snow.' },
+  { name: 'h', alt: 'The Atkas statue in Rockefeller Center in New York.' },
+  { name: 'k', alt: 'A man looking facing the sun set horizon with a dark orange rock wall behind him.' },
+  { name: 'i', alt: 'A woman flying a Cesna plane with a man as the passenger looking out the window.' },
+]
+
+const images = await Promise.all(
+  photos.map(async ({ name, alt }) => {
+    const src = files[`../../assets/photos/${name}.jpg`]?.default
+    if (!src) throw new Error(`Missing carousel photo: src/assets/photos/${name}.jpg`)
+
+    // Sources are 400px wide; upscaling would only add bytes, so each variant
+    // is emitted at native size and the browser picks the first it supports.
+    const [avif, webp, jpg] = await Promise.all([
+      getImage({ src, format: 'avif', quality: 50 }),
+      getImage({ src, format: 'webp', quality: 80 }),
+      getImage({ src, format: 'jpeg', quality: 80 }),
+    ])
+
+    return {
+      alt,
+      avif: avif.src,
+      webp: webp.src,
+      jpg: jpg.src,
+      width: src.width,
+      height: src.height,
+    }
+  }),
+)
+---
+
+<Carousel images={images} client:idle />

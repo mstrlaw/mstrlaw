@@ -2,56 +2,14 @@
 import { ref } from 'vue'
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide } from 'vue3-carousel'
-import { Image } from '@unpic/vue'
+
+// Variants are generated at build time by FeaturedMedia.astro; this component
+// only picks between them. Each entry: { alt, avif, webp, jpg, width, height }.
+const props = defineProps({
+  images: { type: Array, required: true },
+})
 
 const carousel = ref(null)
-
-const images = [
-  {
-    name: 'j',
-    alt: 'A man standing on top of a snowy mountain peak holding an ice axe.',
-  },
-  {
-    name: 'c',
-    alt: 'A white truck in an orange tinted desert.',
-  },
-  {
-    name: 'l',
-    alt: 'A man in a wetsuit holding a surfboard and laughing at the beach.',
-  },
-  {
-    name: 'b',
-    alt: 'A group of people marching on snow with tall white mountains in the background.',
-  },
-  {
-    name: 'd',
-    alt: 'A palm tree and an egyptian obelisc in front of a blue and pink sky.',
-  },
-  {
-    name: 'f',
-    alt: 'A girl looking back while skating on a longboard surrounded by palm trees.',
-  },
-  {
-    name: 'e',
-    alt: 'Walking down a wooden pathway with a surfboard towards the ocean.',
-  },
-  {
-    name: 'a',
-    alt: 'Two roped men climbing up a steeped bank of snow.',
-  },
-  {
-    name: 'h',
-    alt: 'The Atkas statue in Rockefeller Center in New York.',
-  },
-  {
-    name: 'k',
-    alt: 'A man looking facing the sun set horizon with a dark orange rock wall behind him.',
-  },
-  {
-    name: 'i',
-    alt: 'A woman flying a Cesna plane with a man as the passenger looking out the window.',
-  },
-]
 
 const carouselConfig = {
   itemsToShow: 2,
@@ -92,7 +50,7 @@ const carouselConfig = {
 const goToSlide = (index) => {
   if (!carousel.value) return
 
-  const count = images.length
+  const count = props.images.length
   const current = carousel.value.currentSlide
   const normalized = ((current % count) + count) % count
 
@@ -111,7 +69,7 @@ const goToSlide = (index) => {
   <div class="w-full md:max-w-7xl mx-auto my-16">
     <Carousel ref="carousel" v-bind="carouselConfig">
       <Slide
-        v-for="(image, index) in images"
+        v-for="(image, index) in props.images"
         :key="index"
         @click="goToSlide(index)"
       >
@@ -119,18 +77,20 @@ const goToSlide = (index) => {
           class="relative aspect-9/10 w-64 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 my-4 hover:cursor-grab active:cursor-grabbing rotate-2"
           @contextmenu.prevent
         >
-          <Image
-            :src="`/photos/${image.name}.jpg`"
-            layout="constrained"
-            loading="lazy"
-            background="auto"
-            width="800"
-            height="1066"
-            :alt="image.alt"
-            decoding="async"
-            draggable="false"
-            class="absolute inset-0 h-full w-full object-cover"
-          />
+          <picture>
+            <source :srcset="image.avif" type="image/avif" />
+            <source :srcset="image.webp" type="image/webp" />
+            <img
+              :src="image.jpg"
+              :width="image.width"
+              :height="image.height"
+              :alt="image.alt"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+          </picture>
         </div>
       </Slide>
     </Carousel>
