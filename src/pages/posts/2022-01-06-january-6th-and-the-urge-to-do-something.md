@@ -73,11 +73,11 @@ At that moment, for a brief moment, I felt at least I was using technology for s
 
 We shared the link on the _r/washingtondc_ subreddit in the hopes it would be useful to Washingtonians (I had traveled to the city months ago, visiting the Capitol too and admittedly felt some connection to the event). We were happy if only even one person got value out of this project to grasp the sheer extreme that his represented to all those that cherish our way of life.
 
-![Screenshots from user feedback from the Reddit post.](/images/uploads/reddit_capitol.png 'Some of the feedback from the post in *r/washingtondc*')
+![Screenshots from user feedback from the Reddit post.](/images/uploads/reddit_capitol.png "Some of the feedback from the post in *r/washingtondc*")
 
 <p class="u-ImageDescription">Some of the feedback from the post in *r/washingtondc*</p>
 
-![A screenshot of the visitor analytics data for January 2021, showing a total of 1,761 sessions.](/images/uploads/capitol_visits.jpg 'Analytics data for visits to the web app.')
+![A screenshot of the visitor analytics data for January 2021, showing a total of 1,761 sessions.](/images/uploads/capitol_visits.jpg "Analytics data for visits to the web app.")
 
 <p class="u-ImageDescription">Analytics data for visits to the web app</p>
 

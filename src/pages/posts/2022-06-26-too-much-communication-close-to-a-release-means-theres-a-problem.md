@@ -79,13 +79,13 @@ One factor can be the main element that results in unmanageable volumes of commu
 
 A higher volume isn't necessarily bad – again, it depends on context. How are the teams organized? How do they communicate regularly? What does the planning and delivery phases look like?
 
-![](/images/uploads/communication_along_time_ideal.jpg 'Communication pattern for a "golden path" of discovery-delivery?')
+![](/images/uploads/communication_along_time_ideal.jpg "Communication pattern for a \"golden path\" of discovery-delivery?")
 
 <p class="u-ImageDescription">Communication pattern for a "golden path" of discovery-delivery?</p>
 
 A specific SDLC may imply in a patter with larger upfront communication frequency during the discovery phase, followed by a "quieter" stage of execution, followed by an uptick due to release coordination and finally a post release stage, with hot fixes and coordinated improvements resulting from production monitoring.
 
-![](/images/uploads/communication_along_time_ideal2.jpg 'Communication is more constant when doing continuous delivery.')
+![](/images/uploads/communication_along_time_ideal2.jpg "Communication is more constant when doing continuous delivery.")
 
 <p class="u-ImageDescription">Communication is more constant when doing continuous delivery.</p>
 

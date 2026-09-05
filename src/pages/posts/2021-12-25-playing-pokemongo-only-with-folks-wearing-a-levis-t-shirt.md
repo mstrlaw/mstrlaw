@@ -37,7 +37,7 @@ In other words, **a ton of work!**
 
 First, you’d need to handle standardizing the photo to extract the brand area. Moreover and as importantly, you’d need to create a good training data set for the NN to identify the t-shirt.
 
-![An image depicting the app prototype.](/images/uploads/app_simulation.gif 'App prototype')
+![An image depicting the app prototype.](/images/uploads/app_simulation.gif "App prototype")
 
 <p class="u-ImageDescription">App prototype.</p>
 
@@ -128,7 +128,7 @@ methods:{
 
 ## Testing In The Wild
 
-![A couple posing for a picture, wearing a Levis shirt.](/images/uploads/levis_shirt.png 'Photo by Bruno Vaz for the amusing NIT article on people wearing Levis t-shirts.')
+![A couple posing for a picture, wearing a Levis shirt.](/images/uploads/levis_shirt.png "Photo by Bruno Vaz for the amusing NIT article on people wearing Levis t-shirts.")
 
 <p class="u-ImageDescription">Photo by <a href="https://www.instagram.com/godinhovaz/" target="_blank">Bruno Vaz</a> for the amusing <a href="https://www.nit.pt/compras/lojas-e-marcas/porque-e-que-toda-a-gente-no-rock-in-rio-usa-as-mesmas-t-shirts-da-levis" target="_blank">NIT article</a> on people wearing Levis t-shirts.</p>
 
