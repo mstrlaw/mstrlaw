@@ -40,23 +40,23 @@ const getMediaFormat = (feat_image) => {
         >
       </time>
     </header>
-    <div class="mt-8 prose dark:prose-invert">
-      {
-        feat_image &&
-          !hide_feat_image &&
-          (getMediaFormat(feat_image) === 'gif' ? (
-            <img
-              src={feat_image}
-              class="flex rounded-xl overflow-hidden w-full"
-            />
-          ) : (
-            <Image
-              src={feat_image}
-              alt="A description of my image."
-              class="flex rounded-xl overflow-hidden w-full"
-            />
-          ))
-      }
+    {
+      feat_image &&
+        !hide_feat_image &&
+        (getMediaFormat(feat_image) === 'gif' ? (
+          <img
+            src={feat_image}
+            class="mt-8 flex rounded-xl overflow-hidden w-full"
+          />
+        ) : (
+          <Image
+            src={feat_image}
+            alt="A description of my image."
+            class="mt-8 flex rounded-xl overflow-hidden w-full"
+          />
+        ))
+    }
+    <div class="mt-8 prose">
       <div class="my-8">
         <slot />
       </div>
