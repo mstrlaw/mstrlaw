@@ -11,11 +11,6 @@
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Not fingerprinted, but the woff2 files are stable. If one is ever
-# replaced, rename it rather than relying on this expiring.
-/font/*
-  Cache-Control: public, max-age=31536000, immutable
-
 # Not fingerprinted and re-encoded from time to time, so keep a short
 # fresh window and serve stale while a new copy is fetched.
 /photos/*

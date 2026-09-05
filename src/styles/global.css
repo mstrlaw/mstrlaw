@@ -1,46 +1,7 @@
 @import 'tailwindcss';
 
-/* Static Inter faces, limited to the weights the site actually renders
-   (400/500/600/700 plus 400 italic for blockquotes). Adding a weight here
-   means adding the matching woff2 to public/font/. */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/font/Inter-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/font/Inter-Italic.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/font/Inter-Medium.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/font/Inter-SemiBold.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/font/Inter-Bold.woff2') format('woff2');
-}
-
 :root {
-  font-family: 'Inter', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   /* For carousel gradient masking */
   --gradient-color: var(--color-zinc-50);
   --text-color: var(--color-zinc-900);
@@ -69,7 +30,9 @@
 /* @custom-variant dark (&:where(.dark, .dark *)); */
 
 @theme {
-  --font-sans: 'Inter', sans-serif;
+  /* Web-safe stack: no webfont download, no swap reflow. Helvetica is the
+     macOS/iOS equivalent; sans-serif covers everything else. */
+  --font-sans: Arial, Helvetica, sans-serif;
   --header-position: sticky;
   --content-offset: 116px;
   --header-height: 180px;
