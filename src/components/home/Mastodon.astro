@@ -33,7 +33,15 @@ const metrics = [
         id="mastodon"
         class="mt-6 text-base font-semibold text-zinc-600 dark:text-zinc-100"
       >
-        On Mastodon
+        Things on
+        <a
+          href={PROFILE_URL}
+          rel="me"
+          target="_blank"
+          class="underline text-zinc-600 dark:text-white inline-block mt-8"
+        >
+          Mastodon
+        </a>
       </h2>
       <p class="text-sm text-zinc-600 dark:text-zinc-400">
         Recent posts and boosts.
@@ -44,12 +52,10 @@ const metrics = [
             href={status.url}
             target="_blank"
             rel="noopener"
-            class="block w-full p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50"
+            class="flex flex-col block w-full p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50"
           >
             <small class="block text-zinc-500 dark:text-zinc-400">
-              {status.type === 'boost'
-                ? `Boosted @${status.author.acct}`
-                : 'Posted'}
+              {status.type === 'boost' ? `Boosted` : 'Posted'}
             </small>
             {status.media && (
               <img
@@ -65,7 +71,7 @@ const metrics = [
             <p class="text-sm mt-2 text-zinc-600 dark:text-zinc-300">
               {status.excerpt}
             </p>
-            <div class="flex items-center gap-4 mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+            <div class="flex items-center gap-4 mt-auto pt-3 text-xs text-zinc-500 dark:text-zinc-400">
               <time datetime={status.createdAt}>
                 {format(new Date(status.createdAt), 'd MMM yyyy')}
               </time>
@@ -87,14 +93,6 @@ const metrics = [
           </a>
         ))}
       </div>
-      <a
-        href={PROFILE_URL}
-        rel="me"
-        target="_blank"
-        class="text-sm underline text-zinc-600 dark:text-white inline-block mt-8"
-      >
-        See more on Mastodon
-      </a>
     </div>
   )
 }
