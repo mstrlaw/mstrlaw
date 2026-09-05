@@ -3156,6 +3156,35 @@
         "progress": 0,
         "progress_timestamp": 1788398799
       }
+    ],
+    "05": [
+      {
+        "id": 2039086491,
+        "url": "https://www.smh.com.au/environment/climate-change/the-world-made-a-covenant-with-the-future-and-we-broke-it-20260903-p60u00.html",
+        "title": "The world made a ‘covenant with the future’ – and we broke it",
+        "description": "",
+        "time_added": 1788540984,
+        "progress": 0,
+        "progress_timestamp": 1788571465
+      },
+      {
+        "id": 2039084742,
+        "url": "https://9to5mac.com/2026/09/03/apple-will-launch-six-major-new-products-next-week-heres-whats-coming/",
+        "title": "Apple will launch six major new products next week, here’s what’s coming - 9to5Mac",
+        "description": "",
+        "time_added": 1788540456,
+        "progress": 0,
+        "progress_timestamp": 1788571465
+      },
+      {
+        "id": 2039084703,
+        "url": "https://9to5mac.com/2026/07/24/iphone-ultra-is-coming-six-new-features-in-apples-top-tier-model/",
+        "title": "iPhone Ultra is coming: Six new features in Apple’s top-tier model - 9to5Mac",
+        "description": "",
+        "time_added": 1788540447,
+        "progress": 0,
+        "progress_timestamp": 1788571465
+      }
     ]
   }
 }
