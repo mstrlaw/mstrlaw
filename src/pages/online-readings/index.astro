@@ -18,6 +18,10 @@ import Layout from '../../layouts/Layout.astro'
   </div>
 </Layout>
 
+<!-- Only this page draws Chart.js canvases; the rest of the site does not
+     need the library, so it is loaded here rather than in Layout. -->
+<script is:inline defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
   const START_YEAR = 2025
   const MONTH_NAMES = [

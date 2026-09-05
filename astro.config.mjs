@@ -13,6 +13,11 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: 'static',
+  build: {
+    // The whole site's CSS is ~6 KB brotli'd, so two extra render-blocking
+    // round trips cost far more than the bytes. Inlining removes them.
+    inlineStylesheets: 'always',
+  },
   integrations: [
     // TresJS needs its isCustomElement compiler option passed to the Vue
     // integration so <Tres*> tags aren't resolved as Vue components.
