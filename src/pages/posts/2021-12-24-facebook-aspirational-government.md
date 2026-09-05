@@ -36,7 +36,7 @@ The best strategy lays in aligning and playing along with current political powe
 
 While Twitter finally stepped up and started fact-checking and labeling Donald Trump’s tweets, Facebook allowed for his inflammatory rhetoric to remain available and distributable on the platform.
 
-![A Tweet by Jason Stirman, product R&D at Facebook stating "I'm a Facebook employee that completely disagrees with Mark's decision to do nothing about Trump's recent posts, which clearly incite violence".](/images/uploads/stirman_tweet.jpeg 'A Tweet by Jason Stirman, product R&D at Facebook')
+![A Tweet by Jason Stirman, product R&D at Facebook stating "I'm a Facebook employee that completely disagrees with Mark's decision to do nothing about Trump's recent posts, which clearly incite violence".](/images/uploads/stirman_tweet.jpeg "A Tweet by Jason Stirman, product R&D at Facebook")
 
 <p class="u-ImageDescription"><a href="https://twitter.com/stirman" target="_blank">Jason Stirman</a>, product R&D at Facebook.</p>
 
@@ -76,7 +76,7 @@ But I’m less worried about incompetent behavior resulting in negative social c
 
 Even though a market boycott is deemed a plausible threat, as we’ve seen so far it has posed no issue to the company’s revenue as advertisers will inevitably want to tap into Facebook’s billions of eyeballs.
 
-![A tweet by Chris Masterson, ex Product Designer at Facebook/Instagram, stating "Honestly embarrassed to so say I ever worked at Facebook".](/images/uploads/masterson_tweet.jpeg 'A tweet by Chris Masterson, ex Product Designer at Facebook/Instagram.')
+![A tweet by Chris Masterson, ex Product Designer at Facebook/Instagram, stating "Honestly embarrassed to so say I ever worked at Facebook".](/images/uploads/masterson_tweet.jpeg "A tweet by Chris Masterson, ex Product Designer at Facebook/Instagram.")
 
 <p class="u-ImageDescription"><a href="https://twitter.com/chrismasterson" target="_blank">Chris Masterson</a>, ex Product Designer at Facebook/Instagram.</p>
 

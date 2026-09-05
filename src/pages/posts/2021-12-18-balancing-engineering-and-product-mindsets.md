@@ -29,7 +29,7 @@ Of course the quality of the feedback you get will depend on the seniority and s
 
 To simplify we can look at two axises: technical knowledge and business knowledge.
 
-![A chart representing Technical Knowledge in the Y axis and Business Knowledge in the X axis.](/images/uploads/balance.png 'The sweet spot for a balanced tech lead.')
+![A chart representing Technical Knowledge in the Y axis and Business Knowledge in the X axis.](/images/uploads/balance.png "The sweet spot for a balanced tech lead.")
 
 <p class="u-ImageDescription">The sweet spot for a balanced tech lead.</p>
 
@@ -55,7 +55,7 @@ I reached out to the other team’s tech lead as well as other engineers that wo
 
 After validating these, I sat down with the designer to think on how we’d change the UI to support this new feature: the user would need to understand that the translation direction had changed automatically; there could be cases where our detection confidence level would be too low to perform the switch; the user could want to turn off the feature; in some cases the feature wouldn’t even be made available.
 
-![A line chart displaying the evolution of the automatic language detection versus mouse clicks versus keyboard shortcut.](/images/uploads/mixpanel_feature_tracking.png 'Usage of the automatic language detection Vs. mouse clicks Vs. keyboard shortcut.')
+![A line chart displaying the evolution of the automatic language detection versus mouse clicks versus keyboard shortcut.](/images/uploads/mixpanel_feature_tracking.png "Usage of the automatic language detection Vs. mouse clicks Vs. keyboard shortcut.")
 
 <p class="u-ImageDescription">Usage of the automatic language detection Vs. mouse clicks Vs. keyboard shortcut.</p>
 
@@ -71,7 +71,7 @@ But more concretely, when you’re being asked to participate in a discovery pha
 
 As the assessing engineer, you’ll be required to have some rationale to justify why one thing may or may not be doable. And for that, it’s best for you to have some ground to support your opinion.
 
-![A triangle with the words Scope, Time and Cost in each corner.](/images/uploads/constraints.png 'Classic constraints model of project management.')
+![A triangle with the words Scope, Time and Cost in each corner.](/images/uploads/constraints.png "Classic constraints model of project management.")
 
 <p class="u-ImageDescription">Classic constraints model of project management.</p>
 
@@ -160,7 +160,7 @@ Was it worth hiring a new resource with knowledge in dataviz that could work on 
 Alternatively, what chart libraries were out there that could be used to achieve the visualizations we had in mind? I researched open sourced ones but as expected they couldn’t be customized much. I ended up finding a paid solution that did provide many more charts than the classic ones and was fairly extendable. Unfortunately none could achieve precisely what we had in mind, but there were some interesting candidates.\
 I presented this to the product manager as a halfway compromise: we could do appealing visualizations with good performance and fairly quickly but we’d need to change the visual concepts we had in mind and we’d need to pay for a license in order to use it.
 
-![An animated gif representing the language brain charts ](/images/uploads/language_brain.gif 'The Language Brain page showing the distribution of translations.')
+![An animated gif representing the language brain charts ](/images/uploads/language_brain.gif "The Language Brain page showing the distribution of translations.")
 
 <p class="u-ImageDescription">The Language Brain page showing the distribution of translations.</p>
 

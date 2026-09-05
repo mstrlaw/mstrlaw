@@ -31,13 +31,13 @@ Anyways, after some research with <a href="https://github.com/myles/awesome-stat
 
 So what were the performance gains? Well, I was using <a href="https://gridsome.org/" target="_blank">Gridsome</a> previsouly — a very solid static generator if you want to keep it in the Vue universe — so it's not like I was in the red when it comes to web vitals, right?
 
-![A screenshot of Chrome's Lighthouse performance tool for the Gridsome version.](/images/uploads/old_lighthouse-min.jpg 'Lighthouse scores for the Gridsome version. Not too shabby.')
+![A screenshot of Chrome's Lighthouse performance tool for the Gridsome version.](/images/uploads/old_lighthouse-min.jpg "Lighthouse scores for the Gridsome version. Not too shabby.")
 
 <p class="u-ImageDescription">Lighthouse scores for the Gridsome version. Not too shabby.</p>
 
 Yeah not bad. But the TTI was still high, floating around 2-4 seconds. Also, how much data are we downloading just for this simple website? <a href="https://tools.pingdom.com/" target="_blank">Pingdom Tools</a> has the answer (with Tokyo as the test location):
 
-![A screenshot of Pingdom Tools website speed test tool for the Gridsome version.](/images/uploads/old_pingdom_tokyo-min.jpg 'Pingdom Tools website speed test scores for the Gridsome version.')
+![A screenshot of Pingdom Tools website speed test tool for the Gridsome version.](/images/uploads/old_pingdom_tokyo-min.jpg "Pingdom Tools website speed test scores for the Gridsome version.")
 
 <p class="u-ImageDescription">Pingdom Tools website speed test scores for the Gridsome version.</p>
 
@@ -51,7 +51,7 @@ We're also basically hitting a 3s load time, not ideal if you want to have that 
 
 Let's look at how Metalsmith's version stacks against Gridsome's.
 
-![A screenshot of Chrome's Lighthouse performance tool metrics between the Gridsome and Metalsmith versions.](/images/uploads/web_vitals_diference.png 'Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.')
+![A screenshot of Chrome's Lighthouse performance tool metrics between the Gridsome and Metalsmith versions.](/images/uploads/web_vitals_diference.png "Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.")
 
 <p class="u-ImageDescription">Lighthouse metrics between the Gridsome (above) and Metalsmith (below) versions.</p>
 
@@ -59,7 +59,7 @@ TTI was reduced by ≈43% and Blocking Time to 0. The <a href="https://web.dev/s
 
 We've shaved milliseconds almost everywhere, understandable as we've reduced our total amount of JS, CSS and HTML in use. So how much are we downloading right now?
 
-![A screenshot of Pingdom Tools website speed test tool for the Metalsmith version.](/images/uploads/new_pingdom_tokyp.jpg 'Pingdom Tools website speed test scores for the Metalsmith version.')
+![A screenshot of Pingdom Tools website speed test tool for the Metalsmith version.](/images/uploads/new_pingdom_tokyp.jpg "Pingdom Tools website speed test scores for the Metalsmith version.")
 
 <p class="u-ImageDescription">Pingdom Tools website speed test scores for the Metalsmith version.</p>
 
@@ -67,7 +67,7 @@ Well, we've managed to get a 6.5x reduction in the page size, from 360kb to 55kb
 
 Granted, bits of text information from the previous version were removed from the homepage that we're testing, but that doesn't explain the 305kb less. All right so what about this current page? What's its score?
 
-![A screenshot of Chrome's Lighthouse performance tool metrics between for this page.](/images/uploads/new_post_lighthouse.jpg 'Lighthouse performance tool metrics for this page.')
+![A screenshot of Chrome's Lighthouse performance tool metrics between for this page.](/images/uploads/new_post_lighthouse.jpg "Lighthouse performance tool metrics for this page.")
 
 <p class="u-ImageDescription">Lighthouse performance tool metrics for this page.</p>
 
@@ -79,7 +79,7 @@ And the only reason we're not hitting 100% on Best Practices (93) is because we'
 
 We're also not lazy loading assets or providing an opt-in asset download approach, meaning we're downloading all of those at once, hence having a page download of about 600kb as soon as we land.
 
-![A screenshot of Pingdom Tools website speed test tool for this page version.](/images/uploads/new_post_pingdom.jpg 'Pingdom Tools website speed test scores for this page.')
+![A screenshot of Pingdom Tools website speed test tool for this page version.](/images/uploads/new_post_pingdom.jpg "Pingdom Tools website speed test scores for this page.")
 
 <p class="u-ImageDescription">Pingdom Tools website speed test scores for this page.</p>
 
