@@ -208,7 +208,10 @@ body {
 .prose h2 {
   font-size: var(--text-2xl);
   font-weight: bold;
+  line-height: 1.4em;
   margin-bottom: 1em;
+  /* Keeps the heading clear of the viewport edge when linked from the TOC */
+  scroll-margin-top: 2rem;
 }
 
 .prose h3 {
@@ -309,6 +312,29 @@ blockquote p:after {
 .u-ImageDescription {
   margin-top: -24px;
   color: var(--text-color);
+}
+
+/* Table of contents */
+
+.c-Toc__link {
+  transition:
+    color 150ms ease-out,
+    border-color 150ms ease-out;
+}
+
+/* The scroll-spy in PostLayout flags the section being read, using the same
+   indigo accent as the top nav. Weight is left alone on purpose: bolding a
+   wrapped entry reflows the narrow column. */
+.c-Toc__link[aria-current='true'] {
+  border-left-color: var(--color-indigo-800);
+  color: var(--color-indigo-800);
+}
+
+@media (prefers-color-scheme: dark) {
+  .c-Toc__link[aria-current='true'] {
+    border-left-color: var(--color-indigo-300);
+    color: var(--color-indigo-300);
+  }
 }
 
 /* Chart */

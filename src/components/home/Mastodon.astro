@@ -24,6 +24,11 @@ const metrics = [
   { key: 'reblogs', label: 'boosts' },
   { key: 'favourites', label: 'favourites' },
 ]
+
+// A 1x1 transparent GIF stands in until the real image is requested. An <img>
+// with no src at all would show the alt text (Firefox) or a broken icon.
+const BLANK_PIXEL =
+  'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
 ---
 
 {
@@ -58,15 +63,28 @@ const metrics = [
               {status.type === 'boost' ? `Boosted` : 'Posted'}
             </small>
             {status.media && (
-              <img
-                src={status.media.url}
-                alt={status.media.alt}
-                width={status.media.width}
-                height={status.media.height}
-                loading="lazy"
-                decoding="async"
-                class="rounded-lg mt-2 w-full h-40 object-cover"
-              />
+              <>
+                <img
+                  src={BLANK_PIXEL}
+                  data-lazy-src={status.media.url}
+                  alt={status.media.alt}
+                  width={status.media.width}
+                  height={status.media.height}
+                  decoding="async"
+                  class="rounded-lg mt-2 w-full h-40 object-cover bg-zinc-100 dark:bg-zinc-700/40"
+                />
+                <noscript>
+                  <img
+                    src={status.media.url}
+                    alt={status.media.alt}
+                    width={status.media.width}
+                    height={status.media.height}
+                    loading="lazy"
+                    decoding="async"
+                    class="rounded-lg mt-2 w-full h-40 object-cover"
+                  />
+                </noscript>
+              </>
             )}
             <p class="text-sm mt-2 text-zinc-600 dark:text-zinc-300">
               {status.excerpt}
@@ -96,3 +114,39 @@ const metrics = [
     </div>
   )
 }
+
+<script>
+  // Native loading="lazy" fetches once an image is within a browser-chosen
+  // distance of the viewport, which on a short viewport reaches well past the
+  // fold. These images come from files.mastodon.social, so hold the request
+  // until the post is actually approaching the screen.
+  const images = document.querySelectorAll('img[data-lazy-src]')
+
+  const load = (image) => {
+    const src = image.getAttribute('data-lazy-src')
+    if (!src) return
+    image.src = src
+    image.removeAttribute('data-lazy-src')
+  }
+
+  if (images.length > 0) {
+    if ('IntersectionObserver' in window) {
+      // Small margin so the fetch starts just before the card scrolls in,
+      // rather than after. Set to '0px' to hold until it is strictly visible.
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue
+            load(entry.target)
+            observer.unobserve(entry.target)
+          }
+        },
+        { rootMargin: '200px' }
+      )
+
+      for (const image of images) observer.observe(image)
+    } else {
+      for (const image of images) load(image)
+    }
+  }
+</script>
