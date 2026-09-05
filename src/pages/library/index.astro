@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { Image } from 'astro:assets'
-import Books from './books.js';
+import Books from '../../data/books.js';
 
 const sortedBooks = () => {
   // Group books by yearRead
@@ -32,7 +32,7 @@ const sortedBooks = () => {
   <div class="mt-8 mb-16">
     <h1 class="text-3xl font-bold text-zinc-900 dark:text-zinc-100">Library</h1>
     <p class="text-base text-zinc-900 dark:text-zinc-100">
-      Current and past readings. Alternatively, explore my <a href="/online-readings" class="underline text-teal-200 hover:text-teal-500 dark:hover:text-teal-400">online readings</a>.
+      Current and past readings.<br> Alternatively, check my <a href="/online-readings" class="underline text-teal-200 hover:text-teal-500 dark:hover:text-teal-400">online readings</a>.
     </p>
   </div>
   <div>
