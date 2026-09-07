@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 720 400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" role="img" aria-label="Semi-autonomous product loop showing tools, agents and human gates">
+  <style>
+    .node { stroke-width: 1.5; }
+    .amber { fill: #fbe6c8; stroke: #d68a1a; }
+    .purple { fill: #ece6fb; stroke: #7c5cff; }
+    .teal { fill: #d9f2ec; stroke: #0e9384; }
+    .slate { fill: #e7ebf0; stroke: #64748b; }
+    .hub { fill: #dfe8fb; stroke: #3b6fe0; stroke-width: 2; }
+    .sched { fill: #f0efec; stroke: #b9b5ad; stroke-width: 1.3; stroke-dasharray: 5 4; }
+    .t { fill: #23201c; font-weight: 600; font-size: 13px; }
+    .s { fill: #5c574f; font-size: 10.5px; }
+    .hubt { fill: #1e3a8a; font-weight: 700; font-size: 15px; }
+    .hubs { fill: #3b5aa6; font-size: 10.5px; }
+    .lbl { fill: #7a756c; font-size: 10.5px; font-style: italic; }
+    .leg { fill: #3c3833; font-size: 11px; }
+    .arr { stroke: #6b6660; stroke-width: 1.6; fill: none; }
+    .darr { stroke: #a8a39a; stroke-width: 1.4; fill: none; stroke-dasharray: 4 3; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M2 1 L8 5 L2 9" fill="none" stroke="#6b6660" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="ahd" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1 L8 5 L2 9" fill="none" stroke="#a8a39a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="400" fill="#f6f5f3"/>
+  <text x="30" y="34" fill="#23201c" font-weight="700" font-size="16px">Semi-autonomous product loop — Cyrus build lane</text>
+
+  <!-- arrows (drawn first, under nodes) -->
+  <line x1="222" y1="95" x2="261" y2="95" class="arr" marker-end="url(#ah)"/>
+  <line x1="457" y1="95" x2="496" y2="95" class="arr" marker-end="url(#ah)"/>
+  <line x1="595" y1="128" x2="595" y2="206" class="arr" marker-end="url(#ah)"/>
+  <line x1="498" y1="241" x2="459" y2="241" class="arr" marker-end="url(#ah)"/>
+  <line x1="263" y1="241" x2="224" y2="241" class="arr" marker-end="url(#ah)"/>
+  <line x1="125" y1="206" x2="125" y2="130" class="arr" marker-end="url(#ah)"/>
+  <text x="140" y="172" class="lbl">&#8635; measure &#8594; learn</text>
+  <!-- scheduled feedback connector -->
+  <line x1="120" y1="306" x2="120" y2="276" class="darr" marker-end="url(#ahd)"/>
+
+  <!-- Row 1 -->
+  <g><rect class="node amber" x="30" y="64" width="190" height="62" rx="10"/>
+    <text class="t" x="125" y="90" text-anchor="middle">&#9733; Research &amp; Specs</text>
+    <text class="s" x="125" y="108" text-anchor="middle">you + Claude Code (no repo)</text></g>
+
+  <g><rect class="node amber" x="265" y="64" width="190" height="62" rx="10"/>
+    <text class="t" x="360" y="90" text-anchor="middle">&#9733; Dispatch</text>
+    <text class="s" x="360" y="108" text-anchor="middle">you assign ticket &#8594; Cyrus</text></g>
+
+  <g><rect class="node purple" x="500" y="64" width="190" height="62" rx="10"/>
+    <text class="t" x="595" y="90" text-anchor="middle">Implement &amp; Tests</text>
+    <text class="s" x="595" y="108" text-anchor="middle">Cyrus &#8594; headless Claude Code</text></g>
+
+  <!-- Hub -->
+  <g><rect class="hub" x="280" y="141" width="160" height="54" rx="10"/>
+    <text class="hubt" x="360" y="166" text-anchor="middle">Linear</text>
+    <text class="hubs" x="360" y="183" text-anchor="middle">the board (shared state)</text></g>
+
+  <!-- Row 2 -->
+  <g><rect class="node slate" x="500" y="210" width="190" height="62" rx="10"/>
+    <text class="t" x="595" y="236" text-anchor="middle">MR + CI/CD</text>
+    <text class="s" x="595" y="254" text-anchor="middle">GitLab</text></g>
+
+  <g><rect class="node amber" x="265" y="210" width="190" height="62" rx="10"/>
+    <text class="t" x="360" y="236" text-anchor="middle">&#9733; Review &amp; Merge</text>
+    <text class="s" x="360" y="254" text-anchor="middle">you approve</text></g>
+
+  <g><rect class="node teal" x="30" y="210" width="190" height="62" rx="10"/>
+    <text class="t" x="125" y="236" text-anchor="middle">Ship &amp; Measure</text>
+    <text class="s" x="125" y="254" text-anchor="middle">PostHog &#183; flag + experiment</text></g>
+
+  <!-- Scheduled tasks satellite -->
+  <g><rect class="sched" x="30" y="308" width="250" height="42" rx="9"/>
+    <text class="s" x="155" y="326" text-anchor="middle" font-weight="600">Scheduled tasks (Mac)</text>
+    <text class="s" x="155" y="341" text-anchor="middle">morning brief &#183; post-ship analyst</text></g>
+
+  <!-- Legend -->
+  <g transform="translate(30,372)">
+    <rect x="0" y="0" width="13" height="13" rx="3" class="amber" stroke-width="1.3"/><text class="leg" x="19" y="10">you &#8212; in the loop (&#9733;)</text>
+    <rect x="170" y="0" width="13" height="13" rx="3" class="purple" stroke-width="1.3"/><text class="leg" x="189" y="10">Claude Code agent</text>
+    <rect x="330" y="0" width="13" height="13" rx="3" class="teal" stroke-width="1.3"/><text class="leg" x="349" y="10">PostHog</text>
+    <rect x="435" y="0" width="13" height="13" rx="3" class="slate" stroke-width="1.3"/><text class="leg" x="454" y="10">Linear &#183; GitLab</text>
+  </g>
+</svg>
