@@ -2,7 +2,7 @@
 layout: /src/layouts/PostLayout.astro
 title: On Cyber Conjurations and Alchemy, or AI SDLC for short
 summary: An exploration of AI driven Product Engineering,
-feat_image: /images/uploads/product-loop.svg
+feat_image: /images/uploads/aisdlc_v0.jpeg
 feat_image_alt: ''
 hide_feat_image: false
 description: ''
