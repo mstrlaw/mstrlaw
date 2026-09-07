@@ -3196,6 +3196,26 @@
         "progress": 0,
         "progress_timestamp": 1788657591
       }
+    ],
+    "07": [
+      {
+        "id": 2039694977,
+        "url": "https://www.huffpost.com/entry/james-talarico-responds-to-trump-nicknames_n_6a9e42a9e4b00f094b1a693e",
+        "title": "James Talarico Has A No-Nonsense Response To Trump’s ‘Talafreako’ Taunts",
+        "description": "",
+        "time_added": 1788794531,
+        "progress": 0,
+        "progress_timestamp": 1788820814
+      },
+      {
+        "id": 2039694502,
+        "url": "https://www.theguardian.com/politics/2026/sep/07/patriot-platform-far-right-group-dover-portsmouth",
+        "title": "Who are Patriot Platform, the far-right group that descended on Dover and Portsmouth?",
+        "description": "",
+        "time_added": 1788794382,
+        "progress": 0,
+        "progress_timestamp": 1788820814
+      }
     ]
   }
 }
