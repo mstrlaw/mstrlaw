@@ -48,6 +48,8 @@ By chance, I was approached and invited to work on ________. A cool idea with so
 
 Hello
 
+draft: I've moved from holding all the minute code, patterns and caveats, as well as architecture and systems in my mind, to holding the harness details, the baked in decisions within the AI workflow.
+
 ## Harness v1
 
 Hello - basic AI relationship. MDs, skills. Lots of human intervention.
