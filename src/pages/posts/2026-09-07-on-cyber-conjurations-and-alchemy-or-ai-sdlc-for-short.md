@@ -31,11 +31,9 @@ You might read this and think: another pissed programmer because of <_insert rea
 
 I've written code for most of my career although I've not been doing it professionally for some years now. Nevertheless I'm still fond of building things. I'm always building something. Digital things.
 
-I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this transformation. Too many restrictions, for the right reasons.
+I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this transformation. Too many restrictions, for the right reasons. 
 
-And that's fine.
-On one hand I get to see the impact of AI on an older, complex codebase, where there's real scale and high stakes for mistakes.
-On the other hand, by the time a decisions gets made, the state of the art has shifted and is too ahead. An evergreen project is needed
+That's fine, but by the time a decisions gets made, the state of the art has shifted and is too ahead. An evergreen project is needed
 
 <hr>
 
