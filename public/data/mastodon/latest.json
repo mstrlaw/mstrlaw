@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-10T08:57:14.008Z",
+  "lastUpdated": "2026-09-11T01:28:01.055Z",
   "statuses": [
+    {
+      "id": "117248017847014083",
+      "type": "boost",
+      "url": "https://mastodon.gamedev.place/@aras/117246588825846875",
+      "createdAt": "2026-09-10T17:52:52.329Z",
+      "excerpt": "So! There are AI agents registering themselves to this mastodon instance (some of them are upfront that they are automated AI agents). But! If you reject their application, after…",
+      "author": {
+        "acct": "aras@mastodon.gamedev.place",
+        "displayName": "Aras Pranckevičius",
+        "url": "https://mastodon.gamedev.place/@aras"
+      },
+      "media": null,
+      "counts": {
+        "replies": 61,
+        "reblogs": 202,
+        "favourites": 350
+      }
+    },
     {
       "id": "117191350422634961",
       "type": "boost",
@@ -21,7 +39,7 @@
       "counts": {
         "replies": 56,
         "reblogs": 694,
-        "favourites": 648
+        "favourites": 649
       }
     },
     {
@@ -41,24 +59,6 @@
         "replies": 0,
         "reblogs": 3,
         "favourites": 16
-      }
-    },
-    {
-      "id": "117082739648206847",
-      "type": "boost",
-      "url": "https://mastodon.social/@grheavyroller/117079463552366864",
-      "createdAt": "2026-08-12T13:20:27.187Z",
-      "excerpt": "Two thoughts coming to similar conclusions. @pluralistic : \"The problem is that for every plute who realizes that the cheapest way to keep the guillotines off his lawn is to play…",
-      "author": {
-        "acct": "grheavyroller",
-        "displayName": "gregg r",
-        "url": "https://mastodon.social/@grheavyroller"
-      },
-      "media": null,
-      "counts": {
-        "replies": 0,
-        "reblogs": 21,
-        "favourites": 45
       }
     }
   ]
