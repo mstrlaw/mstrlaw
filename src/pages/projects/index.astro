@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Project from '../../components/Project.astro';
+import ImageZoom from '../../components/ImageZoom.astro';
 
 const projectPosts = Object.values(
   import.meta.glob('../posts/*.md', { eager: true })
@@ -37,4 +38,5 @@ const projectPosts = Object.values(
         ))
     }
   </div>
+  <ImageZoom />
 </Layout>

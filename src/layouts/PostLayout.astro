@@ -2,8 +2,9 @@
 import Layout from '../layouts/Layout.astro'
 import { formatDistance } from 'date-fns'
 import { Image } from 'astro:assets'
+import ImageZoom from '../components/ImageZoom.astro'
 
-const { content, headings = [] } = Astro.props
+const { content, headings = [], compiledContent } = Astro.props
 const {
   title,
   summary,
@@ -20,6 +21,17 @@ const toc = headings
     ...heading,
     text: heading.text.replace(/\uFEFF/g, '').trim(),
   }))
+
+// Only ship the zoom script when the page actually has something to zoom —
+// five posts are text-only. compiledContent() is provided by Astro's markdown
+// layout; the fallback keeps the zoom rather than silently dropping it if a
+// caller ever renders this layout without it.
+const showsFeatImage = Boolean(feat_image && !hide_feat_image)
+const hasBodyImage =
+  typeof compiledContent === 'function'
+    ? /<img[\s>]/.test(compiledContent())
+    : true
+const needsZoom = showsFeatImage || hasBodyImage
 
 const getMediaFormat = (feat_image) => {
   return feat_image.split('.')[1]
@@ -55,12 +67,14 @@ const getMediaFormat = (feat_image) => {
         (getMediaFormat(feat_image) === 'gif' ? (
           <img
             src={feat_image}
+            data-zoomable
             class="mt-8 flex rounded-xl overflow-hidden w-full"
           />
         ) : (
           <Image
             src={feat_image}
             alt="A description of my image."
+            data-zoomable
             class="mt-8 flex rounded-xl overflow-hidden w-full"
           />
         ))
@@ -96,6 +110,7 @@ const getMediaFormat = (feat_image) => {
       }
     </div>
   </article>
+  {needsZoom && <ImageZoom />}
 </Layout>
 
 <script>

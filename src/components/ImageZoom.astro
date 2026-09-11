@@ -1,0 +1,22 @@
+---
+// Click-to-zoom for content images, via medium-zoom-next.
+//
+// Rendered only by the pages that actually have zoomable images (post pages
+// and the projects index) so the library never ships with the rest of the
+// site. Astro bundles a component's <script> once per page, so including this
+// more than once on the same page would still load the library a single time.
+---
+
+<script>
+  import mediumZoom from 'medium-zoom-next'
+  import 'medium-zoom-next/dist/style.css'
+
+  // Markdown body images can't carry attributes of their own, so images in the
+  // reading column are matched by position; everything else opts in with
+  // data-zoomable.
+  mediumZoom('[data-zoomable], .prose img', {
+    margin: 24,
+    // The default 40px closes the zoom on the slight scroll a tap can cause.
+    scrollOffset: 80,
+  })
+</script>
