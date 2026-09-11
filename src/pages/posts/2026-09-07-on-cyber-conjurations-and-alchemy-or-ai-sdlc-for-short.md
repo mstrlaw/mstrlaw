@@ -50,7 +50,7 @@ I want to understand what this all means for me, for us, the industry, for socie
 
 By chance, I was approached and invited to work on ________. A cool idea with some cool founders. More importantly, an evergreen project where product thinking and AI driven development can be joined and pushed to the limit through all the (apparent?) fantastic liberating ways of working that Agentic development brings.
 
-## Engineering Practices Apply
+## Fundamental Things Apply As Time Goes By
 
 Hello
 
