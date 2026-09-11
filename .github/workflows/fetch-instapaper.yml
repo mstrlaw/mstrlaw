@@ -34,6 +34,12 @@ jobs:
           node-version: '22'
           cache: 'npm'
 
+      # npm drops platform-specific optional deps from the lockfile when
+      # dependencies change on macOS, which only breaks on this Linux runner.
+      # Fails with a clear message instead of npm ci's cryptic one.
+      - name: Verify lockfile is complete
+        run: node scripts/check-lockfile.mjs
+
       - name: Install dependencies
         run: npm ci
 
