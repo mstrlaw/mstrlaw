@@ -35,7 +35,7 @@ I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my d
 
 And that's fine.
 On one hand I get to see the impact of AI on an older, complex codebase, where there's real scale and high stakes for mistakes.
-On the other hand, by the time a decisions gets made, the state of the art has shifted and is too ahead. An evergreen project is I needed
+On the other hand, by the time a decisions gets made, the state of the art has shifted and is too ahead. An evergreen project is needed
 
 <hr>
 
