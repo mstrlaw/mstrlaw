@@ -15,17 +15,17 @@ thumbnail: ''
 thumbnail_description: ''
 ---
 
-It's past August of 2026 and an increasingly large swath of the tech world is now waist deep in Agentic software development (or whatever word you're using at the time or reading).
+We're in the second half of 2026 and an increasingly large swath of the tech world is now waist deep in Agentic software development (or whatever word you're using at the time or reading).
 
-Naturally, you want (do you?) to know what the fuss is all about. You've got to _upskill_ yourself, stay relevant and valuable in the job market. Also, you do like building things right? Build with AI.
+Naturally, you want (do you?) to know what the fuss is about. You've got to _upskill_ yourself, stay relevant and remain valuable in the job market. "It's not AI that'll take your job, it's someone else that uses AI better than you".
 
-So you embark on a journey, still ongoing, to see what this technology that can do.
+So you embark on a journey, still ongoing, to see where this leads. FOMO and all of that.
 
-You wanna see and feel in the flesh these future looks like, these leaps in productivity and the new paradigm being touted on X and other corners of the civilized web. You too want to experience some AI psychosis, not just your standard burnout. FOMO and all that.
+You wanna experience the new paradigm being touted on X and other corners of the civilized web. If this is the last frontier before either utopia or dystopia — depending on who you ask — let's see it up close.
+
+You might read this and think: another pissed programmer because of <_insert reason_>.
 
 <hr/>
-
-You might read this and think: another pissed programmer because of <insert reason>.
 
 I've written code for most of my career although I've not been doing it professionally for some years now. Nevertheless I'm still fond of building things, I always build things. Digital things. I like that.
 So I want to experiment with the new way of building things.
