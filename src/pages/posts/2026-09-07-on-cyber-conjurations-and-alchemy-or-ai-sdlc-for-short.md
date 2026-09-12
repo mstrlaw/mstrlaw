@@ -102,6 +102,8 @@ It's capable of planning and implementing features E2E, test them, ship them to 
 
 <small>GitLab Pipeline when opening an MR</small>
 
+# 
+
 # Standard Agentic Lifecycle
 
 Hello - basic AI relationship. MDs, skills. Lots of human intervention.
