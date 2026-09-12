@@ -1361,6 +1361,7 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
+        height: 100dvh;
         overflow: hidden;
       }
       header {
@@ -1420,6 +1421,42 @@
           monospace;
         font-size: 10.5px;
         opacity: 0.85;
+      }
+      .fig-select-wrap {
+        display: none;
+        position: relative;
+        flex: 1;
+        min-width: 0;
+        margin-bottom: 10px;
+      }
+      .fig-select-wrap::after {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        width: 7px;
+        height: 7px;
+        border-right: 1.5px solid var(--sage);
+        border-bottom: 1.5px solid var(--sage);
+        transform: translateY(-70%) rotate(45deg);
+        pointer-events: none;
+      }
+      .fig-select {
+        width: 100%;
+        appearance: none;
+        -webkit-appearance: none;
+        font-family:
+          Inter Tight,
+          system-ui,
+          sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        background: var(--sage-chip);
+        color: var(--sage);
+        border: 1px solid var(--sage);
+        border-radius: 999px;
+        padding: 7px 34px 7px 14px;
+        cursor: pointer;
       }
       .fig-sub {
         color: var(--ink-soft);
@@ -1577,6 +1614,28 @@
           border-left: none;
           border-top: 1px solid var(--hairline);
           max-height: 45vh;
+        }
+        /* Three pills plus their labels don't fit; the select carries the
+           same choice in one line-height. */
+        .tabs {
+          display: none;
+        }
+        .fig-select-wrap {
+          display: block;
+        }
+        .fig-sub {
+          display: none;
+        }
+        header {
+          padding: 14px 14px 8px;
+        }
+        footer {
+          padding: 8px 14px 12px;
+        }
+        /* The minimap costs a corner of an already small canvas and needs a
+           pointer to be useful. */
+        .react-flow__minimap {
+          display: none;
         }
       }
     </style>
@@ -26117,7 +26176,16 @@ Error generating stack: ` +
             nodes: IM,
             edges: MM,
           }
-        var Gd = [
+        var IS_DEV =
+            location.protocol === 'file:' ||
+            /^(localhost|127\.0\.0\.1|\[?::1\]?)$/.test(location.hostname) ||
+            /\.local$/.test(location.hostname) ||
+            // `astro dev --host` serves on the LAN, which is how this page gets
+            // opened on a phone — still local, so edit mode stays available.
+            /^192\.168\.\d+\.\d+$/.test(location.hostname) ||
+            /^10\.\d+\.\d+\.\d+$/.test(location.hostname) ||
+            /^172\.(1[6-9]|2\d|3[01])\.\d+\.\d+$/.test(location.hostname),
+          Gd = [
             { id: 'fig1', no: 'FIG 1', label: 'The full lifecycle', fig: Uw },
             {
               id: 'fig2',
@@ -27459,24 +27527,50 @@ Error generating stack: ` +
                   }),
                 ),
                 R.createElement(
-                  'button',
-                  {
-                    style: Object.assign({}, edit ? btnOn : btnStyle, {
-                      flex: 'none',
-                      marginBottom: 10,
-                    }),
-                    onClick: function () {
-                      setEdit(function (v) {
-                        return !v
-                      })
-                      setSelEdge(null)
+                  'div',
+                  { className: 'fig-select-wrap' },
+                  R.createElement(
+                    'select',
+                    {
+                      className: 'fig-select',
+                      value: figId,
+                      'aria-label': 'Choose a figure',
+                      onChange: function (ev) {
+                        setFigId(ev.target.value)
+                        setSelNode(null)
+                        setSelEdge(null)
+                      },
                     },
-                    title: edit
-                      ? 'Leave edit mode'
-                      : 'Move nodes, re-route lines, and export the layout',
-                  },
-                  edit ? 'Done editing' : 'Edit',
+                    Gd.map(function (l) {
+                      return R.createElement(
+                        'option',
+                        { key: l.id, value: l.id },
+                        l.no + ' \u2014 ' + l.label,
+                      )
+                    }),
+                  ),
                 ),
+                IS_DEV
+                  ? R.createElement(
+                      'button',
+                      {
+                        style: Object.assign({}, edit ? btnOn : btnStyle, {
+                          flex: 'none',
+                          marginBottom: 10,
+                        }),
+                        onClick: function () {
+                          setEdit(function (v) {
+                            return !v
+                          })
+                          setSelEdge(null)
+                        },
+                        title: edit
+                          ? 'Leave edit mode'
+                          : 'Move nodes, re-route lines, and export the layout',
+                      },
+                      edit ? 'Done editing' : 'Edit',
+                    )
+                  : null,
               ),
               R.createElement('p', { className: 'fig-sub' }, fig.subtitle),
             ),
