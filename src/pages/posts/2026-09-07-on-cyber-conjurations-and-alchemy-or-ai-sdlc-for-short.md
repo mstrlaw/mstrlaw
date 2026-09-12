@@ -52,19 +52,47 @@ In May '26 I was approached to help build [Free The Flat](https://https://freeth
 On top of that, an evergreen codebase where product engineering can meet AI driven development full blast. An opportunity to build in this new world I keep hearing of.
 
 I'm not going to go into details of the product itself but it isn't the next Uber for Housing or whatever. It's not a high-frequency crypto trading product with realtime needs.
-
-Simply the necessary features for someone to run their building with their neighbors.
-Enough complexity to trial the capabilities of AI driven product engineering.
+Simple enough that I could build it, complexity enough to assess the possibilities and pitfalls of AI driven product engineering.
 
 ## Fundamental Things Apply As Time Goes By
 
-As of writing this I think we're far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized, and for the tooling around it to become stable and established.
+As of writing this I think we're far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become stable and established.
+
+It's the same now. A bunch of people trying to see they can cook up with the current ingredients, but each with their own recipe.
+
+I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's good or not to use AI, but of the output and quality of AI.
+
+But I see this in my interviews. Engineers that use LLMs to do a thing here and there by prompting back and forth experience have a very different take from those that have looked to have AI as a central part of how they develop.
+
+Having said that, just because you might plan with AI, assign to AI and wait until it's finished, I wouldn't call AI SDLC, because you need the SDLC part. Ideally one well though out.
+
+```plain
+root/
+ |-claude.md
+ |-apps
+ | |-client/
+ | | |-claude.md
+ | | |-src/
+ | | |-...
+ | |-server/
+ | | |-claude.md
+ | | |-src/
+ | | |-...
+ |-knowledge/
+ | |-architecture.md
+ | |-agentic-workflow.md
+ | |-...
+^
+
+```
+
+# Harness v1
+
+Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
 draft: I've moved from holding all the minute code, patterns and caveats, as well as architecture and systems in my mind, to holding the harness details, the baked in decisions within the AI workflow.
 
-## Harness v1
-
-Hello - basic AI relationship. MDs, skills. Lots of human intervention.
+## 
 
 ## Harness v2
 
