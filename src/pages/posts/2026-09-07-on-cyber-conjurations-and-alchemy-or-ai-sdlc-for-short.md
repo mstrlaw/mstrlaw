@@ -64,6 +64,12 @@ Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
 Hello - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from v1.
 
+![](/images/uploads/AI%20SDLC%20v1.png)
+
+**Interactive Explorer**
+
+Full explanation of how it works. After a while I had to generate something to let me keep track of all the small tweaks. AI SDLC projects need this as part of their documentation so that agents understand the reality they work in and their relationship to humans and other agents.
+
 <iframe src="/posts/agentic-workflow.html" title="Agentic workflow" loading="lazy" class="w-full h-[600px] rounded-xl border-0"></iframe>
 
-![](/images/uploads/AI%20SDLC%20v1.png)
+[View full size](https://mstrlaw.com/posts/agentic-workflow).
