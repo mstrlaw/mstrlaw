@@ -92,7 +92,7 @@ root/
  | |-...
 ```
 
-<small>Simplified repo structure</small>
+Simplified repo structure
 
 This has been working more than fine.
 
@@ -100,7 +100,7 @@ It's capable of planning and implementing features E2E, test them, ship them to 
 
 ![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline when opening an MR")
 
-<small>GitLab Pipeline when opening an MR</small>
+GitLab Pipeline when opening an MR
 
 # 
 
