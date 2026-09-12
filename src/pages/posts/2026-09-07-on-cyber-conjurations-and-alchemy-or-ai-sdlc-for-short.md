@@ -25,7 +25,7 @@ So you embark on a journey, still ongoing, to see where this leads. FOMO and all
 
 You wanna experience the new paradigm being touted on X and other corners of the civilized web. If this is the last frontier before either utopia or dystopia — depending on who you ask — let's see it up close.
 
-You might read this and think: another pissed programmer because of <_insert reason_>.
+You might read this as coming out a bit snarky and think: another pissed programmer because of <_insert reason_> but no. I'm simultaneously highly skeptic of the AI boosters stating this technology will replace us all and
 
 <hr/>
 
@@ -33,12 +33,13 @@ I've written code for most of my career although I've not been doing it professi
 
 I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this transformation. Too many restrictions, for the right reasons. 
 
-That's fine, but by the time a decisions gets made, the state of the art has shifted and is too ahead. An evergreen project is needed
+That's fine, but by the time a decisions gets made, the state of the art has shifted 12 times and whatever you thought was cool isn't anymore. An evergreen project is needed.
 
 <hr>
 
-I'm biased towards writing a technical posts but I want to mix this one with technical and non technical thinking.
-The trigger for writing this entry (I haven't written much in years) wasn't: "_This surely will be handy to others_".
+Haven't written a post in ages but I wanted to do this one. I want it to be a technical time capsule as well as something that captures the awkwardness of it all.
+
+My trigger for wanting to write wasn't: "_This surely will be handy to others_".
 
 It was more of "What the _hell_ are we doing here?".
 
@@ -46,9 +47,11 @@ I want to understand what this all means for me, for us, the industry, for socie
 
 ## The Project
 
-In May I was approached to help build [Free The Flat](https://https://freetheflat.co.uk), a project for helping UK home owners to manage their buildings. Interesting project, a real problem and a worthy cause.
+In May '26 I was approached to help build [Free The Flat](https://https://freetheflat.co.uk), a project for helping UK home owners to manage their buildings. Cool founders, a real apparent problem and a worthy cause.
 
-On top of that, an evergreen codebase. Product engineering meets AI driven development. An opportunity to build in the new world. The 
+On top of that, an evergreen codebase where product engineering can meet AI driven development full blast. An opportunity to build in this new world I keep hearing of.
+
+I'm not going to go into details of the product itself but it isn't the next Uber for Housing or whatever. It's not a high-frequency trading product. The necessary functionalities for someone to run their building with their neighbors. Enough complexity to trial the capabilities of AI driven product engineering.
 
 ## Fundamental Things Apply As Time Goes By
 
@@ -72,4 +75,4 @@ Full explanation of how it works. After a while I had to generate something to l
 
 <iframe src="/posts/agentic-workflow.html" title="Agentic workflow" loading="lazy" class="w-full h-[600px] rounded-xl border-0"></iframe>
 
-[View full size](https://mstrlaw.com/posts/agentic-workflow).
+<a href="[https://mstrlaw.com/posts/agentic-workflow](https://mstrlaw.com/posts/agentic-workflow)" target="_blank">View full size.</a>
