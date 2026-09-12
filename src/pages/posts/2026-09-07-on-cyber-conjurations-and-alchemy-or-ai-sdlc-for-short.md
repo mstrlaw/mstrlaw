@@ -65,6 +65,15 @@ I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps 
 But I see this in my interviews. Engineers that use LLMs to do a thing here and there by prompting back and forth experience have a very different take from those that have looked to have AI as a central part of how they develop.
 
 Having said that, just because you might plan with AI, assign to AI and wait until it's finished, I wouldn't call AI SDLC, because you need the SDLC part. Ideally one well though out.
+You need to actually plan and design your system and harness _a lot_. Good software engineering practices apply, perhaps more than ever.
+
+As an engineer you might end just working on this almost exclusively. Oh, and QA-ing as hell too.
+
+**Project Structure**
+
+For the structure I opted for a monorepo with workspaces. Client and Server. Shared types. And more importantly, one singe context for AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
+
+This has been working more than fine
 
 ```plain
 root/
@@ -83,7 +92,6 @@ root/
  | |-agentic-workflow.md
  | |-...
 ^
-
 ```
 
 # Harness v1
