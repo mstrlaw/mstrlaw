@@ -51,11 +51,14 @@ In May '26 I was approached to help build [Free The Flat](https://https://freeth
 
 On top of that, an evergreen codebase where product engineering can meet AI driven development full blast. An opportunity to build in this new world I keep hearing of.
 
-I'm not going to go into details of the product itself but it isn't the next Uber for Housing or whatever. It's not a high-frequency trading product. The necessary functionalities for someone to run their building with their neighbors. Enough complexity to trial the capabilities of AI driven product engineering.
+I'm not going to go into details of the product itself but it isn't the next Uber for Housing or whatever. It's not a high-frequency crypto trading product with realtime needs.
+
+Simply the necessary features for someone to run their building with their neighbors.
+Enough complexity to trial the capabilities of AI driven product engineering.
 
 ## Fundamental Things Apply As Time Goes By
 
-Hello
+As of writing this I think we're far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized, and for the tooling around it to become stable and established.
 
 draft: I've moved from holding all the minute code, patterns and caveats, as well as architecture and systems in my mind, to holding the harness details, the baked in decisions within the AI workflow.
 
