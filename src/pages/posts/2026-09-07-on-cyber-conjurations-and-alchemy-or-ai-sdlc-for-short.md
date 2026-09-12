@@ -69,11 +69,9 @@ You need to actually plan and design your system and harness _a lot_. Good softw
 
 As an engineer you might end just working on this almost exclusively. Oh, and QA-ing as hell too.
 
-**Project Structure**
+**Project Details**
 
 For the structure I opted for a monorepo with workspaces. Client and Server. Shared types, etc. More importantly, one singe repo and context for the AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
-
-This has been working more than fine. It's capable of planning and implementing features E2E, test them, ship them to staging.
 
 ```plain
 root/
@@ -96,7 +94,15 @@ root/
 
 <small>Simplified repo structure</small>
 
-# Harness v1
+This has been working more than fine.
+
+It's capable of planning and implementing features E2E, test them, ship them to staging.
+
+![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline when opening an MR")
+
+<small>GitLab Pipeline when opening an MR</small>
+
+# Standard Agentic Lifecycle
 
 Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
@@ -104,7 +110,7 @@ draft: I've moved from holding all the minute code, patterns and caveats, as wel
 
 ## 
 
-## Harness v2
+# AI SDLC Development
 
 Hello - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from v1.
 
