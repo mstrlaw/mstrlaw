@@ -69,6 +69,8 @@ You need to actually plan and design your system and harness _a lot_. Good softw
 
 As an engineer you might end just working on this almost exclusively. Oh, and QA-ing as hell too.
 
+<hr>
+
 **Project Details**
 
 For the structure I opted for a monorepo with workspaces. Client and Server. Shared types, etc. More importantly, one singe repo and context for the AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
@@ -101,8 +103,6 @@ It's capable of planning and implementing features E2E, test them, ship them to 
 ![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline when opening an MR")
 
 GitLab Pipeline when opening an MR
-
-# 
 
 # Standard Agentic Lifecycle
 
