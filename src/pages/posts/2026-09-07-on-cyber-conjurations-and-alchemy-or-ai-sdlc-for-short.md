@@ -94,7 +94,7 @@ root/
  | |-...
 ```
 
-Simplified repo structure
+<small>Simplified repo structure</small>
 
 This has been working more than fine.
 
@@ -102,9 +102,9 @@ It's capable of planning and implementing features E2E, test them, ship them to 
 
 ![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline when opening an MR")
 
-GitLab Pipeline when opening an MR
+<small>GitLab Pipeline when opening an MR</small>
 
-# Standard Agentic Lifecycle
+## Standard AI Lifecycle
 
 Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
@@ -112,7 +112,7 @@ draft: I've moved from holding all the minute code, patterns and caveats, as wel
 
 ## 
 
-# AI SDLC Development
+## AI SDLC Development - My recipe
 
 Hello - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from v1.
 
