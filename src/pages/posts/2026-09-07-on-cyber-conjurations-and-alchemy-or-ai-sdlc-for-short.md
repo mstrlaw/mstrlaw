@@ -71,9 +71,9 @@ As an engineer you might end just working on this almost exclusively. Oh, and QA
 
 **Project Structure**
 
-For the structure I opted for a monorepo with workspaces. Client and Server. Shared types. And more importantly, one singe context for AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
+For the structure I opted for a monorepo with workspaces. Client and Server. Shared types, etc. More importantly, one singe repo and context for the AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
 
-This has been working more than fine
+This has been working more than fine. It's capable of planning and implementing features E2E, test them, ship them to staging.
 
 ```plain
 root/
@@ -82,6 +82,7 @@ root/
  | |-client/
  | | |-claude.md
  | | |-src/
+ | | |-components/
  | | |-...
  | |-server/
  | | |-claude.md
@@ -91,8 +92,9 @@ root/
  | |-architecture.md
  | |-agentic-workflow.md
  | |-...
-^
 ```
+
+<small>Simplified repo structure</small>
 
 # Harness v1
 
