@@ -44,11 +44,11 @@ It was more of "What the _hell_ are we doing here?".
 
 I want to understand what this all means for me, for us, the industry, for society. And in typical building fashion, building is what I need to understand how it works.
 
-## The Evergreen Project
+## The Project
 
-By chance, I was approached to help build [Free The Flat](https://https://freetheflat.co.uk), a project for helping UK home owners to manage their buildings.
+In May I was approached to help build [Free The Flat](https://https://freetheflat.co.uk), a project for helping UK home owners to manage their buildings. Interesting project, a real problem and a worthy cause.
 
- More importantly, an evergreen project where product thinking and AI driven development can be joined and pushed to the limit through all the (apparent?) fantastic liberating ways of working that Agentic development brings.
+On top of that, an evergreen codebase. Product engineering meets AI driven development. An opportunity to build in the new world. The 
 
 ## Fundamental Things Apply As Time Goes By
 
@@ -64,6 +64,6 @@ Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
 Hello - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from v1.
 
-<iframe src="/agentic-workflow.html" title="Agentic workflow" loading="lazy" class="w-full h-[600px] rounded-xl border-0"></iframe>
+<iframe src="/posts/agentic-workflow.html" title="Agentic workflow" loading="lazy" class="w-full h-[600px] rounded-xl border-0"></iframe>
 
 ![](/images/uploads/AI%20SDLC%20v1.png)
