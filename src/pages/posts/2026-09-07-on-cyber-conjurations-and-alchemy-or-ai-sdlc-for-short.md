@@ -31,7 +31,7 @@ You might read this as coming out a bit snarky and think: another pissed program
 
 I've written code for most of my career although I've not been doing it professionally for some years now. Nevertheless I'm still fond of building things. I'm always building something. Digital things.
 
-I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this transformation. Too many restrictions, for the right reasons. 
+I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this transformation. Too many restrictions, for the right reasons.
 
 That's fine, but by the time a decisions gets made, the state of the art has shifted 12 times and whatever you thought was cool isn't anymore. An evergreen project is needed.
 
@@ -100,7 +100,7 @@ This has been working more than fine.
 
 It's capable of planning and implementing features E2E, test them, ship them to staging.
 
-![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline when opening an MR")
+![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png 'GitLab pipeline when opening an MR')
 
 <small>GitLab Pipeline when opening an MR</small>
 
@@ -110,7 +110,7 @@ Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
 draft: I've moved from holding all the minute code, patterns and caveats, as well as architecture and systems in my mind, to holding the harness details, the baked in decisions within the AI workflow.
 
-## 
+##
 
 ## AI SDLC Development - My recipe
 
