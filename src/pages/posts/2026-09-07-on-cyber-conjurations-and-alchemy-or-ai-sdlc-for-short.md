@@ -19,7 +19,7 @@ thumbnail_description: ''
 
 We're in the second half of 2026 and an increasingly large swath of the tech world is now waist deep in Agentic software development (or whatever word you're using at the time or reading).
 
-Naturally, you want (do you?) to know what the fuss is about. You've got to _upskill_ yourself, stay relevant and remain valuable in the job market. "It's not AI that'll take your job, it's someone else that uses AI better than you".
+Naturally, you want to know (do you?) what the fuss is about. You've got to _upskill_ yourself, stay relevant and remain valuable in the job market. "It's not AI that'll take your job, it's someone else that uses AI better than you" they say.
 
 So you embark on a journey, still ongoing, to see where this leads. FOMO and all of that.
 
@@ -31,7 +31,7 @@ You might read this as coming out a bit snarky and think: another pissed program
 
 I've written code for most of my career although I've not been doing it professionally for some years now. Nevertheless I'm still fond of building things. I'm always building something. Digital things.
 
-I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this transformation. Too many restrictions, for the right reasons.
+I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this transformation. Too many restrictions, for the right reasons. 
 
 That's fine, but by the time a decisions gets made, the state of the art has shifted 12 times and whatever you thought was cool isn't anymore. An evergreen project is needed.
 
@@ -43,7 +43,7 @@ My trigger for wanting to write wasn't: "_This surely will be handy to others_".
 
 It was more of "What the _hell_ are we doing here?".
 
-I want to understand what this all means for me, for us, the industry, for society. And in typical building fashion, building is what I need to understand how it works.
+I want to understand what this all means for me, for us, the industry, for society. And in typical builder fashion, building is what I need to understand how it works.
 
 ## The Project
 
@@ -60,20 +60,22 @@ As of writing this I think we're far from having any established, standardized w
 
 It's the same now. A bunch of people trying to see they can cook up with the current ingredients, but each with their own recipe.
 
-I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's good or not to use AI, but of the output and quality of AI.
+I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's good or not to use AI, but of it's output and quality.
 
-But I see this in my interviews. Engineers that use LLMs to do a thing here and there by prompting back and forth experience have a very different take from those that have looked to have AI as a central part of how they develop.
+I see this in my interviews and everyday discussions. Engineers that use LLMs to do a thing here and there by prompting back and forth experience have a very different take from those that have looked to setup AI as a central part of how they develop.
 
-Having said that, just because you might plan with AI, assign to AI and wait until it's finished, I wouldn't call AI SDLC, because you need the SDLC part. Ideally one well though out.
+Having said that, just because you might plan with AI, assign to AI and wait until it's finished it's task, I wouldn't call AI SDLC. Because, well, you need the SDLC part. Ideally a  well well though out one.
 You need to actually plan and design your system and harness _a lot_. Good software engineering practices apply, perhaps more than ever.
 
-As an engineer you might end just working on this almost exclusively. Oh, and QA-ing as hell too.
+As an engineer you might end up working on this almost exclusively. Oh, and QA-ing as hell too.
 
 <hr>
 
 **Project Details**
 
-For the structure I opted for a monorepo with workspaces. Client and Server. Shared types, etc. More importantly, one singe repo and context for the AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
+I opted to go with a monorepo of workspaces. Client and Server. Shared types, etc.
+
+One single repo and a unified context for the AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
 
 ```plain
 root/
@@ -96,21 +98,23 @@ root/
 
 <small>Simplified repo structure</small>
 
-This has been working more than fine.
+This has been working more than fine. It's capable of planning and implementing features E2E, test them, ship them to staging.
 
-It's capable of planning and implementing features E2E, test them, ship them to staging.
-
-![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png 'GitLab pipeline when opening an MR')
+![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline when opening an MR")
 
 <small>GitLab Pipeline when opening an MR</small>
 
 ## Standard AI Lifecycle
 
+With this out of the way, it was time to build the product. I did it with what I call the "Standard" way of using AI, at least in my circles:
+
+discuss with humans what we want to implement, then get into planning mode with AI for defining work to be done, then delegate to AI and steer it until the outputs were good. In true Reverse Centaur style, it consumed a lot of my time to both input then validate things. It got us our first product version though.
+
 Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
 draft: I've moved from holding all the minute code, patterns and caveats, as well as architecture and systems in my mind, to holding the harness details, the baked in decisions within the AI workflow.
 
-##
+## 
 
 ## AI SDLC Development - My recipe
 
