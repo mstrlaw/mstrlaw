@@ -106,9 +106,11 @@ This has been working more than fine. It's capable of planning and implementing 
 
 ## Standard AI Lifecycle
 
-With this out of the way, it was time to build the product. I did it with what I call the "Standard" way of using AI, at least in my circles:
+With this out of the way, it was time to build the product. I did it through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a Reverse Centaur.
 
-discuss with humans what we want to implement, then get into planning mode with AI for defining work to be done, then delegate to AI and steer it until the outputs were good. In true Reverse Centaur style, it consumed a lot of my time to both input then validate things. It got us our first product version though.
+You discuss with humans what to implement, then you get into some level of planning mode with AI for defining jobs to be done, then you delegate to AI and steer it until the outputs get good enough. You follow along each step, review things, merge when happy.
+
+It consumed a lot of my time. It gets unsustainable when you want to go quicker so you spin multiple agents for different work streams and try to mentally keep up. But it got us to the first first product version.
 
 Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
