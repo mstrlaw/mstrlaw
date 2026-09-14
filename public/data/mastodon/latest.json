@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T09:13:56.853Z",
+  "lastUpdated": "2026-09-14T01:39:19.869Z",
   "statuses": [
     {
       "id": "117248017847014083",
@@ -14,9 +14,9 @@
       },
       "media": null,
       "counts": {
-        "replies": 66,
-        "reblogs": 238,
-        "favourites": 423
+        "replies": 67,
+        "reblogs": 243,
+        "favourites": 430
       }
     },
     {
@@ -38,7 +38,7 @@
       },
       "counts": {
         "replies": 55,
-        "reblogs": 672,
+        "reblogs": 668,
         "favourites": 650
       }
     },
