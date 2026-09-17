@@ -7,6 +7,7 @@ export default [
     url: 'https://coeckelbergh.net/artificial-religion/',
     cover: '/images/books/artificial_religion.jpg',
     alt: 'Artificial Religion: On AI, Myth, and Power by Mark Coeckelbergh',
+    pages: 210,
     tags: ['non-fiction', 'technology', 'philosophy'],
   },
   {
@@ -16,6 +17,7 @@ export default [
     url: 'https://press.princeton.edu/books/hardcover/9780691269085/the-ai-paradox?srsltid=AfmBOooc8kPGHBCBjDmRDmKWaAC75FXCshO7vUY-LO4wLSxXcnIMX6PE',
     cover: '/images/books/paradox_of_ai.jpg',
     alt: 'The AI Paradox: How to Make Sense of a Complex Future by Virginia Dignum',
+    pages: 232,
     tags: ['non-fiction', 'technology', 'ethics'],
   },
   {
@@ -25,6 +27,7 @@ export default [
     url: 'https://www.penguinrandomhouse.com/books/538861/neuromancer-by-william-gibson/',
     cover: '/images/books/neuromancer.jpg',
     alt: 'Neuromancer by William Gibson',
+    pages: 271,
     tags: ['fiction', 'sci-fi'],
   },
   {
@@ -34,6 +37,7 @@ export default [
     url: 'https://www.penguinrandomhouse.com/books/541160/capitalism-by-sven-beckert/',
     cover: '/images/books/capitalism_global_history.jpg',
     alt: 'Capitalism - A Global History by Sven Beckert',
+    pages: 1344,
     tags: ['non-fiction', 'history', 'economics'],
   },
   {
@@ -44,6 +48,7 @@ export default [
     url: 'https://www.hachettebookgroup.com/titles/brian-merchant/blood-in-the-machine/9780316487740/',
     cover: '/images/books/blood_in_machine.jpg',
     alt: 'Blood in the Machine - The Origins of the Rebellion Against Big Tech by Brian Merchant',
+    pages: 416,
     tags: ['non-fiction', 'history', 'technology'],
   },
   // 2025 books
@@ -54,6 +59,7 @@ export default [
     url: 'https://www.penguinrandomhouse.com/books/243287/philosophy-for-polar-explorers-by-erling-kagge/',
     cover: '/images/books/philosophy_polar_explorers.jpg',
     alt: 'Philosophy for Polar Explorers by Erling Kagge',
+    pages: 192,
     tags: ['non-fiction', 'philosophy'],
   },
   {
@@ -64,6 +70,7 @@ export default [
     url: 'https://direct.mit.edu/books/oa-monograph/5266/Technolo',
     cover: '/images/books/oppressed.jpg',
     alt: 'Technology of the Oppressed: Inequity and the Digital Mundane in Favelas of Brazil by David Nemer',
+    pages: 230,
     tags: ['non-fiction', 'technology', 'politics'],
   },
   {
@@ -73,6 +80,7 @@ export default [
     url: 'https://www.bloomsbury.com/us/good-robot-9781350399952/',
     cover: '/images/books/goodrobot.jpg',
     alt: 'The Good Robot: Why Technology Needs Feminism by Eleanor Drage & Kerry McInerney',
+    pages: 272,
     tags: ['non-fiction', 'technology', 'philosophy'],
   },
   {
@@ -82,6 +90,7 @@ export default [
     url: 'https://ia600101.us.archive.org/27/items/Various_PDFs/NeilPostman-AmusingOurselvesToDeath.pdf',
     cover: '/images/books/amusing.jpg',
     alt: 'Amusing Ourselves to Death by Neil Postman',
+    pages: 184,
     tags: ['non-fiction', 'media', 'philosophy'],
   },
   {
@@ -91,6 +100,7 @@ export default [
     url: 'https://www.hup.harvard.edu/books/9780674270718',
     cover: '/images/books/democracy_discontent.jpg',
     alt: 'Democracy’s Discontent by Michael J. Sandel',
+    pages: 432,
     tags: ['non-fiction', 'politics', 'philosophy'],
   },
   {
@@ -100,6 +110,7 @@ export default [
     url: 'https://mitpress.mit.edu/9780262049207/tech-agnostic/',
     cover: '/images/books/tech_agnostic.jpg',
     alt: 'Tech Agnostic by Greg Epstein',
+    pages: 368,
     tags: ['non-fiction', 'technology', 'philosophy'],
   },
   {
@@ -109,6 +120,7 @@ export default [
     url: 'https://bookshop.org/p/books/invisible-rulers-the-people-who-turn-lies-into-reality-renee-diresta/20664632?ean=9781541703377',
     cover: '/images/books/invisible_rulers.jpg',
     alt: 'Invisible Rulers by Renee DiResta',
+    pages: 448,
     tags: ['non-fiction', 'technology', 'politics'],
   },
   // 2024
@@ -119,6 +131,7 @@ export default [
     url: 'https://press.stripe.com/scaling-people',
     cover: '/images/books/scaling_people.jpg',
     alt: 'Scaling People by Claire Hughes Johnson',
+    pages: 480,
     tags: ['management'],
   },
   {
@@ -128,6 +141,7 @@ export default [
     url: 'https://mitpress.mit.edu/9780262545068/the-truth-and-other-stories/',
     cover: '/images/books/technofeudalism.jpg',
     alt: 'Technofeudalism: What Killed Capitalism by Yanis Varoufakis',
+    pages: 224,
     tags: ['non-fiction', 'economics', 'technology'],
   },
   {
@@ -137,6 +151,7 @@ export default [
     url: 'https://mitpress.mit.edu/9780262545068/the-truth-and-other-stories/',
     cover: '/images/books/the_truth_and_other_stories.jpg',
     alt: 'The Truth and Other Stories by Stanisław Lem',
+    pages: 344,
     tags: ['fiction', 'sci-fi'],
   },
   // 2023
@@ -147,6 +162,7 @@ export default [
     url: 'https://www.hachettebookgroup.com/titles/malcolm-harris/palo-alto/9780316592031/',
     cover: '/images/books/palo_alto.jpg',
     alt: 'Palo Alto by Malcom Harris',
+    pages: 720,
     tags: ['non-fiction', 'history', 'technology'],
   },
   {
@@ -156,6 +172,7 @@ export default [
     url: 'https://chokepointcapitalism.com',
     cover: '/images/books/chokepoint_capitalism.jpg',
     alt: 'Chokepoint Capitalism by Cory Doctorow and Rebecca Giblin',
+    pages: 312,
     tags: ['non-fiction', 'economics', 'technology'],
   },
   {
@@ -165,6 +182,7 @@ export default [
     url: 'https://mitpress.mit.edu/9780262660563/the-culture-of-technology/',
     cover: '/images/books/culture_of_technology.jpg',
     alt: 'The Culture of Technology by Arnold Pacey',
+    pages: 220,
     tags: ['non-fiction', 'economics', 'technology'],
   },
   {
@@ -174,6 +192,7 @@ export default [
     url: 'https://bookshop.org/p/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world-cal-newport/12081448?ean=9780525536512',
     cover: '/images/books/digital_minimalism.jpg',
     alt: 'Digital Minimalism by Cal Newport',
+    pages: 286,
     tags: ['non-fiction', 'productivity'],
   },
   {
@@ -183,6 +202,7 @@ export default [
     url: 'https://www.stevemagness.com/do-hard-things/',
     cover: '/images/books/do_hard_things.jpg',
     alt: 'Do Hard Things by Steve Magness',
+    pages: 320,
     tags: ['non-fiction', 'productivity', 'performance'],
   },
   {
@@ -192,6 +212,7 @@ export default [
     url: 'https://itamargilad.com/book-evidence-guided/',
     cover: '/images/books/evidence_guided.jpg',
     alt: 'Evidence Guided by Itamar Gilad',
+    pages: 208,
     tags: ['non-fiction', 'management', 'product'],
   },
   {
@@ -201,6 +222,7 @@ export default [
     url: 'https://us.macmillan.com/books/9781250183866/extremeownership/',
     cover: '/images/books/extreme_ownership.jpg',
     alt: 'Extreme Ownership by Jocko Willink and Leif Babin',
+    pages: 320,
     tags: ['non-fiction', 'leadership'],
   },
   {
@@ -210,6 +232,7 @@ export default [
     url: 'https://www.tablegroup.com/product/dysfunctions/',
     cover: '/images/books/five_disfunctions.jpg',
     alt: 'The Five Dysfunctions of a Team by Patrick Lencioni',
+    pages: 228,
     tags: ['non-fiction', 'leadership', 'management'],
   },
   {
@@ -219,6 +242,7 @@ export default [
     url: 'https://en.wikipedia.org/wiki/The_Ministry_for_the_Future',
     cover: '/images/books/ministry_for_the_future.jpg',
     alt: 'The Ministry for the Future by Kim Stanley Robinson',
+    pages: 576,
     tags: ['fiction', 'climate', 'dystopian'],
   },
   {
@@ -228,6 +252,7 @@ export default [
     url: 'https://www.productoperations.com/',
     cover: '/images/books/product_operations.jpg',
     alt: 'Product Operations by Melissa Perri and Denise Tilles',
+    pages: 260,
     tags: ['non-fiction', 'management', 'product'],
   },
   {
@@ -237,6 +262,7 @@ export default [
     url: 'https://www.jstor.org/stable/j.ctt1nprdd',
     cover: '/images/books/rise_decline_of_nations.jpg',
     alt: 'The Rise and Decline of Nations by Mancur Olson',
+    pages: 276,
     tags: ['non-fiction', 'economics', 'politics'],
   },
   {
@@ -246,6 +272,7 @@ export default [
     url: 'https://jilliancyork.com/',
     cover: '/images/books/silicon_values.jpg',
     alt: 'Silicon Values by Jillian C. York',
+    pages: 304,
     tags: ['non-fiction', 'economics', 'technology'],
   },
   {
@@ -255,6 +282,7 @@ export default [
     url: 'https://en.wikipedia.org/wiki/Start_with_Why',
     cover: '/images/books/start_with_why.jpg',
     alt: 'Start with Why by Simon Sinek',
+    pages: 246,
     tags: ['non-fiction', 'leadership', 'management'],
   },
   {
@@ -264,6 +292,7 @@ export default [
     url: 'https://en.wikipedia.org/wiki/The_Every',
     cover: '/images/books/the_every.jpg',
     alt: 'The Every by Dave Eggers',
+    pages: 608,
     tags: ['fiction', 'dystopian'],
   },
   {
@@ -273,6 +302,7 @@ export default [
     url: 'https://direct.mit.edu/books/monograph/4328/Value-Sensitive-DesignShaping-Technology-with',
     cover: '/images/books/value_sensitive_design.jpg',
     alt: 'Value Sensitive Design by Batya Friedman and David G. Hendry',
+    pages: 256,
     tags: ['non-fiction', 'technology', 'ethics'],
   },
   {
@@ -282,6 +312,7 @@ export default [
     url: 'https://en.wikipedia.org/wiki/Zero_to_One',
     cover: '/images/books/zero_to_one.jpg',
     alt: 'Zero to One by Peter Thiel',
+    pages: 195,
     tags: ['non-fiction', 'business'],
   },
   // 2022
@@ -292,6 +323,7 @@ export default [
     url: 'https://www.johnhuntpublishing.com/zer0-books/our-books/against-web',
     cover: '/images/books/against_the_web.png',
     alt: 'Against The Web book by Michael Brooks',
+    pages: 96,
     tags: ['non-fiction', 'politics', 'philosophy'],
   },
   {
@@ -302,6 +334,7 @@ export default [
     url: 'https://www.buildingmicrofrontends.com/',
     cover: '/images/books/microfrontends.png',
     alt: 'Building Micro-Frontends book by Luca Mezzalira',
+    pages: 334,
     tags: ['non-fiction', 'technology'],
   },
   {
@@ -312,6 +345,7 @@ export default [
     url: 'https://itrevolution.com/product/accelerate/',
     cover: '/images/books/accelerate.png',
     alt: 'Accelerate book by Nicole Forsgren, Jez Humble, Gene Kim',
+    pages: 288,
     tags: ['non-fiction', 'management', 'performance'],
   },
   {
@@ -321,6 +355,7 @@ export default [
     url: 'https://itrevolution.com/product/team-topologies/',
     cover: '/images/books/team_topo.png',
     alt: 'Team Topologies book by Matthew Skelton, Manuel Pais',
+    pages: 240,
     tags: ['non-fiction', 'management', 'performance'],
   },
   {
@@ -330,6 +365,7 @@ export default [
     url: 'https://staffeng.com/book',
     cover: '/images/books/staff.png',
     alt: 'Staff Engineer book by Will Larson',
+    pages: 370,
     tags: ['non-fiction', 'management', 'leadership'],
   },
   {
@@ -339,6 +375,7 @@ export default [
     url: 'https://www.buildc.com/the-book',
     cover: '/images/books/build.png',
     alt: 'Build book by Tony Fadell',
+    pages: 416,
     tags: ['non-fiction', 'business', 'innovation'],
   },
   {
@@ -350,6 +387,7 @@ export default [
     url: 'https://www.amazon.com/Advantage-Organizational-Everything-Business-Lencioni-ebook/dp/B006ORWT3Y',
     cover: '/images/books/advantage.png',
     alt: 'The Advantage book by Patrick Lencioni',
+    pages: 240,
     tags: ['non-fiction', 'management', 'leadership'],
   },
   {
@@ -359,6 +397,7 @@ export default [
     url: 'https://www.hup.harvard.edu/catalog.php?isbn=9780674273559',
     cover: '/images/books/equality.png',
     alt: 'A Brief History of Equality book by Thomas Piketty',
+    pages: 288,
     tags: ['non-fiction', 'economics', 'history'],
   },
   // 2021
@@ -369,6 +408,7 @@ export default [
     url: 'https://mitpress.mit.edu/books/ai-ethics',
     cover: '/images/books/ai_ethics.png',
     alt: 'AI Ethics book by Mark Coeckelbergh',
+    pages: 248,
     tags: ['non-fiction', 'technology', 'ethics'],
   },
   {
@@ -378,6 +418,7 @@ export default [
     url: 'https://melaniemitchell.me/aibook/',
     cover: '/images/books/artificial_intelligence.png',
     alt: 'Artificial Intelligence book by Melanie Mitchell',
+    pages: 448,
     tags: ['non-fiction', 'technology', 'philosophy'],
   },
   {
@@ -388,6 +429,7 @@ export default [
     url: 'https://www.katecrawford.net/index.html',
     cover: '/images/books/atlas_of_ai.png',
     alt: 'Atlas of AI book by Kate Crawford',
+    pages: 336,
     tags: ['non-fiction', 'technology', 'ethics'],
   },
   {
@@ -398,6 +440,7 @@ export default [
     url: 'https://mitpress.mit.edu/books/beyond-valley',
     cover: '/images/books/beyond_the_valley.png',
     alt: 'Beyond the Valley book by Ramesh Srinivasan',
+    pages: 420,
     tags: ['non-fiction', 'technology', 'inequality'],
   },
   {
@@ -407,6 +450,7 @@ export default [
     url: '#',
     cover: '/images/books/infinite_detail.png',
     alt: 'Infinite Detail book by Tim Maughan',
+    pages: 372,
     tags: ['fiction', 'dystopian'],
   },
   {
@@ -416,6 +460,7 @@ export default [
     url: 'https://svpg.com/inspired-how-to-create-products-customers-love/',
     cover: '/images/books/inspired.png',
     alt: 'Inspired book by Marty Cagan',
+    pages: 349,
     tags: ['non-fiction', 'product', 'management'],
   },
   {
@@ -425,6 +470,7 @@ export default [
     url: 'https://mitpress.mit.edu/books/mismatch',
     cover: '/images/books/mismatch.png',
     alt: 'Mismatch book by Kat Holmes',
+    pages: 176,
     tags: ['non-fiction', 'product', 'fairness'],
   },
   {
@@ -434,6 +480,7 @@ export default [
     url: 'https://rushkoff.com/books/team-human-book/',
     cover: '/images/books/team_human.png',
     alt: 'Team Human book by Douglas Rushkoff',
+    pages: 256,
     tags: ['non-fiction', 'technology', 'humanism'],
   },
   {
@@ -444,6 +491,7 @@ export default [
     url: 'https://www.oreilly.com/library/view/art-of-scalability/9780134031408/',
     cover: '/images/books/art_of_scalability.png',
     alt: 'Art of Scalability book by Martin L. Abbott and Michael T. Fisher',
+    pages: 559,
     tags: ['non-fiction', 'technology'],
   },
   {
@@ -453,6 +501,7 @@ export default [
     url: 'https://www.amazon.com/Why-Should-Anyone-Led-You/dp/1578519713',
     cover: '/images/books/why_would_lead.jpg',
     alt: 'Why Should Anyone Be Led by You book by Robert Goffee and Gareth Jones',
+    pages: 244,
     tags: ['non-fiction', 'leadership'],
   },
   // 2020
@@ -463,6 +512,7 @@ export default [
     url: 'https://cennydd.com/future-ethics',
     cover: '/images/books/future_ethics.jpg',
     alt: 'Future Ethics by Cennydd Bowles',
+    pages: 230,
     tags: ['non-fiction', 'technology', 'philosophy'],
   },
   {
@@ -472,6 +522,7 @@ export default [
     url: 'https://us.macmillan.com/books/9780374721237/whattechcallsthinking/',
     cover: '/images/books/tech_calls_thinking.jpg',
     alt: 'What Tech Calls Thinking by Adrian Daub',
+    pages: 160,
     tags: ['non-fiction', 'technology', 'philosophy'],
   },
   {
@@ -481,6 +532,7 @@ export default [
     url: 'https://www.hachettebookgroup.com/titles/shoshana-zuboff/the-age-of-surveillance-capitalism/9781610395694/?lens=publicaffairs',
     cover: '/images/books/surveillance_capitalism.jpg',
     alt: 'The Age of Surveillance Capitalism by Shoshana Zuboff',
+    pages: 691,
     tags: ['non-fiction', 'technology', 'economics'],
   },
   {
@@ -490,6 +542,7 @@ export default [
     url: 'https://www.penguinrandomhouse.com/books/599667/the-people-vs-tech-by-jamie-bartlett/',
     cover: '/images/books/people_vs_tech.jpg',
     alt: 'The People Vs Tech: How the Internet Is Killing Democracy by Jamie Bartlett',
+    pages: 256,
     tags: ['non-fiction', 'technology', 'politics'],
   },
   {
@@ -499,6 +552,7 @@ export default [
     url: 'https://www.politybooks.com/bookdetail?book_slug=platform-capitalism--9781509504862',
     cover: '/images/books/platform_capitalism.jpg',
     alt: 'Platform Capitalism by Nick Srnicek',
+    pages: 120,
     tags: ['non-fiction', 'technology', 'economics'],
   },
   {
@@ -508,6 +562,7 @@ export default [
     url: 'https://www.versobooks.com/products/148-inventing-the-future?srsltid=AfmBOoqh0ueoAwAuVmd6_j8L9yM-SBi-e_x-f12XTE85mSWlO2bBOxoc',
     cover: '/images/books/inventing_future.jpg',
     alt: 'Inventing the Future: Postcapitalism and a World Without Work by Nick Srnicek & Alex Williams',
+    pages: 245,
     tags: ['non-fiction', 'economics', 'politics'],
   },
   {
@@ -517,6 +572,7 @@ export default [
     url: 'https://www.penguinrandomhouse.ca/books/202849/plutocrats-by-chrystia-freeland/9780385669733',
     cover: '/images/books/plutocrats.jpg',
     alt: 'Plutocrats - The New Golden Age by Chrystia Freeland',
+    pages: 352,
     tags: ['non-fiction', 'economics', 'politics'],
   },
   // 2018
@@ -527,6 +583,7 @@ export default [
     url: 'https://www.harpercollins.com/products/everybody-lies-seth-stephens-davidowitz?variant=32123670822946',
     cover: '/images/books/everybody_lies.jpg',
     alt: 'Everybody Lies by Seth Stephens-Davidowitz',
+    pages: 338,
     tags: ['non-fiction', 'technology'],
   },
   {
@@ -536,6 +593,7 @@ export default [
     url: 'https://www.penguinrandomhouse.ca/books/258237/12-rules-for-life-by-jordan-b-peterson--foreword-by-norman-doige-md-illustrated-by-ethan-van-sciver/9780345816023',
     cover: '/images/books/12_rules.jpg',
     alt: '12 Rules for Life by Jordan B. Peterson',
+    pages: 448,
     tags: ['non-fiction', 'philosophy'],
   },
   // 2014
@@ -546,6 +604,7 @@ export default [
     url: 'https://www.hup.harvard.edu/books/9780674430006',
     cover: '/images/books/capital_21_century.jpg',
     alt: 'Capital in the Twenty-First Century by Thomas Piketty',
+    pages: 696,
     tags: ['non-fiction', 'economics', 'politics'],
   },
   {
@@ -555,6 +614,7 @@ export default [
     url: 'https://www.penguinrandomhouse.com/books/326569/1984-by-george-orwell-with-a-foreword-by-thomas-pynchon/',
     cover: '/images/books/1984.jpg',
     alt: '1984 by George Orwell',
+    pages: 328,
     tags: ['fiction', 'dystopian'],
   },
   {
@@ -564,6 +624,7 @@ export default [
     url: 'https://www.penguinrandomhouse.com/books/296832/atlas-shrugged-centennial-ed-hc-by-ayn-rand/',
     cover: '/images/books/atlas_shrugged.jpg',
     alt: 'Atlas Shrugged by Ayn Rand',
+    pages: 1088,
     tags: ['fiction', 'philosophy'],
   },
 ]

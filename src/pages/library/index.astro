@@ -47,7 +47,7 @@ const sortedBooks = () => {
           <div class="c-Shelf">
             {item.books.map((book: any) => (
               <article
-                class="c-Book"
+                class:list={['c-Book', { 'c-Book--big': book.pages > 500 }]}
                 style={book.jacket ? `--jacket:${book.jacket}` : undefined}
               >
                 <div class="c-Book__scene">
@@ -125,6 +125,14 @@ const sortedBooks = () => {
     display: grid;
     gap: 0.35rem;
     align-content: start;
+  }
+
+  /* Doorstops (books.js `pages` > 500, applied in the template below).
+     --thick is the spine depth, so raising it here pushes the back board
+     further away and widens the spine wall in one go; the 12% of left
+     padding on the scene already has room for the extra swing. */
+  .c-Book--big {
+    --thick: 34px;
   }
 
   /* Own vanishing point per book, plus room for the spine to swing out left */
