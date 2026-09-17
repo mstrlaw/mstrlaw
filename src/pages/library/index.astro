@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { Image } from 'astro:assets'
+import { Image } from 'astro:assets';
 import Books from '../../data/books.js';
 
 const sortedBooks = () => {
@@ -24,53 +24,372 @@ const sortedBooks = () => {
     books: groupedByYear[year],
   }));
 };
-
-// const allPosts = Object.values(import.meta.glob('./*.md', { eager: true }));
 ---
 
 <Layout>
   <div class="mt-8 mb-16">
     <h1 class="text-3xl font-bold text-zinc-900 dark:text-zinc-100">Library</h1>
     <p class="text-base text-zinc-900 dark:text-zinc-100">
-      Current and past readings.<br> Alternatively, check my <a href="/online-readings" class="underline text-teal-200 hover:text-teal-500 dark:hover:text-teal-400">online readings</a>.
+      Current and past readings.<br /> Alternatively, check my <a
+        href="/online-readings"
+        class="underline text-teal-200 hover:text-teal-500 dark:hover:text-teal-400"
+        >online readings</a
+      >.
     </p>
   </div>
   <div>
     {
-      (
-        <div class="text-white">
-          {sortedBooks().map((item) => (
-            <div class="mt-8 mb-4 font-bold">
-              <h3 class="text-white">{item.year}</h3>
-            </div>
-            <div class="grid md:grid-cols-3 gap-16">
-              {item.books.map((book: any) => (
-                  <div>
-                    <div class="flex mb-1 text-zinc-400 dark:text-zinc-500">
-                      {book.tags.map((t) => (
-                        <span class="text-sm mr-2">{t}</span>
-                      ))}
+      sortedBooks().map((item) => (
+        <Fragment>
+          <div class="mt-8 mb-4 font-bold">
+            <h3 class="text-zinc-900 dark:text-zinc-100">{item.year}</h3>
+          </div>
+          <div class="c-Shelf">
+            {item.books.map((book: any) => (
+              <article
+                class="c-Book"
+                style={book.jacket ? `--jacket:${book.jacket}` : undefined}
+              >
+                <div class="c-Book__scene">
+                  <div class="c-Book__tilt">
+                    <div class="c-Book__block">
+                      <Image
+                        src={book.cover}
+                        alt={book.alt}
+                        class="c-Book__cover"
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
-                    <Image
-                      src={book.cover}
-                      alt={book.alt}
-                      class="w-full object-cover rounded-lg z-20 mb-2"
-                    />
-                    <h2 class="text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                      <a href={book.url} target="_blank" class="underline">
-                        {book.title}
-                      </a>
-                    </h2>
-                    <p class="text-base tracking-tight text-zinc-800 dark:text-zinc-100 mt-1">
-                      by {book.author}
-                    </p>
                   </div>
-              ))}
-            </div>
-            <hr>
-          ))}
-        </div>
-      )
+                </div>
+                <div class="flex flex-wrap text-zinc-400 dark:text-zinc-500">
+                  {book.tags.map((t) => (
+                    <span class="text-sm mr-2">{t}</span>
+                  ))}
+                </div>
+                <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                  <a href={book.url} target="_blank" class="underline">
+                    {book.title}
+                  </a>
+                </h2>
+                <p class="text-sm tracking-tight text-zinc-800 dark:text-zinc-100">
+                  by {book.author}
+                </p>
+              </article>
+            ))}
+          </div>
+          <hr />
+        </Fragment>
+      ))
     }
   </div>
 </Layout>
+
+<style>
+  /* ---------------------------------------------------------------------
+     3D book covers.
+
+     Each cover is one element (.c-Book__block = the front board) carrying two
+     pseudo-elements: ::before is the back board, pushed away by --thick, and
+     ::after is the spine wall, folded 90deg back from the front board's left
+     edge. The spine colour comes from --jacket, which the script below samples
+     off the cover's left edge once the image has lazily loaded; books.js can
+     set `jacket` explicitly to override it.
+
+     .c-Book__tilt and .c-Book__block are separate layers on purpose: the
+     scroll-driven animation owns the former's transform and the hover pose
+     owns the latter's, so the two never fight over the same property.
+     --------------------------------------------------------------------- */
+  .c-Shelf {
+    display: grid;
+    /* 190px is tuned so the full-width desktop column (928px inside
+       max-w-5xl) fits exactly four books; narrower containers step down to
+       three and then two on their own. */
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 3rem 2rem;
+    /* rgb triple + alpha, read back as rgb(var(--book-shadow)) */
+    --book-shadow: 0 0 0 / 0.32;
+    --thick: 18px; /* spine thickness */
+    --rest: 28deg; /* resting yaw: spine turned toward the viewer */
+    --hover: 10deg; /* yaw on hover */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .c-Shelf {
+      --book-shadow: 0 0 0 / 0.7;
+    }
+  }
+
+  .c-Book {
+    display: grid;
+    gap: 0.35rem;
+    align-content: start;
+  }
+
+  /* Own vanishing point per book, plus room for the spine to swing out left */
+  .c-Book__scene {
+    position: relative;
+    perspective: 900px;
+    perspective-origin: 50% 40%;
+    padding: 6% 8% 14px 12%;
+    margin-bottom: 0.5rem;
+  }
+
+  .c-Book__tilt {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  .c-Book__block {
+    position: relative;
+    aspect-ratio: 2 / 3;
+    transform-style: preserve-3d;
+    transform: rotateY(var(--rest));
+    transition: transform 0.7s cubic-bezier(0.2, 0.75, 0.2, 1);
+    border-radius: 1px 2px 2px 1px;
+    /* Stands in for the artwork until the lazy image arrives */
+    background: var(--jacket, #3f3f46);
+    box-shadow: 0 22px 32px -14px rgb(var(--book-shadow));
+  }
+
+  .c-Book__scene:hover .c-Book__block,
+  .c-Book:focus-within .c-Book__block {
+    transform: rotateY(var(--hover));
+  }
+
+  .c-Book__cover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  /* Back board: the jacket colour dimmed by a flat overlay. A filter would be
+     simpler but renders the element into a flattened plane, which costs it its
+     place in the 3D stack. */
+  .c-Book__block::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+      linear-gradient(rgb(0 0 0 / 0.45), rgb(0 0 0 / 0.45)),
+      var(--jacket, #3f3f46);
+    transform: translateZ(calc(var(--thick) * -1));
+  }
+
+  /* Spine wall: jacket colour with rounded-spine shading */
+  .c-Book__block::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--thick);
+    background:
+      linear-gradient(
+        90deg,
+        rgb(0 0 0 / 0.28),
+        rgb(0 0 0 / 0) 35%,
+        rgb(255 255 255 / 0.08) 50%,
+        rgb(0 0 0 / 0) 70%,
+        rgb(0 0 0 / 0.3)
+      ),
+      var(--jacket, #3f3f46);
+    transform-origin: left;
+    transform: rotateY(90deg);
+  }
+
+  /* Ground shadow. It sits outside the 3D stack because `filter` flattens
+     preserve-3d, so it must not be a child of .c-Book__tilt/__block. */
+  .c-Book__scene::after {
+    content: '';
+    position: absolute;
+    left: 14%;
+    right: 6%;
+    bottom: 0;
+    height: 18px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgb(var(--book-shadow)),
+      transparent 70%
+    );
+    opacity: 0.7;
+    filter: blur(2px);
+    transition:
+      opacity 0.7s,
+      transform 0.7s;
+  }
+
+  .c-Book__scene:hover::after {
+    opacity: 0.45;
+    transform: scaleX(0.92);
+  }
+
+  /* Scroll-driven tilt, progressive enhancement: browsers without view()
+     timelines simply keep the static resting pose. */
+  @supports (animation-timeline: view()) {
+    .c-Book__tilt {
+      animation: bookTilt linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
+
+    @keyframes bookTilt {
+      from {
+        transform: rotateX(-7deg) rotateY(-8deg);
+      } /* low on screen */
+      50% {
+        transform: rotateX(0deg) rotateY(0deg);
+      } /* mid-screen: resting pose */
+      to {
+        transform: rotateX(7deg) rotateY(8deg);
+      } /* high on screen */
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .c-Book__tilt {
+      animation: none;
+    }
+
+    .c-Book__block,
+    .c-Book__scene::after {
+      transition: none;
+    }
+  }
+
+  /* Phone: one book per row, and the one being read turns to face forward
+     (see the IntersectionObserver below) since there is no hover to lean on. */
+  @media (max-width: 520px) {
+    .c-Shelf {
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+    }
+
+    .c-Book {
+      justify-items: center;
+      text-align: center;
+    }
+
+    .c-Book__scene {
+      width: min(70vw, 260px);
+    }
+
+    .c-Book.is-front .c-Book__block {
+      transform: rotateY(0deg);
+    }
+  }
+</style>
+
+<script>
+  // Spine colour: average the left edge of each cover — the strip that wraps
+  // around onto the spine — and hand it to CSS as --jacket. Runs off the
+  // image's own load event, so it costs nothing until lazy loading pulls the
+  // cover in. Books that set `jacket` in books.js keep their own colour.
+  const canvas = document.createElement('canvas');
+  canvas.width = 1;
+  canvas.height = 8;
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+
+  function paintSpine(img: HTMLImageElement) {
+    const book = img.closest<HTMLElement>('.c-Book');
+    if (!ctx || !book || book.style.getPropertyValue('--jacket')) return;
+
+    try {
+      const edge = Math.max(1, Math.round(img.naturalWidth * 0.06));
+      ctx.drawImage(img, 0, 0, edge, img.naturalHeight, 0, 0, 1, 8);
+      const px = ctx.getImageData(0, 0, 1, 8).data;
+
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      for (let i = 0; i < px.length; i += 4) {
+        r += px[i];
+        g += px[i + 1];
+        b += px[i + 2];
+      }
+
+      const n = px.length / 4;
+      const avg = (c: number) => Math.round(c / n);
+      book.style.setProperty(
+        '--jacket',
+        `rgb(${avg(r)} ${avg(g)} ${avg(b)})`
+      );
+    } catch {
+      // Tainted canvas or a decode failure: the default jacket colour stands.
+    }
+  }
+
+  document.querySelectorAll<HTMLImageElement>('.c-Book__cover').forEach((img) => {
+    if (img.complete && img.naturalWidth) paintSpine(img);
+    else img.addEventListener('load', () => paintSpine(img), { once: true });
+  });
+
+  // Phone only (single column): exactly one book faces forward at a time — the
+  // one crossing the middle of the screen. The observer's root is squeezed to a
+  // band across the viewport centre, so a cover has to travel well into view
+  // before it turns, and the book before or after it eases back to the resting
+  // pose the moment it leaves the band. The band also lines up with the 50%
+  // mark of the scroll tilt, where that animation sits at zero rotation, so a
+  // turned book is genuinely face-on.
+  const mq = window.matchMedia('(max-width: 520px)');
+  const scenes = document.querySelectorAll<HTMLElement>('.c-Book__scene');
+  let io: IntersectionObserver | null = null;
+  let inBand = new Set<HTMLElement>();
+  let front: Element | null = null;
+
+  function setFront(next: Element | null) {
+    if (next === front) return;
+    front?.classList.remove('is-front');
+    next?.classList.add('is-front');
+    front = next;
+  }
+
+  function sync() {
+    if (mq.matches) {
+      if (io) return;
+      io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            const scene = e.target as HTMLElement;
+            if (e.isIntersecting) inBand.add(scene);
+            else inBand.delete(scene);
+          });
+
+          // Two covers can share the band mid-scroll; the closest one to the
+          // centre of the screen wins.
+          const middle = window.innerHeight / 2;
+          let best: HTMLElement | null = null;
+          let bestOffset = Infinity;
+
+          for (const scene of inBand) {
+            const box = scene.getBoundingClientRect();
+            const offset = Math.abs(box.top + box.height / 2 - middle);
+            if (offset < bestOffset) {
+              bestOffset = offset;
+              best = scene;
+            }
+          }
+
+          setFront(best ? best.closest('.c-Book') : null);
+        },
+        // The middle 20% of the viewport.
+        { threshold: 0, rootMargin: '-40% 0px -40% 0px' }
+      );
+      scenes.forEach((el) => io!.observe(el));
+    } else {
+      if (!io) return;
+      io.disconnect();
+      io = null;
+      inBand = new Set();
+      setFront(null);
+    }
+  }
+
+  mq.addEventListener('change', sync);
+  sync();
+</script>
