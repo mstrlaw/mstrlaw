@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-17T01:41:45.307Z",
+  "lastUpdated": "2026-09-17T23:04:35.756Z",
   "statuses": [
+    {
+      "id": "117285506405296484",
+      "type": "boost",
+      "url": "https://mastodon.social/@eff/117283333138532871",
+      "createdAt": "2026-09-17T08:46:42.332Z",
+      "excerpt": "The DMCA prohibits removing copyright information from existing works. It doesn’t create a new right to have that information copied into every new work. The 9th Circuit got it…",
+      "author": {
+        "acct": "eff",
+        "displayName": "Electronic Frontier Foundation",
+        "url": "https://mastodon.social/@eff"
+      },
+      "media": null,
+      "counts": {
+        "replies": 8,
+        "reblogs": 18,
+        "favourites": 24
+      }
+    },
     {
       "id": "117248017847014083",
       "type": "boost",
@@ -15,7 +33,7 @@
       "media": null,
       "counts": {
         "replies": 68,
-        "reblogs": 245,
+        "reblogs": 238,
         "favourites": 444
       }
     },
@@ -40,25 +58,6 @@
         "replies": 55,
         "reblogs": 669,
         "favourites": 655
-      }
-    },
-    {
-      "id": "117099875841274266",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117099875841274266",
-      "createdAt": "2026-08-15T13:58:24.751Z",
-      "excerpt": "Today we climb in the cloud. #climbing #portugal #rockclimbing #outdoors #cliff #nature #cloudy #fog",
-      "author": null,
-      "media": {
-        "url": "https://files.mastodon.social/media_attachments/files/117/099/875/552/780/413/small/6cf6f72f4a8c14ff.jpeg",
-        "alt": "Two people wearing helmets and climbing gear stand at the base of a rocky, foggy cliff, preparing to climb. One person is handling a rope while the other stands nearby.",
-        "width": 416,
-        "height": 554
-      },
-      "counts": {
-        "replies": 0,
-        "reblogs": 3,
-        "favourites": 16
       }
     }
   ]
