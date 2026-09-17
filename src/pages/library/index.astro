@@ -273,10 +273,20 @@ const sortedBooks = () => {
     .c-Book {
       justify-items: center;
       text-align: center;
+      /* The scene's padding is a percentage of THIS box, so the cap belongs on
+         the card, not on the scene: cap the scene and the padding keeps
+         growing with the viewport, eating into the cover it is meant to frame.
+         The 100% term keeps the card inside the column main's px-8 leaves
+         behind, since a transform that overflows scrolls the page sideways. */
+      width: min(100%, 300px);
+      margin-inline: auto;
     }
 
+    /* justify-items above centres the text lines, which also sizes every grid
+       item to its content — and the cover block has no intrinsic width, so it
+       would collapse to nothing. The cover fills the card instead. */
     .c-Book__scene {
-      width: min(70vw, 260px);
+      justify-self: stretch;
     }
 
     .c-Book.is-front .c-Book__block {
