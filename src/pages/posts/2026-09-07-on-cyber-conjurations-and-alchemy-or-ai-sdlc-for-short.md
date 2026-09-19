@@ -119,13 +119,11 @@ It becomes unsustainable to try mentally keeping up with corner case you chose 4
 
 This is the phase where my basic AI workflow was defined. Multiple MDs, initial guardrails, skills, and fine tuning the relationship between humans and AI.
 
-As the project grows and you accelerate your [cycle time](https://martinfowler.com/bliki/CycleTime.html), you move from holding code and structure in your head, patterns, technical caveats, to holding conversations context, what is being built in sessions A and B, the state of work. Directing an agent to follow up on a bug. Remembering what the agent should remember, so that you remind yourself to tell the agent to remember that edge case.
-
-Update the harness. The harness! Also, review the user feedback and spec it in a digestable way for the agent. 
+As the project grows and you accelerate your [cycle time](https://martinfowler.com/bliki/CycleTime.html), you move from holding code and structure in your head, patterns, technical caveats, to holding conversations context, what is being built in sessions A and B, the state of work. Directing an agent to follow up on a bug. Remembering what the agent should remember, so that you remind yourself to tell the agent to remember that edge case. Update the harness. Discuss the harness with your AI. Also, review the user feedback and spec it in a digestible way for your AI.
 
 Days of this. But it got us to our first product launch after about 1.5 months. It's also a recipe for breaking your brain.
 
-## Is this AI SDLC?
+## AI SDLC
 
 Hello - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from v1.
 
