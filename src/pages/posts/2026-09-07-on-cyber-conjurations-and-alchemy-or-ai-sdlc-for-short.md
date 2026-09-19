@@ -137,7 +137,7 @@ Full explanation of how it works. After a while I had to generate something to l
 
 <iframe src="/posts/agentic-workflow.html" title="Agentic workflow" loading="lazy" class="w-full h-[600px] rounded-xl border-0"></iframe>
 
-<a href="[https://mstrlaw.com/posts/agentic-workflow](https://mstrlaw.com/posts/agentic-workflow)" target="_blank">View full size.</a>
+<a href="[/posts/agentic-workflow](https://mstrlaw.com/posts/agentic-workflow)" target="_blank">View full size.</a>
 
 ## The future?
 
