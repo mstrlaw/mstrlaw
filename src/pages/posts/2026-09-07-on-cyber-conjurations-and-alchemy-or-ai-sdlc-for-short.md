@@ -56,16 +56,16 @@ Simple enough that I could build it, complexity enough to assess the possibiliti
 
 ## Fundamental Things Apply As Time Goes By
 
-As of writing this I think we're far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become stable and established.
+As of writing the industry is far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become stable and established.
 
-It's the same now. A bunch of people trying to see they can cook up with the current ingredients, but each with their own recipe.
+It's the same now. A bunch of people trying to see they can cook up with the current ingredients, but each with their own recipe. 
 
-I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's good or not to use AI, but of it's output and quality.
+I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's good or not to use AI. I’m talking output and quality.
 
-I see this in my interviews and everyday discussions. Engineers that use LLMs to do a thing here and there by prompting back and forth experience have a very different take from those that have looked to setup AI as a central part of how they develop.
+I see this in my interviews, online and everyday discussions with friends and colleagues. Engineers that use LLMs to do a thing here and there by prompting back and forth have a very different take from those that look to setup AI as a central part of how they develop.
 
-Having said that, just because you might plan with AI, assign to AI and wait until it's finished it's task, I wouldn't call AI SDLC. Because, well, you need the SDLC part. Ideally a  well well though out one.
-You need to actually plan and design your system and harness _a lot_. Good software engineering practices apply, perhaps more than ever.
+Having said that, just because you plan with AI, assign the resulting tasks to AI and wait until it finishes them, I wouldn't call it AI SDLC. Because, well, you need the SDLC part. Ideally a well though out one.
+You need to actually plan and design your system and harness, _a lot_. Good software engineering practices apply, perhaps more than ever. Right. Harnesses. Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
 
 As an engineer you might end up working on this almost exclusively. Oh, and QA-ing as hell too.
 
