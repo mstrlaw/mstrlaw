@@ -125,7 +125,7 @@ Days of this. But it got us to our first product launch after about 1.5 months. 
 
 ## AI SDLC
 
-Hello - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from v1.
+WIP - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from first iterations.
 
 ![](/images/uploads/AI%20SDLC%20v1.png)
 
