@@ -143,4 +143,4 @@ Full explanation of how it works. After a while I had to generate something to l
 
 ![Still of 2006 movie Idiocracy with Brawndo CEO in a video call, panicking, yelling "The Computer did that auto-layoff thing to everybody"](/images/uploads/brawndo.png "Brawndo CEO panicking")
 
-<small>Brawndo CEO [panicking](https://www.youtube.com/watch?v=7THG28GprSM) as the computer does that auto-layoff thing.</small>
+<small>Brawndo CEO <a href="[https://www.youtube.com/watch?v=7THG28GprSM](https://www.youtube.com/watch?v=7THG28GprSM)" target="_blank">panicking</a> as the computer does that auto-layoff thing.</small>
