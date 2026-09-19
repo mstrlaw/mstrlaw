@@ -65,7 +65,14 @@ I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps 
 I see this in my interviews, online and everyday discussions with friends and colleagues. Engineers that use LLMs to do a thing here and there by prompting back and forth have a very different take from those that look to setup AI as a central part of how they develop.
 
 Having said that, just because you plan with AI, assign the resulting tasks to AI and wait until it finishes them, I wouldn't call it AI SDLC. Because, well, you need the SDLC part. Ideally a well though out one.
-You need to actually plan and design your system and harness, _a lot_. Good software engineering practices apply, perhaps more than ever. Right. Harnesses. Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
+
+![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline an MR is openened")
+
+<small>GitLab Pipeline when opening an MR</small>
+
+
+You need to actually plan and design your system and harness, _a lot_. Good software engineering practices apply, perhaps more than ever.
+Right. Harnesses. Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
 
 As an engineer you might end up working on this almost exclusively. Oh, and QA-ing as hell too.
 
@@ -73,7 +80,7 @@ As an engineer you might end up working on this almost exclusively. Oh, and QA-i
 
 **Project Details**
 
-I opted to go with a monorepo of workspaces. Client and Server. Shared types, etc.
+My go-to approach is that of a monorepo with workspaces. Client and Server, Documentation. Shared types, etc.
 
 One single repo and a unified context for the AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
 
@@ -98,12 +105,6 @@ root/
 
 <small>Simplified repo structure</small>
 
-This has been working more than fine. It's capable of planning and implementing features E2E, test them, ship them to staging.
-
-![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline when opening an MR")
-
-<small>GitLab Pipeline when opening an MR</small>
-
 ## Standard AI Lifecycle
 
 With this out of the way, it was time to build the product. I did it through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a Reverse Centaur.
@@ -115,6 +116,8 @@ It consumed a lot of my time. It gets unsustainable when you want to go quicker 
 Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
 draft: I've moved from holding all the minute code, patterns and caveats, as well as architecture and systems in my mind, to holding the harness details, the baked in decisions within the AI workflow.
+
+This has been working more than fine. It's capable of planning and implementing features E2E, test them, ship them to staging.
 
 ## 
 
