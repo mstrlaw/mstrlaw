@@ -47,7 +47,7 @@ I want to understand what this all means for me, for us, the industry, for socie
 
 ## The Project
 
-In May '26 I was approached to help build [Free The Flat](https://https://freetheflat.co.uk), a project for helping UK home owners to manage their buildings. Cool founders, a real apparent problem and a worthy cause.
+In May '26 I was approached to help build [Free The Flat](https://freetheflat.co.uk), a project for helping UK home owners to manage their buildings. Cool founders, a real apparent problem and a worthy cause.
 
 On top of that, an evergreen codebase where product engineering can meet AI driven development full blast. An opportunity to build in this new world I keep hearing of.
 
