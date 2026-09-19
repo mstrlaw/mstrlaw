@@ -12,6 +12,7 @@
     "fetch-mastodon": "node scripts/fetch-mastodon.mjs"
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.1",
     "@astrojs/vue": "^7.0.2",
     "@tailwindcss/vite": "^4.3.3",
     "@tresjs/cientos": "^4.3.1",

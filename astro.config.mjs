@@ -4,6 +4,8 @@ import { imageService } from '@unpic/astro/service'
 import tailwindcss from '@tailwindcss/vite'
 import vue from '@astrojs/vue'
 import { templateCompilerOptions } from '@tresjs/core'
+import { satteri } from '@astrojs/markdown-satteri'
+import externalLinksNewTab from './src/plugins/external-links-new-tab.mjs'
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,6 +25,13 @@ export default defineConfig({
       ...templateCompilerOptions,
     }),
   ],
+  markdown: {
+    // Sätteri is Astro's default Markdown processor; naming it explicitly is
+    // what lets the external-link plugin into its pipeline.
+    processor: satteri({
+      hastPlugins: [externalLinksNewTab],
+    }),
+  },
   image: {
     service: imageService(),
   },
