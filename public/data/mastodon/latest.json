@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-09-19T01:35:50.455Z",
+  "lastUpdated": "2026-09-19T09:35:36.210Z",
   "statuses": [
+    {
+      "id": "117296887409913198",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117296887409913198",
+      "createdAt": "2026-09-19T09:01:02.680Z",
+      "excerpt": "Inferência. Dois dias de debate sobre as consequências da IA no jornalismo, organizado pelo Shifter, Dia 26 & 27 Setembro no Beato, Lisboa https://inferencia.shifter.pt…",
+      "author": null,
+      "media": null,
+      "counts": {
+        "replies": 0,
+        "reblogs": 3,
+        "favourites": 0
+      }
+    },
     {
       "id": "117285506405296484",
       "type": "boost",
@@ -35,29 +49,6 @@
         "replies": 68,
         "reblogs": 238,
         "favourites": 444
-      }
-    },
-    {
-      "id": "117191350422634961",
-      "type": "boost",
-      "url": "https://dair-community.social/@timnitGebru/117087966871760448",
-      "createdAt": "2026-08-31T17:41:36.100Z",
-      "excerpt": "🔇 🔇 🔇 My book, Deep Unlearning, is now available for preorders! I don't know how people write so many books because this one took a lot out of me. It turns out, I had a lot to…",
-      "author": {
-        "acct": "timnitGebru@dair-community.social",
-        "displayName": "Timnit Gebru (she/her).",
-        "url": "https://dair-community.social/@timnitGebru"
-      },
-      "media": {
-        "url": "https://files.mastodon.social/cache/media_attachments/files/117/087/967/477/040/260/small/1be582cd3a214569.jpg",
-        "alt": "Cover of my new book, Deep Unlearning: The Rise of AI and The Radicalization of a Tech Idealist. \n\nThere are two concentric circles in the book, the left being circuits in black an white, and the right being a bunch of dots with orange accents. The cover background is cream. And the words are written in black except for \"Un\" which is in orange.",
-        "width": 393,
-        "height": 586
-      },
-      "counts": {
-        "replies": 55,
-        "reblogs": 669,
-        "favourites": 655
       }
     }
   ]
