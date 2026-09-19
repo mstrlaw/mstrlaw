@@ -139,6 +139,8 @@ Full explanation of how it works. After a while I had to generate something to l
 
 <a href="[https://mstrlaw.com/posts/agentic-workflow](https://mstrlaw.com/posts/agentic-workflow)" target="_blank">View full size.</a>
 
-## More things?
+## The future?
 
-Lorem
+[![Still of 2006 movie Idiocracy with Brawndo CEO in a video call, panicking, yelling "The Computer did that auto-layoff thing to everybody"](/images/uploads/brawndo.png "Brawndo CEO panicking")](https://www.youtube.com/watch?v=7THG28GprSM)
+
+<small>Brawndo CEO panicking as the computer does that auto-layoff thing.</small>
