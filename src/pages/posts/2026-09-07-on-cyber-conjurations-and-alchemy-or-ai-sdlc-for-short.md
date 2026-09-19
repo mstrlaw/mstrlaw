@@ -17,15 +17,15 @@ thumbnail_description: ''
 
 ## Preface
 
-We're in the second half of 2026 and an increasingly large swath of the tech world is now waist deep in Agentic software development (or whatever word you're using at the time or reading).
+We're in the second half of 2026 and an increasingly large swath of the tech world is waist deep in Agentic software development (or whatever word you're using at the time or reading).
 
-Naturally, you want to know (do you?) what the fuss is about. You've got to _upskill_ yourself, stay relevant and remain valuable in the job market. "It's not AI that'll take your job, it's someone else that uses AI better than you" they say.
+Naturally, you want to know (do you?) what the fuss is about. You've got to _upskill_ yourself, stay relevant and remain valuable in the job market. "It's not AI that'll take your job, it's someone else that uses AI better than you" they say, as they as they look at workers fighting among themselves and miss the bigger picture.
 
-So you embark on a journey, still ongoing, to see where this leads. FOMO and all of that.
+Anyways. You embark on a journey, still ongoing, to see where all this might lead. FOMO and all of that.
 
 You wanna experience the new paradigm being touted on X and other corners of the civilized web. If this is the last frontier before either utopia or dystopia — depending on who you ask — let's see it up close.
 
-You might read this as coming out a bit snarky and think: another pissed programmer because of <_insert reason_> but no. I'm simultaneously highly skeptic of the AI boosters stating this technology will replace us all and
+This might come out to you as snarky and think: another pissed engineer because of <_insert reason_> but no. I'm highly skeptic of the AI boosters stating this technology will replace us all while at the same time, quite impressed with how things might evolve and what it means for creative builders. Luckily we can hold multiple emotions at once.
 
 <hr/>
 
@@ -70,7 +70,6 @@ Having said that, just because you plan with AI, assign the resulting tasks to A
 
 <small>GitLab Pipeline when opening an MR</small>
 
-
 You need to actually plan and design your system and harness, _a lot_. Good software engineering practices apply, perhaps more than ever.
 Right. Harnesses. Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
 
@@ -107,7 +106,7 @@ root/
 
 ## Standard AI Lifecycle
 
-With this out of the way, it was time to build the product. I did it through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a Reverse Centaur.
+Now that we got this out of the way, it was time to build the product. I did it through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a Reverse Centaur.
 
 You discuss with humans what to implement, then you get into some level of planning mode with AI for defining jobs to be done, then you delegate to AI and steer it until the outputs get good enough. You follow along each step, review things, merge when happy.
 
@@ -121,7 +120,7 @@ This has been working more than fine. It's capable of planning and implementing 
 
 ## 
 
-## AI SDLC Development - My recipe
+## Is this AI SDLC?
 
 Hello - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from v1.
 
