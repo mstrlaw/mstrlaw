@@ -77,7 +77,7 @@ As an engineer you might end up working on this almost exclusively. Oh, and QA-i
 
 <hr>
 
-**Project Structure**
+### Project Structure
 
 My go-to approach is that of a [monorepo with workspaces](https://code.claude.com/docs/en/large-codebases), something I had in mind trying for ages (but didn't want to spend days figuring out how to setup CI/CD). Client and Server, Documentation. Shared types, etc.
 
@@ -129,15 +129,47 @@ Hello - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between
 
 ![](/images/uploads/AI%20SDLC%20v1.png)
 
-**Interactive Explorer**
+<small>Product Development centered around AI.</small>
 
-Full explanation of how it works. After a while I had to generate something to let me keep track of all the small tweaks. AI SDLC projects need this as part of their documentation so that agents understand the reality they work in and their relationship to humans and other agents.
+1 WIP
+
+2
+
+3
+
+4
+
+5
+
+## Harness Engineering?
+
+After a while I had to generate something to let me keep track of all the small tweaks. AI SDLC projects need this as part of their documentation so that agents understand the reality they work in and their relationship to humans and other agents.
+
+[WIP] Overall details. Feedback Skills. Cyrus details.
 
 <iframe src="/posts/agentic-workflow.html" title="Agentic workflow" loading="lazy" class="w-full h-[600px] rounded-xl border-0"></iframe>
 
 [View full size.](https://mstrlaw.com/posts/agentic-workflow)
 
+### Iterating the Harness
+
+WIP - AI running analysis on own sessions.
+
+![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.03.png)
+
+<small>Post Mortem analysis for Linear tickets and. handling by Cyrus</small>
+
+![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.34.png)
+
+<small>Analysis of multiple tickets handled during a given day</small>
+
+![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.11.png)
+
+<small>Analysis of multiple tickets handled during a given day</small>
+
 ## The future?
+
+WIP
 
 ![Still of 2006 movie Idiocracy with Brawndo CEO in a video call, panicking, yelling "The Computer did that auto-layoff thing to everybody"](/images/uploads/brawndo.png "Brawndo CEO panicking")
 
