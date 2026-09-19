@@ -115,17 +115,15 @@ I hear a lot of people still using AI this way.
 Discuss with humans what to implement. Take that discussion and do some planning with AI for defining jobs to be done. Spin another session and start building this with another AI and steer it until the outputs get good enough. Follow along each step or review things once done.
 
 Maybe spin a couple of parallel sessions to go quicker (multi-tasking yay..).
-It becomes unsustainable to try mentally keeping up with corner case you chose 4 turns ago for your 2nd session agent. It's just a recipe for breaking your brain.
+It becomes unsustainable to try mentally keeping up with corner case you chose 4 turns ago for your 2nd session agent.
 
-But this it got us to the first first product version after about 1 month or so.
+This is the phase where my basic AI workflow was defined. Multiple MDs, initial guardrails, skills, and fine tuning the relationship between humans and AI.
 
-Hello - basic AI relationship. MDs, skills. Lots of human intervention.
+As the project grows and you accelerate your [cycle time](https://martinfowler.com/bliki/CycleTime.html), you move from holding code and structure in your head, patterns, technical caveats, to holding conversations context, what is being built in sessions A and B, the state of work. Directing an agent to follow up on a bug. Remembering what the agent should remember, so that you remind yourself to tell the agent to remember that edge case.
 
-draft: I've moved from holding all the minute code, patterns and caveats, as well as architecture and systems in my mind, to holding the harness details, the baked in decisions within the AI workflow.
+Update the harness. The harness! Also, review the user feedback and spec it in a digestable way for the agent. 
 
-This has been working more than fine. It's capable of planning and implementing features E2E, test them, ship them to staging.
-
-## 
+Days of this. But it got us to our first product launch after about 1.5 months. It's also a recipe for breaking your brain.
 
 ## Is this AI SDLC?
 
