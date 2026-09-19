@@ -54,7 +54,7 @@ On top of that, an evergreen codebase where product engineering can meet AI driv
 I'm not going to go into details of the product itself but it isn't the next Uber for Housing or whatever. It's not a high-frequency crypto trading product with realtime needs.
 Simple enough that I could build it, complexity enough to assess the possibilities and pitfalls of AI driven product engineering.
 
-## Fundamental Things Apply As Time Goes By
+### Fundamental Things Apply As Time Goes By
 
 As of writing the industry is far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become stable and established.
 
@@ -77,9 +77,9 @@ As an engineer you might end up working on this almost exclusively. Oh, and QA-i
 
 <hr>
 
-**Project Details**
+**Project Structure**
 
-My go-to approach is that of a monorepo with workspaces. Client and Server, Documentation. Shared types, etc.
+My go-to approach is that of a [monorepo with workspaces](https://code.claude.com/docs/en/large-codebases), something I had in mind trying for ages (but didn't want to spend days figuring out how to setup CI/CD). Client and Server, Documentation. Shared types, etc.
 
 One single repo and a unified context for the AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
 
@@ -104,13 +104,20 @@ root/
 
 <small>Simplified repo structure</small>
 
+I keep things simple. The server is hosted on Digital Ocean, client and user docs on Cloudflare. Code hosted and deployed via GitLab.
+
 ## Standard AI Lifecycle
 
-Now that we got this out of the way, it was time to build the product. I did it through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a Reverse Centaur.
+Now that we got this out of the way, it was time to build the product. I started through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a [Reverse Centaur](https://us.macmillan.com/books/9780374621568/thereversecentaursguidetolifeafterai/).
 
-You discuss with humans what to implement, then you get into some level of planning mode with AI for defining jobs to be done, then you delegate to AI and steer it until the outputs get good enough. You follow along each step, review things, merge when happy.
+I hear a lot of people still using AI this way.
 
-It consumed a lot of my time. It gets unsustainable when you want to go quicker so you spin multiple agents for different work streams and try to mentally keep up. But it got us to the first first product version.
+Discuss with humans what to implement. Take that discussion and do some planning with AI for defining jobs to be done. Spin another session and start building this with another AI and steer it until the outputs get good enough. Follow along each step or review things once done.
+
+Maybe spin a couple of parallel sessions to go quicker (multi-tasking yay..).
+It becomes unsustainable to try mentally keeping up with corner case you chose 4 turns ago for your 2nd session agent. It's just a recipe for breaking your brain.
+
+But this it got us to the first first product version after about 1 month or so.
 
 Hello - basic AI relationship. MDs, skills. Lots of human intervention.
 
