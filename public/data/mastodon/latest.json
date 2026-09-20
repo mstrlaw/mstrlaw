@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-19T17:48:26.174Z",
+  "lastUpdated": "2026-09-20T01:38:15.807Z",
   "statuses": [
+    {
+      "id": "117299768389078327",
+      "type": "boost",
+      "url": "https://mastodon.world/@paulschoe/117299534792555891",
+      "createdAt": "2026-09-19T21:13:42.933Z",
+      "excerpt": "@chetwisniewski 'AI has turned sharing knowledge from a gift to the world, into a liability for the author. The act of openness will be twisted and abused into creating more…",
+      "author": {
+        "acct": "paulschoe@mastodon.world",
+        "displayName": "Paul Schoe",
+        "url": "https://mastodon.world/@paulschoe"
+      },
+      "media": null,
+      "counts": {
+        "replies": 0,
+        "reblogs": 15,
+        "favourites": 18
+      }
+    },
     {
       "id": "117296887409913198",
       "type": "post",
@@ -30,25 +48,7 @@
       "counts": {
         "replies": 8,
         "reblogs": 18,
-        "favourites": 25
-      }
-    },
-    {
-      "id": "117248017847014083",
-      "type": "boost",
-      "url": "https://mastodon.gamedev.place/@aras/117246588825846875",
-      "createdAt": "2026-09-10T17:52:52.329Z",
-      "excerpt": "So! There are AI agents registering themselves to this mastodon instance (some of them are upfront that they are automated AI agents). But! If you reject their application, after…",
-      "author": {
-        "acct": "aras@mastodon.gamedev.place",
-        "displayName": "Aras Pranckevičius",
-        "url": "https://mastodon.gamedev.place/@aras"
-      },
-      "media": null,
-      "counts": {
-        "replies": 68,
-        "reblogs": 237,
-        "favourites": 444
+        "favourites": 26
       }
     }
   ]
