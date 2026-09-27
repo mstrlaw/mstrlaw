@@ -135,7 +135,6 @@ Days of this. But it got us to our first product launch after about 1.5 months. 
 
 Because you don't wanna burn out, to smother that last ounce of critical thinking, it's only logical to handover even more to AI. Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat.
 
-
 WIP - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from first iterations.
 
 ![](/images/uploads/AI%20SDLC%20v1.png)
@@ -194,7 +193,9 @@ It'll pick up all the sessions invoked by Cyrus and analyze them. It can provide
 
 What time AI saves you on building, you'll spend it on planning and reviewing.
 
-<small> of multiple tickets handled during a given day</small>
+![](/images/uploads/anthorpic_goofing.png)
+
+<small>Revisited "after agents from Anthropic's [AI Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)</small>
 
 ## The future?
 
