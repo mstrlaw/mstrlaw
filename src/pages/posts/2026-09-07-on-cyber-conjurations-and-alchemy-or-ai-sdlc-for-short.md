@@ -131,7 +131,7 @@ Days of this. But it got us to our first product launch after about 1.5 months. 
 
 Because you don't wanna burn out, to completely smother that last ounce of a brain cell, it's only logical to handover even more to AI. Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat. The only thing I've never done is review the code.
 
-A friend of mind had shared how at his startup they were using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc. Ask him how're they doing, for fun.
+Earlier this year a friend of mine had how his startup was using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc. Ask him how're they doing, for fun.
 The setup was impressive and, being a big fan of Linear and having already introduced it to the team so we'd use it among ourselves, it made sense to use it as the long lived context layer for managing the project's work — sometimes called Spine. I think this is one of the defining characteristics of AI SDLC. That and the ability for agents to work reactively.
 
 This is how the current setup looks like. Check the diagram below for the completely detailed flow explanation.
@@ -150,7 +150,7 @@ This is your regular prompt-your-agent workflow. I usually have between 2-4 sess
 
 - Planning and reviewing plans. Researching possible implementations, technical investigations, comparing solutions. These are where I spend most of my time with the agents to plan and ultimately have it write that plan into Linear.
 - Reviewing the AI SDLC performance, investigate issues encountered by a Cyrus dispatched agent working on a Linear ticket and brainstorm improvements.
-- Miscellaneous sessions with varying purposes. Sometimes used for checking if there are any drifts in the documentation after a couple of day's work. Sometimes to investigate and fix an implementation bug directly in the editor without having to open a ticket.
+- Miscellaneous sessions with varying purposes. Sometimes to investigate and fix an implementation bug directly in the editor without having to open a ticket. Other times for checking if there are any drifts in the documentation after a couple of day's work. 
 
 ### 3 - Providing Feedback
 
@@ -159,12 +159,32 @@ At first, feedback from the founders was given regularly via Slack or during a c
 The first improvement consisted of a Claude skill I built for them that would take an arbitrarily long list of feedback in a Google Docs file and transform it into Linear tickets. It was a good first step but, not having access to the codebase, their agents took many assumptions on how things worked when writing the tickets.
 Because of that I had to either add my own specific implementation details to the ticket ("use this to do X", "use the component X for the feature", etc) and then my agent (with access to the codebase) doing the ticket would need to review everything with the code context this time.
 
-In order to increase the quality of their Linear tickets, I invited the founders to GitLab (as reporters), had them add the Linear MCP and modified their feedback skill to read the repo codebase to get its context before writing a ticket's specs.
-With that last the tickets started coming in with much higher accuracy on how to resolve a bug, how to improve or modify a feature — a needed step before introducing Cyrus.
+In order to increase the quality of their Linear tickets, I invited the founders to GitLab (as reporters), had them add the Linear MCP and modified their feedback skill to read the repo codebase to get its context before writing a ticket's specs. Depending on the size, the agent can decide whether to create a simple ticket or a ticket made of multiple sub-tickets.
+
+
+With that last the tickets started coming in with much higher accuracy on how to resolve a bug, how to improve or modify a feature — an important addition before introducing Cyrus.
 
 ### 4 - Autonomous Agentic Development
 
-Lorem lorem
+This is where things get interesting and funky. Plans and tickets were all tidy in Linear, but I still had to relay work to my Claude sessions (using remote sessions extensively) by instructing it to work on a ticket I'd paste in the prompt.
+
+I looked up some options for agent orchestrators and one stood out: [Cyrus](https://www.atcyrus.com/). Now, it's nothing crazy. It's not OpenClaw or whatever the thing's called.
+Put simply, you install it on your machine, setup a tunnel to route external webhooks and traffic from the internet (I used Cloudflare) and finally, setup an App in Linear, which will be your agent.
+
+With this, you can then assign your agent (which I ended up naming Cyrus, 'cause why bother?) to a Linear ticket and it'll kick off an agent to implement it.
+
+This works because:
+
+- When instructing an agent to write a linear ticket (including the Feedback skill), it uses the `linear-ticket-writer` skill which, writes Linear tickets specifically with Cyrus in mind. Tickets are always written to be picked up by an AI. If you have humans in your team, you need to change this.
+- The ticket contains the necessary specs to implement whatever is being asked, as well as specific instructions on how to continue working, useful for larger tickets containing sub-tickets. 
+- Once an agent's work is finished, it adds a comment on the parent ticket which tags the agent and adds the necessary context/instructions.
+- Because of the agent tag, Cyrus picks it up automatically and passes the comments+ticket context, and the cycle repeats until all work is done.
+
+You can see that sequence in action in the Linear screenshot below.
+
+![](/images/uploads/cyrus_lane.png)
+
+<small>A multi-ticket being handled via Cyrus.</small>
 
 ### 5 - CI/CD
 
