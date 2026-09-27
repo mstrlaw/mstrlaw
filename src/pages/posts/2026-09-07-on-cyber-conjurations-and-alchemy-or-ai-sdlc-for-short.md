@@ -58,26 +58,32 @@ Simple enough that I could build it, complexity enough to assess the possibiliti
 
 As of writing the industry is far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become stable and established.
 
-It's the same now. A bunch of people trying to see they can cook up with the current ingredients, but each with their own recipe. 
+It's the same now. A bunch of people trying to see what they can cook up with the current ingredients, but each with their own flavor.
 
-I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's good or not to use AI. I’m talking output and quality.
+I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's a good thing (or morally correct) to use AI.
+I’m talking whether the output and quality are good
 
-I see this in my interviews, online and everyday discussions with friends and colleagues. Engineers that use LLMs to do a thing here and there by prompting back and forth have a very different take from those that look to setup AI as a central part of how they develop.
+I see this in my technical interviews, in everyday discussions with friends and colleagues and in online social circles. Engineers that use LLMs to do a thing here and there by prompting back and forth have a very different take from those that look to setup AI as a central part of how they develop.
 
 Having said that, just because you plan with AI, assign the resulting tasks to AI and wait until it finishes them, I wouldn't call it AI SDLC. Because, well, you need the SDLC part. Ideally a well though out one.
 
 ![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline an MR is openened")
 
-<small>GitLab Pipeline when opening an MR</small>
+<small>GitLab Pipeline when opening an MR.</small>
 
-You need to actually plan and design your system and harness, _a lot_. Good software engineering practices apply, perhaps more than ever.
-Right. Harnesses. Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
+Good software engineering practices apply, perhaps more than ever.
+
+You need to actually plan and design your system more thoroughly, because if you'll retain any type of context, it won't be code itself but the contours of your architecture.
+
+Also now you need to think about something called a [harness](https://en.wikipedia.org/wiki/Agent_harness)? Like _a lot_. Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
 
 As an engineer you might end up working on this almost exclusively. Oh, and QA-ing as hell too.
 
 <hr>
 
 ### Project Structure
+
+We require a backend and some frontend.
 
 My go-to approach is that of a [monorepo with workspaces](https://code.claude.com/docs/en/large-codebases), something I had in mind trying for ages (but didn't want to spend days figuring out how to setup CI/CD). Client and Server, Documentation. Shared types, etc.
 
@@ -112,12 +118,14 @@ Now that we got this out of the way, it was time to build the product. I started
 
 I hear a lot of people still using AI this way.
 
-Discuss with humans what to implement. Take that discussion and do some planning with AI for defining jobs to be done. Spin another session and start building this with another AI and steer it until the outputs get good enough. Follow along each step or review things once done.
+Discuss with humans what to implement. Take that discussion and do some planning with AI for defining jobs to be done. Spin another session and start building this with another AI and steer it until the outputs get good enough. Follow along each step, click accept. Maybe review things at the end, really depends on your team's culture.
 
-Maybe spin a couple of parallel sessions to go quicker (multi-tasking yay..).
-It becomes unsustainable to try mentally keeping up with corner case you chose 4 turns ago for your 2nd session agent.
+You then go onto spinning a couple of parallel sessions to go quicker (multi-tasking.. yay.).
+It becomes unsustainable to try mentally keeping up with corner case you had to make a decision about 4 turns ago for your 2nd agent. You have too many branches, you're waiting on each other sessions to finish things. Bad.
 
-This is the phase where my basic AI workflow was defined. Multiple MDs, initial guardrails, skills, and fine tuning the relationship between humans and AI.
+But this is how the basics of an AI workflow get defined. Through these weird beginnings. Gradually you keep improving: multiple MDs, building guardrails as needed, add some skills, and fine tuning how you and your other human teammates relate with AI.
+
+<hr>
 
 As the project grows and you accelerate your [cycle time](https://martinfowler.com/bliki/CycleTime.html), you move from holding code and structure in your head, patterns, technical caveats, to holding conversations context, what is being built in sessions A and B, the state of work. Directing an agent to follow up on a bug. Remembering what the agent should remember, so that you remind yourself to tell the agent to remember that edge case. Update the harness. Discuss the harness with your AI. Also, review the user feedback and spec it in a digestible way for your AI.
 
