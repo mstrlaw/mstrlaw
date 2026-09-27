@@ -175,6 +175,14 @@ WIP - AI running analysis on own sessions.
 
 <small>Analysis of multiple tickets handled during a given day</small>
 
+## AI SDLC Lessons
+
+Here's a list of things I've learned and keep learning in this new setup. Some are known and maybe common sense, others are more specific to this recipe and others are just what I believe in (yeah we don't need facts when things are non-deterministic, right?)
+
+#### Make sure your context is always green AF
+
+If you have long term context in a spine like Linear or your local knowledge MDs, always ALWAYS make sure the agent keeps knowledge up to date. Why something exists the way it does, why things relate to each other, when to do/use X versus Y. Use a form of deterministic way to ensure that (tools, skill invocation). AND even if you use these tricks, for good measure, occasionally do a thorough sweep at the end of a session or in a new session.
+
 ## The future?
 
 WIP
