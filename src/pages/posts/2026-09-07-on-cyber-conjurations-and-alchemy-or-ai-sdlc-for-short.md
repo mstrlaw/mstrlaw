@@ -67,10 +67,6 @@ I see this in my technical interviews, in everyday discussions with friends and 
 
 Having said that, just because you plan with AI, assign the resulting tasks to AI and wait until it finishes them, I wouldn't call it AI SDLC. Because, well, you need the SDLC part. Ideally a well though out one.
 
-![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline an MR is openened")
-
-<small>GitLab Pipeline when opening an MR.</small>
-
 Good software engineering practices apply, perhaps more than ever.
 
 You need to actually plan and design your system more thoroughly, because if you'll retain any type of context, it won't be code itself but the contours of your architecture.
@@ -112,7 +108,7 @@ root/
 
 I keep things simple. The server is hosted on Digital Ocean, client and user docs on Cloudflare. Code hosted and deployed via GitLab.
 
-## Standard AI Lifecycle
+## Standard AI SDLC
 
 Now that we got this out of the way, it was time to build the product. I started through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a [Reverse Centaur](https://us.macmillan.com/books/9780374621568/thereversecentaursguidetolifeafterai/).
 
@@ -131,31 +127,51 @@ As the project grows and you accelerate your [cycle time](https://martinfowler.c
 
 Days of this. But it got us to our first product launch after about 1.5 months. It's also a recipe for breaking your brain.
 
-## AI SDLC
+## Agentic AI SDLC
 
-Because you don't wanna burn out, to smother that last ounce of critical thinking, it's only logical to handover even more to AI. Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat.
+Because you don't wanna burn out, to completely smother that last ounce of a brain cell, it's only logical to handover even more to AI. Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat. The only thing I've never done is review the code.
 
-WIP - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between humans. Lessons learned from first iterations.
+A friend of mind had shared how at his startup they were using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc. Ask him how're they doing, for fun.
+
+The setup was impressive and, being a big fan of Linear and having already introduced it to the team so we'd use it among ourselves, it made sense to use it as the long lived context layer for managing the project's work — sometimes called Spine.
+
+I think this is one of the defining characteristics of AI SDLC. That and the ability for agents to work reactively.
+
+This is how the current setup looks like. Check the diagram below for the completely detailed flow explanation.
 
 ![](/images/uploads/AI%20SDLC%20v1.png)
 
 <small>Product Development centered around AI.</small>
 
-1 WIP
+### 1 - Communications
 
-2
+All communication happens digitally, whether that's daily coordination and updates or meetings. More importantly, all customer interviews' transcripts are kept so that these are later used to help shape our product experiments and development.
 
-3
+### 2 - Standard Agentic Development
 
-4
+Lorem lorem
 
-5
+### 3 - Providing Feedback
+
+Lorem lorem
+
+### 4 - Autonomous Agentic Development
+
+Lorem lorem
+
+### 5 - CI/CD
+
+Lorem lorem
+
+![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline an MR is opened.")
+
+<small>GitLab Pipeline when opening an MR.</small>
 
 ### Cyrus Modifications
 
 WIP Describe custom changes to Cyrus local copy to implement the workfow.
 
-### The full picture
+### Detailed Scaffolding
 
 After a while I had to generate something to let me keep track of all the small tweaks. AI SDLC projects need this as part of their documentation so that agents understand the reality they work in and their relationship to humans, tasks and other agents working.
 
