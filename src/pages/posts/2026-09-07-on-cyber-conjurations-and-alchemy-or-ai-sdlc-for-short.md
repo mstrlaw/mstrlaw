@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: '[WIP] On Cyber Conjurations and Product Alchemy. AI SDLC for short.'
+title: '[WIP] On Cyber Conjurations and Product Alchemy. Agentic AI SDLC for short.'
 summary: An exploration of AI driven Product Engineering,
 feat_image: /images/uploads/aisdlc_v0.jpeg
 feat_image_alt: ''
@@ -108,7 +108,7 @@ root/
 
 I keep things simple. The server is hosted on Digital Ocean, client and user docs on Cloudflare. Code hosted and deployed via GitLab.
 
-## Standard AI SDLC
+## AI SDLC
 
 Now that we got this out of the way, it was time to build the product. I started through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a [Reverse Centaur](https://us.macmillan.com/books/9780374621568/thereversecentaursguidetolifeafterai/).
 
@@ -127,7 +127,7 @@ As the project grows and you accelerate your [cycle time](https://martinfowler.c
 
 Days of this. But it got us to our first product launch after about 1.5 months. It's also a recipe for breaking your brain.
 
-## Agentic AI SDLC
+## Agentic SDLC
 
 Because you don't wanna burn out, to completely smother that last ounce of a brain cell, it's only logical to handover even more to AI. Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat. The only thing I've never done is review the code.
 
@@ -149,12 +149,18 @@ Nothing crazy here. All communication happens digitally, whether that's daily co
 This is your regular prompt-your-agent workflow. I usually have between 2-4 sessions open in my code editor:
 
 - Planning and reviewing plans. Researching possible implementations, technical investigations, comparing solutions. These are where I spend most of my time with the agents to plan and ultimately have it write that plan into Linear.
-- Reviewing the AI SDLC performance and investigate issues for work done on a ticket handled by a Cyrus dispatched agent.
-- A third, miscellaneous session with varying purposes. Sometimes used for checking if there are any drifts in the documentation after a couple of day's work. Sometimes
+- Reviewing the AI SDLC performance, investigate issues encountered by a Cyrus dispatched agent working on a Linear ticket and brainstorm improvements.
+- Miscellaneous sessions with varying purposes. Sometimes used for checking if there are any drifts in the documentation after a couple of day's work. Sometimes to investigate and fix an implementation bug directly in the editor without having to open a ticket.
 
 ### 3 - Providing Feedback
 
-Lorem lorem
+At first, feedback from the founders was given regularly via Slack or during a call. It was very much me operating as human router between them and the agent, translating the feedback into more detailed and technically aware specs.
+
+The first improvement consisted of a Claude skill I built for them that would take an arbitrarily long list of feedback in a Google Docs file and transform it into Linear tickets. It was a good first step but, not having access to the codebase, their agents took many assumptions on how things worked when writing the tickets.
+Because of that I had to either add my own specific implementation details to the ticket ("use this to do X", "use the component X for the feature", etc) and then my agent (with access to the codebase) doing the ticket would need to review everything with the code context this time.
+
+In order to increase the quality of their Linear tickets, I invited the founders to GitLab (as reporters), had them add the Linear MCP and modified their feedback skill to read the repo codebase to get its context before writing a ticket's specs.
+With that last the tickets started coming in with much higher accuracy on how to resolve a bug, how to improve or modify a feature — a needed step before introducing Cyrus.
 
 ### 4 - Autonomous Agentic Development
 
