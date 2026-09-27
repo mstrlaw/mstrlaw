@@ -161,7 +161,6 @@ Because of that I had to either add my own specific implementation details to th
 
 In order to increase the quality of their Linear tickets, I invited the founders to GitLab (as reporters), had them add the Linear MCP and modified their feedback skill to read the repo codebase to get its context before writing a ticket's specs. Depending on the size, the agent can decide whether to create a simple ticket or a ticket made of multiple sub-tickets.
 
-
 With that last the tickets started coming in with much higher accuracy on how to resolve a bug, how to improve or modify a feature — an important addition before introducing Cyrus.
 
 ### 4 - Autonomous Agentic Development
@@ -180,11 +179,29 @@ This works because:
 - Once an agent's work is finished, it adds a comment on the parent ticket which tags the agent and adds the necessary context/instructions.
 - Because of the agent tag, Cyrus picks it up automatically and passes the comments+ticket context, and the cycle repeats until all work is done.
 
-You can see that sequence in action in the Linear screenshot below.
+A fully detailed workflow is diagramed further below explaining all these.
+
+The Linear screenshot below shows that sequence in action.
 
 ![](/images/uploads/cyrus_lane.png)
 
 <small>A multi-ticket being handled via Cyrus.</small>
+
+**Tunning Cyrus**
+
+Some patches and modifications needed to be made to Cyrus:
+
+1. Cyrus conveniently comes with bundled skills that it'll invoke depending on the ticket it gets. That I recall, it can plan, build, ship and perhaps do more. I modified its `verify-and-ship` skill so that it makes use or the repo's `wrap-up` skill (_docs-sync → review → pre-pr → commit → push → close tickets_), this way keeping the ship behavior consistent between the Standard and Autonomous Agentic workflows. Beyond that, the agent invoked by Cyrus will then inherit all other MDs in the repo and behave accordingly;
+2. An `end_session` MCP the agent can use to end its own session once it completes its work. Unless stopped, Cyrus sessions under the same ticket are kept "active" so the user can interact with the agent if needed. For the multi-tickets this meant that every ticket got its own session which would remain active. Each time there was an update due to the last ongoing session, all previous ones would be triggered, which would re-load and process the whole context for nothing. This as consuming tokens at an insane rate. The MCP tool allows to kill the session, because the Linear ignores comments the agent writes itself, so it couldn't just write `stop` to itself (a user writing `stop` will kill that session);
+3. Cleanly stop any running sessions for a ticket that gets re-assigned Cyrus, so that two agents can't work on the same ticket;
+4. Modify `cyrus/config.json` so that `disallowedTools` blocks force-push and a set of other dangerous commands. Headless mode Cyrus approves every tool automatically. Only deny rules actually stop a command;
+
+Besides these, I also setup:
+
+- A Worktree bootrstrap script: pnpm install, lefthook, Playwright chromium and `.env` injection, so each worktree can actually run the hooks and tests.
+- A Worktree cleanup script, scheduled as a LaunchAgent, for removing worktrees once their branch is merged. Leftover worktrees were fillnig the disk.
+
+There are even more fine-tunes I had to do, like changing the default model to handle tickets, not using `glab` to open MRs and more that I already forgot about. I'll need to ask Claude to re-explain the MD knowledge file..
 
 ### 5 - CI/CD
 
@@ -193,10 +210,6 @@ Lorem lorem
 ![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline an MR is opened.")
 
 <small>GitLab Pipeline when opening an MR.</small>
-
-### Cyrus Modifications
-
-WIP Describe custom changes to Cyrus local copy to implement the workfow.
 
 ### Detailed Scaffolding
 
