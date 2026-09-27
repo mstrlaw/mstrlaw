@@ -149,39 +149,43 @@ WIP - Linear as the spine. Cyrus for Agentic AI. Tighter feedback loop between h
 
 5
 
-## Harness Engineering?
+### Cyrus Modifications
 
-After a while I had to generate something to let me keep track of all the small tweaks. AI SDLC projects need this as part of their documentation so that agents understand the reality they work in and their relationship to humans and other agents.
+WIP Describe custom changes to Cyrus local copy to implement the workfow.
 
-[WIP] Overall details. Feedback Skills. Cyrus details.
+### The full picture
+
+After a while I had to generate something to let me keep track of all the small tweaks. AI SDLC projects need this as part of their documentation so that agents understand the reality they work in and their relationship to humans, tasks and other agents working.
 
 <iframe src="/posts/agentic-workflow.html" title="Agentic workflow" loading="lazy" class="w-full h-[600px] rounded-xl border-0"></iframe>
 
 [View full size.](https://mstrlaw.com/posts/agentic-workflow)
 
-### Iterating the Harness
-
-WIP - AI running analysis on own sessions.
-
-![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.03.png)
-
-<small>Post Mortem analysis for Linear tickets and. handling by Cyrus</small>
-
-![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.34.png)
-
-<small>Analysis of multiple tickets handled during a given day</small>
-
-![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.11.png)
-
-<small>Analysis of multiple tickets handled during a given day</small>
-
-## AI SDLC Lessons
+## Lessons
 
 Here's a list of things I've learned and keep learning in this new setup. Some are known and maybe common sense, others are more specific to this recipe and others are just what I believe in (yeah we don't need facts when things are non-deterministic, right?)
 
 #### Make sure your context is always green AF
 
-If you have long term context in a spine like Linear or your local knowledge MDs, always ALWAYS make sure the agent keeps knowledge up to date. Why something exists the way it does, why things relate to each other, when to do/use X versus Y. Use a form of deterministic way to ensure that (tools, skill invocation). AND even if you use these tricks, for good measure, occasionally do a thorough sweep at the end of a session or in a new session.
+If you have long term context in a spine like Linear, GitHub or your local knowledge MDs, always _ALWAYS_ make sure the agent keeps knowledge up to date. Why something exists the way it does, why things relate to each other, when to do/use X versus Y. If a ticket was planned in a way, but then through implementation or review the ticket assumptions were wrong, update the ticket or add a comment with context as to why that happened.
+
+This includes documentation about how your AI SDLC works. Keep this in your repo and each time you tweak your way of working, review the documentation.
+
+Use a form of deterministic way to ensure that (tools, skill invocation). AND even if you use these tricks, for good measure, occasionally run a thorough documentation review at the end of a session or in a new session.
+
+#### Analyze your AI SDLC frequently
+
+Every time an autonomous work session ends that had some hiccups (i.e. it got stuck, forgot to follow an instruction, etc), spin a new session with a beefed up model and ask it to run a post-mortem style analysis for a given ticket.
+
+It'll pick up all the sessions invoked by Cyrus and analyze them. It can provide a lot of detailed information as to how an agent performed, what skills and tools were or were not used, and propose improvements. Much of my current flow was refined using this approach.
+
+![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.03.png)
+
+<small>Post Mortem analysis for Linear tickets and. handling by Cyrus</small>
+
+![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.11.png)
+
+<small>Analysis of multiple tickets handled during a given day</small>
 
 ## The future?
 
