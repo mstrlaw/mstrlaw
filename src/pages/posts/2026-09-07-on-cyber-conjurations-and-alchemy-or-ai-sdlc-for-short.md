@@ -132,10 +132,7 @@ Days of this. But it got us to our first product launch after about 1.5 months. 
 Because you don't wanna burn out, to completely smother that last ounce of a brain cell, it's only logical to handover even more to AI. Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat. The only thing I've never done is review the code.
 
 A friend of mind had shared how at his startup they were using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc. Ask him how're they doing, for fun.
-
-The setup was impressive and, being a big fan of Linear and having already introduced it to the team so we'd use it among ourselves, it made sense to use it as the long lived context layer for managing the project's work — sometimes called Spine.
-
-I think this is one of the defining characteristics of AI SDLC. That and the ability for agents to work reactively.
+The setup was impressive and, being a big fan of Linear and having already introduced it to the team so we'd use it among ourselves, it made sense to use it as the long lived context layer for managing the project's work — sometimes called Spine. I think this is one of the defining characteristics of AI SDLC. That and the ability for agents to work reactively.
 
 This is how the current setup looks like. Check the diagram below for the completely detailed flow explanation.
 
@@ -145,11 +142,15 @@ This is how the current setup looks like. Check the diagram below for the comple
 
 ### 1 - Communications
 
-All communication happens digitally, whether that's daily coordination and updates or meetings. More importantly, all customer interviews' transcripts are kept so that these are later used to help shape our product experiments and development.
+Nothing crazy here. All communication happens digitally, whether that's daily coordination/updates via Slack or meetings on Meet. More interestingly, we keep all of customer interviews' transcripts. These are then periodically looked at to review how we're shaping our experiments and product development development.
 
 ### 2 - Standard Agentic Development
 
-Lorem lorem
+This is your regular prompt-your-agent workflow. I usually have between 2-4 sessions open in my code editor:
+
+- Planning and reviewing plans. Researching possible implementations, technical investigations, comparing solutions. These are where I spend most of my time with the agents to plan and ultimately have it write that plan into Linear.
+- Reviewing the AI SDLC performance and investigate issues for work done on a ticket handled by a Cyrus dispatched agent.
+- A third, miscellaneous session with varying purposes. Sometimes used for checking if there are any drifts in the documentation after a couple of day's work. Sometimes
 
 ### 3 - Providing Feedback
 
