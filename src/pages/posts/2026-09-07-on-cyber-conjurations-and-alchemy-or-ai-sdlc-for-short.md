@@ -165,7 +165,7 @@ After a while I had to generate something to let me keep track of all the small 
 
 Here's a list of things I've learned and keep learning in this new setup. Some are known and maybe common sense, others are more specific to this recipe and others are just what I believe in (yeah we don't need facts when things are non-deterministic, right?)
 
-#### Make sure your context is always green AF
+### Make sure your context is always green AF
 
 If you have long term context in a spine like Linear, GitHub or your local knowledge MDs, always _ALWAYS_ make sure the agent keeps knowledge up to date. Why something exists the way it does, why things relate to each other, when to do/use X versus Y. If a ticket was planned in a way, but then through implementation or review the ticket assumptions were wrong, update the ticket or add a comment with context as to why that happened.
 
@@ -173,7 +173,7 @@ This includes documentation about how your AI SDLC works. Keep this in your repo
 
 Use a form of deterministic way to ensure that (tools, skill invocation). AND even if you use these tricks, for good measure, occasionally run a thorough documentation review at the end of a session or in a new session.
 
-#### Analyze your AI SDLC frequently
+### Analyze your AI SDLC frequently
 
 Every time an autonomous work session ends that had some hiccups (i.e. it got stuck, forgot to follow an instruction, etc), spin a new session with a beefed up model and ask it to run a post-mortem style analysis for a given ticket.
 
