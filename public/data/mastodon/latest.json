@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-29T02:44:14.904Z",
+  "lastUpdated": "2026-09-30T02:23:01.221Z",
   "statuses": [
+    {
+      "id": "117355414039442212",
+      "type": "boost",
+      "url": "https://social.lansky.name/@hn100/117354431037050855",
+      "createdAt": "2026-09-29T17:05:08.177Z",
+      "excerpt": "500k facial scans at UK stations yield no arrests, 1 false positive Link:…",
+      "author": {
+        "acct": "hn100@social.lansky.name",
+        "displayName": "Hacker News 100",
+        "url": "https://social.lansky.name/@hn100"
+      },
+      "media": null,
+      "counts": {
+        "replies": 1,
+        "reblogs": 5,
+        "favourites": 1
+      }
+    },
     {
       "id": "117342665293057640",
       "type": "boost",
@@ -21,7 +39,7 @@
       "counts": {
         "replies": 2,
         "reblogs": 35,
-        "favourites": 51
+        "favourites": 52
       }
     },
     {
@@ -40,20 +58,6 @@
         "replies": 0,
         "reblogs": 15,
         "favourites": 28
-      }
-    },
-    {
-      "id": "117296887409913198",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117296887409913198",
-      "createdAt": "2026-09-19T09:01:02.680Z",
-      "excerpt": "Inferência. Dois dias de debate sobre as consequências da IA no jornalismo, organizado pelo Shifter, Dia 26 & 27 Setembro no Beato, Lisboa https://inferencia.shifter.pt…",
-      "author": null,
-      "media": null,
-      "counts": {
-        "replies": 0,
-        "reblogs": 4,
-        "favourites": 1
       }
     }
   ]
