@@ -1,6 +1,16 @@
 export default [
   // 2026 books
   {
+    title: 'Julia',
+    author: 'Sandra Newman',
+    yearRead: 2026,
+    url: 'https://www.harpercollins.com/products/julia-sandra-newman?variant=41467936636962',
+    cover: '/images/books/1984_julia.jpg',
+    alt: 'Julia by Sandra Newman',
+    pages: 210,
+    tags: ['fiction', 'dystopian'],
+  },
+  {
     title: 'Artificial Religion: On AI, Myth, and Power',
     author: 'Mark Coeckelbergh',
     yearRead: 2026,
