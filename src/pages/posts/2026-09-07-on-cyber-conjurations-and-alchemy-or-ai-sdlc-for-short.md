@@ -3,11 +3,11 @@ layout: /src/layouts/PostLayout.astro
 title: '[WIP] On Cyber Conjurations and Product Alchemy. Agentic AI SDLC for short.'
 summary: An exploration of AI driven Product Engineering,
 feat_image: /images/uploads/aisdlc_v0.jpeg
-feat_image_alt: ''
+feat_image_alt: A diagram showing how two people interact within an AI Native SDLC
 hide_feat_image: false
 description: ''
 publish_date: 2026-09-07T23:38:00
-update_date: 2026-09-07T23:38:00
+update_date: 2026-10-04T16:17:00
 type:
   - post
 date: ''
@@ -151,7 +151,7 @@ I think this is one of the defining characteristics of AI SDLC. That and the abi
 
 Anyways I ended up with this current setup. There's a more complex diagram below for the completely detailed flow explanation that you can explore.
 
-![](/images/uploads/AI%20SDLC%20v1.png)
+![A cleaned up diagram depicting AI native SDLC between people, Linear and Cyrus as the agent orchestrator.](/images/uploads/AI%20SDLC%20v1.png "Agentic SDLC")
 
 <small>Product Development centered around AI.</small>
 
@@ -205,7 +205,7 @@ The gist of the setup is:
 
 A fully detailed workflow is diagramed further below explaining all these.
 
-![](/images/uploads/cyrus_lane.png)
+![Screenshot of Linear UI showing a ticket and multiple tickets having been exectuted](/images/uploads/cyrus_lane.png "Linear UI screenshot of multi-ticket being completed by Cyrus agent.")
 
 <small>Linear screenshot of multi-tickets being handled through Cyrus.</small>
 
@@ -238,7 +238,7 @@ Finally — and there's nothing agentic here — all code gets pushed to GitLab 
 
 The agent has a script for polling an MR's pipeline status, awaiting for the tests to pass before completing its session. When tests fails, it reads the errors and attempts to fix the implementation and/or tests until these pass.
 
-![](/images/uploads/ai_await_ci.png)
+![Screenshot of Linear's UI of an Agent waiting on the GitLab pipeline to complete](/images/uploads/ai_await_ci.png "Linear UI - Agent waiting on the GitLab pipeline to complete.")
 
 <small>Linear's UI showing the agent awaiting on a pipeline.</small>
 
@@ -272,11 +272,11 @@ It'll pick up all the sessions invoked by Cyrus and analyze them.
 
 It provides a lot of detailed information as to how an agent performed, what skills and tools were or were not used, and propose improvements. Much of my current flow was refined using this approach.
 
-![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.03.png)
+![Screenshot of an AI session post-mortem providing highlights on a complete session on run time, how many tickets were complete, how long the parent ticket took to finish, etc](/images/uploads/Screenshot%202026-09-06%20at%2023.07.03.png "Post-mortem analysis highlights for a given Linear ticket.")
 
 <small>Post Mortem analysis for Linear tickets and. handling by Cyrus</small>
 
-![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.11.png)
+![Screenshot of an AI session post-mortem depicting an horizontal timeline for several Linear tickets, how long each took to complete, which ones stoped.](/images/uploads/Screenshot%202026-09-06%20at%2023.07.11.png "Execution timeline analysis for a given Linear ticket.")
 
 <small>Analysis of multiple tickets handled during a given day</small>
 
@@ -300,14 +300,37 @@ I wonder what this means to the shift-left movements from the past decade then i
 
 Whatever time AI saves you on building, you'll spend it on planning and reviewing. And perhaps that's, for now, the price to pay?
 
-![](/images/uploads/anthorpic_goofing.png)
+![A diagram from Anthropic describing a shortened development cycle before and after agents. The author argues that planning and testing don't remain at the same size but in fact expand to occupy the time that had been saved in building.](/images/uploads/anthorpic_goofing.png "Revisited cycle time graphic from Anthropic.")
 
 <small>Revisited "after agents" graphic from Anthropic's [AI Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)</small>
 
 ## The future?
 
-WIP
+First off, if you've made it so far, congratulations. Seems you still have some reading stamina in you. I would've just pasted the link into Claude and have it give me a digest.
+
+My journey into Agentic product engineering is still ongoing, but so far this reality is both exciting and troubling. If I can pull this off right now, what can be pulled of by frontier labs? What will this look like in  a year from now?
+
+Agentic SDLC is great for any thing that isn't a critical product or service. And as I've shared, for it to work along time, you need people with an actual software engineering background — armed with patience and discipline — to actually handle it continuously.
+
+The experience of building FreeTheFlat over these months, from nothing to a functioning product with users, has been insane. Full features that would have taken me weeks to build get delivered in a couple of days. What would otherwise be a team of 3-4 engineers can now be compressed on to one workaholic product engineer. 
+
+<hr>
+
+In order to do this I've had to place a bet that it could work. When it comes to the granularity of it, I've had to operate in a state of suspended disbelief. You get mad otherwise.
+It doesn't matter how the code is written. It doesn't matter I would have done it another way. What matters is the outcome, and that the performance baseline is sound. Maybe the fact I've been managing other engineers for years helps me see past that?
+
+Underneath all of it you're just trusting the machine. That it'll do what you expect it to do. Beyond that you see nothing, or as little as you desire to see. Like blind trust in sort of god you've conjured. One simultaneously extremely potent and idiotic..
+
+So far I've not hit the technical wall I keep waiting to hit, due to building "blind". And if I finally find it, I trust (and hope) my engineering skills will help me move past.
+
+Now imagine what a whole world doing this might look like. Reminds me of the movie Idiocracy. Maybe we're already living in it, right?
 
 ![Still of 2006 movie Idiocracy with Brawndo CEO in a video call, panicking, yelling "The Computer did that auto-layoff thing to everybody"](/images/uploads/brawndo.png "Brawndo CEO panicking")
 
 <small>Brawndo CEO [panicking](https://www.youtube.com/watch?v=7THG28GprSM) as the computer does that auto-layoff thing.</small>
+
+<hr>
+
+### AI Disclaimer
+
+Because we live in a post-AI world: this post was entirely written by myself. AI was used to review clarity and english phrasing.
