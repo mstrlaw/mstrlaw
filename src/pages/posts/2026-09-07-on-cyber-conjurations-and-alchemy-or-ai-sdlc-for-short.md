@@ -230,7 +230,7 @@ There are even more fine-tunes I had to do, like changing the default model to h
 
 ### 5 - CI/CD
 
-Finally, and there's nothing agentic here, all code gets pushed to GitLab where the runner picks it up and executes our test pipeline for every new MR. Nothing gets merge to the main branch.
+Finally — and there's nothing agentic here — all code gets pushed to GitLab where the runner picks it up and executes our test pipeline for every new MR. Nothing gets merged to the main branch.
 
 ![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline an MR is opened.")
 
@@ -256,17 +256,21 @@ Here's a list of things I've learned and keep learning in this new setup. Some a
 
 ### Make sure your context is always green AF
 
-If you have long term context in a spine like Linear, GitHub or your local knowledge MDs, always _ALWAYS_ make sure the agent keeps knowledge up to date. Why something exists the way it does, why things relate to each other, when to do/use X versus Y. If a ticket was planned in a way, but then through implementation or review the ticket assumptions were wrong, update the ticket or add a comment with context as to why that happened.
+If you have long term context in a spine like Linear, GitHub or your local knowledge MDs, always _ALWAYS_ make sure the agent keeps knowledge up to date. Why something exists the way it does, why things relate to each other, when to do/use X versus Y. If a ticket was planned in a way, but then through implementation or review the ticket assumptions were wrong, update the ticket or add a comment with context as to why that happened. Context drift over sessions is something that ends up hurting AI's performance.
 
 This includes documentation about how your AI SDLC works. Keep this in your repo and each time you tweak your way of working, review the documentation.
 
-Use a form of deterministic way to ensure that (tools, skill invocation). AND even if you use these tricks, for good measure, occasionally run a thorough documentation review at the end of a session or in a new session.
+Use a form of deterministic way to ensure that it happens (tools, skill invocation). AND even if you use these, for good measure, occasionally run a thorough documentation review at the end of a session or in a new session. Never trust that AI understands what has been done..
 
 ### Analyze your AI SDLC frequently
 
-Every time an autonomous work session ends that had some hiccups (i.e. it got stuck, forgot to follow an instruction, etc), spin a new session with a beefed up model and ask it to run a post-mortem style analysis for a given ticket.
+In this new world I am not spending time reviewing the code, but spending quite a bit reviewing the AI workflow.
 
-It'll pick up all the sessions invoked by Cyrus and analyze them. It can provide a lot of detailed information as to how an agent performed, what skills and tools were or were not used, and propose improvements. Much of my current flow was refined using this approach.
+Each time a session has a hiccups in the execution (getting stuck, not following an instruction, etc), I spin a new session with whatever's the smartest model of the week and ask it to run a post-mortem style analysis for the given ticket.
+
+It'll pick up all the sessions invoked by Cyrus and analyze them.
+
+It provides a lot of detailed information as to how an agent performed, what skills and tools were or were not used, and propose improvements. Much of my current flow was refined using this approach.
 
 ![](/images/uploads/Screenshot%202026-09-06%20at%2023.07.03.png)
 
@@ -278,7 +282,9 @@ It'll pick up all the sessions invoked by Cyrus and analyze them. It can provide
 
 ### Anthropic is being silly on the AI SDLC gains
 
-What time AI saves you on building, you'll spend it on planning and reviewing.
+When Anthropic put out its 
+
+Whatever time AI saves you on building, you'll spend it on planning and reviewing.
 
 ![](/images/uploads/anthorpic_goofing.png)
 
