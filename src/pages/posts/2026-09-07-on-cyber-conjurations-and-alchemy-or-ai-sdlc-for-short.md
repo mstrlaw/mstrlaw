@@ -110,6 +110,7 @@ With this out of the way, it was time to build the product.
 I started with what I call the "standard" way of using AI. Not sure how it's called, but it's when you're basically a [Reverse Centaur](https://us.macmillan.com/books/9780374621568/thereversecentaursguidetolifeafterai/). I hear a lot of people still use AI this way. And likely, they'll keep using it that way more and more.
 
 That standard looks sort of like this:
+
 - Discuss with humans what to implement.
 - Take that discussion and do some planning with AI for defining jobs to be done.
 - Spin another session and start building this with another AI and steer it until the outputs get good enough.
@@ -118,28 +119,38 @@ That standard looks sort of like this:
 
 You then go onto spinning a couple of parallel sessions to go quicker (multi-tasking.. yay).
 
-
 It becomes unsustainable to try to mentally keep up with corner case you had to make a decision about 4 turns ago in your 3rd session.
 You have too many branches, you're waiting on each other sessions to finish things. Bad.
 
 But this is how the basics of an AI workflow get defined. Through these weird beginnings.
 
-Gradually I kept improving: multiple MDs, building guardrails as needed, adding skills, and fine tuning how myself and my human teammates related with AI.
+Gradually I kept improving: multiple MDs, building guardrails as needed, adding skills, and fine tuning how myself and my human teammates related with AI. 
+
+It got us to our first product launch after about 1.5 months. It's was also a recipe for breaking my brain.
 
 <hr>
 
-As the project grows and you accelerate your [cycle time](https://martinfowler.com/bliki/CycleTime.html), you move from holding code and structure in your head, patterns, technical caveats, to holding conversations context, what is being built in sessions A and B, the state of work. Directing an agent to follow up on a bug. Remembering what the agent should remember, so that you remind yourself to tell the agent to remember that edge case. Update the harness. Discuss the harness with your AI. Also, review the user feedback and spec it in a digestible way for your AI.
+As the project grows and the [cycle time](https://martinfowler.com/bliki/CycleTime.html) accelerates, we move from holding code and structure in our head, the patterns and technical caveats, to holding conversations context, what is being built in sessions A and B, the state of work. Directing an agent to follow up on a bug. Remembering what the agent should remember, so that we remind ourselves to tell the agent to remember that edge case. Update the harness. Discuss the harness with the AI. Also, review the user feedback and spec it in a digestible way for AI.
 
-Days of this. But it got us to our first product launch after about 1.5 months. It's also a recipe for breaking your brain.
+Something better comes along.
 
 ## Agentic SDLC
 
-Because you don't wanna burn out, to completely smother that last ounce of a brain cell, it's only logical to handover even more to AI. Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat. The only thing I've never done is review the code.
+This is where we get more technical.
 
-Earlier this year a friend of mine had how his startup was using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc. Ask him how're they doing, for fun.
-The setup was impressive and, being a big fan of Linear and having already introduced it to the team so we'd use it among ourselves, it made sense to use it as the long lived context layer for managing the project's work — sometimes called Spine. I think this is one of the defining characteristics of AI SDLC. That and the ability for agents to work reactively.
+Because I didn't want burn out, to completely smother that last ounce of a brain cell, the only logical step was to handover even more to AI.
 
-This is how the current setup looks like. Check the diagram below for the completely detailed flow explanation.
+Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat. The only thing I've never done is review the code. Don't @ me.
+
+Earlier this year a friend of mine had shown me how his startup was using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc.
+
+
+The setup was impressive and, myself being a big fan of Linear and having already introduced it to the team so we'd use it among ourselves, it made sense to use it as the long lived context layer for managing the project's work — sometimes called Spine.
+I think this is one of the defining characteristics of AI SDLC. That and the ability for agents to work reactively. Also, don't look at any of the code.
+
+<hr>
+
+Anyways I ended up with this current setup. There's a more complex diagram below for the completely detailed flow explanation that you can explore.
 
 ![](/images/uploads/AI%20SDLC%20v1.png)
 
@@ -147,11 +158,13 @@ This is how the current setup looks like. Check the diagram below for the comple
 
 ### 1 - Communications
 
-Nothing crazy here. All communication happens digitally, whether that's daily coordination/updates via Slack or meetings on Meet. More interestingly, we keep all of customer interviews' transcripts. These are then periodically looked at to review how we're shaping our experiments and product development development.
+Nothing crazy here.
+All communication happens digitally, whether that's daily coordination/updates via Slack or meetings on Meet. More interestingly, we keep all of customer interviews' transcripts. These are then periodically looked at to review how we're shaping our experiments and product development development.
 
 ### 2 - Standard Agentic Development
 
-This is your regular prompt-your-agent workflow. I usually have between 2-4 sessions open in my code editor:
+This is your regular prompt-your-agent workflow.
+I usually have between 2-4 sessions open in my code editor:
 
 - Planning and reviewing plans. Researching possible implementations, technical investigations, comparing solutions. These are where I spend most of my time with the agents to plan and ultimately have it write that plan into Linear.
 - Reviewing the AI SDLC performance, investigate issues encountered by a Cyrus dispatched agent working on a Linear ticket and brainstorm improvements.
