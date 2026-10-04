@@ -282,13 +282,27 @@ It provides a lot of detailed information as to how an agent performed, what ski
 
 ### Anthropic is being silly on the AI SDLC gains
 
-When Anthropic put out its 
+Anthropic put out its [AI-native SDLC playbook](https://claude.com/blog/the-ai-native-sdlc-playbook) a couple of months ago describing its guidelines to setting up an AI native SDLC. Much of which I had already implemented one way or another. I'm not a fan of submitting MDs to the repo for all the plans, but sure.
 
-Whatever time AI saves you on building, you'll spend it on planning and reviewing.
+In it they had a graphic that depicted the cycle time shortening drastically, where the remaining time was drawn up as "reclaimed".
+
+I'm not saying you can't have shorter cycle times here and there. Actually, once you're planned extensively and do have an adequate testing setup, what would look like a normal cycle do end up being compressed in a couple of days.
+
+But unless you're absolutely freestyling your way into a product (and according to their [status page](https://status.claude.com/), they might), you don't regain cycle time. In actuality, you don't get free time as they show it in their graph. Because you no longer hold any control over the detail of what is produced — you know, the code — you end up having to over index on planning and testing.
+That's right, testing as hell.
+Because when a proper engineer writes code in a healthy organization, the process in itself is a form of guarantee of what's supposed to happen from that code. Not only the test suits and later QA, but the actual development.
+
+But with AI? Well.. you can trust it to do what you think a sensical, thinking human would, and then be continuously disappointed. Especially if you give it a long-lived task.
+
+Therefore you spend most of your time planning, reviewing plans, and testing yourself. Automated tests and E2E only take you so far. You need to QA. You need to spin the app and review the business logic. Every time. 
+
+I wonder what this means to the shift-left movements from the past decade then it comes to tests? I wonder if in the short term, QA engineering roles will take on a more predominant role in small, nimble product teams?
+
+Whatever time AI saves you on building, you'll spend it on planning and reviewing. And perhaps that's, for now, the price to pay?
 
 ![](/images/uploads/anthorpic_goofing.png)
 
-<small>Revisited "after agents from Anthropic's [AI Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)</small>
+<small>Revisited "after agents" graphic from Anthropic's [AI Native SDLC Playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)</small>
 
 ## The future?
 
