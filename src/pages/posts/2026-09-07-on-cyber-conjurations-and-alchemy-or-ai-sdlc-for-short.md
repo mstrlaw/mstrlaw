@@ -21,25 +21,17 @@ We're almost at the end of 2026 and an increasingly large swath of the tech worl
 
 Naturally, you want to know what the fuss is about. You've got to _upskill_ yourself. "It's not AI that'll take your job, it's someone else that uses AI better than you" they say.
 
-Anyways. You embark on a journey, still ongoing, to see where all this might lead. FOMO and all of that.
+Anyways. I embarked on a journey, still ongoing, to see where all this might lead. FOMO and all of that.
 
-You wanna experience the new paradigm being touted on X and other corners of the civilized web. If this is the last frontier before utopia or dystopia — depending on who you ask. Let's see it up close.
+I wanna experience the new paradigm being touted on X and other corners of the civilized web. If this is the last frontier before utopia or dystopia — depending on who you ask. Let's see it up close.
 
 This might come out to you as snarky and think: another pissed engineer because of _reasons,_ but no. 
 
-I'm highly skeptic of the AI boosters stating this technology will replace us all while at the same time, quite impressed one what it can do and curious on how it might evolve and what it means for creative builders. Luckily we're capable of holding multiple thoughts at once.
-
-<hr/>
-
-I've written code for most of my career although. I'm fond of building things. I'm always building something. Digital things mostly.
-
-I spend my day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this AI transformation, at least not yet.
-
-That's fine, but by the time a decisions gets made, the state of the art has shifted 12 times and whatever you thought of isn't anymore. Like the flow of a river where there's no point in following a specific part of the flow.
+I'm highly skeptic of the AI boosters stating this technology will replace us all while at the same time, quite impressed with what it can do and curious on how it might evolve and what it means for creative builders like myself. Luckily we're capable of holding multiple thoughts at once, right?
 
 <hr>
 
-Haven't written a post in ages but I wanted to do this one to act a technical time capsule as well as captures the bizarreness of the moment.
+Haven't written a post in ages but I wanted to do this one to act a technical time capsule as well as captures the bizarreness of the moment as I build this project. The journey is still ongoing but have enough to write some thoughts around it.
 
 My trigger for wanting to write wasn't: "_This surely will be handy to others_".
 It was more of "What the _hell_ are we doing here?".
@@ -48,16 +40,16 @@ I want to understand what this all means for me, for us, the industry, for socie
 
 ## The Project
 
-In May '26 I was approached to help build [Free The Flat](https://freetheflat.co.uk), a project for helping UK home owners to manage their buildings. Cool founders, a real apparent problem and a worthy cause.
+In May '26 I was approached to help build [Free The Flat](https://freetheflat.co.uk), a project for helping England's home owners to manage their buildings. Cool founders, a seemingly real problem and a worthy cause.
 
-On top of that, an evergreen codebase where product engineering can meet AI driven development full blast. An opportunity to build in this new world I keep hearing of.
+On top of that, an evergreen project where product engineering can meet AI driven development, full blast. An opportunity to build in this new world I keep hearing of.
 
-I'm not going to go into details of the product itself, you can read about it on the website.
-Suffice to say it's simple enough that I can design its architecture and build it, but complex enough to assess the possibilities and pitfalls of AI driven product engineering.
+Simple enough that I can design its architecture and build it, yet complex enough to assess the possibilities and pitfalls of AI driven product engineering.
 
 ### Fundamental Things Apply As Time Goes By
 
-As of writing this, the industry is far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become mature.
+As of writing this, the industry is far from having any established, standardized way of applying AI SDLC.
+ It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become mature.
 
 It's the same now. A bunch of people trying to see what they can cook up with the current ingredients, but each with their own flavor.
 
@@ -68,23 +60,24 @@ I see this in my technical interviews, in everyday discussions with friends and 
 
 Having said that, just because you plan with AI, assign the resulting tasks to AI and wait until it finishes them, I wouldn't call it AI SDLC. Because, well, you need the SDLC part. Ideally a well though out one.
 
-Good software engineering practices apply, perhaps more than ever. Weirdly enough, a lot of teams seem to have forgotten this? Because of AI, now, it's as if we can skip thinking altogether? A terrible stance.
+Good software engineering practices apply, perhaps more than ever. Weirdly enough, a lot of teams seem to have forgotten this? Because of AI, now, it's as if we can skip thinking altogether? Terrible stance.
 
-You need to actually plan and design your system more thoroughly, because if you'll retain any type of context, it won't be code itself but the contours of your architecture, the tradeoffs you decided to on, how the whole thing fits together.
+You need to actually spend more time with your plan and designing your system more thoroughly. If you're going to retain any type of context it won't be code itself but the contours of your architecture, the tradeoffs you made decisions upon. How the whole thing fits together.
 
-Also, now you need to think about something called a [harness](https://en.wikipedia.org/wiki/Agent_harness)? Like _a lot_? Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
+Also, you now need to think about something called a [harness](https://en.wikipedia.org/wiki/Agent_harness)? Like _a lot_? Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
 
-As an engineer you might end up working on this almost exclusively. Oh, and QA-ing as hell too.
+As a software engineer you might end up working on this almost exclusively. Oh, and QA-ing as hell too.
 
 <hr>
 
 ### Project Structure
 
-We require a backend and some frontend.
+Ok, let's get into the technicalities. We require a backend and some frontend.
 
-My go-to approach is that of a [monorepo with workspaces](https://code.claude.com/docs/en/large-codebases), something I had in mind trying for ages (but didn't want to spend days figuring out how to setup CI/CD). Client and Server, Documentation. Shared types, etc.
+My go-to approach is that of a [monorepo with workspaces](https://code.claude.com/docs/en/large-codebases), something I had in mind trying for ages (but didn't want to spend days figuring out how scaffold the project and setup CI/CD). Client and Server, Documentation. Shared types. Simple.
 
-One single repo and a unified context for the AI. Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
+One single repo and a unified context for the AI.
+Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
 
 ```plain
 root/
@@ -107,20 +100,31 @@ root/
 
 <small>Simplified repo structure</small>
 
-I keep things simple. The server is hosted on Digital Ocean, client and user docs on Cloudflare. Code hosted and deployed via GitLab.
+I keep the infra simple. The server is hosted on Digital Ocean, client and user docs on Cloudflare.
+Code hosted and deployed via GitLab.
 
 ## AI SDLC
 
-Now that we got this out of the way, it was time to build the product. I started through what I call the "Standard" way of using AI. Not sure how it's called, but it's when you're basically a [Reverse Centaur](https://us.macmillan.com/books/9780374621568/thereversecentaursguidetolifeafterai/).
+With this out of the way, it was time to build the product.
 
-I hear a lot of people still using AI this way.
+I started with what I call the "standard" way of using AI. Not sure how it's called, but it's when you're basically a [Reverse Centaur](https://us.macmillan.com/books/9780374621568/thereversecentaursguidetolifeafterai/). I hear a lot of people still use AI this way. And likely, they'll keep using it that way more and more.
 
-Discuss with humans what to implement. Take that discussion and do some planning with AI for defining jobs to be done. Spin another session and start building this with another AI and steer it until the outputs get good enough. Follow along each step, click accept. Maybe review things at the end, really depends on your team's culture.
+That standard looks sort of like this:
+- Discuss with humans what to implement.
+- Take that discussion and do some planning with AI for defining jobs to be done.
+- Spin another session and start building this with another AI and steer it until the outputs get good enough.
+- Follow along each step, click accept.
+- Maybe review things at the end, really depends on your team's culture.
 
-You then go onto spinning a couple of parallel sessions to go quicker (multi-tasking.. yay.).
-It becomes unsustainable to try mentally keeping up with corner case you had to make a decision about 4 turns ago for your 2nd agent. You have too many branches, you're waiting on each other sessions to finish things. Bad.
+You then go onto spinning a couple of parallel sessions to go quicker (multi-tasking.. yay).
 
-But this is how the basics of an AI workflow get defined. Through these weird beginnings. Gradually you keep improving: multiple MDs, building guardrails as needed, add some skills, and fine tuning how you and your other human teammates relate with AI.
+
+It becomes unsustainable to try to mentally keep up with corner case you had to make a decision about 4 turns ago in your 3rd session.
+You have too many branches, you're waiting on each other sessions to finish things. Bad.
+
+But this is how the basics of an AI workflow get defined. Through these weird beginnings.
+
+Gradually I kept improving: multiple MDs, building guardrails as needed, adding skills, and fine tuning how myself and my human teammates related with AI.
 
 <hr>
 
