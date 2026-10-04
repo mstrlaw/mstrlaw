@@ -17,30 +17,31 @@ thumbnail_description: ''
 
 ## Preface
 
-We're in the second half of 2026 and an increasingly large swath of the tech world is waist deep in Agentic software development (or whatever word you're using at the time or reading).
+We're almost at the end of 2026 and an increasingly large swath of the tech world is waist deep in Agentic software development (or whatever the term is at the time or reading).
 
-Naturally, you want to know (do you?) what the fuss is about. You've got to _upskill_ yourself, stay relevant and remain valuable in the job market. "It's not AI that'll take your job, it's someone else that uses AI better than you" they say, as they as they look at workers fighting among themselves and miss the bigger picture.
+Naturally, you want to know what the fuss is about. You've got to _upskill_ yourself. "It's not AI that'll take your job, it's someone else that uses AI better than you" they say.
 
 Anyways. You embark on a journey, still ongoing, to see where all this might lead. FOMO and all of that.
 
-You wanna experience the new paradigm being touted on X and other corners of the civilized web. If this is the last frontier before either utopia or dystopia — depending on who you ask — let's see it up close.
+You wanna experience the new paradigm being touted on X and other corners of the civilized web. If this is the last frontier before utopia or dystopia — depending on who you ask. Let's see it up close.
 
-This might come out to you as snarky and think: another pissed engineer because of <_insert reason_> but no. I'm highly skeptic of the AI boosters stating this technology will replace us all while at the same time, quite impressed with how things might evolve and what it means for creative builders. Luckily we can hold multiple emotions at once.
+This might come out to you as snarky and think: another pissed engineer because of _reasons,_ but no. 
+
+I'm highly skeptic of the AI boosters stating this technology will replace us all while at the same time, quite impressed one what it can do and curious on how it might evolve and what it means for creative builders. Luckily we're capable of holding multiple thoughts at once.
 
 <hr/>
 
-I've written code for most of my career although I've not been doing it professionally for some years now. Nevertheless I'm still fond of building things. I'm always building something. Digital things.
+I've written code for most of my career although. I'm fond of building things. I'm always building something. Digital things mostly.
 
-I spend day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this transformation. Too many restrictions, for the right reasons. 
+I spend my day managing humans, teams, decisions, tradeoffs and deliveries. At my day job I can't experience the full scale of this AI transformation, at least not yet.
 
-That's fine, but by the time a decisions gets made, the state of the art has shifted 12 times and whatever you thought was cool isn't anymore. An evergreen project is needed.
+That's fine, but by the time a decisions gets made, the state of the art has shifted 12 times and whatever you thought of isn't anymore. Like the flow of a river where there's no point in following a specific part of the flow.
 
 <hr>
 
-Haven't written a post in ages but I wanted to do this one. I want it to be a technical time capsule as well as something that captures the awkwardness of it all.
+Haven't written a post in ages but I wanted to do this one to act a technical time capsule as well as captures the bizarreness of the moment.
 
 My trigger for wanting to write wasn't: "_This surely will be handy to others_".
-
 It was more of "What the _hell_ are we doing here?".
 
 I want to understand what this all means for me, for us, the industry, for society. And in typical builder fashion, building is what I need to understand how it works.
@@ -51,27 +52,27 @@ In May '26 I was approached to help build [Free The Flat](https://freetheflat.co
 
 On top of that, an evergreen codebase where product engineering can meet AI driven development full blast. An opportunity to build in this new world I keep hearing of.
 
-I'm not going to go into details of the product itself but it isn't the next Uber for Housing or whatever. It's not a high-frequency crypto trading product with realtime needs.
-Simple enough that I could build it, complexity enough to assess the possibilities and pitfalls of AI driven product engineering.
+I'm not going to go into details of the product itself, you can read about it on the website.
+Suffice to say it's simple enough that I can design its architecture and build it, but complex enough to assess the possibilities and pitfalls of AI driven product engineering.
 
 ### Fundamental Things Apply As Time Goes By
 
-As of writing the industry is far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become stable and established.
+As of writing this, the industry is far from having any established, standardized way of applying AI SDLC. It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become mature.
 
 It's the same now. A bunch of people trying to see what they can cook up with the current ingredients, but each with their own flavor.
 
 I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's a good thing (or morally correct) to use AI.
-I’m talking whether the output and quality are good
+I’m talking whether the output and quality are good.
 
 I see this in my technical interviews, in everyday discussions with friends and colleagues and in online social circles. Engineers that use LLMs to do a thing here and there by prompting back and forth have a very different take from those that look to setup AI as a central part of how they develop.
 
 Having said that, just because you plan with AI, assign the resulting tasks to AI and wait until it finishes them, I wouldn't call it AI SDLC. Because, well, you need the SDLC part. Ideally a well though out one.
 
-Good software engineering practices apply, perhaps more than ever.
+Good software engineering practices apply, perhaps more than ever. Weirdly enough, a lot of teams seem to have forgotten this? Because of AI, now, it's as if we can skip thinking altogether? A terrible stance.
 
-You need to actually plan and design your system more thoroughly, because if you'll retain any type of context, it won't be code itself but the contours of your architecture.
+You need to actually plan and design your system more thoroughly, because if you'll retain any type of context, it won't be code itself but the contours of your architecture, the tradeoffs you decided to on, how the whole thing fits together.
 
-Also now you need to think about something called a [harness](https://en.wikipedia.org/wiki/Agent_harness)? Like _a lot_. Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
+Also, now you need to think about something called a [harness](https://en.wikipedia.org/wiki/Agent_harness)? Like _a lot_? Because now the job is closer to taming a wild horse than what used to be called safety mechanisms or quality control.
 
 As an engineer you might end up working on this almost exclusively. Oh, and QA-ing as hell too.
 
