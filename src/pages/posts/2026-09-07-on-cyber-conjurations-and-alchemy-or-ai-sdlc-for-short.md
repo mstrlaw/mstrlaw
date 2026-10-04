@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: '[WIP] On Cyber Conjurations and Product Alchemy. Agentic AI SDLC for short.'
+title: On Cyber Conjurations and Product Alchemy. Agentic AI SDLC for short.
 summary: An exploration of AI driven Product Engineering,
 feat_image: /images/uploads/aisdlc_v0.jpeg
 feat_image_alt: A diagram showing how two people interact within an AI Native SDLC
