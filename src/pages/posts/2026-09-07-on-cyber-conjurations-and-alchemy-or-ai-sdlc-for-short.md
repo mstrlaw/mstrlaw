@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: On Cyber Conjurations and Product Alchemy. Agentic AI SDLC for short.
+title: On Cyber Conjurations and Product Alchemy. Agentic SDLC for short.
 summary: An exploration of AI driven Product Engineering,
 feat_image: /images/uploads/aisdlc_v0.jpeg
 feat_image_alt: A diagram showing how two people interact within an AI Native SDLC
@@ -17,21 +17,21 @@ thumbnail_description: ''
 
 ## Preface
 
-We're almost at the end of 2026 and an increasingly large swath of the tech world is waist deep in Agentic software development (or whatever the term is at the time or reading).
+We're almost at the end of 2026 and an increasingly large swath of the tech world is waist deep in Agentic software development (or whatever the term is at the time of reading).
 
 Naturally, you want to know what the fuss is about. You've got to _upskill_ yourself. "It's not AI that'll take your job, it's someone else that uses AI better than you" they say.
 
-Anyways. I embarked on a journey, still ongoing, to see where all this might lead. FOMO and all of that.
+Anyway. I embarked on a journey, still ongoing, to see where all this might lead. FOMO and all of that.
 
 I wanna experience the new paradigm being touted on X and other corners of the civilized web. If this is the last frontier before utopia or dystopia — depending on who you ask. Let's see it up close.
 
-This might come out to you as snarky and think: another pissed engineer because of _reasons,_ but no. 
+This might come across as snarky, and you might think: another pissed engineer because of _reasons,_ but no. 
 
-I'm highly skeptic of the AI boosters stating this technology will replace us all while at the same time, quite impressed with what it can do and curious on how it might evolve and what it means for creative builders like myself. Luckily we're capable of holding multiple thoughts at once, right?
+I'm highly skeptical of the AI boosters stating this technology will replace us all while at the same time, quite impressed with what it can do and curious about how it might evolve and what it means for creative builders like myself. Luckily we're capable of holding multiple thoughts at once, right?
 
 <hr>
 
-Haven't written a post in ages but I wanted to do this one to act a technical time capsule as well as captures the bizarreness of the moment as I build this project. The journey is still ongoing but have enough to write some thoughts around it.
+Haven't written a post in ages but I wanted to do this one to act as a technical time capsule as well as capture the bizarreness of the moment as I build this project. The journey is still ongoing but have enough to write some thoughts around it.
 
 My trigger for wanting to write wasn't: "_This surely will be handy to others_".
 It was more of "What the _hell_ are we doing here?".
@@ -48,17 +48,17 @@ Simple enough that I can design its architecture and build it, yet complex enoug
 
 ### Fundamental Things Apply As Time Goes By
 
-As of writing this, the industry is far from having any established, standardized way of applying AI SDLC.
+As of this writing, the industry is far from having any established, standardized way of applying AI SDLC.
  It's like when DevOps emerged. It took years until the practices were understood and normalized (and then, naturally, captured and repackaged by the industry), and for the tooling around it to become mature.
 
 It's the same now. A bunch of people trying to see what they can cook up with the current ingredients, but each with their own flavor.
 
-I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much one has deeply engaged with the technology and experienced the cutting edge. I'm not talking about whether it's a good thing (or morally correct) to use AI.
-I’m talking whether the output and quality are good.
+I think the differences between the "AI Is Dumb!" and the "It's So Over!" camps can, in part, be explained by how much deeply one has engaged with the technology and experienced the cutting edge. I'm not talking about whether it's a good thing (or morally correct) to use AI.
+I’m talking about whether the output and quality are good.
 
-I see this in my technical interviews, in everyday discussions with friends and colleagues and in online social circles. Engineers that use LLMs to do a thing here and there by prompting back and forth have a very different take from those that look to setup AI as a central part of how they develop.
+I see this in my technical interviews, in everyday discussions with friends and colleagues and in online social circles. Engineers that use LLMs to do a thing here and there by prompting back and forth have a very different take from those that look to set up AI as a central part of how they develop.
 
-Having said that, just because you plan with AI, assign the resulting tasks to AI and wait until it finishes them, I wouldn't call it AI SDLC. Because, well, you need the SDLC part. Ideally a well though out one.
+Having said that, just because you plan with AI and assign the tasks to AI doesn't necessarily mean it's AI SDLC. Because, well, you need the SDLC part. Ideally a well thought out one.
 
 Good software engineering practices apply, perhaps more than ever. Weirdly enough, a lot of teams seem to have forgotten this? Because of AI, now, it's as if we can skip thinking altogether? Terrible stance.
 
@@ -72,24 +72,24 @@ As a software engineer you might end up working on this almost exclusively. Oh, 
 
 ### Project Structure
 
-Ok, let's get into the technicalities. We require a backend and some frontend.
+OK, let's get into the technicalities. We require a backend and some frontend.
 
-My go-to approach is that of a [monorepo with workspaces](https://code.claude.com/docs/en/large-codebases), something I had in mind trying for ages (but didn't want to spend days figuring out how scaffold the project and setup CI/CD). Client and Server, Documentation. Shared types. Simple.
+My go-to approach is that of a [monorepo with workspaces](https://code.claude.com/docs/en/large-codebases), something I had in mind trying for ages (but didn't want to spend days figuring out how to scaffold the project and set up CI/CD). Client and Server, Documentation. Shared types. Simple.
 
 One single repo and a unified context for the AI.
 Top MD with split MDs per workspace, one knowledge folder referenced elsewhere.
 
 ```plain
 root/
- |-claude.md
+ |-CLAUDE.md
  |-apps
  | |-client/
- | | |-claude.md
+ | | |-CLAUDE.md
  | | |-src/
  | | |-components/
  | | |-...
  | |-server/
- | | |-claude.md
+ | | |-CLAUDE.md
  | | |-src/
  | | |-...
  |-knowledge/
@@ -100,7 +100,7 @@ root/
 
 <small>Simplified repo structure</small>
 
-I keep the infra simple. The server is hosted on Digital Ocean, client and user docs on Cloudflare.
+I keep the infra simple. The server is hosted on DigitalOcean, client and user docs on Cloudflare.
 Code hosted and deployed via GitLab.
 
 ## AI SDLC
@@ -117,20 +117,20 @@ That standard looks sort of like this:
 - Follow along each step, click accept.
 - Maybe review things at the end, really depends on your team's culture.
 
-You then go onto spinning a couple of parallel sessions to go quicker (multi-tasking.. yay).
+You then go on to spinning a couple of parallel sessions to go quicker (multi-tasking.. yay).
 
 It becomes unsustainable to try to mentally keep up with corner case you had to make a decision about 4 turns ago in your 3rd session.
-You have too many branches, you're waiting on each other sessions to finish things. Bad.
+You have too many branches, you're waiting on each other's sessions to finish things. Bad.
 
 But this is how the basics of an AI workflow get defined. Through these weird beginnings.
 
-Gradually I kept improving: multiple MDs, building guardrails as needed, adding skills, and fine tuning how myself and my human teammates related with AI. 
+Gradually I kept improving: multiple MDs, building guardrails as needed, adding skills, and fine tuning how my human teammates and I related with AI. 
 
-It got us to our first product launch after about 1.5 months. It's was also a recipe for breaking my brain.
+It got us to our first product launch after about 1.5 months. It was also a recipe for breaking my brain.
 
 <hr>
 
-As the project grows and the [cycle time](https://martinfowler.com/bliki/CycleTime.html) accelerates, we move from holding code and structure in our head, the patterns and technical caveats, to holding conversations context, what is being built in sessions A and B, the state of work. Directing an agent to follow up on a bug. Remembering what the agent should remember, so that we remind ourselves to tell the agent to remember that edge case. Update the harness. Discuss the harness with the AI. Also, review the user feedback and spec it in a digestible way for AI.
+As the project grew and the [cycle time](https://martinfowler.com/bliki/CycleTime.html) accelerates, we moved from holding code and structure in our head, the patterns and technical caveats, to holding conversations context, what is being built in sessions A and B, the state of work. Directing an agent to follow up on a bug. Remembering what the agent should remember, so that we remind ourselves to tell the agent to remember that edge case. Update the harness. Discuss the harness with the AI. Also, review the user feedback and spec it in a digestible way for AI.
 
 Something better comes along.
 
@@ -138,18 +138,18 @@ Something better comes along.
 
 This is where we get more technical.
 
-Because I didn't want burn out, to completely smother that last ounce of a brain cell, the only logical step was to handover even more to AI.
+Because I didn't want to burn out, to completely smother that last ounce of a brain cell, the only logical step was to handover even more to AI.
 
 Truthfully, for a couple of months I was nothing but a glorified [meat proxy](https://dontbeameatproxy.com/), planning requirements from the ground up, reviewing feedback and then planning the implementation of that feedback. Rinse and repeat. The only thing I've never done is review the code. Don't @ me.
 
-Earlier this year a friend of mine had shown me how his startup was using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc.
+Earlier this year a friend of mine showed me how his startup was using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc.
 
 The setup was impressive and, myself being a big fan of Linear and having already introduced it to the team so we'd use it among ourselves, it made sense to use it as the long lived context layer for managing the project's work — sometimes called Spine.
 I think this is one of the defining characteristics of AI SDLC. That and the ability for agents to work reactively. Also, don't look at any of the code.
 
 <hr>
 
-Anyways I ended up with this current setup. There's a more complex diagram below for the completely detailed flow explanation that you can explore.
+Anyways, I ended up with this current setup. There's a more complex diagram below for the completely detailed flow explanation that you can explore.
 
 ![A cleaned up diagram depicting AI native SDLC between people, Linear and Cyrus as the agent orchestrator.](/images/uploads/AI%20SDLC%20v1.png "Agentic SDLC")
 
@@ -158,7 +158,7 @@ Anyways I ended up with this current setup. There's a more complex diagram below
 ### 1 - Communications
 
 Nothing crazy here.
-All communication happens digitally, whether that's daily coordination/updates via Slack or meetings on Meet. More interestingly, we keep all of customer interviews' transcripts. These are then periodically looked at to review how we're shaping our experiments and product development development.
+All communication happens digitally, whether that's daily coordination/updates via Slack or meetings on Google Meet. More interestingly, we keep all of customer interviews' transcripts. These are then periodically looked at to review how we're shaping our experiments and product development.
 
 ### 2 - Standard Agentic Development
 
@@ -188,13 +188,13 @@ This is where things get interesting and funky. Plans and tickets were all tidy 
 
 I looked up some options for agent orchestrators and one stood out: [Cyrus](https://www.atcyrus.com/).
 
-Now, it's nothing crazy. It's not OpenClaw or whatever the thing's called. Put simply, you install it on your machine, setup a tunnel to route external webhooks and traffic from the internet (I used Cloudflare) and finally, setup an App in Linear, which will show up as your agent in Linear's UI.
+Now, it's nothing crazy. It's not OpenClaw or whatever the thing's called. Put simply, you install it on your machine, set up a tunnel to route external webhooks and traffic from the internet (I used Cloudflare) and finally, set up an App in Linear, which will show up as your agent in Linear's UI.
 
 With this, one can assign the agent (I ended up naming it Cyrus, 'cause why bother?) to a Linear ticket and it'll kick off an agent to implement the ticket.
 
 At the time of writing, Cyrus is built to be assigned a single ticket, work on it (in a dedicated worktree) and stop.
 
-I wanted to actually be able to chain work and for it, I had to modify the ticket writing skill and combine it with tweaks to Cyrus itself to be able to work continuously on larger tickets.
+I wanted to actually be able to chain work and to do that, I had to modify the ticket writing skill and combine it with tweaks to Cyrus itself to be able to work continuously on larger tickets.
 
 The gist of the setup is:
 
@@ -205,26 +205,26 @@ The gist of the setup is:
 
 A fully detailed workflow is diagramed further below explaining all these.
 
-![Screenshot of Linear UI showing a ticket and multiple tickets having been exectuted](/images/uploads/cyrus_lane.png "Linear UI screenshot of multi-ticket being completed by Cyrus agent.")
+![Screenshot of Linear UI showing a ticket and multiple tickets having been executed](/images/uploads/cyrus_lane.png "Linear UI screenshot of multi-ticket being completed by Cyrus agent.")
 
 <small>Linear screenshot of multi-tickets being handled through Cyrus.</small>
 
-**Tunning Cyrus**
+**Tuning Cyrus**
 
-Some patches and modifications were needed to be made to Cyrus to have this advance use case working:
+Some patches and modifications needed to be made to Cyrus to have this advanced use case working:
 
-1. Cyrus conveniently comes with bundled skills that it'll invoke depending on the ticket it gets. That I recall, it can plan, build, ship and perhaps do more. I modified its `verify-and-ship` skill so that it makes use or the repo's `wrap-up` skill (_docs-sync → review → pre-pr → commit → push → close tickets_).
+1. Cyrus conveniently comes with bundled skills that it'll invoke depending on the ticket it gets. That I recall, it can plan, build, ship and perhaps do more. I modified its `verify-and-ship` skill so that it makes use of the repo's `wrap-up` skill (_docs-sync → review → pre-pr → commit → push → close tickets_).
 This way I kept the ship behavior consistent between the Standard and Autonomous Agentic workflows. Beyond that, the agent invoked by Cyrus inherits all other MDs in the repo and behaves accordingly;
 2. Added an `end_session` MCP the agent can use to end its own session once it completes its work.
 Unless fully stopped by someone via Linear's UI, Cyrus sessions under the same ticket are kept "active" so the user can interact with the agent if needed.
-For the multi-tickets case, this meant that every ticket got its own session which would remain active. Each time there was an update due to the last ongoing session running and updating the ticket, all previous ones would be triggered, re-loading and processing the whole context for nothing (sometimes not hitting the cache anymore). This consumed tokens at an insane rate. The MCP tool allows to kill the session because the Linear ignores comments the agent writes itself, so it couldn't just write `stop` to itself (a user writing `stop` will kill that session, but not an agent);
+For the multi-tickets case, this meant that every ticket got its own session which would remain active. Each time there was an update due to the last ongoing session running and updating the ticket, all previous ones would be triggered, re-loading and processing the whole context for nothing (sometimes not hitting the cache anymore). This consumed tokens at an insane rate. The MCP tool allows to kill the session because Linear ignores comments the agent writes itself, so it couldn't just write `stop` to itself (a user writing `stop` will kill that session, but not an agent);
 3. Cleanly stop any running sessions for a ticket that gets re-assigned Cyrus, so that two agents can't work on the same ticket;
-4. Modify `cyrus/config.json` so that `disallowedTools` blocks force-push and a set of other dangerous commands. Headless mode Cyrus approves every tool automatically. Only deny rules actually stop a command;
+4. Modify `cyrus/config.json` so that `disallowedTools` blocks force-push and a set of other dangerous commands. In headless mode, Cyrus approves every tool automatically. Only deny rules actually stop a command;
 
-Besides these, I also setup:
+Besides these, I also set up:
 
 - A worktree bootstrap script: pnpm install, lefthook, Playwright chromium and `.env` injection, so each worktree can actually run the hooks and tests.
-- A Worktree cleanup script, scheduled as a LaunchAgent, for removing worktrees once their branch is merged. Leftover worktrees were fillnig the disk.
+- A Worktree cleanup script, scheduled as a LaunchAgent, for removing worktrees once their branch is merged. Leftover worktrees were filling the disk.
 
 There are even more fine-tunes I had to do, like changing the default model to handle tickets, not using `glab` to open MRs and more that I already forgot about. I'll need to ask Claude to re-explain the MD knowledge file..
 
@@ -236,11 +236,11 @@ Finally — and there's nothing agentic here — all code gets pushed to GitLab 
 
 <small>GitLab Pipeline when opening an MR.</small>
 
-The agent has a script for polling an MR's pipeline status, awaiting for the tests to pass before completing its session. When tests fails, it reads the errors and attempts to fix the implementation and/or tests until these pass.
+The agent has a script for polling an MR's pipeline status, waiting for the tests to pass before completing its session. When tests fail, it reads the errors and attempts to fix the implementation and/or tests until these pass.
 
 ![Screenshot of Linear's UI of an Agent waiting on the GitLab pipeline to complete](/images/uploads/ai_await_ci.png "Linear UI - Agent waiting on the GitLab pipeline to complete.")
 
-<small>Linear's UI showing the agent awaiting on a pipeline.</small>
+<small>Linear's UI showing the agent waiting on a pipeline.</small>
 
 ### Detailed Scaffolding
 
@@ -256,7 +256,7 @@ Here's a list of things I've learned and keep learning in this new setup. Some a
 
 ### Make sure your context is always green AF
 
-If you have long term context in a spine like Linear, GitHub or your local knowledge MDs, always _ALWAYS_ make sure the agent keeps knowledge up to date. Why something exists the way it does, why things relate to each other, when to do/use X versus Y. If a ticket was planned in a way, but then through implementation or review the ticket assumptions were wrong, update the ticket or add a comment with context as to why that happened. Context drift over sessions is something that ends up hurting AI's performance.
+If you have long term context in a spine like Linear, GitHub or your committed MDs, always _ALWAYS_ make sure the agent keeps knowledge up to date. Why something exists the way it does, why things relate to each other, when to do/use X versus Y. If a ticket was planned in a way, but then through implementation or review the ticket assumptions were wrong, update the ticket or add a comment with context as to why that happened. Context drift over sessions is something that ends up hurting AI's performance.
 
 This includes documentation about how your AI SDLC works. Keep this in your repo and each time you tweak your way of working, review the documentation.
 
@@ -266,7 +266,7 @@ Use a form of deterministic way to ensure that it happens (tools, skill invocati
 
 In this new world I am not spending time reviewing the code, but spending quite a bit reviewing the AI workflow.
 
-Each time a session has a hiccups in the execution (getting stuck, not following an instruction, etc), I spin a new session with whatever's the smartest model of the week and ask it to run a post-mortem style analysis for the given ticket.
+Each time a session has a hiccup in the execution (getting stuck, not following an instruction, etc), I spin a new session with whatever's the smartest model of the week and ask it to run a post-mortem style analysis for the given ticket.
 
 It'll pick up all the sessions invoked by Cyrus and analyze them.
 
@@ -274,9 +274,9 @@ It provides a lot of detailed information as to how an agent performed, what ski
 
 ![Screenshot of an AI session post-mortem providing highlights on a complete session on run time, how many tickets were complete, how long the parent ticket took to finish, etc](/images/uploads/Screenshot%202026-09-06%20at%2023.07.03.png "Post-mortem analysis highlights for a given Linear ticket.")
 
-<small>Post Mortem analysis for Linear tickets and. handling by Cyrus</small>
+<small>Post Mortem analysis for Linear tickets handled by Cyrus</small>
 
-![Screenshot of an AI session post-mortem depicting an horizontal timeline for several Linear tickets, how long each took to complete, which ones stoped.](/images/uploads/Screenshot%202026-09-06%20at%2023.07.11.png "Execution timeline analysis for a given Linear ticket.")
+![Screenshot of an AI session post-mortem depicting a horizontal timeline for several Linear tickets, how long each took to complete, which ones stopped.](/images/uploads/Screenshot%202026-09-06%20at%2023.07.11.png "Execution timeline analysis for a given Linear ticket.")
 
 <small>Analysis of multiple tickets handled during a given day</small>
 
@@ -286,17 +286,17 @@ Anthropic put out its [AI-native SDLC playbook](https://claude.com/blog/the-ai-n
 
 In it they had a graphic that depicted the cycle time shortening drastically, where the remaining time was drawn up as "reclaimed".
 
-I'm not saying you can't have shorter cycle times here and there. Actually, once you're planned extensively and do have an adequate testing setup, what would look like a normal cycle do end up being compressed in a couple of days.
+I'm not saying you can't have shorter cycle times here and there. Actually, once you've planned extensively and do have an adequate testing setup, what would look like a normal cycle ends up being compressed in a couple of days.
 
 But unless you're absolutely freestyling your way into a product (and according to their [status page](https://status.claude.com/), they might), you don't regain cycle time. In actuality, you don't get free time as they show it in their graph. Because you no longer hold any control over the detail of what is produced — you know, the code — you end up having to over index on planning and testing.
 That's right, testing as hell.
-Because when a proper engineer writes code in a healthy organization, the process in itself is a form of guarantee of what's supposed to happen from that code. Not only the test suits and later QA, but the actual development.
+Because when a proper engineer writes code in a healthy organization, the process in itself is a form of guarantee of what's supposed to happen from that code. Not only the test suites and later QA, but the actual development.
 
 But with AI? Well.. you can trust it to do what you think a sensical, thinking human would, and then be continuously disappointed. Especially if you give it a long-lived task.
 
 Therefore you spend most of your time planning, reviewing plans, and testing yourself. Automated tests and E2E only take you so far. You need to QA. You need to spin the app and review the business logic. Every time. 
 
-I wonder what this means to the shift-left movements from the past decade then it comes to tests? I wonder if in the short term, QA engineering roles will take on a more predominant role in small, nimble product teams?
+I wonder what this means to the shift-left movements from the past decade when it comes to tests? I wonder if in the short term, QA engineering roles will take on a more predominant role in small, nimble product teams?
 
 Whatever time AI saves you on building, you'll spend it on planning and reviewing. And perhaps that's, for now, the price to pay?
 
@@ -308,22 +308,24 @@ Whatever time AI saves you on building, you'll spend it on planning and reviewin
 
 First off, if you've made it so far, congratulations. Seems you still have some reading stamina in you. I would've just pasted the link into Claude and have it give me a digest.
 
-My journey into Agentic product engineering is still ongoing, but so far this reality is both exciting and troubling. If I can pull this off right now, what can be pulled of by frontier labs? What will this look like in  a year from now?
+My journey into Agentic product engineering is still ongoing, but so far this reality is both exciting and troubling. If I can pull this off right now, what can be pulled off by frontier labs? What will this look like in  a year from now?
 
-Agentic SDLC is great for any thing that isn't a critical product or service. And as I've shared, for it to work along time, you need people with an actual software engineering background — armed with patience and discipline — to actually handle it continuously.
+Agentic SDLC is great for anything that isn't a critical product or service. And as I've shared, for it to work a long time, you need people with an actual software engineering background — armed with patience and discipline — to actually handle it continuously.
 
-The experience of building FreeTheFlat over these months, from nothing to a functioning product with users, has been insane. Full features that would have taken me weeks to build get delivered in a couple of days. What would otherwise be a team of 3-4 engineers can now be compressed on to one workaholic product engineer. 
+The experience of building Free The Flat over these months, from nothing to a functioning product with users, has been insane. Full features that would have taken me weeks to build get delivered in a couple of days. What would otherwise be a team of 3-4 engineers can now be compressed onto one workaholic product engineer. 
 
 <hr>
 
 In order to do this I've had to place a bet that it could work. When it comes to the granularity of it, I've had to operate in a state of suspended disbelief. You get mad otherwise.
 It doesn't matter how the code is written. It doesn't matter I would have done it another way. What matters is the outcome, and that the performance baseline is sound. Maybe the fact I've been managing other engineers for years helps me see past that?
 
-Underneath all of it you're just trusting the machine. That it'll do what you expect it to do. Beyond that you see nothing, or as little as you desire to see. Like blind trust in sort of god you've conjured. One simultaneously extremely potent and idiotic..
+Underneath all of it you're just trusting the machine. That it'll do what you expect it to do. Beyond that you see nothing, or as little as you desire to see. Like blind trust in a sort of demon you've conjured. One simultaneously extremely potent and idiotic..
 
 So far I've not hit the technical wall I keep waiting to hit, due to building "blind". And if I finally find it, I trust (and hope) my engineering skills will help me move past.
 
-Now imagine what a whole world doing this might look like. Reminds me of the movie Idiocracy. Maybe we're already living in it, right?
+Now imagine what a whole world doing this might look like. Reminds me of the movie _Idiocracy_.
+
+Maybe we're already living in it, right?
 
 ![Still of 2006 movie Idiocracy with Brawndo CEO in a video call, panicking, yelling "The Computer did that auto-layoff thing to everybody"](/images/uploads/brawndo.png "Brawndo CEO panicking")
 
@@ -333,4 +335,4 @@ Now imagine what a whole world doing this might look like. Reminds me of the mov
 
 ### AI Disclaimer
 
-Because we live in a post-AI world: this post was entirely written by myself. AI was used to review clarity and english phrasing.
+Because we live in a post-AI world: this post was entirely written by myself. AI was used to review clarity and English phrasing.
