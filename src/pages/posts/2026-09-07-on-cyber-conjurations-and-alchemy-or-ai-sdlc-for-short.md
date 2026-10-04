@@ -144,7 +144,6 @@ Truthfully, for a couple of months I was nothing but a glorified [meat proxy](ht
 
 Earlier this year a friend of mine had shown me how his startup was using Linear and assigning tickets to their agents somehow. How agents would create tickets in Linear, open MRs etc.
 
-
 The setup was impressive and, myself being a big fan of Linear and having already introduced it to the team so we'd use it among ourselves, it made sense to use it as the long lived context layer for managing the project's work — sometimes called Spine.
 I think this is one of the defining characteristics of AI SDLC. That and the ability for agents to work reactively. Also, don't look at any of the code.
 
@@ -163,71 +162,85 @@ All communication happens digitally, whether that's daily coordination/updates v
 
 ### 2 - Standard Agentic Development
 
-This is your regular prompt-your-agent workflow.
-I usually have between 2-4 sessions open in my code editor:
+All development is done on my machine using a Claude Max subscription.
 
-- Planning and reviewing plans. Researching possible implementations, technical investigations, comparing solutions. These are where I spend most of my time with the agents to plan and ultimately have it write that plan into Linear.
+This is your regular prompt-your-agent workflow. I usually have between 2-4 sessions open in my code editor:
+
+- Planning and reviewing plans. Researching possible implementations, technical investigations, comparing solutions. These are where I spend most of my time with the agents to plan and ultimately have AI write that plan into Linear.
 - Reviewing the AI SDLC performance, investigate issues encountered by a Cyrus dispatched agent working on a Linear ticket and brainstorm improvements.
 - Miscellaneous sessions with varying purposes. Sometimes to investigate and fix an implementation bug directly in the editor without having to open a ticket. Other times for checking if there are any drifts in the documentation after a couple of day's work. 
 
 ### 3 - Providing Feedback
 
-At first, feedback from the founders was given regularly via Slack or during a call. It was very much me operating as human router between them and the agent, translating the feedback into more detailed and technically aware specs.
+At first, feedback was given regularly via Slack or during a call. It was very much me operating as human router between the team and the agent, translating the feedback into more detailed and technically aware specs.
 
-The first improvement consisted of a Claude skill I built for them that would take an arbitrarily long list of feedback in a Google Docs file and transform it into Linear tickets. It was a good first step but, not having access to the codebase, their agents took many assumptions on how things worked when writing the tickets.
-Because of that I had to either add my own specific implementation details to the ticket ("use this to do X", "use the component X for the feature", etc) and then my agent (with access to the codebase) doing the ticket would need to review everything with the code context this time.
+The first improvement consisted of a Claude skill I built for the founders that would take an arbitrarily long list of feedback in a Google Docs file and transform it into Linear tickets. It was a good first step but, not having access to the codebase, their agents ran with many assumptions on how things worked when speccing the tickets.
+Because of that, I had to correct them with my own specific implementation details ("use this to do X", "use the component X for the feature", etc) and then my agent (with actual access to the codebase) would need to review everything with the code context this time.
 
-In order to increase the quality of their Linear tickets, I invited the founders to GitLab (as reporters), had them add the Linear MCP and modified their feedback skill to read the repo codebase to get its context before writing a ticket's specs. Depending on the size, the agent can decide whether to create a simple ticket or a ticket made of multiple sub-tickets.
+In order to increase the quality of their Linear specs, I invited them to GitLab (as reporters), had them add the Linear MCP to their own Claude subscription instances and modified the feedback skill to read the repo codebase to get its context before writing a ticket's specs.
+Depending on the task size, the agent decides whether to create a simple ticket or a ticket made of multiple sub-tickets.
 
-With that last the tickets started coming in with much higher accuracy on how to resolve a bug, how to improve or modify a feature — an important addition before introducing Cyrus.
+With that improvement, the tickets started coming in with higher accuracy on how to resolve a bug, or how to improve or modify a feature — an important addition before introducing Cyrus.
 
 ### 4 - Autonomous Agentic Development
 
-This is where things get interesting and funky. Plans and tickets were all tidy in Linear, but I still had to relay work to my Claude sessions (using remote sessions extensively) by instructing it to work on a ticket I'd paste in the prompt.
+This is where things get interesting and funky. Plans and tickets were all tidy in Linear, but I still had to relay work to my Claude sessions (using remote sessions extensively) by instructing it to work on a ticket. Literally copying and pasting a Linear ticket, waiting for the work to complete, repeat.
 
-I looked up some options for agent orchestrators and one stood out: [Cyrus](https://www.atcyrus.com/). Now, it's nothing crazy. It's not OpenClaw or whatever the thing's called.
-Put simply, you install it on your machine, setup a tunnel to route external webhooks and traffic from the internet (I used Cloudflare) and finally, setup an App in Linear, which will be your agent.
+I looked up some options for agent orchestrators and one stood out: [Cyrus](https://www.atcyrus.com/).
 
-With this, you can then assign your agent (which I ended up naming Cyrus, 'cause why bother?) to a Linear ticket and it'll kick off an agent to implement it.
+Now, it's nothing crazy. It's not OpenClaw or whatever the thing's called. Put simply, you install it on your machine, setup a tunnel to route external webhooks and traffic from the internet (I used Cloudflare) and finally, setup an App in Linear, which will show up as your agent in Linear's UI.
 
-This works because:
+With this, one can assign the agent (I ended up naming it Cyrus, 'cause why bother?) to a Linear ticket and it'll kick off an agent to implement the ticket.
 
-- When instructing an agent to write a linear ticket (including the Feedback skill), it uses the `linear-ticket-writer` skill which, writes Linear tickets specifically with Cyrus in mind. Tickets are always written to be picked up by an AI. If you have humans in your team, you need to change this.
-- The ticket contains the necessary specs to implement whatever is being asked, as well as specific instructions on how to continue working, useful for larger tickets containing sub-tickets. 
-- Once an agent's work is finished, it adds a comment on the parent ticket which tags the agent and adds the necessary context/instructions.
-- Because of the agent tag, Cyrus picks it up automatically and passes the comments+ticket context, and the cycle repeats until all work is done.
+At the time of writing, Cyrus is built to be assigned a single ticket, work on it (in a dedicated worktree) and stop.
+
+I wanted to actually be able to chain work and for it, I had to modify the ticket writing skill and combine it with tweaks to Cyrus itself to be able to work continuously on larger tickets.
+
+The gist of the setup is:
+
+- When instructing an agent to write a linear ticket (including the Feedback skill used by the founders), it uses the `linear-ticket-writer` skill which writes Linear tickets specifically with Cyrus in mind. Tickets are always written to be picked up by an AI. If you have humans in your team, you need to change this.
+- The ticket contains the necessary specs to implement whatever is being asked, as well as specific instructions on how to continue working the whole set of sub-tickets when these exist. 
+- The sub-ticket instruction tells the agent to add a comment on the parent ticket with a tag to the Cyrus agent and specifying which ticket to pick up.
+- Because of the agent tag, it gets picked up automatically with comments+ticket context, and the cycle repeats until all work is done for the parent ticket.
 
 A fully detailed workflow is diagramed further below explaining all these.
 
-The Linear screenshot below shows that sequence in action.
-
 ![](/images/uploads/cyrus_lane.png)
 
-<small>A multi-ticket being handled via Cyrus.</small>
+<small>Linear screenshot of multi-tickets being handled through Cyrus.</small>
 
 **Tunning Cyrus**
 
-Some patches and modifications needed to be made to Cyrus:
+Some patches and modifications were needed to be made to Cyrus to have this advance use case working:
 
-1. Cyrus conveniently comes with bundled skills that it'll invoke depending on the ticket it gets. That I recall, it can plan, build, ship and perhaps do more. I modified its `verify-and-ship` skill so that it makes use or the repo's `wrap-up` skill (_docs-sync → review → pre-pr → commit → push → close tickets_), this way keeping the ship behavior consistent between the Standard and Autonomous Agentic workflows. Beyond that, the agent invoked by Cyrus will then inherit all other MDs in the repo and behave accordingly;
-2. An `end_session` MCP the agent can use to end its own session once it completes its work. Unless stopped, Cyrus sessions under the same ticket are kept "active" so the user can interact with the agent if needed. For the multi-tickets this meant that every ticket got its own session which would remain active. Each time there was an update due to the last ongoing session, all previous ones would be triggered, which would re-load and process the whole context for nothing. This as consuming tokens at an insane rate. The MCP tool allows to kill the session, because the Linear ignores comments the agent writes itself, so it couldn't just write `stop` to itself (a user writing `stop` will kill that session);
+1. Cyrus conveniently comes with bundled skills that it'll invoke depending on the ticket it gets. That I recall, it can plan, build, ship and perhaps do more. I modified its `verify-and-ship` skill so that it makes use or the repo's `wrap-up` skill (_docs-sync → review → pre-pr → commit → push → close tickets_).
+This way I kept the ship behavior consistent between the Standard and Autonomous Agentic workflows. Beyond that, the agent invoked by Cyrus inherits all other MDs in the repo and behaves accordingly;
+2. Added an `end_session` MCP the agent can use to end its own session once it completes its work.
+Unless fully stopped by someone via Linear's UI, Cyrus sessions under the same ticket are kept "active" so the user can interact with the agent if needed.
+For the multi-tickets case, this meant that every ticket got its own session which would remain active. Each time there was an update due to the last ongoing session running and updating the ticket, all previous ones would be triggered, re-loading and processing the whole context for nothing (sometimes not hitting the cache anymore). This consumed tokens at an insane rate. The MCP tool allows to kill the session because the Linear ignores comments the agent writes itself, so it couldn't just write `stop` to itself (a user writing `stop` will kill that session, but not an agent);
 3. Cleanly stop any running sessions for a ticket that gets re-assigned Cyrus, so that two agents can't work on the same ticket;
 4. Modify `cyrus/config.json` so that `disallowedTools` blocks force-push and a set of other dangerous commands. Headless mode Cyrus approves every tool automatically. Only deny rules actually stop a command;
 
 Besides these, I also setup:
 
-- A Worktree bootrstrap script: pnpm install, lefthook, Playwright chromium and `.env` injection, so each worktree can actually run the hooks and tests.
+- A worktree bootstrap script: pnpm install, lefthook, Playwright chromium and `.env` injection, so each worktree can actually run the hooks and tests.
 - A Worktree cleanup script, scheduled as a LaunchAgent, for removing worktrees once their branch is merged. Leftover worktrees were fillnig the disk.
 
 There are even more fine-tunes I had to do, like changing the default model to handle tickets, not using `glab` to open MRs and more that I already forgot about. I'll need to ask Claude to re-explain the MD knowledge file..
 
 ### 5 - CI/CD
 
-Lorem lorem
+Finally, and there's nothing agentic here, all code gets pushed to GitLab where the runner picks it up and executes our test pipeline for every new MR. Nothing gets merge to the main branch.
 
 ![Screenshot of a GitLab pipeline showing several jobs green.](/images/uploads/Screenshot%202026-09-06%20at%2022.59.59.png "GitLab pipeline an MR is opened.")
 
 <small>GitLab Pipeline when opening an MR.</small>
+
+The agent has a script for polling an MR's pipeline status, awaiting for the tests to pass before completing its session. When tests fails, it reads the errors and attempts to fix the implementation and/or tests until these pass.
+
+![](/images/uploads/ai_await_ci.png)
+
+<small>Linear's UI showing the agent awaiting on a pipeline.</small>
 
 ### Detailed Scaffolding
 
