@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-03T02:19:26.397Z",
+  "lastUpdated": "2026-10-04T02:51:33.941Z",
   "statuses": [
+    {
+      "id": "117376204858961600",
+      "type": "boost",
+      "url": "https://dair-community.social/@emilymbender/117373648425005854",
+      "createdAt": "2026-10-03T09:12:30.902Z",
+      "excerpt": "On the next Mystery AI Hype Theater 3000 livestream, we’re so excited to chat with authors of the new book, Against Tech Oligarchy! JS Tan]and Clarissa Redwine will join me and…",
+      "author": {
+        "acct": "emilymbender@dair-community.social",
+        "displayName": "Prof. Emily M. Bender(she/her)",
+        "url": "https://dair-community.social/@emilymbender"
+      },
+      "media": null,
+      "counts": {
+        "replies": 1,
+        "reblogs": 18,
+        "favourites": 22
+      }
+    },
     {
       "id": "117355414039442212",
       "type": "boost",
@@ -38,26 +56,8 @@
       },
       "counts": {
         "replies": 2,
-        "reblogs": 35,
+        "reblogs": 34,
         "favourites": 52
-      }
-    },
-    {
-      "id": "117299768389078327",
-      "type": "boost",
-      "url": "https://mastodon.world/@paulschoe/117299534792555891",
-      "createdAt": "2026-09-19T21:13:42.933Z",
-      "excerpt": "@chetwisniewski 'AI has turned sharing knowledge from a gift to the world, into a liability for the author. The act of openness will be twisted and abused into creating more…",
-      "author": {
-        "acct": "paulschoe@mastodon.world",
-        "displayName": "Paul Schoe",
-        "url": "https://mastodon.world/@paulschoe"
-      },
-      "media": null,
-      "counts": {
-        "replies": 0,
-        "reblogs": 15,
-        "favourites": 28
       }
     }
   ]
