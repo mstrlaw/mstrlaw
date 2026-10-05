@@ -57,7 +57,7 @@ const BLANK_PIXEL =
             href={status.url}
             target="_blank"
             rel="noopener"
-            class="flex flex-col block w-full p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50"
+            class="flex flex-col block w-full min-w-0 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50"
           >
             <small class="block text-zinc-500 dark:text-zinc-400">
               {status.type === 'boost' ? `Boosted` : 'Posted'}
@@ -86,10 +86,10 @@ const BLANK_PIXEL =
                 </noscript>
               </>
             )}
-            <p class="text-sm mt-2 text-zinc-600 dark:text-zinc-300">
+            <p class="text-sm mt-2 break-words text-zinc-600 dark:text-zinc-300">
               {status.excerpt}
             </p>
-            <div class="flex items-center gap-4 mt-auto pt-3 text-xs text-zinc-500 dark:text-zinc-400">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-auto pt-3 text-xs text-zinc-500 dark:text-zinc-400">
               <time datetime={status.createdAt}>
                 {format(new Date(status.createdAt), 'd MMM yyyy')}
               </time>
