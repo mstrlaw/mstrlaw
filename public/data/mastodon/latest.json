@@ -1,6 +1,38 @@
 {
-  "lastUpdated": "2026-10-08T02:55:53.305Z",
+  "lastUpdated": "2026-10-09T03:04:20.969Z",
   "statuses": [
+    {
+      "id": "117404219038852790",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117404219038852790",
+      "createdAt": "2026-10-08T07:56:53.365Z",
+      "excerpt": "Way too many words for describing my past months experimenting with building a product with full Agentic SDLC. It works. It both amazes me and makes me incredibly worried for our…",
+      "author": null,
+      "media": null,
+      "counts": {
+        "replies": 0,
+        "reblogs": 1,
+        "favourites": 0
+      }
+    },
+    {
+      "id": "117404170776770436",
+      "type": "boost",
+      "url": "https://www.threads.com/@renee.diresta/post/DeNScMKHxOo",
+      "createdAt": "2026-10-08T07:44:36.942Z",
+      "excerpt": "https://www.theguardian.com/us-news/2026/oct/07/trump-eu-disinformation-conference",
+      "author": {
+        "acct": "renee.diresta@threads.net",
+        "displayName": "Renee DiResta",
+        "url": "https://threads.net/@renee.diresta/"
+      },
+      "media": null,
+      "counts": {
+        "replies": 1,
+        "reblogs": 1,
+        "favourites": 0
+      }
+    },
     {
       "id": "117381953035525304",
       "type": "post",
@@ -13,42 +45,6 @@
         "replies": 0,
         "reblogs": 0,
         "favourites": 0
-      }
-    },
-    {
-      "id": "117376204858961600",
-      "type": "boost",
-      "url": "https://dair-community.social/@emilymbender/117373648425005854",
-      "createdAt": "2026-10-03T09:12:30.902Z",
-      "excerpt": "On the next Mystery AI Hype Theater 3000 livestream, we’re so excited to chat with authors of the new book, Against Tech Oligarchy! JS Tan]and Clarissa Redwine will join me and…",
-      "author": {
-        "acct": "emilymbender@dair-community.social",
-        "displayName": "Prof. Emily M. Bender(she/her)",
-        "url": "https://dair-community.social/@emilymbender"
-      },
-      "media": null,
-      "counts": {
-        "replies": 1,
-        "reblogs": 19,
-        "favourites": 23
-      }
-    },
-    {
-      "id": "117355414039442212",
-      "type": "boost",
-      "url": "https://social.lansky.name/@hn100/117354431037050855",
-      "createdAt": "2026-09-29T17:05:08.177Z",
-      "excerpt": "500k facial scans at UK stations yield no arrests, 1 false positive Link:…",
-      "author": {
-        "acct": "hn100@social.lansky.name",
-        "displayName": "Hacker News 100",
-        "url": "https://social.lansky.name/@hn100"
-      },
-      "media": null,
-      "counts": {
-        "replies": 1,
-        "reblogs": 5,
-        "favourites": 1
       }
     }
   ]
