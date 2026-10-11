@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-10-10T02:45:25.213Z",
+  "lastUpdated": "2026-10-11T02:11:06.379Z",
   "statuses": [
+    {
+      "id": "117417318946349051",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117417318946349051",
+      "createdAt": "2026-10-10T15:28:22.089Z",
+      "excerpt": "Checking the Deichman library in Oslo. #library #books #Norway",
+      "author": null,
+      "media": {
+        "url": "https://files.mastodon.social/media_attachments/files/117/417/318/673/011/926/small/acb4e7985b08ae2d.jpeg",
+        "alt": "A multi-level interior of a modern library with a geometric honeycomb ceiling, angular concrete balconies, and people working at tables. Outside in the distance there's a water front with a cruise ship.",
+        "width": 416,
+        "height": 554
+      },
+      "counts": {
+        "replies": 0,
+        "reblogs": 1,
+        "favourites": 3
+      }
+    },
     {
       "id": "117404219038852790",
       "type": "post",
@@ -30,20 +49,6 @@
       "counts": {
         "replies": 1,
         "reblogs": 1,
-        "favourites": 0
-      }
-    },
-    {
-      "id": "117381953035525304",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117381953035525304",
-      "createdAt": "2026-10-04T09:34:21.113Z",
-      "excerpt": "RE: https://mastodon.social/@RonJeffries/117379740093108647 Setup your VPN to the US to watch.",
-      "author": null,
-      "media": null,
-      "counts": {
-        "replies": 0,
-        "reblogs": 0,
         "favourites": 0
       }
     }
