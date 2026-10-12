@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-10-11T02:11:06.379Z",
+  "lastUpdated": "2026-10-12T02:38:59.330Z",
   "statuses": [
+    {
+      "id": "117422546996500707",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117422546996500707",
+      "createdAt": "2026-10-11T13:37:55.804Z",
+      "excerpt": "Nice layers of moss on an interesting rock. #nature #outside #moss #mosstodon #plants #Norway #autumn",
+      "author": null,
+      "media": {
+        "url": "https://files.mastodon.social/media_attachments/files/117/422/546/738/309/136/small/b1feb3df1ec7117f.jpeg",
+        "alt": "Bright green moss growing on a layered rock face with sparse weeds and foliage above.",
+        "width": 416,
+        "height": 554
+      },
+      "counts": {
+        "replies": 0,
+        "reblogs": 4,
+        "favourites": 17
+      }
+    },
     {
       "id": "117417318946349051",
       "type": "post",
@@ -30,24 +49,6 @@
       "media": null,
       "counts": {
         "replies": 0,
-        "reblogs": 1,
-        "favourites": 0
-      }
-    },
-    {
-      "id": "117404170776770436",
-      "type": "boost",
-      "url": "https://www.threads.com/@renee.diresta/post/DeNScMKHxOo",
-      "createdAt": "2026-10-08T07:44:36.942Z",
-      "excerpt": "https://www.theguardian.com/us-news/2026/oct/07/trump-eu-disinformation-conference",
-      "author": {
-        "acct": "renee.diresta@threads.net",
-        "displayName": "Renee DiResta",
-        "url": "https://threads.net/@renee.diresta/"
-      },
-      "media": null,
-      "counts": {
-        "replies": 1,
         "reblogs": 1,
         "favourites": 0
       }
