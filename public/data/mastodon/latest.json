@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-10-12T02:38:59.330Z",
+  "lastUpdated": "2026-10-13T03:52:40.478Z",
   "statuses": [
+    {
+      "id": "117429323942689705",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117429323942689705",
+      "createdAt": "2026-10-12T18:21:23.805Z",
+      "excerpt": "Spotted in Oslo. Patagoniantifa. #antifa #oslo #Norway #europe",
+      "author": null,
+      "media": {
+        "url": "https://files.mastodon.social/media_attachments/files/117/429/323/666/880/541/small/83a4c99df522d40e.jpeg",
+        "alt": "A sticker on a metal pole featuring Patagonia's style mountain silhouette logo with the text Antifa 490 in white, set against a blurred outdoor urban background.",
+        "width": 416,
+        "height": 554
+      },
+      "counts": {
+        "replies": 0,
+        "reblogs": 1,
+        "favourites": 2
+      }
+    },
     {
       "id": "117422546996500707",
       "type": "post",
@@ -16,8 +35,8 @@
       },
       "counts": {
         "replies": 0,
-        "reblogs": 4,
-        "favourites": 17
+        "reblogs": 5,
+        "favourites": 18
       }
     },
     {
@@ -37,20 +56,6 @@
         "replies": 0,
         "reblogs": 1,
         "favourites": 3
-      }
-    },
-    {
-      "id": "117404219038852790",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117404219038852790",
-      "createdAt": "2026-10-08T07:56:53.365Z",
-      "excerpt": "Way too many words for describing my past months experimenting with building a product with full Agentic SDLC. It works. It both amazes me and makes me incredibly worried for our…",
-      "author": null,
-      "media": null,
-      "counts": {
-        "replies": 0,
-        "reblogs": 1,
-        "favourites": 0
       }
     }
   ]
