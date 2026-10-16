@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-10-15T01:50:22.367Z",
+  "lastUpdated": "2026-10-16T01:39:11.629Z",
   "statuses": [
+    {
+      "id": "117446204090967924",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117446204090967924",
+      "createdAt": "2026-10-15T17:54:14.420Z",
+      "excerpt": "I always think about these two when I look at the rate of #AI adoption across companies and by the general public. #tech #technology #artificialintelligence #future #futureofwork…",
+      "author": null,
+      "media": {
+        "url": "https://files.mastodon.social/media_attachments/files/117/446/203/803/258/124/small/811820b970bf3bbe.png",
+        "alt": "Scene from the movie Idiocracy, where Brawndo's CEO is wearing a brown vest and white shirt in front of a yellow wall with jugs, yelling: THE COMPUTER DID THAT AUTO-LAYOFF THING TO EVERYBODY.",
+        "width": 650,
+        "height": 355
+      },
+      "counts": {
+        "replies": 0,
+        "reblogs": 0,
+        "favourites": 0
+      }
+    },
     {
       "id": "117429323942689705",
       "type": "post",
@@ -37,25 +56,6 @@
         "replies": 0,
         "reblogs": 5,
         "favourites": 18
-      }
-    },
-    {
-      "id": "117417318946349051",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117417318946349051",
-      "createdAt": "2026-10-10T15:28:22.089Z",
-      "excerpt": "Checking the Deichman library in Oslo. #library #books #Norway",
-      "author": null,
-      "media": {
-        "url": "https://files.mastodon.social/media_attachments/files/117/417/318/673/011/926/small/acb4e7985b08ae2d.jpeg",
-        "alt": "A multi-level interior of a modern library with a geometric honeycomb ceiling, angular concrete balconies, and people working at tables. Outside in the distance there's a water front with a cruise ship.",
-        "width": 416,
-        "height": 554
-      },
-      "counts": {
-        "replies": 0,
-        "reblogs": 1,
-        "favourites": 3
       }
     }
   ]
