@@ -1,13 +1,24 @@
 export default [
   // 2026 books
   {
+    title:
+      'Cyberselfish - A Critical Romp through the Terribly Libertarian Culture of High Tech',
+    author: 'Paulina Borsook',
+    yearRead: 2026,
+    url: 'https://www.collectiveinkbooks.com/zer0-books/our-books/a-book/?p=11428',
+    cover: '/images/books/cyberselfish.jpg',
+    alt: 'Cyberselfish - A Critical Romp through the Terribly Libertarian Culture of High Tech by Paulina Borsook',
+    pages: 336,
+    tags: ['non-fiction', 'technology'],
+  },
+  {
     title: 'Julia',
     author: 'Sandra Newman',
     yearRead: 2026,
     url: 'https://www.harpercollins.com/products/julia-sandra-newman?variant=41467936636962',
     cover: '/images/books/1984_julia.jpg',
     alt: 'Julia by Sandra Newman',
-    pages: 210,
+    pages: 400,
     tags: ['fiction', 'dystopian'],
   },
   {
