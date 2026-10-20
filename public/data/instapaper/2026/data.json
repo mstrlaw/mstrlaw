@@ -145,6 +145,26 @@
         "progress_timestamp": 1792114750
       }
     ],
+    "20": [
+      {
+        "id": 2050237616,
+        "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+        "title": "If you don't run your own LLM proxy, how the fuck do you even know whats going on?",
+        "description": "",
+        "time_added": 1792429330,
+        "progress": 0,
+        "progress_timestamp": 1792461860
+      },
+      {
+        "id": 2050163424,
+        "url": "https://www.propublica.org/article/cisa-election-security-donald-trump",
+        "title": "This Cybersecurity Agency Is Supposed to Protect U.S. Elections. Officials Fear It’s Been Compromised by Trump.",
+        "description": "",
+        "time_added": 1792412376,
+        "progress": 0,
+        "progress_timestamp": 1792461860
+      }
+    ],
     "06": [
       {
         "id": 2046575172,
