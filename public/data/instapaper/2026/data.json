@@ -47,6 +47,15 @@
         "time_added": 1791790936,
         "progress": 0,
         "progress_timestamp": 1791815335
+      },
+      {
+        "id": 2048324623,
+        "url": "https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/",
+        "title": "I'm sorry, but you still have to think",
+        "description": "",
+        "time_added": 1791791820,
+        "progress": 0,
+        "progress_timestamp": 1791815333
       }
     ],
     "14": [
@@ -176,6 +185,26 @@
         "progress_timestamp": 1792548085
       }
     ],
+    "22": [
+      {
+        "id": 2050502987,
+        "url": "https://www.axios.com/2026/10/20/joe-rogan-trump-vance-young-men",
+        "title": "The manosphere stars who helped Trump win are losing their shine",
+        "description": "",
+        "time_added": 1792518594,
+        "progress": 0,
+        "progress_timestamp": 1792678357
+      },
+      {
+        "id": 2050953286,
+        "url": "https://daringfireball.net/2026/10/x_once_again_marks_the_spot",
+        "title": "X Once Again Marks the Spot",
+        "description": "",
+        "time_added": 1792654432,
+        "progress": 0,
+        "progress_timestamp": 1792678357
+      }
+    ],
     "06": [
       {
         "id": 2046575172,
@@ -203,6 +232,15 @@
         "time_added": 1791303034,
         "progress": 0.9049581708005201,
         "progress_timestamp": 1791304842
+      },
+      {
+        "id": 2046330836,
+        "url": "https://palettevault.github.io/blog/color-psychology-ui-design/",
+        "title": "Color Psychology in UI Design: How Color Shapes User Behavior, Palette Vault",
+        "description": "",
+        "time_added": 1791121843,
+        "progress": 0,
+        "progress_timestamp": 1791303785
       }
     ],
     "09": [
