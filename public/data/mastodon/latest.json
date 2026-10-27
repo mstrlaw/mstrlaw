@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-10-26T01:42:42.366Z",
+  "lastUpdated": "2026-10-27T02:25:01.468Z",
   "statuses": [
+    {
+      "id": "117509482241660315",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117509482241660315",
+      "createdAt": "2026-10-26T22:06:42.384Z",
+      "excerpt": "Brazil voted against fascism. How do I know? By screen spying people's TikTok feeds during my comute of course. I only get my news through stranger's algorithms. #Brazil…",
+      "author": null,
+      "media": null,
+      "counts": {
+        "replies": 0,
+        "reblogs": 0,
+        "favourites": 0
+      }
+    },
     {
       "id": "117446204090967924",
       "type": "post",
@@ -37,25 +51,6 @@
         "replies": 0,
         "reblogs": 1,
         "favourites": 3
-      }
-    },
-    {
-      "id": "117422546996500707",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117422546996500707",
-      "createdAt": "2026-10-11T13:37:55.804Z",
-      "excerpt": "Nice layers of moss on an interesting rock. #nature #outside #moss #mosstodon #plants #Norway #autumn",
-      "author": null,
-      "media": {
-        "url": "https://files.mastodon.social/media_attachments/files/117/422/546/738/309/136/small/b1feb3df1ec7117f.jpeg",
-        "alt": "Bright green moss growing on a layered rock face with sparse weeds and foliage above.",
-        "width": 416,
-        "height": 554
-      },
-      "counts": {
-        "replies": 0,
-        "reblogs": 4,
-        "favourites": 18
       }
     }
   ]
