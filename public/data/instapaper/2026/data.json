@@ -245,6 +245,44 @@
         "progress_timestamp": 1793242309
       }
     ],
+    "30": [
+      {
+        "id": 2053146123,
+        "url": "https://brilliantcrank.com/punk-is-the-way/",
+        "title": "Punk is the way.",
+        "description": "",
+        "time_added": 1793297563,
+        "progress": 0,
+        "progress_timestamp": 1793329025
+      },
+      {
+        "id": 2053139331,
+        "url": "https://www.bbc.co.uk/news/articles/c6z7x8214np7o",
+        "title": "'Painful' years ahead, think tanks warn, as living standards set to fall",
+        "description": "",
+        "time_added": 1793295683,
+        "progress": 0,
+        "progress_timestamp": 1793329025
+      },
+      {
+        "id": 2053128279,
+        "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+        "title": "bliki: LLM Voice",
+        "description": "",
+        "time_added": 1793293021,
+        "progress": 0,
+        "progress_timestamp": 1793329025
+      },
+      {
+        "id": 2053047078,
+        "url": "https://www.theguardian.com/us-news/2026/oct/28/homeland-security-data-leak",
+        "title": "Non-profit group leaks data of more than 40,000 homeland security workers",
+        "description": "",
+        "time_added": 1793276916,
+        "progress": 0,
+        "progress_timestamp": 1793329025
+      }
+    ],
     "06": [
       {
         "id": 2046575172,
