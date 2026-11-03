@@ -1,55 +1,55 @@
 {
-  "lastUpdated": "2026-11-02T02:44:09.358Z",
+  "lastUpdated": "2026-11-03T04:01:14.894Z",
   "statuses": [
     {
-      "id": "117536712155834894",
-      "type": "boost",
-      "url": "https://mstdn.social/@JaneImber/117536707497360400",
-      "createdAt": "2026-10-31T17:31:37.889Z",
-      "excerpt": "@mstrlaw A good time to remind everyone that fake spiderwebs are a bird trap. Give the birds a break.",
-      "author": {
-        "acct": "JaneImber@mstdn.social",
-        "displayName": "We the People...",
-        "url": "https://mstdn.social/@JaneImber"
-      },
-      "media": null,
-      "counts": {
-        "replies": 0,
-        "reblogs": 4,
-        "favourites": 3
-      }
-    },
-    {
-      "id": "117535824733184671",
+      "id": "117549394762443705",
       "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117535824733184671",
-      "createdAt": "2026-10-31T13:45:56.896Z",
-      "excerpt": "Happy #halloween #CatsOfMastodon #Caturday #blackcat #Cats #kitten",
-      "author": null,
-      "media": {
-        "url": "https://files.mastodon.social/media_attachments/files/117/535/824/475/651/272/small/aa7eed2947a59eab.jpeg",
-        "alt": "A small black kitten sits on a reddish-brown tiled floor with a large spiderweb covering its head and face while it sticks its pink tongue out.",
-        "width": 415,
-        "height": 554
-      },
-      "counts": {
-        "replies": 8,
-        "reblogs": 73,
-        "favourites": 179
-      }
-    },
-    {
-      "id": "117509482241660315",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117509482241660315",
-      "createdAt": "2026-10-26T22:06:42.384Z",
-      "excerpt": "Brazil voted against fascism. How do I know? By screen spying people's TikTok feeds during my comute of course. I only get my news through stranger's algorithms. #Brazil…",
+      "url": "https://mastodon.social/@mstrlaw/117549394762443705",
+      "createdAt": "2026-11-02T23:16:59.107Z",
+      "excerpt": "Just joined the Sup waitlist. Fediverse DMs and group chats, built like a proper messenger. @sup https://getsup.net/join?ref=YN6DXQPB",
       "author": null,
       "media": null,
       "counts": {
         "replies": 0,
         "reblogs": 0,
         "favourites": 0
+      }
+    },
+    {
+      "id": "117548903348964697",
+      "type": "boost",
+      "url": "https://werd.social/@ben/117548882517591409",
+      "createdAt": "2026-11-02T21:12:00.732Z",
+      "excerpt": "One guy set out to influence how chatbots answer questions about the election. He was incredibly successful, and that should disturb all of us. #AI…",
+      "author": {
+        "acct": "ben@werd.social",
+        "displayName": "Ben Werdmuller",
+        "url": "https://werd.social/@ben"
+      },
+      "media": null,
+      "counts": {
+        "replies": 0,
+        "reblogs": 13,
+        "favourites": 7
+      }
+    },
+    {
+      "id": "117548253865271197",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117548253865271197",
+      "createdAt": "2026-11-02T18:26:50.407Z",
+      "excerpt": "Been thinking a lot about the battle for our minds: Eager to start reading this one by Bruno Giussani. #AI #artificalintelligence #resist #resistance #tech #TechFascism…",
+      "author": null,
+      "media": {
+        "url": "https://files.mastodon.social/media_attachments/files/117/548/253/338/903/847/small/6ef0503ee3ff2b67.jpeg",
+        "alt": "The book cover of Our Minds Under Siege: How to Avoid Being Manipulated in the Age of Artificial Intelligence by Bruno Giussani, featuring a light blue background and a dark grey impossible geometric shape illustration.",
+        "width": 405,
+        "height": 568
+      },
+      "counts": {
+        "replies": 0,
+        "reblogs": 0,
+        "favourites": 1
       }
     }
   ]
