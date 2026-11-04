@@ -366,6 +366,46 @@
         "progress": 0,
         "progress_timestamp": 1793678473
       }
+    ],
+    "04": [
+      {
+        "id": 2054258332,
+        "url": "https://beincrypto.com/hedge-funds-dump-ai-stocks/",
+        "title": "US Hedge Funds Just Sold Every AI Stock They Bought Since 2025",
+        "description": "",
+        "time_added": 1793703814,
+        "progress": 0,
+        "progress_timestamp": 1793762176
+      },
+      {
+        "id": 2054256888,
+        "url": "https://www.theregister.com/ai-and-ml/2026/11/03/open-models-can-do-90-of-agentic-work-at-a-twentieth-of-the-cost-of-a-frontier-llm-gartner/5307132",
+        "title": "Open models can do 90% of agentic work at a twentieth of the cost of a frontier LLM: Gartner",
+        "description": "",
+        "time_added": 1793703392,
+        "progress": 0,
+        "progress_timestamp": 1793762176
+      },
+      {
+        "id": 2054226992,
+        "url": "https://cutlefish.substack.com/p/tbm-448-the-software-factory-as-identity?utm_campaign=post&utm_medium=web",
+        "title": "TBM 448: The Software Factory as Identity Defense (and Reinvention)",
+        "description": "",
+        "time_added": 1793693363,
+        "progress": 0,
+        "progress_timestamp": 1793762176
+      }
+    ],
+    "02": [
+      {
+        "id": 2054139424,
+        "url": "https://werd.io/chatbot-election-answers-are-dominated-by-one-right-wing-dude-and-an-army-of-ai-slop/",
+        "title": "Chatbot election answers are dominated by one right-wing dude and an army of AI slop.",
+        "description": "",
+        "time_added": 1793654486,
+        "progress": 0.3032924777697669,
+        "progress_timestamp": 1793658306
+      }
     ]
   },
   "02": {
