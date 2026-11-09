@@ -417,6 +417,17 @@
         "progress": 0,
         "progress_timestamp": 1793850199
       }
+    ],
+    "08": [
+      {
+        "id": 2055550683,
+        "url": "https://www.euronews.com/2026/11/08/were-hardly-producing-any-power-can-europes-solar-boom-survive-a-cloudy-winter",
+        "title": "How cloudy weather is causing a problem for Europe’s solar boom",
+        "description": "",
+        "time_added": 1794132150,
+        "progress": 0,
+        "progress_timestamp": 1794160971
+      }
     ]
   },
   "02": {
@@ -3493,6 +3504,15 @@
         "time_added": 1788197808,
         "progress": 0,
         "progress_timestamp": 1788211718
+      },
+      {
+        "id": 2036309570,
+        "url": "https://www.politico.com/newsletters/politico-influence/2026/08/14/israeli-pr-wants-to-answer-your-chatgpt-questions-01038138",
+        "title": "Israeli PR wants to answer your ChatGPT questions",
+        "description": "",
+        "time_added": 1787566188,
+        "progress": 0,
+        "progress_timestamp": 1788182802
       }
     ],
     "04": [
