@@ -1,6 +1,17 @@
 export default [
   // 2026 books
   {
+    title:
+      'Our Minds Under Siege - How to Avoid Being Manipulated in the Age of Artificial Intelligence',
+    author: 'Bruno Giussani',
+    yearRead: 2026,
+    url: 'https://www.scheidegger-spiess.ch/en/product/our-minds-under-siege/1765',
+    cover: '/images/books/under_siege.jpg',
+    alt: 'Our Minds Under Siege - How to Avoid Being Manipulated in the Age of Artificial Intelligence by Bruno Giussani',
+    pages: 184,
+    tags: ['non-fiction', 'technology'],
+  },
+  {
     title: 'The Nerd Reich - Silicon Valley Fascism and the War on Democracy',
     author: 'Gil Durán',
     yearRead: 2026,
