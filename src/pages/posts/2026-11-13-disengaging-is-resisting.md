@@ -25,7 +25,7 @@ This assault on our minds masquerades as short-form videos, endless content from
 
 We're all both victims of and complicit in the assault, as it takes two to tango.
 
-You must make the first move: pick up your phone, unlock it and open your app - Instagram, TikTok, YouTube, Netflix, ✗) - whichever.
+You must make the first move: pick up your phone, unlock it and open your app - Instagram, TikTok, YouTube, Netflix, X - whichever.
 
 After that, you're under attack. You've entered a territory controlled by corporate entities that have demonstrated beyond doubt that they view humans as a commodity to exploit: meatbags whose lived experience and agency must be shaped and aligned with the private interests of the corporation.
 
