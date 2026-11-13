@@ -3,7 +3,7 @@ layout: /src/layouts/PostLayout.astro
 title: Disengaging is Resisting
 summary: ''
 feat_image: /images/uploads/GeorginaLeeuwendal-Build-A-Soulmate-1280x853.png
-feat_image_alt: ''
+feat_image_alt: Digital collage of classical sculpture fragments scattered on a pink background, with green selection boxes and numeric data overlays.
 hide_feat_image: false
 description: ''
 publish_date: 2026-11-13T08:48:00
