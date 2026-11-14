@@ -18,7 +18,7 @@
     "@tresjs/cientos": "^4.3.1",
     "@tresjs/core": "^4.3.6",
     "@unpic/astro": "^1.0.2",
-    "astro": "^7.3.1",
+    "astro": "^7.4.7",
     "date-fns": "^4.1.0",
     "gsap": "^3.13.0",
     "medium-zoom-next": "^2.0.1",
