@@ -11,6 +11,8 @@ const {
   publish_date,
   hide_feat_image = false,
   feat_image,
+  feat_image_alt,
+  description,
 } = content
 
 // Astro puts a slug id on every rendered heading, so depth-2 entries can link
@@ -26,19 +28,39 @@ const toc = headings
 // five posts are text-only. compiledContent() is provided by Astro's markdown
 // layout; the fallback keeps the zoom rather than silently dropping it if a
 // caller ever renders this layout without it.
+const html =
+  typeof compiledContent === 'function' ? await compiledContent() : null
 const showsFeatImage = Boolean(feat_image && !hide_feat_image)
-const hasBodyImage =
-  typeof compiledContent === 'function'
-    ? /<img[\s>]/.test(compiledContent())
-    : true
+const hasBodyImage = html === null ? true : /<img[\s>]/.test(html)
 const needsZoom = showsFeatImage || hasBodyImage
+
+// Several posts leave summary/description empty, so fall back to the opening
+// of the body rather than the generic site blurb.
+const excerpt = (html) => {
+  const text = html
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&[a-z#0-9]+;/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+  return text.length > 160 ? `${text.slice(0, 157).trimEnd()}…` : text
+}
+const metaDescription =
+  summary?.trim() ||
+  description?.trim() ||
+  (html ? excerpt(html) : '')
 
 const getMediaFormat = (feat_image) => {
   return feat_image.split('.')[1]
 }
 ---
 
-<Layout>
+<Layout
+  title={title}
+  description={metaDescription}
+  image={feat_image || undefined}
+  imageAlt={feat_image_alt || undefined}
+  type="article"
+>
   <article class="dark:text-zinc-300">
     <header class="flex flex-col">
       <h1

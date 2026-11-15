@@ -2,6 +2,26 @@
 import '../styles/global.css';
 import Navigation from '../components/Navigation.vue';
 import Footer from '../components/Footer.astro';
+
+const SITE_URL = 'https://mstrlaw.com';
+const SITE_NAME = 'Lawrence B. Almeida';
+const SITE_DESCRIPTION =
+  "Technologist building digital products and exploring technology's impact on individuals and society.";
+
+// Pages that don't pass anything (home, listings) keep the site-wide card;
+// posts pass their own so shared links preview the article itself.
+const {
+  title,
+  description,
+  image = '/social_banner.png',
+  imageAlt = "The author's face as an Apple Memoji",
+  type = 'website',
+} = Astro.props;
+
+const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+const pageDescription = description || SITE_DESCRIPTION;
+const pageUrl = new URL(Astro.url.pathname, SITE_URL).href;
+const imageUrl = new URL(image, SITE_URL).href;
 ---
 
 <!doctype html>
@@ -9,12 +29,12 @@ import Footer from '../components/Footer.astro';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="twitter:image:alt"
-      content="The author's face as an Apple Memoji"
-    />
-    <meta property="og:image" content="https://mstrlaw.com/social_banner.png" />
-    <meta property="og:url" content="https://mstrlaw.com/" />
+    <meta name="twitter:image:alt" content={imageAlt} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:type" content={type} />
+    <link rel="canonical" href={pageUrl} />
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,17 +66,13 @@ import Footer from '../components/Footer.astro';
     />
 
     <meta name="generator" content={Astro.generator} />
-    <meta property="og:title" content="Lawrence B. Almeida" />
-    <meta
-      property="og:description"
-      content="Technologist building digital products and exploring technology\'s impact on individuals and society."
-    />
-    <meta property="og:site_name" content="Lawrence B. Almeida" />
-    <meta
-      name="description"
-      content="Technologist building digital products and exploring technology\'s impact on individuals and society."
-    />
-    <title>Lawrence B. Almeida</title>
+    <meta property="og:title" content={title || SITE_NAME} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta name="twitter:title" content={title || SITE_NAME} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="description" content={pageDescription} />
+    <title>{pageTitle}</title>
   </head>
 
   <body class="flex flex-col h-full bg-zinc-50 dark:bg-black">

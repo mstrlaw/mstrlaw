@@ -105,7 +105,7 @@ const toggleVisibility = () => {
                               data-open=""
                               data-active=""
                               href="/posts"
-                              >Garden</a
+                              >Writing</a
                             >
                           </li>
                           <li>
@@ -147,7 +147,7 @@ const toggleVisibility = () => {
                         <a
                           class="relative block px-3 py-2 transition hover:text-indigo-800 dark:hover:text-indigo-300"
                           href="/posts"
-                          >Garden</a
+                          >Writing</a
                         >
                       </li>
                       <li>
