@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-11-16T03:06:53.245Z",
+  "lastUpdated": "2026-11-17T05:14:26.356Z",
   "statuses": [
+    {
+      "id": "117625431570662603",
+      "type": "post",
+      "url": "https://mastodon.social/@mstrlaw/117625431570662603",
+      "createdAt": "2026-11-16T09:34:08.724Z",
+      "excerpt": "\"In these dopamine slot machines we spend our minds. And, like in a casino, once you’re inside your chances of losing go up. In fact, it’s so much more likely that you’ll lose…",
+      "author": null,
+      "media": null,
+      "counts": {
+        "replies": 0,
+        "reblogs": 1,
+        "favourites": 0
+      }
+    },
     {
       "id": "117549394762443705",
       "type": "post",
@@ -31,25 +45,6 @@
         "replies": 0,
         "reblogs": 20,
         "favourites": 8
-      }
-    },
-    {
-      "id": "117548253865271197",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117548253865271197",
-      "createdAt": "2026-11-02T18:26:50.407Z",
-      "excerpt": "Been thinking a lot about the battle for our minds: Eager to start reading this one by Bruno Giussani. #AI #artificalintelligence #resist #resistance #tech #TechFascism…",
-      "author": null,
-      "media": {
-        "url": "https://files.mastodon.social/media_attachments/files/117/548/253/338/903/847/small/6ef0503ee3ff2b67.jpeg",
-        "alt": "The book cover of Our Minds Under Siege: How to Avoid Being Manipulated in the Age of Artificial Intelligence by Bruno Giussani, featuring a light blue background and a dark grey impossible geometric shape illustration.",
-        "width": 405,
-        "height": 568
-      },
-      "counts": {
-        "replies": 0,
-        "reblogs": 0,
-        "favourites": 1
       }
     }
   ]
