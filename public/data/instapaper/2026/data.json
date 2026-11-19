@@ -365,6 +365,26 @@
         "progress_timestamp": 1794976961
       }
     ],
+    "19": [
+      {
+        "id": 2058118012,
+        "url": "https://nicolasbouliane.com/blog/death-by-ai",
+        "title": "AI is killing All About Berlin - Nicolas Bouliane",
+        "description": "",
+        "time_added": 1794997298,
+        "progress": 0,
+        "progress_timestamp": 1795062630
+      },
+      {
+        "id": 2058117504,
+        "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+        "title": "Quad9’s withdrawal from France: A canary in the coal mine",
+        "description": "",
+        "time_added": 1794997145,
+        "progress": 0,
+        "progress_timestamp": 1795062630
+      }
+    ],
     "01": [
       {
         "id": 2053784012,
