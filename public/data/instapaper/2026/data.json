@@ -383,6 +383,80 @@
         "time_added": 1794997145,
         "progress": 0,
         "progress_timestamp": 1795062630
+      },
+      {
+        "id": 2058397311,
+        "url": "https://elysian.press/essays/why-i-left-substack",
+        "title": "Why I left Substack",
+        "description": "",
+        "time_added": 1795080813,
+        "progress": 0.30138754436915133,
+        "progress_timestamp": 1795081000
+      },
+      {
+        "id": 2058388344,
+        "url": "https://www.seangoedecke.com/taking-a-position/",
+        "title": "Engineers who won’t commit",
+        "description": "",
+        "time_added": 1795077728,
+        "progress": 0.732937181663837,
+        "progress_timestamp": 1795078914
+      },
+      {
+        "id": 2058387836,
+        "url": "https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html?unlocked_article_code=1.RlE.jZdS.JqWRFXdeOl-k&smid=nytcore-ios-share",
+        "title": "I Spent a Year Talking to Anthropic Employees. Here’s What They Believe.",
+        "description": "",
+        "time_added": 1795077538,
+        "progress": 0,
+        "progress_timestamp": 1795077600
+      },
+      {
+        "id": 2055491356,
+        "url": "https://techpolicy.press/pull-the-plug-on-technofascism-before-it-reboots",
+        "title": "Pull the Plug on Technofascism Before It Reboots",
+        "description": "",
+        "time_added": 1794098780,
+        "progress": 0.34494855004677266,
+        "progress_timestamp": 1795077716
+      }
+    ],
+    "20": [
+      {
+        "id": 2058467470,
+        "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
+        "title": "I let Apple’s always-listening AI summarize my life for two weeks",
+        "description": "",
+        "time_added": 1795098461,
+        "progress": 0,
+        "progress_timestamp": 1795148242
+      },
+      {
+        "id": 2058442700,
+        "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+        "title": "How the European Commission rolled out Matrix to more than 40,000 staff",
+        "description": "",
+        "time_added": 1795092759,
+        "progress": 0,
+        "progress_timestamp": 1795148242
+      },
+      {
+        "id": 2058394597,
+        "url": "https://www.bbc.co.uk/news/articles/cw987ynpd0n1o",
+        "title": "'Feudal' leasehold system set to be scrapped in England and Wales",
+        "description": "",
+        "time_added": 1795079848,
+        "progress": 0,
+        "progress_timestamp": 1795148242
+      },
+      {
+        "id": 2058393776,
+        "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-raises-81-3bn-in-biggest-ipo-of-all-time",
+        "title": "Anthropic raises $81.3bn in biggest IPO of all time",
+        "description": "",
+        "time_added": 1795079562,
+        "progress": 0,
+        "progress_timestamp": 1795148242
       }
     ],
     "01": [
