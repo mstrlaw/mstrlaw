@@ -1,6 +1,29 @@
 {
-  "lastUpdated": "2026-11-20T04:17:23.181Z",
+  "lastUpdated": "2026-11-21T04:16:51.791Z",
   "statuses": [
+    {
+      "id": "117650981681288344",
+      "type": "boost",
+      "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:76t2adns4thmkkybgl4lg3of/post/3n2rfyd2cq22b",
+      "createdAt": "2026-11-20T21:51:52.479Z",
+      "excerpt": "Nos últimos anos, temos chegado a cada vez mais pessoas, publicado mais, dinamizado mais eventos e workshops, e levado mais longe aquilo em que acreditamos. Mas este crescimento…",
+      "author": {
+        "acct": "shifter.pt@bsky.brid.gy",
+        "displayName": "Shifter.pt",
+        "url": "https://bsky.brid.gy/r/https://bsky.app/profile/shifter.pt"
+      },
+      "media": {
+        "url": "https://files.mastodon.social/cache/media_attachments/files/117/650/625/564/292/924/small/68a64e422b4f26ef.jpeg",
+        "alt": "",
+        "width": 429,
+        "height": 536
+      },
+      "counts": {
+        "replies": 0,
+        "reblogs": 4,
+        "favourites": 0
+      }
+    },
     {
       "id": "117625431570662603",
       "type": "post",
@@ -27,24 +50,6 @@
         "replies": 0,
         "reblogs": 0,
         "favourites": 0
-      }
-    },
-    {
-      "id": "117548903348964697",
-      "type": "boost",
-      "url": "https://werd.social/@ben/117548882517591409",
-      "createdAt": "2026-11-02T21:12:00.732Z",
-      "excerpt": "One guy set out to influence how chatbots answer questions about the election. He was incredibly successful, and that should disturb all of us. #AI…",
-      "author": {
-        "acct": "ben@werd.social",
-        "displayName": "Ben Werdmuller",
-        "url": "https://werd.social/@ben"
-      },
-      "media": null,
-      "counts": {
-        "replies": 0,
-        "reblogs": 20,
-        "favourites": 8
       }
     }
   ]
