@@ -1,6 +1,29 @@
 {
-  "lastUpdated": "2026-11-24T07:05:19.642Z",
+  "lastUpdated": "2026-11-25T05:40:29.670Z",
   "statuses": [
+    {
+      "id": "117672643281914312",
+      "type": "boost",
+      "url": "https://mstdn.social/@Bellingcat/117671806859732563",
+      "createdAt": "2026-11-24T17:40:42.267Z",
+      "excerpt": "Our first ever merchandise store is now open. The launch features a limited time capsule of designs submitted by our community and selected through a community vote. The winning…",
+      "author": {
+        "acct": "Bellingcat@mstdn.social",
+        "displayName": "Bellingcat",
+        "url": "https://mstdn.social/@Bellingcat"
+      },
+      "media": {
+        "url": "https://files.mastodon.social/cache/media_attachments/files/117/671/806/979/538/395/small/6fe2e0a9111e0f22.png",
+        "alt": "Image shows Bellingcat products for sale, including a tshirt, mousemat, jumper and hat. Text reads: The Bellingcat Store Is Opening Its Doors.",
+        "width": 429,
+        "height": 536
+      },
+      "counts": {
+        "replies": 0,
+        "reblogs": 18,
+        "favourites": 12
+      }
+    },
     {
       "id": "117666210595323954",
       "type": "boost",
@@ -43,22 +66,8 @@
       },
       "counts": {
         "replies": 0,
-        "reblogs": 5,
-        "favourites": 1
-      }
-    },
-    {
-      "id": "117625431570662603",
-      "type": "post",
-      "url": "https://mastodon.social/@mstrlaw/117625431570662603",
-      "createdAt": "2026-11-16T09:34:08.724Z",
-      "excerpt": "\"In these dopamine slot machines we spend our minds. And, like in a casino, once you’re inside your chances of losing go up. In fact, it’s so much more likely that you’ll lose…",
-      "author": null,
-      "media": null,
-      "counts": {
-        "replies": 0,
-        "reblogs": 1,
-        "favourites": 0
+        "reblogs": 6,
+        "favourites": 2
       }
     }
   ]
